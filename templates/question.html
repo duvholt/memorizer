@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Memorizer</h1>
+{% if error is defined %}
+	<div class="alert alert-danger">{{ error }}</div>
+{% endif %}
+
+{% if question is defined %}
+	<h4>{{ question.question }} </h4>
+	<form class="form-horizontal" role="form" method="post">
+	<div class="form-group">
+	{% for answer in question.answers %}
+		<div class="radio">
+			<label>
+				{% if success is defined %}
+					{% if loop.index - 1 == question.correct %}
+						<span class="glyphicon glyphicon-ok"></span>
+					{% else %}
+						<span class="glyphicon glyphicon-remove"></span>
+					{% endif %}
+				{% endif %}
+				<input type="radio" name="answer" value="{{ loop.index - 1 }}">
+				{{ answer }}
+			</label>
+		</div>
+	{% endfor %}
+	</div>
+ 	<div class="form-group">
+		<button type="submit" class="btn btn-primary">Svar</button>
+	</div>
+	</form>
+{% endif %}
+
+
+{% if success is defined %}
+	{% if success %}
+		<div class="alert alert-success">
+			<span class="glyphicon glyphicon-ok"></span>
+			Riktig svar!
+		</div>
+	{% else %}
+		<div class="alert alert-danger">
+			<span class="glyphicon glyphicon-remove"></span>
+			Feil svar!
+		</div>
+	{% endif %}
+{% endif %}
+
+{% if next is defined %}
+	<a href="{{ url_for('show_question', id=next) }}" class="btn btn-default btn-lg">Neste spørsmål</a>
+{% endif %}
+
+<div class="well">
+	<p>Combo: {{ session.combo }}</p>
+	<p>Poeng: {{ session.points }}</p>
+	<p>Total: {{ session.total }}</p>
+</div>
+
+{% endblock %}
