@@ -43,5 +43,4 @@ def random_question():
 	return random.randint(0, len(questions) - 1)
 
 if __name__ == '__main__':
-	app.debug = True
 	app.run()

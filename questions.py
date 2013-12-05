@@ -9,7 +9,7 @@ questions=[{
 
 {
 "question":"Hva er en pakke (packet) i nettverkssammenheng?" ,
-"answer":[
+"answers":[
 "En datablokk av fast lengde som sendes gjennom nettverket, fra avsender til mottaker. ",
 "En datamelding som har ankommet og som står i kø for å bli levert til mottakermaskinen. ",
 "Den datamengden som utveksles mellom to datamaskiner som kommuniserer via nettverket. ",
@@ -20,7 +20,7 @@ questions=[{
 
 {
 "question":"Hvilken av disse lagringsenhetene er ikke en sekundærlagrings-enhet? " ,
-"answer":[
+"answers":[
 " En harddisk. ",
 " En datamaskins hurtigbuffer (cache). ",
 " En minnepinne.",
@@ -29,7 +29,7 @@ questions=[{
 
 {
 "question":" Hva er en protokoll i nettverkssammenheng?" ,
-"answer":[
+"answers":[
 "Et sett kommunikasjonsregler for utveksling av data. ",
 " En avtale mellom nettverkseier og en bedrift som bruker nettet. ",
 " Et register der all nettverkstrafikk blir lagret i henhold til kravene fra myndighetene. ",
@@ -38,7 +38,7 @@ questions=[{
 
 {
 "question":" Hvilket mål brukes vi vanligvis på overføringskapasitet i nettverk? " ,
-"answer":[
+"answers":[
 " Bits pr sekund (bps). ",
 " Gigabyte. ",
 " Båndbredde. ",
@@ -47,7 +47,7 @@ questions=[{
 
 {
 "question":"Hva definerer et klient/tjener (client/server) forhold? " ,
-"answer":[
+"answers":[
 "Klienter tilbyr data og tjenester til tjenere. ",
 "Klienter og tjenere tilbyr data og tjenester til hverandre. ",
 " Tjenere tilbyr data og tjenester til klienter. ",
@@ -56,7 +56,7 @@ questions=[{
 
 {
 "question":"Hva definerer et ”peer-to-peer” nettverk? " ,
-"answer":[
+"answers":[
 " En er sjef, de andre er slaver. ",
 " En er slave, de andre er sjefer. ",
 " Alle er likeverdige. ",
@@ -65,7 +65,7 @@ questions=[{
 
 {
 "question":"Hvordan kan en GPS bestemme en posisjon? " ,
-"answer":[
+"answers":[
 "En GPS beregner sin posisjon ved å lokalisere nærmeste mobile basestasjon. ",
 "En GPS beregner sin posisjon ved å bruke lokasjonen til flere satellitter. ",
 "En GPS beregner sin posisjon ved å bruke lokasjon til kun en satellitt. ",
@@ -74,7 +74,7 @@ questions=[{
 
 {
 "question":"Hva er Wi-Fi? " ,
-"answer":[
+"answers":[
 "Et sett av standarder for trådløs dataoverføring. ",
 "En kvalitetsbetegnelse for trådløse nett. ",
 " Et mål på kvaliteten på en bredbåndabonnentslinje inn til huset. ",
@@ -83,7 +83,7 @@ questions=[{
 
 {
 "question":"En device driver er: " ,
-"answer":[
+"answers":[
 "en spesialdatamaskin for kjøretøy. ",
 " spesialisert programvare for input/output, slik at utstyr kan kommunisere med resten av systemet. ",
 "enheten som holder rede på neste instruksjon som skal utføres av en prosessor.",
@@ -92,7 +92,7 @@ questions=[{
 
 {
 "question":"Et maskinspråk (machine language) er: " ,
-"answer":[
+"answers":[
 "et programmeringsspråk som oversettes av en kompilator (oversetter) til kjørbar kode. ",
 " et binær-type programmeringsspråk bygd inn i prosessoren som datamaskinen kan kjøre direkte. ",
 " er programmeringsspråk som er felles for alle datamaskiner slik at de kan kommunisere. ",
@@ -101,7 +101,7 @@ questions=[{
 
 {
 "question":"Ordstørrelse (word size) for en prosessor er: " ,
-"answer":[
+"answers":[
 "antall ord i en tekst som kan sammenlignes i et søk. ",
 "antall bokstaver som kan behandles i en tekststreng. ",
 "antall bit en prosessor kan prosessere på en gang. ",
@@ -110,7 +110,7 @@ questions=[{
 
 {
 "question":"Ytelse for superdatamaskiner måles i: " ,
-"answer":[
+"answers":[
 " FLOPS. ",
 " Gigabytes. ",
 " Antall prosessorkjerner. ",
@@ -119,7 +119,7 @@ questions=[{
 
 {
 "question":"Systemklokka i en datamaskin: " ,
-"answer":[
+"answers":[
 " fordeler tiden som brukes på ulike programmer. ",
 "bestemmer hvor raskt operasjoner i en mikroprosessor utføres. ",
 " sørger for at dato og tid alltid er riktig satt. ",
@@ -128,7 +128,7 @@ questions=[{
 
 {
 "question":"Hovedformålet med forstudiefasen (fase 1) i utvikling av informasjonssystemer er: " ,
-"answer":[
+"answers":[
 " Dokumentere krav til systemet. ",
 " Programmere systemet. ",
 " Gjennomføre en forberedende analyse. ",
@@ -137,7 +137,7 @@ questions=[{
 
 {
 "question":"Hva vil det si å vedlikeholde et informasjonssystem? " ,
-"answer":[
+"answers":[
 "Rette opp eksisterende feil i systemet.",
 " Utføre endringer i systemet basert på nye betingelser. ",
 "Oppdatere dokumentasjon. ",
@@ -146,7 +146,7 @@ questions=[{
 
 {
 "question":"Hva gjør en enhetstest? " ,
-"answer":[
+"answers":[
 " Tester at ulike deler av systemet fungerer sammen på korrekt måte. ",
 " Tester at selve datamaskinen (maskinvaren) fungerer. ",
 " Tester individuelle deler av programvaren. ",
@@ -155,7 +155,7 @@ questions=[{
 
 {
 "question":"Hva er en algoritme? " ,
-"answer":[
+"answers":[
 "Krav som stilles til et dataprogram. ",
 "En test for å finne feil i et dataprogram. ",
 "En presis beskrivelse av operasjoner som skal utføres for å løse et problem. ",
@@ -164,7 +164,7 @@ questions=[{
 
 {
 "question":"Hva er et flytskjema? " ,
-"answer":[
+"answers":[
 "Grafisk representasjon av en algoritme. ",
 "Et skjema for å fylle inn informasjon på en webside. ",
 " Et skjema som dokumenterer sikkerhet i et databasesystem. ",
@@ -173,7 +173,7 @@ questions=[{
 
 {
 "question":"Hva står ACID for innen databaser? " ,
-"answer":[
+"answers":[
 "Appropriate, Cynical, Isolation, Development. ",
 " Appropriate, Collaborative, Irrelevant, Driver. ",
 " Atomicity, Consistency, Isolation, Durability. ",
@@ -182,7 +182,7 @@ questions=[{
 
 {
 "question":"Hva er en tjener i en klient-/tjenerarkitektur? " ,
-"answer":[
+"answers":[
 " En tjener utfører tjenester på vegne av en klient. ",
 " En tjener etterspør tjenester fra klienter. ",
 " En tjener er et program som vil ha noe utført på en annen maskin. ",
@@ -191,7 +191,7 @@ questions=[{
 
 {
 "question":"En del av et program består av en FOR-løkke, inne i en FOR-løkke, inne i en FOR-løkke. Alle løkkene løper gjennom tallene fra 1 til N. Tidsforbruket for denne programdelen vil være " ,
-"answer":[
+"answers":[
 "N^3",
 "3N",
 "3Nlog(N)"],
@@ -199,7 +199,7 @@ questions=[{
 
 {
 "question":"Hva er hovedoppgaven til en navnetjener?" ,
-"answer":[
+"answers":[
 " Å oversette domenenavn til IP-adresser.",
 " Å oversette IP-adresser til domenenavn. ",
 " Å holde rede på definerte variabelnavn når et program kjører. ",
@@ -208,7 +208,7 @@ questions=[{
 
 {
 "question":"Kari har utviklet et programsystem i den bedriften der hun har vært ansatt. Kan hun ta med seg og videreutvikle denne programvaren hvis hun slutter i bedriften? " ,
-"answer":[
+"answers":[
 "Ja, i følge Åndsverksloven er det programmereren som har rettighetene til programvaren. ",
 " Nei, det er bedriften som eier programvaren.",
 " Det er uavklart siden dette er ikke regulert av lovgiving. Rettighetene til programvaren må ",
@@ -217,7 +217,7 @@ questions=[{
 
 {
 "question":"Svart-boks testing er: " ,
-"answer":[
+"answers":[
 "Testing der man prøver ut systemets eller modulens indre oppbygging. ",
 "Testing der man ser bort fra systemets eller modulens indre oppbygning og kun tar i ",
 "betraktning de ytre egenskapene. ",
@@ -226,7 +226,7 @@ questions=[{
 
 {
 "question":"Når kan man ikke benytte seg av binærsøkingsalgoritmen?" ,
-"answer":[
+"answers":[
 "Når datamengden er så stor at det vil ta for lang tid. ",
 " Når det er stor sannsynlighet for at det man søker etter ikke finnes i datamengden. ",
 " Når datamengden ikke er sortert. ",
@@ -235,7 +235,7 @@ questions=[{
 
 {
 "question":"Hva er riktig rekkefølge når ulike minnetyper sorteres etter synkende hastighet? " ,
-"answer":[
+"answers":[
 "Registre, cache, primærminne, sekundærminne. ",
 " Cache, registre, primærminne, sekundærminne. ",
 " Primærminne, cache, sekundærminne, registre. "],
@@ -243,7 +243,7 @@ questions=[{
 
 {
 "question":"Hva er i lovverket ikke definer som sensitive personopplysninger: " ,
-"answer":[
+"answers":[
 " Etnisk bakgrunn. ",
 " Politisk oppfatning. ",
 " Filosofisk oppfatning. ",
@@ -252,7 +252,7 @@ questions=[{
 
 {
 "question":"Vi skal kode tegnene a-å, A-Å, 0-9, mellomrom, spørsmålstegn, utropstegn, punktum, kolon, semikolon og bindestrek. Hvor mange binære siffer (engelsk: bits) er nødvendig i kodene når alle tegn skal representeres med like mange binære siffer? " ,
-"answer":[
+"answers":[
 "6",
 "7",
 "8"],
@@ -261,7 +261,7 @@ questions=[{
 
  {
 "question":"Hva blir resultatet når 81 kodes binært (i 2-tallsystemet)? " ,
-"answer":[
+"answers":[
 " 1011011 ",
 " 1010101 ",
 " 1010001 ",
@@ -270,7 +270,7 @@ questions=[{
 
 {
 "question":"11. Hva tilsvarer ABCD i det heksadesimale tallsystemet (16-tallsystemet) i 10-tallsystemet?" ,
-"answer":[
+"answers":[
 " 42561 ",
 " 43981 ",
 " 44981 ",
@@ -278,17 +278,8 @@ questions=[{
 "correct":1},
 
 {
-"question":"" ,
-"answer":[
-"",
-"",
-"",
-""],
-"correct":},
-
-{
 "question":"QoS er forkortelse for: " ,
-"answer":[
+"answers":[
 " Quantity of Storage. ",
 " Quality of Servers. ",
 " Quality of Service. ",
@@ -297,7 +288,7 @@ questions=[{
 
 {
 "question":"<p>…</p> i en HTML-fil definerer: " ,
-"answer":[
+"answers":[
 " Et avsnitt. ",
 " Et adressefelt. ",
 " En hyperlenke. ",
@@ -306,7 +297,7 @@ questions=[{
 
 {
 "question":"Vi har en sortert liste med 100 000 000 elementer. Ved binærsøking i denne listen, hvor mange sammenligninger må vi i verste fall gjøre? " ,
-"answer":[
+"answers":[
 " Omtrent 20. ",
 " Omtrent 27. ",
 " Omtrent 34. "],
@@ -314,7 +305,7 @@ questions=[{
 
 {
 "question":" A || !(B &&  er usant (engelsk: false) når: " ,
-"answer":[
+"answers":[
 " A false, B true, C true ",
 " A true, B true, C false ",
 " A false, B false, C true ",
@@ -323,7 +314,7 @@ questions=[{
 
 {
 "question":"Hva er entropi? " ,
-"answer":[
+"answers":[
 "Et mål på informasjonsinnholdet i en melding.",
 " En algoritme for effektiv koding av symboler.",
 "En feiltilstand som gjør at lesehodet på en harddisk ikke klarer å følge sporene nøyaktig og derfor blander data fra flere spor. ",
@@ -332,7 +323,7 @@ questions=[{
 
 {
 "question":"En URL (Uniform Resource Locator) har følgende format:" ,
-"answer":[
+"answers":[
 " Protokoll, maskin, sti, fil ",
 " Protokoll, maskin, sti ",
 " Domene, sti, fil ",
@@ -341,7 +332,7 @@ questions=[{
 
 {
 "question":"Anta at karakterene har følgende fordeling: A (12 %), B (24 %), C (35 %), D (20 %), E (7 %) og F (2 %). Hva er en korrekt Huffmankoding for A-F? " ,
-"answer":[
+"answers":[
 " A: 001 B: 10 C: 11 D: 01 E: 0001 F: 0000 ",
 " A: 010 B: 01 C: 10 D: 111 E: 1110 F: 1111 ",
 " A: 1111 B: 11 C: 1 D. 111 E: 11111 F: 111111 ",
@@ -350,7 +341,7 @@ questions=[{
 
 {
 "question":"En IP-adresse er: " ,
-"answer":[
+"answers":[
 "En numerisk adresse som identifiserer en datamaskin eller annen type enhet i et IP-nettverk. ",
 " En mekanisme som gjør det mulig å kontakte en Internett Provider, for eksempel når det oppstår feil i nettet. ",
 " Et felt som identifiserer data i en relasjonsdatabase. ",
@@ -359,7 +350,7 @@ questions=[{
 
 {
 "question":"Hva er inspeksjon av programvare? " ,
-"answer":[
+"answers":[
 " Kjøring av programmer for å se om programvaren oppfyller kravene til systemet. ",
 "Overvåking av variablenes verdier under programkjøring for å finne årsakene til feil. ",
 " Gjennomgang av programmer uten at de blir kjørt, med tanke på å finne feil og å forvisse seg om at de er riktige."],
@@ -367,7 +358,7 @@ questions=[{
 
 {
 "question":"Hva kjennetegner komprimeringsalgoritmer som er tapsløs (lossless)?" ,
-"answer":[
+"answers":[
 "Den opprinnelige datamengden kan gjenskapes nøyaktig.",
 "Den komprimerte datamengden er like stor som utgangspunktet.",
 "Egner seg spesielt godt for multimediedata som bilder, lyd og video.",
@@ -377,7 +368,7 @@ informasjonsmengden, for eksempel i et bilde."],
 
 {
 "question":"Hva sier Nyquist-regelen om samplingsfrekvensen?" ,
-"answer":[
+"answers":[
 "Samplingsfrekvensen må være minst halvparten av den høyeste lydfrekvensen.",
 "Samplingsfrekvensen må være minst den samme som den høyeste lydfrekvensen.",
 "Samplingsfrekvensen må være minst dobbelt så rask som den høyeste lydfrekvensen.",
@@ -386,7 +377,7 @@ informasjonsmengden, for eksempel i et bilde."],
 
 {
 "question":"Hva er oppgaven til en programteller (program counter):" ,
-"answer":[
+"answers":[
 "Den holder rede på antall kodelinjer i et program.",
 "Den inneholder adressen til neste instruksjon.",
 "Den styrer antall iterasjoner i en FOR-løkke.",
@@ -395,7 +386,7 @@ informasjonsmengden, for eksempel i et bilde."],
 
 {
 "question":"Hvor mange symboler kan kodes med 10 bit?" ,
-"answer":[
+"answers":[
 "10",
 "512",
 "1024",
@@ -404,7 +395,7 @@ informasjonsmengden, for eksempel i et bilde."],
 
 {
 "question":"Hvorfor digitalisere nettverk?" ,
-"answer":[
+"answers":[
 "Ønske om å kombinere tjenester.",
 "Enklere å utnytte kapasitet bedre med felles nettverk.",
 "Digital koding kan gi bedre feilsjekk og korrigering av feil.",
@@ -413,7 +404,7 @@ informasjonsmengden, for eksempel i et bilde."],
 
 {
 "question":"Hva er fokuset i programvarevalideringsfasen i systemutvikling?" ,
-"answer":[
+"answers":[
 "Beskrive hva systemet skal gjøre.",
 "Designe hvordan systemet skal oppføre seg.",
 "Teste om systemet stemmer med spesifikasjonen og kundekrav.",
@@ -422,7 +413,7 @@ informasjonsmengden, for eksempel i et bilde."],
 
 {
 "question":"Hva er et Denial of Service–angrep?" ,
-"answer":[
+"answers":[
 "Å sende så mange forespørsler til en tjener (server) at den ikke klarer å utføre oppgavene sine.",
 "Å bryte seg inn på en tjener (server) og sørge for at den nekter å utføre tjenestene sine.",
 "Å nekte å motta meldinger fra en tjener (server) som da blir opptatt med å sende forespørslene på nytt og på nytt.",
@@ -432,7 +423,7 @@ informasjonsmengden, for eksempel i et bilde."],
 
 {
 "question":"Hva vil det si at vi at vi har “random access” (tilfeldig tilgang) til minnet?" ,
-"answer":[
+"answers":[
 "All data i minnet kan hentes direkte uansett hvor det befinner seg.",
 "Det er tilfeldig hva som hentes ut av minnet.",
 "Vi må hente ut data sekvensielt (byte for byte) for å finne det vi leter etter.",
@@ -441,7 +432,7 @@ informasjonsmengden, for eksempel i et bilde."],
 
 {
 "question":"Hva vil det si at en datamaskin er deterministisk?" ,
-"answer":[
+"answers":[
 "Den har en pessimistisk livsanskuelse som avviser fri vilje.",
 "Når den skal velge hvilken instruksjon den skal behandle neste gang har den ikke\
  noe valg, men baserer valget på programmet og dataene den gis.",
@@ -451,7 +442,7 @@ informasjonsmengden, for eksempel i et bilde."],
 
 {
 "question":"Hvilke av alternativene under er mulige tolkninger av PandA-mønstre?" ,
-"answer":[
+"answers":[
 "True og False.",
 "Ja og Nei.",
 "+ og –.",
@@ -461,7 +452,7 @@ informasjonsmengden, for eksempel i et bilde."],
 {
 "question":"Vi deler inn algoritmer i klasser basert på de funksjoner som beskriver deres\
  utvikling i kjøretid best. Hvilken algoritme er i klassen Θ(log(n)):" ,
-"answer":[
+"answers":[
 "Innstikksortering (Insertion sort).",
 "Binærsøk (binary search).",
 "Sekvensielt søk (sequential search).",
@@ -473,7 +464,7 @@ informasjonsmengden, for eksempel i et bilde."],
  forhold til mengden av input. Vi gjør analyser av bestefall, verstefall og\
  gjennomsnittstilfellet. Hvorfor er det spesielt interessant å analysere en algoritmes\
  kjøretid i verste fall?" ,
-"answer":[
+"answers":[
 "Det setter en øvre grense for hvor lang tid det tar å kjøre algoritmen.",
 "Programmerere er pessimister.",
 "Det er mer interessant med høye tall.",
@@ -482,7 +473,7 @@ informasjonsmengden, for eksempel i et bilde."],
 
 {
 "question":"Hva er et datagram?" ,
-"answer":[
+"answers":[
 "Et telegram som er skrevet på data.",
 "Vekten på en dataenhet.",
 "En pakke som sendes over internett som følger IP-protokollen.",
@@ -492,7 +483,7 @@ informasjonsmengden, for eksempel i et bilde."],
 {
 "question":"Når vi overfører data over internett oppstår det ofte feil på grunn av forstyrrelser\
  på linjene. For å oppdage slike feil brukes ofte" ,
-"answer":[
+"answers":[
 "NIC (Network Interface Card).",
 "ISP (Internet Service Provider).",
 "CRC (Cyclic Redundancy Check).",
@@ -502,7 +493,7 @@ informasjonsmengden, for eksempel i et bilde."],
 {
 "question":"Fargene som vises på en dataskjerm representeres ofte med 24 bits RGB-koding.\
  Fargen blå vil da representeres som:" ,
-"answer":[
+"answers":[
 "0000 0000 0000 0000 0000 0000.",
 "1111 1111 0000 0000 0000 0000.",
 "0000 0000 1111 1111 0000 0000.",
@@ -513,7 +504,7 @@ informasjonsmengden, for eksempel i et bilde."],
 "question":"En mikroprosessor utfører de samme fem oppgavene om og om igjen. Hvilken\
  rekkefølge av stegene under beskriver korrekt rekkefølge på dette F/E-kretsløpet\
  (F/E cycle)?" ,
-"answer":[
+"answers":[
 "Instruction Fetch – Data Fetch – Instruction Decode – Instruction Execution – Results Return.",
 "Results Return – Instruction Execution – Instruction Fetch – Data Fetch – Instruction Decode.",
 "Instruction Fetch – Instruction Decode – Data Fetch – Instruction Execution – Results Return.",
@@ -522,7 +513,7 @@ informasjonsmengden, for eksempel i et bilde."],
 
 {
 "question":"Hvilken bestemt endring har vi sett de siste årene innen systemutvikling?" ,
-"answer":[
+"answers":[
 "Spesifisering av krav er ikke lengre relevant.",
 "Smidig (agile) systemutvikling har overtatt mer og mer for plandrevet systemutvikling.",
 "Vannfallsmodellen har overtatt for inkrementell systemutvikling.",
@@ -531,7 +522,7 @@ informasjonsmengden, for eksempel i et bilde."],
 
 {
 "question":"Hva er DAC?" ,
-"answer":[
+"answers":[
 "Et program som hjelper med beregninger (data-assisted computing).",
 "En enhet som oversetter analoge signaler til digitale signaler.",
 "En enhet som oversetter digitale signaler til analoge signaler.",
@@ -540,7 +531,7 @@ informasjonsmengden, for eksempel i et bilde."],
 
 {
 "question":"Rekursjon betyr at" ,
-"answer":[
+"answers":[
 "En funksjon kaller seg selv.",
 "Kjøretiden til programmet minsker.",
 "Programmet går i evig løkke.",
@@ -550,7 +541,7 @@ informasjonsmengden, for eksempel i et bilde."],
 {
 "question":"Ranger effektivitetsklassene Θ(n3), Θ(n), Θ(log(n)) og Θ(n2) etter effektivitet, der\
  minst effektiv først og deretter mer og mer effektiv" ,
-"answer":[
+"answers":[
 "Θ(n3), Θ(n2), Θ(n), Θ(log(n)).",
 "Θ(n3), Θ(n), Θ (n2), Θ(log(n)).",
 "Θ(log(n)),Θ(n3), Θ(n2), Θ(n).",
