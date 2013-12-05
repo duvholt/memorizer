@@ -304,7 +304,7 @@ questions=[{
 "correct":1},
 
 {
-"question":" A || !(B &&  er usant (engelsk: false) når: " ,
+"question":" A || !(B && C) er usant (engelsk: false) når: " ,
 "answers":[
 " A false, B true, C true ",
 " A true, B true, C false ",
