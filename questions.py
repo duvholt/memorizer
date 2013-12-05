@@ -430,7 +430,7 @@ questions = [
 			"Overvåking av variablenes verdier under programkjøring for å finne årsakene til feil.",
 			"Gjennomgang av programmer uten at de blir kjørt, med tanke på å finne feil og å forvisse seg om at de er riktige."
 		],
-		"correct": 3
+		"correct": 2
 	},
 	{
 		"question": "Hva kjennetegner komprimeringsalgoritmer som er tapsløs (lossless)?",
