@@ -1,59 +1,47 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Memorizer</h1>
-{% if error is defined %}
-	<div class="alert alert-danger">{{ error }}</div>
-{% endif %}
+<h1>IT Grunnkurs Memorizer</h1>
+<h4>
+	<span class="label label-warning">Combo: {{ session.combo }}</span>
+	<span class="label label-primary">Poeng: {{ session.points }}/{{ session.total }}</span>
+	<a href="{{ url_for('reset_stats') }}" class="btn btn-default btn-sm">Tilbakestill</a>
+</h4>
+{% for alert in alerts %}
+	<div class="alert alert-{{ alert.level }} alert-dismissable">
+		<button type="button" class="close" data-dismiss="alert">&times;</button>
+		{{ alert.msg }}
+	</div>
+{% endfor %}
 
 {% if question is defined %}
+<div class="container">
 	<h4>{{ question.question }} </h4>
 	<form class="form-horizontal" role="form" method="post">
 	<div class="form-group">
 	{% for answer in question.answers %}
+	{% if (loop.index - 1)|string() == request.form.answer %}<div class="has-{% if success %}success{% else %}error{% endif %}">{% endif %}
 		<div class="radio">
 			<label>
 				{% if success is defined %}
-					{% if loop.index - 1 == question.correct %}
-						<span class="glyphicon glyphicon-ok"></span>
-					{% else %}
-						<span class="glyphicon glyphicon-remove"></span>
-					{% endif %}
+					<span class="glyphicon {% if loop.index - 1 == question.correct %}glyphicon-ok{% else %}glyphicon-remove{% endif %}"></span>
 				{% endif %}
 				<input type="radio" name="answer" value="{{ loop.index - 1 }}">
 				{{ answer }}
 			</label>
 		</div>
+	{% if (loop.index - 1)|string() == request.form.answer %}</div>{% endif %}
 	{% endfor %}
 	</div>
  	<div class="form-group">
 		<button type="submit" class="btn btn-primary">Svar</button>
 	</div>
 	</form>
-{% endif %}
-
-
-{% if success is defined %}
-	{% if success %}
-		<div class="alert alert-success">
-			<span class="glyphicon glyphicon-ok"></span>
-			Riktig svar!
-		</div>
-	{% else %}
-		<div class="alert alert-danger">
-			<span class="glyphicon glyphicon-remove"></span>
-			Feil svar!
-		</div>
-	{% endif %}
-{% endif %}
-
-{% if next is defined %}
-	<a href="{{ url_for('show_question', id=next) }}" class="btn btn-default btn-lg">Neste spørsmål</a>
-{% endif %}
-
-<div class="well">
-	<p>Combo: {{ session.combo }}</p>
-	<p>Poeng: {{ session.points }}</p>
-	<p>Total: {{ session.total }}</p>
 </div>
+{% endif %}
 
+<div class="btn-group">
+	<a href="{{ url_for('show_question', id=prev) }}" class="btn btn-default">Forrige</a>
+	<a href="{{ url_for('show_question', id=random) }}" class="btn btn-default">Tilfeldig</a>
+	<a href="{{ url_for('show_question', id=next) }}" class="btn btn-{% if success is defined %}success{% else %}default{% endif %}">Neste</a>
+</div>
 {% endblock %}
