@@ -1,11 +1,13 @@
-from questions import questions 
 from flask import Flask, render_template, redirect, url_for, request, session
 from werkzeug.contrib.fixers import ProxyFix
 import random
+import json
 
 app = Flask(__name__)
 app.config.from_pyfile('config.py')
 app.wsgi_app = ProxyFix(app.wsgi_app)
+with open('questions.json') as f:
+	questions = json.loads(f.read())['questions']
 
 @app.route('/')
 def main():
@@ -18,7 +20,6 @@ def reset_stats():
 
 @app.route('/question/<int:id>', methods=['GET', 'POST'])
 def show_question(id):
-	print(id)
 	if id == 0:
 		return redirect(url_for('show_question', id=1))
 	# Setting default value for session variables
@@ -42,7 +43,6 @@ def show_question(id):
 		return render_template('question.html', **context)
 
 	context['question'] = question
-	print(question['answers'])
 	# Random ordering
 	context['answers'] = list(enumerate(question['answers']))
 	random.shuffle(context['answers'])
