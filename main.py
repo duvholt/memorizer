@@ -18,6 +18,7 @@ def reset_stats():
 
 @app.route('/question/<int:id>', methods=['GET', 'POST'])
 def show_question(id):
+	# Setting default value for session variables
 	for key in ['points', 'total', 'combo']:
 		if key not in session:
 			session[key] = 0
@@ -32,18 +33,21 @@ def show_question(id):
 	}
 	try:
 		question = questions[id]
-		context['question'] = question
-		print(question['answers'])
-		# Random ordering
-		context['answers'] = list(enumerate(question['answers']))
-		random.shuffle(context['answers'])
 	except IndexError:
 		context['alerts'].append({'msg': 'Fant ikke spørsmålet', 'level': 'danger'})
 		return render_template('question.html', **context)
+
+	context['question'] = question
+	print(question['answers'])
+	# Random ordering
+	context['answers'] = list(enumerate(question['answers']))
+	random.shuffle(context['answers'])
+	# POST request when answering
 	if request.method == 'POST':
 		answer = request.form.get('answer')
 		if answer:
 			context['success'] = int(answer) == question['correct']
+			# Checking if question has already been answered
 			if id not in session['earlier_questions']:
 				session['points'] += int(context['success'])
 				session['total'] += 1
@@ -59,6 +63,7 @@ def show_question(id):
 	return render_template('question.html', **context)
 
 def random_id(id=None):
+	"""Returns a random id from questions that have not been answered. Returns a complete random number if none available"""
 	rand = id
 	earlier = session.get('earlier_questions', [])
 	# all questions have been answered
