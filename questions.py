@@ -657,4 +657,252 @@ questions = [
 		],
 		"correct": 0
 	},
+	{
+	"question": "Hva kalles typen datamaskin som typisk brukes til tyngre oppgaver som værberegninger?",
+	"answers": [
+		"Arbeidsstasjon.",
+		"Mikrodatamaskin.",
+		"Stormaskin.",
+		"Superdatamaskin."
+	],
+	"correct":3
+	},
+	{
+		"question": "Hvilket av disse alternativene beskriver IKKE et mikrokontroller?",
+		"answers": [
+			"Kalles også innebygd datamaskin.",
+			"Brukes som en del av diverse utstyr og kjøretøyer.",
+			"Benytter alltid store sekundærlager.",
+			"Finnes i mikrobølgeovn, tastatur, klokker, etc."
+		],
+		"correct":2
+	},
+	{
+		"question": "Hvilket av disse alternativene beskriver IKKE programvare (software)?",
+		"answers": [
+			"En CD-plate.",
+			"Operativsystemet.",
+			"Utstyrsdrivere (device drivers).",
+			"Hjelpeprogrammer (utility programs)."
+		],
+		"correct":0
+	},
+	{
+		"question": "Hvilket alternativ beskriver sekundærminne?",
+		"answers": [
+			"Harddisk",
+			"CD/DVD",
+			"Minnepenn",
+			"Alle alternativene er riktig."
+		],
+		"correct":3
+	},
+	{
+		"question": "Hvilket alternativ beskriver IKKE en utenhet (output) i en datamaskin?",
+		"answers": [
+			"Monitor",
+			"CPU",
+			"Høyttaler",
+			"Printer"
+		],
+		"correct":1
+	},
+	{
+		"question": "Hvor mange bytes er 1 kilobyte?",
+		"answers": [
+			"1000 bytes",
+			"1024 bytes",
+			"1048 bytes",
+			"Ingen av alternativene er riktig."
+		],
+		"correct":1
+	},
+	{
+		"question": "Hva er korrekt angående systemprogramvaren i en datamaskin?",
+		"answers": [
+			"Gjør det mulig for applikasjonsprogramvare å kommunisere med datamaskin.",
+			"Hjelper datamaskinen til å håndtere sine egne interne og eksterne ressurser.",
+			"Inkluderer utstyrsdrivere (device drivers) og hjelpeprogrammer (utility programs).",
+			"Alle alternativene er riktige."
+		],
+		"correct":3
+	},
+	{
+		"question": "Hva legges i begrepet ”booting”?",
+		"answers": [
+			"Prosessen å laste inn operativsystemet i minne til en datamaskin.",
+			"Prosessen å laste inn applikasjonsprogramvare i minne til en datamaskin.",
+			"Prosessen å skifte mellom to programmer i et operativsystem.",
+			"Ingen av alternativene er riktig."
+		],
+		"correct":0
+	},
+	{
+		"question": "Hvilket alternativ stemmer IKKE angående beskrivelser av et operativsystem?",
+		"answers": [
+			"Håndterer grunnleggende dataoperasjoner på et lavt nivå.",
+			"De fleste applikasjonsprogrammer er skrevet for å kjøre på et spesifikt operativsystem.",
+			"Man kan starte programmer direkte utenom operativsystemet på de fleste universelle datamaskiner (PCer).",
+			"Operativsystemet tar seg av oppgaver som oppstart, prosessorhåndtering, filhåndtering, oppgavehåndtering og sikkerhetshåndtering."
+		],
+		"correct":2
+	},
+	{
+		"question": "Hva står forkortelsen ”BIOS” for?",
+		"answers": [
+			"Binary Intermediate Operating System.",
+			"Basic Input/Output System.",
+			"Boot In Open Software.",
+			"Ingen av alternativene er riktig."
+		],
+		"correct":1
+	},
+	{
+		"question": "Hvordan kan datamaskin med en prosessor (CPU) som kun kan kjøre en \
+		instruksjon av gangen kjøre flere programmer samtidig (multi-tasking)?",
+		"answers": [
+			"Det er ikke mulig.",
+			"Hvert program får tildelt litt prosesseringstid.",
+			"Datamaskinen bruker andre enheter som grafikkort til å utføre programmer.",
+			"Ingen av alternativene er riktig."
+		],
+		"correct":1
+	},
+	{
+		"question": "Hva er oppgaven til utstyrsdrivere (device drivers)?",
+		"answers": [
+			"Forenkle kommunikasjon mellom datamaskinen og eksternt utstyr.",
+			"Bestemme hvilke programmer som skal kjøres i prosessoren (CPUen).",
+			"Sørge for at alle eksterne enheter kan tilkobles ved hjelp av USB.",
+			"Ingen av alternativene er riktig."
+		],
+		"correct":0},
+	{
+		"question": "Hva betyr begrepet båndbredde (bandwidth)?",
+		"answers": [
+			"Beskriver hvilke radiofrekvenser et trådløstnettverk kommuniserer over.",
+			"Beskriver fysisk bredde på optisk fiber eller nettverkskabler.",
+			"Uttrykk for hvilken type data som kan sendes over en kommunikasjonskanal.",
+			"Uttrykk for hvor mye data som kan sendes over en kommunikasjonskanal."
+		],
+		"correct":3
+	},
+	{
+		"question": "Hvilken teknologi har potensielt størst overføringskapasitet?",
+		"answers": [
+			"ADSL.",
+			"Optisk fiber.",
+			"Koaksialkabel.",
+			"Wi-Fi."
+		],
+		"correct":1
+	},
+	{
+		"question": "Hva er en protokoll når man snakker om nettverk?",
+		"answers": [
+			"Et sett med regler datamaskiner følger for å overføre data elektronisk.",
+			"Et program som sjekker om data kan overføres mellom to datamaskiner.",
+			"En standard for å representere websider.",
+			"Ingen av alternativene er riktig."
+		],
+		"correct":0},
+	{
+		"question": "Omtrent hvor mange unike adresser tilbyr IPv4 (Internet Protocol ver. 4)?",
+		"answers": [
+			"4,29 millioner.",
+			"429 millioner.",
+			"4,29 milliarder.",
+			"429 milliarder."
+		],
+		"correct":2
+	},
+	{
+		"question": "Hva består den første delen av en Uniform Resource Locator (URL) av?",
+		"answers": [
+			"Domenenavn.",
+			"Protokoll.",
+			"Type webdokument (f.eks. HTML, php, asp, jsp).",
+			"Ingen av alternativene er riktig."
+		],
+		"correct":1
+	},
+	{
+		"question": "Hva står HTML for?",
+		"answers": [
+			"Horizontal Text Modelling Language.",
+			"Hypertext Modelling Language.",
+			"Hypertext Markup Language.",
+			"Ingen av alternativene er riktig."
+		],
+		"correct":2
+	},
+	{
+		"question": "Hva ligger i begrepet ”spoofing”?",
+		"answers": [
+			"Bombardere en nettside med stor datatrafikk.",
+			"Opprette nettsider som utgir seg for å være noe annet enn de er.",
+			"Bryte seg inn i et datasystem.",
+			"Sende epost med falsk avsender."
+		],
+		"correct":3
+	},
+	{
+		"question": "Hva er et hovedkort (motherboard)?",
+		"answers": [
+			"Bunnplata i et PC kabinett.",
+			"Sekundærminnet i en PC.",
+			"Et kretskort i en datamaskin der enheter som CPU, RAM, og andre enheter kobles sammen.",
+			"Et minnekort for å lagre ultralydbilder."
+		],
+		"correct":2
+	},
+	{
+		"question": "Hva gjør en enhetstest?",
+		"answers": [
+			"Tester individuelle deler av programvaren.",
+			"Tester at selve datamaskinen (maskinvaren) fungerer.",
+			"Tester at ulike deler av systemet fungerer sammen på en korrekt måte.",
+			"Ingen av alternativene er riktig."
+		],
+		"correct":0},
+	{
+		"question": "Hva definerer et ”peer-to-peer” nettverk?",
+		"answers": [
+			"En er slave, de andre er sjefer.",
+			"En er sjef, de andre er salver.",
+			"Alle er likeverdige.",
+			"Ingen av alternativene er riktig."
+		],
+		"correct":2
+	},
+	{
+		"question": "På nettsiden www.ntnu.no/student finner du en lenke til følgende dokument \
+		”info.html”. Hvilken type lenke er dette?",
+		"answers": [
+			"Absolutt hyperlenke.",
+			"Relativ hyperlenke.",
+			"Modifiserende hyperlenke.",
+			"Ingen av alternativene er riktig."
+		],
+		"correct":1
+	},
+	{
+		"question": "Hva er et flytskjema innen programmering?",
+		"answers": [
+			"En grafisk representasjon av en algoritme.",
+			"En presis beskrivelse av en endelig serie operasjoner som skal utføres for å løse et problem.",
+			"En tekstlig beskrivelse som beskriver flyten i et program.",
+			"Ingen av alternativene er riktig."
+		],
+		"correct":0},
+	{
+		"question": "Hva kalles den siste fasen i livssyklusen til systemutvikling av informasjonssystemer?",
+		"answers": [
+			"Design.",
+			"Utvikling.",
+			"Vedlikehold.",
+			"Ingen av alternativene er riktig."
+		],
+		"correct":2
+	}
 ]
