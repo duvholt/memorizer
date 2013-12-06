@@ -904,5 +904,208 @@ questions = [
 			"Ingen av alternativene er riktig."
 		],
 		"correct":2
+	},
+	# 2013 kont
+	{
+		"question": "Hva er pseudokode?",
+		"answers": [
+			"Foreløpig kode som ikke skal brukes i den endelige versjonen av et system",
+			"En diagramteknikk for å beskrive algoritmer eller programmer",
+			"De delene av et program som kan være årsak til en feil som er avdekket under testing",
+			"En måte å beskrive algoritmer som er mindre formell enn regulære programmeringsspråk",
+		],
+		"correct": 3
+	},
+	{
+		"question": "Vi har 43 ulike symboler som vi ønsker å kode digitalt. Hva er det minste antall bits som vi må bruke?",
+		"answers": [
+			"5",
+			"6",
+			"7",
+			"8",
+		],
+		"correct": 1
+	},
+	{
+		"question": "Hvilken av disse aksessteknologiene gir høyest kapasitet ?",
+		"answers": [
+			"Edge",
+			"3G/UMTS",
+			"HSDPA",
+			"LTE",
+		],
+		"correct": 3
+	},
+	{
+		"question": "Retningslinjene for algoritmer sier at det lønner seg å skrive en løkke for å utføre en repeterende oppgave hvis oppgaven må utføres",
+		"answers": [
+			"mer enn l gang",
+			"3-5 ganger eller mer",
+			"8-10 ganger eller mer",
+			"20 ganger eller mer",
+		],
+		"correct": 0
+	},
+	{
+		"question": "Vi skal bruke binærsøking i en datamengde med 1 000 000 sorterte elementer. Hvor mange oppslag må vi vanligvis giøre?",
+		"answers": [
+			"10",
+			"20",
+			"30",
+			"50",
+		],
+		"correct": 1
+	},
+	{
+		"question": "Analog informasjon er",
+		"answers": [
+			"Diskret",
+			"Kontinuerlig",
+			"Tilfeldig",
+			"Digital",
+		],
+		"correct": 1
+	},
+	{
+		"question": "Det er grunnleggende aktiviteter som inngår i alle programvareutviklingsprosesser.",
+		"answers": [
+			"Spesifikasjon, utvikling, validering, evolusjon",
+			"Spesifikasjon, analyse, programmering, bruk",
+			"Forstudie, implementasjon, testing, bruk",
+			"Forstudie, programmering, simulering, vedlikehold",
+
+		],
+		"correct": 0
+	},
+	{
+		"question": "Hvor mange negative og positive heltall kan vi representere i 2 byte?",
+		"answers": [
+			"2048",
+			"32768",
+			"65536",
+			"1048576",
+		],
+		"correct": 2
+	},
+	{
+		"question": "Hvorfor kan et WiFi nettverk påvirke en Bluetooth forbindelse?",
+		"answers": [
+			"WiFi nettverk har så sterkt signal",
+			"Bluetooth og WiFi bruker samme frekvensbånd",
+			"Bluetooth og WiFi bruker samme metode for koding",
+			"Ved samtidig bruk av WiFi og Bluetooth dannes et fenomen som heter \"stående bølger\"",
+		],
+		"correct": 1
+	},
+	{
+		"question": "Hvor mange instruksjoner er vanlig i en moderne datamaskin?",
+		"answers": [
+			"3-7",
+			"10-20",
+			"rundt 100",
+			"tusenvis",
+		],
+		"correct": 2
+	},
+	{
+		"question": "Hva kjennetegner problemløsning etter top-down prinsippet?",
+		"answers": [
+			"Vi løser de vanskeligste problemene først",
+			"Vi designer før Vi programmerer en løsning",
+			"Vi går fra det generelle til det spesielle",
+			"Vi løser de enkelte delene av problemet først og bruker disse løsningene som byggeklosser i en generell løsning",
+		],
+		"correct": 2
+	},
+	{
+		"question": "Sortering ved innsetting (insertion sort) bruker omtrent 1 sekund på å sortere 1000 elementer. Hvor lang tid vil det omtrent ta å sortere 10000 elementer?",
+		"answers": [
+			"2 s",
+			"10 s",
+			"100 s",
+			"1000 s 1",
+		],
+		"correct": 2
+	},
+	{
+		"question": "Hva er pipelining?",
+		"answers": [
+			"Lignende operasjoner blir utført i rekkefølge",
+			"Flere instruksjoner kan være under utførelse samtidig",
+			"En effektiv organisering av datamaskinens hukommelse",
+			"En mekanisme for å utveksle data mellom programmer 1",
+		],
+		"correct": 1
+	},
+	{
+		"question": "Hvor mange symboler kan representeres av en sekvens på K bit?",
+		"answers": [
+			"K2",
+			"2K",
+			"K",
+			"2",
+		],
+		"correct": 1
+	},
+	{
+		"question": "Et nettverk sin evne til å levere uavbrutt / kontinuerlig tjeneste defineres som",
+		"answers": [
+			"Skalerbarhet",
+			"Tilgjengelighet",
+			"Pålitelighet",
+			"Ytelse",
+		],
+		"correct": 2
+	},
+	{
+		"question": "Ved digitalisering av lyd, hva oppnår vi med å bruke bit i hver punktprøve (sample)?",
+		"answers": [
+			"Vi trenger ikke å punktprøve (sample) like",
+			"Vi oppfyller kravene i Nyquist-regelen",
+			"Vi kan representere stereo-lyd",
+			"Vi får en mer nøyaktig digitalisering",
+	1
+		],
+		"correct": 3
+	},
+	{
+		"question": "Det å utgi seg for være noen andre på internett kalles",
+		"answers": [
+			"Phishing",
+			"Spoofing",
+			"Phanning",
+			"Aliasing",
+		],
+		"correct": 1
+	},
+	{
+		"question": "Er det horisontale eller vertikale fargebånd som komprimeres bra i GIF-filer",
+		"answers": [
+			"Vertikale",
+			"Horisontale",
+			"GIF-filer komprimerer hverken vertikale eller horisontale fargebånd spesielt bra",
+			"GIF-filer komprimerer både horisontale og vertikale fargebånd veldig bra",
+		],
+		"correct": 1
+	},
+	{
+		"question": "Hente/Utføre-kretsløpet (Fetch/Execute Cycle) i en moderne datamaskin utføres",
+		"answers": [
+			"En gang i sekundet",
+			"Tusenvis av gangeri sekunder",
+			"Hundretusenvis av ganger i sekundet",
+			"Ikke oftere enn antall ganger klokken i maskina tikker",
+		],
+		"correct": 3
+	},
+	{
+		"question": "Hva kjennetegner inkrementell programvareutvikling?",
+		"answers": [
+			"Utvikler programvaren i de klart avskilte fasene krav, design, implementasj on, testing osv.",
+			"Utvikler programvaren uten noen plan eller prosess",
+			"Deler opp systemet i mindre deler som blir utviklet del for del",
+			"Lager en rask prototype basert på eksisterende krav",
+		],
+		"correct": 2
 	}
 ]
