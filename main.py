@@ -26,8 +26,8 @@ def show_question(id):
 	for key in ['points', 'total', 'combo']:
 		if key not in session:
 			session[key] = 0
-	if 'earlier_questions' not in session:
-		session['earlier_questions'] = []
+	if 'answered' not in session:
+		session['answered'] = []
 	context = {
 		'id': id,
 		'alerts': [],
@@ -43,19 +43,17 @@ def show_question(id):
 		return render_template('question.html', **context)
 
 	context['question'] = question
-	# Random ordering
 	context['answers'] = list(enumerate(question['answers']))
-	random.shuffle(context['answers'])
 	# POST request when answering
 	if request.method == 'POST':
 		answer = request.form.get('answer')
 		if answer:
 			context['success'] = int(answer) == question['correct']
 			# Checking if question has already been answered
-			if id not in session['earlier_questions']:
+			if id not in session['answered']:
 				session['points'] += int(context['success'])
 				session['total'] += 1
-				session['earlier_questions'].append(id)
+				session['answered'].append(id)
 				if not context['success']:
 					session['combo'] = 0
 				else:
@@ -64,12 +62,20 @@ def show_question(id):
 				context['alerts'].append({'msg': 'Du har allerede svart på dette spørsmålet så du får ikke noe poeng. :-)', 'level': 'info'})
 		else:
 			context['alerts'].append({'msg': 'Blankt svar', 'level': 'danger'})
+		# Preserving order on submit
+		ordering = request.form.get('order')
+		if ordering:
+			# Resorting answers from specific values. Answer is a tuple with id and texts
+			context['answers'] = [(int(x), context['answers'][int(x)][1]) for x in ordering.split(',')]
+	else:
+		# Random order on questions
+		random.shuffle(context['answers'])
 	return render_template('question.html', **context)
 
 def random_id(id=None):
 	"""Returns a random id from questions that have not been answered. Returns a complete random number if none available"""
 	rand = id
-	earlier = session.get('earlier_questions', [])
+	earlier = session.get('answered', [])
 	# all questions have been answered
 	if len(questions) == len(earlier) or (id not in earlier and len(questions) == len(earlier) + 1):
 		return random.randint(0, len(questions) - 1)

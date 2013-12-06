@@ -20,6 +20,7 @@
 	<h4>{{ question.question }} </h4>
 	<form class="form-horizontal" role="form" method="post">
 	<div class="form-group">
+	<input type="hidden" name="order" value="{{ answers|join(',', attribute=0) }}">
 	{% for index, answer in answers %}
 	{% if (index)|string() == request.form.answer %}<div class="has-{% if success %}success{% else %}error{% endif %}">{% endif %}
 		<div class="radio">
