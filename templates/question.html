@@ -1,10 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>IT Grunnkurs Memorizer</h1>
+<h3>Spørsmål #{{ id }}</h3>
 <h4>
 	<span class="label label-warning">Combo: {{ session.combo }}</span>
-	<span class="label label-primary">Poeng: {{ session.points }}/{{ session.total }}</span>
-	<a href="{{ url_for('reset_stats') }}" class="btn btn-default btn-sm">Tilbakestill</a>
+	<span class="label label-primary">Poeng: {{ session.points }} ({{ percentage(session.points, session.total) }}%)</span>
+	<span class="label label-primary">Spørsmål: {{ session.total }}/{{ num_questions }}</span>
+	<a href="{{ url_for('reset_stats') }}" class="btn btn-default btn-xs">Nullstill</a>
 </h4>
 {% for alert in alerts %}
 	<div class="alert alert-{{ alert.level }} alert-dismissable">

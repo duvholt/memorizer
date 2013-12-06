@@ -14,10 +14,13 @@ def main():
 @app.route('/reset')
 def reset_stats():
 	session.clear()
-	return redirect(request.referrer or url_for('main'))
+	return redirect(url_for('main'))
 
 @app.route('/question/<int:id>', methods=['GET', 'POST'])
 def show_question(id):
+	print(id)
+	if id == 0:
+		return redirect(url_for('show_question', id=1))
 	# Setting default value for session variables
 	for key in ['points', 'total', 'combo']:
 		if key not in session:
@@ -27,12 +30,13 @@ def show_question(id):
 	context = {
 		'id': id,
 		'alerts': [],
-		'random': random_id(id),
-		'prev': id - 1 if id - 1 >= 0 else len(questions) - 1,
-		'next': id + 1 if id + 1 < len(questions) else 0
+		'random': random_id(id - 1),
+		'prev': id - 1 if id > 1 else len(questions),
+		'next': id + 1 if id < len(questions) else 1,
+		'num_questions': len(questions)
 	}
 	try:
-		question = questions[id]
+		question = questions[id - 1]
 	except IndexError:
 		context['alerts'].append({'msg': 'Fant ikke spørsmålet', 'level': 'danger'})
 		return render_template('question.html', **context)
@@ -72,6 +76,14 @@ def random_id(id=None):
 	while rand in earlier or rand in [id, None]:
 		rand = random.randint(0, len(questions) - 1)
 	return rand
+
+@app.context_processor
+def utility_processor():
+	def percentage(num, total):
+		if total > 0:
+			return round((num * 100) / total, 2)
+		return 0
+	return dict(percentage=percentage)
 
 if __name__ == '__main__':
 	app.run()
