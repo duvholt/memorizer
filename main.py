@@ -33,6 +33,10 @@ def show_question(id):
 	try:
 		question = questions[id]
 		context['question'] = question
+		print(question['answers'])
+		# Random ordering
+		context['answers'] = list(enumerate(question['answers']))
+		random.shuffle(context['answers'])
 	except IndexError:
 		context['alerts'].append({'msg': 'Fant ikke spørsmålet', 'level': 'danger'})
 		return render_template('question.html', **context)
@@ -57,7 +61,10 @@ def show_question(id):
 def random_id(id=None):
 	rand = id
 	earlier = session.get('earlier_questions', [])
-	while rand == id and (not rand or rand in earlier):
+	# all questions have been answered
+	if len(questions) == len(earlier) or (id not in earlier and len(questions) == len(earlier) + 1):
+		return random.randint(0, len(questions) - 1)
+	while rand in earlier or rand in [id, None]:
 		rand = random.randint(0, len(questions) - 1)
 	return rand
 
