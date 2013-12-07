@@ -272,7 +272,7 @@
                 "Etnisk bakgrunn.",
                 "Politisk oppfatning.",
                 "Filosofisk oppfatning.",
-                "Alle alternativene i a, b og c er sensitive personopplysninger."
+                "Alle alternativene er sensitive personopplysninger."
             ],
             "correct": 3
         },
@@ -418,7 +418,7 @@
                 "Ønske om å kombinere tjenester.",
                 "Enklere å utnytte kapasitet bedre med felles nettverk.",
                 "Digital koding kan gi bedre feilsjekk og korrigering av feil.",
-                "Alle alternativene a-c er riktige."
+                "Alle alternativene er riktige."
             ],
             "correct": 3
         },
