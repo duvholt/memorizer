@@ -317,16 +317,6 @@
             "correct": 2
         },
         {
-            "question": "<p>…</p> i en HTML-fil definerer:",
-            "answers": [
-                "Et avsnitt.",
-                "Et adressefelt.",
-                "En hyperlenke.",
-                "Ingen av alternativene i a, b og c."
-            ],
-            "correct": 0
-        },
-        {
             "question": "Vi har en sortert liste med 100 000 000 elementer. Ved binærsøking i denne listen, hvor mange sammenligninger må vi i verste fall gjøre?",
             "answers": [
                 "Omtrent 20.",
@@ -336,11 +326,11 @@
             "correct": 1
         },
         {
-            "question": "A || !(B && C)  er usant (engelsk: false) når:",
+            "question": "A or not (B and C) er usant (engelsk: false) når:",
             "answers": [
-                "A false, B true, C true",
-                "A true, B true, C false",
-                "A false, B false, C true",
+                "A False, B True, C True",
+                "A True, B True, C False",
+                "A False, B False, C True",
                 "Uttrykket er ikke usant for noen av alternativene i a, b og c."
             ],
             "correct": 0
@@ -362,16 +352,6 @@
                 "Protokoll, maskin, sti",
                 "Domene, sti, fil",
                 "Ingen av alternativene i a, b og c er riktige."
-            ],
-            "correct": 0
-        },
-        {
-            "question": "Anta at karakterene har følgende fordeling: A (12 %), B (24 %), C (35 %), D (20 %), E (7 %) og F (2 %). Hva er en korrekt Huffmankoding for A-F?",
-            "answers": [
-                "A: 001 B: 10 C: 11 D: 01 E: 0001 F: 0000",
-                "A: 010 B: 01 C: 10 D: 111 E: 1110 F: 1111",
-                "A: 1111 B: 11 C: 1 D. 111 E: 11111 F: 111111",
-                "Ingen av alternativene i a, b og c."
             ],
             "correct": 0
         },
