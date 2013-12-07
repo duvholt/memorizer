@@ -43,9 +43,9 @@
 {% endif %}
 
 <div class="btn-group">
-	<a href="{{ url_for('show_question', id=prev) }}" class="btn btn-default">Forrige</a>
-	<a href="{{ url_for('show_question', id=random) }}" class="btn btn-default">Tilfeldig</a>
-	<a href="{{ url_for('show_question', id=next) }}" class="btn btn-{% if success is defined %}success{% else %}default{% endif %}">Neste</a>
+	<a href="{{ url_for('show_question', id=prev) }}" id="prev_question" class="btn btn-default">Forrige</a>
+	<a href="{{ url_for('show_question', id=random) }}" id="random_question" class="btn btn-default">Tilfeldig</a>
+	<a href="{{ url_for('show_question', id=next) }}" id="next_question" class="btn btn-{% if success is defined %}success{% else %}default{% endif %}">Neste</a>
 </div>
 <footer>
 	<p class="text-muted">Ved funn av eventuelle feil send gjerne en mail til <a href="mailto:itgk@cxhristian.com">itgk@cxhristian.com</a></p>

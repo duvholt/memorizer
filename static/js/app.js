@@ -24,13 +24,11 @@ $(document).keydown(function(e) {
 	
 	// Previous question
 	if (e.keyCode == 37) {
-		previousQuestion = currentQuestion - 1;
-		window.location = '/question/' + previousQuestion;
+		window.location = $('#prev_question').attr('href');
 	}
 	
 	// Next question
 	if (e.keyCode == 39) {
-		nextQuestion = currentQuestion + 1;
-		window.location = '/question/' + nextQuestion;
+		window.location = $('#next_question').attr('href');
 	}
 });
