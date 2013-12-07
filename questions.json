@@ -378,7 +378,7 @@
                 "Den opprinnelige datamengden kan gjenskapes nøyaktig.",
                 "Den komprimerte datamengden er like stor som utgangspunktet.",
                 "Egner seg spesielt godt for multimediedata som bilder, lyd og video.",
-                "Fjerner bare informasjonsinnhold som ikke er viktig for menneskers oppfatning |informasjonsmengden, for eksempel i et bilde."
+                "Fjerner bare informasjonsinnhold som ikke er viktig for menneskers oppfatning av informasjonsmengden, for eksempel i et bilde."
             ],
             "correct": 0
         },
