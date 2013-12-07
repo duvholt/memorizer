@@ -1,6 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>IT Grunnkurs Memorizer</h1>
+<h1>
+	IT Grunnkurs Memorizer
+	<a href="#" id="shortkeys" title="Hurtigtaster" data-content="
+		<li>Velg alternativ: 1, 2, 3 or 4</li>
+		<li>Svar: {spacebar}</li>
+		<li>Neste/Forrige spørsmål: Pil høyre/venstre</li>"
+	role="button"><span class="glyphicon glyphicon-info-sign"></span></a>
+</h1>
 <h3>Spørsmål #{{ id }}</h3>
 <h4>
 	<span class="label label-warning">Combo: {{ session.combo }}</span>

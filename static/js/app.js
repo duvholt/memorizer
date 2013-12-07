@@ -4,6 +4,7 @@
  * - Answer: {spacebar}
  * - Next/Previous question: Arrow right/left
  */
+ $('#shortkeys').popover({ 'placement': 'bottom', 'container': 'body', 'toggle': 'popover', 'html': true});
 $(document).keydown(function(e) {
 
 	// The current question
