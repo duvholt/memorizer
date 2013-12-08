@@ -763,12 +763,11 @@
             "correct": 3
         },
         {
-            "question": "Hva er et hovedkort (motherboard)?",
+            "question": "Binærtallet 10110100 tilsvarer hvilken verdi i ti-tallsystemet (desimaltallsystemet)?",
             "answers": [
-                "Bunnplata i et PC kabinett.",
-                "Sekundærminnet i en PC.",
-                "Et kretskort i en datamaskin der enheter som CPU, RAM, og andre enheter kobles sammen.",
-                "Et minnekort for å lagre ultralydbilder."
+                "64",
+                "134",
+                "180"
             ],
             "correct": 2
         },
@@ -1020,6 +1019,457 @@
                 "Utvikler programvaren uten noen plan eller prosess",
                 "Deler opp systemet i mindre deler som blir utviklet del for del",
                 "Lager en rask prototype basert på eksisterende krav"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "I setningen “På Værnes regnet det forrige uke følgende: 6mm 3mm 12mm 4mm 0mm 8mm 6mm” vil delen ”På Værnes regnet det forrige uke følgende:” være:",
+            "answers": [
+                "Informasjon",
+                "Data",
+                "Metadata"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Det finnes flere forskjellige typer lagring av data i en datamaskin. Hvilket av alternativene rangerer disse typene fra raskest til tregest?",
+            "answers": [
+                "Registre -> cache -> primærminnet -> sekundærminnet",
+                "Registre -> primærminnet -> sekundærminnet -> cache",
+                "Cache -> registre -> primærminnet -> sekundærminnet"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Når du sitter hjemme og leser nyheter på nettsidene til Adresseavisa så vil din datamaskin typisk være hva når det gjelder datakommunikasjon?",
+            "answers": [
+                "Tjener",
+                "Klient",
+                "Bruker"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hvor mange bits trenger du for å kode de 29 bokstavene i vårt alfabet ved enkel koding der alle bokstavene er representert med samme antall bits?",
+            "answers": [
+                "4",
+                "5",
+                "6"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Gitt en sortert liste på 4000 verdier. Hvor mange sammenligninger må vi i verste fall gjøre for å søke etter en verdi som ikke finnes i lista ved bruk av binærsøk?",
+            "answers": [
+                "8",
+                "12",
+                "48"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hvor mange forskjellige verdier kan representeres ved hjelp av 8 bits?",
+            "answers": [
+                "128",
+                "255",
+                "256"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hva får man når man multipliserer binærtallene 1011 og 11001 med hverandre?",
+            "answers": [
+                "101111001",
+                "100010011",
+                "110011011"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hva er fordelen med inkrementell utviklingsmetode sammenliknet med vannfallsmetoden?",
+            "answers": [
+                "Med inkrementell utvikling fullføres faser som f.eks. kravspesifikasjon helt ferdig før man går videre",
+                "Med inkrementell utvikling deles prosjektet opp i mindre deler hvor man utfører flere faser (som kravspesifisering, design, koding) for hver del",
+                "Med inkrementell utvikling begynner man å skrive koden først, og deretter dokumenterer man kravene og lager designet"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hvilken av disse enhetene benytter seg av IP-adresser for å videreformidle informasjon på nettverket?",
+            "answers": [
+                "Nav (Hub)",
+                "Svitsj (Switch)",
+                "Ruter (Router)"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hvilken av de følgende er en lovlig IP-addresse?",
+            "answers": [
+                "116.259.241.13",
+                "8.7.9.2",
+                "12.234.12.104.77"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hva er hovedoppgaven til en navnetjener?",
+            "answers": [
+                "Oversetter IP-adresser til domenenavn",
+                "Oversetter domenenavn til IP-adresser",
+                "Holder rede på variabelnavn når et program kjører"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hva betyr synbarhet ved programmering av funksjoner/metoder?",
+            "answers": [
+                "Alle variabler kommer tydelig frem ved listing",
+                "Variabler kan nåes fra hovedkoden",
+                "Samme navn kan brukes på variabler i forskjellige funksjoner/metoder"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hvorfor komprimeres data?",
+            "answers": [
+                "For at det skal ta mindre plass",
+                "For at det skal kunne gjøres tilgjengelig for alle på Internett",
+                "For at data ikke skal kunne leses av uvedkommende"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hva er en protokoll?",
+            "answers": [
+                "Et sett av kommunikasjonsregler",
+                "Et program som oversetter programmeringskode til kode som kan kjøres på en datamaskin",
+                "Hovedkomponenten i en vanlig datamaskin"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hva brukes en prosessor hovedsakelig til?",
+            "answers": [
+                "Direkte kjøre kode skrevet i JSP, Matlab eller andre programmeringsspråk",
+                "Utføre regneoperasjoner på og sammenlikninger av registre",
+                "Utføre regneoperasjoner på og sammenlikninger direkte på data lagret i primærminnet (RAM"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "I hvilket tilfelle kan man IKKE benytte seg av binærsøkalgoritmen?",
+            "answers": [
+                "Når man har for stor datamengde (tar for lang tid)",
+                "Når dataene ikke er sortert",
+                "Når man ikke vet om det man søker etter finnes i dataene"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hva er tallet 136510 representert som et binært tall?",
+            "answers": [
+                "11100101011",
+                "10110101010",
+                "10101010101"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hva er hovedoppgaven til kontrollenheten i en prosessor?",
+            "answers": [
+                "Holde orden på hvor langt prosessoren har kommet i JSP- eller Matlabprogrammet",
+                "Kontrollere at regneoperasjonene i ALU er korrekte",
+                "Ha kontroll på hvor neste instruksjon ligger i minnet (RAM)"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "TCP/IP er en samling av protokoller som inneholder protokollene:",
+            "answers": [
+                "HTTP, HTML, PHP, TCP, SMTP",
+                "HTTP, FTP, TCP, IP, SMTP",
+                "Kun TCP og IP"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hva er den viktigste oppgaven til en nettverksruter?",
+            "answers": [
+                "Koble sammen flere nettverkssegmenter av samme type",
+                "Forsterke og rense signaler i nettverket",
+                "Koble sammen ulike nettverk og nettverkssegmenter"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Minnehierarki i en datamaskin sortert på hastighet er som følger:",
+            "answers": [
+                "registre, cache, primærminne, sekundærminne",
+                "cache, registre, primærminne, sekundærminne",
+                "primærminne, cache, registre, sekundærminne"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hvor mange bits benyttes i nåværende IP-adresser (IPv4)?",
+            "answers": [
+                "32 bits",
+                "16 bits",
+                "48 bits"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "01010101 i binærtallsystemet, er det samme som (i titallsystemet)?",
+            "answers": [
+                "105",
+                "95",
+                "85"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "4095 (i titallsystemet) skal kodes heksadesimalt (16-tallsystemet). Hvor mange siffer blir det i resultatet?",
+            "answers": [
+                "5",
+                "4",
+                "3"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hva er den viktigste oppgaven til en nettverkssvitsj?",
+            "answers": [
+                "Sørge for at alle påkoblede maskiner mottar alle datapakker.",
+                "Overvåke og stenge ute uønsket nettverkstrafikk.",
+                "Fordele datatrafikken slik at datapakkene kommer frem til riktig mottaker."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Vi har en sortert liste med 5 000 000 elementer. Ved binærsøking i denne listen, hvor mange sammenligninger må vi i verste fall gjøre?",
+            "answers": [
+                "Omtrent 20",
+                "Omtrent 30",
+                "Omtrent 40"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Testing av programkode vil si at man:",
+            "answers": [
+                "Går gjennom programkoden og prøver å finne feil.",
+                "Lar noen utvalgte brukere prøve systemet.",
+                "Kjører programkoden og sjekker at forholdet mellom inndata og utdata er som forventet."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hva er fordelen med asymmetrisk kryptering fremfor symmetrisk kryptering?",
+            "answers": [
+                "Man kan publisere den ene nøkkelen.",
+                "Det er vanskeligere å knekke koden fordi man må finne to ulike nøkler.",
+                "Man kan være sikker på identiteten til den som har sendt meldingen (autentisering)."
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hva er nettverkstjenester?",
+            "answers": [
+                "E-post, filoverføring og trådløst nettverk.",
+                "Fildeling, WWW og e-post.",
+                "Filoverføring, TCP/IP og WWW."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "CPU er forkortelse for:",
+            "answers": [
+                "Central Pipelining Unit.",
+                "Coordinating Processor Unit.",
+                "Central Processing Unit."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Et tall av typen double lagres i 8 byte. Omtrent hvor mange slike tall kan lagres i en gigabyte (GB)?",
+            "answers": [
+                "Ca. 134 000.",
+                "Over 100 millioner.",
+                "Omtrent en milliard."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "På hvilken måte skiller harddisk seg fra primærminne (RAM):",
+            "answers": [
+                "Det tar lengre tid å skrive eller lese.",
+                "Dataene er sikre mot strømbrudd.",
+                "Verken a eller b.",
+                "Både a og b."
+            ],
+            "correct": 3
+        },
+        {
+            "question": "A and (B or C) er True (sant) for:",
+            "answers": [
+                "A True, B True, C False",
+                "A True, B False, C False",
+                "A False, B True, C True"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hovedgrunnen til at vi deler opp lengre programmer ved å bruke metoder:",
+            "answers": [
+                "Det går raskere å kjøre programmet.",
+                "Programmet får høyere funksjonalitet.",
+                "Det er lettere å forstå programmet."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hva stemmer ikke om kommentarer i programkode?",
+            "answers": [
+                "Programmet tar større plass på harddisken.",
+                "De gjør det lettere å forstå koden.",
+                "Programmet kjører langsommere."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hvor mange bit trenger du til å kode det norske alfabetet (29 forskjellige bokstaver) ved enkel koding hvor alle symbolene er representert med samme antall bit.",
+            "answers": [
+                "5 bits",
+                "6 bits",
+                "8 bits"
+            ],
+            "correct":  0
+        },
+        {
+            "question": "Hvilken type minne har normalt høyest tilgangstid (access time) i en datamaskin?",
+            "answers": [
+                "Registre",
+                "Cache",
+                "Primærminne"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "En ulempe med åpen kildekode (open source) er:",
+            "answers": [
+                "Du kan ikke endre produktet selv",
+                "Det er store firma står som regel bak utviklingen",
+                "Du har normalt ikke krav på brukerstøtte"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hva er svart-boks testing?",
+            "answers": [
+                "Testing som konsentrerer seg om systemets eller modulens indre oppbygning",
+                "Testing som ikke ser på systemets eller modulens indre oppbygning",
+                "Testing som konsentrerer seg om hvordan de ulike delene i et system fungerer sammen"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hva er kjernen i et operativsystem?",
+            "answers": [
+                "Den delen som tar i mot input fra brukeren",
+                "Den delen som administrerer maskinressurser",
+                "Det mediet som operativsystemet installeres fra"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hvorfor krypteres data?",
+            "answers": [
+                "For at data ikke skal kunne leses av uvedkommende",
+                "For at det skal ta mindre plass",
+                "For at det skal kunne gjøres tilgjengelig for alle på Internett"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "En protokoll er:",
+            "answers": [
+                "Et program som oversetter kildekode til maskinkode slik at det kan kjøres på en datamaskin",
+                "En enhet som gjør beregninger og sammenlikninger i en datamaskin",
+                "Et sett av kommunikasjonsregler"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Er binærsøk alltid raskere enn sekvensielt søk?",
+            "answers": [
+                "Binærsøk er alltid raskere enn sekvensielt søk uansett",
+                "Binærsøk er alltid raskere enn sekvensielt søk på sorterte datamengder",
+                "Sekvensielt søk kan være raskere enn binærsøk"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hva gjør man når man designer et system under systemutvikling?",
+            "answers": [
+                "Beskriver hva systemet skal gjøre",
+                "Beskriver hvordan systemet skal lages",
+                "Beskriver kun hvordan systemet skal se ut"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hva er hovedoppgaven til en navnetjener?",
+            "answers": [
+                "Oversetter domenenavn til IP-adresser",
+                "Oversetter IP-adresser til domenenavn",
+                "Oversetter IP-adresser til URL"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "I det binære tallsystemet, hva er 010 multiplisert med 101?",
+            "answers": [
+                "111",
+                "1010",
+                "1111"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hva er inspeksjon i systemutvikling?",
+            "answers": [
+                "Inspeksjon innebærer å finne feil eller forsikre seg om at feil ikke finnes uten å kjøre programmet",
+                "Inspeksjon innebærer å undersøke om de som programmerer lager ryddige programmer som er lette å lese",
+                "Inspeksjon innebærer å finne feil i koden ved å kjøre programmet"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hva er en normal konfigurasjon av en klient-tjener arkitektur?",
+            "answers": [
+                "Få tjenere, mange klienter",
+                "Mange tjenere, få klienter",
+                "Mange tjenere, mange klienter"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "En bit av et program består av ei for-løkke inne i ei for-løkke. Begge løkkene løper igjennom tallverdiene 1:N. Tidsforbruket til denne programbiten vil være proporsjonalt med -",
+            "answers": [
+                "N",
+                "N log N",
+                "N^2"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Gitt ei sortert liste av 272 verdier. Vi søker etter en verdi som ikke finnes i lista. Hvor mange sammenligninger må vi i verste fall gjøre ved bruk av binærsøk?",
+            "answers": [
+                "136",
+                "8",
+                "9"
             ],
             "correct": 2
         }
