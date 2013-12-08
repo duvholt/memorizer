@@ -772,16 +772,6 @@
             "correct": 2
         },
         {
-            "question": "Hva gjør en enhetstest?",
-            "answers": [
-                "Tester individuelle deler av programvaren.",
-                "Tester at selve datamaskinen (maskinvaren) fungerer.",
-                "Tester at ulike deler av systemet fungerer sammen på en korrekt måte.",
-                "Ingen av alternativene er riktig."
-            ],
-            "correct": 0
-        },
-        {
             "question": "Hva definerer et ”peer-to-peer” nettverk?",
             "answers": [
                 "En er slave, de andre er sjefer.",
@@ -800,16 +790,6 @@
                 "Ingen av alternativene er riktig."
             ],
             "correct": 1
-        },
-        {
-            "question": "Hva er et flytskjema innen programmering?",
-            "answers": [
-                "En grafisk representasjon av en algoritme.",
-                "En presis beskrivelse av en endelig serie operasjoner som skal utføres for å løse et problem.",
-                "En tekstlig beskrivelse som beskriver flyten i et program.",
-                "Ingen av alternativene er riktig."
-            ],
-            "correct": 0
         },
         {
             "question": "Hva kalles den siste fasen i livssyklusen til systemutvikling av informasjonssystemer?",
@@ -1113,15 +1093,6 @@
             "correct": 1
         },
         {
-            "question": "Hva er hovedoppgaven til en navnetjener?",
-            "answers": [
-                "Oversetter IP-adresser til domenenavn",
-                "Oversetter domenenavn til IP-adresser",
-                "Holder rede på variabelnavn når et program kjører"
-            ],
-            "correct": 1
-        },
-        {
             "question": "Hva betyr synbarhet ved programmering av funksjoner/metoder?",
             "answers": [
                 "Alle variabler kommer tydelig frem ved listing",
@@ -1418,15 +1389,6 @@
                 "Beskriver kun hvordan systemet skal se ut"
             ],
             "correct": 1
-        },
-        {
-            "question": "Hva er hovedoppgaven til en navnetjener?",
-            "answers": [
-                "Oversetter domenenavn til IP-adresser",
-                "Oversetter IP-adresser til domenenavn",
-                "Oversetter IP-adresser til URL"
-            ],
-            "correct": 0
         },
         {
             "question": "I det binære tallsystemet, hva er 010 multiplisert med 101?",
