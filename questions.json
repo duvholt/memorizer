@@ -994,7 +994,7 @@
         {
             "question": "Hva kjennetegner inkrementell programvareutvikling?",
             "answers": [
-                "Utvikler programvaren i de klart avskilte fasene krav, design, implementasj on, testing osv.",
+                "Utvikler programvaren i de klart avskilte fasene krav, design, implementasjon, testing osv.",
                 "Utvikler programvaren uten noen plan eller prosess",
                 "Deler opp systemet i mindre deler som blir utviklet del for del",
                 "Lager en rask prototype basert på eksisterende krav"
