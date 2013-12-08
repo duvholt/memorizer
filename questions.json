@@ -917,7 +917,7 @@
                 "2 s",
                 "10 s",
                 "100 s",
-                "1000 s 1"
+                "1000 s"
             ],
             "correct": 2
         },
@@ -927,14 +927,14 @@
                 "Lignende operasjoner blir utført i rekkefølge",
                 "Flere instruksjoner kan være under utførelse samtidig",
                 "En effektiv organisering av datamaskinens hukommelse",
-                "En mekanisme for å utveksle data mellom programmer 1"
+                "En mekanisme for å utveksle data mellom programmer"
             ],
             "correct": 1
         },
         {
             "question": "Hvor mange symboler kan representeres av en sekvens på K bit?",
             "answers": [
-                "K2",
+                "K^2",
                 "2K",
                 "K",
                 "2"
@@ -957,8 +957,7 @@
                 "Vi trenger ikke å punktprøve (sample) like",
                 "Vi oppfyller kravene i Nyquist-regelen",
                 "Vi kan representere stereo-lyd",
-                "Vi får en mer nøyaktig digitalisering",
-                1
+                "Vi får en mer nøyaktig digitalisering"
             ],
             "correct": 3
         },
