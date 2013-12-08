@@ -206,7 +206,7 @@
                 "En tjener utfører tjenester på vegne av en klient.",
                 "En tjener etterspør tjenester fra klienter.",
                 "En tjener er et program som vil ha noe utført på en annen maskin.",
-                "Ingen av alternativene i a, b og c."
+                "Ingen av alternativene er riktig."
             ],
             "correct": 0
         },
@@ -225,7 +225,7 @@
                 "Å oversette domenenavn til IP-adresser.",
                 "Å oversette IP-adresser til domenenavn.",
                 "Å holde rede på definerte variabelnavn når et program kjører.",
-                "Ingen av alternativene i a, b og c."
+                "Ingen av svarene er riktige."
             ],
             "correct": 0
         },
@@ -291,7 +291,7 @@
                 "1011011",
                 "1010101",
                 "1010001",
-                "Ingen av alternativene i a, b og c er riktige."
+                "Ingen av svarene er riktige."
             ],
             "correct": 2
         },
@@ -301,7 +301,7 @@
                 "42561",
                 "43981",
                 "44981",
-                "Ingen av alternativene i a, b og c er riktige."
+                "Ingen av svarene er riktige."
             ],
             "correct": 1
         },
@@ -311,7 +311,7 @@
                 "Quantity of Storage.",
                 "Quality of Servers.",
                 "Quality of Service.",
-                "Ingen av alternativene i a, b og c er riktige."
+                "Ingen av svarene er riktige."
             ],
             "correct": 2
         },
@@ -330,7 +330,7 @@
                 "A False, B True, C True",
                 "A True, B True, C False",
                 "A False, B False, C True",
-                "Uttrykket er ikke usant for noen av alternativene i a, b og c."
+                "Ingen av svarene er riktige."
             ],
             "correct": 0
         },
@@ -340,7 +340,7 @@
                 "Et mål på informasjonsinnholdet i en melding.",
                 "En algoritme for effektiv koding av symboler.",
                 "En feiltilstand som gjør at lesehodet på en harddisk ikke klarer å følge sporene nøyaktig og derfor blander data fra flere spor.",
-                "Ingen av alternativene i a, b og c er riktige."
+                "Ingen av svarene er riktige."
             ],
             "correct": 0
         },
@@ -350,7 +350,7 @@
                 "Protokoll, maskin, sti, fil",
                 "Protokoll, maskin, sti",
                 "Domene, sti, fil",
-                "Ingen av alternativene i a, b og c er riktige."
+                "Ingen av svarene er riktige."
             ],
             "correct": 0
         },
@@ -1276,8 +1276,8 @@
             "answers": [
                 "Det tar lengre tid å skrive eller lese.",
                 "Dataene er sikre mot strømbrudd.",
-                "Verken a eller b.",
-                "Både a og b."
+                "Begge utsagnene er feil.",
+                "Begge utsagnene er riktig."
             ],
             "correct": 3
         },
