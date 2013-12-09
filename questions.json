@@ -935,7 +935,7 @@
             "question": "Hvor mange symboler kan representeres av en sekvens på K bit?",
             "answers": [
                 "K^2",
-                "2K",
+                "2^K",
                 "K",
                 "2"
             ],
