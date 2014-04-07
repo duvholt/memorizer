@@ -6,7 +6,7 @@ import json
 app = Flask(__name__)
 app.config.from_pyfile('config.py')
 app.wsgi_app = ProxyFix(app.wsgi_app)
-with open('questions.json') as f:
+with open('questions.json', encoding='utf-8') as f:
 	questions = json.load(f)['questions']
 
 @app.route('/')
