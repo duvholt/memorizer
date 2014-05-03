@@ -9,6 +9,7 @@ import random
 app = Flask(__name__)
 app.config.from_pyfile('config.py')
 app.wsgi_app = ProxyFix(app.wsgi_app)
+db.init_app(app)
 
 
 @app.route('/')
@@ -137,5 +138,4 @@ def utility_processor():
     return dict(percentage=percentage)
 
 if __name__ == '__main__':
-    db.init_app(app)
     app.run()
