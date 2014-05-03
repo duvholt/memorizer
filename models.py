@@ -1,14 +1,11 @@
-from .main import app
-from flask.ext.sqlalchemy import SQLAlchemy
-
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
-db = SQLAlchemy(app)
+from main import db
 
 
 class Course(db.Model):
     __tablename__ = 'course'
-    code = db.Column(db.String(80), primary_key=True)
-    name = db.Column(db.String(120), unique=True)
+    id = db.Column(db.Integer, primary_key=True)
+    code = db.Column(db.String(80), unique=True)
+    name = db.Column(db.String(120))
     questions = db.relationship("Question", backref='course')
 
     def __init__(self, code, name):
@@ -16,19 +13,21 @@ class Course(db.Model):
         self.name = name
 
     def __repr__(self):
-        return self.name
+        return self.code + ' ' + self.name
 
 
 class Question(db.Model):
     __tablename__ = 'question'
 
     id = db.Column(db.Integer, primary_key=True)
+    number = db.Column(db.Integer)
     text = db.Column(db.String)
     correct = db.Column(db.Integer)
-    alternative = db.relationship("Alternative", backref='question')
-    course_id = db.Column(db.Integer, db.ForeignKey("course.code"))
+    alternatives = db.relationship("Alternative", backref='question', order_by='Alternative.number')
+    course_id = db.Column(db.Integer, db.ForeignKey("course.id"))
 
-    def __init__(self, text, course_id, correct):
+    def __init__(self, number, text, course_id, correct):
+        self.number = number
         self.text = text
         self.correct = correct
         self.course_id = course_id
@@ -37,14 +36,18 @@ class Question(db.Model):
         return self.text
 
 
-
 class Alternative(db.Model):
     __tablename__ = 'alternative'
 
     id = db.Column(db.Integer, primary_key=True)
+    number = db.Column(db.Integer)
     text = db.Column(db.String)
     question_id = db.Column(db.Integer, db.ForeignKey("question.id"))
 
-    def __init__(self, text, question):
+    def __init__(self, text, number, question_id):
         self.text = text
+        self.number = number
         self.question_id = question_id
+
+    def __repr__(self):
+        return self.text

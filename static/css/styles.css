@@ -1,3 +1,11 @@
 .stats {
 	font-size: 16px;
 }
+
+.stats .btn-xs {
+    padding: 2px 5px;
+}
+
+.popover {
+    max-width: 350px;
+}

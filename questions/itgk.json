@@ -1,4 +1,6 @@
 {
+    "name": "IT Grunnkurs",
+    "code": "TDT4100",
     "questions": [
         {
             "question": "Hva er et hovedkort (motherboard)",

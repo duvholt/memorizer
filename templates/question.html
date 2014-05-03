@@ -1,20 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>
-	IT Grunnkurs Memorizer
+	Memorizer
 	<a href="#" id="shortkeys" title="Hurtigtaster" data-content="
 		<li>Velg alternativ: 1, 2, 3 or 4</li>
 		<li>Svar: {spacebar}</li>
 		<li>Neste/Forrige spørsmål: Pil høyre/venstre</li>"
 	role="button"><span class="glyphicon glyphicon-info-sign"></span></a>
 </h1>
-<h3>Spørsmål #{{ id }}</h3>
+<ol class="breadcrumb">
+	<li><a href="{{ url_for('main') }}">Emner</a></li>
+	<li class="active">{{ course }}</li>
+</ol>
+<h3>Spørsmål #{{ question.number + 1 }}</h3>
 <div class="stats">
-	<span class="label label-warning">Combo: {{ session.combo }}</span>
-	<span class="label label-primary">Poeng: {{ session.points }} ({{ percentage(session.points, session.total) }}%)</span>
+	<span class="label label-warning">Combo: {{ score.combo }}</span>
+	<span class="label label-primary">Poeng: {{ score.points }} ({{ percentage(score.points, score.total) }}%)</span>
 
-	<span class="label label-primary">Spørsmål: {{ session.total }}/{{ num_questions }}</span>
-	<a href="{{ url_for('reset_stats') }}" class="btn btn-default btn-xs">Nullstill</a>
+	<span class="label label-primary">Spørsmål: {{ score.total }}/{{ num_questions }}</span>
+	<a href="{{ url_for('reset_stats', course_id=course.id) }}" class="btn btn-default btn-xs">Nullstill</a>
 </div>
 {% for alert in alerts %}
 	<div class="alert alert-{{ alert.level }} alert-dismissable">
@@ -24,23 +28,23 @@
 {% endfor %}
 
 {% if question is defined %}
-<h4>{{ question.question }} </h4>
+<h4>{{ question.text }}</h4>
 <div class="container">
 	<form class="form-horizontal" role="form" method="post">
 	<div class="form-group">
-	<input type="hidden" name="order" value="{{ answers|join(',', attribute=0) }}">
-	{% for index, answer in answers %}
-	{% if (index)|string() == request.form.answer %}<div class="has-{% if success %}success{% else %}error{% endif %}">{% endif %}
+	<input type="hidden" name="order" value="{{ alternatives|join(',', attribute='number') }}">
+	{% for alternative in alternatives %}
+	{% if (alternative.number)|string() == request.form.answer %}<div class="has-{% if success %}success{% else %}error{% endif %}">{% endif %}
 		<div class="radio">
 			<label>
 				{% if success is defined %}
-					<span class="glyphicon {% if index == question.correct %}glyphicon-ok{% else %}glyphicon-remove{% endif %}"></span>
+					<span class="glyphicon {% if alternative.number == question.correct %}glyphicon-ok{% else %}glyphicon-remove{% endif %}"></span>
 				{% endif %}
-				<input type="radio" name="answer" value="{{ index }}">
-				{{ answer }}
+				<input type="radio" name="answer" value="{{ alternative.number }}">
+				{{ alternative }}
 			</label>
 		</div>
-	{% if index|string() == request.form.answer %}</div>{% endif %}
+	{% if alternative.number|string() == request.form.answer %}</div>{% endif %}
 	{% endfor %}
 	</div>
  	<div class="form-group">
@@ -49,11 +53,10 @@
 	</form>
 </div>
 {% endif %}
-
 <div class="btn-group">
-	<a href="{{ url_for('show_question', id=prev) }}" id="prev_question" class="btn btn-default">Forrige</a>
-	<a href="{{ url_for('show_question', id=random) }}" id="random_question" class="btn btn-default">Tilfeldig</a>
-	<a href="{{ url_for('show_question', id=next) }}" id="next_question" class="btn btn-{% if success is defined %}success{% else %}default{% endif %}">Neste</a>
+	<a href="{{ url_for('show_question', course_id=question.course.id, id=prev) }}" id="prev_question" class="btn btn-default">Forrige</a>
+	<a href="{{ url_for('show_question', course_id=question.course.id, id=random) }}" id="random_question" class="btn btn-default">Tilfeldig</a>
+	<a href="{{ url_for('show_question', course_id=question.course.id, id=next) }}" id="next_question" class="btn btn-{% if success is defined %}success{% else %}default{% endif %}">Neste</a>
 </div>
 <footer>
 	<p class="text-muted">Ved funn av eventuelle feil send gjerne en mail til <a href="mailto:itgk@cxhristian.com">itgk@cxhristian.com</a></p>
