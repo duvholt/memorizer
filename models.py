@@ -1,4 +1,6 @@
-from main import db
+from flask.ext.sqlalchemy import SQLAlchemy
+
+db = SQLAlchemy()
 
 
 class Course(db.Model):

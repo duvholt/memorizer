@@ -1,5 +1,5 @@
 from flask import abort, Flask, redirect, render_template, request, session, url_for
-from flask.ext.sqlalchemy import SQLAlchemy
+from models import db
 from werkzeug.contrib.fixers import ProxyFix
 import json
 import models
@@ -9,7 +9,6 @@ import random
 app = Flask(__name__)
 app.config.from_pyfile('config.py')
 app.wsgi_app = ProxyFix(app.wsgi_app)
-db = SQLAlchemy(app)
 
 
 @app.route('/')
@@ -138,4 +137,5 @@ def utility_processor():
     return dict(percentage=percentage)
 
 if __name__ == '__main__':
+    db.init_app(app)
     app.run()
