@@ -20,6 +20,9 @@
 {% endfor %}
 
 {% if question is defined %}
+{% if question.image %}
+<img src="{{ question.image }}">
+{% endif %}
 <h4>{{ question.text }}</h4>
 <div class="container">
 	<form class="form-horizontal" role="form" method="post">
