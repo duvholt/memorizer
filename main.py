@@ -67,7 +67,10 @@ def show_question(course_id, id):
     if request.method == 'POST':
         answer = request.form.get('answer')
         if answer:
-            context['success'] = int(answer) == question.correct
+            for alternative in context['alternatives']:
+                if str(alternative.number) == answer:
+                    context['success'] = alternative.correct
+                    break
             # Checking if question has already been answered
             if id not in c_session['answered']:
                 c_session['points'] += int(context['success'])
@@ -95,21 +98,32 @@ def show_question(course_id, id):
 
 @app.route('/import')
 def import_questions():
-    models.db.drop_all()
-    models.db.create_all()
+    with app.app_context():
+        models.db.drop_all()
+        models.db.create_all()
     for filename in os.listdir('questions'):
+        if os.path.isdir(os.path.join('questions', filename)):
+            continue
         with open('questions/' + filename, encoding='utf-8') as f:
             course_json = json.load(f)
-        course = models.Course(course_json['code'], course_json['name'])
+        course = models.Course.query.filter_by(code=course_json['code'], name=course_json['name']).first()
+        if not course:
+            course = models.Course(course_json['code'], course_json['name'])
+            db.session.add(course)
+            db.session.commit()
         questions = course_json['questions']
-        db.session.add(course)
-        db.session.commit()
         for i, question in enumerate(questions):
-            question_object = models.Question(i, question['question'], course.id, question['correct'])
+            question_object = models.Question(i, question['question'], course.id)
             db.session.add(question_object)
             db.session.commit()
             for number, answer in enumerate(question['answers']):
-                alternative = models.Alternative(answer, number, question_object.id)
+                if type(question['correct']) is int and question['correct'] == number:
+                    correct = True
+                elif type(question['correct']) is list and number in question['correct']:
+                    correct = True
+                else:
+                    correct = False
+                alternative = models.Alternative(answer, number, correct, question_object.id)
                 db.session.add(alternative)
             db.session.commit()
     return redirect(url_for('main'))

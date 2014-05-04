@@ -38,7 +38,7 @@
 		<div class="radio">
 			<label>
 				{% if success is defined %}
-					<span class="glyphicon {% if alternative.number == question.correct %}glyphicon-ok{% else %}glyphicon-remove{% endif %}"></span>
+					<span class="glyphicon {% if alternative.correct %}glyphicon-ok{% else %}glyphicon-remove{% endif %}"></span>
 				{% endif %}
 				<input type="radio" name="answer" value="{{ alternative.number }}">
 				{{ alternative }}

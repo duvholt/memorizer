@@ -8,7 +8,7 @@ class Course(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     code = db.Column(db.String(80), unique=True)
     name = db.Column(db.String(120))
-    questions = db.relationship("Question", backref='course')
+    questions = db.relationship('Question', backref='course')
 
     def __init__(self, code, name):
         self.code = code
@@ -24,14 +24,12 @@ class Question(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     number = db.Column(db.Integer)
     text = db.Column(db.String)
-    correct = db.Column(db.Integer)
-    alternatives = db.relationship("Alternative", backref='question', order_by='Alternative.number')
-    course_id = db.Column(db.Integer, db.ForeignKey("course.id"))
+    alternatives = db.relationship('Alternative', backref='question', order_by='Alternative.number')
+    course_id = db.Column(db.Integer, db.ForeignKey('course.id'))
 
-    def __init__(self, number, text, course_id, correct):
+    def __init__(self, number, text, course_id):
         self.number = number
         self.text = text
-        self.correct = correct
         self.course_id = course_id
 
     def __repr__(self):
@@ -44,11 +42,13 @@ class Alternative(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     number = db.Column(db.Integer)
     text = db.Column(db.String)
-    question_id = db.Column(db.Integer, db.ForeignKey("question.id"))
+    correct = db.Column(db.Boolean)
+    question_id = db.Column(db.Integer, db.ForeignKey('question.id'))
 
-    def __init__(self, text, number, question_id):
+    def __init__(self, text, number, correct, question_id):
         self.text = text
         self.number = number
+        self.correct = correct
         self.question_id = question_id
 
     def __repr__(self):

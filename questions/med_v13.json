@@ -1,0 +1,427 @@
+{
+    "name": "Innføring i medisin for ikke-medisinere",
+    "code": "MFEL1010",
+    "questions": [
+        {
+            "question": "Lungene har en likevektstilstand der det er balanse mellom elastiske krefter som trekker brystveggen utover og lungene innover. Da trenger vi ikke bruke respirasjonsmuskler for å opprettholde denne tilstanden. Hva kalles det totale lungevolumet vi har i denne likevektstilstanden? / Lungene har en likevektstilstand der det er balanse mellom elastiske krefter som trekker brystveggen utover og lungene innover. Da trenger vi ikkje bruke respirasjonsmusklar for å oppretthalde denne tilstanden. Kva blir det totale lungevolumet vi har i denne likevektstilstanden kalla? / The lungs have a state and size of equilibrium where there is a balance between elastic forces pulling the thorax wall outwards and the lungs inwards. Thus, we don’t need to use respiratory muscle activity to maintain this state. What is the name of the total gas volume we have in this equilibrium state?",
+            "answers": [
+                "Residualvolumet / Recidual volume (RV)",
+                "Ekspiratorisak reservevolum /Expiratory reserve volume (ERV)",
+                "Funksjonelt residualvolum / Functional recidual kapacity (FRC)",
+                "Inspiratorisk reservevolum / Inspiratory reserve volume (IRV)"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hvor i thorax er trykket laves under inspirasjon? / Kor i thorax er trykket lågast under inspirasjon? / Where in thorax is the pressure lowest during inspiration?",
+            "answers": [
+                "Trachea",
+                "Bronkiene / Bronkiane / The bronchii",
+                "Alveolene / Alveolane / The alveoli",
+                "Pleura"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Når aortaklaffen lekker, høres en bilyd. Når omtrent høres denne i relasjon til EKG? / Når aortaklaffen lekk, kan ein høre ein bilyd. Når omtrent kommer denne i relasjon til EKG? / When the aortic valve is leaking, there is a heart murmur. When can this be heard in relation to the ECG?",
+            "answers": [
+                "QT-intervallet /The QT interval",
+                "T-takken / The T-wave",
+                "TP intervallet / the TP interval",
+                "TQ intervallet / the TQ interval"
+            ],
+            "correct": [
+                2,
+                3
+            ]
+        },
+        {
+            "question": "Ejeksjonsfraksjonen er et mål på venstre ventrikkels systoliske funksjon. En hjertesviktpasient har et endediastolisk volum på 250 ml, et minuttvolum i hvile på 4 l/min og en hvilepuls på 80 slag pr. min. Hva er ejeksjonsfraksjonen? / Ejeksjonsfraksjonen er et mål på venstre ventrikkels systoliske funksjon. En hjertesviktpasient har et endediastolisk volum på 250 ml, et minuttvolum i kvile på 4 l/min og en kvilepuls på 80 slag pr. min. Kva er ejeksjonsfraksjonen? / The ejection fraction is a measure of systolic left ventricular function. A heart failure patient has an end diastolic volume of 250 ml, a resting cardiac output of 4 l/min and a resting heart rate of 80 beats / min. What is the ejection fraction?",
+            "answers": [
+                "80 %",
+                "62,5%",
+                "30%",
+                "20%"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Hemolytisk sykdom hos et foster eller nyfødt skyldes rhesus blodtypesystemet. Hvilken kombinasjon av rhesusblodtyper må foreligge for at denne tilstanden skal oppstå? / Hemolytisk sjukdom hos et foster eller nyfødt skyldes rhesus blodtypesystemet. Kva for ein kombinasjon av rhesusblodtyper må vere til stades for at denne tilstanden skal oppstå? /Haemolytic disease of the newborn is due to the rhesus blood type system. Which combination of blood types has to exist to induce this disease?",
+            "answers": [
+                "Både mor og barn er rhesus negative / Both mother and child are rhesus negative",
+                "Mor er rhesus positiv, barnet rhesus negativt / Mother is rhesus positive, child is rhesus negative",
+                "Mor er rhesus negativ, barnet rhesus positivt / Mother is rhesus negative, child is rhesus positive",
+                "Både mor og barn er rhesus positive / Both mother and child are rhesus positive"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Krebs syklus er en biokjemisk kjedereaksjon som er grunnlaget for det meste av energiproduksjonen. Hvor i cellen foregår denne prosessen? / Krebs syklus er en biokjemisk kjedereaksjon som er grunnlaget for det meiste av energiproduksjonen. Kor i cellen går denne prosessen føre seg? / Krebs’ cycle is a biochemical process that is the basis for most of the energy production. Where in the cell does this process take place?",
+            "answers": [
+                "Cytoplasma / The cytoplasm",
+                "Glatt endoplasmatisk reticulum / Smooth endoplasmatic reticulum",
+                "Golgi apparatet / The Golgi apparatus",
+                "Mitokondriene / The mitochondria"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Hva er hovedproblemet med et skiveprolaps? / Kva er hovuproblemet med eit skiveprolaps? / What is the main problem of a nucleus prolapse( ruptured disk)?",
+            "answers": [
+                "Redusert bevegelighet av ryggvirvlene / Redusert bevegelighet av ryggvirvlane / Reduced mobility of the vertebrae",
+                "Betennelse omkring skiven / Inflammation around the disc",
+                "Trykk på nerverøttene / Compression of the nerve roots",
+                "Muskelsvekkelse I ryggen / Weakening of the back muscles"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Gjennomsnittlig insidens av influensa I Norge I uke 45 I 2009 var 14%. Vi kan anta en gjennomsnittlig sykdomsvarighet på 3 dager. Hva var gjennomsnittlig prevalens av influenza I den uka? / Gjennomsnittleg insidens av influensa I Noreg I uke 45 I 2009 var 14%. Vi kan anta en gjennomsnittlig sjukdomsvarighet på 3 dagar. Kva var gjennomsnittlig prevalens av influensa I den veka? / Mean incidence of influenza in Norway in week 45 in 2009 was 14%. We may consider that the duration of influenza to be on the average 3 days. What was the mean prevalence of influenza during that week?",
+            "answers": [
+                "2.25%",
+                "4.5%",
+                "6%",
+                "14%"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Ultralyd Doppler kan male måle blodhastighet. Vi er interessert i å male hastigheten i en bestemt dybde. Dette gjøres med pulset Doppler. Hvordan oppnås dybdeselektivitet? / Ultralyd Doppler kan male måle blodhastighet. Vi er interessert i å male hastigheten i en bestemt dybde. Dette blir gjort med pulsa Doppler. Korleis blir dybdeselektivitet oppnådd? / Ultrasound Doppler can measure blood velocity. We are interested in measuring the blood velocity at a certain depth. This is done by pulsed Doppler. How is the depth selectivity achieved?",
+            "answers": [
+                "Ved å variere frekvensen i det utsendte signalet / By varying the frequency in the transmitted signal",
+                "Ved å variere energien I det utsendte signalet / By varying the total energy in the transmitted signal",
+                "Ved å selektere det reflekterte signalet på et bestemt tidspunkt etter at pulsen er sendt ut / By selecting the reflected signal at a certain time after the pulse is sent out (time gating)",
+                "Ved å selektere bestemte frekvenser i det reflekterte signalet / By selecting a certain frequency in the reflected signal (frequency gating)"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hva kalles muskler som beveger et ledd i to motsatte retninger? / Kva kallast musklar som beveger eit ledd i to motsette retningar? / What do you call muscles that move a joint in two opposite directions?",
+            "answers": [
+                "Agonister /Agonistar/Agonists",
+                "Antagonister / Antagonistar / Antagonists",
+                "Synergister / Synergistar / Synergists",
+                "Primærmuskler / Primærmusklar / Prime movers"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hva heter den bevegelsen som er vist ved pilen på figuren? / Kva heter den bevegelsen som er vist ved pilen på figuren? /What is the movement called that is shown by the arrow in the figure?",
+            "answers": [
+                "Pronasjon / Pronation",
+                "Supinasjon / Supination",
+                "Abduksjon / Abduction",
+                "Adduksjon / Adduction"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "En styrkeløfter prøver et markløft, men vekta er så tung at han ikke klarer å bevege den. Hva slags muskelkontraksjon utfører han da? / Ein styrkeløftar prøver eit markløft, men vekta er så tung at han ikkje klarer å bevege den. Kva slag muskelkontraksjon utfører han da? / A powerlifter tries a deadlift, butt he weight is so heavy that he can’t move it. What kind of muscle contraction is he performing?",
+            "answers": [
+                "Isometrisk / Isometric",
+                "Isotonisk / Isotonic",
+                "Eksentrisk / Eccentric",
+                "Konsentrisk / Concentric"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Bildet viser et ultralydbilde av et hjerte der en enkelt ultralydstråle er brukt til å ta opp ekko som skrives ut langs en tidsakse, slik at vi får et diagram av bevegelsen til strukturer i hjertet. Hva kalles denne ultralydmodaliteten? / Bildet viser eit 2- dimensjonalt ultralydbilde av eit hjerte der ein enkelt ultralydstråle er brukt til å ta opp ekko som skrives ut langs en tidsakse, slik at vi får eit diagram av bevegelsen til strukturer i hjertet. Kva blir denne ultralydmodaliteten kalla? / The picture shows a 2- dimensional ultrasound picture of a heart where a single ultrasound beam is used to record an echo that is printed along a time axis, giving a diagrom of the motion of structures in the heart . What is this ultrasound modality called?",
+            "answers": [
+                "A-mode",
+                "B-mode",
+                "M-mode",
+                "Doppler mode"
+            ],
+            "correct": [
+                1,
+                2
+            ]
+        },
+        {
+            "question": "Det finnes flere typer doping (prestasjonsfremmende medikamenter) innen forskjellige idretter. Et av dem er erythropoietin. Dette virker ved å: / Det finnes fleire typar doping (prestasjonsfremmende medikament) innan forskjellige idrett. Et av dei er erythropoietin. Dette verker ved å: / There are different types of doping (prestation enhancers) in sports. One of them is erythropoietin, which works by:",
+            "answers": [
+                "Stimulere muskelvekst (anabolt)/ Stimulating muscle growth (anabolic)",
+                "Øke hjertets pumpekraft og dermed minuttvolumet / Auke hjertets pumpekraft og dermed minuttvolumet / Increasing cardiac pumping power and thus cardiac output",
+                "Øke hemoglobinet og dermed blodets oksygentransportkapasitet / Auke hemoglobinet og dermed blodets oksygentransportkapasitet / Increasing the haemoglobin and thus the transport capacity of blood for oxygen",
+                "Øke musklenes anaerobe terskel ved å øke mitochondriekapasiteten/ Auke musklanes anaerobe terskel ved å ake mitochondriekapasiteten / Increasing the anaerobic threshold of muscles by increasing mitochondrial capacity"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "En pasient på hjerteovervåkning får plutselig omslag av rytmen og pulsen som vist på figurenunder. Hva er mekanismen? / Ein pasient på hjerteovervåkning får plutselig omslag av rytmen og pulsen som vist på figuren under. Kva er mekanismen? / A patient in the coronary care unit suddenly displays a change in the heart rhythm and pulse as shown in the figure. What is the mechanism?",
+            "answers": [
+                "Atriene begynner plutselig å slå ukoordinert / Atria begynner plutselig å slå ukoordinert / The atria suddenly starts to beat in an uncoordinated manner",
+                "AV-knuten slutter plutselig å lede impulsene fra atriene til ventrikler / AV-knuten sluttar plutselig å lede impulsane frå atria til ventriklane / The AV-node suddenly stops conducting the impulses from the atria to the ventricles",
+                "Ventriklene begynner plutselig å slå ukoordinert / Ventriklane begynner plutselig å slå ukoordinert / The ventricles suddenly starts to beat in an uncoordinated manner",
+                "Det skjer ikke noe elektrisk i hjertet, men den mekaniske pumpingen stopper plutselig opp / Det skjer ikkje noe elektrisk i hjertet, men den mekaniske pumpinga stopper plutselig opp / Nothing happens electrically, but the mechanic pumping stops abruptly"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Deler av synsnerven krysser (skifter over til motsatt side) i synsnervekrysningen. Denne ligger nær hypofysen. En svulst i hypofysen kan trykke på synsnervekrysningen. Da er de fibrene som krysser over til motsatt side mest utsatt for skade. Hva slags synsfeltutfall vil i så fall dette gi? / Deler av synsnerven kryssar (skifter over til motsatt side) i synsnervekrysningen. Denne ligger nær hypofysen. En svulst i hypofysen kan trykke på chiasma. Da er de fibrane som kryssar over til motsatt side mest utsett for skade. Kva slag synsfeltutfall vil i så fall dette gje? / Parts of the optic nerve cross over to the opposite side in the optic chiasm. A tumour in the hypophysis may press on the chiasm. In that case, the fibres that are crossing over, are most vulnerable to damage. What kind of visual defect will this give?",
+            "answers": [
+                "Tap av synsfeltet på høyre side / Tap av synsfeltet på høgre side / Loss of right visual field",
+                "Tap av synsfeltet på venstre side / Tap av synsfeltet på venstre side / Loss of left visual field",
+                "Tap av temporalt (ytre) synsfelt på begge sider / Loss of temporal (outer) visual field on both eyes",
+                "Tap av nasalt ( indre) synsfelt på begge sider / Loss of nasal (inner) visual field on both eyes."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hva er viktigste stimulus for utskillelse av insulin? / Kva er viktigaste stimulus for utskiljing av insulin? / What is the most important stimulus for the secretion of insulin?",
+            "answers": [
+                "Pancreaticotropt hormon fra hypofysen / Pancreaticotropc hormone from the pituitary",
+                "Blodsukkernivået i systemsirkulasjonen / Blood sugar lever in the systemic circulation",
+                "Blodsukkernivået i portvenen / Blood sugar level in the portal vein",
+                "Blodtrykket i portvenen / Blood pressure in the portal vein"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Ved pneumothorax kommer det luft inn i pleurahulen. Hva fører dette til? / Ved pneumothorax kommer det luft inn i pleurahulen. Kva fører dette til? / In pneumothorax there is air in the pleural cavity. What will this cause?",
+            "answers": [
+                "Lungen blåses opp på grunn av økt trykk i pleura / Lunga blåses opp på grunn av auka trykk i pleura / The lung is inflated due to increased pleural pressure",
+                "Lungen kollapser på grunn av tap av vakuum i pleura / Lunga kollapsar på grunnav tap av vakuum i pleura / The lung collapses due to loss of vacuum in the pleura",
+                "Brystkassen blåses opp på grunn av økt trykk i pleura / The chest is inflated due to increased pleural pressure.",
+                "Brystkassen kollapser på grunn av tap av vakuum i pleura / The chest collapses due to loss of vacuum in the pleura"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "En pasient har en sykdom i aortaklaffen som gjør at klaffen ikke åpner seg godt nok i systole (aortastenose). Hvor vil blodstrømshastigheten da være høyest under ejeksjonen? / En pasient har en sykdom i aortaklaffen som gjør at klaffen ikke åpner seg godt nok i systole (aortastenose). Kor vil blodstrømshastigheten da være høgast under ejeksjonen? / A patient has a disease in the aortic valve, which causes the valve to not open adequately during systole. Where will the blood velocity be highest during ejection?",
+            "answers": [
+                "Fra venstre atrium inn i venstre ventrikkel/ From left atrium into left ventricle",
+                "I venstre ventrikkels utløp før aortaklaffen / In the left ventricular outflow before the aortic valve",
+                "Gjennom selve aortaklaffen / Through the aortic valve",
+                "I aorta etter aortaklaffen / In the aorta after the aortic valve"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Blodtrykket måles gjerne ved at en mansjett rundt overarmen blåses opp slik at mansjetten klemmer sammen pulsårene i armen, og så reduseres trykket gradvis. Hvilket av nedenstående utsagn er riktig i relasjon til denne prosedyren? / Blodtrykket blir det gjerne målt ved at ein mansjett rundt overarmen blåses opp slik at mansjetten klemmer saman pulsårene i armen, og så blir trykket gradvis redusert. Kva for eit av utsegna under er riktig i relasjon til denne prosedyren? / The blood pressure is usually measured by inflating a cuff around the upper arm, and then reducing the pressure gradually. Which of the statements below are correct in relation to this procedure?",
+            "answers": [
+                "Når det systoliske blodtrykket er lik trykket i mansjetten, vil pulsåren så vidt begynne å åpne seg. / Når det systoliske blodtrykket er lik trykket i mansjetten, vil pulsåra så vidt begynne å opne seg. / When the systolic pressure equals the pressure in the cuff, the artery will just start to open.",
+                "Når det diastoliske blodtrykket er lik trykket i mansjetten, vil pulsåren så vidt begynne å åpne seg. / Når det diastoliske blodtrykket er lik trykket i mansjetten, vil pulsåra så vidt begynne å opne seg. / When the diastolic pressure equals the pressure in the cuff, the artery will just start to open",
+                "Når det systoliske blodtrykket er lik trykket i mansjetten, står pulsåra åpen gjennom hele hjertesyklus / Når det systoliske blodtrykket er lik trykket i mansjetten, står pulsåra open gjennom hele hjertesyklus / When the systolic pressure equals the cuff pressure, the artery is open during the whole heart cycle",
+                "Når trykket i mansjetten er lik null, begynner blodet å strømme i pulsåren. / Når trykket i mansjetten er lik null, begynner blodet å strømme i pulsåra. / When the cuff pressure is zero, the blood flow in the artery starts."
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hvilken eller hvilke av disse faktorene er viktige for tidsoppløsningen (billedfrekvens) i et ultralydbilde / Kva for av disse faktorane er viktige for tidsoppløysningen (biletfrekvens) i et ultralydbilde / Which of these factors are important for the temporal resolution (Frame rate) in an ultrasound image?",
+            "answers": [
+                "Linjetetthet / The line density",
+                "Frekvens / The frequency",
+                "Probens apperture størrelse / The probe aperture size",
+                "Alle de ovenfor/All of the above"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hvilken eller hvilke av disse faktorene er viktige for romoppløsningen i et ultralydbilde / Kva for av disse faktorane er viktige for romoppløysningen i et ultralydbilde / Which of these factors are important for the spatial resolution in an ultrasound image?",
+            "answers": [
+                "Bølgelengde / The wavelength",
+                "Frekvens / The frequency",
+                "Probens apperture størrelse / The probe aperture size",
+                "Alle de ovenfor/All of the above"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Hvor i sentralnervesystemet kontrolleres puls og blodtrykk /Kor i sentralnervesystemet blir puls og blodtrykk kontrollert / Where in the central nervous system is pulse and blood pressure controlled?",
+            "answers": [
+                "Hjernebarken / The cerebral cortex",
+                "Lillehjernen / The cerebellum",
+                "Hjernestammen / /the brainstem",
+                "Ryggmargen / The spinal cord"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hva er mekanismen for revmatoid arthritt? / Kva er mekanismen for revmatoid arthritt? / What is the mechanism for rheumation arthritis?",
+            "answers": [
+                "Infeksjon / Infection",
+                "Aldersdegenerasjon / Age dependent degeneration",
+                "Atoimmun betennelse / Autoimmune inflammation",
+                "Utfelling av urinsyre / Precipitation of uric acid"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Blodet koagulerer som følge av en kjedereaksjon mellom visse plasmaproteiner - koagulasjonsfaktorene. Hvilket vitamin er nødvendig for normal funksjon av mange av disse? / Blodet koagulerer som følgje av ein kjedereaksjon mellom visse plasmaprotein - koagulasjonsfaktorane. Kva for vitamin er nødvendig normal funksjon av mange av desse? / The blood coagulates as the result of a chain reaction between certain plasma proteins – the coagulation factors. Which vitamin is necessary for normal function of many of these?",
+            "answers": [
+                "Vitamin A",
+                "Vitamin D",
+                "Vitamin E",
+                "Vitamin K"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Og hvilket mineral? / Og kva for mineral? / And what mineral?",
+            "answers": [
+                "Jern / Iron",
+                "Jod / Iodine",
+                "Magnesium",
+                "Calcium"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Levra er viktig som energilager. Hvordan lagres energien? / Levra er viktig som energilager. Korleis lagrast energien? / The liver is important forstorage of energy. How is the energy stored?",
+            "answers": [
+                "Som fett / As fat",
+                "Som aminosyrer / As amino acids",
+                "Som glycogen / As glycogen",
+                "Som kolesterol / As cholesterol"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "En pasient får en kraftig blødning slik at blodtrykket faller. Hva skjer med hjertefrekvensen? / Ein pasient får ein kraftig blødning slik at blodtrykket fell. Kva skjer med hjertefrekvensen? / A patient bleeds heavily, so the blood pressure drops. What happens to the heart rate?",
+            "answers": [
+                "Øker / Aukar / Increases",
+                "Avtar / Avtek / Decreases",
+                "Blir uregelmessig / Becomes irregular",
+                "Påvirkes ikke / Påverkes ikkje / Is not affected"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hva er peristaltikk / Kva er peristaltikk / What is peristalsis?",
+            "answers": [
+                "Rytmiske kontraksjoner i hjertet / Rytmiske kontraksjonar i hjertet / Rythmic contractions of the heart",
+                "Samtidig kontraksjon av antagonistiske muskler / Samtidig kontraksjon av antagonistiske musklar / Simultaneous contraction of antagonistic muskles",
+                "Pulsbølgepropagasjon ved kontraksjon av glatt muskulatur i aorta / Pulse wave propagation by contraction of the smooth muscle in the aorta",
+                "Kontraksjonsbølger i glatt muskulatur i tarmsystemet for å trykke innholdet framover. / Kontraksjonsbølgjer i glatt muskulatur i tarmsystemet for å trykke innhaldet framover. / Contraction waves in the intestinal system to push the contents forwards"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Hva er presbyopi? / Kva er presbyopi? / What is presbyopia?",
+            "answers": [
+                "Nærsynthet / Nearsightedness",
+                "Langsynthet / Farsightedness",
+                "Manglende nærinstilling / Lack of accommodation",
+                "Uklar linse / Clouding of the lens"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hva er produktet av translasjonsprosessen i cellen? / Kva er av translasjonsprosessen i cella? / What is the product of the translation process in the cell?",
+            "answers": [
+                "Protein",
+                "DNA",
+                "RNA",
+                "Cellemembraner / Cell membranes"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Eksitasjon av en muskelcelle utløser en kontraksjon (eksitasjons- kontraksjonskopling) ved at en intracellulært signalsubstans binder seg til troponinhodene på actinmolekylet. Hva er signalsubstansen? / Eksitasjon av ein muskelcelle utløyser ein kontraksjon (eksitasjons- kontraksjonskopling) ved at et intracellulært signalstoff binder seg til troponin hovuda på myosinmolekylet Kva er signalsubstansen? / Exitation of a mucle cell triggers a contraction (exitation – contraction coupling) by an intracellular signal substance binds to the troponin head on an actin molecule. What is this signal substance?",
+            "answers": [
+                "Acetylcholin",
+                "K +",
+                "Na +",
+                "Ca 2+"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Hvilke blodceller kan mangle dersom en pasient har blødningstendens? / Kva for blodceller kan mangle dersom en pasient har blødningstendens? / What kind of blood cells may be lacking if a patient has a tendency to excessive bleeding?",
+            "answers": [
+                "Trombocytter / Thrombocytes",
+                "Granulocytter / Granulocytes",
+                "Lymfocytter / Lymphocytes",
+                "Erythrocytter Erythrocytes"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hvilken hovedfunksjon har gallesalter? / Kva for hovedfunksjon har gallesalt? / What is the main function of bile salts?",
+            "answers": [
+                "Skille ut overskudd av Na + til tarmen / Skilje ut overskudd av Na + til tarmen / Secrete excess Na + to the intestine",
+                "Skille ut overskudd av kolesterol til tarmen / Skilje ut overskudd av kolesterol til tarmen / secrete excess cholesterol to the intestine",
+                "Emulgere fettstoffer i tarmen så de kan fordøyes / Emulgere feittstoff i tarmen så de kan bli fordøydd / Emulsify lipids in the intestine for digestion",
+                "Stimulere ventrikkelen til å tømme seg til tolvfingertarmen / Stimulate the ventricle to empty it’s contents into the duodenum"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hva er den viktigste årsak til hjerneslag? / Kva er den viktigaste årsaka til hjerneslag?/ What is the most important cause of stroke?",
+            "answers": [
+                "Blødning / Haemorrage",
+                "Skade / Trauma",
+                "Blodpropp / Thrombosis",
+                "Infeksjon / Infection"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hva er funksjonen til saltyra i magesekken? / Kva er funksjonen til saltsyra i magesekken? / What is the function of the hydrochloric acid in the stomach? The stomach epithelium secretes hydrochloric acid into the lumen, making the contents very acidic. What is the function of this low pH?",
+            "answers": [
+                "Stimulerer sekresjon av gastrin for å øke sekresjonen i duodenum It stimulates the secretion of gastrin, in order to increase the secretions in the duodenum.",
+                "Aktiverer og optimerer pepsin til å spalte proteiner i magesekken/It activates and optimizes the Pepsin action of digesting proteins in the stomach",
+                "Skiller ut overskudd av syre fra stoffskiftet for å holde kroppen i syre- basebalanse / Skiller ut overskot av syre frå stoffskiftet for å holde kroppen i syre-basebalanse / Excrete excess acid from the metabolism to keep the acid- base balance",
+                "Nøytralisere bikarbonat som blir skilt ut i duodenum av pancreas. / Neutralize the bicarbonate that is secreted in the duodenum by the pancreas"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Kreftceller har evnen til å indusere angiogenese. Hva er det? / Kreftceller har evna til å indusere angiogenese. Kva er det? / Cancer cells have the ability to induce angiogenesis. What is that?",
+            "answers": [
+                "Evnen til å invadere omkringliggende vev. / Evna til å invadere kringliggande vev /The ability to invade surrounding tissue",
+                "Evnen til å danne nye blodårer til svulsten. / Evna til å danne nye blodårer til svulsten. /The ability to create new blood vessels to the tumour",
+                "Evnen til å etablere kolonier (dattersvulster) andre steder i kroppen. / Evna til å etablere koloniar (dottersvulstar) andre steder i kroppen. / The ability to establish daughter tumours at other sites in the body",
+                "Evnen til å stoppe veksten på en bestemt størrelse. / Evna til å stoppe veksten på ein bestemt størrelse. / The ability to stop the growth at a certain size"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "HDL cholesterol blir ofte kalt det ”gode cholesterolet” fordi det ser ut til å være en beskyttelsesfaktor mot hjerte- karsykdom. Hvordan? / HDL cholesterol blir ofte kalla det ”gode cholesterolet” fordi det ser ut til å være en beskyttelsesfaktor mot hjerte- karsjukdom. Korleis? / HDL cholesterol is often called the ”good cholesterol” because it seems to be a protective factor against cardiovascular disease. How?",
+            "answers": [
+                "Fordi HDL cholesterol er nødvendig for å omdanne mettet til umettet fett / Because HDL cholesterol is necessary to convert saturated to unsaturated fat",
+                "Fordi HDL er nødvendig for oksydasjon av umettet fett / Because HDL is necessary for oxydation of unsaturated fat",
+                "Fordi HDL partiklene hindrer andre fettstoffer i å trenge inn i åreveggen og gi atherosclerose / Because the HDL particles prevent other lipids from penetrating the vessel walls",
+                "Fordi HDL partiklene transporterer cholesterol fra vevene til levra for eliminasjon. / Fordi HDL partiklene transporterer cholesterol frå vevene til levra for eliminasjon. / Because the cholesterol particles transport the cholesterol from the tissues to the liver for elimination"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "I ABO blodtypesystemet forekommer naturlige antistoffer i plasma. Hvilken blodtype har både anti A og anti B antistoff? / I ABO blodtypesystemet forekjem naturlege antistoff i plasma. Kva for blodtype har både anti A og anti B antistoff? / In the ABO blood group system, there are naturally occurring antibodies in the plasma. Which blood group has both anti A and anti B antibodies?",
+            "answers": [
+                "A",
+                "B",
+                "AB",
+                "0"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Alle disse begrepene brukes om tilstander i musklene, alle kan være smertefulle, men hvilket av dem betyr direkte muskelsmerter, og ikke noe annet? / Alle disse begrepene brukes om tilstander i musklene, alle kan være smertefulle, men kva for et av dei betyr direkte muskelsmerter og ikkje noe anna? / All of these terms are used about conditions of muscles. All of them can be painful, but which of these terms actually means muscle pain and nothing else?",
+            "answers": [
+                "Myositt / Myositis",
+                "Muskel parese / Muscular paresis",
+                "Myalgi / myalgia",
+                "Myose / Myosis"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Er det lupus?",
+            "answers": [
+                "Det er aldri lupus",
+                "Everybody lies",
+                "dust, dette kommer ikke på eskamen",
+                "ja."
+            ],
+            "correct": [
+                0,
+                1,
+                2,
+                3
+            ]
+        }
+    ]
+}
