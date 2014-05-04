@@ -120,7 +120,7 @@
                 "At kunnskapsbedrifter leverer varer og tjenester til avtalt tid med god kvalitet.",
                 "Med dette menes at bedriften leverer varer av meget god kvalitet."
             ],
-            "correct": 
+            "correct": 1
         },
         {
             "question": "I pensumlitteraturen er begrepet ”bottom of the pyramid” (BoP Markets) anvendt. Hva menes med det?",
@@ -130,7 +130,7 @@
                 "Markeder som danner grunnlag for lønnsomhet.",
                 "Marked bestående av populasjon som lever under fattigdomsgrensen."
             ],
-            "correct": 
+            "correct": 3
         },
         {
             "question": "Hvilken av følgende påstander om oppstarten av teknologibaserte bedrifter som ønsker å vokse er korrekt?",
@@ -140,7 +140,7 @@
                 "Den viktigste utfordringen for en ny teknologibedrift er å etablere en robust ressursbase som kan gi grunnlag for konkurransefortrinn.",
                 "Ved bedriftsoppstarter lykkes som regel homogene team best."
             ],
-            "correct": 
+            "correct": 2
         },
         {
             "question": "Hvilken av følgende påstander om innovative løsninger er korrekt?",
@@ -150,7 +150,7 @@
                 "Eksisterende brukere/kunder er for mange bedrifter den viktigste kilden til innovasjon.",
                 "Idekonkurranser er den beste måten for å stimulere genereringen av innovative ideer."
             ],
-            "correct": 
+            "correct": 2
         },
         {
             "question": "Hvilken av påstandene står i konflikt med en ”åpen innovasjon” tilnærming?",
@@ -160,7 +160,7 @@
                 "Man finner ikke alltid de flinkeste folkene internt i bedriften",
                 "Man oppnår alltid god lønnsomhet fra forskning og utvikling dersom bedriften oppdager og utvikler løsningen selv."
             ],
-            "correct": 
+            "correct": 3
         },
         {
             "question": "Hva er en ”Business Angel”?",
@@ -170,7 +170,7 @@
                 "En utenlandsk investor som investerer i tidlig fase gründerbedrifter.",
                 "En privatperson som investerer direkte i nye kunnskapsbedrifter hvor de ikke har noen formell eller familiær forbindelse."
             ],
-            "correct": 
+            "correct": 3
         },
         {
             "question": "Hvilken av følgende påstander om såkalte ”Business Angels” er korrekt?",
@@ -180,7 +180,7 @@
                 "Vil som regel eie mer enn 50% av bedriften.",
                 "Investerer som regel i ”levebrødsforetak”"
             ],
-            "correct": 
+            "correct": 1
         },
         {
             "question": "Ulike typer tilbydere av egenkapital kommer gjerne inn på ulike tidspunkt. I hvilken rekkefølge kommer normalt aktørene inn?",
@@ -190,7 +190,7 @@
                 "Gründer, familie og venner, såkornfond, venturekapital fond, Business Angels",
                 "Gründer, familie og venner, Business Angels, såkornfond, venturekapital fond"
             ],
-            "correct": 
+            "correct": 3
         },
         {
             "question": "Hvilken av følgende påstander om finansiering av teknologibedrifter er korrekt?",
@@ -200,7 +200,7 @@
                 "Venturekapital fond gjør mange investeringer og er den mest vanlige typen investor i nye teknologibedrifter.",
                 "Bankene kan være viktige rådgivere men vil normalt sett ikke engasjere seg finansielt i de tidlige fasene ved utviklingen av en teknologibedrift. Oppgaver fra Organisasjonspensumet:"
             ],
-            "correct": 
+            "correct": 3
         },
         {
             "question": "Hva menes med en ”contingency tilnærming” til organisasjonsdesign?",
@@ -210,7 +210,7 @@
                 "At innovative organisasjoner er designet forskjellig fra byråkratier.",
                 "At organisasjonsdesign skal bygge på objektive fakta, og ikke subjektive tolkninger."
             ],
-            "correct": 
+            "correct": 0
         },
         {
             "question": "Hva mener Tidd og Bessant (2009) med konseptet ”kjernerigiditet” (”core rigitity”)?",
@@ -220,7 +220,7 @@
                 "At kompetanse og perspektiver som har vært sentrale for tidligere suksess (”kjernekompetanse”) blir et hinder for å gjennomføre endring i organisasjonen.",
                 "At toppledelsen nekter å ta inn over seg at organisasjonen trenger en ny kurs."
             ],
-            "correct": 
+            "correct": 2
         },
         {
             "question": "Hvilket av de følgende kjennetegnene ved en organisasjons design er ikke et kjennetegn på ”Scientific management” og Fordisme?",
@@ -230,7 +230,7 @@
                 "At en arbeidsoppgave utføres likt samme hvem som utfører den.",
                 "At operatørenes formelle kompetanse må dokumenteres ved ansettelse."
             ],
-            "correct": 
+            "correct": 3
         },
         {
             "question": "Ifølge Watson (2006; K2), hva menes med ”ledelse” (management) i en organisasjon?",
@@ -240,7 +240,7 @@
                 "Ledelse betyr å oppnå organisasjonens mål gjennom andre.",
                 "Ledelse(n) er de personer som er gitt det offisielle ansvaret for å lede organisasjonen."
             ],
-            "correct": 
+            "correct": 0
         },
         {
             "question": "Hva menes med at ledere er ”begrenset rasjonelle”?",
@@ -250,7 +250,7 @@
                 "At lederens evne til å fatte rasjonelle beslutninger er begrenset av tilgangen på informasjon og menneskehjernens evne til å håndtere store informasjonsmengder.",
                 "At lederens evne til å fatte rasjonelle beslutninger er begrenset av underordnedes forsøk på skaffe seg fordeler gjennom å holde tilbake informasjon om virksomheten."
             ],
-            "correct": 
+            "correct": 2
         },
         {
             "question": "I diskusjoner om ansattes motivasjon og implisitte arbeidskontrakt (Watson 2006; K3), hva menes med begrepet ”mønster av overbærenhet” (”indulgency pattern”)?",
@@ -260,7 +260,7 @@
                 "At de underordnede ignorerer forskjellsbehandling eller favorisering av enkeltpersoner fra ledelsens side.",
                 "At ledere og underordnede sammen gjør avtaler som er til begges fordel, men samtidig undergraver det produktive samarbeidet i organisasjonen."
             ],
-            "correct": 
+            "correct": 0
         },
         {
             "question": "Hva er sammenhengene mellom organisasjonens ytelse (”performance”) og involvering (”involvement”) av ansattes ifølge Tidd og Bessant (2009)?",
@@ -270,7 +270,7 @@
                 "Organisasjonens yteevne stiger inntil man får på plass kontinuerlig forbedring (kaizen). Ytterligere involvering skaper uoversiktlighet og uforutsigbarhet.",
                 "Ytelsen øker for hvert trinn med økt involvering, gitt at hver leders kontrollspenn reduseres. Lavere kontrollspenn er nødvendig for å kunne kommunisere kompliserte ideer oppover i organisasjonen."
             ],
-            "correct": 
+            "correct": 0
         },
         {
             "question": "Hvilket av punktene under er ikke et eksempel på jobberikelse?",
@@ -280,7 +280,7 @@
                 "At operatøren slipper selv å stå for vedlikehold av arbeidsstasjonen sin.",
                 "At arbeidsoppgaver inneholder både tankearbeid og kroppsarbeid."
             ],
-            "correct": 
+            "correct": 2
         },
         {
             "question": "Ifølge Watson (2006; K3), hva er svakheten med motivasjonsteori i å forklare ansattes innstilling til arbeidet?",
@@ -290,7 +290,7 @@
                 "Motivasjonsteori tar ikke høyde for hvordan individuelle behov og ønsker formes som følge av at arbeidstakere danner uformelle grupper.",
                 "Motivasjonsteori er forankret i en system-kontroll tenkning, som modellerer mennesker som mekaniske systemer. Dette er en urimelig antagelse om menneskelig adferd."
             ],
-            "correct": 
+            "correct": 3
         },
         {
             "question": "Hvilken av disse er et kjennetegn på hensiktsmessig beslutningstaking innenfor diskontinuerlig (radikal) innovasjon (Tidd og Bessant 2009)?",
@@ -300,7 +300,7 @@
                 "Beslutningstakingen ivaretas best av faglig ekspertise, som på tross av usikkerheten har best evne til å predikere fremtiden.",
                 "Organisasjonen bør identifisere en eller noen får interne ”gründere” og la dem styre FoU (engelsk: R&D) budsjettene."
             ],
-            "correct": 
+            "correct": 1
         },
         {
             "question": "Hvilken av disse påstandene om gruppekreativitiet er IKKE korrekt?",
@@ -310,7 +310,7 @@
                 "Gruppekreativitet fungerer best hvis deltagerne i prosessen har ulik kompetanse og kommer fra ulike organisasjoner og/eller deler av organisasjoner",
                 "Gruppekreativitet brukes ofte i situasjoner der det er viktig å få belyst en sak fra mange ulike sider"
             ],
-            "correct": 
+            "correct": 0
         },
         {
             "question": "Hvilken av disse påstandene om innovasjonsnettverk er IKKE korrekt?",
@@ -320,7 +320,7 @@
                 "Entreprenørnettverk og Communities of Practice” er to ulike eksempler på innovasjonsnettverk",
                 "Innovasjonsnettverk krever nøye strukturering av hvem som skal møtes på hvilke tidspunkt, for at nettverkene skal fungere. For mye møter og for lite møter kan være ødeleggende, og det er viktig at minst en fra ledelsen er til stede på alle slike møter hvis viktige beslutninger må tas."
             ],
-            "correct": 
+            "correct": 3
         },
         {
             "question": "Hvilken av følgende definisjoner beskriver ”Embeddedness” best?",
@@ -330,7 +330,7 @@
                 "Når to eller flere ulike teknologier finnes på samme geografiske sted, sier vi at de er ”embedded”.",
                 "”Embeddedness” betyr at hvis du forstår hvordan en teknologi virker, kan du også dedusere deg frem til hvordan andre teknologier som denne er koblet til, virker."
             ],
-            "correct": 
+            "correct": 0
         },
         {
             "question": "Hvilken påstand er feil om ”Knowledge Push” og ”Needs Pull”?",
@@ -340,7 +340,7 @@
                 "Ingen bedrift kan kjøre begge strategiene. De krever nemlig helt ulike ferdigheter.",
                 "”Needs Pull” forutsetter en sterk kontakt med brukergrupper"
             ],
-            "correct": 
+            "correct": 2
         },
         {
             "question": "Hvilken av følgende påstander er feil om bedrifters utviklingspartnere?",
@@ -350,7 +350,7 @@
                 "Utviklingspartnere oppstår vanligvis fordi interaksjon er så viktig for å få til kreativitet og innovasjon",
                 "Utviklingspartnere beholdes gjerne over en viss tid, fordi tillit er viktig for slike forhold, og det tar tid å bygge tillit mellom to (eller flere) parter. Oppgaver fra økonomipensumet:"
             ],
-            "correct": 
+            "correct": 1
         },
         {
             "question": "En bedrift har høyere marginalkostnader (også kalt grensekostnader) enn gjennom- snittskostnader (også kalt enhetskostnader). Hva kan vi si sikkert om bedriftens kost- nadsstruktur?",
@@ -360,7 +360,7 @@
                 "Gjennomsnittskostnadene er stigende, slik at økt mengde fra dagens nivå vil gi økte gjennomsnittskostnader.",
                 "Marginalkostnadene er stigende, slik at økt mengde fra dagens nivå vil gi økte mar- ginalkostnader."
             ],
-            "correct": 
+            "correct": 2
         },
         {
             "question": "En lineær etterspørselsfunksjon kan skrives P = a - bQ der a og b er positive konstanter mens P er prisen og Q er etterspurt mengde. Hva kan vi si om absoluttverdien til etterspørselselastisiteten dersom etterspørselen er lineær?",
@@ -370,7 +370,7 @@
                 "Den øker med økende mengde, Q.",
                 "Den synker med økende mengde, Q."
             ],
-            "correct": 
+            "correct": 3
         },
         {
             "question": "Verdien av totale aktiva for en bedrift er 750 millioner. Verdien av bedriftens egenka- pital er 500 millioner. Hva er bedriftens gjeldsgrad?",
@@ -380,7 +380,7 @@
                 "2/3",
                 "2"
             ],
-            "correct": 
+            "correct": 1
         },
         {
             "question": "En bedrift har totalkapitalrentabilitet på 5 % (før skatt). Egenkapitalrentabiliteten (før skatt) er lavere enn totalkapitalrentabiliteten. Hva kan vi da trygt si om avkastningen på bedriftens gjeld?",
@@ -390,7 +390,7 @@
                 "Avkastningen på gjeld er negativ.",
                 "Avkastningen på gjeld er minst dobbelt så høy som avkastningen på egenkapital."
             ],
-            "correct": 
+            "correct": 1
         },
         {
             "question": "Nåverdien av 115 000 som er forventet å bli mottatt ett år fra i dag, med en diskonter- ingsrente (avkastningskrav) på 10 % pr år er:",
@@ -400,7 +400,7 @@
                 "110 000",
                 "104 545"
             ],
-            "correct": 
+            "correct": 3
         },
         {
             "question": "Alternativkostnaden til kapital investert i et risikofylt prosjekt er:",
@@ -410,7 +410,7 @@
                 "Forventet avkastning på en portefølje av verdipapirer med tilsvarende risiko som prosjektet.",
                 "Forventet avkastning på selskapets totalkapital."
             ],
-            "correct": 
+            "correct": 2
         },
         {
             "question": "Ledelsen i et selskap kan maksimere aksjonærenes formue ved å:",
@@ -420,7 +420,7 @@
                 "Bare gjennomføre prosjekter med nettonåverdi større enn nåverdien av kontant- strømmen.",
                 "Bare gjennomføre prosjekter med internrente over forventet avkastning til totalkapitalen."
             ],
-            "correct": 
+            "correct": 0
         },
         {
             "question": "Internrenten er definert som:",
@@ -430,7 +430,7 @@
                 "Avkastningskravet som brukes i nettonåverdiberegninger.",
                 "Avkastningskravet brukt i beregning av samfunnsøkonomisk lønnsomhet."
             ],
-            "correct": 
+            "correct": 0
         },
         {
             "question": "Den andelen av risiko som ikke kan elimineres ved diversifisering kalles:",
@@ -440,7 +440,7 @@
                 "Renterisiko.",
                 "Valutarisiko."
             ],
-            "correct": 
+            "correct": 1
         },
         {
             "question": "Følgende endring i kontantstrøm skal ikke med direkte i nettonåverdiberegningen når en bilprodusent vurderer å sette i gang utviklingen av en elektrisk bil:",
@@ -450,7 +450,7 @@
                 "Verdien av verktøy som kan overføres fra eksisterende produksjon.",
                 "Rentebetalinger på ny gjeld."
             ],
-            "correct": 
+            "correct": 3
         },
         {
             "question": "Markedsrisikopremien er 5 %. Risikofri rente er 3 %. Et selskap tilbyr en investering kalt ”Aksje-Terning-Moro”. Utbetalingen på denne investeringen om ett år tilsvarer verdien til en aksje med beta på 1, og et standardavvik på 17 %, pluss 10 % av dagens verdi på aksjen for hvert øyne som vises på en (perfekt) terning som skal kastes rett før utbetalingen. Forventningsverdien til den delen av avkastningen som er knyttet til selve terningen utgjør 35 % av aksjens verdi i dag, og standardavviket til denne delen av avkastningen er også 17 %. Dersom aksjens verdi i dag er 100, hvor mye ville en godt diversifisert investor, som opptrer i tråd med kapitalverdimodellen (CAPM), være villig til å betale for denne investeringen?",
@@ -460,7 +460,7 @@
                 "Ca. 132",
                 "Ca. 134"
             ],
-            "correct": 
+            "correct": 3
         },
         {
             "question": "Beta for et selskaps aktiva er 1. Beta for gjelden er 0,5. Markedsverdien for gjeld er 50 % av markedsverdien til selskapets aktiva. Hva er beta for selskapets aksjer?",
@@ -470,7 +470,7 @@
                 "1,5",
                 "2,0"
             ],
-            "correct": 
+            "correct": 2
         }
     ]
 }
