@@ -112,8 +112,9 @@ def import_questions():
             db.session.add(course)
             db.session.commit()
         questions = course_json['questions']
+        start = models.Question.query.filter_by(course_id=course.id).count()
         for i, question in enumerate(questions):
-            question_object = models.Question(i, question['question'], course.id)
+            question_object = models.Question(i + start, question['question'], course.id)
             db.session.add(question_object)
             db.session.commit()
             for number, answer in enumerate(question['answers']):
