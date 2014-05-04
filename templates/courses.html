@@ -5,7 +5,12 @@
 </ol>
 <ul>
 {% for course in courses %}
-    <li><a href="{{ url_for('course', course_id=course.id) }}">{{ course }}</a></li>
+    <li><a href="{{ url_for('course', course_code=course.code) }}">{{ course }}</a></li>
+    <ul>
+    {% for exam in course.exams %}
+        <li><a href="{{ url_for('exam', course_code=course.code, exam_name=exam.name) }}">{{ exam }}</a></li>
+    {% endfor %}
+    </ul>
 {% endfor %}
 </ul>
 {% endblock %}

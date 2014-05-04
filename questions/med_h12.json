@@ -1,6 +1,7 @@
 {
     "name": "Innføring i medisin for ikke-medisinere",
     "code": "MFEL1010",
+    "exam": "H12",
     "questions": [
         {
             "question": "Hoveddelen av cellas DNA finnes i cellekjernen. Hvilke organeller har også DNA? / Hovuddelen av cellas DNA finnes i cellekjernen. Kva for organellar har og DNA? / The main part of the DNA in the cell is found in the nucleus. What other organelles do also contain DNA?",
@@ -103,13 +104,14 @@
             "correct": 0
         },
         {
-            "question": "En pasient på hjerteovervåkning får plutselig omslag av rytmen og pulsen som vist på figurenunder. Hva er mekanismen? / Ein pasient på hjerteovervåkning får plutselig omslag av rytmen og pulsen som vist på figuren under. Kva er mekanismen? / A patient in the coronary care unit suddenly displays a change in the heart rhythm and pulse as shown in the figure. What is the mechanism?",
+            "question": "En pasient på hjerteovervåkning får plutselig omslag av rytmen og pulsen som vist på figuren under. Hva er mekanismen? / Ein pasient på hjerteovervåkning får plutselig omslag av rytmen og pulsen som vist på figuren under. Kva er mekanismen? / A patient in the coronary care unit suddenly displays a change in the heart rhythm and pulse as shown in the figure. What is the mechanism?",
             "answers": [
                 "Atriene begynner plutselig å slå ukoordinert / Atria begynner plutselig å slå ukoordinert / The atria suddenly starts to beat in an uncoordinated manner",
                 "AV-knuten slutter plutselig å lede impulsene fra atriene til ventrikler / AV-knuten sluttar plutselig å lede impulsane frå atria til ventriklane / The AV-node suddenly stops conducting the impulses from the atria to the ventricles",
                 "Ventriklene begynner plutselig å slå ukoordinert / Ventriklane begynner plutselig å slå ukoordinert / The ventricles suddenly starts to beat in an uncoordinated manner",
                 "Det skjer ikke noe elektrisk i hjertet, men den mekaniske pumpingen stopper plutselig opp / Det skjer ikkje noe elektrisk i hjertet, men den mekaniske pumpinga stopper plutselig opp / Nothing happens electrically, but the mechanic pumping stops abruptly"
             ],
+            "image": "http://i.imgur.com/DUdOmOO.png",
             "correct": 1
         },
         {
@@ -140,6 +142,7 @@
                 "Ulik replikasjonsmekanismer i forskjellige vev / Different replication mechanisms in different tissues",
                 "Ulike gener er aktive i ulike vev. Ulike gen er aktive i dei ulike veva. / Different genes are active in different tissues"
             ],
+            "image": "http://i.imgur.com/Asa1puP.png",
             "correct": 3
         },
         {
@@ -180,6 +183,7 @@
                 "Grå stær – Katarakt / Cataract",
                 "Grønn stær – Glaukom / Glaucoma"
             ],
+            "image": "http://i.imgur.com/6lElw2Z.png",
             "correct": 0
         },
         {
@@ -314,13 +318,14 @@
             "correct": 1
         },
         {
-            "question": "ldet viser et ultralydbilde av et hjerte der en enkelt ultralydstråle er brukt til å ta opp ekko som skrives ut langs en tidsakse, slik at vi får et diagram av bevegelsen til strukturer i hjertet. Hva kalles denne ultralydmodaliteten? / Bildet viser eit 2- dimensjonalt ultralydbilde av eit hjerte der ein enkelt ultralydstråle er brukt til å ta opp ekko som skrives ut langs en tidsakse, slik at vi får eit diagram av bevegelsen til strukturer i hjertet. Kva blir denne ultralydmodaliteten kalla? / The picture shows a 2- dimensional ultrasound picture of a heart where a single ultrasound beam is used to record an echo that is printed along a time axis, giving a diagrom of the motion of structures in the heart. What is this ultrasound modality called?",
+            "question": "Bildet viser et ultralydbilde av et hjerte der en enkelt ultralydstråle er brukt til å ta opp ekko som skrives ut langs en tidsakse, slik at vi får et diagram av bevegelsen til strukturer i hjertet. Hva kalles denne ultralydmodaliteten? / Bildet viser eit 2- dimensjonalt ultralydbilde av eit hjerte der ein enkelt ultralydstråle er brukt til å ta opp ekko som skrives ut langs en tidsakse, slik at vi får eit diagram av bevegelsen til strukturer i hjertet. Kva blir denne ultralydmodaliteten kalla? / The picture shows a 2- dimensional ultrasound picture of a heart where a single ultrasound beam is used to record an echo that is printed along a time axis, giving a diagrom of the motion of structures in the heart. What is this ultrasound modality called?",
             "answers": [
                 "A-mode",
                 "B-mode",
                 "M-mode",
                 "Doppler mode"
             ],
+            "image": "http://i.imgur.com/BGalbUv.png",
             "correct": 2
         },
         {
@@ -371,6 +376,7 @@
                 "Isometrisk / isometric",
                 "Antagonistisk / antagonistic"
             ],
+            "image": "http://i.imgur.com/5xEP85r.png",
             "correct": 0
         },
         {

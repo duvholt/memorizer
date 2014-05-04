@@ -4,7 +4,7 @@
 	<li><a href="{{ url_for('main') }}">Emner</a></li>
 	<li class="active">{{ course }}</li>
 </ol>
-<h3>Spørsmål #{{ question.number + 1 }}</h3>
+<h3>Spørsmål #{{ id }}</h3>
 <div class="stats">
 	<span class="label label-warning">Combo: {{ score.combo }}</span>
 	<span class="label label-primary">Poeng: {{ score.points }} ({{ percentage(score.points, score.total) }}%)</span>
@@ -46,9 +46,9 @@
 </div>
 {% endif %}
 <div class="btn-group">
-	<a href="{{ url_for('show_question', course_id=question.course.id, id=prev) }}" id="prev_question" class="btn btn-default">Forrige</a>
-	<a href="{{ url_for('show_question', course_id=question.course.id, id=random) }}" id="random_question" class="btn btn-default">Tilfeldig</a>
-	<a href="{{ url_for('show_question', course_id=question.course.id, id=next) }}" id="next_question" class="btn btn-{% if success is defined %}success{% else %}default{% endif %}">Neste</a>
+	<a href="{{ url_for('show_question', course_code=question.course.code, exam_name=exam_name, id=prev) }}" id="prev_question" class="btn btn-default">Forrige</a>
+	<a href="{{ url_for('show_question', course_code=question.course.code, exam_name=exam_name, id=random) }}" id="random_question" class="btn btn-default">Tilfeldig</a>
+	<a href="{{ url_for('show_question', course_code=question.course.code, exam_name=exam_name, id=next) }}" id="next_question" class="btn btn-{% if success is defined %}success{% else %}default{% endif %}">Neste</a>
 </div>
 <footer>
 	<p class="text-muted">Ved funn av eventuelle feil send gjerne en mail til <a href="mailto:memorizer@cxhristian.com">memorizer@cxhristian.com</a></p>

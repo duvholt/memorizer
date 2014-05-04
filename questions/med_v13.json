@@ -1,6 +1,7 @@
 {
     "name": "Innføring i medisin for ikke-medisinere",
     "code": "MFEL1010",
+    "exam": "V13",
     "questions": [
         {
             "question": "Lungene har en likevektstilstand der det er balanse mellom elastiske krefter som trekker brystveggen utover og lungene innover. Da trenger vi ikke bruke respirasjonsmuskler for å opprettholde denne tilstanden. Hva kalles det totale lungevolumet vi har i denne likevektstilstanden? / Lungene har en likevektstilstand der det er balanse mellom elastiske krefter som trekker brystveggen utover og lungene innover. Da trenger vi ikkje bruke respirasjonsmusklar for å oppretthalde denne tilstanden. Kva blir det totale lungevolumet vi har i denne likevektstilstanden kalla? / The lungs have a state and size of equilibrium where there is a balance between elastic forces pulling the thorax wall outwards and the lungs inwards. Thus, we don’t need to use respiratory muscle activity to maintain this state. What is the name of the total gas volume we have in this equilibrium state?",
@@ -113,6 +114,7 @@
                 "Abduksjon / Abduction",
                 "Adduksjon / Adduction"
             ],
+            "image": "http://i.imgur.com/5EFUa3C.png",
             "correct": 3
         },
         {
@@ -133,6 +135,7 @@
                 "M-mode",
                 "Doppler mode"
             ],
+            "image": "http://i.imgur.com/oWsfEOn.png",
             "correct": [
                 1,
                 2
@@ -156,6 +159,7 @@
                 "Ventriklene begynner plutselig å slå ukoordinert / Ventriklane begynner plutselig å slå ukoordinert / The ventricles suddenly starts to beat in an uncoordinated manner",
                 "Det skjer ikke noe elektrisk i hjertet, men den mekaniske pumpingen stopper plutselig opp / Det skjer ikkje noe elektrisk i hjertet, men den mekaniske pumpinga stopper plutselig opp / Nothing happens electrically, but the mechanic pumping stops abruptly"
             ],
+            "image": "http://i.imgur.com/JFFREwa.png",
             "correct": 2
         },
         {
