@@ -1,0 +1,407 @@
+{
+    "name": "Innføring i medisin for ikke-medisinere",
+    "code": "MFEL1010",
+    "questions": [
+        {
+            "question": "Hoveddelen av cellas DNA finnes i cellekjernen. Hvilke organeller har også DNA? / Hovuddelen av cellas DNA finnes i cellekjernen. Kva for organellar har og DNA? / The main part of the DNA in the cell is found in the nucleus. What other organelles do also contain DNA?",
+            "answers": [
+                "Golgi apparatet / The Golgi apparatus",
+                "Endoplasmatisk reticulum / The endoplasmic reticulum",
+                "Centrosomer / The centrosomes",
+                "Mitochondriene / The mitochondria"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Når aortaklaffen lukkes, høres et klikk, en hjertetone. Når omtrent høres denne i relasjon til EKG? / Når aortaklaffen blir lukka, kan ein høre eit klikk, ein hjartetone. Når omtrent kommer denne i relasjon til EKG? / When the aortic valve closes, there is a click, a heart sound. When can this be heard in relation to the ECG?",
+            "answers": [
+                "P-takken /The P-wave",
+                "Q-takken / The Q wave",
+                "Midt I QT-intervallet / In the middle of the QT-interval",
+                "T-takken / The T-wave"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Ved nyresvikt får en lavere nivå av aktivt vitamin D. Hvordan vil dette virke på calcium og PTH-nivået i blod? / Ved nyresvikt får ein lågare nivå av aktivt vitamin D. Korleis vil dette virke på calcium og PTH-nivået i blod? / In renal failure will there be lower levels of active vitamin D. How will that influence the levels of calcium and PTH?",
+            "answers": [
+                "Ca 2+ ↑ / PTH↑",
+                "Ca 2+ ↑ / PTH↓",
+                "Ca 2+ ↓ / PTH↑",
+                "Ca 2+ ↓ / PTH↓"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Normal rekkefølge i blodstrømmen er: / Normal rekkefølge i blodstraumen er: /The normal flow direction of the blood is:",
+            "answers": [
+                "Høyre ventrikkel – Aorta – Vena cava – Venstre atrium/ Høgre ventrikkel – Aorta – V. cava – Venstre atrium/ Right ventricle – Aorta – Vena Cava – Left atrium",
+                "Høyre atrium – Lungearterien – Lungevener – Venstre ventrikkel / Høgre atrium – Lungearterien – Lungevener – Venstre ventrikkel / Right atrium – Pulmonary artery – pulmonary veins – Left Ventricle",
+                "Høyre atrium – Aorta – Vena Cava – Venstre ventrikkel / Høgre atrium – Aorta – Vena Cava – Venstre ventrikkel / Right Atrium – Aorta – Vena Cava – Left Ventricle",
+                "Høyre ventrikkel – Lungearterien – Lungevener – Venstre atrium / Høgre ventrikkel – Lungearterien – Lungevener – Venstre atrium / Right Ventricle – Pulmonary artery – Pulmonary veins – Left Atrium"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Koagulasjon skjer ved at spesialiserte proteiner i plasma; koagulasjonsfaktorer reagerer i en kaskadereaksjon. Hva er sluttproduktet; selve hovedbestanddelen i et koagel? / Koagulasjon skjer ved at spesialiserte protein i plasma; koagulasjonsfaktorar reagerer i en kaskadereaksjon. Kva er sluttproduktet; sjølve hovudbestanddelen i et koagel? / The coagulation process happens as specialised proteins in plasma; coagulation factors reacts in a cascade reaction. What is the end product of this reaction; the main ingredient in a clot?",
+            "answers": [
+                "Fibrin",
+                "Plasmin",
+                "Albumin",
+                "Gammaglobulin"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Og hvor blir de fleste koagulasjonsfaktorene produsert? / Og kor blir dei fleste koagulasjonsfaktorane produsert? / And were are most of the coagulation factors produced?",
+            "answers": [
+                "Beinmargen / The bone marrow",
+                "Milten / The spleen",
+                "Levra / The liver",
+                "Lymfeknutene / The lymph nodes"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hva gjør natrium-kalium-utvekslingspumpen? Kva gjer natriumkaliumvekselspumpa. / What is the function of the sodium-potassium pump?",
+            "answers": [
+                "Utjevner membranpotensialet gjennom transport av natrium og kalium fra høy til lav konsentrasjon. / Utjamnar membranpotensialet gjennom transport av natrium og kalium frå høg til låg konsentrasjon. / Levelling the membrane potential by transports of sodium and potassium from high to low concentration.",
+                "Bygger opp membranpotensialet gjennom aktiv transport av natrium og kalium fra lav til høy konsentrasjon. / Bygg opp membranpotensialet gjennom aktiv transport av natrium og kalium frå låg til høg konsentrasjon. / Building up the membrane potential, by active transport of Sodium and Potassium from low to high concentration.",
+                "Benytter konsentrasjonsgradienten til natrium og kalium for syntese av ATP. / Nytter konsentrasjonsgradienten til natrium og kalium for syntese av ATP. / Utilises the concentration gradient of sodium and potassium for synthesis of ATP.",
+                "Utjevner konsentrasjonen av natrium og kalium ekstracellulært og intracellulært. / Utjamner konsentrasjonen av natrium og kalium ekstracellulært og intracellulært. / Equalize extracellular and intracellular concentration of Sodium and Potassium."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Målet på risikoen for å få en sykdom er: / Målet på risikoen for å få ein sjukdom er: /The measure of the risk of acquiring a disease is:",
+            "answers": [
+                "Insidens raten / The incidence rate",
+                "Insidens raten multiplisert med sykdommens varighet / Insidens raten multiplisert med sjukdommens varigheit / The incidence rate multiplied by the disease duration",
+                "Prevalensen / The prevalence",
+                "Prevalensen multiplisert med sykdommens varighet Prevalensen multiplisert med sjukdommens varigheit / The prevalence multiplied by the disease duration"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hva er korrekt om eksitasjons-kontraksjonskoplingen? / Kva er korrekt om eksitasjonskontraksjonskoplinga? / What is correct about exitation contraction coupling?",
+            "answers": [
+                "Aksjonspotensialet gir innstrømming av Na + intracellulært som binder seg til tubulin / Aksjonspotensialet gir innstrøyming av Na + intracellulært som binder seg til tubulin / The action potential causes inflow of Na + intracellularly, which binds to tubulin",
+                "Aksjonspotensialet gir innstrømming av Na + intracellulært som binder seg til troponin / Aksjonspotensialet gir innstrøyming av Na + intracellulært som binder seg til troponin / The action potential causes inflow of Na + intracellularly, which binds to troponin",
+                "Aksjonspotensialet gir frigjøring av Ca ++ intracellulært som binder seg til tubulin / Aksjonspotensialet gir frigjøring av Ca ++ intracellulært som binder seg til tubulin / The action potential causes intracellular release of Ca ++ , which binds to tubulin",
+                "Aksjonspotensialet gir frigjøring av Ca ++ intracellulært som binder seg til troponin / Aksjonspotensialet gir frigjøring av Ca ++ intracellulært som binder seg til troponin / The action potential causes intracellular release of Ca ++ , which binds to troponin."
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Hva skjer med hjertets pumping i PQ-intervallet? / Kva skjer med hjertets pumping i PQ-intervallet? / What happens with the cardiac pumping during the PQ interval?",
+            "answers": [
+                "Atriene trekker seg sammen og fyller ventriklene / Atria trekk seg saman og fyller ventriklane / The atria contracts and fills the ventricles.",
+                "Ventriklene trekker seg sammen for å øke trykket, uten at blod pumpes ut / Ventriklane trekk seg saman for å auke trykket, utan at blod blir pumpa ut / The ventricles contract, in order to increase the pressure, without ejectiong blood",
+                "Ventriklene pumper blod ut i aorta / Ventriklane pumpar blod ut i aorta / The ventricles eject blood into the aorta",
+                "Ventriklene relakserer og suger blod passivt fra atriene/ Ventriklane relakserar og sug blod passivt frå atria / The ventricles relax and draws blood passively from the atria"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "En pasient på hjerteovervåkning får plutselig omslag av rytmen og pulsen som vist på figurenunder. Hva er mekanismen? / Ein pasient på hjerteovervåkning får plutselig omslag av rytmen og pulsen som vist på figuren under. Kva er mekanismen? / A patient in the coronary care unit suddenly displays a change in the heart rhythm and pulse as shown in the figure. What is the mechanism?",
+            "answers": [
+                "Atriene begynner plutselig å slå ukoordinert / Atria begynner plutselig å slå ukoordinert / The atria suddenly starts to beat in an uncoordinated manner",
+                "AV-knuten slutter plutselig å lede impulsene fra atriene til ventrikler / AV-knuten sluttar plutselig å lede impulsane frå atria til ventriklane / The AV-node suddenly stops conducting the impulses from the atria to the ventricles",
+                "Ventriklene begynner plutselig å slå ukoordinert / Ventriklane begynner plutselig å slå ukoordinert / The ventricles suddenly starts to beat in an uncoordinated manner",
+                "Det skjer ikke noe elektrisk i hjertet, men den mekaniske pumpingen stopper plutselig opp / Det skjer ikkje noe elektrisk i hjertet, men den mekaniske pumpinga stopper plutselig opp / Nothing happens electrically, but the mechanic pumping stops abruptly"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hva er en motorisk enhet? / Kva er ein motorisk enhet / What is a motor unit?",
+            "answers": [
+                " Det samme som en sarkomer / Det same som ein sarkomer / The same as a sarcomere",
+                " En myofibrill med alle tilhørende sarkomerer / Ein myofibrill med alle tilhørande sarkomerer / A myofibril with all its sarcomeres",
+                " En muskelfiber med alle tilhørende myofibriller / Ein muskelfiber med alle tilhørande myofibriller / A muscle fibre with all its myofibrils",
+                " En forhornsnervecellenervecelle med tilhørende muskelfibre / Ein forhornsnervecelle med tilhørande muskelfibre / A ventral horn neuron with all muscle fibres it innervates"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Ejeksjonsfraksjonen er et mål for systolisk hjertefunksjon. En pasient med hjertesvikt har en venstreventrikkel med et endediastolisk volum på 350 mlog ejeksjonsfraksjon på 15%. Hva må hvile hjertefrekvans være for å opprettholde normalt cardiac output på 4.5 l/min?/ Ejeksjonsfraksjonen er et mål for systolisk hjertefunksjon. En pasient med hjertesvikt har en venstreventrikkel med et endediastolisk volum på 350 ml og ejeksjonsfraksjon på 15%. Kva må kvile hjertefrekvans være for å oppretthalde normalt cardiac output på 4.5 l/min?/ A patient with heart failure has an end diastolic left ventricular volume of 350 ml, an ejection fraction of 15%. What would the resting heart rate have to be, to maintain a normal cardiac output of 4.5 l/min?",
+            "answers": [
+                " 155",
+                " 85",
+                " 70",
+                " 62"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hva skyldes celledifferensieringen? / Kva skuldas celledifferensieringa? / What makes the cell differentiation possible?",
+            "answers": [
+                "Genene er forskjellige i ulike vev. Gena er ulike i dei ulike veva. / The genes are different in different tissues.",
+                "Ulik translasjonsmekanismer i forskjellige vev/ Different translation mechanisms in different tissues",
+                "Ulik replikasjonsmekanismer i forskjellige vev / Different replication mechanisms in different tissues",
+                "Ulike gener er aktive i ulike vev. Ulike gen er aktive i dei ulike veva. / Different genes are active in different tissues"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Hvilket av de markerte volumene på diagrammet under representerer det ekspiratoriske reservevolumet? / Kva for eit av de markerte voluma på diagrammet under representerer det ekspiratoriske reservevolumet? / Which of the marked volumes on the diagram below represents the expiratory reserve volume?",
+            "answers": [
+                " A",
+                " B",
+                " C",
+                " D"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Et barn er skadet av stålfragmenter fra en klasebombe. Hvilken av disse billedmodalitetene må definitivt ikke brukes, av sikkerhetshensyn? / Et barn er skadd av stålfragment frå ein klasebombe. Kva for ein av disse bildemodalitetane må definitivt ikkje brukast, av sikkerheitsomsyn? / A child has been wounded by steel fragments from a cluster bomb. Which of these imaging methods should definitely not be used to locate the fragments in the body for safety reasons?",
+            "answers": [
+                " Ultralyd / Ultrasound",
+                " Røntgen / X-ray",
+                " MRI / MRI",
+                " Isotopavbildning/ Nuclear imaging"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Maksimalt oksygenopptak er et mål på den aerobe kondisjonen (kalles ofte kondisjonstallet på norsk). Kondisjonstrening øker maksimalt oksygenopptak. Hva er det som økes av denne treningen?/ Maksimalt oksygenopptak er et mål på den aerobe kondisjonen, (blir ofte kalla kondisjonstalet på norsk). Kondisjonstrening aukar maksimalt oksygenopptak. Kva er det som blir auka av denne treninga?/ Maximum oxygen uptake is a measure of aerobic fitness. Endurance training increases maximal oxygen uptake. What is increased by this training?",
+            "answers": [
+                " Maksimal hjertefrekvens / The maximal heart rate",
+                " Maksimalt slagvolum / Maximal stroke volume",
+                " Lungenes maksimale ventilasjonskapasitet /The maximal ventilatory capacity of the lungs",
+                " Hemoglobinkonsentyrasjonen i blod / the haemoglobin concentration of blood "
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Figuren til venstre viser et diagram av et øye med en brytningsfeil, og til høyre samme feil korrigert med en linse (brille). Hvilken brytningsfeil er dette? / Figuren til venstre syner eit diagram av et auge med ein brytingsfeil, og til høgre same feil korrigert med ein linse (brille). Kva for brytningsfeil er dette? / The figure to the left shows a diagram of an eye with a refraction defect, to the right the same defect corrected by a lens (galss). What type of defect is this?",
+            "answers": [
+                "Myopi – Nærsyn / Myopia",
+                "Hypermetropi – Langsyn / Hypermetropia",
+                "Grå stær – Katarakt / Cataract",
+                "Grønn stær – Glaukom / Glaucoma"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Allerede lukten og smaken av mat kan stimulere deler av magesekken til å produsere gastrin. Hva er hovedeffekten av gastrin? / Allereie lukta og smaken av mat kan stimulere deler av magesekken til å produsere gastrin. Kva er hovudeffekten av gastrin? / Already the smell and taste of food can stimulate parts of the stomach to secrete gastrin. What is the function of gastrin?",
+            "answers": [
+                "Bryter ned protein / Bryt ned protein / Breaks down protein",
+                "Bryter ned karbohydrat / Bryt ned karbohydrat / Breaks down carbohydrates",
+                "Stimulerer produksjonen av saltsyre / Stimulates the production of hydrochloric acid",
+                "Stimulerer produksjonen av bilirubin / Stimulates the production of bilirubin"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hvor i kartreet er normalt den største motstanden og følgelig det største trykkfallet? / Kor i kartreet er normalt den største motstanden og dermed det største trykkfallet? / Where in the vasculature is normally the greatest resistance and thus the greatest pressure drop?",
+            "answers": [
+                "Arteriene / The arteries",
+                "Arteriolene / The arterioles",
+                "Kapillærene / The capillaries",
+                "Venylene / The venules"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hva er de viktigste regulatorer for ventilasjonen under basalbetingelser? / Kva er dei viktigaste regulatorane for ventilasjonen ved basalbetingelser? / What is the main regulators of ventilation during basal conditions?",
+            "answers": [
+                "CO2 + pH",
+                "CO2 + CO",
+                "O2 + pH",
+                "CO2 + O2"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Ved slutten av aksjonspotensialet blir kalsium pumpet fra cytoplasma inn i sarcoplasmatisk reticulum. Hva slags transport er det? / Ved slutten av aksjonspotensialet blir kalsium pumpet fra cytoplasma inn i sarcoplasmatisk reticulum. Kva slag transport er det? / At the end of a cardiac action potential, calcium is pumped from the cytoplasm into the sarcoplasmatic recticulum against a concentration gradient. What kind of transport is this?",
+            "answers": [
+                "Aktiv transport / Active transport",
+                "Mediert Diffusjon / Mediated diffusion",
+                "Diffusjon / Diffusion",
+                "Osmose/ Osmosis"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "En blodåre har en innsnevring i et kort område. Hva skjer alltid med blodstrømmen i denne innsnevringen? / Ein blodåre har ei innsnevring i et kort område. Kva skjer alltid med blodstraumen i denne innsnevringa? / A blood vessel has a narrowing in a short segment. What happensalways to the blood flow in this narrow segment?",
+            "answers": [
+                "Blodstrømshastigheten øker / Blodstraumshastigheten auker / The blood velocity increases",
+                "Blodstrømshastigheten avtar / Blodstraumshastigheten avtek / The blood velocity decreases",
+                "Blodstrømsmengden (flow) øker / Blodstraumsmengda (flow) auker / The blood flow increases",
+                "Blodstrømsmenden (flow) avtar / Blodstraumsmengda (flow) avtek / The blood flow decreases"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Partialtrykket av oksygen i lufta reduseres med høyden. Hvis partialtrykket er redusertmed ca 50 %, hvor mye reduserer dette O2 metningen i blodet? / Partialtrykket avoksygen i lufta blir redusert med høgda. Viss partialtrykket er redusert med ca 50%,kor mykje reduserer dette O2 mettinga i blodet? / The partial pressure of oxygen in the air decreases with altitude. If the partial pressure is reduced by 50%, how much will this reduce the oxygen saturation of blood?",
+            "answers": [
+                "Intet/ Nothing",
+                "Moderat redusert, betydelig / mindre enn 50% / Moderat redusert, betydelg / mindre enn 50% / Moderately reduced, but substantially less than 50%",
+                "Ca 50%",
+                "Betydelig mer enn 50% / Betydeleg meir enn 50% / Substantially more than 50%"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Nyrene produserer urin for å fjerne avfallsstoffer. Hvilken mekanisme beskriver best hvordan “preurin” produseres i glomerulus? / Nyrene produserer urin for å fjerne avfallsstoff. Kva for mekanisme beskriver best korleis “preurin” blir produsert i glomerulus? / The kidney produces urine to get rid of waste products. What is the mechanism best describing how the 'pre-urine' is produced in the glomerulus?",
+            "answers": [
+                " Proteiner i urinen gir et høyt osmotisk trykk som trekker væske inn i urinen. / Protein i urinen gir eit høgt osmotisk trykk som trekker væske inn i urinen. / Proteins in the urine give a high osmotic pressure gradient that 'drags' fluid into the urinary space",
+                " Høyt hydrostatisk trykk i blodet “presser” væske inn i urinen. / Høgt hydrostatisk trykk i blodet “presser” væske inn i urinen. / High hydrostatic pressure in the blood 'push' fluid into the urinary space",
+                " Høy konsentrasjon av albumin, som er negativt ladet, presser avfallsstoffer med negativ ladning inn i urinen. / Høg konsentrasjon av albumin, som er negativt ladet, presser avfallsstoffer med negativ ladning inn i urinen. / The high concentration of albumin, which is negatively charged, 'push' waste product with a negative charge into the urinary space.",
+                " Avfallsstoffer i blodet blir aktivt transportert fra blod til urin av aktiv transport av pumper i glomerulus basalmembran. / Avfallsstoff i blodet blir aktivt transportert frå blod til urin av aktiv transport av pumper i glomerulus basalmembran. / Waste products in the blood are actively transported from the blood into the urinary space with active pumps at the glomerulus basal membrane."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Vann reabsorberes langs det meste av nefronet. Hvilken mekanisme er hovedansvarlig for reabsorbsjon av vann? / Vann reabsorberest langs det meste av nefronet. Kva for mekanisme er hovudansvarlig for reabsorbsjon av vann? / Water is reabsorbed along most of the nephron. Which mechanism is mainly responsible for reabsorbtion of water?",
+            "answers": [
+                "Osmose / Osmosis",
+                "Fasilitert diffusjon / Facilitated diffusion",
+                "Aktiv transport / Active transport",
+                "Pinocytose / Pinocytosis"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Omtrent hvor stor andel av vannmengden som skilles ut i glomeruli blir igjen i denferdige urinen? / Omtrent kor stor del av vassmengda som blir skilt ut glomeruli blirigjen i den ferdige urinen? / About how large part of the water that is excreted in the glomeruli remains as urinein the finished product?",
+            "answers": [
+                "Ca 1%",
+                "Ca 10%",
+                "Ca 25%",
+                "Ca 50%"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hvilket organ skiller ut antidiuretisk hormon (ADH)? / Kva for organ skiljer ut antidiuretisk hormon (ADH) / What organ secretes antidiuretic hormone (ADH)?",
+            "answers": [
+                "Hypofysen / The pituitary",
+                "Parathyroidea / The Parathyroid",
+                "Thyroidea / The thyroid",
+                "Binyrene / The adrenal glands"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Volumet av urin reguleres av antidiuretisk hormon i forhold til behovet for utskillelse av vann. Hvordan skjer denne reguleringen? / Volumet av urin blir regulert i forhold til behovet for utskilling. Korleis skjer denne reguleringa? / In re absorbtion of water, the volume of urine is regulated by anti diuretic hormone in proportion to the need for excretion of water. How is this regulated?",
+            "answers": [
+                "ADH regulerer filtreringa i Bownmans kapsel / ADH regulates the filtration in",
+                "wman’s capsule",
+                "ADH regulerer reabsorbsjonen av Na+, og vann følger Na+ ved osmose / ADH regulates the active re absorbtion of NA+, and water follows the NA+ by osmosis.",
+                "ADH øker permeabilitenten for vann av distale tubuli og samlerør, og derved reabsorbsjonen av vann / ADH increases the permeability for water of the distal tubuli and collecting ducts, thus increasing the reabsorbtion of water.",
+                "ADH reduserer pinocytosen av vann / ADH reduces the pinocytosis of water"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hvordan er trykket i pleuralhulen under inspirasjon? /Korleis er trykket i pleuralhulen under inspirasjon? / What is the pressure in the pleural cavity during inspiration?",
+            "answers": [
+                "Lavere enn atmosfæretrykket / Lågere enn atmosfæretrykket / Lower than the atmospheric pressure",
+                "Likt atmosfæretrykket / Equal to the atmospheric pressure",
+                "Høyere enn atmosfæretrykket / Høgere enn atmosfæretrykket / Higher than the atmospheric pressure",
+                "Høyere ved start inspirasjon, lavere ved endeinspirasjon / Higher at start inspiration, lower at end inspiration"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hva kalles muskler som utøver motsatte aksjoner (f.eks. bøye og strekke) på samme ledd?/ Kva kallest musklar som utøvar motsette aksjoner (td. bøye og strekke) på same ledd? /What are muscles called that exerts opposite actions (f.i. flexing and extending) on the same joint?",
+            "answers": [
+                "Synergister / Synergistar / Synergists",
+                "Antagonister / Antagonistar / Antagonists",
+                "Fiksatorer / Fiksatorar / Fixators",
+                "Tetaniske muskler / Tetaniske musklar / Tetanic muscles"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "ldet viser et ultralydbilde av et hjerte der en enkelt ultralydstråle er brukt til å ta opp ekko som skrives ut langs en tidsakse, slik at vi får et diagram av bevegelsen til strukturer i hjertet. Hva kalles denne ultralydmodaliteten? / Bildet viser eit 2- dimensjonalt ultralydbilde av eit hjerte der ein enkelt ultralydstråle er brukt til å ta opp ekko som skrives ut langs en tidsakse, slik at vi får eit diagram av bevegelsen til strukturer i hjertet. Kva blir denne ultralydmodaliteten kalla? / The picture shows a 2- dimensional ultrasound picture of a heart where a single ultrasound beam is used to record an echo that is printed along a time axis, giving a diagrom of the motion of structures in the heart. What is this ultrasound modality called?",
+            "answers": [
+                "A-mode",
+                "B-mode",
+                "M-mode",
+                "Doppler mode"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Diabetes type 2 er en sykdom der den perifere sensitiviteten for insulin er redusert, og dengir dermed forhøyd blodsukker. Hva skjer med insulinnivået ved blodet ved ved startenav en typisk type 2 diabetes? / Diabetes type 2 er en sjukdom der den perifere sensitiviteten for insulin er redusert, og den gir dermed forhøgd blodsukker. Kva skjer med insulinnivået ved blodet ved starten av ein typisk type 2 diabetes? / Diabetes type 2 is a disease where the peripheral sensitivity of insulin is decreased, leading to elevated blood sugar. What happens to the level of insulin in the blood at the start of a typical type 2 diabetes?",
+            "answers": [
+                "Øker / Auker / Increases",
+                "Uendret / Uendra / Unchanged",
+                "Avtar / Avtek / Decreases",
+                "Det er lavere enn normalt under måltider og høyere enn normalt mellom måltid / Higher during meals and lower between meals"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Ved sukkersyke kan det finnes glukose i urinen som tegn på at blodsukkeret er økt. Hva er mekanismen for dette? / Ved sukkersjuke kan det finnast glukose i urinen som teikn på at blodsukkeret er auka. Kva er mekanismen for dette? / In diabetes is glucose found in the urine as a sign of elevated blood sugar. What is the mechanism for this?",
+            "answers": [
+                "Glukose filtreres normalt ikke ut i urinen, kun ved økt blodsukker / Glukose filtrerast normalt ikkje ut i urinen, berre ved auka blodsukker / Glucose is normally not filtrated inthe urine,only in elevated blood sugar.",
+                "Ved økt blodsukker overstiger urinkonsentrasjonen av glukose evnen til reabsorbsjon / Ved auka blodsukker overstig urinkonsentrasjonen av glukose evna til reabsorbsjon / In elevated blood sugar, the renal capacity for reabsorption is exceeded by the urine concentration of glucose",
+                "Ved økt blodsukker transporteres glukose aktivt ut i urinen / Ved auka blodsukker transporterast glukose aktivt ut i urinen / In elevated blood sugar the excess amount of sugar is actively secreted in the urine",
+                "Ved økt blodsukker blir epitelet i urinveiene permeabelt for glucose / Ved auka blodsukker blir epitelet i urinveiene permeabelt for glukose / In elevated blood sugar the epithelium becomes permeable for glucose"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hvilke hormonforandringer skjer ved menopause? / Kva for hormonforandringar skjer ved menopause? / What hormonal changes take place in menopause?",
+            "answers": [
+                "Østrogen↓, FSH↑ / Estrogen↓, FSH↑",
+                "Østrogen ↓, FSH↓ / Estrogen ↓, FSH↓",
+                "Østrogen ↑, FSH↑ / Estrogen ↑, FSH↑",
+                "Østrogen ↑, FSH↓ / Estrogen ↑, FSH↓"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Erythropoietin (EPO) finnes i kroppen, men i høyere doser kan det brukes som (ulovlig) doping i utholdenhetsidrett. Hva er mekanismen? / Erythropoietin (EPO) finnest i kroppen, men i høgare doser kan det brukast som (ulovlig) doping i utholdenhetsidrett. Kva er mekanismen? / Erythropoietin (EPO) occurs naturally in the body, but in hgher doses, it can be used as (illegal) doping in order to improve endurance. What is the mechanism?",
+            "answers": [
+                "Det styrker hjertemuskelen og øker slagvolumet / Det styrker hjertemuskelen og aukar slagvolumet / It strengthens the heart muscle and increases stroke volume",
+                "Det styrker hjertemuskelen og øker makspulsen/ Det styrker hjertemuskelen og aukar makspulsen / It strengthens the heart muscle and increases maximal heart rate",
+                "Det øker hemoglobinet / Det aukar hemoglobinet / It increases the hemoglobin",
+                "Det øker oksygenmetningen til hemoglobinet / Det aukar oksygenmettinga til hemoglobinet / It increases the oxygen saturation of the blood"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hva kalles muskelaksjonen i bevegelsen som er vist på bildet? / Kva blir muskelaksjonen i bevegelsen som er vist på bildet kalla? / What is the muscle action in the movement shown in the picture called?",
+            "answers": [
+                "Konsentrisk / concentric",
+                "Eksentrisk / eccentric",
+                "Isometrisk / isometric",
+                "Antagonistisk / antagonistic"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Ved et større blodtap vil vi kunne få akutte endringer i både pulsfrekvens (HR) og blodtrykk (BP). Hvilke endringer? / Ved eit store blodtap vil vi kunne få akutte endringar i bade pulsfrekvens (HR) og blodtrykk (BP). Kva for endringar? / A substantial blood loss will result in changes in both heart rate (HR) and Blood pressure (BP). What changes?",
+            "answers": [
+                "BP↑, HR↓",
+                "BP↑, HR↑",
+                "BP↓, HR↓",
+                "BP↓, HR↑"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Hvilket vitamin er nødvendig for normal beinmineralisering? / Kva for vitamin er nødvendig for normal beinmineralisering? / What vitamin is necessary for normal bone mineralisation?",
+            "answers": [
+                "Vitamin A",
+                "Vitamin B 12",
+                "Vitamin D",
+                "Vitamin E"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Ved anaerob metabolisme produseres ATP uten oksygen. Hva er energikilden (til venstre for pila) og hva er sluttproduktet (til høyre for pila)? / Ved anaerob metabolisme blir det produsert ATP utan oksygen. Kva er energikjelda (til venstre for pila) og kva er sluttproduktet (til høyre for pila)? / Anaerobic metabolism can produce ATP without oxygen. What is the energy source (to the left of the arrow), and what is the end product (to the right of the arrow)?",
+            "answers": [
+                "Fettsyrer → Citrat / Fatty acids → Citric acid",
+                "Fettsyrer → melkesyre / Fatty acids → Lactic acid",
+                "Glucose → Citrat / Glucose → Citric acid",
+                "Glucose → melkesyre / Glucose → Lactic acid"
+            ],
+            "correct": 3
+        }
+    ]
+}
