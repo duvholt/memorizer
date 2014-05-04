@@ -10,7 +10,7 @@
                 "Den teknologiske utviklingsfasen etter at en har utviklet et dominerende design er preget av radikale innovasjoner for å forbedre ytelsen på det dominerende designet",
                 "Destruktive innovasjoner brukes om inkrementelle innovasjoner som endrer konkurransebildet så kraftig at tidligere investeringer kan bli verdiløse",
                 "For at innovasjon skal være destruktiv må den omfatte både en teknologidrevet innovasjon og en innovasjon av forretningsmodellen"
-            ]
+            ],
             "correct": 0
         },
         {
@@ -20,7 +20,7 @@
                 "Bankene vil normalt sett ikke engasjere seg med egenkapitalfinansiering til potensielle vekstbedrifter.",
                 "Sparebankene engasjerer seg ofte finansielt i tidlig fase, mens forretningsbankene kommer mer på banen i senere faser av livsløpet.",
                 "Venturekapital fond er den mest vanlige typen investor i nye vekstbedrifter"
-            ]
+            ],
             "correct": 1
         },
         {
@@ -30,7 +30,7 @@
                 "At kunnskapsbedrifter er i stand til å levere varer og tjenester til avtalt tid med god kvalitet.",
                 "Med dette menes at bedriften har svært gode kunnskaper om produksjon og distribusjon.",
                 "Med dette menes at bedriften klarer å kombinere ressurser på en slik måte at den utvikler konkurransefortrinn."
-            ]
+            ],
             "correct": 3
         },
         {
@@ -40,7 +40,7 @@
                 "Dette er offentlige fond som skal støtte opp om etablering av vekstbedrifter",
                 "Dette er bedrifter som går sammen og investerer direkte i nye teknologibedrifter.",
                 "Venturekapital fond investerer normalt sett i mange bransjer og et stort antall bedrifter for å diversifisere risikoen til fondet."
-            ]
+            ],
             "correct": 0
         },
         {
@@ -50,7 +50,7 @@
                 "Venturekapital fond, såkornfond, Business Angels, gründer, familie og venner",
                 "Gründer, familie og venner, såkornfond, venturekapital fond, Business Angels",
                 "Gründer, familie og venner, Business Angels, såkornfond, venturekapital fond"
-            ]
+            ],
             "correct": 3
         },
         {
@@ -60,7 +60,7 @@
                 "Konkurranserisiko, økonomisk risiko og teknologirisiko",
                 "Teknologirisiko, konkursrisiko, og markedsrisiko",
                 "Konkurrentrisiko, markedsrisiko og kapitalrisiko"
-            ]
+            ],
             "correct": 0
         },
         {
@@ -70,7 +70,7 @@
                 "Midlertidig task-force",
                 "Team",
                 "Integrasjonsrolle"
-            ]
+            ],
             "correct": 0
         },
         {
@@ -80,7 +80,7 @@
                 "Det vil være vanskeligere å koordinere mellom ulike avdelinger",
                 "Det vil være vanskeligere å ha kontroll på omgivelsene",
                 "Autoritetshierarkiet vil være den mest sentrale integreringsmekanismen"
-            ]
+            ],
             "correct": 1
         },
         {
@@ -90,7 +90,7 @@
                 "Sosiale normer",
                 "Sentralisering",
                 "Standardisering"
-            ]
+            ],
             "correct": 2
         },
         {
@@ -100,7 +100,7 @@
                 "... når den ansattes leder er mer utadvendt enn gjennomsnittet?",
                 "... når den ansatte selv er mer utadvendt enn gjennomsnittet?",
                 "... når konformitetspresset i situasjonen er svakt?"
-            ]
+            ],
             "correct": 3
         },
         {
@@ -110,7 +110,7 @@
                 "Produktet av pris og mengde er konstant.",
                 "Mengden øker med økende pris.",
                 "Mengden synker med økende pris."
-            ]
+            ],
             "correct": 3
         },
         {
@@ -120,7 +120,7 @@
                 "Gjennomsnittskostnadene er konstante.",
                 "Gjennomsnittskostnadene synker for økende mengde i det aktuelle området.",
                 "Gjennomsnittskostnadene øker for økende mengde i det aktuelle området."
-            ]
+            ],
             "correct": 2
         },
         {
@@ -130,7 +130,7 @@
                 "20 000",
                 "15 000",
                 "10 000"
-            ]
+            ],
             "correct": 0
         },
         {
@@ -140,7 +140,7 @@
                 "9 000",
                 "10 000",
                 "11 000"
-            ]
+            ],
             "correct": 1
         },
         {
@@ -150,7 +150,7 @@
                 "Redusert mengde og høyere pris ville kunne økt profitten med så mye som 5 % i forhold til det bedriften faktisk oppnådde i perioden.",
                 "Økt mengde og lavere pris ville kunne økt profitten, men vi kan ikke ut fra opplysningene si noe om hvor stor prosentvis endring av profitt det kunne gitt.",
                 "Redusert mengde og høyere pris ville kunne økt profitten, men vi kan ikke ut fra opplysningene si noe om hvor stor prosentvis endring av profitt det kunne gitt."
-            ]
+            ],
             "correct": 2
         },
         {
@@ -160,7 +160,7 @@
                 "Prisen vil da ligge lengre fra marginalkostnaden enn før slik at forholdet mellom pris og marginalkostnader beveger seg bort fra 1.",
                 "Prisen er uansett lik marginalkostnaden ved optimal tilpasning slik at forholdet mellom pris og marginalkostnader er 1.",
                 "Ettersom både pris og mengde endrer seg, vil også marginalkostnadene endre seg, og vi kan derfor ikke si noe om hvordan forholdet mellom pris og marginalkostnader vil utvikle seg."
-            ]
+            ],
             "correct": 0
         },
         {
@@ -170,7 +170,7 @@
                 "Hver bedrift produserer 300 enheter.",
                 "Hver bedrift produserer 200 enheter.",
                 "Hver bedrift produserer 100 enheter."
-            ]
+            ],
             "correct": 1
         },
         {
@@ -180,7 +180,7 @@
                 "Total mengde blir lavere, men mengden til den bedriften som får lavere marginalkostnader synker relativt mindre enn mengden til den andre bedriften.",
                 "Total mengde øker og det skjer ved at begge bedriftene øker sin mengde.",
                 "Total mengde øker, men mengden til den bedriften som ikke får lavere marginal- kostnader synker."
-            ]
+            ],
             "correct": 3
         },
         {
@@ -190,7 +190,7 @@
                 "0,4",
                 "0,5",
                 "1,0"
-            ]
+            ],
             "correct": 3
         },
         {
@@ -200,7 +200,7 @@
                 "0,4",
                 "0,5",
                 "1,0"
-            ]
+            ],
             "correct": 2
         },
         {
@@ -210,7 +210,7 @@
                 "Forventet avkastning til aksjemarkedet.",
                 "Forventet avkastning til statsobligasjoner.",
                 "Forventet avkastning til beste alternative prosjekt bedriften kan gjennomføre selv."
-            ]
+            ],
             "correct": 0
         },
         {
@@ -220,7 +220,7 @@
                 "497 177",
                 "869 565",
                 "1 000 000"
-            ]
+            ],
             "correct": 0
         },
         {
@@ -230,7 +230,7 @@
                 "Investoren vil velge investering B.",
                 "Investoren vil velge investering C.",
                 "Investoren vil ikke velge investering A. Valget mellom B og C vil være avhengig av graden av risikoaversjon."
-            ]
+            ],
             "correct": 3
         },
         {
@@ -240,7 +240,7 @@
                 "Når avkastningene til verdipapirene er perfekt negativt korrelerte.",
                 "Når avkastningene til verdipapirene er ukorrelerte.",
                 "Når korrelasjonen mellom verdipapirene er lik det veide gjennomsnittet av avkastningene."
-            ]
+            ],
             "correct": 1
         },
         {
@@ -250,7 +250,7 @@
                 "Unik risiko og diversifiserbar risiko.",
                 "Markedsrisiko og ikke-diversifiserbar risiko.",
                 "Systematisk risiko og diversifiserbar risiko."
-            ]
+            ],
             "correct": 3
         },
         {
@@ -260,7 +260,7 @@
                 "1,0",
                 "1,5",
                 "2,0"
-            ]
+            ],
             "correct": 3
         },
         {
@@ -270,7 +270,7 @@
                 "100",
                 "175",
                 "233"
-            ]
+            ],
             "correct": 1
         },
         {
@@ -280,7 +280,7 @@
                 "6,00 %",
                 "7,25 %",
                 "9,00 %"
-            ]
+            ],
             "correct": 2
         },
         {
@@ -290,7 +290,7 @@
                 "181 818",
                 "188 636",
                 "409 090"
-            ]
+            ],
             "correct": 1
         },
         {
@@ -300,7 +300,7 @@
                 "Ekstra nåverdi av skattefordel av gjeld ved marginal økning i giring er mindre enn økt nåverdi av forventede konkurskostnader ved marginal økning i giring.",
                 "Nåverdien av skattefordelen av gjeld er lik nåverdien av forventede konkurskost- nader.",
                 "Nåverdien av skattefordelen av gjeld er mindre enn nåverdien av forventede kon- kurskostnader."
-            ]
+            ],
             "correct": 0
         }
     ]
