@@ -15,18 +15,31 @@ db.init_app(app)
 @app.route('/')
 def main():
     context = {
-        'courses': models.Course.query.options(db.joinedload('exams')).all()
+        'courses': models.Course.query.options(db.joinedload('exams')).all(),
+        'breadcrumbs': [{'name': 'Emner'}]
     }
     return render_template('courses.html', **context)
 
 
-@app.route('/reset/<int:course_id>')
-def reset_stats(course_id):
+@app.route('/reset/<string:course_code>')
+def reset_stats_course(course_code):
     """Reset stats for a course"""
     if 'courses' in session:
-        if str(course_id) in session['courses']:
-            del session['courses'][str(course_id)]
-    return redirect(url_for('course', course_id=course_id))
+        course = models.Course.query.filter_by(code=course_code).first()
+        if course and str(course.id) in session['courses']:
+            del session['courses'][str(course.id)]
+    return redirect(url_for('course', course_code=course_code))
+
+
+@app.route('/reset/<string:course_code>/<string:exam_name>')
+def reset_stats_exam(course_code, exam_name):
+    """Reset stats for a course"""
+    if 'exams' in session:
+        course = models.Course.query.filter_by(code=course_code).first()
+        exam = models.Exam.query.filter_by(course=course, name=exam_name).first()
+        if exam and str(exam.id) in session['exams']:
+            del session['exams'][str(exam.id)]
+    return redirect(url_for('exam', course_code=course_code, exam_name=exam_name))
 
 
 @app.route('/<string:course_code>')
@@ -61,6 +74,12 @@ def show_question(course_code, exam_name, id):
         # Only question from a specific exam
         num_questions = models.Question.query.filter_by(exam=exam).count()
         question = models.Question.query.filter_by(exam=exam).offset(id - 1).limit(1).first_or_404()
+        reset_url = url_for('reset_stats_exam', course_code=course.code, exam_name=exam.name)
+        breadcrumbs = [
+            {'name': 'Emner', 'url': url_for('main')},
+            {'name': course, 'url': url_for('course', course_code=course_code)},
+            {'name': exam}
+        ]
     else:
         if 'courses' not in session:
             session['courses'] = {}
@@ -72,6 +91,11 @@ def show_question(course_code, exam_name, id):
         exam = None
         num_questions = models.Question.query.filter_by(course=course).count()
         question = models.Question.query.filter_by(course=course).offset(id - 1).limit(1).first_or_404()
+        reset_url = url_for('reset_stats_course', course_code=course.code)
+        breadcrumbs = [
+            {'name': 'Emner', 'url': url_for('main')},
+            {'name': course}
+        ]
     if num_questions == 0:
         abort(404)
     context = {
@@ -82,7 +106,9 @@ def show_question(course_code, exam_name, id):
         'next': id + 1 if id < num_questions else 1,
         'num_questions': num_questions,
         'course': course,
-        'exam_name': exam_name
+        'exam_name': exam_name,
+        'reset_url': reset_url,
+        'breadcrumbs': breadcrumbs
     }
     context['question'] = question
     # Stupid hack (question.alternatives doesn't sort properly) TODO: Fix
