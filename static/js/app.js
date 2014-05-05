@@ -25,14 +25,14 @@ $(document).keydown(function(e) {
 	
 	// Previous question
 	if (e.keyCode == 37) {
-		if($('#prev_question')) {
+		if($('#prev_question').size() > 0) {
 			window.location = $('#prev_question').attr('href');
 		}
 	}
 	
 	// Next question
 	if (e.keyCode == 39) {
-		if($('#next_question')) {
+		if($('#next_question').size() > 0) {
 			window.location = $('#next_question').attr('href');
 		}
 	}
