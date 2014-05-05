@@ -1,0 +1,490 @@
+{
+    "name": "Teknologiledelse",
+    "code": "TIØ4258",
+    "exam": "V10",
+    "questions": [
+        {
+            "question": "Porter (1980) bruker begrepene ”innovation leadership” og “innovation followership”. Hva legger han i dette?",
+            "answers": [
+                "Man må lede innovasjonsutviklingen, man kan ikke følge etter andre.",
+                "Man vil spare mye ressurser på å følge etter ”first movers”.",
+                "”Leadership” henviser til det å være først i markedet, mens ”followership” handler om å imitere lederne gjennom imitasjon.",
+                "”Leadership” henviser til handlingsrommet som ligger i å kunne velge markedsstrategi, mens man ikke har det valget dersom man er en ”follower”."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Teese og Pisano (1994) bruker begrepet ”dynamiske kapabiliteter”. Hvilke kriterier mener de må ligge til grunn for at kapabilitetene kan omtales som strategiske?",
+            "answers": [
+                "De må være dynamiske, de må være verdifulle for bedriften og de må være skalerbare.",
+                "De må være dynamiske og vanskelig å kopiere.",
+                "De må være knyttet til kundenytte, unike og vanskelige å imitere.",
+                "De må være sjeldne, de må kunne brukes i ett internasjonalt marked, og de må være kunnskapsbaserte."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hamel og Prahalad (1990) sine ideer om ”kjernekompetanse” kan oppsummeres slik:",
+            "answers": [
+                "1. Varig konkurransekraft ligger i bedriftens kjernekompetanse. 2. Kjernekompetansen brukes i flere produkter. 3. Organisatorisk kompetanse er vesentlig. 4. Kjernekompetanse krever fokus. 5. Bedrifter kan ses på som en samling av kompetanse.",
+                "En kjernekompetanse – ett produkt",
+                "Kjernekompetansen må være 1. Verdifull, 2. Sjelden, 3. Vanskelig å imitere, og 4. Innbakt i bedriftens organisasjon.",
+                "Kjernekompetanse finner man i bedriftens ledergruppe."
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hvilken av følgende påstander om mulighetsanalyser av teknologibaserte forretningsideer er mest korrekt?",
+            "answers": [
+                "Mulighetsanalyser er en fullstendig og gjennomgripende gjennomgang av tekniske, markedmessige, økonomiske og organisatoriske forhold.",
+                "Mulighetsanalyser innebærer en innledende vurdering av tekniske, markedmessige, økonomiske og organisatoriske forhold.",
+                "Grunnlaget for en mulighetsanalyse har man først etter å ha utarbeidet en god forretningsplan.",
+                "Det legges mest vekt på teknologivurderinger i en mulighetsanalyse."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hvilken av følgende påstander om innovasjon er mest korrekt:",
+            "answers": [
+                "Vi må unngå at andre profiterer på våre oppfinnelser og må kontrollere alle intellektuelle rettigheter selv.",
+                "Bedrifter som har egen forskning og utvikling er best på innovasjon.",
+                "Den som kommer først til markedet med en innovasjon oppnår varige konkurransefortrinn.",
+                "En bedrift må samarbeide med flinke mennesker og bedrifter utenfor og innenfor egen bedrift for å oppnå konkurransekraft."
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Tidd og Bessant (2009) beskriver to ytterpunkter for hvordan man kan organisere innovasjon (R&D) globalt. Hvilke?",
+            "answers": [
+                "Innkjøp eller internt.",
+                "Sammen med global partner eller internt.",
+                "Produktorientert eller generisk.",
+                "Spesialisert eller integrert."
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Hvilken av følgende påstander om innovative løsninger er mest korrekt?",
+            "answers": [
+                "I store selskaper er forskningsavdelingene den viktigste kilden til nye og innovative løsninger.",
+                "Eksisterende brukere/kunder er for mange bedrifter den viktigste kilden til innovasjon.",
+                "Markedet er fasiten på om løsningen er innovativ.",
+                "Idekonkurranser er den beste måten for å stimulere genereringen av innovative ideer."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hvilken av påstandene står i konflikt med en ”åpen innovasjon” tilnærming?",
+            "answers": [
+                "Man oppnår alltid god lønnsomhet fra forskning og utvikling dersom bedriften oppdager og utvikler løsningen selv.",
+                "Det er bedre å utvikle en robust forretningsmodell enn å komme ut i markedet først.",
+                "Man må nyttiggjøre seg av interne og eksterne innovasjonsideer.",
+                "Det er ikke alltid du finner de flinkeste folkene internt i bedriften."
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Prahalad (2006) bruker begrepet ”bottom of the pyramid” (BoP Markets). Hva mener han med det?",
+            "answers": [
+                "Ødelagte produkter som selges dumpes til lave priser.",
+                "Marked bestående av populasjon som lever under fattigdomsgrensen.",
+                "Markeder som adopterer innovasjon sist",
+                "Markeder som danner grunnlag for lønnsomhet"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "I boken til Tidd og Bessant (2009) brukes begrepene ”exploitation” og ”exploration”. Hva mener de med dem?",
+            "answers": [
+                "”Exploitation” handler om å bruke og videreutvikle de ressursene de har, mens ”exploration” handler om å ta i bruk ressurser som ligger utenfor deres domene.",
+                "”Exploitation” handler om å bruke sjeldne ressurser, mens ”exploration” handler om å kombinere sjeldne ressurser.",
+                "”Exploitation” handler om å utnytte andres ressurser, mens ”exploration” handler om å utnytte egne ressurser.",
+                "”Exploitation” handler om å bruke og videreutvikle de ressursene de har, mens ”exploration” handler om å bruke den kunnskapen de har."
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Tidd og Bessant (2009) deler ledelse av risiko inn i tre kategorier. Hvilke?",
+            "answers": [
+                "1. Risiko knyttet til markedsadopsjon, 2. Risiko knyttet til produksjon og 3. Risko knyttet til logistikk.",
+                "1. Estimering av teknisk og kommersiell suksess, 2. Psykologisk og sosiologisk persepsjon av risiko og 3. Politisk influering",
+                "1. Usikkerhet, 2. Risiko, 3. Usikkerhet og risikostyring.",
+                "1. Entrepreneurial mindset, 2. Entrepreneurial opportunity, 3. Entrepreneurial action."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hva er en ”Business Angel”?",
+            "answers": [
+                "En privatperson som spesialiserer seg på å redde bedrifter fra konkurs",
+                "En person som bruker private midler, og som investerer penger i tidlig. fase bedrifter, og som ønsker størst mulig avkastning på investeringen.",
+                "En utenlandsk investor som investerer i tidlig fase gründerbedrifter.",
+                "En privatperson som tilbyr venturekapital direkte til unoterte bedrifter hvor de ikke har noen formell eller familiær forbindelse."
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Hva er rekkefølgen (fra først til sist) på når disse aktørene normalt investerer?",
+            "answers": [
+                "Venturekapital fond, såkornfond, Business Angels, gründer, familie og venner",
+                "Gründer, familie og venner, Business Angels, såkornfond, venturekapital fond",
+                "Såkornfond, venturekapital fond, Business Angels, gründer, familie og venner",
+                "Gründer, familie og venner, såkornfond, venturekapital fond, Business Angels"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "I følge Mitchell og Hamilton (1988) er det tre overlappende kategorier av innovasjon som store bedrifter må finansiere. Hvilke?",
+            "answers": [
+                "1. Produktinnovasjon, 2. Markedsinnovasjon og 3. Organisasjonsinnovasjon.",
+                "1. Markedsinnovasjon, 2. Markedsinnovasjon og 3. Markedsinnovasjon.",
+                "1. Nettverksbygging, 2. Teknologiutvikling og 3. Kunnskapsbygging.",
+                "1. Kunnskapsbygging, 2. Strategisk posisjonering og 3. ”Business investment”"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Hvilken av følgende påstander om finansiering av teknologibedrifter er mest korrekt?",
+            "answers": [
+                "I tidlig fase vil bankene alltid være den viktigste finansieringskilden.",
+                "I Norge er finansiering sjelden et problem siden vi har så gode offentlige virkemidler.",
+                "Venturekapital fond gjør mange investeringer og er den mest vanlige typen investor i nye teknologibedrifter.",
+                "Bankene kan være viktige rådgivere men vil normalt sett ikke engasjere seg finansielt i de tidlige fasene ved utviklingen av en teknologibedrift."
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Hva er spesielt med Watson (2008; K1) sin definisjon av en organisasjon?",
+            "answers": [
+                "Den anerkjenner interessemotsetninger og maktstrukturer.",
+                "Den forutsetter økonomisk rasjonelle aktører.",
+                "Den vektlegger hvordan arbeidstakernes personlighet påvirker det produktive samarbeidet.",
+                "Den vektlegger betydningen av nasjonal selskapsrett."
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Ifølge Watson (2006; K2), så kan ledelse (management) forstås i tre dimensjoner. Dimensjonene er:",
+            "answers": [
+                "Formell rolle (position), uformell rolle (role) og funksjon (function).",
+                "Ferdigheter (skills), karisma (charisma) og autoritet (authority).",
+                "Handlinger (activity), funksjon (function) og formell rolle (formal role).",
+                "Formell rolle (position), funksjon (function) og ferdigheter (skills)."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hvilken av disse egenskapene er ikke et kjennetegn ved et idealbyråkrati?",
+            "answers": [
+                "Formalisering av prosedyrer for beslutninger.",
+                "Det er et skarpt skille mellom de som tenker (ledere) og de som utfører (arbeidere).",
+                "Byråkratens personlige interesser påvirker ikke hans beslutninger.",
+                "Man ansettes på bakgrunn av dokumenterbar kompetanse."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hva mener Tidd og Bessant (2009) med organisatorisk treghet (inertia)?",
+            "answers": [
+                "At organisatoriske aktører utvikler en rekke kognitive, adferdsmessige og sosiale strukturer som bidrar til å opprettholde status quo.",
+                "At store organisasjoner (med større ”masse”) har vanskeligere for å endre seg enn små organisasjoner (med mindre ”masse”).",
+                "At politiske og markedsmessige strukturer innsnevrer handlefriheten til toppledere.",
+                "At organisasjoner som står i fare for å gå konkurs, så godt som aldri klarer å sette i verk effektive sparetiltak."
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Ifølge et prosess-relasjonelt syn på ledelse (Watson 2006; K2), hvilke av disse egenskapene eller ferdighetene er viktigst for å lykkes som leder:",
+            "answers": [
+                "At man behersker grunnleggende ledelsesteori og kan diskutere ledelsesfag på en presis måte med kollegaer og underordnede.",
+                "Å kunne anvende teknisk kunnskap på en intelligent og nøytral måte.",
+                "Sosiale og politiske ferdigheter.",
+                "Å kunne vurdere den økonomiske nytteverdien av konsulenttjenester når man opplever at egen kunnskap er utilstrekkelig."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hvilken av de følgende komponentene blir ikke fremhevet av Tidd og Bessant (2009) som et kjennetegn på en innovativ organisasjon?",
+            "answers": [
+                "Effektivt teamarbeid.",
+                "Kreativt klima.",
+                "Eksternt fokus.",
+                "Visjonær prestasjonsstyring"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Hvilken av disse ledelsesstrategiene er et eksempel på indirekte kontroll (Watson 2006; K3)?",
+            "answers": [
+                "Kameraovervåkning på arbeidsplassen.",
+                "Standardisering av arbeidsprosesser.",
+                "Samlebåndsproduksjon.",
+                "Å gi ansatte opplæring i organisasjonens kultur kombinert med å innføre selvstyrte team."
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Hva ligger i Watson (2006; K3) sitt begrep om ”ansattes implisitt forståtte kontrakt” (”employees’ perceived implicit contract”)?",
+            "answers": [
+                "Hvordan den ansatte vurderer forholdet mellom det han bidrar med til organisasjonen og hva han får igjen.",
+                "Avtalen som juridisk regulerer arbeidstakers plikter og rettigheter.",
+                "Den ansattes (riktige eller feilaktige) subjektive oppfatning av innholdet i sin arbeidskontrakt.",
+                "At det gis og tas i forholdet mellom leder og underordnet."
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hvilke av disse påstandene om detaljert arbeidsdeling (Watson 2006; K3) er ikke riktig?",
+            "answers": [
+                "Detaljert arbeidsdeling fører til spesialisering og dermed som oftest til økt produktivitet.",
+                "Detaljert arbeidsdeling gjør i mange tilfeller at man kan erstatte faglærte arbeidstakere med ufaglærte. Dermed kan lønnskostnader reduseres.",
+                "Detaljerte arbeidsdeling fører til små, men overkommelige arbeidsoppgaver for ansatte. Dette skaper en følelse av mestring som gjør ansatte mer motivert.",
+                "Detaljert arbeidsdeling er et grunnprinsipp i både Scientific Management og Fordisme (masseproduksjon)."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hva er den prinsipielle positive sammenhengen mellom teamorganisering og organisasjons innovasjonsevne (Tidd og Bessant 2009)?",
+            "answers": [
+                "Team jobber mer effektivt enn enkeltpersoner hver for seg. Dermed går det raskere for organisasjonen å få nye produkter til markedet.",
+                "Team bringer sammen ulike personer med ulike perspektiver. Kombinasjonen av ulike perspektiver muliggjør kreativ og innovativ problemløsning.",
+                "Team er en innovativ måte å organisere på. Innovative organisasjonsformer fører med seg innovasjoner for organisasjonens prosesser og produkter.",
+                "Å jobbe i team oppleves av ansatte som motiverende. Motiverte ansatte blir mer selvsikre og tør dermed å bidra med ideene sine til organisasjonen."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hva kaller Nonaka de fire formene for spredning/omforming til og fra taus og eksplisitt kunnskap?",
+            "answers": [
+                "Integrering, Eksternalisering, Sosialisering, Kalibrering",
+                "Internalisering, Eksternalisering, Sosialisering, Kombinering",
+                "Internalisering, Ekstrapolering, Sosialisering, Kalibrering",
+                "Integrering, Ekstrapolering, Sosialisering, Kalibrering"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hvilket begrep er ikke et av de fem typer (eller former) for kunnskap i Blacklers typologi?",
+            "answers": [
+                "Encoded knowledge",
+                "Embrained knowledge",
+                "Embedded knowledge",
+                "Enhanced knowledge"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "På hvilken måte fungerer ”praksisfellsskap” (community of practice) som nettverk for kunnskapsspredning?",
+            "answers": [
+                "Gjennom at prosjektgrupper utvikler og vedlikeholder en felles IKT-basert erfaringsdatabase",
+                "Gjennom at folk som jobber med likeartede arbeidsoppgaver deler relevant arbeidserfaring gjennom uformell kommunikasjon",
+                "Gjennom at fagmiljø begynner å bruke Facebook og Twitter",
+                "Gjennom at produksjonsteam jevnlig sender erfaringsrapporter til produksjonsledelsen"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hva er et grenseobjekt (boundary object)?",
+            "answers": [
+                "Objekter som kommuniserer på tvers av ulike praksisfellesskap eller kunnskapsområder",
+                "Et kamera som automatisk registrerer avvik fra produksjonsnormer",
+                "Objekter som markerer grenser mellom ulike arbeidsgrupper i åpne kontorlandskap",
+                "Et regnskapsmessig uttrykk for et bestemt verdifullt kunnskapselement"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hvilken tilnærming til KM sammenfaller mest med et objektivistisk kunnskapssyn?",
+            "answers": [
+                "Fasilitere utvikling og spredning av historier",
+                "Arbeide med å utvikle mellommenneskelige relasjoner og samspill",
+                "Utvikle og implementere IKT-løsninger for lagring av kunnskap",
+                "Sikre erfaringsoverføring gjennom at erfarne og uerfarne medarbeidere jobber sammen"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hvilken av påstandene under er korrekt om konseptet ”discontinuities”?",
+            "answers": [
+                "”Discontinuities” representerer brudd med tidligere teknologi",
+                "”Discontinuities” gir større rom for innovativ virksomhet",
+                "Det er dyrere å utvikle ny teknologi når ”discontinuities” er involvert",
+                "”Discontinuities” må tas hensyn til under strategisk planlegging"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hvilket av følgende prosjekter har minst bruk for de unike egenskapene i en velfungerende tverrfaglig arbeidsgruppe?",
+            "answers": [
+                "Planleggingsfasen av et byggeprosjekt der typen bygg er velkjent",
+                "Planleggingsfasen av UKA11",
+                "Planleggingsfasen av et produktutviklingsprosjekt",
+                "Gjennomføringsfasen av et forskningprosjekt"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Tidd& Besant (kap 6) nevner mange barrierer (tabell 6.3) som hindrer bygging av innovasjonsnettverk, men en av de fire under nevnes ikke i pensum. Hvilken?",
+            "answers": [
+                "Geografisk avstand kan gjøre det vanskelig å vurdere partnere",
+                "Økonomiske problemer gjør at indre forhold prioriteres fremfor nettverksbygging",
+                "Institusjonelle uliikheter, som for eksempel ulike mål (profitt vs ”non-profit”) hindrer nettverksbygging",
+                "Etniske forskjeller som medfører ulike grunnverdier hos mennesker kan hindre dannelse av relasjoner mellom bedrifter i ulike kulturer"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Embeddedness er et sentralt konsept i K4 (Technology and Business Networks av Ford et al). En av påstandene under om embeddedness er ikke korrekt i følge pensum. Hvilken?",
+            "answers": [
+                "Embeddedness refererer til de mange koblingene (connections) mellom et teknologisk utviklingsprosjekt og omgivelsene",
+                "For å håndtere embeddeness har ledere to hovedstrategier, å fokusere på en eller noen få koblinger, eller å interagere med andre bedrifter i prosessen",
+                "Betydningen av embeddeness reiser fire viktige spørsmål for ledere, nemlig økonomi, strategi, nettverk og evaluering",
+                "Embeddedness innebærer at ingen teknologisk investering kan bli vurdert isolert, men må alltid sees i sammenheng med andre ressurser og aktiviteter den skal inngå i."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "K4 diskuterer hvordan bedrifter organiserer sitt samarbeid med andre bedrifter. En av følgende fire påstander om slik organisering er ikke i samsvar med forskning presentert i pensum. Hvilken?",
+            "answers": [
+                "Forskning viser at forskningsinstitutter og universiteter er den vanligste samarbeidspartneren til bedrifter i utviklingsprosjekter",
+                "Forskning viser at vi kan dele bedrifters samarbeidsmønster inn i tre hovedgrupper; isolerte selskaper, fokuserte selskaper og selskaper med bredt samarbeidsmønster",
+                "Forskning viser at i gjennomsnitt halvparten av utviklingsprosjektene (målt i penger) gikk til prosjekter der en eller flere andre bedrifter var involvert",
+                "Forskning viser at bedrifter som driver utviklingssamarbeid systematisk har hatt samme samarbeidspartnere i over 10 år (i gjennomsnitt)."
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Et verdipapir gir 100 kroner om ett år og så 5 % mer, dvs. 105 kroner, om to år og så 5 % mer for hvert år til evig tid. Hva er verdien av verdipapiret nå, dersom avkast- ningskravet er 6 %?",
+            "answers": [
+                "1 000",
+                "10 000",
+                "100 000",
+                "1 000 000"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Vi kan vi skrive førsteordensbetingelsen for maksimal profitt som (P - MC)/P = 1/ε, der P er prisen, MC er (grense- eller) marginalkostnaden og ε er etterspørselselastisiteten. Dersom vi har et frikonkurransemarked kan betingelsen forenkles. Hvordan ser den ut da?",
+            "answers": [
+                "(P - MC)/P = 1",
+                "MC = ε",
+                "P - MC = 0",
+                "ε = 1"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Etterspørselen etter et gode er gitt ved Q = a - bP der Q er mengden, P er prisen og a og b er positive konstanter. Dersom vi definerer etterspørselselastisiteten slik at førsteordensbetingelsen for maksimal profitt kan skrives som (P - MC)/P = 1/ε, der P er prisen, MC er (grense- eller) marginalkostnaden og er etterspørselselastisiteten, hva blir etterspørselselastisiteten til godet?",
+            "answers": [
+                "1",
+                "-1",
+                "a/Q - 1",
+                "b"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Marginalinntekten (også kalt grenseinntekten) kan dekomponeres i to deler der den ene uttrykker inntekten ved å selge en enhet ekstra og den andre uttrykker effekten av tilhørende prisendring. La Q være mengden og P prisen. Hva er de matematiske uttrykkene for de to delene?",
+            "answers": [
+                "(dP/dQ)*Q og P",
+                "(dP/dQ)*Q og Q",
+                "(dQ/dP)*P og P",
+                "(dQ/dP)*P og Q"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hvilken av de fire figurene under viser en mulig kombinasjon av marginalkostnader (også kalt grensekostnader), MC, og gjennomsnittskostnader (også kalt enhetskostnader), AC?",
+            "answers": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "image": "http://i.imgur.com/VTUEwnn.png",
+            "correct": 1
+        },
+        {
+            "question": "Nåværende pris på aksjene til selskapet X er 100. Tabellen under gir data på mulige priser på slutten av året avhengig av hvilken tilstand økonomien er i. Beregn forventet avkastning for aksjen!",
+            "answers": [
+                "10 %",
+                "15 %",
+                "20 %",
+                "40 %"
+            ],
+            "image": "http://i.imgur.com/DhOcOZS.png",
+            "correct": 0
+        },
+        {
+            "question": "Beta for en risikofri portefølje er:",
+            "answers": [
+                "0",
+                "0,5",
+                "1,0",
+                "-1,0"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Markedsrisikopremien er:",
+            "answers": [
+                "Forskjellen mellom avkastningen på en investering og den risikofrie renten.",
+                "Forskjellen mellom avkastningen på markedsporteføljen og den risikofrie renten.",
+                "Den risikofrie renten.",
+                "Markedsavkastningen."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Anta at risikofri rente er 3 % og at forventet markedsavkastning er 8 %. En bedrift har beta for egenkapital på 1,8 og beta for gjeld på 0,6. Hva blir da avkastningskravet til bedriftens totalkapital (WACC) når vi antar at det ikke betales skatt, og gjeldsandelen er 50 %?",
+            "answers": [
+                "8 %",
+                "9 %",
+                "10 %",
+                "11 %"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hva er det vanlig å kalle brøken (Resultat + Rentekostnader)/(Egenkapital + Gjeld)",
+            "answers": [
+                "Egenkapitalrentabilitet",
+                "Totalkapitalrentabilitet",
+                "Likviditetsgrad 1",
+                "Likviditetsgrad 2 ?"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "I figuren under er MC (grense- eller) marginalkostnader, MR er (grense- eller) marginalinntekt, P(Q) er etterspørsel og Q er mengden. Bokstavene A, B, C, D, E og F skal være lik arealet til områdene de ligger i og som er avgrenset med linjer (stiplet eller ikke stiplet). Hva er et riktig uttrykk for det tapet konsumentene lider på grunn av monopoltilpasning sett i forhold til frikonkurransetilpasning? P, MC, MR MC A D B C E F P(Q) MR",
+            "answers": [
+                "C+F",
+                "A+B+C+D+E",
+                "A+D",
+                "A+B+C"
+            ],
+            "image": "http://i.imgur.com/mBXim0g.png",
+            "correct": 3
+        },
+        {
+            "question": "En bedrift har kostnader gitt ved C(Q) = 20 000 000 + Q 0.10Q^2, der Q er mengden pr periode. Bedriften selger produktet sitt i et frikonkurransemarked der prisen er 1 001 pr enhet. Hva blir optimal mengde for bedriften?",
+            "answers": [
+                "20 000",
+                "30 000",
+                "40 000",
+                "50 000"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Beta for et selskaps aktiva er 2. Beta for egenkapitalen er 3,5. Markedsverdien for gjeld er 50 % av markedsverdien til selskapets aktiva. Hva er beta for selskapets gjeld?",
+            "answers": [
+                "0",
+                "0,5",
+                "1,0",
+                "1,5"
+            ],
+            "correct": 1
+        }
+    ]
+}
