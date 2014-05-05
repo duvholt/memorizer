@@ -25,11 +25,15 @@ $(document).keydown(function(e) {
 	
 	// Previous question
 	if (e.keyCode == 37) {
-		window.location = $('#prev_question').attr('href');
+		if($('#prev_question')) {
+			window.location = $('#prev_question').attr('href');
+		}
 	}
 	
 	// Next question
 	if (e.keyCode == 39) {
-		window.location = $('#next_question').attr('href');
+		if($('#next_question')) {
+			window.location = $('#next_question').attr('href');
+		}
 	}
 });
