@@ -5,6 +5,7 @@ import json
 import models
 import os
 import random
+import re
 
 app = Flask(__name__)
 app.config.from_pyfile('config.py')
@@ -15,7 +16,7 @@ db.init_app(app)
 @app.route('/')
 def main():
     context = {
-        'courses': models.Course.query.options(db.joinedload('exams')).all(),
+        'courses': sort_courses(models.Course.query.options(db.joinedload('exams')).all()),
         'breadcrumbs': [{'name': 'Emner'}]
     }
     return render_template('courses.html', **context)
@@ -205,6 +206,24 @@ def random_id(id=None, course=None, exam=None):
         rand = random.randint(1, num_questions)
         print(rand)
     return rand
+
+
+def sort_courses(courses):
+    sorted_courses = []
+    for course in courses:
+        course.exams.sort(key=sort_exam)
+        sorted_courses.append(course)
+    return sorted_courses
+
+
+def sort_exam(exam):
+    """Silly way to sort exams by V09, H09, V10, H10 etc."""
+    key = str(exam)
+    if re.match(r'^V\d{2}$', key):
+        key = key[1:3] + '1'
+    elif re.match(r'^H\d{2}$', key):
+        key = key[1:3] + '2'
+    return key
 
 
 @app.context_processor
