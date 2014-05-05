@@ -1,0 +1,559 @@
+{
+    "name": "Innføring i medisin for ikke-medisinere",
+    "code": "MFEL1010",
+    "exam": "H09",
+    "questions": [
+        {
+            "question": " Hva gjør natrium-kalium-utvekslingspumpen? Kva gjer natrium-kalium-vekselspumpa. / What is the function of the sodium-potassium pump?",
+            "answers": [
+                " Utjevner membranpotensialet gjennom transport av natrium og kalium fra høy til lav konsentrasjon. / Utjamnar membranpotensialet gjennom transport av natrium og kalium frå høg til låg konsentrasjon. / Levelling the membrane potential by transports of sodium and potassium from high to low concentration.",
+                " Bygger opp membranpotensialet gjennom aktiv transport av natrium og kalium fra lav til høy konsentrasjon. / Bygg opp membranpotensialet gjennom aktiv transport av natrium og kalium frå låg til høg konsentrasjon. / Building up the membrane potential, by active transport of Sodium and Potassium from low to high concentration.",
+                " Benytter konsentrasjonsgradienten til natrium og kalium for syntese av ATP. / Nytter konsentrasjonsgradienten til natrium og kalium for syntese av ATP. / Utilises the concentration gradient of sodium and potassium for synthesis of ATP.",
+                " Utjevner konsentrasjonen av natrium og kalium ekstracellulært og intracellulært. / Utjamner konsentrasjonen av natrium og kalium ekstracellulært og intracellulært. / Equalize extracellular and intracellular concentration of Sodium and Potassium."
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Anaerob metabolisme med dannelse av melkesyre foregår når kravet til muskelarbeid overstiger den energien vi kan få fra oksydativ forbrenning. Hvor i cellene foregår dette? / Anaerob metabolisme med danning av mjølkesyre skjer når kravet til muskelarbeid overstiger den energien vi kan få frå oksydativ forbrenning. Kor i cellene går dette føre seg? / Anaerobic metabolism takes place when the demands for muscular work surpasses the amount of energy that can be produced by oxidative metabolism. Where in the cell does this take place?",
+            "answers": [
+                " Cytoplasma / The cytoplasm",
+                " Mitochondriene / The mitochondria",
+                " Endoplasmatisk reticulum / Endoplasmatic reticulum",
+                " Cellekjerna / The cell nucleus"
+            ],
+            "correct": 0
+        },
+        {
+            "question": " Levra er viktig som energilager. Hvordan lagres energien? / Levra er viktig som energilager. Korleis lagrast energien? / The liver is important for storage of energy. How is the energy stored?",
+            "answers": [
+                " Som fett / As fat",
+                " Som sukker / As sugar",
+                " Som glycogen / As glycogen",
+                " Som kolesterol / As cholesterol"
+            ],
+            "correct": 2
+        },
+        {
+            "question": " Hvordan er lufttrykket i alveolene under inspirasjon? /Korleis er lufttrykket i alveolane under inspirasjon? / What is the alveolar air pressure during inspiration?",
+            "answers": [
+                " Lavere enn atmosfæretrykket / Lågere enn atmosfæretrykket / Lower than the atmospheric pressure",
+                " Likt atmosfæretrykket / Equal to the atmospheric pressure",
+                " Høyere enn atmosfæretrykket / Høgere enn atmosfæretrykket / Higher than the atmospheric pressure",
+                " Uforutsigbart / Unpredictable"
+            ],
+            "correct": 0
+        },
+        {
+            "question": " En lekkasje (insuffisiens) i mitral- (bicuspidal-)klaffen gir opphav til en bilyd. Når i hjertesyklus vil den høres? / Ein lekkasje (insuffisiens) i mitral- (bicuspidal-)klaffen gir opphav til ein bilyd. Når i hjertesyklus vil den høres? / A leaky (incompetent) bicuspid (mitral) valve will give a murmur. When, during the heart cycle will that murmur be heard?",
+            "answers": [
+                " I systole / In systole",
+                " I diastole / In diastole",
+                " Både i systole og diastole / Both in systole and diastole",
+                " I PQ-intervallet / In the PQ interval "
+            ],
+            "correct": 0
+        },
+        {
+            "question": " Hva er forholdet mellom minuttvolumet fra høyre ventrikkel og fra venstre ventrikkel hos friske? / Kva er forholdet mellom minuttvolumet fra høyre ventrikkel og fra venstre ventrikkel hos friske? / What is the relation between the cardiac output from the right ventricle and the left ventricle inhealthy individuals?",
+            "answers": [
+                " Hø > Ve / Right > Left",
+                " Hø = Ve / Right = Left",
+                " Hø < Ve / Right < Left",
+                " Det varierer med aktivitet; i hvile er hø < ve, Ved aktivitet er hø > ve / It varies with activity; at rest Right < Left, during activity is Right > left"
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Hva muliggjør celledifferensieringen? / Kva gjer celledifferensieringa mogleg? / What makes the cell differentiation possible?",
+            "answers": [
+                " Genene er forskjellige i ulike vev. Gena er ulike i dei ulike veva. / The genes are different in different tissues.",
+                " Ulik translasjonsmekanisme i ulike vev./ Different translation mechanism in different tissues.",
+                " Ulik replikasjonsmekanisme i ulike vev. / Different replication mechanism in different tissues.",
+                " Ulike gener er aktive i ulike vev. Ulike gen er aktive i dei ulike veva. / Different genes are active in different tissues."
+            ],
+            "correct": 3
+        },
+        {
+            "question": " Hva slags ledd er albueleddet? / Kva slag ledd er albueleddet? / What type of joint is the elbow joint?",
+            "answers": [
+                " Glideledd / Sliding (plane) joint",
+                " Hengselledd / Hinge joint",
+                " Kuleledd / Ball and socket joint",
+                " Fibrøst (falskt) ledd / Fibrous joint"
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Høyt progesteron og østrogen er nødvendig for normal livmorfunksjon i svangerskapet. Hvordan opprettholdes dette i siste trimester? / Høgt progesteron og østrogen er nødvendig for normal livmorfunksjon i svangerskapet. Korleis blir dette oppretthaldt i sisste trimester? / High progesterone and estrogen levels are necessary to normal uterine function during pregnancy. How is this maintained during the last trimester?",
+            "answers": [
+                " Placenta stimulerer hypothalamus til å produsere høye nivåer av gonadotropin releasing hormone (GnRH) / Placenta stimulerer hypothalamus til å produsere høge nivå av gonadotropin releasing hormone (GnRH) / Placenta stimulates the hypothalamus to produce high levels of gonadotropin releasing hormone (GnRH)",
+                " Placenta stimulerer hypofysen til å produsere høye nivåer av FSH og LH / Placenta stimulerar hypofysen til å produsere høge nivå av FSH og LH / The Placenta stimulates the hypophysis to secrete high levels of FSH and LH",
+                " Placenta stimulerer ovariene til fortsatt produksjon av østrogen og progesteron / Placenta stimulerer ovaria til fortsett produksjon av østrogen og progesteron / The placenta stimulates the ovaries to continued production of estrogen and progesterone",
+                " Placenta produserer selv østrogen og progesteron / Placenta produserer sjølv østrogen og progesteron / The placenta produces progesterone and estrogen itself"
+            ],
+            "correct": 3
+        },
+        {
+            "question": " Presbyopi er en normal aldringstilstand som påvirker synsfunksjonen. Hva er mekanismen? / ) Presbyopi er ein normal aldringstilstand som påverkar synsfunksjonen. Kva er mekanismen? / Presbyopia is a normal ageing that affects the visual function. What is the mechanism?",
+            "answers": [
+                " Trykket i øyet øker så synsnervefibrene skades / Trykket i auget aukar så synsnervefibra blir skada / The pressure in the eye increase, so the visualo nerve fobres are damaged",
+                " Linsen blir uklar / Linsa blir uklar / The lens becomes unclear",
+                " Macula mister nerveceller så synet blir mindre skarpt / The macula looses nerve cells so the visual fresolution decreases",
+                " Linsen mister fleksibilitet, og dermed evnen til å øke brytningen ved nærinnstilling / Linsa mister fleksibilitet, og dermed evna til å auke brytninga ved nærinnstilling / The lens looses flexibility, and thus looses the ability to increase the refraction in accomodation "
+            ],
+            "correct": 3
+        },
+        {
+            "question": " Hva er den viktigste regulator for hjerteaksjonen i hvile? / Kva er den viktigaste regulatoren for hjerteaksjonen i kvile? / What is the most important regulator for the heart action at rest?",
+            "answers": [
+                " Blodtrykket / The blood pressure",
+                " Oksygenmetningen / The oxygen saturation",
+                " Blodets pH / The pH in blood",
+                " Temperaturen / The temperature"
+            ],
+            "correct": 0
+        },
+        {
+            "question": " Ved et hjerteinfarkt kan det dannes en blodpropp inne i venstre hjertekammer, som så kan løsne og føres med blodstrømmen. Hvor vil den kunne havne? / Ved eit hjerteinfarkt kan det dannes en blodpropp inne i venstre hjertekammer, som så kan lausne og føres med blodstraumen. Kor vil den kunne ende? / In a myocardial infarction, a thrombus may be formed inside the left ventricle. It can detach and follow the bloodstream. Where may it end?",
+            "answers": [
+                " Vena cava / Vena cava",
+                " Høyre atrium / Right atrium",
+                " Hjernen / The brain",
+                " Lungene / The lungs"
+            ],
+            "correct": 2
+        },
+        {
+            "question": " Ved diabeteskoma kan blodets pH bli nedsatt på grunn av ketondannelse. Hva slags syre-base forstyrrelse er dette? / Ved diabeteskoma kan blodets pH bli nedsett på grunn av ketondannelse. Kva slag syre-base forstyrring er dette? / In a diabetic coma the pH in the blood is decreased due to increased production of ketones. What kind of acid-base disturbance is this?",
+            "answers": [
+                " Metabolsk acidose / Metabolic acidosis",
+                " Respiratorisk acidose / Respiratory acidosis",
+                " Metabolsk alkalose / Metabolic alkalosis",
+                " Respiratorisk alkalose / Respiratory alkalosis"
+            ],
+            "correct": 0
+        },
+        {
+            "question": " I hvilken del av menstruasjonssyklus er kvinnen fertil? / I kva for del av menstruasjonssyklus er kvinnen fertil? /In what part of the menstrual cycle is a woman fertile?",
+            "answers": [
+                " Menstruasjon / Menses",
+                " Follikkelfase / Follicular phase",
+                " Proliferasjonsfase / Proliferative phase",
+                " Sekresjonsfase / Secretory phase"
+            ],
+            "correct": 3
+        },
+        {
+            "question": " Kroppsmasseindeks (KMI) er et mål for fedme (egentlig vekt justert for høyde: KMI = V / h2). Hvilket intervall for KMI er normal kroppsvekt? / Kroppsmasseindeks (KMI) er eit mål for fedme (eigentlig vekt justert for høgde: KMI = V / h2). Kva for intervall for BMI er normal kroppsvekt? / Body mass index is a measure of obesity (actually it is the weight adjusted for height: BMI = Wt/Ht2). What interval for BMI is the normal body weight?",
+            "answers": [
+                " <25 (19 – 25)",
+                " 25 - 30",
+                " 30 - 35",
+                " 40"
+            ],
+            "correct": 0
+        },
+        {
+            "question": " Hvor i sentralnervesystemet kontrolleres puls og blodtrykk /Kor i sentralnervesystemet blir puls og blodtrykk kontrollert / Where in the central nervous system is pulse and blood pressure controlled?",
+            "answers": [
+                " Hjernebarken / The cerebral cortex",
+                " Lillehjernen / The cerebellum",
+                " Hjernestammen / /the brainstem",
+                " Ryggmargen / The spinal cord"
+            ],
+            "correct": 2
+        },
+        {
+            "question": " Hva er mediatoren som gjør at aksjonspotensialet utløser sammentrekning? / Kva er mediatoren som gjer at aksjonspotensialet utløyser sammentrekning? / What is the mediator that causes the action potential to trigger a contraction?",
+            "answers": [
+                " Ca2+",
+                " Mg2+",
+                " Fe2+",
+                " Na+"
+            ],
+            "correct": 0
+        },
+        {
+            "question": " Blodtrykket reguleres blant annet av perifer motstand. Hvilke kar er ansvarlige for den største delen av denne motstanden? / Blodtrykket blir mellom anna regulert av perifer motstand. Kva for kar er ansvarlige for den største delen av denne motstanden? / The blood pressure is among other things regulated by peripheral resistance. Which vessels are responsible for most of this resistance?",
+            "answers": [
+                " Arterier / Arteries",
+                " Arterioler / Arterioles",
+                " Kapillærer / Capillaries",
+                " Venyler / Venules"
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Hyperventilering (økt ventilasjon) kan skje som følge av for eksempel smerter eller stress. Hva skjer med blodets pH? / Hyperventilering (auka ventilasjon) kan skje som følgje av for eksempel smerter eller stress. Kva skjer med blodets pH? / Hyperventilation may happen as a result of pain or stress. What happens to the pH in the blood?",
+            "answers": [
+                " Øker /Auker / Increases",
+                " Uforandra / Unchanged",
+                " Avtar / Avtek / Decreases",
+                " Det vil bli større svingninger fra inspirasjon til ekspirasjon / Det vil bli større svingingar frå inspirasjon til ekspirasjon /There will be increased oscillations between inspiration and expiration"
+            ],
+            "correct": 0
+        },
+        {
+            "question": " HIV infeksjon reduserer immuniteten fordi den angriper og ødelegger en viss type hvite blodlegemer. Hvilken gruppe hører de cellene til? / HIV infeksjon reduserer immuniteten fordi den angriper og øydelegg en viss type kvite blodlekam. Kva for gruppe høyrer dei cellene til? / HIV infection reduces immunity because it attacks and destroys a certain type white blood cells. Which group do those cells belong to?",
+            "answers": [
+                " Neutrofile granulocytter / Neutrophils",
+                " Makrofager / Macrophages",
+                " B-lymfocytter / B-lymphocytes",
+                " T-lymfocytter / T-lymphocytes"
+            ],
+            "correct": 3
+        },
+        {
+            "question": " Diabetes type 2 er en sykdom der den perifere sensitiviteten for insulin er redusert, og den gir dermed forhøyd blodsukker. Hva skjer med insulinnivået ved blodet ved ved starten av en typisk type 2 diabetes? / Diabetes type 2 er en sjukdom der den perifere sensitiviteten for insulin er redusert, og den gir dermed forhøgd blodsukker. Kva skjer med insulinnivået ved blodet ved starten av ein typisk type 2 diabetes? / Diabetes type 2 is a disease where the peripheral sensitivity of insulin is decreased, leading to elevated blood sugar. What happens to the level of insulin in the blood at the start of a typical type 2 diabetes?",
+            "answers": [
+                " Øker / Auker / Increases",
+                " Uendret / Uendra / Unchanged",
+                " Avtar / Avtek / Decreases",
+                " Uforutsigbart / Unpredictable"
+            ],
+            "correct": 0
+        },
+        {
+            "question": " Hva er hematokrit? / Kva er hematokrit? / What is the hematocrit?",
+            "answers": [
+                " Hemoglobinkonsentrasjonen i g/dl / The hemoglobin concentration in g/dl",
+                " Hemoglobinkonsentrasjonen i mmol/l / The The hemoglobin concentration in mmol/l",
+                " Fraksjonen av blodvolumet som består av erytrocytter i % / The fraction of the blood volume consisting of erythrocytes in %",
+                " Antall erytrocytter i millon /μl / The number of erythrocytes in millions/μl"
+            ],
+            "correct": 2
+        },
+        {
+            "question": " I en nødssituasjon, hvilken blodgruppe kan ta imot blodlegemer fra alle blodgruppene i AB0 – systemet? / I ein naudssituasjon, kva for blodgruppe kan ta imot blodlekam frå alle blodgruppene i AB0 – systemet? / In an emergency, what blood group can receive red blood cells from all blood groups in the AB0 system?",
+            "answers": [
+                " A",
+                " B",
+                " AB",
+                " 0"
+            ],
+            "correct": 2
+        },
+        {
+            "question": " Bukspyttkjertelen produserer insulin, men også: / Bukspyttkjertelen produserer insulin, men og: / The pancreas produces insulin, but also",
+            "answers": [
+                " Saltsyre som vedlikeholder surt miljø i tynntarmen / Saltsyre som held vedlike surt miljø i tynntarmen / Hydrochloric acid that maintains an acidic environment in the intestine",
+                " Hormonet Gastrin som regulerer tarmmotorikken / The hormone Gatrin that regulates the motor finctionof the intestine",
+                " Enzymer som spalter karbohydrat, lipider og proteiner / Enzym som spalter karbohydrat, lipid og protein / Enzymes that breaks down carbohydrate, lipids and protein",
+                " Gallesalter og kolesterol / Bile salts and cholesterol"
+            ],
+            "correct": 2
+        },
+        {
+            "question": " Første trinn i dannelsen av urin i nyrene skjer i glomeruli. Dette trinnet er: / Første trinn i danninga av urin i nyrene skjer i glomeruli. Dette trinnet er: / The frst step in the urine formation takes place in the glomeruli. This step is:",
+            "answers": [
+                " Filtrasjon / Filtration",
+                " Sekresjon / Secretion",
+                " Reabsorbsjon / Re absorbtion",
+                " Syntese / Synthesis "
+            ],
+            "correct": 0
+        },
+        {
+            "question": " Sigarettrøyk inneholder en rekke stoffer. Et av disse er karbonmonoksyd. Karbonmonoksyd har effekt på blodets funksjon, hvilken effekt? / Sigarettrøyk innehelder ein rekke stoff. Eit av disse er karbonmonoksyd. Karbonmonoksyd har effekt på blodets funksjon, kva for effekt? / Cigarette smoke contains a lot of different chemicals. One of these is carbon monoxide. Carbon mnoxide has an effect on the function of the blood, which effect?",
+            "answers": [
+                " Hemmer immunresponsen / Inhibits the immune response",
+                " Hemmer koagulasjonen / Inhibits the coagulation",
+                " Hemmer oksygentransporten / Inhibits the oxygen transport",
+                " Hemmer hormontransporten / Inhibits the transport of hormones"
+            ],
+            "correct": 2
+        },
+        {
+            "question": " Ved pneumothorax kommer det luft inn i pleurahulen. Hva fører dette til? / Ved pneumothorax kommer det luft inn i pleurahulen. Kva fører dette til? / In pneumothorax there is air in the pleural cavity. What will this cause?",
+            "answers": [
+                " Lungen blåses opp på grunn av økt trykk i pleura / Lunga blåses opp på grunn av auka trykk i pleura / The lung is inflated due to increased pleural pressure",
+                " Lungen kollapser på grunn av tap av vakuum i pleura / Lunga kollapsar på grunn av tap av vakuum i pleura / The lung collapses due to loss of vacuum in the pleura",
+                " Brystkassen blåses opp på grunn av økt trykk i pleura / The chest is inflated due to increased pleural pressure.",
+                " Brystkassen kollapser på grunn av tap av vakuum i pleura / The chest collapses due to loss of vacuum in the pleura"
+            ],
+            "correct": 1
+        },
+        {
+            "question": " En svulst i hypofysen skader selve synsnervekrysningen ( de fibrene som krysser til motsatt side). Kva slags synsfeltutfall vil det gi? / Ein svulst i hypofysen skader sjølve synsnervekrysningen ( de fibrane som kryssar til motsett side). Kva slag synsfeltutfall vil det gi? / A tumor in the pituitary gland damages the visual nerve crossing ( the fibres that cross to the opposite side). What kind of visual defect will that give?",
+            "answers": [
+                " Tap av synsfelt på høyre side på begge øyne / Tap av synsfelt på høyre side på begge auge / Right sided visual defect on both eyes",
+                " Tap av synsfelt på venstre side på begge øyne/ Tap av synsfelt på venstre side på begge auge / Left sided visual defect on both eyes",
+                " Tap av nasale (mediale) synsfelt på begge øyne / Tap av nasale (mediale) synsfelt på begge auge / Nasal (medial) visual defect on both eyes",
+                " Tap av temporale (laterale) synsfelt på bege øyne / Tap av temporale (laterale) synsfelt på bege auge / Temporal (lateral) visual defect on both eyes"
+            ],
+            "correct": 3
+        },
+        {
+            "question": " Hva er knoklene i leddflatene kledd med? / Kva er knoklane i leddflatene kledd med? / What are the bones in the joint surfaces covered with? OBS!!! KAN VÆRE NOE FEil MED OPPGAVEN!",
+            "answers": [
+                " Epitel / Epithelium",
+                " Endotel / Endothelium",
+                " Fibrøst bindevev / Fibrous connective tissue",
+                " Brusk / Cartilage"
+            ],
+            "correct": 1,
+            "image": "http://i.imgur.com/Dd4u3Ea.png"
+        },
+        {
+            "question": " Hva heter den bevegelsen som er vist ved pilen på figuren? / Kva heter den bevegelsen som er vist ved pilen på figuren? /What is the movement called that is shown by the arrow in the figure?",
+            "answers": [
+                " Pronasjon / Pronation",
+                " Supinasjon / Supination",
+                " Abduksjon / Abduction",
+                " Adduksjon / Adduction "
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Kalium har høyere konsentrasjon intracellulært enn ekstracellulært. Dette gjør at kalium langsomt lekker ut av cellene. Hva heter denne prosessen? / Kalium har høgare konsentrasjon intracellulært enn ekstracellulært. Dette gjør at kalium langsomt lekker ut av cellene. Kva heter denne prosessen? / Potassium has a higher intracellular than extracellular concentration. This causes potassium to leak slowly out of the cells. What is this process called?",
+            "answers": [
+                " Osmose / Osmosis",
+                " Aktiv transport / Active transport",
+                " Exocytose / Exocytosis",
+                " Diffusjon / Diffusion"
+            ],
+            "correct": 3
+        },
+        {
+            "question": " Hva kalles muskler som beveger et ledd i to motsatte retninger? / Kva kallast musklar som beveger eit ledd i to motsette retningar? / What do you call muscles that move a joint in two opposite directions?",
+            "answers": [
+                " Agonister /Agonistar/Agonists",
+                " Antagonister / Antagonistar / Antagonists",
+                " Synergister / Synergistar / Synergists",
+                " Primærmuskler / Primærmusklar / Prime movers"
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Både ved lever- og galleveissykdommer blir avløpet av galle til tarmen hindret. Dette fører til opphopning av et stoff gir gul hudfarge (gulsott). Hvilket stoff? / Både ved lever- og gallevegssjukdomar blir avløpet av galle til tarmen hindra. Dette fører til opphoping av et stoff gir gul hudfarge (gulsott). Kva for stoff? / Both in liver- and bile duct disease is the drainage of bile to the intestine hindered. This leads to accumulation of a substance that gives yellow skin (jaundice). Which substance?",
+            "answers": [
+                " Cholesterol",
+                " Cholecystokinin",
+                " Gallesalt (Bile salts)",
+                " Bilirubin"
+            ],
+            "correct": 3
+        },
+        {
+            "question": " Ved en form for thyreotoxicose (høyt stoffskifte) opptrer et antistoff mot TSH reseptorer i skjoldkjertelen som stimulerer reseptorene i stedet for å blokkere eller ødelegge dem. Hva skjer da med nivåene av TSH og thyroxin? / Ved ein form for thyreotoxicose (høgt stoffskifte) opptrer et antistoff mot TSH reseptorar i skjoldkjertelen som stimulerer reseptorane i staden for å blokkere eller øydelegge dei. Kva skjer då med nivåa av TSH og thyroxin? / In one kind of hyperthyroidism, there is present an antibody against TSH receptors that stimulates TSH receptors in the thyroid instead of blocking or destroying them. What happens then to the levels of Thyroxin and TSH?",
+            "answers": [
+                " Thyroxin↑, TSH↑",
+                " Thyroxin↑, TSH↓",
+                " Thyroxin↓, TSH↑",
+                " Thyroxin↓, TSH↓"
+            ],
+            "correct": 1
+        },
+        {
+            "question": " En pasient har hudblødninger som skyldes mangel på en bestemt celletype i blodet. Hvilken? / Ein pasient har hudblødningar som skyldes mangel på ein bestemt celletype i blodet. Kva for ein? / A patient has skin haemorrhages caused by lack of a certain cell type in the blood. Which?",
+            "answers": [
+                " Erythrocytter / Erythrocytes",
+                " Trombocytter / Thrombocytes",
+                " Lymfocytter / Lymphocytes",
+                " Granulocytter / Granulocytes "
+            ],
+            "correct": 1
+        },
+        {
+            "question": " En styrkeløfter prøver et markløft, men vekta er så tung at han ikke klarer å bevege den. Hva slags muskelkontraksjon utfører han da? / Ein styrkeløftar prøver eit markløft, men vekta er så tung at han ikkje klarer å bevege den. Kva slag muskelkontraksjon utfører han da? / A powerlifter tries a deadlift, butt he weight is so heavy that he can’t move it. What kind of muscle contraction is he performing?",
+            "answers": [
+                " Isometrisk / Isometric",
+                " Isotonisk / Isotonic",
+                " Eksentrisk / Eccentric",
+                " Konsentrisk / Concentric"
+            ],
+            "correct": 0
+        },
+        {
+            "question": " Hvilke sekreter produseres i magesekken? / Kva for sekret vert produsert i magesekken? / What secretions are produced in the stomach?",
+            "answers": [
+                " Pepsin og saltsyre / Pepsin and hydrochloric acid",
+                " Trypsin og hydrogenkarbonat / Trypsin and bicarbonate",
+                " Gallesalter og lipase / Bile salts and lipase",
+                " Albumin og amylase / Albumen and amylase"
+            ],
+            "correct": 0
+        },
+        {
+            "question": " Hvilke hormonforandringer skjer i puberteten? / Kva for hormonforandringar skjer i puberteten? / What hormonal changes take place in puberty?",
+            "answers": [
+                " Testosteron↓, FSH↑ / Testosterone↓, FSH↑",
+                " Testosteron↓, FSH↓ / Testosterone↓, FSH↓",
+                " Testosteron↑, FSH↑ / Testosterone↑, FSH↑",
+                " Testosteron↑, FSH↓ / Testosterone↑, FSH↓"
+            ],
+            "correct": 2
+        },
+        {
+            "question": " Ved kronisk nyresvikt blir pasienten ofte anemisk. Hvorfor? / Ved kronisk nyresvikt blir pasienten ofte anemisk. Kvifor? / In chronic renal insufficiency will the patient often become anaemic. Why?",
+            "answers": [
+                " Nyrene produserer mindre erythropoietin / The kidneys produces less erythropoietin",
+                " Nyrene produserer mindre aktivt vitamin D (D3) / The kidneys produce less active vitamin D (D3)",
+                " Det blir et økt jerntap gjennom nyrene / There is an increased loss of iron through the kidneys",
+                " Det blir et økt proteintap gjennom nyrene / There is an increased loss of proteins through the kidneys"
+            ],
+            "correct": 0
+        },
+        {
+            "question": " Hva er funksjonen til knoklene i mellomøret? / Kva er funksjonen til knoklane i mellomøret? / What is the function of the bones inthe middle ear?",
+            "answers": [
+                " Avstive trommehinna /Support the tympanic membrane",
+                " Holde øretuben (salpinx) åpen så luft kan passere fra nesa til mellomøret / Holde øretuben (salpinx) open så luft kan passere frå nesa til mellomøret / Keep the ear tube (salpinx) open in order for air to be able to pass from the nose to the middle ear",
+                " Formidle mekaniske svingninger fra trommehinna til væsken (endolymfen) i sneglehuset / Formidle mekaniske svingingar frå trommehinna til væsken i sniglehuset / Trabnsmit mechanical oscillations from the tympanic membrane to the fluid (endolymph) in the cochlea.",
+                " Registrere retninga på tyngdekrafta for sansecellene i likevektsorganet / Detect the direction of the gravity for the equilibrium organ"
+            ],
+            "correct": 2
+        },
+        {
+            "question": " Hva karakteriserer sirkulasjonssjokk? / Kva karakteriserer sirkulasjonssjokk? / What characterises circulatory shock?",
+            "answers": [
+                " Nedsatt blodtrykk, men normal sirkulasjon / Nedsett blodtrykk, men normal sirkulasjon / Reduced blood pressure, but normal circulation",
+                " Nedsatt blodtrykk og nedsatt sirkulasjon / Nedsett blodtrykk og nedsett sirkulasjon / Reduced blood pressure and reduced circulation",
+                " Normalt blodtrykk og normal sirkulasjon / Normal blood pressure and normal circulation",
+                " Nedsatt blodtrykk under aktivitet / Nedsett blodtrykk under activity / Reduced blood pressure during activity"
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Ved angina er det vanlig å ta nitroglycerin. Hvordan virker nitroglycerin? / Ved angina er det vanlig å ta nitroglycerin. Korleis verker nitroglycerin? / In angina it is common to use nitroglygerine. How does nitroglycerine work?",
+            "answers": [
+                " Det påvirker hjertemuskelen så minuttvolumet øker / Det påverkar hjertemuskelen så minuttvolumet aukar / It increases cardiac output by direct effect on the heart muscle",
+                " Det reduserer hjertefrekvensen så hjertets arbeid avtar / Det reduserer hjertefrekvensen så hjertets arbeid minkar / It reduces the heart rate leading to decreased heart work",
+                " Det utvider vener så hjertets arbeid avtar / Det utvidar vener så hjertets arbeid minkar / It dilates the veins, leading to decreased heart work",
+                " Det får hjertemuskelcellene til å ta opp mer oksygen / Det får hjertemuskelcellene til å ta opp meir oksygen / It induces the heart muscle to take up more oxygen."
+            ],
+            "correct": 2
+        },
+        {
+            "question": " Hva er den viktigste årsak til hjerneslag? / Kva er den viktigaste årsaka til hjerneslag? / What is the most important cause of stroke?",
+            "answers": [
+                " Blødning / Haemorrage",
+                " Skade / Trauma",
+                " Blodpropp / Thrombosis",
+                " Infeksjon / Infection"
+            ],
+            "correct": 2
+        },
+        {
+            "question": " Hvilket vitamin er viktig for normal kalsiumbalanse? / Kva for vitamin er viktig for normal kalsiumbalanse? / Which vitamin is important for normal calcium balance?",
+            "answers": [
+                " Vitamin A",
+                " Vitamin B12",
+                " Vitamin D",
+                " Vitamin K"
+            ],
+            "correct": 2
+        },
+        {
+            "question": " Muskulaturen i hjertets venstre ventrikkel får det meste av sin blodforsyning i: / The musculature of the left ventricle of the heart receives most of its blood supply during:",
+            "answers": [
+                " Systole",
+                " Diastole",
+                " Både systole og diastole / Both systole and diastole",
+                " Det er avhengig av hjertefrekvensen / It depends on the heart rate "
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Hvilken type energi gir billeddannelsen ved CT? / Kva for type energi gir billeddanninga ved CT? / What kind of energy gives the image formation in CT?",
+            "answers": [
+                " Gammastråler / Gasmma rays",
+                " Røntgenstråler / X-rays",
+                " Ultralydbølger / Ultrasound waves",
+                " Radiobølger / Radio waves"
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Hva er hovedproblemet med et skiveprolaps? / Kva er hovuproblemet med eit skiveprolaps? / What is the main problem of a nucleus prolapse( ruptured disk)?",
+            "answers": [
+                " Redusert bevegelighet av ryggvirvlene / Redusert bevegelighet av ryggvirvlane / Reduced mobility of the vertebrae",
+                " Betennelse omkring skiven / Inflammation around the disc",
+                " Trykk på nerverøttene / Compression of the nerve roots",
+                " Muskelsvekkelse I ryggen / Weakening of the back muscles"
+            ],
+            "correct": 2
+        },
+        {
+            "question": " Målet på risikoen for å få en sykdom er: / Målet på risikoen for å få ein sjukdom er: / The measure of the risk of acquiring a disiase is:",
+            "answers": [
+                " Insidens raten / The incidence rate",
+                " Insidens raten multiplisert med sykdommens varighet / Insidens raten multiplisert med sjukdommens varigheit / The incidence rate multiplied by the disease duration",
+                " Prevalensen / The prevalence",
+                " Prevalensen multiplisert med sykdommens varighet Prevalensen multiplisert med sjukdommens varigheit / The prevalence multiplied by the disease duration"
+            ],
+            "correct": 0
+        },
+        {
+            "question": " Hva begrenser den maksimale oksygentransporten under arbeid hos friske? / Kva begrensar den maksimale oksygentransporten under arbeid hos friske? / What limits the oxygen transport during work in healthy persons?",
+            "answers": [
+                " Blodvolumet / The blood volume",
+                " Lungene / The lungs",
+                " Hjertet / The heart",
+                " Muskulaturen / The muscles"
+            ],
+            "correct": 2
+        },
+        {
+            "question": " En pasient oppsøker legen med utslett over hele kroppen. Det kommer fram at han noen måneder tidligere hadde et sår på penis, som imidlertid grodde av seg selv. Legen mistenker kjønnssykdom. Hvilken? / Ein pasient oppsøker legen med utslett over hele kroppen. Det kommer fram at han noen månader tidligare hadde et sår på penis, som imidlertid grodde av seg sjølv. Legen mistenker kjønssjuke. Kva for ein? / A patient sees his doctor with a rash all over his body. It comes to light that he some months earlier had an ulcer at the penis, which, however, healed spontaneously. The doctor suspect a venereal disease. Which?",
+            "answers": [
+                " Syfilis / Syphilis",
+                " Gonorré / Gonorrhoea",
+                " Chlamydia",
+                " Herpes "
+            ],
+            "correct": 0
+        },
+        {
+            "question": " Bildet viser et 2-dimensjonalt ultralydbilde av et hjerte. Hva kalles denne ultralydmodaliteten? / Bildet viser eit 2-dimensjonalt ultralydbilde av eit hjerte. Kva blir denne ultralydmodaliteten kalla? / The picture shows a 2-dimensional ultrasound picture of a heart. What is this ultrasoun modality called?",
+            "answers": [
+                " A-mode",
+                " B-mode",
+                " M-mode",
+                " Doppler mode Denne oppgaven var feilnummerert, men dette ble gitt beskjed om i alle eksamenslokaler /In this question the numbering was faulty, but information about this was given all exam rooms"
+            ],
+            "correct": 1,
+            "image": "http://i.imgur.com/HLllweT.png"
+        },
+        {
+            "question": " Tykktarmskreft er en vanlig kreftform som vanligst sprer seg med blodbanen. Hvor vil da dattersvulstene (metastasene) da vanligvis dukke opp først? / Tjukktarmskreft er en vanlig kreftform som vanlegast spreier seg med blodbanen. Kor vil då dottersvulstane (metastasene) da vanlegvis dukke opp først? / Cancer of the colon is a common type of cancer that usually spreads with the blood. Where will the daughter tumours (metastases)usually occur?",
+            "answers": [
+                " Hjernen / The brain",
+                " Lungene / The lungs",
+                " Levra / The liver",
+                " Milten / The spleen"
+            ],
+            "correct": 2
+        },
+        {
+            "question": " Hvordan virker vanlig P-pille (kombinasjonspille)? / Korleis verker vanlig P-pille (kombinasjonspille)? / How does ordinary P-pills (combination pills)work?",
+            "answers": [
+                " De virker på livmorhalsen slik at den blir ugjennomtrengelig for sædceller / Dei verker på livmorhalsen slik at den blir ugjennomtrengelig for sædceller / They act on the cervix so it becomes impenetrable for spermia",
+                " De virker på eggene slik at de blir ugjennomtrengelig for sædceller selv om de er modne / Dei verker på eggene slik at de blir ugjennomtrengelig for sædceller sjølv om dei er modne / They act on the eggs, making them impenetrable for the spermia, even thoug they ripen normally",
+                " De hindrer eggmodning / De hindrar modning av eggene / They prevent ripening of the eggs",
+                " De virker på livmorslimhinnen slik at den ikke modnes og ikke kan ta imot et befruktet egg / De verker på livmorslimhinna slik at den ikkje modnes og ikkje kan ta imot et befrukta egg / They work on the uterine mucosa so it does not ripen and cannot receive a fertilised egg"
+            ],
+            "correct": 2
+        },
+        {
+            "question": " En blodåre har en innsnevring i et kort område. Hva skjer med blodstrømmen i denne innsnevringen? / Ein blodåre har ei innsnevring i et kort område. Kva skjer med blodstraumen i denne innsnevringa? / A blood vessel has a narrowing in a short segment. What happens to the blood flow in this narrow segment?",
+            "answers": [
+                " Blodstrømshastigheten øker / Blodstraumshastigheten auker / The blood velocity increases",
+                " Blodstrømshastigheten avtar / Blodstraumshastigheten avtek / The blood velocity decreases",
+                " Blodstrømsmengden (flow) øker / Blodstraumsmengda (flow) auker / The blood flow increases",
+                " Trykket øker / Trykket auker / The pressure increases"
+            ],
+            "correct": 0
+        },
+        {
+            "question": " Hva er de viktigste regulatorer for ventilasjonen under basalbetingelser? / Kva er dei viktigaste regulatorane for ventilasjonen ved basalbetingelser? / What is the main regulators of ventilation during basal conditions?",
+            "answers": [
+                " CO2 + pH",
+                " CO2 + CO",
+                " O2 + pH",
+                " CO2 + O2"
+            ],
+            "correct": 0
+        }
+    ]
+}
