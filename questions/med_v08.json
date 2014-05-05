@@ -1,0 +1,566 @@
+{
+    "name": "Innføring i medisin for ikke-medisinere",
+    "code": "MFEL1010",
+    "exam": "V08",
+    "questions": [
+        {
+            "question": " Hvilken funksjon har membranproteiner? Kva for funksjon har membranprotein? / Which function has the proteins in the cell membrane?",
+            "answers": [
+                " Osmotisk transport. / Osmotic transport",
+                " Avstive celleoverflata og opprettholde fasongen på cellen / Avstive celleoverflata og oppretthalde fasongen på cella / Buttressing the cell surface and maintaining the cell shape.",
+                " Cellemembransyntese. / Synthesis of the cell membrane",
+                " Transport av ioner gjennom cellemembranen. Transport av ion gjennom cellemembranen. / Transport of ions trough the cell membrane"
+            ],
+            "correct": [
+                0,
+                3
+            ]
+        },
+        {
+            "question": " I en nødssituasjon kan en gi transfusjon med blodlegemer av annen type enn pasientens ens egen. Hvilke eller hvilken blodtype(r) kan gis til en med blodtype A? / I ein naudsituasjon kan ein gi transfusjon med blodlekam av anna type enn pasientens eigen. Kva for blodgruppe(r) kan gis til ein med blodgruppe A?/ In an emergency is it possible to give a transfusion of erythrocytes with another blood group than the patients own. What blood group or groups can be given to a patient with blood group A?",
+            "answers": [
+                " AB",
+                " 0",
+                " B + 0",
+                " B + AB"
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Hvilket av de markerte volumene på diagrammet under representerer residualvolumet? / Kva for eit av de markerte voluma på diagrammet under representerer residualvolumet? / Which of the marked volumes on the diagram below represents the residual volume?",
+            "answers": [
+                " A",
+                " B",
+                " C",
+                " D"
+            ],
+            "correct": 3
+        },
+        {
+            "question": " Leveren har to blodforsyninger; -vena porta og leverarterien. Hva er hovedfunksjonen til leverarterien? / Levra har to blodforsyningar; -vena porta og leverarteria. Kva er hovudfunksjonen til leverarteria? / The liver receives blood from two sources; - portal vein and hepatic artery. What is the main function of the hepatic artery?",
+            "answers": [
+                " Føre næringsstoffer fra tarmen til levra for nedbryting / Føre næringsstoff frå tarmen til levra for nedbryting / Transport nutritients from the intestine to the liver for processing.",
+                " Tilføre levra oksygen / Supply the liver with oxygen",
+                " Tilføre levra karbondioksid / Supply the liver with carbon dioxide",
+                " Fjerne giftige stoffer / Fjerne giftige stoff / Detoxification"
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Ved et større blodtap vil vi kunne få akutte endringer i både pulsfrekvens (HR) og blodtrykk (BP). Hvilke endringer? / Ved eit store blodtap vil vi kunne få akutte endringar i bade pulsfrekvens (HR) og blodtrykk (BP). Kva for endringar? / A substantial blood loss will result in changes in both heart rate (HR) and Blood pressure (BP). What changes?",
+            "answers": [
+                " BP↑, HR↓",
+                " BP↑, HR↑",
+                " BP↓, HR↓",
+                " BP↓, HR↑"
+            ],
+            "correct": 3
+        },
+        {
+            "question": " Hva gjør natrium-kalium-utvekslingspumpen? Kva gjer natrium-kalium-vekselspumpa. / What is the function of the sodium-potassium pump?",
+            "answers": [
+                " Utjevner membranpotensialet gjennom transport av natrium og kalium fra høy til lav konsentrasjon. / Utjamnar membranpotensialet gjennom transport av natrium og kalium frå høg til låg konsentrasjon. / Levelling the membrane potential by transports of sodium and potassium from high to low concentration.",
+                " Bygger opp membranpotensialet gjennom aktiv transport av natrium og kalium fra lav til høy konsentrasjon. / Bygg opp membranpotensialet gjennom aktiv transport av natrium og kalium frå låg til høg konsentrasjon. / Building up the membrane potential, by active transport of Sodium and Potassium from low to high concentration.",
+                " Benytter konsentrasjonsgradienten til natrium og kalium for syntese av ATP. / Nytter konsentrasjonsgradienten til natrium og kalium for syntese av ATP. / Utilises the concentration gradient of sodium and potassium for synthesis of ATP.",
+                " Utjevner konsentrasjonen av natrium og kalium ekstracellulært og intracellulært. / Utjamner konsentrasjonen av natrium og kalium ekstracellulært og intracellulært. / Equalize extracellular and intracellular concentration of Sodium and Potassium."
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Leukopeni er ikke uvanlig i forløpet av cellegiftbehandling. Hva betyr leukopeni? / Leukopeni er ikkje uvanleg i forløpet av cellegiftbehandling. Kva tydar leukopeni? / Leucopenia is not uncommen following treatment with cytostatics. What does leucopenia mean?",
+            "answers": [
+                " Lavt antall hvite blodceller / Lågt antall kvite blodceller / Low number of white blood cells",
+                " Lavt antall blodplater / Lågt antall blodplatar / Low number of platelets",
+                " Kvalme / Nausea",
+                " Hårtap / Loss of hair"
+            ],
+            "correct": 0
+        },
+        {
+            "question": " Hva er de viktigste regulatorer for ventilasjonen under basalbetingelser? / Kva er dei viktigaste regulatorane for ventilasjonen ved basalbetingelser? / What is the main regulators of ventilation during basal conditions?",
+            "answers": [
+                " CO2 + pH",
+                " CO2 + CO",
+                " O2 + pH",
+                " CO2 + O2"
+            ],
+            "correct": 0
+        },
+        {
+            "question": " Ved en lungesykdom kan oksygentrykket i alveolene reduseres til halvparten. Hvor mye reduseres oksygenmetningen til hemoglobinet av det? / Ved lungesjukdom kan oksygentrykket i alveolane reduserat til halvparten. Kor mykje vil oksygenmetningen bli redusert av det? / In lung disease, the alveolar oxygen pressure may be reduced by 50%. How much is the oxygen sturation of hemoglobin reduced by this?",
+            "answers": [
+                " Ikke påvirket / Not affected",
+                " Redusert, men med vesentlig mindre enn halvparten / Reduced, but by substantially less than one half",
+                " Redusert med omtrent halvparten / Reduced by about half",
+                " Redusert med vesentlig meir enn halvparten / Reduced by substantially more than one half"
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Hvilke hormonforandringer skjer ved puberteten hos gutter? / Kva for hormonendringar skjer ved puberteten hos gutar? / What hormonal changes happen at puberty in boys?",
+            "answers": [
+                " FSH↑, Testosterone↑",
+                " FSH↑, Testosterone↓",
+                " FSH↓, Testosterone↑",
+                " FSH↓, Testosterone↓"
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Proteiner syntetiseres i ribosomene. Hvor i cellen finnes ribosomene? / Protein syntetiserast i ribosoma. Kor i cella finn ein ribosoma? / Proteins are synthesized in the ribosomes. Where in the cell are the ribosomes located?",
+            "answers": [
+                " Golgiapparatet. / The Golgi apparatus.",
+                " Mitokondriene. Mitokondriane. / The Mitochondria.",
+                " Glatt endoplasmatisk retikulum. / Smooth endoplasmatic reticulum",
+                " Kornet endoplasmatisk retikulum. /Rough endoplasmatic reticulum"
+            ],
+            "correct": [
+                1,
+                3
+            ]
+        },
+        {
+            "question": " Høydeopphold gir økning av hematokritnivået. Hvorfor? / Høgdeopphald gir auka hematokritverdi. Kvifor? / Staying at high altitude increase the measured hematocrit. Why?",
+            "answers": [
+                " Man mister kroppsvæske grunnet lavt lufttrykk / Ein mistar kroppsvæske grunna lågt lufttrykk / Loss of body fluid due to low air pressure",
+                " Beinmargen øker produksjonen av røde blodceller / Beinmargen aukar produksjonen av raude blodcellar / The bone marrow increases the production of red blood cells",
+                " Hypoksi gir lavt erytropoietinnivå / Hypoksi gir lågt erytropoietinnivå / Hypoxia induces low level of erythropoietin",
+                " Erythropoietin stimulerer nyrene til å skille ut mer urin / Erytropoietin stimulerar nyrene til å skilja ut meir urin / Erythropoietin stimulates the kidneys to produce more urine"
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Levra er viktig som energilager. Hvordan lagres energien? / Levra er viktig som energilager. Korleis lagrast energien? / The liver is important for storage of energy. How is the energy stored?",
+            "answers": [
+                " Som fett / As fat",
+                " Som sukker / As sugar",
+                " Som glycogen / As glycogen",
+                " Som kolesterol / As cholesterol"
+            ],
+            "correct": 2
+        },
+        {
+            "question": " 7 – 9l vann per dag tilføres fordøyelsessystemet fra mat, drikke og lokal sekresjon. Bare 1 – 2dl blir skilt ut i avføringen. Hvor absorberes mesteparten av vannet? / 7 – 9l vatn per dag blir tilført fordøyelsessystemet både frå mat, drikke og lokal sekresjon. Bare 1 – 2dl blir skilt ut i avføringa. Kor blir mesteparten av vatnet absorbert? / 7 – 9l water per day enters the digestive system from food, drink and from local secretion. Only 1 – 2 dl is excreted in the feces. Where is the main part absorbed?",
+            "answers": [
+                " Spiserøret / The Esophagus",
+                " Magesekken / The stomach",
+                " Tynntarmen / The small intestine",
+                " Tykktarmen / The large intestine"
+            ],
+            "correct": 2
+        },
+        {
+            "question": " En innsnevring (stenose) i mitral- (bicuspidal-)klaffen gir opphav til en bilyd. Når i hjertesyklus vil den høres? / Ein innsnevring (stenose) i mitral- (bicuspidal-)klaffen gir opphav til ein bilyd. Når i hjertesyklus vil den høres? / A narrowed (stenosed) bicuspid (mitral) valve will give a murmur. When, during the heart cycle will that murmur be heard?",
+            "answers": [
+                " I systole / In systole",
+                " I diastole / In diastole",
+                " Både i systole og diastole / Both in systole and diastole",
+                " I PQ-intervallet / In the PQ interval"
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Hvordan er lufttrykket i alveolene under inspirasjon? /Korleis er lufttrykket i alveolane under inspirasjon? / What is the alveolar air pressure during inspiration?",
+            "answers": [
+                " Lavere enn atmosfæretrykket / Lågere enn atmosfæretrykket / Lower than the atmospheric pressure",
+                " Likt atmosfæretrykket / Equal to the atmospheric pressure",
+                " Høyere enn atmosfæretrykket / Høgere enn atmosfæretrykket / Higher than the atmospheric pressure",
+                " Uforutsigbart / Unpredictable"
+            ],
+            "correct": 0
+        },
+        {
+            "question": " Hvor blir mesteparten av næringsstoffene i maten absorbert? / Kor blir største dele av næringsstoffa i maten absorbert? / Where are most of the nutritients in the food absorbed?",
+            "answers": [
+                " Spiserøret / The Esophagus",
+                " Magesekken / The stomach",
+                " Tynntarmen / The small intestine",
+                " Tykktarmen / The large intestine"
+            ],
+            "correct": 2
+        },
+        {
+            "question": " Hvorfor kan metabolsk acidose være en følgetilstand av diaré? / Kvifor kan metabolsk acidose vera ein følgjetilstand av diaré? / Why may diarrhoea sometimes cause metabolic acidosis?",
+            "answers": [
+                " Tap av karbondioksid grunnet hyperventilasjon / Tap av karbondioksid grunna hyperventilasjon / Loss of carbon dioxide due to hyperventilation",
+                " Tap av bikarbonat grunnet diaré / Tap av bikarbonat grunna diaré / Loss of bicarbonate due to diarrhoea",
+                " Tap av syre grunnet diaré / Tap av syre grunna diaré / Loss of acid due to diarrhoea",
+                " Tap av gallesalter grunnet diaré / Tap av gallesalt grunna diaré / Loss of bile salts due to diarrhoea"
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Når starter atriesystole i forhold til EKG? / Når startar atriesystole i forhold til EKG? / When does the atrial systole start in relation to the ECG?",
+            "answers": [
+                " P-bølgen / The P-wave",
+                " QRS komplekset / The QRS complex",
+                " T-bølgen / The T-wave",
+                " U-bølgen / The U wave"
+            ],
+            "correct": 0
+        },
+        {
+            "question": " Hvordan er hormonforstyrrelsene ved hyperthyreose (thyreotoxicose)? / Korleis er hormon forstyrringane ved hyperthyreose (thyreotoxicose)? / How are the hormonal changes in hyperthyroidism (thyreotoxicosis)?",
+            "answers": [
+                " Thyroxin↑, TSH↑",
+                " Thyroxin↑, TSH↓",
+                " Thyroxin↓, TSH↑",
+                " Thyroxin↓, TSH↓"
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Hvilken av disse egenskapene har flerlaget plateepitel. / Kva for av desse egenskapane har fleirlaga plateepitel? / Which of these qualities has stratified squamous epithelium?",
+            "answers": [
+                " Gir vevet en beskyttende barriere. Gir vevet ein beskyttande barriere. / Gives the tissue a protecting barrier.",
+                " God evne til absorpsjon. / Easy absorbtion",
+                " God evne til filtrasjon. / Easy filtration.",
+                " Kan transportere slim ved hjelp av cilier. Kan transportera slim ved hjelp av ciliar. / Can move mucus by cilia transport."
+            ],
+            "correct": 0
+        },
+        {
+            "question": " Hvordan passerer oksygen fra kapillærene til vevet? / Korleis passerar oksygen frå kapillærane til vevet? / How is oksygen transported from the capillaries to the tissue?",
+            "answers": [
+                " Diffusjon / Diffusion",
+                " Osmose / Osmosis",
+                " Aktiv transport / Active transport",
+                " Bundet til hemoglobin / Carried by haemoglobin"
+            ],
+            "correct": 0
+        },
+        {
+            "question": " Hva er forholdet mellom minuttvolumet fra høyre ventrikkel og fra venstre ventrikkel hos friske? / Kva er forholdet mellom minuttvolumet fra høyre ventrikkel og fra venstre ventrikkel hos friske? / What is the relation between the cardiac output from the right ventricle and the left ventricle inhealthy individuals?",
+            "answers": [
+                " Hø > Ve / Right > Left",
+                " Hø = Ve / Right = Left",
+                " Hø < Ve / Right < Left",
+                " Uforutsigbart / Unpredictable"
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Hva skjer når kalsiumkonsentrasjonen i blodet er lav? / Kva skjer når kalsiumkonsentrasjonen i blodet er låg? / What happens when the concentration of calcium in blood is low?",
+            "answers": [
+                " Økt osteoclastaktivitet frigjør kalsium fra bein. / Auka osteoclastaktivitet frigjer kalsium frå bein. / Increased osteoclast activity release calcium from bone.",
+                " Økt osteoblastaktivitet frigjør kalsium fra bein. Auka osteoblastaktivitet frigjer kalsium frå bein. / Increased osteoblast activity release calcium from bone.",
+                " Redusert blodtilstrømming til nyrene reduserer tap av kalsium i urin. Redusert blodtilstrømming til nyrane reduserar tap av kalsium i urin. / Reduced renal blood flow reduce los of calcium in the urin.",
+                " Vitamin D stimulerer til kalsiumsyntese. Vitamin D stimulerar til kalsiumsyntese. / Vitamin D stimulates calcium synthesis."
+            ],
+            "correct": 0
+        },
+        {
+            "question": " Hva er inni hjernens ventrikler? Kva er inni hjernens ventriklar? / What is inside the cerebral ventricles?",
+            "answers": [
+                " Hjerneceller. / Brain cells.",
+                " Hjernens viktigste blodårer. / Hjernens viktigaste blodårer. / The most important bloodvessels of the brain.",
+                " Luft. / Air.",
+                " Cerebrospinalvæske. / Cerebrospinal fluid."
+            ],
+            "correct": 3
+        },
+        {
+            "question": " Hva muliggjør celledifferensieringen? / Kva gjer celledifferensieringa mogleg? / What makes the cell differentiation possible?",
+            "answers": [
+                " Genene er forskjellige i ulike vev. Gena er ulike i dei ulike veva. / The genes are different in different tissues.",
+                " Ulik translasjonsmekanisme i ulike vev./ Different translation mechanism in different tissues.",
+                " Ulik replikasjonsmekanisme i ulike vev. / Different replication mechanism in different tissues.",
+                " Ulike gener er aktive i ulike vev. Ulike gen er aktive i dei ulike veva. / Different genes are active in different tissues."
+            ],
+            "correct": 3
+        },
+        {
+            "question": " Ved intravenøs injeksjon kan det sprøytes inn luftbobler som føres med blodstrømmen. Hvor vil de normalt havne? / Ved intravenøs injeksjon kan det sprøytes inn luftbobler blir ført med blodstraumen. Kor vil dei normal ende? / An intravenous injection may also contain air bubbles tat are injected and follow the blood stream. Where will those usually end?",
+            "answers": [
+                " Venstre atrium / Left atrium",
+                " Venstre ventrikkel / Left ventricle",
+                " Hjernen / The brain",
+                " Lungene / The lungs"
+            ],
+            "correct": 3
+        },
+        {
+            "question": " Hva er referert smerte? Kva er referert smerte? What is referred pain?",
+            "answers": [
+                " Uforklarlig smerte. Uforklarleg smerte. / Pain without explanation.",
+                " Smerte som merkes på et sted som ikke er utgangspunkt for smerten. Smerte som merkast på ein stad som ikkje er utgangspunkt for smerta. Painful sensation in a region, wich is not the source of the pain stimulus.",
+                " Fantomsmerter. / Phantom pain.",
+                " En beskrivelse av hjerterelatert smerte. / Ein beskriving av hjarterelatert smerte. / A description of pain from the heart."
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Hvilket vitamin er nødvendig for normal koagulasjon? / Kva for vitamin er nødvendig for normal koagulasjon? / What vitamin is necessary for normal coagulation?",
+            "answers": [
+                " Vitamin A",
+                " Vitamin B12",
+                " Vitamin D",
+                " Vitamin K"
+            ],
+            "correct": 3
+        },
+        {
+            "question": " Høyt progesteron og østrogen er nødvendig for normal livmorfunksjon i svangerskapet. Hvordan opprettholdes dette i første trimester? / Høgt progesteron og østrogen er nødvendig for normal livmorfunksjon i svangerskapet. Korleis blir dette oppretthaldt i første trimester? / High progesterone and estrogen levels are necessary to normal uterine function during pregnancy. How is this maintained during the first trimester?",
+            "answers": [
+                " Placenta stimulerer hypothalamus til å produsere høye nivåer av gonadotropin releasing hormone (GnRH) / Placenta stimulerer hypothalamus til å produsere høge nivå av gonadotropin releasing hormone (GnRH) / Placenta stimulates the hypothalamus to produce high levels of gonadotropin releasing hormone (GnRH)",
+                " Placenta stimulerer hypofysen til å produsere høye nivåer av FSH og LH / Placenta stimulerar hypofysen til å produsere høge nivå av FSH og LH / The Placenta stimulates the hypophysis to secrete high levels of FSH and LH",
+                " Placenta stimulerer ovariene til fortsatt produksjon av østrogen og progesteron / Placenta stimulerer ovaria til fortsett produksjon av østrogen og progesteron / The placenta stimulates the ovaries to continued production of estrogen and progesterone",
+                " Placenta produserer selv østrogen og progesteron / Placenta produserer sjølv østrogen og progesteron / The placenta produces progesterone and estrogen itself"
+            ],
+            "correct": 2
+        },
+        {
+            "question": " Ved anaerob metabolisme produseres ATP uten oksygen. Hva er energikilden (til venstre for pila) og hva er sluttproduktet (til høyre for pila)? / Ved anaerob metabolisme blir det produsert ATP utan oksygen. Kva er energikjelda (til venstre for pila) og kva er sluttproduktet (til høyre for pila)? / Anaerobic metabolism can produce ATP without oxygen. What is the energy source (to the left of the arrow), and what is the end product (to the right of the arrow)?",
+            "answers": [
+                " Fettsyrer → Citrat / Fatty acids → Citric acid",
+                " Fettsyrer → melkesyre / Fatty acids → Lactic acid",
+                " Glucose → Citrat / Glucose → Citric acid",
+                " Glucose → melkesyre / Glucose → Lactic acid"
+            ],
+            "correct": 3
+        },
+        {
+            "question": " Kondisjonstrening øker hjertets maksimale minuttvolum under arbeid. Hvordan slår det ut på pulsfrekvens (HR) og slagvolum (SV) i hvile? / Kondisjonstrening aukar hjertets maksimale minuttvolum under arbeid. Korleis slår det ut på pulsfrekvens (HR) og slagvolum (SV) i kvile? / Endurance training increases the maximal cardiac output during exercise. How does this affect the heart rate (HR) and stroke volume (SV) at rest?",
+            "answers": [
+                " SV↑, HR↑",
+                " SV↑, HR ↓",
+                " SV↓, HR↑",
+                " SV↓, HR ↓"
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Hvilket ion er nødvendig for normal transport av oksygen i blodet? / Kva for ion er nødvendig for normal transport av oksygen i blodet? / What ion is necessary for normal transport of oxygen in the blood?",
+            "answers": [
+                " Calcium",
+                " Magnesium",
+                " Kalium / Potassium",
+                " Jern / Iron"
+            ],
+            "correct": 3
+        },
+        {
+            "question": " Kroppsmasseindeks (BMI) er et mål for fedme (egentlig vekt justert for høyde: BMI = V / h2). Hva er nedre grense for fedme? / Kroppsmasseindeks (BMI) er eit mål for fedme (eigentleg vekt justert for høgde: BMI = V / h2). Kva er den nedre grensa for fedme? / Body mass index is a measure of obesity (actually it is the weight adjusted for height: BMI = Wt/Ht2). What is the lower limit for obesity?",
+            "answers": [
+                " 19",
+                " 25",
+                " 30",
+                " 40"
+            ],
+            "correct": 2
+        },
+        {
+            "question": " Hva slags ledd er hofteleddet? / Kva slag ledd er hofteleddet? / What type of joint is the hip joint?",
+            "answers": [
+                " Glideledd / Sliding (plane) joint",
+                " Hengselledd / Hinge joint",
+                " Kuleledd / Ball and socket joint",
+                " Fibrøst (falskt) ledd / Fibrous joint"
+            ],
+            "correct": 2
+        },
+        {
+            "question": " Hvor sanses bevegelse av hodet? / Kor blir bevegelse av hodet sansa? / Where is motion of the head sensed?",
+            "answers": [
+                " Mellomøret / The middle ear",
+                " Sneglehuset / Sniglehuset / The cochlea",
+                " Vestibylen / The vestibulum",
+                " Buegangene / Buegangane / The semicircular canals"
+            ],
+            "correct": 3
+        },
+        {
+            "question": " Hvor i sentralnervesystemet er de basale respirasjonssentra? / Kor i sentralnervesystemet er dei basale respirasjonssentra? / Where in the central nervous system are the basic respiratory centres?",
+            "answers": [
+                " Storehjernen / The Cerebrum",
+                " Lillehjernen / The Cerebellum",
+                " Thalamus / The Thalamus",
+                " Hjernestammen / The brain stem"
+            ],
+            "correct": 3
+        },
+        {
+            "question": " Hva kalles muskler som utøver motsatte aksjoner (f.eks. bøye og strekke) på samme ledd? / Kva kallest musklar som utøvar motsette aksjoner (td. bøye og strekke) på same ledd? / What are muscles called that exerts opposite actions (f.i. flexing and extending) on the same joint?",
+            "answers": [
+                " Synergister / Synergistar / Synergists",
+                " Antagonister / Antagonistar / Antagonists",
+                " Fiksatorer / Fiksatorar / Fixators",
+                " Tetaniske muskler / Tetaniske musklar / Tetanic muscles"
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Figuren til venstre viser et diagram av et øye med en brytningsfeil, og til høyre samme feil korrigert med en linse (brille). Hvilken brytningsfeil er dette? / Figuren til venstre syner eit diagram av et auge med ein brytingsfeil, og til høgre same feil korrigert med ein linse (brille). Kva for brytningsfeil er dette? / The figure to the left shows a diagram of an eye with a refraction defect, to the right the same defect corrected by a lens (galss). What type of defect is this?",
+            "answers": [
+                " Myopi – Nærsyn / Myopia",
+                " Hypermetropi – Langsyn / Hypermetropia",
+                " Grå stær – Katarakt / Cataract",
+                " Grønn stær – Glaukom / Glaucoma"
+            ],
+            "correct": 0
+        },
+        {
+            "question": " Hva er et hjerteinfarkt? / Kva er eit hjerteinfarkt? / What is a heart infarction?",
+            "answers": [
+                " En tilstand med snørende smerter i brystet ved arbeid, på grunn av trange kransårer som gir utilstrekkelig oksygenforsyning til en del av hjertet i forhold til behovet / Ein tilstand med snørande smerter i brystet ved arbeid, på grunn av tronge kransårar som gir utilstrekkelig oksygenforsyning til en del av hjertet i forhold til behovet / A condition with constricting pain in the chest during exercise due to narrow coronary arteries resulting in insufficient oxygen supply relative to the demand",
+                " En infeksjon i hjerteposen (pericardium) / Ein infeksjon i hjerteposen (pericardium) / An infection in the pericardium",
+                " En avstengning av en kransåre på grunn av blodpropp, som fører til at en del av hjertemuskelen dør på grunn av surstoffmangel / Ein avstenging av en kransåre på grunn av blodpropp, som fører til at en del av hjertemuskelen dør på grunn av surstoffmangel / An occlusion of a coronary artery by a thrombus, resulting in the death of a part of the heart muscle.",
+                " En infeksjon i en eller fleire hjerteklaffer / Ein infeksjon i ein eller fleire hjerteklaffar / An infection in one or more heart valves"
+            ],
+            "correct": 2
+        },
+        {
+            "question": " Ved diabeteskoma hopes det opp ketoner i blodet. Dette påvirker pH, og sekundært CO2 konsentrasjonen. På hvilken måte? / Ved diabeteskoma hopast det opp keton i blodet. Dette påverkar pH, og sekundært CO2 konsentrasjonen. På kva for måte? / In a diabetic coma there is an accumulation of ketones in the blood. This affects pH and secondary CO2 concentration on the blood. In what way?",
+            "answers": [
+                " pH↑, CO2↑",
+                " pH↑, CO2↓",
+                " pH↓, CO2↑",
+                " pH↓, CO2↓"
+            ],
+            "correct": 3
+        },
+        {
+            "question": " Hva slags symptomer gir Gonoré hos menn? / Kva slag symptom gir Gonoré hos menn? / What symptoms does gonorrhoea give in males?",
+            "answers": [
+                " Sår på penishodet / Ulcers on the glans",
+                " Utflod og svie ved vannlatning / Discharge and painful micturation",
+                " Hovne lymfekjertler i lysken / Swollen lymph glands in the inguinal region",
+                " Utslett på og rundt kjønnsorganene / Rash on and around the sexual organs"
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Kreftceller har evnen til å indusere angiogenese. Hva er det? / Kreftceller har evna til å indusere angiogenese. Kva er det? / Cancer cells have the ability to induce angiogenesis. What is that?",
+            "answers": [
+                " Evnen til å invadere omkringliggende vev. / Evna til å invadere kringliggande vev / The ability to invade surrounding tissue",
+                " Evnen til å danne nye blodårer til svulsten. / Evna til å danne nye blodårer til svulsten. / The ability to create new blood vessels to the tumour",
+                " Evnen til å etablere kolonier (dattersvulster) andre steder i kroppen. / Evna til å etablere koloniar (dottersvulstar) andre steder i kroppen. / The ability to establish daughter tumours at other sites in the body",
+                " Evnen til å stoppe veksten på en bestemt størrelse. / Evna til å stoppe veksten på ein bestemt størrelse. / The ability to stop the growth at a certain size"
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Hva måles med Doppler effekten i ultralyd? / Kva blir målt med Doppler effekten i ultralyd? / What is measured by the Doppler effect in ultrasound?",
+            "answers": [
+                " Størrelse / Size",
+                " Dybde / Depth",
+                " Hastighet / Velocity",
+                " Tetthet / Density"
+            ],
+            "correct": 2
+        },
+        {
+            "question": " Hva karakteriserer sirkulasjonssjokk? / Kva karakteriserer sirkulasjonssjokk? / What characterisescirculatory shock?",
+            "answers": [
+                " Nedsatt blodtrykk, men normal sirkulasjon / Nedsett blodtrykk, men normal sirkulasjon / Reduced blood pressure, but normal circulation",
+                " Nedsatt blodtrykk og nedsatt sirkulasjon / Nedsett blodtrykk og nedsett sirkulasjon / Reduced blood pressure and reduced circulation",
+                " Normalt blodtrykk og normal sirkulasjon / Normal blood pressure and normal circulation",
+                " Nedsatt blodtrykk under arbeid / Nedsett blodtrykk under arbeid / Reduced blood pressure during work"
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Ved MR kan en måle fordelingen av kjemiske stoffer i en avgrenset vevsbit, og se på forskjeller i biokjemi. Hva kalles denne metoden? / Ved MR kan ein i dag måle fordelingen av kjemiske stoff i ein avgrensa vevsbit og sjå på forskjeller i biokjemi.. Kva kallest denne metoden? / By MR is it possible to measure the distribution of chemical compounds in a delineated tissue sample, and imagine differences in biochemistry. What is this method called?",
+            "answers": [
+                " Anatomisk MRI / Anatomical MRI",
+                " Funsjonell MRI / Functional MRI",
+                " MR spektroskopi / MR spectroscop",
+                " Molecular imaging"
+            ],
+            "correct": [
+                2,
+                3
+            ]
+        },
+        {
+            "question": " Hva er den viktigste behandlingen ved dykkersyke? / Kva er den viktigaste behandlinga ved dykkarsjuke? / What is the main treatment for divers sickness (Bends)?",
+            "answers": [
+                " Kortikosteroider / Steroids",
+                " Kirurgi / Surgery",
+                " Antibiotika / Antibiotics",
+                " Kompresjon i trykktank / Compression in a pressure chamber"
+            ],
+            "correct": 3
+        },
+        {
+            "question": " Hva skjer i en (eksitatorisk) synapse? /Kva skjer i ein (eksitatorisk) synapse? / What happens in an excitatory synapse?",
+            "answers": [
+                " Overføring av et aksjonspotensial ved direkte vandring fra en nervecelle til neste / Overføring av eit aksjonspotensial ved direkte vandring frå ein nervecelle til neste /Transmission of an action potential directly from the membrane of one cell to the next",
+                " Frigjøring av kjemisk signalsubstans som trigger depolarisering i neste celle /release of chemical signal substance triggering depolarisation in the next cell",
+                " Bremsing av nerveledningshastigheten i neste celle /decrease of the nerve conduction velocity in the next cell",
+                " Mekaniske forbindelser som holder cellene på plass / Mekaniske forbindelser som held cellene på plass /Mechanical connections keeping the cells in their place"
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Hva er effekten av karbonmonoksyd fra f.eks. sigarettrøyk på blodet? / Kva er effekten av karbonmonoksyd frå f.eks. sigarettrøyk på blodet? / What is the effect of carbon monoxide from for insance cigarette smoke on the blood?",
+            "answers": [
+                " Hemmer immunsystemet / Inhibits the immune system",
+                " Hemmer koagulasjonen / Inhibits the coagulation",
+                " Hemmer oksygentransporten / Inhibits the oxygen transport",
+                " Hemmer produksjonen av erytrocytter / Inhibits the production of erythrocytes"
+            ],
+            "correct": 2
+        },
+        {
+            "question": " Høyt blodtrykk (hypertensjon) er en viktig årsak til hjerte- karsykdom. Over hvilket nivå sier vi det er hypertensjon (stadium 1)? / Høgt blodtrykk (hypertensjon) er ein viktig årsak til hjerte- karsjukdom. Over kva for eit nivå seier vi det er hypertensjon (stadium 1)? / Hypertension is an important cause of cardiovascular disease. Over which level is there hypertension (stage 1)?",
+            "answers": [
+                " Over 110/70",
+                " Over 120/80",
+                " Over 140/90",
+                " Over 160/100"
+            ],
+            "correct": 2
+        },
+        {
+            "question": " Økning av hvilke av disse faktorene vil øke oppløsningen i et ultralydbilde? / Auking av kva for av desse faktorane vil auke oppløysingen i eit ultralydbilde? / Increase of which of these factors will increase the resolution in an ultrasound image?",
+            "answers": [
+                " Lydenergien og probestørrelsen (aperturen) / Lydenergien og probestorleiken (aperturen) / The sound energy and the probe size (the aperture)",
+                " Probestørrelsen (aperturen) og lydfrekvensen / Probestorleiken (aperturen) og lydfrekvensen / The probe size (the aperture) and the sound frequency",
+                " Lydfrekvensen og skjermstørrelsen / Lydfrekvensen og skjermstorleiken / The sound frequency and the screen size",
+                " Skjermstørrelsen og probestørrelsen (aperturen) / Skjermstorleiken og probestorleiken (aperturen) / The screen size and the probe size (the aperture)"
+            ],
+            "correct": 1
+        },
+        {
+            "question": " Hva er mekanismen for revmatoid arthritt? / Kva er mekanismen for revmatoid arthritt? / What is the mechanism for rheumatoid arthritis?",
+            "answers": [
+                " Infeksjon / Infection",
+                " Aldersdegenerasjon / Age dependent degeneration",
+                " Atoimmun betennelse / Autoimmune inflammation",
+                " Utfelling av urinsyre / Precipitation of uric acid"
+            ],
+            "correct": 2
+        },
+        {
+            "question": " I en kasus kontroll studie av lungekreft intervjuet den ansvarlige legen de 200 pasientene, mens forskerlinjestudenten hennes påtok seg å intervjue det samme antall personer i kontrollgruppen. Alle var innlagt på det samme sykehuset og personene i kontrollgruppen var matchet for alder, kjønn og sosioøkonomisk status. Blant kreftpasientene oppga 50 % at de drakk alkohol minst en gang i uka, mens denne andelen var 30% i kontrollgruppen. Forskjellen var statistisk signifikant. Konklusjonen om at lungekreft er assosiert med ukentlig alkoholinntak er: / I ein kasus kontroll studie av lungekreft intervjuet den ansvarlige legen de 200 pasientane, mens forskerlinjestudenten hennar tok på seg å intervjue det same antalet personar i kontrollgruppa. Alle var innlagt på det same sykehuset og personene i kontrollgruppa var matchet for alder, kjønn og sosioøkonomisk status. Blant kreftpasientane sa 50 % at de drakk alkohol minst ein gang i uka, mens denne prosenten var 30% i kontrollgruppa. Forskjellen var statistisk signifikant. Konklusjonen om at lungekreft er assosiert med ukentleg alkoholinntak er: / In a case control study of lung cancer did the responsible doctor interview the 200 patients, while her research student took on the interviews of the same number of persons in the control group. All were admitted to the hospital, and the persons in the control group was matched for age, sex and socio-economic status. Among the cancer patients 50% said they used alcohol at leat once a week, while this percentage was 30% in the control group. The difference was statistically significant. The conclusion that lung cancer is associated with weekly alcohol intake is:",
+            "answers": [
+                " Riktig / Correct",
+                " Uriktig fordi sammenlikningen ikke er basert på insidensrater / Uriktig fordi samanlikninga ikkje er basert på insidensrater / Incorrect because the comparison is not based on incidence rates",
+                " Uriktig fordi gruppene ikke er sammenlignbare pga utilstrekkelig matching / Uriktig fordi gruppene ikkje er samanliknbare pga utilstrekkelig matching / Incorrect because the groups are incomparable due to insufficient matching",
+                " Uriktig fordi opplysningsbias kan forklare resultatene / Uriktig fordi opplysningsbias kan forklare resultatene / Incorrect because information bias may explain the results."
+            ],
+            "correct": 3
+        },
+        {
+            "question": " Ved angina er det vanlig å ta nitroglycerin. Hvordan virker nitroglycerin? / Ved angina er det vanlig å ta nitroglycerin. Korleis verker nitroglycerin? / In angina it is common to use nitroglygerine. How does nitroglycerine work?",
+            "answers": [
+                " Det påvirker hjertemuskelen så minuttvolumet øker / Det påverkar hjertemuskelen så minuttvolumet aukar / It increases cardiac output by direct effect on the heart muscle",
+                " Det reduserer hjertefrekvensen så hjertets arbeid avtar / Det reduserer hjertefrekvensen så hjertets arbeid minkar / It reduces the heart rate leading to decreased heart work",
+                " Det utvider vener så hjertets arbeid avtar / Det utvidar vener så hjertets arbeid minkar / It dilates the veins, leading to decreased heart work",
+                " Det får hjertemuskelcellene til å ta opp mer oksygen / Det får hjertemuskelcellene til å ta opp meir oksygen / It induces the heart muscle to take up more oxygen."
+            ],
+            "correct": 2
+        },
+        {
+            "question": " Hvordan virker antidiuretisk hormon (ADH)? / Korleis verker antidiuretisk hormon (ADH)? / What is the action of antidiuretic hormon (ADH)?",
+            "answers": [
+                " Det reduserer filtrasjonen i glomeruli så mindre vann blir filtrert ut / It reduces filtration in glomeruli, reducing the amount of filtrated water",
+                " Det øker reabsorbsjonen av Natrium (Na+) i proximale tubuli slik at mer vann trekkes inn / Det aukar reabsorbsjonen av Natrium (Na+) i proximale tubuli slik at meir vann blir trekt inn / It increases the reabsorption of Sodium (Na+) so more water is absorbed",
+                " Det øker permeabiliteten i distale tubuli og samlerør så mer vann reabsorberes / Det aukar permeabiliteten i distale tubuli og samlerør så meir vann blir reabsorbert / It increases the permeability in the distal tubuli and collecting ducts so more water is reabsorbed",
+                " Det hemmer tømningen av urinblæra så vannlatingen blir mindre hyppig / Det hemmar tømminga av urinblæra så vannlatinga blir mindre hyppig / It inhibits the emptying of the urinary bladder, decreasing the micturation frequency"
+            ],
+            "correct": 2
+        }
+    ]
+}
