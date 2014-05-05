@@ -1,0 +1,307 @@
+{
+    "name": "Teknologiledelse",
+    "code": "TIØ4258",
+    "exam": "V13",
+    "questions": [
+        {
+            "question": "Som kjent kan finansiering være en betydelig utfordring for mange bedrifter. Hvilken av følgende påstander er korrekt om finansiering av kunnskapsbedrifter med vekstpotensial?",
+            "answers": [
+                "I tidlig fase vil bankene normalt være den mest sentrale kilden til finanskapital.",
+                "Forretningsbankene engasjerer seg ofte finansielt i tidlig fase og går ofte inn med eierkapital, mens sparebankene kommer mer på banen i senere faser av livsløpet.",
+                "Bankenes krav til sikkerhet gjør at de i liten grad vil eksponere seg finansielt i tidlig fase.",
+                "Alle bedrifter som ønsker vekst bør ha venturekapitalfond som hovedeiere."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hvilken av følgende påstander er korrekt om kunnskapsbaserte bedrifter som har vekstambisjoner?",
+            "answers": [
+                "Bedrifter som lykkes godt kommersielt har nesten alltid en ide som kan beskyttes med patenter eller andre formelle beskyttelsesmekanismer.",
+                "Det beste er å være alene som entreprenør i oppstarten, da har man kontroll på alt og kan rekruttere de menneskene man trenger.",
+                "En oppstart som gjøres av et tverrfaglig team lykkes som regel best kommersielt.",
+                "En teknologibedrift som skal vokse må som hovedregel ha med seg et venturekapitalfond på eiersiden."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Det finnes ulike typer aktører som kan bidra med kapital i en oppstartsfase. Hvilken av følgende påstander er korrekt om såkalte ”business angels”",
+            "answers": [
+                "Er som hovedregel passive eiere som kun tilfører finansiell kapital.",
+                "Er aktive eiere som kan tilføre bedriften ”knappe ressurser” i form finanskapital, erfaring og nettverk.",
+                "Vil som hovedregel eie majoriteten av aksjene i bedriften slik at det har mulighet til bruke sin kompetanse og erfaring for utvikle bedriften videre og derved øke sannsynligheten for at bedriften lykkes kommersielt.",
+                "Er private konsulenter som mottar offentlig støtte for å bistå bedrifter i tidlig fase. "
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hva er normalt sett rekkefølgen når disse aktørene investerer i potensielle vekstbedrifter?",
+            "answers": [
+                "Entreprenør, venturekapitalfond, familie og venner, Business Angels.",
+                "Entreprenør, familie og venner, Business Angels, venturekapitalfond",
+                "Venturekapitalfond, Business Angels, entreprenør, familie og venner",
+                "Entreprenør, Business Angels, familie og venner, venturekapitalfond"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Det finnes ulike typer ”investment risks”. Hvilke ”investment risks” omtales ofte i forbindelse med investeringer i potensielle vekstbedrifter?",
+            "answers": [
+                "Konkurranserisiko, økonomisk risiko og ikke minst konkursrisiko",
+                "Teknologisk risiko, markedsrisiko og agentrisiko",
+                "Teknologirisiko, konkursrisiko, og markedsrisiko",
+                "Konkurrentrisiko, markedsrisiko og kapitalrisiko "
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Et nyttig verktøy i forhold til å kontrollere innovasjonsaktiviteten er en stage-gate modell. Hvilken av påstandene under er ikke riktig?",
+            "answers": [
+                "Innovative selskaper kan gi ansatte tid til å jobbe på egne prosjektideer.",
+                "Den første evalueringen av en prosjektide krever en liste over tekniske, finansielle og menneskelige behovet, detaljert utviklingsbudsjett og tidsplan.",
+                "Prosjektideer som evalueres for andre gang i modellen kan enten avvises, revideres, selges, eller sendes videre til tredje utviklingsfase.",
+                "Hovedformålet med denne modellen er å fokusere begrensede tekniske, finansielle og menneskelige ressurser til et fåtall utviklingsprosjekter for å øke sannsynligheten for at de skal bli vellykket."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hvilken av følgende begreper er ikke en del av horisontal differensiering?",
+            "answers": [
+                "Sentralisering.",
+                "Arbeidsdeling.",
+                "Spesialisering.",
+                "Økt produktivitet."
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hvilken av følgende påstander beskriver ikke en potensiell ulempe med byråkratisk struktur?",
+            "answers": [
+                "Liten kontroll med veksten i hierarkiet.",
+                "Liten respons i forhold til kunder og interessenter.",
+                "Regler og prosedyrer viktigere enn det overordnete målet.",
+                "Utydelig rolle- og ansvarsfordeling."
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Når har personligheten til den enkelte størst betydning for kvaliteten på jobbprestasjonen?",
+            "answers": [
+                "Når det situasjonelle presset er sterkt.",
+                "Når nærmeste leder er utadvendt.",
+                "Når arbeidstakeren er utadvendt.",
+                "Når det situasjonelle presset er svakt."
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Hvilken av de følgende modellene for jobbdesign har som hovedmål å maksimere jobbprestasjonen gjennom jobbforenkling og - spesialisering?",
+            "answers": [
+                "Scientific management.",
+                "Jobbutvidelse.",
+                "Jobberikelse.",
+                "Jobbklassifisering"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Endringen i totalkostnader pr enhets endring i produsert mengde kalles for:",
+            "answers": [
+                "Gjennomsnittskostnader.",
+                "Faste kostnader.",
+                "Variable enhetskostnader.",
+                "Marginalkostnader."
+            ],
+            "correct": 3
+        },
+        {
+            "question": "En bedrift oppfatter prisen som gitt, det vil si som uavhengig av hvor mye den selv produserer. Hva kan vi da si om hvordan bedriftens oppfatter sin marginalinntekt?",
+            "answers": [
+                "Marginalinntekten er lik markedsprisen på produktet.",
+                "Marginalinntekten er lavere enn markedsprisen på produktet.",
+                "Marginalinntekten er høyere enn markedsprisen på produktet.",
+                "Marginalinntekten er lik forskjellen mellom endringen i inntekter og endringen i kostnader for en enhets økning i pris."
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Etterspørselen i et marked kan uttrykkes som Q = 100 – 2P, der Q er mengden og P er prisen. Hva blir marginalinntekten?",
+            "answers": [
+                "100 – 2P",
+                "100 – 4P",
+                "50 – Q",
+                "50 – 2Q"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hva er den mest korrekte definisjonen på begrepet etterspørselselastisitet?",
+            "answers": [
+                "Den deriverte av totalinntekten.",
+                "Forholdet mellom endring i produsert mengde og endring i pris når prisen endres med en enhet.",
+                "Prosentvis endring i mengde i forhold til prosentvis endring i pris når pris endres med en liten enhet.",
+                "Prosentvis endring i mengde minus prosentvis endring i pris når pris endres med en liten enhet."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "En bedrift i et frikonkurransemarked har marginalkostnadene MC = 100 + 0,1Q der Q er produsert mengde pr periode. Dersom prisen i markedet er 1 100, hvor mye vil bedriften produsere?",
+            "answers": [
+                "2 500",
+                "5 000",
+                "7 500",
+                "10 000"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Et monopol har marginalkostnader (også kalt grensekostnader) på 1 000. Etterspørselen er gitt ved P = 10 000 – Q, der P er prisen og Q er mengden. Hva blir total mengde tilbudt av monopolet?",
+            "answers": [
+                "10 000",
+                "9 000",
+                "4 500",
+                "2 500"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "I et duopolmarked er etterspørselen gitt ved Q = 100 – P, der P er prisen og Q er total mengde i markedet. Anta at de to bedriftene har konstante marginalkostnader på c, opptrer i tråd med Cournot-modellen og produserer mengdene Q1 og Q2. Reaksjonsfunksjonen uttrykker bedriftens beste svar på den andre bedriftens strategi. Hva blir et korrekt uttrykk for reaksjonsfunksjonen til bedriften som produserer mengden Q1? ",
+            "answers": [
+                "Q1 = (100 - Q2 - c)/2",
+                "Q1 = (100 - Q2 - c)/3",
+                "Q1 = (100 - 2Q2 - c)/2",
+                "Q1 = (100 - 2Q2 - c)/3"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "I et duopolmarked er etterspørselen gitt ved Q = 100 – P, der P er prisen og Q er total mengde i markedet. Anta at de to bedriftene har konstante marginalkostnader på c, opptrer i tråd med Cournot-modellen og produserer mengdene Q1 og Q2. Hva blir et korrekt uttrykk mengden Q1 som den ene bedriften produserer i likevekt?",
+            "answers": [
+                "Q1 = (100 - 2c)/3",
+                "Q1 = (100 - c)/4",
+                "Q1 = (100 - Q2 - c)/2",
+                "Q1 = (100 - c)/3"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "I balansen til et selskap er omløpsmidlene på totalt 900 millioner rapportert som følger: Likvider: 100, Varelager: 500, Fordringer: 300. Gjelden på totalt 2 milliarder er fordelt som følger: Langsiktig gjeld: 1 500, Kortsiktig gjeld: 500. Hva er likviditetsgrad 2 (Acid Test Ratio) for selskapet?",
+            "answers": [
+                "0,25",
+                "0,45",
+                "0,80",
+                "1,40"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Selskapet i oppgaven over har verdi av totale aktiva på 4 milliarder. Hva er da sel­skapets gjeldsandel? ",
+            "answers": [
+                "0,2",
+                "0,5",
+                "1,0",
+                "2,0"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hva er nåverdien av å få 1 000 000 om fire år når diskonteringsrenten er 10 % pr år? ",
+            "answers": [
+                "620 921",
+                "683 013",
+                "751 413",
+                "909 091"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Et prosjekt innebærer en investering på 500 000 nå. Etter ett år gir det en forventet netto kontantstrøm på 400 000. Etter to år gir det enten en negativ netto kontantstrøm på 200 000 eller en positiv netto kontantstrøm på 600 000. Sannsynligheten for å få den negative kontantstrømmen det andre året er 40 %. Avkastningskravet er 10 %. Hva blir nettonåverdien til prosjektet?",
+            "answers": [
+                "Ca 500 000.",
+                "Ca 118 000.",
+                "Ca 95 000.",
+                "Ca –37 000."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Et prosjekt som innebærer en investering, det vil si en negativ kontantstrøm, først og så bare positive kontantstrømmer alle perioder i resten av prosjektets levetid, har en internrente på 10 %. Hva kan vi da si om beregnet nettonåverdi, NNV, for prosjektet?",
+            "answers": [
+                "Med diskonteringsrente på 10 % er nettonåverdien null, og nettonåverdien er større enn null for lavere diskonteringsrenter.",
+                "Med diskonteringsrente på 10 % er nettonåverdien null, og nettonåverdien er større enn null for høyere diskonteringsrenter.",
+                "Med diskonteringsrente på 10 % er nettonåverdien lik investeringsbeløpet, og nettonåverdien øker med  lavere diskonteringsrenter.",
+                "Med diskonteringsrente på 10 % er nettonåverdien lik investeringsbeløpet, og nettonåverdien synker med  lavere diskonteringsrenter."
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hvilket utsagn om diversifisering er mest korrekt for vanlige verdipapirporteføljer?",
+            "answers": [
+                "Diversifiseringseffekten gjør at porteføljens beta blir lavere slik at forventet avkastning også blir lavere.",
+                "Diversifiseringseffekten gjør at porteføljens beta blir høyere slik at forventet avkastning også blir høyere.",
+                "Diversifiseringseffekten eliminerer systematisk risiko slik at risikoen blir lavere i forhold til forventet avkastning enn den ellers ville vært!",
+                "Diversifiseringseffekten reduserer unik risiko, men ikke beta, slik at risikoen blir lavere i forhold til forventet avkastning enn den ellers ville vært."
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Avkastningen til to aksjer har samme standardavvik. Avkastningen til den ene varierer så å si uavhengig av markedet, mens avkastningen til den andre har en klar tendens til å variere i takt med markedet. Hva kan vi si, basert på kapitalverdimodellen, eller Capital Asset Pricing Model (CAPM), om risikopremien til de to aksjene?",
+            "answers": [
+                "Siden risikoen er den samme, blir både beta og risikopremien den samme for de to aksjene.",
+                "Aksjen med avkastning som tenderer til å variere i takt med markedet vil ha høyere beta enn den andre og derfor også en høyere risikopremie.",
+                "Aksjen med avkastning som varierer nesten uavhengig av markedet vil ha høyere beta enn den andre og derfor også en høyere risikopremie.",
+                "Risikopremien til en portefølje av de to aksjene vil være høyere enn risikopremien til den av aksjene som har høyest risikopremie."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Kapitalverdimodellen, eller Capital Asset Pricing Model (CAPM), gir en sammen­heng mellom størrelsen kalt beta, forventet avkastning på en investering, risikofri avkastning og forventet avkastning i markedet. Anta at beta for en aksje er 2. Forventet markedsavkastning er 9 % og risikofri rente er 5 %. Hva blir da forventet avkastning for aksjen i følge CAPM?",
+            "answers": [
+                "4 %",
+                "8 %",
+                "13 %",
+                "22 %"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Anta at et selskap har gjelden D og kommer til å ha den for all framtid. Anta også at selskapet betaler renten r på denne gjelden for all framtid og at selskapsskattesatsen vil være T for all framtid. Gitt at verdien av skattefordelen av gjeld skal diskonteres med samme rente som gjeldsrenten, det vil si r, hva blir nåverdien av skattefordelen av gjeld?",
+            "answers": [
+                "D·T",
+                "D(1 – T)",
+                "D·r·T/(1+r)",
+                "D·r(1 – T)/(1+r)"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Aksjen til et selskap har en forventet avkastning på 10 %. Avkastningen på selskapets gjeld er 4 %. Skattesatsen er 25 %. Gjelden til selskapet tilsvarer halvparten av verdien til aktiva. Hva blir selskapets WACC?",
+            "answers": [
+                "4,0 %",
+                "6,5 %",
+                "7,0 %",
+                "13,0 %"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Du har følgende opplysninger om kontantstrømmene knyttet til et prosjekt for et gitt år: Positiv kontantstrøm fra drift er 2 500 000, rentekostnadene er 400 000, avdrag på lån som skal betales er på 200 000 og selskapsskattesatsen er 25 %. Hvilken kontantstrøm skal gå inn i en nettonåverdiberegning der WACC brukes som avkastningskrav?",
+            "answers": [
+                "1 875 000",
+                "1 625 000",
+                "1 125 000",
+                "937 500"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Et selskap med gjeldsandel på 80 % har forventet avkastning på aktiva på 12 % og for­ventet avkastning på gjeld på 6 %. Hva blir forventet avkastning på egenkapital?",
+            "answers": [
+                "6 %",
+                "12 %",
+                "24 %",
+                "36 %"
+            ],
+            "correct": 3
+        }
+    ]
+}
