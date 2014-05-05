@@ -35,10 +35,8 @@ def reset_stats_course(course_code):
 def reset_stats_exam(course_code, exam_name):
     """Reset stats for a course"""
     if 'exams' in session:
-        course = models.Course.query.filter_by(code=course_code).first()
-        exam = models.Exam.query.filter_by(course=course, name=exam_name).first()
-        if exam and str(exam.id) in session['exams']:
-            del session['exams'][str(exam.id)]
+        if exam and course_code + '_' + exam_name in session['exams']:
+            del session['exams'][course_code + '_' + exam_name]
     return redirect(url_for('exam', course_code=course_code, exam_name=exam_name))
 
 
@@ -67,10 +65,10 @@ def show_question(course_code, exam_name, id):
         exam = models.Exam.query.filter_by(course=course, name=exam_name).first_or_404()
         if 'exams' not in session:
             session['exams'] = {}
-        if str(course.id) not in session['exams'].keys():
-            session['exams'][str(exam.id)] = {'points': 0, 'total': 0, 'combo': 0, 'answered': []}
+        if course_code + '_' + exam_name not in session['exams'].keys():
+            session['exams'][course_code + '_' + exam_name] = {'points': 0, 'total': 0, 'combo': 0, 'answered': []}
         # Shortened variable
-        c_session = session['exams'][str(exam.id)]
+        c_session = session['exams'][course_code + '_' + exam_name]
         # Only question from a specific exam
         num_questions = models.Question.query.filter_by(exam=exam).count()
         question = models.Question.query.filter_by(exam=exam).offset(id - 1).limit(1).first_or_404()
@@ -83,10 +81,10 @@ def show_question(course_code, exam_name, id):
     else:
         if 'courses' not in session:
             session['courses'] = {}
-        if str(course.id) not in session['courses'].keys():
-            session['courses'][str(course.id)] = {'points': 0, 'total': 0, 'combo': 0, 'answered': []}
+        if course_code not in session['courses'].keys():
+            session['courses'][course_code] = {'points': 0, 'total': 0, 'combo': 0, 'answered': []}
         # Shortened variable
-        c_session = session['courses'][str(course.id)]
+        c_session = session['courses'][course_code]
         # All questions
         exam = None
         num_questions = models.Question.query.filter_by(course=course).count()
