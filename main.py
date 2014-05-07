@@ -27,8 +27,8 @@ def reset_stats_course(course_code):
     """Reset stats for a course"""
     if 'courses' in session:
         course = models.Course.query.filter_by(code=course_code).first()
-        if course and str(course.id) in session['courses']:
-            del session['courses'][str(course.id)]
+        if course and str(course_code) in session['courses']:
+            del session['courses'][str(course_code)]
     return redirect(url_for('course', course_code=course_code))
 
 
