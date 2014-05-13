@@ -72,7 +72,7 @@ def show_question(course_code, exam_name, id):
         c_session = session['exams'][course_code + '_' + exam_name]
         # Only question from a specific exam
         num_questions = models.Question.query.filter_by(exam=exam).count()
-        question = models.Question.query.filter_by(exam=exam).offset(id - 1).limit(1).first_or_404()
+        question = models.Question.query.filter_by(exam=exam).order_by(models.Question.id).offset(id - 1).limit(1).first_or_404()
         reset_url = url_for('reset_stats_exam', course_code=course.code, exam_name=exam.name)
         breadcrumbs = [
             {'name': 'Emner', 'url': url_for('main')},
