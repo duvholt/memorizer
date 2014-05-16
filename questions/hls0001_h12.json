@@ -1,0 +1,427 @@
+{
+    "name": "Psykosomatikk og helsepsykologi",
+    "code": "HLS0001",
+    "exam": "H12",
+    "questions": [
+        {
+            "question": "Hvem lanserte begrepet generalized resistance resources (GRRs)?",
+            "answers": [
+                " Richard S. Lazarus",
+                " Aaron Antonovsky",
+                " Martin Seligman",
+                " Albert Bandura"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "I følge senere tids skoleforskning; Hva synes å ha størst betydning for gutters skoletrivsel?",
+            "answers": [
+                " Det å ha mange kompiser på skolen",
+                " Det å få støtte fra venner",
+                " Det å bli mobba i friminuttene",
+                " Det å få skolefaglig hjelp fra lærer"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Teorien om self-transcendence (ST) relaterer ST til noen sentrale begrep. Hvilke begrep?",
+            "answers": [
+                " Self-transcendence, håp, mening, angst og depresjon",
+                " Håp og mening",
+                " Velvære (wellbeing) og sårbarhet",
+                " Spiritualitet, trivsel, livskvalitet"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Opplevelse av sammenheng OAS (SOC, engelsk forkortelse) har tre dimensjoner. Hva er viktigst å ta i betraktning når man skal evaluere OAS?",
+            "answers": [
+                " Dimensjonen meningsfullhet",
+                " Dimensjonen forståelse",
+                " Dimensjonen håndterbarhet",
+                " Samtlige tre dimensjoner"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "I tråd med Aaron Antonovsky er Salutogenese først og fremst\".",
+            "answers": [
+                " En systemteori",
+                " En psykologisk teori",
+                " En individteori",
+                " Mangler teoretisk grunn"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Helsefremmende arbeid (HFA) i tråd med WHOs Ottawa-charter (1986) betrakter helse som...",
+            "answers": [
+                " En tilstand av velvære",
+                " Ulike tiltaksområder innenfor helsefremmende arbeid",
+                " En prosess",
+                " En risiko"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hvilken av følgende setninger beskriver best hvordan helse påvirkes av den kulturelle konteksten vi vokser opp i?",
+            "answers": [
+                " Kulturen påvirker vår livsstil, og gjør at vi tar valg som er mer eller mindre bra for helsa",
+                " I noen kulturer har folk mer tro på bønn, sjamaner og \"talisman\" enn på skolemedisin",
+                " Kulturen påvirker hvordan vi opplever oss selv og vår forhold til verden rundt oss. Det kan derfor være fundamentale forskjeller i hvordan helse oppleves, noe som også gjør seg utslag i hvordan vi prøver å oppnå god helse, hvem vi søker hjelp hos og hvilke valg vi tar",
+                " Ulikheter i livsstil, helseatferd og helseforståelse skyldes først og fremst manglende kunnskap, og ikke kulturelle forskjeller"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hvilken av de følgende omstendigheter er IKKE en vanlig grunn for varig nedsatt helse etter en migrasjon?",
+            "answers": [
+                " At man taper sosialt nettverk og status?",
+                " At man blir utsatt for uvante bakterier og virus?",
+                " At man føler det er vanskelig å skjønne hva som foregår rundt en, og hvordan man skal forholde seg til de nye omstendighetene?",
+                " At man opplever å bli diskriminert?"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hvilket begrep er spesielt sentralt i forbindelse med utvikling av opplevelse av sammenheng (SOC)?",
+            "answers": [
+                " Generelle  motstandsressurser",
+                " Optimisme",
+                " Empowerment",
+                " Livskvalitet (Quality of Life)"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hva er en stress moderator?",
+            "answers": [
+                " Faktorer som påvirker retningen og styrken mellom stress og en annen variabel",
+                " Faktorer som fungerer som mellomliggende variabel mellom stress og en annen variabel",
+                " Faktorer som utløser opplevelse av stress",
+                " En stressmoderator øker alltid effekten av stress på en annen variabel."
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hvilken stressteoretiker beskrev «det generelle adaptasjonssyndromet (GAS)?",
+            "answers": [
+                " Richard Lazarus og Susan Folkman",
+                " Hans Selye",
+                " Walter Cannon",
+                " Holger Ursin"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Den biopsykososiale sykdomsmodellen (Espnes og Smedslund, 2001) viser at det åndelige systemet kan ha betydning for helseutvikling i relasjon til...",
+            "answers": [
+                " Det psykologiske, biologiske og sosiale systemet",
+                " Det psykologiske og biologiske systemet",
+                " Primært det psykologiske systemet",
+                " Det psykologiske, biologiske og sosiale systemet, samt i systemet for samspill mellom kroppslige og fysiske symptomer (psyche- soma)"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Et av svaralternativene nedenfor blir hevdet å være viktigst for å oppleve en god livskvalitet.  Hvilket?",
+            "answers": [
+                " At man har gode og nære relasjoner med familie og venner",
+                " At man har mange penger i banken",
+                " At man har høy utdanning",
+                " At man er vellykket og betydningsfull i arbeidslivet"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Den mest anerkjente og brukte definisjonen på utbrenthet er forfattet av Maslach. Hun deler utbrenthet inn i?",
+            "answers": [
+                " En dimensjon",
+                " To dimensjoner",
+                " Tre dimensjoner",
+                " Fire dimensjoner"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Med psykosomatisk  forskning menes?",
+            "answers": [
+                " Helseforskning som konsentrerer seg ensidig om det psykosomatiske og dermed får et nyttig og godt fokus på få faktorer i forklaring i helseutvikling.",
+                " Helseforskning som søker å se på hvordan menneskers helse utvikles som en sum av de faktorer, indre og ytre, som det påvirkes av.",
+                " Forskning knyttet til psykedeliske og somatoforme lidelser.",
+                " En forskning som legger vekt på dualismen psyke og soma."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hva er i følge Holmes og Rahe's forskning den mest stressende livshendelse?",
+            "answers": [
+                " Dødsfall hos nær venn",
+                " Å bli oppsagt fra jobben",
+                " Å få beskjed om at en er dødelig syk",
+                " Dødsfall hos ektefelle"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "At en undersøkelse har god validitet vil si...",
+            "answers": [
+                " at alle som er med i studien forstår hva den handler om",
+                " at undersøkelsen måler det den er ment å måle",
+                " at bare forskerne som gjennomfører undersøkelsen vet hva formålet med studien er",
+                " at tilstrekkelig antall deltagere er med i undersøkelsen"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "At en undersøkelse har god reliabilitet vil si...",
+            "answers": [
+                " at undersøkelsen er pålitelig",
+                " at undersøkelsen nøyaktig gjenspeiler virkeligheten",
+                " at de som gjennomfører undersøkelsen er pålitelige",
+                " at man måler mange faktorer i undersøkelsen"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Andelen av nordmenn som driver med fysisk aktivitet på fritiden siden 1940 og frem til i dag varierer fra...",
+            "answers": [
+                " 55 - 75 %",
+                " 70 - 90 %",
+                " 30 - 50 %",
+                " 40 - 60 %"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "KAP-modellen er en viden brukt helseatferdmodell. K står for knowledge, A for attitude og P for practice (kunnskap, holdning og atferd). Hva har vært den vanligste kritikken mot denne modellens gangbarhet?",
+            "answers": [
+                " At den er for omtrentlig i beskrivelsen av kunnskap.",
+                " At den ikke er tydelig nok på rekkefølgen.",
+                " At den er for tydelig på at den rekkefølgen går bare en vei.",
+                " At atferd er vanskelig å fastslå."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hvilken type religionsdefinisjon  kan Sigmund Freud sies å primært vektlegge i boken \"A future of an Illusion\" (1927)?",
+            "answers": [
+                " En substansiell religionsdefinisjon",
+                " En funksjonell  religionsdefinisjon",
+                " Funsksjonelle og substansielle aspekter vektlegges like mye",
+                " En monotetisk definisjon"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Å betrakte helse som en ressurs innebærer å se på helse som:",
+            "answers": [
+                " Fravær av sykdomstegn og symptomer",
+                " En tilstand av fysisk, psykisk og sosial velvære",
+                " En tilstand av høy livskvalitet",
+                " Evnen til å utvikle motstandsressurser som kan fremme livsmot, livsglede og mestring av hverdagslivets ulike situasjoner."
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Å måle individers livskvalitet er vanskelig først og fremst fordi:",
+            "answers": [
+                " Det er en subjektiv opplevelse som favner alle sider ved vår tilværelse",
+                " Det finnes ulike definisjoner av begrepet",
+                " Folk har ulike forventninger til livet",
+                " Det eksisterer ikke gode nok måleinstrumenter/spørreskjema"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Forskjellen på helsefremming og forebyggende helsearbeid er at:",
+            "answers": [
+                " Helsefremming fokuserer på risikofaktorer for sykdom og en reduksjon av disse, mens forebyggende helsearbeid vektlegger evnen til å leve med en sykdom",
+                " Helsefremming vektlegger individets evne til å takle sykdom, mens forebyggende helsearbeid fokuserer på individets evne til å unngå risikofaktorer",
+                " Helsefremming handler om å legge til rette for at individet, i samspill med sine omgivelser, kan ta ansvar for å fremme egen helse, mens forebyggende helsearbeid handler om å redusere risikofaktorer for sykdom",
+                " Helsefremming handler om å fremme vår selvopplevde helse, mens forebyggende helsearbeid fokuserer kunpå en reduksjon av objektiv målbare risikofaktorer"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hva er definisjonen av positiv psykologi?",
+            "answers": [
+                " Det vitenskapelige studiet av optimal fungering",
+                " Det kvantitative studiet av positive personlighetstrekk",
+                " Det kvalitative studiet av sykdomsforebygging",
+                " Det vitenskapelige studiet av helsefremmende tiltak"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hva mente Antonovsky med begrepet «Sence of Coherence»?",
+            "answers": [
+                " Optimal gruppetilhørighet",
+                " En meningsfull sanunenheng i tilværelsen",
+                " At alle samfunnets individer lever i harmoni",
+                " A ha god helse"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hva kjennetegner såkalte «løvetannbarn»?",
+            "answers": [
+                " At de har hatt gode oppvekstvilkår og klart seg dårlig",
+                " At de har vokst opp på barnehjem",
+                " At de har hatt dårlige oppvekstvilkår og klart seg bra",
+                " Antisosial og aggressiv atferd"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hvilke metoder foretrekker helsepsykologien å fokusere på i arbeidet?",
+            "answers": [
+                " Holistisk behandling",
+                " Kognitive terapiformer",
+                " Helsefremming og forebygging",
+                " Å fremme helsepsykologiens plass i sykdomsbehandling"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Det finnes ulike sykdoms- og helsemodeller. Helsepsykologer og forskere som arbeider med psykosomatikk benytter seg vanligvis av den mest moderne av disse modellene og den kalles for...",
+            "answers": [
+                " bio-medisinsk helsemodell.",
+                " bio-holistisk helsemodell.",
+                " bio-psyko-sosial helsemodell.",
+                " velværehelsemodellen."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Definisjonen av folkehelsearbeidet lyder som følger: «Folkehelsearbeidet  er samfannets innsatsfor  åpåvirke faktorer  som direkte eller indirektefremmer  befolkningens helse og trivsel, forebygger psykisk  og somatisk sykdom, skade eller lidelse, eller som beskytter mot helsetrusler, samt arbeidfor  en jevnere fordeling  avfaktorer  som direkte eller indirekte påvirker  helsen. «Forebyggende arbeid deles inn i 3 kategorier, men ikke alt er folkehelsearbeid. Hvilken av de følgende påstandene om forebyggende arbeid er en del av folkehelsearbeidet:",
+            "answers": [
+                " Selektivt (sekundærforebyggende) forebyggende arbeid i symptomfri fase og tidlig intervensjon er en del av folkehelsearbeidet sammen med indikativt (tertiærforebygging) forebyggende arbeid.",
+                " Universelt (primærforebyggende) og selektivt (sekundærforebyggende) forebyggende arbeidet i symptomfri fase og fasen tidlig intervensjon er en del av folkehelsearbeidet.",
+                " Universelt (primærforebyggende) og indikativt (tertiærforebygging) forebyggende arbeidet som rehabilitering og habilitering er en del av folkehelsearbeidet.",
+                " Universelt (primærforebyggende) forebyggende arbeidet og selektivt (sekundærforebyggende) arbeid i klinisk symptomgivende fase for å hindre tilbakefall av en sykdom"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hvilke lovverkforankrer Folkehelsearbeidet, listet i bestemmende rekkefølge:",
+            "answers": [
+                " Helse- og omsorgstjenesteloven og Plan og bygningsloven",
+                " Folkehelseloven og Plan og bygningsloven",
+                " Plan og bygningsloven, Folkehelseloven og Helse- og omsorgstjenesteloven",
+                " Helse i plan, Folkehelseloven og Helse- og omsorgstjenesteloven"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Arbeidet for å redusere sosiale helseforskjeller vil kreve langsiktig og målrettet innsats på mange områder. I følge Nasjonal strategi for å utjevne sosiale helseforskjeller - innledning til Stortingsmelding nr. 20 (2006 - 2007) er dette de viktigste innsatsområder for å følge utviklingen:",
+            "answers": [
+                " Inntekt, oppvekst, arbeid og arbeidsmiljø, helseatferd, helsetjenester,  sosial inkludering",
+                " Inntekt, boligforhold, arbeid og arbeidsmiljø, helseatferd, helsetjenester, fritidstilbud",
+                " Inntekt, boligforhold, arbeid og arbeidsmiljø, nivå av fysisk aktivitet, helsetjenester, sosial inkludering",
+                " Inntekt, oppvekst, arbeid og arbeidsmiljø, nivå av fysisk aktivitet, helsetjenester, sosial inkludering, nasjonale anti tobakk- og alkoholkampanjer"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Begrepet dualisme...",
+            "answers": [
+                " kan greit oversettes med at mennesket er tosidige -jing ogjang",
+                " stammer fra en overbevisning om at mennesket består av to adskilte deler, kropp og en sjel.",
+                " var middelalderens tro på mennesket som godt og ondt -og at det gode mennesket hadde god helse",
+                " har ingenting med begrepet \"duo\" å gjøre, men er et begrep som benyttes om egosentrisme"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Den kognitive terapimodellen kjennetegnes ved...",
+            "answers": [
+                " at tanker, følelser og kroppslige symptomer, samt atferd henger sammen og påvirker hverandre",
+                " at man er spesielt opptatt av lært atferd, og ser på denne atferden som noe som kan avlæres",
+                " et særskilt fokus på til dels uløste emosjonelle konflikter",
+                " a, b, og c er alle riktige"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "George Stone (1987) mener at de ulike helsedefinisjonene  grovt sett faller innenfor to kategorier:  Hvilke?",
+            "answers": [
+                " Noen definerer helse som fravær av sykdom og lyte andre som livskvalitet.",
+                " Noen sier at helse er selve livet, mens andre hevder at fullkommen helse aldri kan nås",
+                " Noen definerer helse som en ideell tilstand, mens de andre definerer helse som en bevegelse i en positiv retning.",
+                " Helseempiriske og helseteoretiske."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Med self-efficacy eller mestringsforventning på norsk mener Albert Bandura:",
+            "answers": [
+                " at sannsynligheten for at vi skal gjøre noe, øker proporsjonalt med den troen vi har på at vi vil få det til.",
+                " at sannsynligheten for at vi skal få noe til øker også selvtilliten. at selvtilliten øker når vi får noe til.",
+                " at selvtilliten øker når vi får noe til.",
+                " når vi får noe til kan denne kunnskapen føres over til områder der vi ikke får noe til."
+            ],
+            "correct": 0
+        },
+        {
+            "question": "I det psykonevroimmunologiske perspektivet er en opptatt av...",
+            "answers": [
+                " hvordan å behandle immunologiske sykdommer med psykologisk kognitiv terapi",
+                " hvordan psykiske plager som oftest kan behandles med nevrologiske behandlingsmetoder",
+                " hvordan psykiske lidelser og sykdommer påvirker immunforsvaret",
+                " hvordan persepsjon kan påvirke immunforsvaret"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Albert Banduras (1969, 1977) sosial- kognitive teori skiller seg ut fra klassisk behaviorisme på flere områder. Hvilken påstand stemmer IKKE?",
+            "answers": [
+                " Banduras vektla at vår atferd også kan påvirkes av å observere andre (Modell-læring)",
+                " Banduras mente at forsterkning eller straff ikke behøver å komme umiddelbart etter atferd",
+                " Banduras vektla betydningen av de forventningene vi har, både til egen mestring og utfallet av vår atferd",
+                " Banduras vektla like mye forholder i samfunnet rundt individet for å forklare atferd"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Hvilken vei var det vanlig å tenke seg årsak og virkning når det gjaldt psykisk - fysiske problemer, symptomer og sykdommer i romertiden?",
+            "answers": [
+                " Fysiske problemer slo ut i psykiske symptomer",
+                " Det var ingen spesiell retning det var snakk om",
+                " Psykiske problemer slo ut i fysiske symptomer",
+                " Det var uvanlig å tenke årsak virkning"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Korrelasjonsstudier benyttes ofte i helseforskning. Hva er den viktigste svakheten med slike studier?",
+            "answers": [
+                " Det forsøkes ofte å trekkes vidtrekkende konklusjoner med for mange variabler involvert",
+                " Det involverer ofte for få individer til at bastante konklusjoner kan trekkes.",
+                " En kan ikke dra årsak-virkningskonklusjoner fra slike studier.",
+                " Svakheten er rett og slett manglende kontroll."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Primærforebyggende helsearbeid har som mål å...",
+            "answers": [
+                " redusere risikofaktorer og styrke motstandskraft",
+                " redusere konsekvensen av ulike sykdommer eller andre tilstander og problemer",
+                " sette inn tiltak hos en gruppe mennesker som har opplevd sykdom",
+                " bedre helsen for spesielt barn og unge som har et langt liv foran seg"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Sammenheng mellom uavhengig og avhengig variabel i eksperimenter er...",
+            "answers": [
+                " den avhengige variabelen er den en bevisst varierer",
+                " den uavhengige variabelen er den en bevisst varierer",
+                " den uavhengige variabelen er den som forskeren foretar sine målinger på",
+                " den uavhengige variabelen er ofte så uavhengig av det som foregår at den ikke er til å stole på"
+            ],
+            "correct": 1
+        }
+    ]
+}
