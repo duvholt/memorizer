@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from flask import abort, Flask, redirect, render_template, request, session, url_for
 from models import db
 from werkzeug.contrib.fixers import ProxyFix
