@@ -291,8 +291,7 @@
                 " Fibrøst bindevev / Fibrous connective tissue",
                 " Brusk / Cartilage"
             ],
-            "correct": 1,
-            "image": "http://i.imgur.com/Dd4u3Ea.png"
+            "correct": 3
         },
         {
             "question": " Hva heter den bevegelsen som er vist ved pilen på figuren? / Kva heter den bevegelsen som er vist ved pilen på figuren? /What is the movement called that is shown by the arrow in the figure?",
@@ -302,7 +301,8 @@
                 " Abduksjon / Abduction",
                 " Adduksjon / Adduction "
             ],
-            "correct": 1
+            "correct": 3,
+            "image": "http://i.imgur.com/Dd4u3Ea.png"
         },
         {
             "question": " Kalium har høyere konsentrasjon intracellulært enn ekstracellulært. Dette gjør at kalium langsomt lekker ut av cellene. Hva heter denne prosessen? / Kalium har høgare konsentrasjon intracellulært enn ekstracellulært. Dette gjør at kalium langsomt lekker ut av cellene. Kva heter denne prosessen? / Potassium has a higher intracellular than extracellular concentration. This causes potassium to leak slowly out of the cells. What is this process called?",

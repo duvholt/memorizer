@@ -34,7 +34,8 @@
                 " C",
                 " D"
             ],
-            "correct": 3
+            "correct": 3,
+            "image": "http://i.imgur.com/yvBts7c.png"
         },
         {
             "question": " Leveren har to blodforsyninger; -vena porta og leverarterien. Hva er hovedfunksjonen til leverarterien? / Levra har to blodforsyningar; -vena porta og leverarteria. Kva er hovudfunksjonen til leverarteria? / The liver receives blood from two sources; - portal vein and hepatic artery. What is the main function of the hepatic artery?",
@@ -104,7 +105,7 @@
                 " FSH↓, Testosterone↑",
                 " FSH↓, Testosterone↓"
             ],
-            "correct": 1
+            "correct": 0
         },
         {
             "question": " Proteiner syntetiseres i ribosomene. Hvor i cellen finnes ribosomene? / Protein syntetiserast i ribosoma. Kor i cella finn ein ribosoma? / Proteins are synthesized in the ribosomes. Where in the cell are the ribosomes located?",
