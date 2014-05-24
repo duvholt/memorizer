@@ -94,7 +94,7 @@ def show_question(course_code, exam_name, id):
         reset_url = url_for('reset_stats_course', course_code=course.code)
         breadcrumbs = [
             {'name': 'Emner', 'url': url_for('main')},
-            {'name': course}
+            {'name': str(course) + ' - ' + str(question.exam)}
         ]
     if num_questions == 0:
         abort(404)
