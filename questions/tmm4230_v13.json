@@ -1,0 +1,18 @@
+{
+    "name": "Semweb",
+    "code": "TMM4230",
+    "exam": "V13",
+    "questions": [
+    	{
+            "question": "Which of the following statements is FALSE about the .NET CLR?",
+            "answers": [
+                "It provides a language-neutral development & execution environment.",
+				"It ensures that an application would not be able to access memory that it is not authorized to access",
+				"It provides services to run \"managed\" applications.",
+				"The resources are garbage collected.",
+				"It provides services to run \"unmanaged\" applications."
+            ],
+            "correct": 4
+        },
+    ]
+}
