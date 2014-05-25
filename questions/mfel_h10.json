@@ -1,0 +1,407 @@
+{
+    "name": "Innføring i idrettsfysiologi",
+    "code": "MFEL1050",
+    "exam": "H10",
+    "questions": [
+        {
+            "question": "1-MET økning i ytelse på tredemølle er assosiert med følgende forbedring i overlevelse:",
+            "answers": [
+                "3%",
+                "12%",
+                "24%",
+                "48%"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "En økning i MET er assosiert med:",
+            "answers": [
+                "Redusert risiko for kreft, KOLS og hjerte kar sykdom",
+                "Redusert risiko for kreft, diabetes og død",
+                "Redusert risiko for hjerte kar sykdom og død",
+                "Redusert risiko for hjerte kar sykdom, KOLS og hjerneslag"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Trening i høyden:",
+            "answers": [
+                "Øker treningsintensiteten og øker oksygentransportevnen",
+                "Øker treningsintensiteten og senker oksygentransportsevnen",
+                "Begrenser treningsintensiteten og øker oksygentransportsevnen",
+                "Begrenser treningsintensiteten og senker oksygentransportsevnen"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "I en studie om høydetrening inntraff følgende signifikante endringer i maksimalt oksygenopptak hos de ulike gruppene:",
+            "answers": [
+                "Low-low gruppen forble uendret, high-low gruppen økte, high-high gruppen økte",
+                "Low-low gruppen gikk ned, high-high gruppen økte, high low gruppen økte mer enn high-high gruppen",
+                "Low-low gruppen forble uendret, high-high gruppen økte, high-low gruppen økte mer enn high-high gruppen",
+                "Alle gruppene økte, men high-low gruppen økte mest"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "I en studie som viste sammenheng mellom muskelstyrke og død ble forsøkspersonene testet på følgende øvelser:",
+            "answers": [
+                "Knebøy",
+                "Knebøy og benkpress",
+                "Beinpress og benkpress",
+                "Alle 3 øvelsene ovenfor"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Muskulær styrke er assosiert med:",
+            "answers": [
+                "Kardiovaskulær sykdom, kreft og død",
+                "Kreft og død",
+                "Kardiovaskulær sykdom og død",
+                "Kreft, død og KOLS"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "I en studie som sammenliknet to intervalltreningsformer med langkjøring og terskeltrening økte maksimalt oksygenopptak på grunn av:",
+            "answers": [
+                "Slagvolum↑, Hjertefrekvens ned↓, a-v O2 differansen ↑",
+                "Blodvolum ↑, Slagvolum ↑, Hjertefrekvens uendret",
+                "Slagvolum ↑, Hjertefrekvens ↑, Blodvolum uendret",
+                "Slagvolum ↑, Hjertefrekvens uendret, Blodvolum uendret"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "I en studie som sammenliknet to intervalltreningsformer med langkjøring og terskeltrening ble laktatterskel målt på følgende måte:",
+            "answers": [
+                "Hastighet som korresponderte til en ventilatorisk terskel der respiratorisk kvotient var lik 1.0",
+                "Hastighet som korresponderte til en laktatverdi 1.5mmol·L-1 høyere enn oppvarmingsverdi",
+                "Hastighet som korresponderte til en laktatverdi lik 4.0 mmol·L-1",
+                "Laktatterskel ble ikke målt fordi denne kan ikke trenes"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Mechanical efficiency er definert som:",
+            "answers": [
+                "Oksygenopptak på en gitt submaksimal belastning",
+                "Arbeid/oksygenopptak",
+                "Oksygenopptak/arbeid",
+                "Oksygenopptak på maksimal belastning"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Maksimal styrketrening er for KOLS (COPD) pasienter vist å gi en signifikant bedring i:",
+            "answers": [
+                "SaO2, FEV1, FVC",
+                "VO2peak, FEV1, FVC",
+                "Maksimalt ytelsesarbeid, VO2peak, SaO2",
+                "FEV1, FVC og maksimalt ytelsesarbeid"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "To solide kriterier som kan benyttes for å vurdere om en person når maksimalt oksygenopptak kan være:",
+            "answers": [
+                "R-verdi høyere enn 1.05 og utflating av oksygenopptakskurven med økt arbeid",
+                "Hjertefrekvens høyere enn 220-alder, R-verdi høyere enn 1.05",
+                "Utflating av oksygenopptakskurven med økt arbeid og Hjertefrekvens høyere enn 220-alder",
+                "Borg skala verdi > 18, Hjertefrekvens høyere enn 220-alder"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Treningsintensiteten i en studie med eldre var:",
+            "answers": [
+                "75-85 % av maksimal hjertefrekvens",
+                "85-95% av maksimal hjertefrekvens",
+                "75-85 % av maksimalt oksygenopptak",
+                "85-95% av maksimalt oksygenopptak"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "For hver 100meter over 1500meter gir hypoxia en nedgang i aerob kapasitet på",
+            "answers": [
+                "1%",
+                "3%",
+                "5%",
+                "7%"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hvorfor forbedrer fotballspillere løpsøkonomi når de blir satt til å løpe 4x4min intervaller?",
+            "answers": [
+                "de blir sterkere",
+                "de løper mer og får forbedret løpsteknikk",
+                "de forbedrer ikke løpsøkonomi",
+                "de forbedrer anaerob terskel"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Kan maksimal styrketrening for beina for KOLS pasienter forbedre KOLS- symptomene?",
+            "answers": [
+                "Ja, gjennom sterkere pustemuskler",
+                "Nei",
+                "Ja, men ikke direkte, kun ved at pasientene bedrer gangøkonomien",
+                "KOLS pasienter bør ikke trene maksimal styrketrening, men heller trene 3x30 repetisjoner for å få bedre utholdende styrke"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hva betyr [La-]b?",
+            "answers": [
+                "Laktatkonsentrasjon i blodceller",
+                "Laktatvolum i blodceller",
+                "Laktatkonsentrasjon i blodplasma",
+                "Ingen av delene"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Et treningsmål om å løfte sin egen kroppsvekt i benkpress eller det doble av kroppsvekten i 90 graders knebøy er:",
+            "answers": [
+                "Greit for en lett person og vanskelig for en tung person",
+                "Er like vanskelig for en lett og en tung person",
+                "Er greit for en tung person og vanskelig for en lett person",
+                "Vi vet ikke hvor greit eller vanskelig det er før vi har målt vektarmene til forsøkspersonene"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "For pasienter med kardiovaskulær sykdom er det vist at:",
+            "answers": [
+                "Trening med høy intensitet er omtrent 5% mer effektivt enn trening med moderat intensitet",
+                "Trening med høy intensitet er omtrent dobbelt så effektivt som trening med moderat intensitet",
+                "Trening med høy intensitet er omtrent fire ganger så effektivt som trening med moderat intensitet",
+                "Trening med høy intensitet er omtrent åtte ganger så effektivt som trening med moderat intensitet"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "En foreslått årsak til at arbeidsøkonomi bedres med økt styrke er:",
+            "answers": [
+                "Økt oksygenopptak i muskelen på grunn av økt a-vO2 differanse.",
+                "V ekst i kapillærnettet",
+                "Redusert relativ kraft ved like belastninger",
+                "En relativ reduksjon i laktatproduksjon som følge av økt maksimal kraft"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Trening med høy intensitet hos friske unge menn:",
+            "answers": [
+                "Kan kompenseres for, men kun med mye lengre varighet hvis man trener på lavere intensiteter",
+                "Bør kombineres med styrketrening for å øke maksimalt oksygenopptak mest mulig effektivt",
+                "Bør kombineres med langkjøring for å øke maksimalt oksygenopptak mest mulig effektivt",
+                "Kan ikke kompenseres for"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Studier i fotball har vist sammenhengen mellom den enkeltes spillers VO2maks og:",
+            "answers": [
+                "Tilbakelagt distanse i kampen og antall sprinter",
+                "Hvor høyt man hopper og antall mål scoret",
+                "Hjertefrekvens i andre omgang og antall pasninger",
+                "Melkesyreterskel og løpshastighet på terskel"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Gjennomsnittelig VO2maks for fotballspillere kan være:",
+            "answers": [
+                "55-67 mL · kg-1 · min-1",
+                "70-75 mL · kg-1 · min-1",
+                "50-60 mL · kg-1 · min-1",
+                "2-3 L · min-1"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hvordan er fordelingen mellom anaerob- og aerob energiomsetning i løpet av en fotballkamp?",
+            "answers": [
+                "70/30",
+                "98/2",
+                "2/98",
+                "30/70"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "I et studie på fotballspillere ble det iverksatt både styrke og utholdenhetstrening samtidig i en 8 ukers periode. Dette gav følgende effekter:",
+            "answers": [
+                "VO2maks var uendret men 1RM økte i gjennomsnitt fra 115.7 kg til 176.4 kg",
+                "VO2maks økte i gjennomsnitt fra 60.5 til 65.7 mL · kg-1 · min-1 men 1RM var uendret",
+                "1RM økte i gjennomsnitt med ca 50% og VO2maks økte i gjennomsnitt med 5 mL · kg-1 · min-1",
+                "Spillerne hoppet i gjennomsnitt 3 cm høyere og sprintet 0.06 sekunder saktere på 10 m sprint"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Den gjennomsnittelige intensiteten under en fotballkamp er:",
+            "answers": [
+                "70-80% av maksimal puls",
+                "80-90% av maksimal hjertefrekvens",
+                "95% av maksimalt oksygenopptak",
+                "100% av lungenes vitalkapasitet"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hvis man ved trening i gjennomsnitt øker VO2maks fra 58 til 64 mL · kg-1 · min-1 kan man forvente følgende endringer i løpet av en kamp:",
+            "answers": [
+                "Dobling av antall sprintløp og 1.7 km lengre løpt",
+                "Høyere hemoglobin (Hb) og hematokrit (Hct)",
+                "Mer involvert med ball og høyere hopp",
+                "Lavere puls i andre omgang og negativ effekt på hopp, sprint og styrke"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Maksimal styrketrening i overkropp for langrennsløpere kan få følgende effekter:",
+            "answers": [
+                "Økt maksimalt oksygenopptak",
+                "Økt 1RM",
+                "Økt pustefrekvens",
+                "Redusert nytteeffekt"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Bedre arbeidsøkonomi ved staking for langrennsløpere vil bety:",
+            "answers": [
+                "Høyere puls på en standard belastning",
+                "Lavere forsert ekspiratorisk volum på 1 sekund (FEV1)",
+                "Høyere lungeventilasjon (VE)",
+                "Laver VO2 på en standard belastning"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Hva var ”gårsdagens” råd for trening av hjerte/kar pasienter for å øke fysisk arbeidskapasitet innebærer:",
+            "answers": [
+                "Aerob trening minimum 3 ganger per uke i minst 20 min på minimum 40% av    VO2maks",
+                "Statisk arbeid med små muskelgrupper minst tre ganger i uka",
+                "Høy anaerob intensitet minimum 3 ganger per uke",
+                "Maksimal styrketrening med 3-5 repetisjoner 3 ganger per uke."
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hvilke resultater vil du forvente hvis en gruppe på rundt 70 år driver aerob intervall trening fra 85-90% av HFmaks, tre ganger i uka i 10 uker:",
+            "answers": [
+                "VO2maks øker fra 50 til 55 mL · kg-1 · min-1",
+                "1 RM går ned",
+                "VO2maks øker fra 24 til 28 mL · kg-1 · min-1",
+                "Respiratorisk exchange ratio (RER) går ned"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hva kan årsaken være til at KOLS pasienter har dårlig gangøkonomi?",
+            "answers": [
+                "Økt energi-kostnad med pusting",
+                "Redusert muskelstyrke",
+                "Lav VO2peak",
+                "Lav lungeventilasjon"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Ønsker man å studere effekten av treningsintensitet holder man den totale energiomsetning i treningsøkten og treningsfrekvens konstant. Hvilke faktor må da varieres for å kunne sammenligne?",
+            "answers": [
+                "Melkesyre i blodet",
+                "% HFmaks",
+                "Lengden på intervalldragene",
+                "Den totale treningstiden"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Q eller hjertets minuttvolum er bestemt av følgende faktorer:",
+            "answers": [
+                "SV og VC",
+                "HRmax og VEmax",
+                "HRmax og hjertets slagvolum",
+                "HDL, LDL og CK"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "VO2maks bestemmes i første rekke av:",
+            "answers": [
+                "SV",
+                "HFmax",
+                "Oksygen ekstraksjon (a-v)DO2",
+                "R-verdien"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hvis man trener 4x4 min aerob intervalltrening med friske og aktive studenter kan man ikke vente endringer på:",
+            "answers": [
+                "Maksimalt oksygenopptak",
+                "Løpsøkonomi",
+                "Blodvolumet",
+                "Hjertets minuttvolum"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hjertets pumpekapasitet kan øke med aerob intervalltrening 3 ganger per uke i 8 uker. Hvilke endringer kan man forvente på Q for personer med VO2maks på ca 55 mL · kg-1 · min-1?",
+            "answers": [
+                "15-30 L · min-1",
+                "30-40 L · min-1",
+                "30-33 L · min-1",
+                "20-23 L · min-1"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hvis man trener 15/15 eller 4x4 min intervalltrening vil følgende faktorer endres betydelig:",
+            "answers": [
+                "LT i % VO2maks",
+                "Løpshastighet ved laktat terskel",
+                "LT i % HFmaks",
+                "Triglycerider i blodet"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Pate og Kriska beskrev i 1984 de viktigste faktorene for aerob utholdenhet. Hvilke er disse?",
+            "answers": [
+                "LT, Anaerob kapasitet, HFmaks",
+                "VO2maks, C og laktat terskel",
+                "Arbeidsøkonomi, Q, VO2maks",
+                "LT, C, SV"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hva skjer med hjertets slagvolum når intensiteten øker?",
+            "answers": [
+                "SV øker",
+                "Avhenger av det fysiske nivået til personen",
+                "SV synker",
+                "Øker ikke over 50% av VO2maks"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Aerob kapasitet kan også uttrykkes som metabolske ekvivalenter (MET). Hvor mange MET har du når du har VO2maks på 35 mL · kg-1 · min-1?",
+            "answers": [
+                "20",
+                "15",
+                "10",
+                "5"
+            ],
+            "correct": 2
+        }
+    ]
+}
