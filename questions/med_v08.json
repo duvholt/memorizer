@@ -398,7 +398,8 @@
                 " Grå stær – Katarakt / Cataract",
                 " Grønn stær – Glaukom / Glaucoma"
             ],
-            "correct": 0
+            "correct": 0,
+            "image": "http://i.imgur.com/zvGAvnh.png"
         },
         {
             "question": " Hva er et hjerteinfarkt? / Kva er eit hjerteinfarkt? / What is a heart infarction?",
