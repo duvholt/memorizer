@@ -124,7 +124,7 @@
             "correct": 2
         },
         {
-            "question": "Bedriftene i en industri opptrer i tråd med modellen for frikonkurranse. Marginal- kostnadene, MC, til bedriftene kan uttrykkes som MC = 1 000 + 0,3Q. Q er mengden til bedriftene totalt. Etterspørselen i markedet kan skrives som P = 11 000 – 0,1Q. Hvilken mengde vil bedriftene totalt tilby i dette markedet?",
+            "question": "Bedriftene i en industri opptrer i tråd med modellen for frikonkurranse. Marginalkostnadene, MC, til bedriftene kan uttrykkes som MC = 1 000 + 0,3Q. Q er mengden til bedriftene totalt. Etterspørselen i markedet kan skrives som P = 11 000 – 0,1Q. Hvilken mengde vil bedriftene totalt tilby i dette markedet?",
             "answers": [
                 "25 000",
                 "20 000",
@@ -144,7 +144,7 @@
             "correct": 1
         },
         {
-            "question": "Ledelsen i en bedrift oppdager at med nåværende pris og mengde er marginalinn- tekten 5 % høyere enn marginalkostnaden (og begge er strengt positive tall). Hva kan vi si om hvilken effekt en annen pris og mengde ville hatt i den aktuelle perioden?",
+            "question": "Ledelsen i en bedrift oppdager at med nåværende pris og mengde er marginalinntekten 5 % høyere enn marginalkostnaden (og begge er strengt positive tall). Hva kan vi si om hvilken effekt en annen pris og mengde ville hatt i den aktuelle perioden?",
             "answers": [
                 "Økt mengde og lavere pris ville kunne økt profitten med så mye som 5 % i forhold til det bedriften faktisk oppnådde i perioden.",
                 "Redusert mengde og høyere pris ville kunne økt profitten med så mye som 5 % i forhold til det bedriften faktisk oppnådde i perioden.",
@@ -174,12 +174,12 @@
             "correct": 1
         },
         {
-            "question": "Den ene bedriften i oppgaven over forbedrer produksjonsprosessen slik at marginal- kostnadene dens går ned til 90. Hva blir effekten på likevekten av denne endringen i marginalkostnader?",
+            "question": "Den ene bedriften i oppgaven over forbedrer produksjonsprosessen slik at marginalkostnadene dens går ned til 90. Hva blir effekten på likevekten av denne endringen i marginalkostnader?",
             "answers": [
-                "Total mengde blir uforandret, men mengden til den bedriften som får lavere margi- nalkostnader synker.",
+                "Total mengde blir uforandret, men mengden til den bedriften som får lavere marginalkostnader synker.",
                 "Total mengde blir lavere, men mengden til den bedriften som får lavere marginalkostnader synker relativt mindre enn mengden til den andre bedriften.",
                 "Total mengde øker og det skjer ved at begge bedriftene øker sin mengde.",
-                "Total mengde øker, men mengden til den bedriften som ikke får lavere marginal- kostnader synker."
+                "Total mengde øker, men mengden til den bedriften som ikke får lavere marginalkostnader synker."
             ],
             "correct": 3
         },
@@ -224,7 +224,7 @@
             "correct": 0
         },
         {
-            "question": "En risikoavers investor har tre investeringsmuligheter, A, B og C, og kan bare inve- stere i en av dem. (Investoren har ingen andre investeringer.) A har forventet avkast- ning på 10 % og standardavvik på 25 %. B har forventet avkastning på 12 % og stan- dardavvik på 15 %. C har forventet avkastning på 14 % og standardavvik på 20 %. Hva kan vi si om hvilken investering investoren vil foretrekke?",
+            "question": "En risikoavers investor har tre investeringsmuligheter, A, B og C, og kan bare investere i en av dem. (Investoren har ingen andre investeringer.) A har forventet avkastning på 10 % og standardavvik på 25 %. B har forventet avkastning på 12 % og standardavvik på 15 %. C har forventet avkastning på 14 % og standardavvik på 20 %. Hva kan vi si om hvilken investering investoren vil foretrekke?",
             "answers": [
                 "Investoren vil velge investering A.",
                 "Investoren vil velge investering B.",
@@ -254,7 +254,7 @@
             "correct": 3
         },
         {
-            "question": "Kapitalverdimodellen, eller Capital Asset Pricing Model (CAPM), gir en sammen- heng mellom størrelsen kalt beta, forventet avkastning på en investering, risikofri avkastning og forventet avkastning i markedet. Anta at forventet avkastning for en aksje er 13 %. Forventet markedsavkastning er 8 % og risikofri rente er 3 %. Hva blir da beta i følge CAPM?",
+            "question": "Kapitalverdimodellen, eller Capital Asset Pricing Model (CAPM), gir en sammenheng mellom størrelsen kalt beta, forventet avkastning på en investering, risikofri avkastning og forventet avkastning i markedet. Anta at forventet avkastning for en aksje er 13 %. Forventet markedsavkastning er 8 % og risikofri rente er 3 %. Hva blir da beta i følge CAPM?",
             "answers": [
                 "0,5",
                 "1,0",
@@ -298,8 +298,8 @@
             "answers": [
                 "Ekstra nåverdi av skattefordel av gjeld ved marginal økning i giring er lik økt nåverdi av forventede konkurskostnader ved marginal økning i giring.",
                 "Ekstra nåverdi av skattefordel av gjeld ved marginal økning i giring er mindre enn økt nåverdi av forventede konkurskostnader ved marginal økning i giring.",
-                "Nåverdien av skattefordelen av gjeld er lik nåverdien av forventede konkurskost- nader.",
-                "Nåverdien av skattefordelen av gjeld er mindre enn nåverdien av forventede kon- kurskostnader."
+                "Nåverdien av skattefordelen av gjeld er lik nåverdien av forventede konkurskostnader.",
+                "Nåverdien av skattefordelen av gjeld er mindre enn nåverdien av forventede konkurskostnader."
             ],
             "correct": 0
         }

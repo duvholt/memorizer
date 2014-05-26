@@ -354,12 +354,12 @@
             "correct": 1
         },
         {
-            "question": "En bedrift har høyere marginalkostnader (også kalt grensekostnader) enn gjennom- snittskostnader (også kalt enhetskostnader). Hva kan vi si sikkert om bedriftens kost- nadsstruktur?",
+            "question": "En bedrift har høyere marginalkostnader (også kalt grensekostnader) enn gjennomsnittskostnader (også kalt enhetskostnader). Hva kan vi si sikkert om bedriftens kostnadsstruktur?",
             "answers": [
                 "Bedriften har vesentlige faste kostnader.",
-                "De variable gjennomsnittskostnadene er høyere enn de totale gjennomsnittskost- nadene.",
+                "De variable gjennomsnittskostnadene er høyere enn de totale gjennomsnittskostnadene.",
                 "Gjennomsnittskostnadene er stigende, slik at økt mengde fra dagens nivå vil gi økte gjennomsnittskostnader.",
-                "Marginalkostnadene er stigende, slik at økt mengde fra dagens nivå vil gi økte mar- ginalkostnader."
+                "Marginalkostnadene er stigende, slik at økt mengde fra dagens nivå vil gi økte marginalkostnader."
             ],
             "correct": 2
         },
@@ -374,7 +374,7 @@
             "correct": 3
         },
         {
-            "question": "Verdien av totale aktiva for en bedrift er 750 millioner. Verdien av bedriftens egenka- pital er 500 millioner. Hva er bedriftens gjeldsgrad?",
+            "question": "Verdien av totale aktiva for en bedrift er 750 millioner. Verdien av bedriftens egenkapital er 500 millioner. Hva er bedriftens gjeldsgrad?",
             "answers": [
                 "1/3",
                 "1/2",
@@ -394,7 +394,7 @@
             "correct": 1
         },
         {
-            "question": "Nåverdien av 115 000 som er forventet å bli mottatt ett år fra i dag, med en diskonter- ingsrente (avkastningskrav) på 10 % pr år er:",
+            "question": "Nåverdien av 115 000 som er forventet å bli mottatt ett år fra i dag, med en diskonteringsrente (avkastningskrav) på 10 % pr år er:",
             "answers": [
                 "121 000",
                 "100 500",
@@ -418,7 +418,7 @@
             "answers": [
                 "Bare gjennomføre prosjekter med positiv nettonåverdi.",
                 "Bare å gjennomføre prosjekter med nettonåverdi større enn investeringskostnaden.",
-                "Bare gjennomføre prosjekter med nettonåverdi større enn nåverdien av kontant- strømmen.",
+                "Bare gjennomføre prosjekter med nettonåverdi større enn nåverdien av kontantstrømmen.",
                 "Bare gjennomføre prosjekter med internrente over forventet avkastning til totalkapitalen."
             ],
             "correct": 0

@@ -354,17 +354,17 @@
             "correct": 0
         },
         {
-            "question": "Et monopol har marginalkostnader på 50 og en etterspørsel gitt ved P er prisen og Q er mengden. Hva er optimal mengde for monopolet?",
+            "question": "Et monopol har marginalkostnader på 50 og en etterspørsel gitt ved P = 250 - 2Q der P er prisen og Q er mengden. Hva er optimal mengde for monopolet?",
             "answers": [
                 "25",
                 "50",
                 "75",
-                "100 der"
+                "100"
             ],
             "correct": 1
         },
         {
-            "question": "Vi definerer etterspørselselastisiteten slik at den er ikke-negativ for et gode der solgt mengde synker med økende pris. Etterspørselen er gitt ved der P er pris og Q er mengde. Hva er etterspørselselastisiteten når prisen er 50?",
+            "question": "Vi definerer etterspørselselastisiteten slik at den er ikke-negativ for et gode der solgt mengde synker med økende pris. Etterspørselen er gitt ved P = 100 - 2Q der P er pris og Q er mengde. Hva er etterspørselselastisiteten når prisen er 50?",
             "answers": [
                 "0,5",
                 "1,0",
@@ -374,7 +374,7 @@
             "correct": 1
         },
         {
-            "question": "En produsent selger produktet sitt gjennom et uavhengig salgsledd. Salgsleddet betaler prisen w for hver enhet de kjøper inn. Salgsleddet har tilnærmet null marginal- kostnader bortsett fra denne innkjøpsprisen. Etterspørselen er gitt ved der P er prisen og Q er etterspurt mengde pr periode. Produsenten har marginalkost- nader på 200. Hvilken pris fra produsent til salgsledd, w, vil maksimere produsentens profitt?",
+            "question": "En produsent selger produktet sitt gjennom et uavhengig salgsledd. Salgsleddet betaler prisen w for hver enhet de kjøper inn. Salgsleddet har tilnærmet null marginalkostnader bortsett fra denne innkjøpsprisen. Etterspørselen er gitt ved der P er prisen og Q er etterspurt mengde pr periode. Produsenten har marginalkostnader på 200. Hvilken pris fra produsent til salgsledd, w, vil maksimere produsentens profitt?",
             "answers": [
                 "200",
                 "400",
@@ -422,6 +422,17 @@
                 "Gjennomføre alle prosjekter med internrente større enn null."
             ],
             "correct": 0
+        },
+        {
+            "question": "Figuren under viser sannsynligheter og kontantstrømmer i periode 1, 2 og 3 for et prosjekt. Hva er nåverdien av forventet kontantstrøm dersom avkastningskravet er 10 %?",
+            "answers": [
+                "11,1",
+                "13,5",
+                "16,9",
+                "21,0"
+            ],
+            "correct": 0,
+            "image": "http://i.imgur.com/WqDRcRs.png"
         },
         {
             "question": "Den andelen av risiko som ikke kan elimineres ved diversifisering kalles:",

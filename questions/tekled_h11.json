@@ -104,7 +104,7 @@
             "correct": 0
         },
         {
-            "question": "Ved salg på 100 000 enheter pr periode er prisen på et produkt 2 000. Bedriften anslår at for å selge en enhet mer pr periode, må prisen reduseres med 0,01. Hva er et natur- lig anslag på marginalinntekten?",
+            "question": "Ved salg på 100 000 enheter pr periode er prisen på et produkt 2 000. Bedriften anslår at for å selge en enhet mer pr periode, må prisen reduseres med 0,01. Hva er et naturlig anslag på marginalinntekten?",
             "answers": [
                 "–1 000",
                 "0",
@@ -114,7 +114,7 @@
             "correct": 2
         },
         {
-            "question": "Et monopol produserer 1 000 enheter pr periode. Etterspørselen er Q = 3 000 – P, der Q er mengden og P er prisen. Hva blir da (absoluttverdien av) etterspørselselastisi- teten?",
+            "question": "Et monopol produserer 1 000 enheter pr periode. Etterspørselen er Q = 3 000 – P, der Q er mengden og P er prisen. Hva blir da (absoluttverdien av) etterspørselselastisiteten?",
             "answers": [
                 "0",
                 "1",
@@ -124,7 +124,7 @@
             "correct": 2
         },
         {
-            "question": "Anta at etterspørselen i et marked der bedriftene tilpasser seg som om det er frikon- kurranse er gitt ved P = a – bQ, der P er prisen, Q er mengden og a og b er positive konstanter. Alle bedriftene i markedet har marginalkostnad lik c. Hva er et korrekt uttrykk for den totale mengden som vil bli tilbudt i dette markedet?",
+            "question": "Anta at etterspørselen i et marked der bedriftene tilpasser seg som om det er frikonkurranse er gitt ved P = a – bQ, der P er prisen, Q er mengden og a og b er positive konstanter. Alle bedriftene i markedet har marginalkostnad lik c. Hva er et korrekt uttrykk for den totale mengden som vil bli tilbudt i dette markedet?",
             "answers": [
                 "Q = (a-c)/3b",
                 "Q = (a-c)/2b",
@@ -134,7 +134,7 @@
             "correct": 2
         },
         {
-            "question": "I et monopolmarked observerer myndighetene at prisen på produktet er 1 000. De esti- merer at (absoluttverdien av) etterspørselselastisiteten er 1,5. Hva er da et naturlig an- slag på monopolets marginalkostnad?",
+            "question": "I et monopolmarked observerer myndighetene at prisen på produktet er 1 000. De estimerer at (absoluttverdien av) etterspørselselastisiteten er 1,5. Hva er da et naturlig anslag på monopolets marginalkostnad?",
             "answers": [
                 "0",
                 "333",
@@ -164,7 +164,7 @@
             "correct": 1
         },
         {
-            "question": "I et monopolmarked er etterspørselen gitt ved P = 1 000 – Q, der P er prisen og Q er mengden. Monopolets marginalkostnader er null og vi skal se bort fra de faste kost- nadene. Hva blir nå dødvektstapet, tapt samfunnsøkonomisk overskudd, som følge av monopolet setter en pris som er høyere enn marginalkostnaden?",
+            "question": "I et monopolmarked er etterspørselen gitt ved P = 1 000 – Q, der P er prisen og Q er mengden. Monopolets marginalkostnader er null og vi skal se bort fra de faste kostnadene. Hva blir nå dødvektstapet, tapt samfunnsøkonomisk overskudd, som følge av monopolet setter en pris som er høyere enn marginalkostnaden?",
             "answers": [
                 "0",
                 "100 000",
@@ -174,7 +174,7 @@
             "correct": 2
         },
         {
-            "question": "Et selskap har totale aktiva på 200 millioner og gjeld på 100 millioner. Hva er sel- skapets gjeldsgrad?",
+            "question": "Et selskap har totale aktiva på 200 millioner og gjeld på 100 millioner. Hva er selskapets gjeldsgrad?",
             "answers": [
                 "2",
                 "1",
@@ -184,7 +184,7 @@
             "correct": 1
         },
         {
-            "question": "Et selskap har totale aktiva på 200 millioner og gjeld på 100 millioner. Totalkapital- rentabiliteten er 10 % og gjeldsavkastningen er 5 %. Hva er da egenkapitalrentabili- teten?",
+            "question": "Et selskap har totale aktiva på 200 millioner og gjeld på 100 millioner. Totalkapitalrentabiliteten er 10 % og gjeldsavkastningen er 5 %. Hva er da egenkapitalrentabiliteten?",
             "answers": [
                 "5 %",
                 "10 %",
@@ -214,7 +214,7 @@
             "correct": 3
         },
         {
-            "question": "En risikoavers investor har tre investeringsmuligheter, A, B og C, og kan bare inve- stere i en av dem. (Investoren har ingen andre investeringer.) A har forventet avkast- ning på 8 % og standardavvik på 25 %. B har forventet avkastning på 10 % og stan- dardavvik på 30 %. C har forventet avkastning på 12 % og standardavvik på 20 %. Hva kan vi si om hvilken investering investoren vil foretrekke?",
+            "question": "En risikoavers investor har tre investeringsmuligheter, A, B og C, og kan bare investere i en av dem. (Investoren har ingen andre investeringer.) A har forventet avkastning på 8 % og standardavvik på 25 %. B har forventet avkastning på 10 % og standardavvik på 30 %. C har forventet avkastning på 12 % og standardavvik på 20 %. Hva kan vi si om hvilken investering investoren vil foretrekke?",
             "answers": [
                 "Investoren vil velge investering A.",
                 "Investoren vil velge investering B.",
@@ -227,14 +227,14 @@
             "question": "Hva innebærer diversifisering i en investeringsportefølje?",
             "answers": [
                 "At når avkastningene til investeringene er perfekt korrelerte, blir porteføljen alltid risikofri.",
-                "At når avkastningene til investeringene er perfekt negativt korrelerte blir porte- føljen alltid risikofri.",
+                "At når avkastningene til investeringene er perfekt negativt korrelerte blir porteføljen alltid risikofri.",
                 "At risikoen (målt med standardavviket) blir lik det veide snittet av risikoen til investeringene i porteføljen.",
                 "At risikoen (målt med standardavviket) blir mindre enn det veide snittet av risikoen til investeringene i porteføljen."
             ],
             "correct": 3
         },
         {
-            "question": "En investering på 800 000 nå gir positiv kontantstrøm om ett og om to år. Om ett år er det 50 % sannsynlighet for 500 000 og 50 % sannsynlighet for 250 000. Om to år er det 60 % sannsynlighet for 400 000 og 40 % sannsynlighet for 800 000. Avkastnings- kravet er 10 %. Hva blir forventet nettonåverdi for prosjektet?",
+            "question": "En investering på 800 000 nå gir positiv kontantstrøm om ett og om to år. Om ett år er det 50 % sannsynlighet for 500 000 og 50 % sannsynlighet for 250 000. Om to år er det 60 % sannsynlighet for 400 000 og 40 % sannsynlighet for 800 000. Avkastningskravet er 10 %. Hva blir forventet nettonåverdi for prosjektet?",
             "answers": [
                 "Ca 3 700",
                 "Ca 7 000",
@@ -274,7 +274,7 @@
             "correct": 2
         },
         {
-            "question": "Nettonåverdien til en investering skal beregnes ved hjelp av WACC (avkastnings- kravet til totalkapitalen etter skatt). Kontantstrømmen før skatt og renter i år 2 er 1 000 000. Skattesatsen er 28 %. Rentene på investeringen utgjør 100 000 i år 2. Hva blir relevant kontantstrøm for år 2?",
+            "question": "Nettonåverdien til en investering skal beregnes ved hjelp av WACC (avkastningskravet til totalkapitalen etter skatt). Kontantstrømmen før skatt og renter i år 2 er 1 000 000. Skattesatsen er 28 %. Rentene på investeringen utgjør 100 000 i år 2. Hva blir relevant kontantstrøm for år 2?",
             "answers": [
                 "720 000",
                 "748 000",
