@@ -1,0 +1,407 @@
+{
+    "name": "Innføring i idrettsfysiologi",
+    "code": "MFEL1050",
+    "exam": "H11",
+    "questions": [
+        {
+            "question": "Ved bedret maksimalt oksygenopptak vil følgende tilpasninger finne sted i hvile:",
+            "answers": [
+                "Slagvolum går ned, hjertefrekvens går ned",
+                "Slagvolum går ned, hjertefrekvens går opp",
+                "Slagvolum går opp, hjertefrekvens går ned",
+                "Slagvolum går opp, hjertefrekvens går opp"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hvor mange repetisjoner bør kroppsbyggere bruke i sin styrketrening for å øke tverrsnittet?",
+            "answers": [
+                "1-3",
+                "4",
+                "6-8",
+                "10-12"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "KOLS (COPD) pasienter har nedsatt…",
+            "answers": [
+                "FLT1 og CLV",
+                "REG1 og HLT",
+                "FVC og FEV1",
+                "KKL og RPT1"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "I et studie av Helgerud et al. (2009) ble hjertets slagvolum målt ved hjelp av følgende metode:",
+            "answers": [
+                "Acetylene rebreathing",
+                "Single breath acetylene uptake",
+                "CO2 rebreathing",
+                "Thoracic bioimpedance"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Det dannes mer melkesyre på en gitt belastning i 2000 meters høyde sammenliknet med havnivå fordi:",
+            "answers": [
+                "Melkesyreterskelen har endret seg",
+                "Det lavere lufttrykket stimulerer mer til dannelse av melkesyre",
+                "Maksimalt oksygenopptak er lavere",
+                "Flere røde blodceller gjør at melkesyreterskelen blir lavere"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hvis en skiløper har et maksimalt oksygenopptak i overkropp på 60 mL · kg · min, trener maksimal styrketrening og forbedrer stakeøkonomien med 20 %. Hvor mye vil prestasjonen hennes forbedres på 20 minutter staking?",
+            "answers": [
+                "40 sek",
+                "80 sek",
+                "120 sek",
+                "240 sek"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Anaerob terskel ligger før en treningsperiode på 85% av VO2max. Etter 8 uker med 4x4 min intervalltrening 3 ganger i uken, Hvor vil anaerob terskel være?",
+            "answers": [
+                "Litt lavere, ca 80% av VO2max.",
+                "Omtrent det samme, ca 85% av VO2max.",
+                "Litt høyere, ca 90% av VO2max.",
+                "Høyere, ca 95% av VO2max."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Blodstrøm i kapillærer i muskel begrenses ved muskelarbeid fra:",
+            "answers": [
+                "15% av 1RM og opp",
+                "30% av 1RM og opp",
+                "45% av 1 RM og opp",
+                "70% av 1 RM og opp"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "At enbeinssykling gir den beste framgangen på tobeins VO2max hos KOLS-pasienter indikerer at deres oksygenopptak i første rekke er;",
+            "answers": [
+                "Begrenset av hjertets slagvolum.",
+                "Begrenset av muskelens evne til å ta opp oksygenet.",
+                "Begrenset av HRmax.",
+                "Begrenset av tidevolumet."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Dimensjonsskalering gjør at",
+            "answers": [
+                "Store personer blir undervurdert ved vurdering av styrke",
+                "Små personer blir undervurdert ved vurdering av styrke",
+                "Du kan sammenligne store og små personer med hensyn til en styrkeprestasjon",
+                "At du kan gi treningsmål i % av kroppsvekt"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "PAD pasienter bør først begynne med trening…",
+            "answers": [
+                "På tredemølle",
+                "Av leggene",
+                "Sykling",
+                "Utendørs i motbakke"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Langkjøring ga følgende økning i VO2max hos friske mannlige studenter som trente i 2 måneder:",
+            "answers": [
+                "0%",
+                "5%",
+                "10%",
+                "15%"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "For KOLS (COPD) pasienter er intervalltrening av ett og ett bein på sykkel mer effektivt enn trening av begge beina samtidig fordi:",
+            "answers": [
+                "Styrken (1RM) blir forbedret mer ved ettbeinssykling",
+                "Treningsintensiteten på muskel blir høyere",
+                "Lungeventilasjonen blir lavere",
+                "Pasientene greier ikke å utføre belastning med høy aerob intensitet"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hvordan kan man best måle løpsøkonomi?",
+            "answers": [
+                "Ved å måle hjertefrekvens på en submaksimal belastning",
+                "Ved å måle oksygenopptaket på en submaksimal belastning",
+                "Ved å måle melkesyre i blodet på en submaksimal belastning",
+                "Ved å måle lungeventilasjon på en submaksimal belastning"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Røde blodceller produseres i:",
+            "answers": [
+                "Nyrene",
+                "Beinmargen",
+                "Blodet",
+                "Muskelen"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Etter intervalltrening i 8 uker vil det totale blodvolumet i kroppen:",
+            "answers": [
+                "Bli ca 5% mindre",
+                "Forbli uendret",
+                "Bli ca. 5% større",
+                "Bli ca 10% større"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Maksimal styrketrening virker på:",
+            "answers": [
+                "VO2max og arbeidsøkonomi",
+                "VO2max",
+                "Arbeidsøkonomi",
+                "Muskeltverrsnittet"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hva er hovedårsaken til endringer i muskelstyrke som følge av maksimal styrketrening:",
+            "answers": [
+                "Overgang fra type I til type II muskelfibre ved muskelaktivering",
+                "Økt aktivering som følge av flere sarcomerer",
+                "Økt achetylcholinsensitivitet i reseptorene i motor endeplatene",
+                "Økt fyringsfrekvens og økt rekruttering av motorenheter"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "I nye artikler er det vist at hos topptrente forsøkspersoner vil hjertets slagvolum:",
+            "answers": [
+                "Reduseres når subjektene nærmer seg VO2max",
+                "Flate ut ved ca 60% av VO2max",
+                "Flate ut ved ca 80% av VO2max",
+                "Øke kontinuerlig til subjektene når VO2max"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Hvor langt løper en elite fotballspiller i løpet av en kamp?",
+            "answers": [
+                "3-5 km",
+                "8-12 km",
+                "18-20 km",
+                "22-26 km"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hva betyr hjertets slagvolum?",
+            "answers": [
+                "Hvor mye hjertet pumper i minuttet",
+                "Hvor mye hjertet pumper i sekundet",
+                "Hvor mye hjertet pumper i hvert slag",
+                "Hvor mye oksygen lungene tar opp hvert hjerteslag"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hva skjer med hjertets slagvolum når intensiteten øker for godt trente utøvere?",
+            "answers": [
+                "Slagvolumet går ned",
+                "Slagvolumet flater av på ca 50% av maksimalt oksygenopptak",
+                "Slagvolumet øker helt opp til maksimalt oksygenopptak",
+                "Slagvolumet er upåvirket av intensitet"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hvordan virker 4x4 min intervalltrening på KOLS-pasienter når de trener med et og et bein?",
+            "answers": [
+                "En-beinstrening øker maksimalt oksygenopptak i et bein, men maksimalt oksygenopptak  når begge beina brukes samtidig endres ikke",
+                "En-beinstrening øker maksimalt oksygenopptak når pasienten sykler med begge beina",
+                "Maksimalt oksygenopptak økte bare ved to-beins sykling",
+                "Ingen endring verken ved en-beins eller to-beins sykling"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hva skjer med maksimalt oksygenopptak og hjertets slagvolum på tredemølle når røykebeinspasienten (PAD-pasienten) trenes opp med plantarfleksjonssykling?",
+            "answers": [
+                "Maksimalt oksygenopptak øker men slagvolumet endres ikke",
+                "Slagvolumet og maksimalt oksygenopptak øker",
+                "Maksimalt oksygenopptak og slagvolumet synker",
+                "Slagvolumet øker men maksimalt oksygenopptak endres ikke"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "I vår studie fra 2007 som sammenlignet kort intervall (15/15) med bl.a 4x4 min langintervall fant vi;",
+            "answers": [
+                "At 15/15 treningen gav dobbelt så stor økning av maksimalt oksygenopptak som 4x4 min?",
+                "At 4x4 min intervallene gav dobbelt så stor økning i maksimalt oksygenopptak som 15/15 treningen?",
+                "At 15/15 treningen ikke økte maksimalt oksygenopptak?",
+                "At treningsformene økte maksimalt oksygenopptak i samme grad?"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Hvis du trener en gruppe friske eldre på ca 70 år, 3 ganger pr uke i 10 uker med 4x4 intervalltrening, hva forventer du at de skal øke sitt maksimale oksygenopptak med?",
+            "answers": [
+                "13%",
+                "3%",
+                "25%",
+                "32%"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hva vil du velge hvis du skal øke maksimalt oksygenopptak på en gruppe fotballspillere?",
+            "answers": [
+                "6x20 sekunder maksimal innsats?",
+                "4x4 min intervalltrening (90-95% av maksimal hjertefrekvens) i dribleløype?",
+                "Maksimal styrketrening 4x4 i knebøy?",
+                "Spille fotballkamper på 90 min?"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "I vårt studie av hjertepasienter fra 2010 fant vi at 4x4 min intervalltrening gav følgende resultat;",
+            "answers": [
+                "Maksimalt oksygenopptak økte, men slagvolumet på hjertet var uendret?",
+                "Slagvolumet økte, men maksimalt oksygenopptak var uendret?",
+                "Maksimalt oksygenopptak økte som følge av økt slagvolum?",
+                "Slagvolumet gikk ned til tross for økt maksimalt oksygenopptak?"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "I studiet referert over fant vi også at;",
+            "answers": [
+                "Gruppen som trente maksimal styrketrening økte sitt maksimale oksygenopptak?",
+                "Både styrkegruppen og utholdenhetsgruppen forbedret sin gangøkonomi?",
+                "Styrkegruppen fikk redusert sin aerobe uholdenhet?",
+                "Utholdenhetsgruppen ble sterkere?"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Etter at du har trent PAD-pasienter i 4 uker med plantarfleksjonstrening, hvordan vil du fortsette de neste treningsukene for å sikre effekt på hjertets slagvolum?",
+            "answers": [
+                "Fortsette med gang på tredemølle",
+                "Øke treningsdosen med plantarfleksjonssykling",
+                "Øke intensiteten på plantarfleksjonssyklingen",
+                "Trene maksimal styrke for beina?"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Med maksimal styrketrening forbedrer KOLS-pasienter",
+            "answers": [
+                "lungeinflammasjon",
+                "maksimalt oksygenopptak",
+                "gangfunksjon",
+                "blodflow"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Med maksimal styrketrening forbedrer fotballspillere",
+            "answers": [
+                "lungestørrelse",
+                "maksimalt oksygenopptak",
+                "oksygenkostnad ved løp",
+                "anaerob terskel"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Med maksimal styrketrening forbedrer fotballspillere",
+            "answers": [
+                "akselerasjon (10m sprint)",
+                "oksygenmetning i blod",
+                "anaerob terskel",
+                "større karbohydratlager i muskel"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "I gjennomføring av maksimal styrketrening er det viktig å flytte belastningen med så stor hastighet som mulig (maksimal ”intended velocity”), hvorfor?",
+            "answers": [
+                "for at sprintteknikken skal bli bedre",
+                "for å koordinere motoriske enheter",
+                "for å overføre læring fra en situasjon til en annen",
+                "for å produsere så kraftige nervesignaler som mulig med høyest mulig frekvens"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Ved hvor mange repetisjoner i styrketrening opphører forbedring av styrke (1RM)?",
+            "answers": [
+                "ca. 15",
+                "ca. 40",
+                "ca 6",
+                "ca 100"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Etter en periode med maksimal styrketrening forbedres løpsøkonomi og sykkeløkonomi med 5%. Hvor mye fortere kan du da løpe eller sykle på samme oksygenopptak?",
+            "answers": [
+                "10%",
+                "5%",
+                "20%",
+                "35%"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Knebøy 1RM til 90 grader i kneleddet for elite fotballspillere er i området",
+            "answers": [
+                "50-100 kg",
+                "0-50 kg",
+                "150-200 kg",
+                "200-250 kg"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hvorfor skal de fleste idrettsutøvere legge vekt på nevrale tilpasninger heller enn større muskler ved styrketrening?",
+            "answers": [
+                "de øker styrke uten å øke kroppsmasse",
+                "større muskler gir større kroppsvekt",
+                "de skårer bedre på kunnskapstester",
+                "de unngår å bli nervøse"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Pasienter og friske responderer godt på 4x4/5 repetisjoner maksimal styrketrening. Hvor stor styrkeøkning kan en forvente pr treningsøkt?",
+            "answers": [
+                "ca. 0,5%",
+                "ca. 2%",
+                "ca 5%",
+                "ca 20%"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Newton’s 2.lov Kraft = masse x akselerasjon tilsier at hvis en idrettsutøver øker styrken/kraftutviklingen sin med 30% uten å øke kroppsvekten, hvor mye fortere løper han en 10m sprint?",
+            "answers": [
+                "10%",
+                "30%",
+                "50%",
+                "100%"
+            ],
+            "correct": 1
+        }
+    ]
+}
