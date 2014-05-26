@@ -37,11 +37,11 @@
         {
             "question": "[Web Services, WCF and SOA] What is the Windows Communcation Foundation?",
             "answers": [
-"It is a part of the .Net framework that is used for creating Graphical User Interfaces",
-"It is the network part of the .NET framework",
-"It is a unified platform for distributed computing using .NET",
-"It is a class library for Instant Messaging for .NET",
-"It is the system used by Microsoft to communicate on the Internet"
+                "It is a part of the .Net framework that is used for creating Graphical User Interfaces",
+                "It is the network part of the .NET framework",
+                "It is a unified platform for distributed computing using .NET",
+                "It is a class library for Instant Messaging for .NET",
+                "It is the system used by Microsoft to communicate on the Internet"
             ],
             "correct": 2
         },
