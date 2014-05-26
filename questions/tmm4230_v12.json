@@ -1,0 +1,294 @@
+{
+    "name": "Teknologi for integrerte operasjoner og semantisk web",
+    "code": "TMM4230",
+    "exam": "V12",
+    "questions": [
+    	{
+            "question": "[C#/.NET] \"Boxing\", in .NET, is the process of storing primitive data type values as:",
+            "answers": [
+                "web reference",
+                "a String",
+                "with in an XML tag",
+                "Object"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "[C#/.NET] What is the language Silverlight uses for structuring its user interface content?",
+            "answers": [
+                "C#",
+                "XAML",
+                "XML",
+                "RDF",
+                "SOAP"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "[C#/.NET] Does C# have Garbage Collection? If yes, what is it?",
+            "answers": [
+                "C# does NOT have garbage collection",
+                "C# HAS garbage collection, which is a function in Visual Studio for cleaning up your source code",
+                "C# HAS garbage collection, which is an automatic process in the CLR which frees unused (unreachable) memory during program execution.",
+                "C# HAS garbage collection, which is a compiler feature that removes unused code"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "[Web Services, WCF and SOA] What is the Windows Communcation Foundation?",
+            "answers": [
+                "It is a part of the .Net framework that is used for creating Graphical User Interfaces",
+                "It is the network part of the .NET framework",
+                "It is a unified platform for distributed computing using .NET",
+                "It is a class library for Instant Messaging for .NET",
+                "It is the system used by Microsoft to communicate on the Internet"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "[Web Services, WCF and SOA] What is wrong with the following web method if you are going to write a C# Web Service?",
+            "image": "https://i.imgur.com/7qJQa7C.png",
+            "answers": [
+                "All Web methods need a return of type String [1]",
+                "All Web methods need String inputs [2]",
+                "Web methods need to be public, but this one is private [3]",
+                "The [WebMethod] attribute is wrong, it should read [WebService] [4]",
+                "1 and 2 are correct",
+                "2 and 3 are correct"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "[Web Services, WCF and SOA] Select the best option for relating an XML-scheme with an XML file",
+            "answers": [
+                "Look ",
+                "Data type",
+                "Dictionary",
+                "File type",
+                "Mime type",
+                "None of these"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "[Windows Workflow Foundation] A workflow can execute by its own, it does not need a hosting application.",
+            "answers": [
+                "True",
+                "False"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "[WWF] Windows workflow Runtime Engine has some extensions. Persistence is one of them. This service ensures that",
+            "answers": [
+                "Workflow keeps running in the background in a separate thread",
+                "Workflow state can be saved/retrieved to/from a database",
+                "Workflow errors can be caught, hence used for exception handling.",
+                "Workflow terminates in a required procedure.",
+                "None of these"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "[WWF] You are working with a workflow and you need to write some expressions for some activities. The expression has to be written in",
+            "answers": [
+                "C# language",
+                "VB.net language",
+                "VC++ language",
+                "Depends on the type of project",
+                "None of these"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "[WWF] State Machine workflow depend on",
+            "answers": [
+                "Sequence of a workflow",
+                "type of activity to be followed",
+                "Events to be triggered",
+                "Persistent data ",
+                "None of these"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "[RTC] Real Time Communication is...",
+            "answers": [
+                "Asynchronous, same place",
+                "Asynchronous, different place",
+                "Synchronous, same place",
+                "Synchronous, different place"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "[SemWeb Intro] Which form of terminology models is not suitable for representing associations between concepts?",
+            "answers": [
+                "RDF ontology",
+                "Taxonomy",
+                "Thesaurus",
+                "Description Logic",
+                "OWL ontology"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "[SemWeb Intro] What form of interoperability is supported by XML?",
+            "answers": [
+                "None",
+                "Syntactic interoperability",
+                "Logical interoperability",
+                "Structural interoperability",
+                "Semantic interoperability"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "[SemWeb Intro] What is normally not represented by URIs in RDF triples?",
+            "answers": [
+                "Subjects",
+                "Predicates",
+                "Resource objects",
+                "Literals",
+                "Attributes"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "[SemWeb Intro] Which of these statements are correct?",
+            "answers": [
+                "RDFS provides a formal semantics for XML",
+                "RDFS is a serialization of OWL",
+                "OWL ontologies may include RDFS statements",
+                "RDFS specifies the instances of OWL ontologies"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "[SemWeb Intro] What is not true about ontologies?",
+            "answers": [
+                "Ontologies are explicit specifications of conceptualizations",
+                "Ontologies describe domain terminologies",
+                "Ontologies include taxonomic relations",
+                "Ontologies  are algorithmic specifications of domain phenomena"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "[RDF Modelling] What is not a predefined class name in RDFS?",
+            "answers": [
+                "Class",
+                "Type",
+                "Resource",
+                "Literal",
+                "Datatype"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "[RDF Modelling] When do you normally use blank nodes in RDFS?",
+            "answers": [
+                "Specifying resources that have unknown URIs",
+                "Specifying taxonomies of properties",
+                "Specifying resources hidden to SPARQL queries",
+                "Specifying many-valued relationships"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "[OWL Modelling] What is not correct about owl:Thing?",
+            "answers": [
+                "Every individual of the ontology is an instance of owl:Thing",
+                "Every class of the ontology is a subclass of owl:Thing",
+                "Every property of the ontology is a subproperty of owl:Thing",
+                "Every ontology must include owl:Thing"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "[OWL Modelling] What are the three basic modeling primitives in OWL?",
+            "answers": [
+                "Individuals, properties and classes",
+                "Classes, relationships and attributes",
+                "Classes, instances and concepts",
+                "Subjects, objects and predicates",
+                "Resources, literals and URIs"
+
+            ],
+            "correct": 0
+        },
+        {
+            "question": "[OWL Modelling] How would you model a hasBiologicalFather property in OWL",
+            "answers": [
+                "Symmetric object property",
+                "Transitive object property ",
+                "Functional object property",
+                "Symmetric data property",
+                "Transitive data property"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "[Semantics and Reasoning] An interpretation in Description Logic is defined by means of a domain D and an interpretation function I.  How are concepts interpreted?",
+            "answers": [
+                "Concepts are mapped onto subsets of D",
+                "Concepts are mapped onto elements of D",
+                "Concepts are mapped onto binary relations over D",
+                "Concepts are mapped onto triples of elements of D"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "[Semantics and Reasoning] What is a model of an ontology?",
+            "answers": [
+                "An interpretation with a non-empty interpretation domain",
+                "An interpretation that assigns unique domain elements to all individuals of the ontology",
+                "An interpretation that satisfies all axioms in the ontology",
+                "An interpretation that associate concepts to all individuals"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "[Ontology Engineering and Quality] What does it mean that an ontology is unsatisfiable?",
+            "answers": [
+                "The ontology is not shared by all stakeholders",
+                "There are no individuals in the ontology",
+                "There is at least one individual that is an instance of more than one class",
+                "There are indefinitely many models of the ontology",
+                "There is no possible world in which all statements of the ontology hold"
+            ],
+            "correct": 4
+        },
+        {
+            "question": "[Ontology Engineering and Quality] What is not true about coherent ontologies?",
+            "answers": [
+"An incoherent ontology is always inconsistent",
+"A consistent ontology can be incoherent ",
+"An inconsistent ontology is always incoherent ",
+"A coherent ontology does not contain inconsistent classes "
+            ],
+            "correct": 0
+        },
+        {
+            "question": "[Ontology Engineering and Quality] What is not a typical mistake in ontology modeling?",
+            "answers": [
+                "The direction of roles (properties) is wrongly modeled",
+                "Top-most class in ontology is not included",
+                "Part-of relations are modeled as subclasses",
+                "Domains and ranges of properties are too specific",
+                "Class disjointness not properly modeled"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "[Ontology Engineering and Quality] hich ontology is most likely to change?",
+            "answers": [
+                "Upper-level ontology",
+                "Task ontology",
+                "Domain ontology",
+                "Application ontology"
+            ],
+            "correct": 3
+        }
+    ]
+}
