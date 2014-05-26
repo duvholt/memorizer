@@ -142,7 +142,6 @@
                 "Ulik replikasjonsmekanismer i forskjellige vev / Different replication mechanisms in different tissues",
                 "Ulike gener er aktive i ulike vev. Ulike gen er aktive i dei ulike veva. / Different genes are active in different tissues"
             ],
-            "image": "http://i.imgur.com/Asa1puP.png",
             "correct": 3
         },
         {
@@ -153,7 +152,8 @@
                 " C",
                 " D"
             ],
-            "correct": 1
+            "correct": 1,
+            "image": "http://i.imgur.com/Asa1puP.png"
         },
         {
             "question": "Et barn er skadet av stålfragmenter fra en klasebombe. Hvilken av disse billedmodalitetene må definitivt ikke brukes, av sikkerhetshensyn? / Et barn er skadd av stålfragment frå ein klasebombe. Kva for ein av disse bildemodalitetane må definitivt ikkje brukast, av sikkerheitsomsyn? / A child has been wounded by steel fragments from a cluster bomb. Which of these imaging methods should definitely not be used to locate the fragments in the body for safety reasons?",
