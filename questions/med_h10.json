@@ -91,7 +91,7 @@
                 " Lymfocytter / Lymphocytes",
                 " Erythrocytter Erythrocytes"
             ],
-            "correct": 2
+            "correct": 0
         },
         {
             "question": "Hva heter denne bevegelsen? / Kva heter denne bevegelsen? / What is this movement called?",
@@ -213,7 +213,7 @@
                 " Manglende nærinstilling / Lack of accommodation",
                 " Uklar linse / Clouding of the lens"
             ],
-            "correct": 0
+            "correct": 2
         },
         {
             "question": "Hva er produktet av translasjonsprosessen i cellen? / Kva er av translasjonsprosessen i cella? / What is the product of the translation process in the cell?",
@@ -233,7 +233,7 @@
                 " C",
                 " D"
             ],
-            "correct": 1,
+            "correct": 3,
             "image": "http://i.imgur.com/bkM3t0S.png"
         },
         {
@@ -254,7 +254,7 @@
                 " Arteriolene / The arterioles",
                 " Kapillærene / The capillaries"
             ],
-            "correct": 3
+            "correct": 2
         },
         {
             "question": "Partialtrykket av oksygen i lufta reduseres med høyden. Hvis partialtrykket er redusert med ca 25%, hvor mye reduserer dette O2 metningen i blodet? / Partialtrykket av oksygen i lufta blir redusert med høgda. Viss partialtrykket er redusert med ca 25%, kor mykje reduserer dette O2 mettinga i blodet? / The partial pressure of oxygen in the airdecreases with altitude. If the partialpressure is reduced by 25%, how much will this reduce the oxygen saturation of blood?",
@@ -324,7 +324,7 @@
                 " Ulik replikasjonsprosess. / Different replication",
                 " Ulike gener er aktive i ulike vev. Ulike gen er aktive i dei ulike veva. / Different genes are active in different tissue."
             ],
-            "correct": 2
+            "correct": 3
         },
         {
             "question": "Blodet koagulerer som følge av en kjedereaksjon mellom visse plasmaproteiner - koagulasjonsfaktorene. Hvor syntetiseres de fleste av dem? / Blodet koagulerer som følgje av ein kjedereaksjon mellom visse plasmaprotein - koagulasjonsfaktorane. Kor syntetiserast dei fleste av dei? / The blood coagulates as the result of a chain reaction between certain plasma proteins – the coagulation factors. Where are most of these synthesized?",
@@ -444,7 +444,7 @@
                 " Blodstrømsmengden (flow) øker / Blodstraumsmengda (flow) auker / The blood flow increases",
                 " Trykket øker / Trykket auker / The pressure increases"
             ],
-            "correct": 3
+            "correct": 0
         },
         {
             "question": "Hvordan dannes røntgenstråler i et medisinsk røntgenapparat? / Korleis blir røntgenstrålar danna i et medisinsk røntgenapparat? / How are –rays in a medical X-ray machine created?",
@@ -454,7 +454,7 @@
                 " Ved variasjoner i feltstyrken i et magnetfelt / Ved variasjonar i feltstyrken i et magnetfelt / By variations of the field strength in a magnetic field",
                 " Ved vibrasjoner i en krystall / Ved vibrasjonar i en krystall / By vibrations in a chrystal "
             ],
-            "correct": 2
+            "correct": 1
         },
         {
             "question": "Alle celler lagrer primært energi som energirike fosfatbindinger i form av ATP. Musklene har i tillegg et sekundært energilager i form av: / Alle celler lagrar primært energi som energirike fosfatbindingar i form av ATP. Musklane har i tillegg et sekundært energilager i form av: / All cells store energy in its primary form as energy rich phosphate ligands in the form of ATP. Muscles has in addition a secondary storage in the form of:",
@@ -464,7 +464,7 @@
                 " Karbamidfosfat / Carbamide phosphate",
                 " Kreatinfosfat / Creatine phosphate"
             ],
-            "correct": 0
+            "correct": 3
         },
         {
             "question": "Hva er et onkogen? / Kva er et onkogen? / What is an oncogene?",
@@ -474,17 +474,17 @@
                 " Et vekstregulerende gen som er mutert / Eit vekstregulerande gen som er mutert / A growth regulating gene that is mutated",
                 " Et gen som gir evne til angiogenese / Eit gen som gir evne til angiogenese / A gene that gives the ability of inducing angiogenesis"
             ],
-            "correct": 0
+            "correct": 2
         },
         {
             "question": "Hva er mekanismen for revmatoid arthritt? / Kva er mekanismen for revmatoid arthritt? / What is the mechanism for rheumation arthritis?",
             "answers": [
                 " Infeksjon / Infection",
                 " Aldersdegenerasjon / Age dependent degeneration",
-                " Atoimmun betennelse / Autoimmune inflammation",
+                " Autoimmun betennelse / Autoimmune inflammation",
                 " Utfelling av urinsyre / Precipitation of uric acid"
             ],
-            "correct": 0
+            "correct": 2
         },
         {
             "question": "Ved diabeteskoma hopes det opp ketoner i blodet. Dette påvirker pH, og sekundært CO2 konsentrasjonen. På hvilken måte? / Ved diabeteskoma hopast det opp keton i blodet. Dette påverkar pH, og sekundært CO2 konsentrasjonen. På kva for måte? / In a diabetic coma there is an accumulation of ketones in the blood. This affects pH and secondary CO2 concentration on the blood. In what way?",
@@ -494,7 +494,7 @@
                 " pH↓, CO2↑",
                 " pH↓, CO2↓"
             ],
-            "correct": 2
+            "correct": 3
         },
         {
             "question": "Ved angina er det vanlig å ta nitroglycerin. Hvordan virker nitroglycerin? / Ved angina er det vanlig å ta nitroglycerin. Korleis verker nitroglycerin? / In angina it is common to use nitroglygerine. How does nitroglycerine work?",
@@ -504,7 +504,7 @@
                 " Det utvider vener så hjertets arbeid avtar / Det utvidar vener så hjertets arbeid minkar / It dilates the veins, leading to decreased heart work",
                 " Det får hjertemuskelcellene til å ta opp mer oksygen / Det får hjertemuskelcellene til å ta opp meir oksygen / It induces the heart muscle to take up more oxygen."
             ],
-            "correct": 0
+            "correct": 2
         },
         {
             "question": "Dopplereffekten er en endring av frekvensen på reflektert ultralyd. Hva måles ved Dopplereffekten? / Dopplereffekten er en endring av frekvensen på reflektert ultralyd. Kva blir målt med Dopplereffekten? / The Doppler effect is a change in the frequency of reflected ultrasound. What is measured by the Doppler effect?",
