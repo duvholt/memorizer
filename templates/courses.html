@@ -2,7 +2,7 @@
 {% block content %}
 {% for course in courses %}
     <li><a href="{{ url_for('course', course_code=course.code) }}">{{ course }}</a></li>
-    <ul>
+    <ul class="list-inline">
     {% for exam in course.exams %}
         <li><a href="{{ url_for('exam', course_code=course.code, exam_name=exam.name) }}">{{ exam }}</a></li>
     {% endfor %}
