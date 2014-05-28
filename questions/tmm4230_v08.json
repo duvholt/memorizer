@@ -1,0 +1,151 @@
+{
+    "name": "Teknologi for integrerte operasjoner og semantisk web",
+    "code": "TMM4230",
+    "exam": "V08",
+    "questions": [
+        {
+            "question": "[.NET /C#] What best describe \"Microsoft .NET\"/.NET Framework?",
+            "answers": [
+                " Platform/Windows component for development and execution of different types of applications by using different programming languages.",
+                " Virtual machine for running managed code (like the Java Virtual Machine, JVM)",
+                " General guidelines on how to write applications for Windows",
+                " Framework for developing SOA (Service Oriented Architecture) applications"
+            ],
+            "correct": 0
+        }, 
+        {
+            "question": "[.NET /C#] What is an assembly in .NET?",
+            "answers": [
+                " Add-in to Visual Studio, extending it with new features",
+                " Unit containing highly optimized machine code, ready to be executed at full speed, a big competitive advantage for .NET",
+                " Any file with a .dll file extension",
+                " Classes and their source code and resources are compiled into an assembly, which is a main building block in .NET applications"
+            ],
+            "correct": 3
+        },
+       {
+            "question": "[.NET /C#] What is MSIL (Microsoft Intermediate Language)?",
+            "answers": [
+                " High-level programming language like C# and Visual Basic .NET",
+                " A language that is outputted from for instance the C# compiler, and is what .NET assemblies contain",
+                " Regular English written language used in specialized requirements specifications",
+                " A language Microsoft intended should be the new C++, but later abandoned and went for C# instead (thereof intermediate)",
+                " None of these"
+            ],
+            "correct": 1
+        },
+       {
+            "question": "[.NET /C#] Does C# have Garbage Collection? If yes, what is it?",
+            "answers": [
+                " C# does NOT have garbage collection",
+                " C# HAS garbage collection, which is a function in Visual Studio for cleaning up your source code",
+                " C# HAS garbage collection, which is an automatic process in the CLR which frees unused (unreachable) memory during program execution.",
+                " C# HAS garbage collection, which is a compiler feature that removes unused code."
+            ],
+            "correct": 2
+        },
+       {
+            "question": "[.NET /C#] We are implementing the class B, which should inherit from A and implement the interface IDisposable. Which of the following code snippets show the correct way of doing this in C#? … indicates the contents of the class.",
+            "answers": [
+                " public class B extends A implements IDisposable    { ... }",
+                " public class B : A implements IDisposable    { ... }",
+                " public class B : A, IDisposable    { ... }",
+                " public class B inherits A, IDisposable    { ... }",
+                "None of these"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "[.NET /C#] Does C# support multiple inheritance?",
+            "answers": [
+                " Yes, both from classes and interfaces",
+                " Only from interfaces, not classes",
+                " No, not at all"
+                ],
+            "correct": 1
+        },
+        {
+            "question": "[.NET /C#] Can .NET programs (for instance a class library) written in VB.NET be used from C# code?",
+            "answers": [
+                " No, this is not possible",
+                " Yes it is possible, but requires very \"dirty tricks\" and is generally not a good idea",
+                " Yes, but it requires you to run the VB2C# converter tool to convert the VB code to C#",
+                " Yes, it is enough to add a reference to the assembly written in VB.NET"
+                ],
+            "correct": 3
+        },
+        {
+            "question": "[.NET /C#] What is the difference between classes (class A { … }) and structs (struct B { … }) in C#?",
+            "answers": [
+                " There are no major differences, like in C++, where a struct is a class with everything being public",
+                " There are no differences at all",
+                " Structs are lightweight data containers, a value type passed by value, residing on the runtime stack instead of the heap",
+                " None of these"
+                ],
+            "correct": 2
+        },
+        {
+            "question": "[.NET /C#] What will the following code print (if inserted into the main method of a program)?",
+            "image": "https://i.imgur.com/TuPE7hL.png",
+            "answers": [
+                " 'False' ",
+                " 'True' ",
+                " The answer depends on the memory allocations in each run of the program",
+                " The code does not compile and cannot be run; nothing is printed"
+                ],
+            "correct": 1
+        },
+        {
+            "question": "[WCF] Which of the alternatives below best describe what a web service is?",
+            "answers": [
+                " Internet site with extra functionality, such as a web shop (thereby extra service)",
+                " Web site using HTTP and HTTPS as its primary protocols",
+                " Any application listening on TCP port number 80 is a web service",
+                " A programmable application, accessible trough standard internet protocols, designed for machine to machine interaction"
+                ],
+            "correct": 3
+        }, 
+        {
+            "question": "[WCF] What best describes SOAP (Simple Object Access Protocol)?",
+            "answers": [
+                " Platform INDPENDENT protocol for exchanging XML messages over computer networks, usually over HTTP/HTTPS",
+                " Platform DEPENDENT protocol for exchanging XML messages over computer networks, usually over HTTP/HTTPS",
+                " Protocol for sending HTML over TCP/IP",
+                " Replacement for TCP when sending XML data over HTTP",
+                " Binary protocol for sending binary XML data over UDP"
+                ],
+            "correct": 0
+        },
+        {
+            "question": "[WCF] Which of the alternatives below lists technologies, in the same order, corresponding to the following items: 1) represent data (structured storage), 2) message protocol, 3) data- and operation contract.",
+            "answers": [
+                " UDDI, XML, SOAP",
+                " XML, SOAP, WSDL",
+                " DISCO, XML, WSDL",
+                " None of these"
+                ],
+            "correct": 1
+        }, 
+        {
+            "question": "[WCF] The document format for WSDLs (Web Service Description Language) is",
+            "answers": [
+                " Plain text",
+                " Binary format",
+                " CSV (Comma separated values",
+                " XML",
+                " None of these"
+                ],
+            "correct": 3
+        }, 
+        {
+            "question": "[WCF] What is the relation between SOA (Service Oriented Architecture) and WCF?",
+            "answers": [
+                " WCF and SOA is the same",
+                " WCF is Microsoft’s platform for, amongst others, building SOA applications",
+                " SOA is a specific technology, WCF is a generalized view of how distributed applications should be built",
+                " None of these"
+                ],
+            "correct": 1
+        }
+    ]
+}
