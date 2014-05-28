@@ -49,7 +49,7 @@
     },
     {
         "question": "[C# and .NET] What will the following code print if it is run?",
-        "image": "https://i.imgur.com/aeH70wN.png",
+        "image": "https://i.imgur.com/WSUbsTD.png",
         "answers": [
 				"\"win\"",
 				"\"fail\"",
@@ -211,7 +211,7 @@
 			"Volatile Internet Presence. A protocol for communication over the unstable parts of the Internet",
 			"Voice Over Internet Protocol. A protocol for doing voice communication over the Internet"
         ],
-        "correct": 4
+        "correct": 3
     },
     {
         "question": "[RTC] What is the responsibility of audio and video codecs?",
