@@ -51,7 +51,7 @@
                 " Elektroner transporteres langs indre motochondriemembran for å produsere ATP / Elektron blir transportert langs indre motochondriemembran for å produsere ATP / Electrons are transported along inner mitochondria membrane in order to generate ATP",
                 " Elektroner transporteres langs myofibrillene for å aktivere kontraksjonen ved et aksjonspotensiale / Elektron blir transportert langs myofibrillane for å aktivere kontraksjonen ved et aksjonspotensiale / Electrons are transported along the myofibrils to activate the contraction during an action potential"
             ],
-            "correct": 3
+            "correct": 2
         },
         {
             "question": "Ved nyresvikt får en lavere nivå av aktivt vitamin D. Hvordan vil dette virke på calcium og PTH-nivået i blod? / Ved nyresvikt får ein lågare nivå av aktivt vitamin D. Korleis vil dette virke på calcium og PTH-nivået i blod? / In renal failure will there be lower levels of active vitamin D. How will that influence the levels of calcium and PTH?",
@@ -281,7 +281,7 @@
                 " I mitochondriene / In the mitochondria",
                 " I Golgi apparatet / In the Golgi apparatus"
             ],
-            "correct": 1
+            "correct": 0
         },
         {
             "question": "Prostatakjertelen kan vokse med alderen, dette er som regel godartet. Hvilke symptomer kan dette gi? / Prostatakjertelen kan vokse med alderen, dette er som regel godarta. Kva for symptom kan dette gi? / The prostate gland may enlarge with age. Which symptoms can this lead to?",
@@ -311,7 +311,7 @@
                 " Cerebellum",
                 " Medulla oblongata"
             ],
-            "correct": 2
+            "correct": 3
         },
         {
             "question": "Hva er viktigste stimulus for respirasjonen hos friske? / Kva er viktigaste stimulus for respirasjonen hos friske? / What is the most important stimulus for the respiration in healthy persons?",
