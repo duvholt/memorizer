@@ -417,14 +417,22 @@
             "answers": [
                 "Det er aldri lupus",
                 "Everybody lies",
-                "dust, dette kommer ikke på eskamen",
-                "ja."
+                "Dust, dette kommer ikke på eksamen",
+                "Ja",
+                "Vicodin",
+                "42",
+                "Nei",
+                "Alternativ 1"
             ],
             "correct": [
                 0,
                 1,
                 2,
-                3
+                3,
+                4,
+                5,
+                6,
+                7
             ]
         }
     ]
