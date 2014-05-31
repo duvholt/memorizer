@@ -125,7 +125,8 @@
 				"Contract definitions",
 				"Message Exchange",
 				"Service Discovery",
-				"Service Provider Discovery"
+				"Service Provider Discovery",
+				"Plugin for your shower"
             ],
             "correct": 1
         },
