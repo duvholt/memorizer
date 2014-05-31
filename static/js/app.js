@@ -19,26 +19,26 @@ $(document).keydown(function(e) {
 	}
 	
 	// Submit answer to current question
-	if (e.keyCode == 32) {
+	if (e.keyCode == 32 || e.keyCode == 81) {
 		$('form:first').submit();
 	}
 	
 	// Previous question
-	if (e.keyCode == 37) {
+	if (e.keyCode == 37 || e.keyCode == 65) {
 		if($('#prev_question').size() > 0) {
 			window.location = $('#prev_question').attr('href');
 		}
 	}
 	
 	// Next question
-	if (e.keyCode == 39) {
+	if (e.keyCode == 39 || e.keyCode == 68) {
 		if($('#next_question').size() > 0) {
 			window.location = $('#next_question').attr('href');
 		}
 	}
 	
 	// Random question
-	if (e.keyCode == 38) {
+	if (e.keyCode == 38 || e.keyCode == 87) {
 		if ($('#random_question').size() > 0) {
 			window.location = $('#random_question').attr('href');
 		}
