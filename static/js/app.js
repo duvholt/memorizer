@@ -36,4 +36,11 @@ $(document).keydown(function(e) {
 			window.location = $('#next_question').attr('href');
 		}
 	}
+	
+	// Random question
+	if (e.keyCode == 38) {
+		if ($('#random_question').size() > 0) {
+			window.location = $('#random_question').attr('href');
+		}
+	}
 });
