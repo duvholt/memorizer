@@ -356,7 +356,7 @@
 				"hasSibling is the range of hasBrother",
 				"hasSibling is the domain of hasBrother"
             ],
-            "correct": 3
+            "correct": 2
         },
         {
             "question": "[OWL Modelling] What is correct about two disjoint classes X and Y?",
@@ -367,7 +367,7 @@
 				"A class Z can have both X and Y as superclasses",
 				"Disjoint classes have no instances"
             ],
-            "correct": 3
+            "correct": 2
         },
         {
             "question": "[OWL Modelling] How would you define the object property isFatherOf?",
@@ -378,7 +378,7 @@
 				"Transitive and inverse functional ",
 				"Symmetric and transitive"
             ],
-            "correct": 4
+            "correct": 3
         },
         {
             "question": "[Abstract OWL Syntax ] What can we infer from these statements?",
