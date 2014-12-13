@@ -634,7 +634,7 @@
             "correct": 0
         },
         {
-            "question": "Det musikalske elementet som i størst grad påvirker hjernens plastitivitet er:",
+            "question": "Det musikalske elementet som i størst grad påvirker hjernens plastitivitet er:",
             "answers": [
                 "Melodi",
                 "Rytme",
@@ -644,14 +644,14 @@
             "correct": 2
         },
         {
-            "question": "Opplevelse av sammenheng (Sense of coherence (SOC)) er et viktig element i teorien om salutogenese. I dette elementet inngår tre faktorer om hvordan en opplever situasjoner som. Disse er:",
+            "question": "Opplevelse av sammenheng (Sense of coherence (SOC)) er et viktig element i teorien om salutogenese. I dette elementet inngår tre faktorer om hvordan en opplever situasjoner som. Disse er:",
             "answers": [
-                "Forståelighet, påvirkelighet, meningsfulhet",
+                "Forståelighet, påvirkelighet, meningsfulhet",
                 "Meningsfullhet, brukbarhet, endringevne",
-                "Påvirkelighet, forståelighet, gjensidighet",
-                "Forståelighet, meningsfullhet, gjennomførbarhet"
+                "Påvirkelighet, forståelighet, gjensidighet",
+                "Forståelighet, meningsfullhet, gjennomførbarhet"
             ],
-            "correct": 3
+            "correct": 0
         }
     ]
 }
