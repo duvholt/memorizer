@@ -1,0 +1,657 @@
+{
+    "name": "Psykosomatikk og helsepsykologi",
+    "code": "HLS0001",
+    "exam": "Diverse",
+    "questions": [
+        {
+            "question": "I 1980 definerte helsepsykologen Matarazzo helsepsykologi som:",
+            "answers": [
+                "”Læren om psykologiens innvirkning på helse”",
+                "”Psykologiens forhold til helse og utvikling av helseressurser”",
+                "”Det samlede bidra psykologien gir for å forstå helse og velvære ”",
+                "”Psykiske problemers innvirkning på helse”"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hvilke metoder foretrekker helsepsykologien å fokusere på i arbeidet?",
+            "answers": [
+                "holistisk behandling",
+                "kognitive terapiformer ",
+                "helsefremming og forebygging",
+                "å fremme helsepsykologiens plass i sykdomsbehandling"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hvor lang tid omtrent har helsepsykologi eksistert som egen disiplin her i landet?",
+            "answers": [
+                "ca. 10 år",
+                "ca. 30 år",
+                "ca. 40 år",
+                "ca. 50 år"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "I psykosomatikk og helsepsykologi benyttes ulike metoder og instrumenter for å samle data om ulike forskjeller eller sammenhenger. En sier at en slik metoder valid når den:",
+            "answers": [
+                "måler eksakt det samme fra gang til gang",
+                "måler eksakt det en ønsker å måle",
+                "måler variasjonsbredden i utvalget godt",
+                "er akkurat passe lang"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Type A atferdsmønster er blitt forbundet med utviklingen av en bestemt sykdom. Det er:",
+            "answers": [
+                "sukkersyke",
+                "obstruktive lungelidelser",
+                "hjerteinfarkt",
+                "musesyken"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "I Oslo har det ofte tidligere vært snakk om at forventet levetid r høyere vest i byen enn øst i byen. I de nyeste undersøkelsene viser det seg at nå er dette slik at:",
+            "answers": [
+                "alt er som før",
+                "det er blitt helt motsatt",
+                "levelengden er lik i begge deler av byen",
+                "levelengden har gått ned i begge deler av byen"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "En person med type B atferdsmønster ",
+            "answers": [
+                "lar seg veldig lett hisse opp",
+                "tar livet som det kommer og lar seg flyte med i livsstrømmen",
+                "er blant dem som ofte får kroniske lidelser",
+                "er vanligvis på utkikk etter ny jobb"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Det finnes ulike sykdoms- og helsemodeller. Helsepsykologer og forskere som arbeider med psykosomatikk benytter seg vanligvis av den mest moderne av disse modellene og kalles for",
+            "answers": [
+                "bro-medisinsk helsemodell",
+                "bro-holistisk helsemodell",
+                "bro-psyko-sosial helsemodell",
+                "velværemodellen"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Det er minst fire måter å beskrive forholdet mellom helse og livskvalitet. En av de fire måtene nedenfor er mest dekkende. Hvilken? ",
+            "answers": [
+                "livskvalitet og helse er atskilte fenomener",
+                "livskvalitet og helse er identiske",
+                "et av begrepene kan være overordnet det andre",
+                "helse og livskvalitet kan være overlappende begreper med en felles kjerne"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Et av svaralternativene nedenfor blir hevdet å være viktigst for det å oppleve en god livskvalitet. Hvilket? ",
+            "answers": [
+                "at man har gode og nære relasjoner med familie og venner",
+                "at man har mange penger i banken",
+                "at man har høy utdanning",
+                "at man er vellykket og betydningsfull i arbeidslivet"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Livskvalitet er et lett forståelig begrep. Er det også lett å måle i vitenskapelige studier?  Et av svaralternativene nedenfor er riktig. Hvilket? ",
+            "answers": [
+                "ja, livskvalitet har en entydig definisjon og er enkelt å måle",
+                "ja, livskvalitet er enkelt å måle fordi begrepet er en-dimensjonalt",
+                "ja, livskvalitet er enkelt å måle fordi vi har en ”gullstandard” av ett mål",
+                "Nei, livskvalitet er komplisert å måle fordi begrepet er multidimensjonalt, det er et fenomen under kontinuerlig endring, og det innbefatter en subjektiv opplevelse av å ha det godt eller dårlig"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Har økningen i levekår og inntekt i vår del av veden de siste 50-årene bidratt til økt lykkefølelse?",
+            "answers": [
+                "nei, til tross for at vi har hatt en sterk økning i levekår og personlig inntekt de siste 50-årene, har lykkefølelsen holdt seg omtrent  konstant",
+                "ja, økningen i levekår og inntekt har ført til at folk er mye lykkeligere i dag enn før",
+                "ja, de rikeste rapportere å være lykkeligst",
+                "nei, det er de som har akkurat nok penger til det mest nødvendige av mat og hus som er lykkeligst"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Utbrenthet skiller seg fra andre begrep som depresjon og stress fordi:",
+            "answers": [
+                "utbrenthet er smittsomt",
+                "utbrenthet rammer bare folk i topp jobber",
+                "utbrenthet er arbeidsrelatert og mer kronisk",
+                "de skiller seg ikke fra hverandre"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Den mest anerkjente og brukte definisjonen på utbrenthet er forfattet av Maslach. Hun deler utbrentheten inn i?",
+            "answers": [
+                "en dimensjon",
+                "to dimensjoner",
+                "tre dimensjoner",
+                "fire dimensjoner"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hvilke av personlighetstrekkene nedenfor er sterkest relatert til rapportering av symptomer?",
+            "answers": [
+                "nevrotisisme",
+                "introversjon",
+                "åpenhet",
+                "planmessighet"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hva kjennetegner, i følge Friedman og kollegaer, personer som lever lenge?",
+            "answers": [
+                "de er optimistiske og planmessige",
+                "de skårer lavt på nevrotisisme og lavt på medmenneskelighet",
+                "de skårer lavt på optimisme og høyt på planmessighet (conscientiousness)",
+                "de skårer høyt på optimisme og lavt på planmessighet (conscientiousness)"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Livskvalitet har vært et kjent begrep i:",
+            "answers": [
+                "2000 år (filosofi)",
+                "200 år (industrialisering)",
+                "100 år (medisinske nyvinninger)",
+                "30-40 år (økonomisk oppsving)"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Innen medisin og sykepleie defineres ”livskvalitet” oftest som:",
+            "answers": [
+                "lykke",
+                "helse og velvære",
+                "fysisk, psykisk, sosialt og materielt velvære",
+                "tilfredsstillelse av behov"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Livskvalitet måles oftest ved hjelp av:",
+            "answers": [
+                "selvrapportering",
+                "helsepersonells vurdering",
+                "psykologiske tester, for eksempel lav skåre på depresjon",
+                "objektive mål, som for eksempel normale blodprøver og lungefunksjon"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "De fleste som må fjerne livmoren lider av:",
+            "answers": [
+                "kreft",
+                "smerter og store blødninger",
+                "generell dårlig helse",
+                "psykiske problemer"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "For de fleste kvinner som får fjernet livmoren blir helsen:",
+            "answers": [
+                "bedre",
+                "dårligere",
+                "uforandret",
+                "først bedre, så dårligere"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Å fjerne livmoren fører ofte til komplikasjoner som:",
+            "answers": [
+                "depresjon",
+                "seksuelle problemer",
+                "smerter",
+                "ingen komplikasjoner"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "De fleste ”cancer survivors” opplever en god livskvalitet fordi:",
+            "answers": [
+                "behandling av kreft ikke gir noen komplikasjoner",
+                "oppfatningen av hva som er viktig i livet endres",
+                "som kreftpasient får en ”sekundærgevinster” i form av mye oppmerksomhet",
+                "det er lett å få sykemelding eller delvis uførhet og dermed bedre til hobbyer"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Det finnes forskjellige risikofaktorer knyttet til enkeltindividers helseutvikling i vestlige land i dag. Hvilken blir vurdert til å være den skumleste i nærmeste framtid?",
+            "answers": [
+                "at nedgang i røyking skal bli til en utvikling der mennesker foretrekker snus og med de skadevirkninger det kan få",
+                "miljøtrussel",
+                "økende overvekt",
+                "infeksjonssykdommer"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Med psykosomatisk forskning menes?",
+            "answers": [
+                "helseforskning som konsentrerer seg ensidig om det psykosomatiske og dermed får et nyttig og godt fokus på få faktorer i forklaring i helseutvikling",
+                "helseforskning som søker å se på hvordan menneskers helse utvikles som en sum av de faktorer, indre og ytre, som det påvirkes av",
+                "forskning knyttet til psykedeliske og somatoforme lidelser",
+                "en forskning som legger vekt på dualismen, psyke og soma. "
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Et måleinstrument med høy relabilitet er:",
+            "answers": [
+                "et instrument som er relativt nøyaktig ",
+                "et instrument som måler det en ønsker å måle med stor grad av nøyaktighet",
+                "et instrument som tar hensyn til av omgivelsene skifter",
+                "et instrument som vil gi samme resultat hver gang gitt at det som blir målt var det samme"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Claudius Galnus (129-200) ofte referert til som Galen er kjent som:",
+            "answers": [
+                "legekunstens far",
+                "lege og vitenskapsmann fra Lilleasia (Tyrkia)",
+                "den som beskrev et bylleutbrudd på Thasus (nå Thaos i Hellas)",
+                "den første helsepsykologen"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hvilken vei var det vanlig å tenke seg årsak og virkning når det gjaldt psykisk-fysiske problemer, symptomer og sykdommer i romertiden?",
+            "answers": [
+                "fysiske problemer slo ut i psykiske symptomer",
+                "det var ingen spesiell retning det var snakk om",
+                "psykiske problemer slo ut i fysiske symptomer",
+                "det var uvanlig å tenke årsak virkning"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hippokrates – kjent lege fra det gamle Hellas, mente at personer med mye svart galle var:",
+            "answers": [
+                "manikere (oppstemte)",
+                "sangvinikere (humoristiske og optimistiske)",
+                "rolig og avbalanserte",
+                "melankolske (depressive)"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Begrepet dualisme…:",
+            "answers": [
+                "kan greit oversettes med at mennesket er tosidige – jing og jang",
+                "stammer fra en overbevisning om at mennesket består av to adskilte deler, kropp og en sjel",
+                "var middelalderens tro på mennesket som godt og ondt – og at det gode mennesket hadde god helse",
+                "har ingenting med begrepet ”duo” å gjøre, men er et begrep som benyttes om egosentrisme"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hva mente filosofen og psykologen William James (1842-1910) med at vi var på sporet av en slags ”matematisk verdensformel”?",
+            "answers": [
+                "han mente av vi snart kunne regne ut både menneskets levealder og en mening med at mennesket var plassert i verden. ",
+                "det var bare et uttrykk grepet ut av den kjensgjerning av at matematikk og fysikk var de lagene som ville kunne uttrykke menneskets lengten etter full forståelse",
+                "en formel som i prinsippet ville gjøre det mulig å forutsi all framtid med fullkommen nøyaktighet. Dette gjaldt alle hendelser i omgivelsene så vel som i oss selv",
+                "William James snakket aldri om noen ”matematisk verdensformel” – det var William Hunt"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hva menes med begrepet reduksjonisme?",
+            "answers": [
+                "reduksjonismen hevdet at ”sjelen” ikke var noe annet enn nerveimpulser i hjernen",
+                "reduksjonismen hevdet at alle forhold kunne reduseres til en enkelt formel",
+                "reduksjonismen sier at alt vi betrakter er mindre enn det som ser ut til",
+                "at et menneskes helse kan beskrives ut fra det genetiske apparatet mennesket har"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "George Stone (1987) mener at de ulike helsedefinisjonene grovt sett faller innenfor to kategorier. Hvilke?",
+            "answers": [
+                "Noen definerer helse som en ideell tilstand, mens de andre definerer helse som en bevegelse i positiv retning",
+                "Ingen alternativ",
+                "Ingen alternativ",
+                "Ingen alternativ"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Forskjellen på en bio-medisinsk-sykdomsmodell og den bio-psyko-sosiale-helse-og syksdomsmodell kan grovt grovt sett sies å være at:",
+            "answers": [
+                "Biopsykososiale-modellen er den mest moderne og tar med flere elementer for utvikling av helse og sykdom",
+                "Ingen alternativ",
+                "Ingen alternativ",
+                "Ingen alternativ"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "I 1926 utgav Sigmund Freud avhandlingen Henunung, Symptom und Angst? Hva var det med den avhandlingen som var spesielt for arbeidet i psykosomatikken?",
+            "answers": [
+                "Han mente at angst kunne betraktes som et forebyggende varselsignal for andre sykdommer.",
+                "Ingen alternativ",
+                "Ingen alternativ",
+                "Ingen alternativ"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "”Er det usunt å spise egg?” kan være…….forskning.",
+            "answers": [
+                "en problemstilling for",
+                "en hypotese for",
+                "et spekulativt utsag uriktig knyttet til",
+                "nokså meningsløst å knytte til"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Å gjøre en problemstilling forskbar kalles for å…:",
+            "answers": [
+                "kvantifisere problemet",
+                "operasjonalisere problemet",
+                "validisere problemet",
+                "reliabilitetsteste problemstillingen"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Sammenheng mellom uavhengig og avhengig variabel i eksperimenter er",
+            "answers": [
+                "den avhengige variabelen er den en bevisst varierer",
+                "den uavhengige variabelen er den en bevisst varierer",
+                "den uavhengige variabelen er den som forskeren foretar sine målinger på",
+                "den uavhengige variabelen er ofte så uavhengig av det som foregår at den ikke er til å stole på"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Klassiske kasus-kontrollstudier kjennetegnes ved at en har:",
+            "answers": [
+                "en gruppe som naturlig eller eksperimentelt utsettes for et eller annet og som har en kontrollgruppe",
+                "en kontrollgruppe som stadig kontrolleres og en gruppe som er med for å gi ekstra informasjon med uten så mange kontroller i kasus i kasusgruppen",
+                "gått bort fra den type eksperimenter på grunn av usikkerheten",
+                "full oversikt over hva som foregår i alle slike studier"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hvilket ord mangler? ”… er enhver aktivitet hos en person som oppfatter seg som frisk, og hvor målet er å forebygge sykdom eller oppdage sykdom før den bryter ut”",
+            "answers": [
+                "livstil",
+                "helsefremming ",
+                "forebygging",
+                "helseatferd"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Hva er den grunnleggende hensikten med vaksinasjon?",
+            "answers": [
+                "at de som vaksineres skal utvikle resistens",
+                "å forhindre smittespredning i befolkninger",
+                "å beskytte ekstra utsatte risikogrupper",
+                "å gi et medisinsk tilbud mot smittsomme sykdommer"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "KAP-modellen er en viden brukt helseatferdmodell. K står for knowledge, A for attitude og P for pratice (kunnskap, holdning og atferd). Hva har vært den vanligste kritikken mot denne modellens gangbarhet?",
+            "answers": [
+                "at den er for omtrentlig i beskrivelsen av kunnskap",
+                "at den ikke er tydelig nok på rekkefølgen",
+                "at den er for tydelig på at den rekkefølgen går bare en vei",
+                "at atferd er vanskelig å fastslå"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Med Self-Efficacy eller mestringsforventning på norsk mener Albert Bandura…:",
+            "answers": [
+                "at sannsynligheten for at vi skal gjøre noe, øker proporsjonalt med den troen vi har på at vi vil få det til",
+                "at sannsynligheten for at vi skal få noe til øker også selvtilliten",
+                "at selvtilliten øker når vi får noe til",
+                "når vi får noe til kan denne kunnskapen føres over til områder der vi ikke får noe til"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "I en artikkel fra 2000 bruker Taylor og medarbeidere uttrykket ”tend and befriend”. Med dette uttrykket forsøker Taylor og medarbeidere å beskrive…:",
+            "answers": [
+                "hvordan sosiale nettverk bygges",
+                "en modell for barneoppdragelse som medfører helsegevinster på sikt",
+                "kjønnsforskjeller i hvordan kvinner bygger solide nettverk mens mannens er mer instrumentelle",
+                "kjønnsforskjeller i responser på stress – dette er kvinnenes typiske respons"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Hva er i følge Homes og Rahe’s forskning den mest stressende livshendelse? ",
+            "answers": [
+                "dødsfall hos en nær venn",
+                "å bli oppsagt fra jobben",
+                "å få beskjed om at en er dødelig syk",
+                "dødsfall hos ektefelle"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Hva menes i helsepsykologien med begrepet ”The Big Five”",
+            "answers": [
+                "de 5 store folkesykdommene: kreft, hjerte-og karsykdom, diabetes, hode-nakke-skulderplager og KOLS",
+                "de 5 hovedfaktorene som beskriver vår personlighet",
+                "de fem store personlighetsteoretikerne vi har: Hippocrates, Allport, Eysecnk, Cattel og Costa",
+                "de fem foretrukne helsefremmings- og forebyggingsmetodene vi bruker: informasjon, helsepedagogikk, hygiene, vaksinasjon og profylaksemedikasjon"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hvilke ord mangler? ”… har som formål å redusere forekomsten av sykdommer, skader, sosiale problemer, død og risikofaktorer”",
+            "answers": [
+                "helsefremmende tiltak",
+                "forebyggende tiltak",
+                "den kommunale helsetjenesten",
+                "sykehusene"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Korrelasjonsstudier benyttes ofte i helseforskning. Hva er den største svakheten med slike studier?",
+            "answers": [
+                "det forsøkes ofte å trekkes vidtrekkende konklusjoner med for mange variabler involvert",
+                "det involverer ofte for få individer til at bastante konklusjoner kan trekkes",
+                "en kan ikke dra årsak-virkningskonklusjoner fra slike studier",
+                "svakheten er rett og slett manglende kontroll"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Sommeren 2008 kom en artikkel fra den kjente forskere Martin Seligman. Her foreslo han et nytt forskningsfelt. Hva var det?",
+            "answers": [
+                "positive health promotion",
+                "positive health",
+                "positive health  psychology",
+                "d)\tpositive disease prevention"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Helsepsykologien kjennetegnes ved at den er",
+            "answers": [
+                "dualistisk",
+                "at den er mer opptatt av psykologi enn av helse",
+                "at den er mer opptatt av helse enn psykologi",
+                "ser på mennesket som en helhet"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "… er en relativt stabil disposisjon knyttet til spesielle atferdsmessige mønstre (Epstein 1977). Er definisjon av…",
+            "answers": [
+                "en disposisjon for utvikling av positiv helseatferd",
+                "disposisjonen for et sykdomsfremkallende trekk, Type C",
+                "en personlighetstrekk",
+                "en disposisjon for negative emosjoner"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Med en bio-psyko-sosial helsemodell menes:",
+            "answers": [
+                "en modell for helseutvikling som også tar inn verdien og påvirkningen av bioenergi",
+                "en modell for å måle helseutvikling ved hjelp av biometriske-psykometriske- og sosiometriske metoder",
+                "en modell som tar inn både biologiske, psykologiske og sosiale faktorer i forklaringen av utvikling av helse",
+                "en modell som tar inn akkurat passe mange elementer"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "I psykosomatikk og helsepsykologi benyttes ulike metoder og instrumenter for å samle data om ulike forskjeller eller sammenhenger. En sier at en slik metoder er valid når den: ",
+            "answers": [
+                "måler eksakt det samme fra gang til gang",
+                "måler eksakt det en ønsker å måle",
+                "måler variasjonsbredden i utvalget godt",
+                "er akkurat passe lang"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Lazarus og Selye er kjent for sine teorier om…",
+            "answers": [
+                "sammensatt sykdomsutvikling",
+                "livskvalitet",
+                "stress",
+                "overvektproblemer "
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Type A atferdsmønster er blitt forbundet med utviklingen av en bestemt sykdom. Det er:",
+            "answers": [
+                "sukkersyke",
+                "obstruktive lungelidelser",
+                "hjerteinfarkt",
+                "musesyken"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Er det farlig å snakke om selvmord?",
+            "answers": [
+                "ja",
+                "nei",
+                "nei, men det er viktig hvilken måte man snakker om det på",
+                "man bør som regel unngå å snakke om det, men det finnes unntak"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "En kultur der sykdom blir sett på som forårsaket av faktorer i det enkelte individet kalles:",
+            "answers": [
+                "kollektivistisk",
+                "individualistisk",
+                "allosentrisk",
+                "idiosentrisk"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "”Det generelle adaptasjonssyndromet” (GAS) som begrep…",
+            "answers": [
+                "stammer fra den Engels generelle teori om hvordan sykdom utvikles",
+                "stammer fra Seyles beskrivelse av reaksjoner på stress",
+                "stammer fra de gamle grekerne",
+                "er en ny beskrivelse av tilpasning til miljøpåvirkning"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hvem regnes som Utbrenthetsbegrepets ”far” og skrev de første artiklene?",
+            "answers": [
+                "Fredu",
+                "Freudenberger",
+                "Farber",
+                "French"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Utbrenthet skiller seg fra andre begrep som depresjon og stress fordi:",
+            "answers": [
+                "utbrenthet er smittsomt",
+                "utbrenthet rammer bare folk i topp jobber",
+                "utbrenthet er arbeidsrelatert og mer kronisk",
+                "de skiller seg ikke fra hverandre"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Nyere oppsummering av forskningsstatus vedrørende strategier for reduksjonen av alkoholrelaterte skader i samfunnet viser at en strategi som har høy grad av effekt er:",
+            "answers": [
+                "alkoholopplysning i skolen",
+                "selvhjelpsgrupper",
+                "reklameforbud",
+                "høye alkoholavgifter"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Totalforbruksteorien handler om…",
+            "answers": [
+                "totalforbruket er den dominerende faktor som styrer alkoholskadene omfang i samfunnet, men ikke den eneste faktor",
+                "totalforbruket er den eneste faktor som styrer alkoholskadenes omfang i samfunnet",
+                "totalforbruket påvirker i liten grad forekomsten av alkoholskader i samfunnet",
+                "totalforbruket i befolkningen  har ingen betydning for antall storkonsumenter i samfunnet"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Med forkortingen BMI…",
+            "answers": [
+                "mener vi vanligvis Body Mass Index",
+                "mener vi forholdet mellom hofte og mageomkrets",
+                "menes Bulemi Minor Index",
+                "sier vi noe om opptaket av veske i kroppen"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Det musikalske elementet som i størst grad påvirker hjernens plastitivitet er:",
+            "answers": [
+                "Melodi",
+                "Rytme",
+                "Klangfarge",
+                "Harmoni/harmonisk struktur"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Opplevelse av sammenheng (Sense of coherence (SOC)) er et viktig element i teorien om salutogenese. I dette elementet inngår tre faktorer om hvordan en opplever situasjoner som. Disse er:",
+            "answers": [
+                "Forståelighet, påvirkelighet, meningsfulhet",
+                "Meningsfullhet, brukbarhet, endringevne",
+                "Påvirkelighet, forståelighet, gjensidighet",
+                "Forståelighet, meningsfullhet, gjennomførbarhet"
+            ],
+            "correct": 0
+        }
+    ]
+}

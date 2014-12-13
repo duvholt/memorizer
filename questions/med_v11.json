@@ -6,550 +6,550 @@
         {
             "question": "En pasient har en hematokrit på 0,45. Hva betyr det? / En pasient har en hematokrit på 0,45. Kva betyr det? / A patient has a hematocrit of 0.45. What does that mean?",
             "answers": [
-                " At det er 45 millioner røde blodlegemer pr 10 μl blod / At det er 45 millionar røde blodlekam pr 10 μl blod / That it is 45 mill. Erythrocytes per 10 μl blod",
-                " At hemoglobinkonsentrasjonen i blodet er 45% av det som er normalt / That the hemoglobin concentration in the blood is 45% of whet is normal",
-                " At det er 45 g hemoglobin pr l blod / That the hemoglobin concentration is 45 g/l",
-                " At 45% av blodvolumet er erythrocytter / At 45% av blodvolumet er erythrocyttar / That 45% of the blood volume is erythrocytes"
+                "At det er 45 millioner røde blodlegemer pr 10 μl blod / At det er 45 millionar røde blodlekam pr 10 μl blod / That it is 45 mill. Erythrocytes per 10 μl blod",
+                "At hemoglobinkonsentrasjonen i blodet er 45% av det som er normalt / That the hemoglobin concentration in the blood is 45% of whet is normal",
+                "At det er 45 g hemoglobin pr l blod / That the hemoglobin concentration is 45 g/l",
+                "At 45% av blodvolumet er erythrocytter / At 45% av blodvolumet er erythrocyttar / That 45% of the blood volume is erythrocytes"
             ],
             "correct": 3
         },
         {
             "question": "HIV infeksjon reduserer immuniteten fordi den angriper og ødelegger en viss type hvite blodlegemer. Hvilken gruppe hører de cellene til? / HIV infeksjon reduserer immuniteten fordi den angriper og øydelegg en viss type kvite blodlekam. Kva for gruppe høyrer dei cellene til? / HIV infection reduces immunity because it attacks and destroys a certain type white blood cells. Which group do those cells belong to?",
             "answers": [
-                " Neutrofile granulocytter / Neutrophils",
-                " Makrofager / Macrophages",
-                " B-lymfocytter / B-lymphocytes",
-                " T-lymfocytter / T-lymphocytes"
+                "Neutrofile granulocytter / Neutrophils",
+                "Makrofager / Macrophages",
+                "B-lymfocytter / B-lymphocytes",
+                "T-lymfocytter / T-lymphocytes"
             ],
             "correct": 3
         },
         {
             "question": "Hva er den viktigste regulator for hjerteaksjonen i hvile? / Kva er den viktigaste regulatoren for hjerteaksjonen i kvile? / What is the most important regulator for the heart action at rest?",
             "answers": [
-                " Blodtrykket / The blood pressure",
-                " Oksygenmetningen / The oxygen saturation",
-                " Blodets pH / The pH in blood",
-                " Temperaturen / The temperature"
+                "Blodtrykket / The blood pressure",
+                "Oksygenmetningen / The oxygen saturation",
+                "Blodets pH / The pH in blood",
+                "Temperaturen / The temperature"
             ],
             "correct": 0
         },
         {
             "question": "Koagulasjon skjer ved at spesialiserte proteiner i plasma; koagulasjonsfaktorer reagerer i en kaskadereaksjon. Hva er sluttproduktet; selve hovedbestanddelen i et koagel? / Koagulasjon skjer ved at spesialiserte protein i plasma; koagulasjonsfaktorar reagerer i en kaskadereaksjon. Kva er sluttproduktet; sjølve hovudbestanddelen i et koagel? / The coagulation process happens as specialised proteins in plasma; coagulation factors reacts in a cascade reaction. What is the end product of this reaction; the main ingredient in a clot?",
             "answers": [
-                " Fibrin",
-                " Plasmin",
-                " Albumin",
-                " Gammaglobulin"
+                "Fibrin",
+                "Plasmin",
+                "Albumin",
+                "Gammaglobulin"
             ],
             "correct": 0
         },
         {
             "question": "Hva er korrekt om eksitasjons-kontraksjonskoplingen? / Kva er korrekt om eksitasjons-kontraksjonskoplinga? / What is correct about exitation contraction coupling?",
             "answers": [
-                " Aksjonspotensialet gir innstrømming av Na+ intracellulært som binder seg til tubulin / Aksjonspotensialet gir innstrøyming av Na+ intracellulært som binder seg til tubulin / The action potential causes inflow of Na+ intracellularly, which binds to tubulin",
-                " Aksjonspotensialet gir innstrømming av Na+ intracellulært som binder seg til troponin / Aksjonspotensialet gir innstrøyming av Na+ intracellulært som binder seg til troponin / The action potential causes inflow of Na+ intracellularly, which binds to troponin",
-                " Aksjonspotensialet gir frigjøring av Ca++ intracellulært som binder seg til tubulin / Aksjonspotensialet gir frigjøring av Ca++ intracellulært som binder seg til tubulin / The action potential causes intracellular release of Ca++, which binds to tubulin",
-                " Aksjonspotensialet gir frigjøring av Ca++ intracellulært som binder seg til troponin / Aksjonspotensialet gir frigjøring av Ca++ intracellulært som binder seg til troponin / The action potential causes intracellular release of Ca++, which binds to troponin."
+                "Aksjonspotensialet gir innstrømming av Na+ intracellulært som binder seg til tubulin / Aksjonspotensialet gir innstrøyming av Na+ intracellulært som binder seg til tubulin / The action potential causes inflow of Na+ intracellularly, which binds to tubulin",
+                "Aksjonspotensialet gir innstrømming av Na+ intracellulært som binder seg til troponin / Aksjonspotensialet gir innstrøyming av Na+ intracellulært som binder seg til troponin / The action potential causes inflow of Na+ intracellularly, which binds to troponin",
+                "Aksjonspotensialet gir frigjøring av Ca++ intracellulært som binder seg til tubulin / Aksjonspotensialet gir frigjøring av Ca++ intracellulært som binder seg til tubulin / The action potential causes intracellular release of Ca++, which binds to tubulin",
+                "Aksjonspotensialet gir frigjøring av Ca++ intracellulært som binder seg til troponin / Aksjonspotensialet gir frigjøring av Ca++ intracellulært som binder seg til troponin / The action potential causes intracellular release of Ca++, which binds to troponin."
             ],
             "correct": 3
         },
         {
             "question": "Hva er knoklene i leddflatene kledd med? / Kva er knoklane i leddflatene kledd med? / What are the bones in the joint surfaces covered with?",
             "answers": [
-                " Epitel / Epithelium",
-                " Endotel / Endothelium",
-                " Fibrøst bindevev / Fibrous connective tissue",
-                " Brusk / Cartilage"
+                "Epitel / Epithelium",
+                "Endotel / Endothelium",
+                "Fibrøst bindevev / Fibrous connective tissue",
+                "Brusk / Cartilage"
             ],
             "correct": 3
         },
         {
             "question": "Hva er de viktigste regulatorer for ventilasjonen under basalbetingelser? / Kva er dei viktigaste regulatorane for ventilasjonen ved basalbetingelser? / What is the main regulators of ventilation during basal conditions?",
             "answers": [
-                " CO2 + pH",
-                " CO2 + CO",
-                " O2 + pH",
-                " CO2 + O2"
+                "CO2 + pH",
+                "CO2 + CO",
+                "O2 + pH",
+                "CO2 + O2"
             ],
             "correct": 0
         },
         {
             "question": "Hvordan aktiveres hjertemuskelen til å kontrahere? / Korleis blir hjertemuskelen aktivert til å kontrahere / How is the heart muscel activated to contract?",
             "answers": [
-                " Innstrømmende blod i diastole strekker hjertemuskelcellene, og strekket utløser aksjonspotensialer / Blod som strøymer inn i diastolen strekker hjertemuskelcellene og strekket utløyser et aksjonspotensial / In flowing blood during diastole stretches the heart muscle cells and the stretching triggers an action potential",
-                " Aksjonspotensialene utløses av synaptisk stimulering på motoriske endeplater / aksjonspotensiala blir utløyst av synaptisk stimulering på motoriske endeplater / The action potentials are triggered by synaptic stimulation on the neuromuscular junctions",
-                " Hjertet har egne muskelceller som generer aksjonspotensialer, som deretter brer seg utover hjertemuskelen direkte fra muskelcelle til muskelcelle / Hjertet har egne muskelceller som generer aksjonspotensial, som deretter brer seg utover hjertemuskelen direkte frå muskelcelle til muskelcelle / The heart has specialised muscle cells that generate action potentials, which then propagate in the heart directly from muscle cell to muscle cell",
-                " Adrenalin og noradrenalin fra det sympatiske nervesystem virker på cellemembranen og fører til at kalsium lekker ut av cellen slik at det trigger et aksjonspotensial / Adrenalin og noradrenalin frå det sympatiske nervesystemet verker på cellemembranen og fører til at kalsium lekker ut av cellen slik at det utløyser et aksjonspotensial / Epinephrine and norepinephrine from the sympathetic nerve system interacts with the cell membrane, causing calcium to leak out of the cell and this triggers an action potential."
+                "Innstrømmende blod i diastole strekker hjertemuskelcellene, og strekket utløser aksjonspotensialer / Blod som strøymer inn i diastolen strekker hjertemuskelcellene og strekket utløyser et aksjonspotensial / In flowing blood during diastole stretches the heart muscle cells and the stretching triggers an action potential",
+                "Aksjonspotensialene utløses av synaptisk stimulering på motoriske endeplater / aksjonspotensiala blir utløyst av synaptisk stimulering på motoriske endeplater / The action potentials are triggered by synaptic stimulation on the neuromuscular junctions",
+                "Hjertet har egne muskelceller som generer aksjonspotensialer, som deretter brer seg utover hjertemuskelen direkte fra muskelcelle til muskelcelle / Hjertet har egne muskelceller som generer aksjonspotensial, som deretter brer seg utover hjertemuskelen direkte frå muskelcelle til muskelcelle / The heart has specialised muscle cells that generate action potentials, which then propagate in the heart directly from muscle cell to muscle cell",
+                "Adrenalin og noradrenalin fra det sympatiske nervesystem virker på cellemembranen og fører til at kalsium lekker ut av cellen slik at det trigger et aksjonspotensial / Adrenalin og noradrenalin frå det sympatiske nervesystemet verker på cellemembranen og fører til at kalsium lekker ut av cellen slik at det utløyser et aksjonspotensial / Epinephrine and norepinephrine from the sympathetic nerve system interacts with the cell membrane, causing calcium to leak out of the cell and this triggers an action potential."
             ],
             "correct": 2
         },
         {
             "question": "Hva er peristaltikk / Kva er peristaltikk / What is peristalsis?",
             "answers": [
-                " Rytmiske kontraksjoner i hjertet / Rytmiske kontraksjonar i hjertet / Rythmic contractions of the heart",
-                " Samtidig kontraksjon av antagonistiske muskler / Samtidig kontraksjon av antagonistiske musklar / Simultaneous contraction of antagonistic muskles",
-                " Pulsbølgepropagasjon ved kontraksjon av glatt muskulatur i aorta / Pulse wave propagation by contraction of the smooth muscle in the aorta",
-                " Kontraksjonsbølger i glatt muskulatur i tarmsystemet for å trykke innholdet framover. / Kontraksjonsbølgjer i glatt muskulatur i tarmsystemet for å trykke innhaldet framover. / Contraction waves in the intestinal system to push the contents forwards"
+                "Rytmiske kontraksjoner i hjertet / Rytmiske kontraksjonar i hjertet / Rythmic contractions of the heart",
+                "Samtidig kontraksjon av antagonistiske muskler / Samtidig kontraksjon av antagonistiske musklar / Simultaneous contraction of antagonistic muskles",
+                "Pulsbølgepropagasjon ved kontraksjon av glatt muskulatur i aorta / Pulse wave propagation by contraction of the smooth muscle in the aorta",
+                "Kontraksjonsbølger i glatt muskulatur i tarmsystemet for å trykke innholdet framover. / Kontraksjonsbølgjer i glatt muskulatur i tarmsystemet for å trykke innhaldet framover. / Contraction waves in the intestinal system to push the contents forwards"
             ],
             "correct": 3
         },
         {
             "question": "Omtrent hvor stor andel av vannmengden som skilles ut i glomeruli blir igjen i den ferdige urinen? / Omtrent kor stor del av vassmengda som blir skilt ut glomeruli blir igjen i den ferdige urinen? / About how large part of the water that is excreted in the glomeruli remains as urinein the finished product?",
             "answers": [
-                " Ca 1%",
-                " Ca 10%",
-                " Ca 25%",
-                " Ca 50%"
+                "Ca 1%",
+                "Ca 10%",
+                "Ca 25%",
+                "Ca 50%"
             ],
             "correct": 0
         },
         {
             "question": "Hva gjør natrium-kalium-utvekslingspumpen? Kva gjer natrium-kaliumvekselspumpa. / What is the function of the sodium-potassium pump?",
             "answers": [
-                " Utjevner membranpotensialet gjennom transport av natrium og kalium fra høy til lav konsentrasjon. / Utjamnar membranpotensialet gjennom transport av natrium og kalium frå høg til låg konsentrasjon. / Levelling the membrane potential by transports of sodium and potassium from high to low concentration.",
-                " Bygger opp membranpotensialet gjennom aktiv transport av natrium og kalium fra lav til høy konsentrasjon. / Bygg opp membranpotensialet gjennom aktiv transport av natrium og kalium frå låg til høg konsentrasjon. / Building up the membrane potential, by active transport of Sodium and Potassium from low to high concentration.",
-                " Benytter konsentrasjonsgradienten til natrium og kalium for syntese av ATP. / Nytter konsentrasjonsgradienten til natrium og kalium for syntese av ATP. / Utilises the concentration gradient of sodium and potassium for synthesis of ATP.",
-                " Utjevner konsentrasjonen av natrium og kalium ekstracellulært og intracellulært. / Utjamner konsentrasjonen av natrium og kalium ekstracellulært og intracellulært. / Equalize extracellular and intracellular concentration of Sodium and Potassium."
+                "Utjevner membranpotensialet gjennom transport av natrium og kalium fra høy til lav konsentrasjon. / Utjamnar membranpotensialet gjennom transport av natrium og kalium frå høg til låg konsentrasjon. / Levelling the membrane potential by transports of sodium and potassium from high to low concentration.",
+                "Bygger opp membranpotensialet gjennom aktiv transport av natrium og kalium fra lav til høy konsentrasjon. / Bygg opp membranpotensialet gjennom aktiv transport av natrium og kalium frå låg til høg konsentrasjon. / Building up the membrane potential, by active transport of Sodium and Potassium from low to high concentration.",
+                "Benytter konsentrasjonsgradienten til natrium og kalium for syntese av ATP. / Nytter konsentrasjonsgradienten til natrium og kalium for syntese av ATP. / Utilises the concentration gradient of sodium and potassium for synthesis of ATP.",
+                "Utjevner konsentrasjonen av natrium og kalium ekstracellulært og intracellulært. / Utjamner konsentrasjonen av natrium og kalium ekstracellulært og intracellulært. / Equalize extracellular and intracellular concentration of Sodium and Potassium."
             ],
             "correct": 1
         },
         {
             "question": "Når en celle deler seg i en vanlig mitose, fordobles arvematerialet. Dette kalles: / Når ein celle deler seg I en vanlig mitose, fordobles arvematerialet. Dette blir kalla: / When a cell divides in an ordinary mitosis, doubles the genetic material. This is called:",
             "answers": [
-                " Resepsjon / Reception",
-                " Transkripsjon / Transcription",
-                " Replikasjon / Replication",
-                " Translasjon / Translation"
+                "Resepsjon / Reception",
+                "Transkripsjon / Transcription",
+                "Replikasjon / Replication",
+                "Translasjon / Translation"
             ],
             "correct": 2
         },
         {
             "question": "I en nødssituasjon, blodlegemer fra hvilken blodgruppe i kan gis til alle pasienter uansett mottakers blodgruppe? / I ein naudssituasjon, blodlekam frå kva for blodgruppe AB0 – systemet kan gis till alle pasientar uansett mottakars blodgruppe? / In an emergency, blood cells from what group in the AB0 system can be given to any patient irrespectively of the recipient’s blood goup?",
             "answers": [
-                " A",
-                " B",
-                " AB",
-                " 0"
+                "A",
+                "B",
+                "AB",
+                "0"
             ],
             "correct": 3
         },
         {
             "question": "Hvis et infarkt rammer sinusknuten vil hjertets rytme ikke lenger styres av den normale pacemakeren. Hvilken del av ledningssystemet vil da som regel ta over? / Dersom eit infarkt rammer sinusknuten vil hjertets rytme ikkje lengre bli styrt av den normale pacemakeren. Kva for del av leidningssystemet vil da som regel ta over? / If the sinus node is infarcted, the rythm of the heart will no longer be regulated by the normal pacemaker. What part of the conduction system will take over?",
             "answers": [
-                " Andre deler av atriemuskelfibrene / Other parts of the atrial muscle fibres",
-                " AV – knuten / The AV node",
-                " AV – bunten (His’ bunt) / The AV bundle ( bundle of His)",
-                " Purkinjefibrene / The Purkinje fibres"
+                "Andre deler av atriemuskelfibrene / Other parts of the atrial muscle fibres",
+                "AV – knuten / The AV node",
+                "AV – bunten (His’ bunt) / The AV bundle ( bundle of His)",
+                "Purkinjefibrene / The Purkinje fibres"
             ],
             "correct": 1
         },
         {
             "question": "Hvordan er trykket i pleuralhulen under inspirasjon? /Korleis er trykket i pleuralhulen under inspirasjon? / What is the pressure in the pleural cavity during inspiration?",
             "answers": [
-                " Lavere enn atmosfæretrykket / Lågere enn atmosfæretrykket / Lower than the atmospheric pressure",
-                " Likt atmosfæretrykket / Equal to the atmospheric pressure",
-                " Høyere enn atmosfæretrykket / Høgere enn atmosfæretrykket / Higher than the atmospheric pressure",
-                " Høyere ved start inspirasjon, lavere ved endeinspirasjon / Higher at start inspiration, lower at end inspiration"
+                "Lavere enn atmosfæretrykket / Lågere enn atmosfæretrykket / Lower than the atmospheric pressure",
+                "Likt atmosfæretrykket / Equal to the atmospheric pressure",
+                "Høyere enn atmosfæretrykket / Høgere enn atmosfæretrykket / Higher than the atmospheric pressure",
+                "Høyere ved start inspirasjon, lavere ved endeinspirasjon / Higher at start inspiration, lower at end inspiration"
             ],
             "correct": 0
         },
         {
             "question": "Hvor produseres antidiuretisk hormon? / Kor blir antidiuretisk hormon produsert / Where is antidiuretic hormone produced?",
             "answers": [
-                " Hypofysen / The pituitary",
-                " Parathyroidea / The Parathyroid",
-                " Thyroidea / The thyroid",
-                " Binyrene / The adrenal glands"
+                "Hypofysen / The pituitary",
+                "Parathyroidea / The Parathyroid",
+                "Thyroidea / The thyroid",
+                "Binyrene / The adrenal glands"
             ],
             "correct": 0
         },
         {
             "question": "Ved diabeteskoma kan blodets pH bli nedsatt på grunn av ketondannelse. Hva slags syrebase forstyrrelse er dette? / Ved diabeteskoma kan blodets pH bli nedsett på grunn av ketondannelse. Kva slag syre-base forstyrring er dette? / In a diabetic coma the pH in the blood is decreased due to increased production of ketones. What kind of acid-base disturbance is this?",
             "answers": [
-                " Metabolsk acidose / Metabolic acidosis",
-                " Respiratorisk acidose / Respiratory acidosis",
-                " Metabolsk alkalose / Metabolic alkalosis",
-                " Respiratorisk alkalose / Respiratory alkalosis"
+                "Metabolsk acidose / Metabolic acidosis",
+                "Respiratorisk acidose / Respiratory acidosis",
+                "Metabolsk alkalose / Metabolic alkalosis",
+                "Respiratorisk alkalose / Respiratory alkalosis"
             ],
             "correct": 0
         },
         {
             "question": "Aortaklaffen kan som følge av sykdom bli trang (aortastenose). Dette gir en motstand mot blodstrømmen, og dermed en bilyd. Når i EKG syklus høres denne bilyden? / Aortaklaffen kan som følgje av sjukdom bli trong (aortastenose). Dette gir ein motstand mot blodstraumen, og dermed ein bilyd. Når i EKG syklus høres denne bilyden? / Disease can cause the aortic valve to become narrow (aortic stenosis.) This will give a resistance against the blood stream, and thus, a murmur. When during the ECG cycle will this murmur be heard?",
             "answers": [
-                " I PQ-intervallet / During the PQ interval",
-                " Samtidig med QRS-intervallet / At the same time as the QRS interval",
-                " I QT-intervallet / During the QRS interval",
-                " I T-P-intervallet / During the T-P-interval"
+                "I PQ-intervallet / During the PQ interval",
+                "Samtidig med QRS-intervallet / At the same time as the QRS interval",
+                "I QT-intervallet / During the QRS interval",
+                "I T-P-intervallet / During the T-P-interval"
             ],
             "correct": 2
         },
         {
             "question": "Reabsorbsjon av vann fra ultrafiltratet skjer både i proximale og i distale tubuli og samlerør. Hvilken prosess er hovedansvarlig? / Reabsorbsjon av vann frå ultrafiltratet skjer både i proximale og i distale tubuli og samlerøyr. Kva for prosess er hovudansvarlig? / Re absorbtion of water takes place both in the proximal and distal tubules and collecting ducts. What process is mainly responsible?",
             "answers": [
-                " Aktiv transport / Active transport",
-                " Pinocytose / Pinocytosis",
-                " Osmose / Osmosis",
-                " Filtrasjon / Filtration"
+                "Aktiv transport / Active transport",
+                "Pinocytose / Pinocytosis",
+                "Osmose / Osmosis",
+                "Filtrasjon / Filtration"
             ],
             "correct": 2
         },
         {
             "question": "Hva slags muskelkontraksjon brukes når en senker en vekt langsomt ned mot gulvet? / Kva slag muskelkontraksjon blir brukt når ein senker ein vekt langsomt ned mot golvet? / What kind of muscle contraction is used when an object is lowered slowly to the floor?",
             "answers": [
-                " Isometrisk / Isometric",
-                " Konsentrisk / Concentric",
-                " Eksentrisk / Eccentric",
-                " Antagonistisk / Antagonistic"
+                "Isometrisk / Isometric",
+                "Konsentrisk / Concentric",
+                "Eksentrisk / Eccentric",
+                "Antagonistisk / Antagonistic"
             ],
             "correct": 2
         },
         {
             "question": "Hva er elektrontransportkjeden? / Kva er elektrontransport kjeda? / What is the electron transport chain?",
             "answers": [
-                " Elektroner transporteres over cellemembranen for å bygge opp membranpotensialet / Elektron blir transportert over cellemembranen for å bygge opp membranpotensialet / Electrons are transported across the cell membrane to build up the membrane potential",
-                " Elektroner transporteres langs aksonene fra en Ranviers knute til neste for å lede en nerveimpuls / Elektron blir transportert langs aksonene fra en Ranviers knute til neste for å lede en nerveimpuls / Electrons are transported along the axons from one node of Ranvier to the next to propagete a nerve impulse",
-                " Elektroner transporteres langs indre motochondriemembran for å produsere ATP / Elektron blir transportert langs indre motochondriemembran for å produsere ATP / Electrons are transported along inner mitochondria membrane in order to generate ATP",
-                " Elektroner transporteres langs myofibrillene for å aktivere kontraksjonen ved et aksjonspotensiale / Elektron blir transportert langs myofibrillane for å aktivere kontraksjonen ved et aksjonspotensiale / Electrons are transported along the myofibrils to activate the contraction during an action potential"
+                "Elektroner transporteres over cellemembranen for å bygge opp membranpotensialet / Elektron blir transportert over cellemembranen for å bygge opp membranpotensialet / Electrons are transported across the cell membrane to build up the membrane potential",
+                "Elektroner transporteres langs aksonene fra en Ranviers knute til neste for å lede en nerveimpuls / Elektron blir transportert langs aksonene fra en Ranviers knute til neste for å lede en nerveimpuls / Electrons are transported along the axons from one node of Ranvier to the next to propagete a nerve impulse",
+                "Elektroner transporteres langs indre motochondriemembran for å produsere ATP / Elektron blir transportert langs indre motochondriemembran for å produsere ATP / Electrons are transported along inner mitochondria membrane in order to generate ATP",
+                "Elektroner transporteres langs myofibrillene for å aktivere kontraksjonen ved et aksjonspotensiale / Elektron blir transportert langs myofibrillane for å aktivere kontraksjonen ved et aksjonspotensiale / Electrons are transported along the myofibrils to activate the contraction during an action potential"
             ],
             "correct": 2
         },
         {
             "question": "Hva kalles muskler som beveger et ledd i to motsatte retninger? / Kva kallast musklar som beveger eit ledd i to motsette retningar? / What do you call muscles that move a joint in two opposite directions?",
             "answers": [
-                " Agonister /Agonistar/Agonists",
-                " Antagonister / Antagonistar / Antagonists",
-                " Synergister / Synergistar / Synergists",
-                " Primærmuskler / Primærmusklar / Prime movers"
+                "Agonister /Agonistar/Agonists",
+                "Antagonister / Antagonistar / Antagonists",
+                "Synergister / Synergistar / Synergists",
+                "Primærmuskler / Primærmusklar / Prime movers"
             ],
             "correct": 1
         },
         {
             "question": "Ved et hjerteinfarkt kan det dannes en blodpropp inne i venstre hjertekammer, som så kan løsne og føres med blodstrømmen. Hvor vil den kunne havne? / Ved eit hjerteinfarkt kan det dannes en blodpropp inne i venstre hjertekammer, som så kan lausne og føres med blodstraumen. Kor vil den kunne ende? / In a myocardial infarction, a thrombus may be formed inside the left ventricle. It can detach and follow the bloodstream. Where may it end?",
             "answers": [
-                " Vena cava / Vena cava",
-                " Høyre atrium / Right atrium",
-                " Hjernen / The brain",
-                " Lungene / The lungs"
+                "Vena cava / Vena cava",
+                "Høyre atrium / Right atrium",
+                "Hjernen / The brain",
+                "Lungene / The lungs"
             ],
             "correct": 2
         },
         {
             "question": "Hvilke klaffer er begge åpne under atriekontraksjon? / Kva for klaffar er begge opne under atriekontraksjon? / Which valves are both open during atrial contraction?",
             "answers": [
-                " Bicuspidal- (mitral-) og tricuspidalklaffen / The bicuspid and tricuspid valves",
-                " Bicuspidal- (mitral-) og aortaklaffen / The bicuspid and aortic valves",
-                " Aorta- og pulmonalklaffen / The aortic and pulmonary valves",
-                " Pulmonal- og tricuspidalklaffen / The pulmonary and tricuspid valves"
+                "Bicuspidal- (mitral-) og tricuspidalklaffen / The bicuspid and tricuspid valves",
+                "Bicuspidal- (mitral-) og aortaklaffen / The bicuspid and aortic valves",
+                "Aorta- og pulmonalklaffen / The aortic and pulmonary valves",
+                "Pulmonal- og tricuspidalklaffen / The pulmonary and tricuspid valves"
             ],
             "correct": 0
         },
         {
             "question": "Partialtrykket av oksygen i lufta reduseres med høyden. Hvis partialtrykket er redusert med ca 50 %, hvor mye reduserer dette O2 metningen i blodet? / Partialtrykket av oksygen i lufta blir redusert med høgda. Viss partialtrykket er redusert med ca 50%, kor mykje reduserer dette O2 mettinga i blodet? / The partial pressure of oxygen in the airdecreases with altitude. If the partial pressure is reduced by 50%, how much will this reduce the oxygen saturation of blood?",
             "answers": [
-                " Ca 10%",
-                " Ca 25%",
-                " Ca 50%",
-                " > 50%"
+                "Ca 10%",
+                "Ca 25%",
+                "Ca 50%",
+                "> 50%"
             ],
             "correct": 1
         },
         {
             "question": "Både ved lever- og galleveissykdommer blir avløpet av galle til tarmen hindret. Dette fører til opphopning av et stoff gir gul hudfarge (gulsott). Hvilket stoff? / Både ved lever- og gallevegssjukdomar blir avløpet av galle til tarmen hindra. Dette fører til opphoping av et stoff gir gul hudfarge (gulsott). Kva for stoff? / Both in liver- and bile duct disease is the drainage of bile to the intestine hindered. This leads to accumulation of a substance that gives yellow skin (jaundice). Which substance?",
             "answers": [
-                " Cholesterol",
-                " Cholecystokinin",
-                " Gallesalt / Bile salts",
-                " Bilirubin"
+                "Cholesterol",
+                "Cholecystokinin",
+                "Gallesalt / Bile salts",
+                "Bilirubin"
             ],
             "correct": 3
         },
         {
             "question": "Hva er de viktigste sekretene for nedbryting av karbohydrat i tarmen? / Kva er de viktigaste sekreta for nedbryting av karbohydrat i tarmen? / What are the most important seretions for digestion of carbohydrate in the intestine?",
             "answers": [
-                " Amylase og disakkaridase / Amylase and disaccharidase",
-                " Trypsin og amylase / Trypsin and amylase",
-                " Pepsin og lipase / Pepsin and lipase",
-                " Disakkaridase og insulin / Disaccharidases and insulin"
+                "Amylase og disakkaridase / Amylase and disaccharidase",
+                "Trypsin og amylase / Trypsin and amylase",
+                "Pepsin og lipase / Pepsin and lipase",
+                "Disakkaridase og insulin / Disaccharidases and insulin"
             ],
             "correct": 0
         },
         {
             "question": "Allerede lukten og smaken av mat kan stimulere deler av magesekken til å produsere gastrin. Hva er hovedeffekten av gastrin? / Allereie lukta og smaken av mat kan stimulere deler av magesekken til å produsere gastrin. Kva er hovudeffekten av gastrin? / Already the smell and taste of food can stimulate parts of the stomach to secrete gastrin. What is the function of gastrin?",
             "answers": [
-                " Bryter ned protein / Bryt ned protein / Breaks down protein",
-                " Bryter ned karbohydrat / Bryt ned karbohydrat / Breaks down carbohydrates",
-                " Stimulerer produksjonen av saltsyre / Stimulates the production of hydrochloric acid",
-                " Stimulerer produksjonen av pancreasenzym / Stimulates the production of pancreatic enzymes"
+                "Bryter ned protein / Bryt ned protein / Breaks down protein",
+                "Bryter ned karbohydrat / Bryt ned karbohydrat / Breaks down carbohydrates",
+                "Stimulerer produksjonen av saltsyre / Stimulates the production of hydrochloric acid",
+                "Stimulerer produksjonen av pancreasenzym / Stimulates the production of pancreatic enzymes"
             ],
             "correct": 2
         },
         {
             "question": "Volumet av urin reguleres av antidiuretisk hormon i forhold til behovet for utskillelse av vann. Hvordan skjer denne reguleringen? / Volumet av urin blir regulert i forhold til behovet for utskilling. Korleis skjer denne reguleringa? / In re absorbtion of water, the volume of urine is regulated by anti diuretic hormone in proportion to the need for excretion of water. How is this regulated?",
             "answers": [
-                " ADH regulerer filtreringa i Bownmans kapsel / ADH regulates the filtration in Bowman’s capsule",
-                " ADH regulerer reabsorbsjonen av Na+, og vann følger Na+ ved osmose / ADH regulates the active re absorbtion of NA+, and water follows the NA+ by osmosis.",
-                " ADH reduserer permeabilitenten for vann av distale tubuli og samlerør, og blokkerer derved en del av reabsorbsjonen av vann / ADH reduces the permeability for water of the distal tubuli and collecting ducts, thus blocking part of the reabsorbtion of water.",
-                " ADH reduserer pinocytosen av vann / ADH reduces the pinocytosis of water"
+                "ADH regulerer filtreringa i Bownmans kapsel / ADH regulates the filtration in Bowman’s capsule",
+                "ADH regulerer reabsorbsjonen av Na+, og vann følger Na+ ved osmose / ADH regulates the active re absorbtion of NA+, and water follows the NA+ by osmosis.",
+                "ADH reduserer permeabilitenten for vann av distale tubuli og samlerør, og blokkerer derved en del av reabsorbsjonen av vann / ADH reduces the permeability for water of the distal tubuli and collecting ducts, thus blocking part of the reabsorbtion of water.",
+                "ADH reduserer pinocytosen av vann / ADH reduces the pinocytosis of water"
             ],
             "correct": 2
         },
         {
             "question": "Hvorfor trenger de fleste friske mennesker lesebriller når man blir eldre? / Kvifor treng dei fleste friske menneske lesebriller når en blir eldre? / Why do most healthy people need reading glasses when they get older?",
             "answers": [
-                " Fordi linsen blir uklar med alderen, slik at en trenger forstørrelse av bokstavene / Fordi linsa blir uklar med alderen, slik at en trenger forstørring av bokstavane / Because the lens gets opaque with age, so the letters need to be magnified",
-                " Fordi linsen blir stivere med alderen, slik at den ikke kan øke brytningen ved nærinnstilling / Fordi linsa blir stivare med alderen, slik at den ikkje kan auke brytinga ved nærinnstilling / Because the lens get stiffer with age, so it can no longer increase refraction in accommodation",
-                " Fordi trykket stiger i kamrene, slik at brytningsindeksen i kammervæsken endres / Fordi trykket stiger i kamrane, slik at brytningsindeksen i kammervæsken endrar seg / Because the pressure increases in the chambers, so the refractory index of the aqueous humor changes",
-                " Fordi netthinnen degenererer slik at oppløsningen blir dårligere, og bokstavene må forstørres / Fordi netthinna degenererer slik at oppløysingen blir dårlegare, og bokstavane må forstørrast / Because the retina degenerates, leading to reduced resolution, so the letters have to be magnified."
+                "Fordi linsen blir uklar med alderen, slik at en trenger forstørrelse av bokstavene / Fordi linsa blir uklar med alderen, slik at en trenger forstørring av bokstavane / Because the lens gets opaque with age, so the letters need to be magnified",
+                "Fordi linsen blir stivere med alderen, slik at den ikke kan øke brytningen ved nærinnstilling / Fordi linsa blir stivare med alderen, slik at den ikkje kan auke brytinga ved nærinnstilling / Because the lens get stiffer with age, so it can no longer increase refraction in accommodation",
+                "Fordi trykket stiger i kamrene, slik at brytningsindeksen i kammervæsken endres / Fordi trykket stiger i kamrane, slik at brytningsindeksen i kammervæsken endrar seg / Because the pressure increases in the chambers, so the refractory index of the aqueous humor changes",
+                "Fordi netthinnen degenererer slik at oppløsningen blir dårligere, og bokstavene må forstørres / Fordi netthinna degenererer slik at oppløysingen blir dårlegare, og bokstavane må forstørrast / Because the retina degenerates, leading to reduced resolution, so the letters have to be magnified."
             ],
             "correct": 1
         },
         {
             "question": "Ved en form for thyreotoxicose (høyt stoffskifte) opptrer et antistoff mot TSH reseptorer i skjoldkjertelen som stimulerer reseptorene i stedet for å blokkere eller ødelegge dem. Hva skjer da med nivåene av TSH og thyroxin? / Ved ein form for thyreotoxicose (høgt stoffskifte) opptrer et antistoff mot TSH reseptorar i skjoldkjertelen som stimulerer reseptorane i staden for å blokkere eller øydelegge dei. Kva skjer då med nivåa av TSH og thyroxin? / In one kind of hyperthyroidism, there is present an antibody against TSH receptors that stimulates TSH receptors in the thyroid instead of blocking or destroying them. What happens then to the levels of Thyroxin and TSH?",
             "answers": [
-                " Thyroxin↑, TSH↑",
-                " Thyroxin↑, TSH↓",
-                " Thyroxin↓, TSH↑",
-                " Thyroxin↓, TSH↓"
+                "Thyroxin↑, TSH↑",
+                "Thyroxin↑, TSH↓",
+                "Thyroxin↓, TSH↑",
+                "Thyroxin↓, TSH↓"
             ],
             "correct": 1
         },
         {
             "question": "Krebs syklus er en biokjemisk kjedereaksjon som er grunnlaget for det meste av energiproduksjonen. Hvor i cellen foregår denne prosessen? / Krebs syklus er en biokjemisk kjedereaksjon som er grunnlaget for det meiste av energiproduksjonen. Kor i cellen går denne prosessen føre seg? / Krebs’ cycle is a biochemical process that is the basis for most of the energy production. Where in the cell does this process take place?",
             "answers": [
-                " Cytoplasma / The cytoplasm",
-                " Glatt endoplasmatisk reticulum / Smooth endoplasmatic reticulum",
-                " Golgi apparatet / The Golgi apparatus",
-                " Mitokondriene / The mitochondria"
+                "Cytoplasma / The cytoplasm",
+                "Glatt endoplasmatisk reticulum / Smooth endoplasmatic reticulum",
+                "Golgi apparatet / The Golgi apparatus",
+                "Mitokondriene / The mitochondria"
             ],
             "correct": 3
         },
         {
             "question": "Hemolytisk sykdom hos et foster eller nyfødt skyldes rhesus blodtypesystemet. Hvilken kombinasjon av rhesusblodtyper må foreligge for at denne tilstanden skal oppstå? / Hemolytisk sjukdom hos et foster eller nyfødt skyldes rhesus blodtypesystemet. Kva for ein kombinasjon av rhesusblodtyper må vere til stades for at denne tilstanden skal oppstå? /Haemolytic disease of the newborn is due to the rhesus blood type system. Which combination of blood types has to exist to induce this disease?",
             "answers": [
-                " Både mor og barn er rhesus negative / Both mother and child are rhesus negative",
-                " Mor er rhesus positiv, barnet rhesus negativt / Mother is rhesus positive, child is rhesus negative",
-                " Mor er rhesus negativ, barnet rhesus positivt / Mother is rhesus negative, child is rhesus positive",
-                " Både mor og barn er rhesus positive / Both mother and child are rhesus positive"
+                "Både mor og barn er rhesus negative / Both mother and child are rhesus negative",
+                "Mor er rhesus positiv, barnet rhesus negativt / Mother is rhesus positive, child is rhesus negative",
+                "Mor er rhesus negativ, barnet rhesus positivt / Mother is rhesus negative, child is rhesus positive",
+                "Både mor og barn er rhesus positive / Both mother and child are rhesus positive"
             ],
             "correct": 2
         },
         {
             "question": "Vi har flere typer muskelvev. Hvor finnes glatt muskelvev? / Vi har fleire typar muskelvev. Kor finns glatt muskelvev? / There are several types of muscle tissue. Where is smooth muscle located?",
             "answers": [
-                " Konstriktiv muskulatur i hulorganer / Constrictive muscle in hollow organs",
-                " I hjertet / I hjartet / In the heart",
-                " I ansiktsmuskulatur / I ansiktet sin muskulatur / In facial muscles",
-                " I respirasjonsmusklene / In the respiratory muscles"
+                "Konstriktiv muskulatur i hulorganer / Constrictive muscle in hollow organs",
+                "I hjertet / I hjartet / In the heart",
+                "I ansiktsmuskulatur / I ansiktet sin muskulatur / In facial muscles",
+                "I respirasjonsmusklene / In the respiratory muscles"
             ],
             "correct": 0
         },
         {
             "question": "Hvordan vil en metabolsk acidose vanligvis påvirke respirasjonen? / Korleis vil ein metabolsk acidose vanlegvis påverke respirasjonen? / How will a metabolic acidosis usually affect the respiration?",
             "answers": [
-                " Økt respirasjon / Auka respirasjon /Increased respiration",
-                " Nedsatt respirasjon / Nedsett respirasjon / Decreased respiration",
-                " Upåvirket respirasjon / Upåverka respirasjon / Unaffected respiration",
-                " Respirasjonen vil svinge regelmessig mellom økt og nedsatt respirasjon / Respirasjonen vil svinge regelmessig mellom auka og nedsett respirasjon / The respiration will oscillate regularly between increased and decreased respiration"
+                "Økt respirasjon / Auka respirasjon /Increased respiration",
+                "Nedsatt respirasjon / Nedsett respirasjon / Decreased respiration",
+                "Upåvirket respirasjon / Upåverka respirasjon / Unaffected respiration",
+                "Respirasjonen vil svinge regelmessig mellom økt og nedsatt respirasjon / Respirasjonen vil svinge regelmessig mellom auka og nedsett respirasjon / The respiration will oscillate regularly between increased and decreased respiration"
             ],
             "correct": 0
         },
         {
             "question": "Hva er funksjonen til mellomgulvet / Kva er funksjonen til mellomgolvet? / What is the function of the diaphragmatic muscle?",
             "answers": [
-                " Holde ribbensbuen under tensjon / Halde ribbeinsbogen under tensjon / Keep the costal margin under tension",
-                " Løfte ribbeina så brystkassen utvider seg / Lift the costae, causing the thorax to expand",
-                " Senke golvet i thorax så brysthulen utvider seg / Lower the thoracic floor, causing the thoracic cavity to expand.",
-                " Assistere fordøyelsen ved å øke trykket i bukhulen / Assist the digestion by increasing the abdominal pressure"
+                "Holde ribbensbuen under tensjon / Halde ribbeinsbogen under tensjon / Keep the costal margin under tension",
+                "Løfte ribbeina så brystkassen utvider seg / Lift the costae, causing the thorax to expand",
+                "Senke golvet i thorax så brysthulen utvider seg / Lower the thoracic floor, causing the thoracic cavity to expand.",
+                "Assistere fordøyelsen ved å øke trykket i bukhulen / Assist the digestion by increasing the abdominal pressure"
             ],
             "correct": 2
         },
         {
             "question": "Hvilken gruppe næringsstoff tilhører triglycerider? / Kva for gruppe næringsstoff tilhører triglycerider? / What group of nutritients does triglycerides belong to?",
             "answers": [
-                " Karbohydrat / Carbohydrates",
-                " Fett / Fats",
-                " Protein / Proteins",
-                " Vitaminer / Vitamins"
+                "Karbohydrat / Carbohydrates",
+                "Fett / Fats",
+                "Protein / Proteins",
+                "Vitaminer / Vitamins"
             ],
             "correct": 1
         },
         {
             "question": "Ved kronisk nyresvikt blir pasienten ofte anemisk. Hvorfor? / Ved kronisk nyresvikt blir pasienten ofte anemisk. Kvifor? / In chronic renal insufficiency will the patient often become anaemic. Why?",
             "answers": [
-                " Nyrene produserer mindre erythropoietin / The kidneys produces less erythropoietin",
-                " Nyrene produserer mindre aktivt vitamin D (D3) / The kidneys produce less active vitamin D (D3)",
-                " Det blir et økt jerntap gjennom nyrene / There is an increased loss of iron through the kidneys",
-                " Det blir et økt hemoglobinintap gjennom nyrene / There is an increased loss of hemogolbin through the kidneys"
+                "Nyrene produserer mindre erythropoietin / The kidneys produces less erythropoietin",
+                "Nyrene produserer mindre aktivt vitamin D (D3) / The kidneys produce less active vitamin D (D3)",
+                "Det blir et økt jerntap gjennom nyrene / There is an increased loss of iron through the kidneys",
+                "Det blir et økt hemoglobinintap gjennom nyrene / There is an increased loss of hemogolbin through the kidneys"
             ],
             "correct": 0
         },
         {
             "question": "Diabetes type 2 er en sykdom der den perifere sensitiviteten for insulin er redusert, og den gir dermed forhøyd blodsukker. Hva skjer med insulinnivået ved blodet ved ved starten av en typisk type 2 diabetes? / Diabetes type 2 er en sjukdom der den perifere sensitiviteten for insulin er redusert, og den gir dermed forhøgd blodsukker. Kva skjer med insulinnivået ved blodet ved starten av ein typisk type 2 diabetes? / Diabetes type 2 is a disease where the peripheral sensitivity of insulin is decreased, leading to elevated blood sugar. What happens to the level of insulin in the blood at the start of a typical type 2 diabetes?",
             "answers": [
-                " Øker / Auker / Increases",
-                " Uendret / Uendra / Unchanged",
-                " Avtar / Avtek / Decreases",
-                " Det er lavere under måltider og høyere mellom måltid / Higher during meals and lower between meals"
+                "Øker / Auker / Increases",
+                "Uendret / Uendra / Unchanged",
+                "Avtar / Avtek / Decreases",
+                "Det er lavere under måltider og høyere mellom måltid / Higher during meals and lower between meals"
             ],
             "correct": 0
         },
         {
             "question": "Hva er funksjonen til knoklene i mellomøret? / Kva er funksjonen til knoklane i mellomøret? / What is the function of the bones inthe middle ear?",
             "answers": [
-                " Avstive trommehinna /Support the tympanic membrane",
-                " Holde øretuben (salpinx) åpen så luft kan passere fra nesa til mellomøret / Holde øretuben (salpinx) open så luft kan passere frå nesa til mellomøret / Keep the ear tube (salpinx) open in order for air to be able to pass from the nose to the middle ear",
-                " Formidle mekaniske svingninger fra trommehinna til væsken (endolymfen) i sneglehuset / Formidle mekaniske svingingar frå trommehinna til væsken i sniglehuset / Transmit mechanical oscillations from the tympanic membrane to the fluid (endolymph) in the cochlea.",
-                " Registrere retninga på tyngdekrafta for sansecellene i likevektsorganet / Detect the direction of the gravity for the equilibrium organ"
+                "Avstive trommehinna /Support the tympanic membrane",
+                "Holde øretuben (salpinx) åpen så luft kan passere fra nesa til mellomøret / Holde øretuben (salpinx) open så luft kan passere frå nesa til mellomøret / Keep the ear tube (salpinx) open in order for air to be able to pass from the nose to the middle ear",
+                "Formidle mekaniske svingninger fra trommehinna til væsken (endolymfen) i sneglehuset / Formidle mekaniske svingingar frå trommehinna til væsken i sniglehuset / Transmit mechanical oscillations from the tympanic membrane to the fluid (endolymph) in the cochlea.",
+                "Registrere retninga på tyngdekrafta for sansecellene i likevektsorganet / Detect the direction of the gravity for the equilibrium organ"
             ],
             "correct": 2
         },
         {
             "question": "Hvilke hormonforandringer skjer i puberteten? / Kva for hormonforandringar skjer i puberteten? / What hormonal changes take place in puberty?",
             "answers": [
-                " Østrogen↓, FSH↑ / Estrogen↓, FSH↑",
-                " Østrogen ↓, FSH↓ / Estrogen ↓, FSH↓",
-                " Østrogen ↑, FSH↑ / Estrogen ↑, FSH↑",
-                " Østrogen ↑, FSH↓ / Estrogen ↑, FSH↓"
+                "Østrogen↓, FSH↑ / Estrogen↓, FSH↑",
+                "Østrogen ↓, FSH↓ / Estrogen ↓, FSH↓",
+                "Østrogen ↑, FSH↑ / Estrogen ↑, FSH↑",
+                "Østrogen ↑, FSH↓ / Estrogen ↑, FSH↓"
             ],
             "correct": 2
         },
         {
             "question": "Hva karakteriserer sirkulasjonssjokk? / Kva karakteriserer sirkulasjonssjokk? / What characterises circulatory shock?",
             "answers": [
-                " Nedsatt blodtrykk, men normal sirkulasjon / Nedsett blodtrykk, men normal sirkulasjon / Reduced blood pressure, but normal circulation",
-                " Nedsatt blodtrykk og nedsatt sirkulasjon / Nedsett blodtrykk og nedsett sirkulasjon / Reduced blood pressure and reduced circulation",
-                " Normalt blodtrykk og normal sirkulasjon / Normal blood pressure and normal circulation",
-                " Nedsatt blodtrykk under aktivitet / Nedsett blodtrykk under activity / Reduced blood pressure during activity"
+                "Nedsatt blodtrykk, men normal sirkulasjon / Nedsett blodtrykk, men normal sirkulasjon / Reduced blood pressure, but normal circulation",
+                "Nedsatt blodtrykk og nedsatt sirkulasjon / Nedsett blodtrykk og nedsett sirkulasjon / Reduced blood pressure and reduced circulation",
+                "Normalt blodtrykk og normal sirkulasjon / Normal blood pressure and normal circulation",
+                "Nedsatt blodtrykk under aktivitet / Nedsett blodtrykk under activity / Reduced blood pressure during activity"
             ],
             "correct": 1
         },
         {
             "question": "Ejeksjonsfraksjonen er et mål for systolisk hjertefunksjon. En pasient har en venstre ventrikkel med et endediastolisk volum på 158 ml, endesystolisk volum på 73 ml. Hva er ejeksjonsfraksjonen?/ Ejeksjonsfraksjonen er eit mål for systolisk hjertefunksjon. Ein pasient har en venstre ventrikkel med et endediastolisk volum på 158 ml, endesystolisk volum på 73 ml. Kva er ejeksjonsfraksjonen? / The ejection fraction is a measure of ventricular function. A patient has a left ventricular end diastolic volume of 158 ml, an end systolic volume of 73 ml. What is the ejection fraction?",
             "answers": [
-                " 85%",
-                " 73%",
-                " 54%",
-                " 46%"
+                "85%",
+                "73%",
+                "54%",
+                "46%"
             ],
             "correct": 2
         },
         {
             "question": "Hyperventilering (økt ventilasjon) kan skje som følge av for eksempel smerter eller stress. Hva skjer med blodets pH? / Hyperventilering (auka ventilasjon) kan skje som følgje av for eksempel smerter eller stress. Kva skjer med blodets pH? / Hyperventilation may happen as a result of pain or stress. What happens to the pH in the blood?",
             "answers": [
-                " Øker /Auker / Increases",
-                " Uforandra / Unchanged",
-                " Avtar / Avtek / Decreases",
-                " Det vil bli større svingninger fra inspirasjon til ekspirasjon / Det vil bli større svingingar frå inspirasjon til ekspirasjon /There will be increased oscillations between inspiration and expiration"
+                "Øker /Auker / Increases",
+                "Uforandra / Unchanged",
+                "Avtar / Avtek / Decreases",
+                "Det vil bli større svingninger fra inspirasjon til ekspirasjon / Det vil bli større svingingar frå inspirasjon til ekspirasjon /There will be increased oscillations between inspiration and expiration"
             ],
             "correct": 0
         },
         {
             "question": "Hva er funksjonen til gallesalter i tarmen? / Kva er funksjonen til gallesalt i tarmen? / What is the function of bile salts in the intestine?",
             "answers": [
-                " Bryte ned langkjedet karbohydrat til kortere fragmenter / Bryte ned langkjeda karbohydrat til kortare fragment / Break down long chain carbohydrates to shorter fragments",
-                " Emulgere fett i mindre partikler i vannløsning / Emulgere fett i mindre partiklar i vantløysing / Emusify fats in smaller particles in watery solution",
-                " Bryte ned langkjedet protein til oligopeptider / Bryte ned langkjeda protein til oligopeptid / Break down long chain proteins to oligopeptides",
-                " Nøytralisere magesyre / Neutralise gastric acid"
+                "Bryte ned langkjedet karbohydrat til kortere fragmenter / Bryte ned langkjeda karbohydrat til kortare fragment / Break down long chain carbohydrates to shorter fragments",
+                "Emulgere fett i mindre partikler i vannløsning / Emulgere fett i mindre partiklar i vantløysing / Emusify fats in smaller particles in watery solution",
+                "Bryte ned langkjedet protein til oligopeptider / Bryte ned langkjeda protein til oligopeptid / Break down long chain proteins to oligopeptides",
+                "Nøytralisere magesyre / Neutralise gastric acid"
             ],
             "correct": 1
         },
         {
             "question": "Epidemiologi er studiet av: / Epidemiology is the study of:",
             "answers": [
-                " Det naturlige forløp av sykdom (smittsom og ikke smittsom) / Det naturlige forløpet av sjukdom (smittsam og ikkje smittsam) / The natural course of disease (Infectious and non-infectious)",
-                " Omfattende utbrudd av sykdom / Omfattande utbrot av sjukdom / Extensive outbreak of disease",
-                " Forekomst av sykdom i befolkninger / Førekomst av sjukdom i befolkningar / Occurrence of disease in populations",
-                " Lokal og epidemisk sykdom / Lokal og epidemisk sjukdom / Local and epidemic disease"
+                "Det naturlige forløp av sykdom (smittsom og ikke smittsom) / Det naturlige forløpet av sjukdom (smittsam og ikkje smittsam) / The natural course of disease (Infectious and non-infectious)",
+                "Omfattende utbrudd av sykdom / Omfattande utbrot av sjukdom / Extensive outbreak of disease",
+                "Forekomst av sykdom i befolkninger / Førekomst av sjukdom i befolkningar / Occurrence of disease in populations",
+                "Lokal og epidemisk sykdom / Lokal og epidemisk sjukdom / Local and epidemic disease"
             ],
             "correct": 2
         },
         {
             "question": "Anabole steroider misbrukes av noen kroppsbyggere for å få store muskler. De virker ved å etterligne effekten til et naturlig forekommende hormon, hvilket? / Anabole steroider blir misbrukt av noen kroppsbyggarar for å få store musklar. De verker ved å etterlikne effekten til eit naturlig forekommande hormon, kva for eit? / Anabolic steroids are abused by some bodybuilders in order to acheve bigger muscles. They work by mimicing the effect of a natural hormone, which one?",
             "answers": [
-                " Testosterone / / testosterone",
-                " Veksthormon / Growth hormone",
-                " FSH",
-                " Kortison /Cortisone"
+                "Testosterone / / testosterone",
+                "Veksthormon / Growth hormone",
+                "FSH",
+                "Kortison /Cortisone"
             ],
             "correct": 0
         },
         {
             "question": "Hvilket kammer i hjertet har det høyeste (middel-) trykket? / Kva for kammer i hjertet har det høgaste (middel-) trykket? / What chamber in the heart has the highest (mean) pressure?",
             "answers": [
-                " Høyre atrium / Right atrium",
-                " Høyre ventrikkel / Right ventricle",
-                " Venstre atrium / Left atrium",
-                " Venstre ventrikkel / Left ventricle"
+                "Høyre atrium / Right atrium",
+                "Høyre ventrikkel / Right ventricle",
+                "Venstre atrium / Left atrium",
+                "Venstre ventrikkel / Left ventricle"
             ],
             "correct": 3
         },
         {
             "question": "Hva beskriver best aktiv transport over en cellemembran? / Kva beskriv best aktiv transport over ein cellemembran? / What describes best active transport over a cell membrane?",
             "answers": [
-                " Danner ATP / Dannar ATP / Creates ATP",
-                " Forbruker ATP / Forbrukar ATP / Consumes ATP",
-                " Transport fra høy til lav konsentrasjon / Transport frå høg til låg konsentrasjon / Transport from high to low concentration",
-                " Dannelse av vesikler / Danning av vesiklar / Transport Production of vesicles"
+                "Danner ATP / Dannar ATP / Creates ATP",
+                "Forbruker ATP / Forbrukar ATP / Consumes ATP",
+                "Transport fra høy til lav konsentrasjon / Transport frå høg til låg konsentrasjon / Transport from high to low concentration",
+                "Dannelse av vesikler / Danning av vesiklar / Transport Production of vesicles"
             ],
             "correct": 1
         },
         {
             "question": "Hvilken av disse faktorene kan varieres for å variere dybdeoppløsningen i ultralyd? / Kva for av disse faktorane kan varierast for å variere dybdeoppløysingen i ultralyd? / Which of these factors can be changed to change the depth resolution in ultrasound?",
             "answers": [
-                " Lydstyrken / Sound intensity",
-                " Lydfrekvensen / Sound frequency",
-                " Lydhastigheten / Sound velocity",
-                " Dopplereffekten / The Doppler effect"
+                "Lydstyrken / Sound intensity",
+                "Lydfrekvensen / Sound frequency",
+                "Lydhastigheten / Sound velocity",
+                "Dopplereffekten / The Doppler effect"
             ],
             "correct": 1
         },
         {
             "question": "Kroppsmasseindeks (BMI) er et mål for fedme (egentlig vekt justert for høyde: BMI = V / h2). Hva er den nedre BMI grensen for fedme? / Kroppsmasseindeks (BMI) er eit mål for fedme (eigentlig vekt justert for høgde: BMI = V / h2). Kva er den nedre BMI grensa for fedme? / Body mass index is a measure of obesity (actually it is the weight adjusted for height: BMI = Wt/Ht2). What is the lower BMI limit for obesity?",
             "answers": [
-                " 25 kg/m2",
-                " 30 kg/m2",
-                " 35 kg/m2",
-                " 40 kg/m2"
+                "25 kg/m2",
+                "30 kg/m2",
+                "35 kg/m2",
+                "40 kg/m2"
             ],
             "correct": 1
         },
         {
             "question": "Maksimalt oksygenopptak er et mål på den anaerobe kondisjonen (kalles ofte kondisjonstallet på norsk). Hva begrenser maksimalt oksygenopptak hos friske? / Maksimalt oksygenopptak er et mål på den anaerobe kondisjonen, (blir ofte kalla kondisjonstalet på norsk). Kva begrensar maksimalt oksygenopptak hos friske? / Maximum oxygen uptake is a measure of aerobic fitness. What limits the maximal oxygen uptake in healthy individuals?",
             "answers": [
-                " Hjertets maksimale pumpekapasitet / The maximal pumping capacity of the heart",
-                " Lungenes maksimale ventilasjonskapasitet / The maximal ventilatory capacity of the lungs",
-                " Den maksimale gassdiffusjonskapasiteten i alveolene / The maximal gas diffusion capacity of the alveoli",
-                " Musklenes anaerobe terskel / The anaerobic threshold of the muscles"
+                "Hjertets maksimale pumpekapasitet / The maximal pumping capacity of the heart",
+                "Lungenes maksimale ventilasjonskapasitet / The maximal ventilatory capacity of the lungs",
+                "Den maksimale gassdiffusjonskapasiteten i alveolene / The maximal gas diffusion capacity of the alveoli",
+                "Musklenes anaerobe terskel / The anaerobic threshold of the muscles"
             ],
             "correct": 0
         },
         {
             "question": "Målet på risikoen for å få en sykdom er: / Målet på risikoen for å få ein sjukdom er: / The measure of the risk of acquiring a disease is:",
             "answers": [
-                " Insidens raten / The incidence rate",
-                " Insidens raten multiplisert med sykdommens varighet / Insidens raten multiplisert med sjukdommens varigheit / The incidence rate multiplied by the disease duration",
-                " Prevalensen / The prevalence",
-                " Prevalensen multiplisert med sykdommens varighet Prevalensen multiplisert med sjukdommens varigheit / The prevalence multiplied by the disease duration"
+                "Insidens raten / The incidence rate",
+                "Insidens raten multiplisert med sykdommens varighet / Insidens raten multiplisert med sjukdommens varigheit / The incidence rate multiplied by the disease duration",
+                "Prevalensen / The prevalence",
+                "Prevalensen multiplisert med sykdommens varighet Prevalensen multiplisert med sjukdommens varigheit / The prevalence multiplied by the disease duration"
             ],
             "correct": 0
         },
         {
             "question": "Kreftceller har evnen til å indusere angiogenese. Hva er det? / Kreftceller har evna til å indusere angiogenese. Kva er det? / Cancer cells have the ability to induce angiogenesis. What is that?",
             "answers": [
-                " Evnen til å invadere omkringliggende vev. / Evna til å invadere kringliggande vev / The ability to invade surrounding tissue",
-                " Evnen til å danne nye blodårer til svulsten. / Evna til å danne nye blodårer til svulsten. / The ability to create new blood vessels to the tumour",
-                " Evnen til å etablere kolonier (dattersvulster) andre steder i kroppen. / Evna til å etablere koloniar (dottersvulstar) andre steder i kroppen. / The ability to establish daughter tumours at other sites in the body",
-                " Evnen til å stoppe veksten på en bestemt størrelse. / Evna til å stoppe veksten på ein bestemt størrelse. / The ability to stop the growth at a certain size"
+                "Evnen til å invadere omkringliggende vev. / Evna til å invadere kringliggande vev / The ability to invade surrounding tissue",
+                "Evnen til å danne nye blodårer til svulsten. / Evna til å danne nye blodårer til svulsten. / The ability to create new blood vessels to the tumour",
+                "Evnen til å etablere kolonier (dattersvulster) andre steder i kroppen. / Evna til å etablere koloniar (dottersvulstar) andre steder i kroppen. / The ability to establish daughter tumours at other sites in the body",
+                "Evnen til å stoppe veksten på en bestemt størrelse. / Evna til å stoppe veksten på ein bestemt størrelse. / The ability to stop the growth at a certain size"
             ],
             "correct": 1
         },
         {
             "question": "Bildet viser et ultralydbilde av et hjerte der en enkelt ultralydstråle er brukt til å ta opp ekko som skrives ut langs en tidsakse, slik at vi får et diagram av bevegelsen til strukturer i hjertet. Hva kalles denne ultralydmodaliteten? / Bildet viser eit 2- dimensjonalt ultralydbilde av eit hjerte der ein enkelt ultralydstråle er brukt til å ta opp ekko som skrives ut langs en tidsakse, slik at vi får eit diagram av bevegelsen til strukturer i hjertet. Kva blir denne ultralydmodaliteten kalla? / The picture shows a 2- dimensional ultrasound picture of a heart where a single ultrasound beam is used to record an echo that is printed along a time axis, giving a diagrom of the motion of structures in the heart. What is this ultrasound modality called?",
             "answers": [
-                " A-mode",
-                " B-mode",
-                " M-mode",
-                " Doppler mode"
+                "A-mode",
+                "B-mode",
+                "M-mode",
+                "Doppler mode"
             ],
             "correct": 2,
             "image": "http://i.imgur.com/Cp3mqGF.png"
