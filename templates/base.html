@@ -3,10 +3,31 @@
 <head>
     <title>{% block title %}Memorizer{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
 </head>
 <body>
+<nav class="sidebar">
+    <div class="logo">Memorizer</div>
+    <ul>
+        <li><a href="/"><i class="fa fa-book fa-fw"></i>&nbsp; Emner</a></li>
+        <ul>
+            <li><a href="/"><i class="fa fa-book fa-fw"></i>&nbsp; Emner</a></li>
+            <li><a href="/"><i class="fa fa-book fa-fw"></i>&nbsp; Emner</a></li>
+            <ul>
+                <li><a href="/"><i class="fa fa-book fa-fw"></i>&nbsp; Emner</a></li>
+                <li><a href="/"><i class="fa fa-book fa-fw"></i>&nbsp; Emner</a></li>
+            </ul>
+            <li><a href="/"><i class="fa fa-book fa-fw"></i>&nbsp; Emner</a></li>
+            <li><a href="/"><i class="fa fa-book fa-fw"></i>&nbsp; Emner</a></li>
+        </ul>
+    </ul>
+    <ul>
+        <li><a href="/about">Info</a></li>
+        <li><a href="/about">Kildekode</a></li>
+        <li><a href="/about">Kontakt</a></li>
+    </ul>
+</nav>
 <div class="container">
     <h1>
         Memorizer
@@ -28,8 +49,6 @@
     </ol>
   {% block content %}{% endblock %}
 </div>
-<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 {% if config.GOOGLE_ANALYTICS %}
 <script>

@@ -1,3 +1,126 @@
+body {
+    padding: 0 20px 20px 220px;
+    background-color: #f2f2f2;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: "Helvetica";
+}
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav ul ul {
+    padding-left: 20px;
+}
+
+nav li > a {
+    display: block;
+    position: relative;
+    padding: 7px;
+    background-color: #FFF;
+    color: #000;
+    text-decoration: none;
+    border: 0 solid #E4E4E4;
+    border-width: 0 0 1px 0;
+}
+
+nav li > a:hover {
+    background-color: #FFF;
+}
+
+nav ul ul li a {
+    border-left-width: 1px;
+}
+
+/* Getting pretty hacky here */
+
+/* Match all elements with no prev sibling */
+nav > ul > li:first-child > a, nav ul + li > a {
+    border-top-width: 1px;
+}
+
+/* All indentations */
+nav ul > li:first-child > a {
+    border-bottom-width: 1px;
+}
+
+/* Last element of indentation */
+nav ul ul li:last-child > a {
+    border-bottom-width: 0;
+}
+
+/* Ugly fucking hack */
+nav > ul > ul > li:last-child > a {
+    border-bottom-width: 1px;
+}
+
+
+nav.navbar {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    border: 1px solid transparent;
+    border-width: 0 0 1px;
+    border-color: #000;
+    min-height: 40px;
+    background-color: #f2f2f2;
+    border-color: #d8d8d8;
+}
+
+nav.navbar .logo {
+    font-size: 30px;
+    float: left;
+    padding: 15px 10px 5px 10px;
+}
+
+
+nav.navbar ul {
+    float: left;
+}
+
+nav.navbar li {
+    display: inline-block;
+    font-size: 17px;
+}
+
+nav.navbar li > a {
+    display: block;
+    position: relative;
+    padding: 7px;
+    background-color: #FFF;
+    border-radius: 5px;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid #E4E4E4;
+}
+
+nav.sidebar {
+    z-index: 1001;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    border: 1px solid transparent;
+    border-width: 0 1px 0;
+    border-color: #000;
+    min-height: 40px;
+    background-color: #f2f2f2;
+    border-color: #d8d8d8;
+}
+
+nav.sidebar .logo {
+    font-size: 30px;
+    padding: 10px 10px 0 5px;
+}
+
+nav.sidebar li {
+    font-size: 17px;
+}
 .stats {
     font-size: 16px;
     padding-bottom: 5px;
