@@ -1,10 +1,16 @@
 body {
     padding: 0 20px 20px 220px;
-    background-color: #f2f2f2;
+    background-color: #D8D8D8;
     font-weight: 300;
     font-size: 16px;
     font-family: "Helvetica";
 }
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 nav ul {
     list-style-type: none;
     padding-left: 0;
@@ -18,15 +24,15 @@ nav li > a {
     display: block;
     position: relative;
     padding: 7px;
-    background-color: #FFF;
-    color: #000;
+    background-color: #4A4A4A;
+    color: #D5D5D5;
     text-decoration: none;
-    border: 0 solid #E4E4E4;
+    border: 0 solid #3F3F3F;
     border-width: 0 0 1px 0;
 }
 
 nav li > a:hover {
-    background-color: #FFF;
+    background-color: #616161;
 }
 
 nav ul ul li a {
@@ -45,16 +51,15 @@ nav ul > li:first-child > a {
     border-bottom-width: 1px;
 }
 
+/* Ugly fucking hack */
+nav a:last-child {
+    border-bottom-width: 1px !important;
+}
+
 /* Last element of indentation */
 nav ul ul li:last-child > a {
     border-bottom-width: 0;
 }
-
-/* Ugly fucking hack */
-nav > ul > ul > li:last-child > a {
-    border-bottom-width: 1px;
-}
-
 
 nav.navbar {
     z-index: 1000;
@@ -62,12 +67,11 @@ nav.navbar {
     top: 0;
     right: 0;
     left: 0;
+    min-height: 40px;
     border: 1px solid transparent;
     border-width: 0 0 1px;
-    border-color: #000;
-    min-height: 40px;
-    background-color: #f2f2f2;
     border-color: #d8d8d8;
+    background-color: #f2f2f2;
 }
 
 nav.navbar .logo {
@@ -92,7 +96,7 @@ nav.navbar li > a {
     padding: 7px;
     background-color: #FFF;
     border-radius: 5px;
-    color: #000;
+    color: #D2D2D2;
     text-decoration: none;
     border: 1px solid #E4E4E4;
 }
@@ -104,23 +108,82 @@ nav.sidebar {
     right: 0;
     left: 0;
     height: 100%;
-    width: 200px;
+    width: 160px;
     border: 1px solid transparent;
-    border-width: 0 1px 0;
-    border-color: #000;
-    min-height: 40px;
-    background-color: #f2f2f2;
+    border-width: 0 1px 0 0;
     border-color: #d8d8d8;
+    background-color: #373737;
+    background-image: url(/static/img/footer_lodyas.png);
+    font-family: Roboto, Helvetica;
 }
 
 nav.sidebar .logo {
-    font-size: 30px;
     padding: 10px 10px 0 5px;
 }
 
-nav.sidebar li {
-    font-size: 17px;
+nav.sidebar .logo a {
+    font-size: 30px;
+    color: #A6A6A6;
+    font-weight: bold;
 }
+
+nav.sidebar li {
+    font-size: 15px;
+}
+
+.courses {
+    list-style: none;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    clear: both;
+    max-width: 800px;
+}
+
+.courses li {
+    background: #1D1D1D;
+    background-image: url(/static/img/office.png);
+    display: table-row;
+    position: relative;
+    float: left;
+    padding: 0;
+    margin: 0 5px 5px 0;
+    text-align: center;
+    width: 25%;
+    min-width: 125px;
+    max-width: 200px;
+    border: 3px solid #B3B3B3;
+    height: auto;
+}
+
+.courses li a {
+    padding: 20px 0 70px 0;
+    display: block;
+    text-decoration: none;
+    color: #D8D8D8;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.courses li a:hover span {
+    height: 55%;
+}
+
+.courses li span {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 33%;
+    padding: 10px 0 0 0;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    transition: height 0.2s ease-in-out;
+}
+
+
 .stats {
     font-size: 16px;
     padding-bottom: 5px;

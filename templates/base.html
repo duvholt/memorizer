@@ -5,48 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500,700,400' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <nav class="sidebar">
-    <div class="logo">Memorizer</div>
+    <div class="logo"><a href="/">Memorizer</a></div>
     <ul>
         <li><a href="/"><i class="fa fa-book fa-fw"></i>&nbsp; Emner</a></li>
         <ul>
-            <li><a href="/"><i class="fa fa-book fa-fw"></i>&nbsp; Emner</a></li>
-            <li><a href="/"><i class="fa fa-book fa-fw"></i>&nbsp; Emner</a></li>
+            <li><a href="/"><i class="fa fa-book fa-fw"></i>&nbsp; TIØ4258</a></li>
             <ul>
-                <li><a href="/"><i class="fa fa-book fa-fw"></i>&nbsp; Emner</a></li>
-                <li><a href="/"><i class="fa fa-book fa-fw"></i>&nbsp; Emner</a></li>
+                <li><a href="/"><i class="fa fa-book fa-fw"></i>&nbsp; H09</a></li>
             </ul>
-            <li><a href="/"><i class="fa fa-book fa-fw"></i>&nbsp; Emner</a></li>
-            <li><a href="/"><i class="fa fa-book fa-fw"></i>&nbsp; Emner</a></li>
         </ul>
     </ul>
     <ul>
-        <li><a href="/about">Info</a></li>
-        <li><a href="/about">Kildekode</a></li>
-        <li><a href="/about">Kontakt</a></li>
+        <li><a href="/info"><i class="fa fa-info-circle fa-fw"></i>&nbsp; Info</a></li>
+        <li><a href="https://github.com/cXhristian/memorizer"><i class="fa fa-github fa-fw"></i>&nbsp; Kildekode</a></li>
+        <li><a href="mailto:memorizer@cxhristian.com"><i class="fa fa-envelope-o fa-fw"></i>&nbsp; Kontakt</a></li>
     </ul>
 </nav>
 <div class="container">
-    <h1>
-        Memorizer
-        <a href="#" id="shortkeys" title="Hurtigtaster" data-content="
-            <li>Velg alternativ: 1, 2, 3 or 4</li>
-            <li>Svar: {spacebar}</li>
-            <li>Neste/Forrige spørsmål: Pil høyre/venstre</li>
-	    <li>Tilfeldig spørsmål: Pil opp</li>"
-        role="button"><span class="glyphicon glyphicon-info-sign"></span></a>
-    </h1>
-    <ol class="breadcrumb">
-        {% for breadcrumb in breadcrumbs %}
-            {% if breadcrumb.url %}
-                <li><a href="{{ breadcrumb.url }}">{{ breadcrumb.name }}</a></li>
-            {% else %}
-                <li class="active">{{ breadcrumb.name }}</li>
-            {% endif %}
-        {% endfor %}
-    </ol>
   {% block content %}{% endblock %}
 </div>
 <script src="{{ url_for('static', filename='js/app.js') }}"></script>
