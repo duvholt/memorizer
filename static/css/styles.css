@@ -1,5 +1,6 @@
 body {
-    padding: 0 20px 20px 220px;
+    margin: 58px 20px 20px 175px;
+    padding-left: 20px;
     background-color: #D8D8D8;
     font-weight: 300;
     font-size: 16px;
@@ -23,7 +24,7 @@ nav {
     right: 0;
     left: 0;
     height: 100%;
-    width: 160px;
+    width: 175px;
     border: 1px solid transparent;
     border-width: 0 1px 0 0;
     border-color: #d8d8d8;
@@ -32,12 +33,24 @@ nav {
     font-family: Roboto, Helvetica;
 }
 
+nav.closed {
+    height: 53px;
+    overflow: hidden;
+}
+
 nav .logo {
     padding: 10px 10px 0 5px;
 }
 
-nav .logo a {
+nav .logo i {
     font-size: 30px;
+    padding: 0 6px 0 6px;
+    color: #DFDFDF;
+    cursor: pointer;
+}
+
+nav .logo a {
+    font-size: 25px;
     color: #A6A6A6;
     font-weight: bold;
 }
