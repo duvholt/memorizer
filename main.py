@@ -54,7 +54,7 @@ def exam(course_code, exam_name):
     """Redirects to a random question for a chosen exam"""
     course = models.Course.query.filter_by(code=course_code).first_or_404()
     exam = models.Exam.query.filter_by(course=course, name=exam_name).first_or_404()
-    return redirect(url_for('show_question', course_code=course_code, exam_name=exam.name, id=random_id(exam=exam)))
+    return redirect(url_for('show_question', course_code=course_code, exam_name=exam.name, id=1))
 
 
 @app.route('/<string:course_code>/<string:exam_name>/<int:id>', methods=['GET', 'POST'])
