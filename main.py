@@ -23,7 +23,7 @@ def main():
     return render_template('courses.html', **context)
 
 
-@app.route('/reset/<string:course_code>')
+@app.route('/reset/<string:course_code>/')
 def reset_stats_course(course_code):
     """Reset stats for a course"""
     if 'courses' in session:
@@ -33,7 +33,7 @@ def reset_stats_course(course_code):
     return redirect(url_for('course', course_code=course_code))
 
 
-@app.route('/reset/<string:course_code>/<string:exam_name>')
+@app.route('/reset/<string:course_code>/<string:exam_name>/')
 def reset_stats_exam(course_code, exam_name):
     """Reset stats for a course"""
     if 'exams' in session:
@@ -42,14 +42,14 @@ def reset_stats_exam(course_code, exam_name):
     return redirect(url_for('exam', course_code=course_code, exam_name=exam_name))
 
 
-@app.route('/<string:course_code>')
+@app.route('/<string:course_code>/')
 def course(course_code):
     """Redirects to a random question for a chosen course"""
     course = models.Course.query.filter_by(code=course_code).first_or_404()
     return redirect(url_for('show_question', course_code=course_code, exam_name='all', id=random_id(course=course)))
 
 
-@app.route('/<string:course_code>/<string:exam_name>')
+@app.route('/<string:course_code>/<string:exam_name>/')
 def exam(course_code, exam_name):
     """Redirects to a random question for a chosen exam"""
     course = models.Course.query.filter_by(code=course_code).first_or_404()
