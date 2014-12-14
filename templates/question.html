@@ -4,20 +4,20 @@
 {% block menu %}
 <li><a href="/"><i class="fa fa-list fa-fw"></i>&nbsp; Emner</a></li>
 <ul>
-	<li {% if exam_name == 'all' %}class="active"{% endif %}>
-		<a href="{{ url_for('course', course_code=question.course.code) }}">
-			<i class="fa fa-book fa-fw"></i>&nbsp; {{ course.code }}
-		</a>
-	</li>
-	<ul>
-	{% for exam in course.exams %}
-		<li {% if exam_name == exam.name %}class="active"{% endif %}>
-			<a href="{{ url_for('exam', course_code=question.course.code, exam_name=exam) }}">
-				<i class="fa fa-file-text fa-fw"></i>&nbsp; {{ exam }}
-			</a>
-		</li>
-	{% endfor %}
-	</ul>
+    <li {% if exam_name == 'all' %}class="active"{% endif %}>
+        <a href="{{ url_for('course', course_code=question.course.code) }}">
+            <i class="fa fa-book fa-fw"></i>&nbsp; {{ course.code }}
+        </a>
+    </li>
+    <ul>
+    {% for exam in course.exams %}
+        <li {% if exam_name == exam.name %}class="active"{% endif %}>
+            <a href="{{ url_for('exam', course_code=question.course.code, exam_name=exam) }}">
+                <i class="fa fa-file-text fa-fw"></i>&nbsp; {{ exam }}
+            </a>
+        </li>
+    {% endfor %}
+    </ul>
 </ul>
 {% endblock %}
 
@@ -25,41 +25,41 @@
 <div class="question">
 <h3>Spørsmål #{{ id }}</h3>
 <div class="stats">
-	<span class="combo">Combo: {{ score.combo }}</span>
-	<span class="points">Poeng: {{ score.points }} ({{ percentage(score.points, score.total) }}%)</span>
+    <span class="combo">Combo: {{ score.combo }}</span>
+    <span class="points">Poeng: {{ score.points }} ({{ percentage(score.points, score.total) }}%)</span>
 
-	<span class="progress">Spørsmål: {{ score.total }}/{{ num_questions }}</span>
-	<a href="{{ reset_url }}" class="btn btn-default btn-xs">Nullstill</a>
+    <span class="progress">Spørsmål: {{ score.total }}/{{ num_questions }}</span>
+    <a href="{{ reset_url }}" class="btn btn-default btn-xs">Nullstill</a>
 </div>
 {% if question is defined %}
 {% if question.image %}
 <div class="image">
-	<img src="{{ question.image }}">
+    <img src="{{ question.image }}">
 </div>
 {% endif %}
 <h4>{{ question.text }}</h4>
 <form method="post">
-	<input type="hidden" name="order" value="{{ alternatives|join(',', attribute='number') }}">
-	{% for alternative in alternatives %}
-	{% if (alternative.number)|string() == request.form.answer %}<div class="{% if success %}success{% else %}error{% endif %}">{% endif %}
-		<div class="radio">
-		<label>
-			<input type="radio" name="answer" value="{{ alternative.number }}">
-			{% if success is defined %}
-				<i class="fa {% if alternative.correct %}fa-check{% else %}fa-times{% endif %} fa-fw"></i>
-			{% endif %}
-			{{ alternative }}
-		</label>
-		</div>
-	{% if alternative.number|string() == request.form.answer %}</div>{% endif %}
-	{% endfor %}
-	<button type="submit">Svar</button>
+    <input type="hidden" name="order" value="{{ alternatives|join(',', attribute='number') }}">
+    {% for alternative in alternatives %}
+    {% if (alternative.number)|string() == request.form.answer %}<div class="{% if success %}success{% else %}error{% endif %}">{% endif %}
+        <div class="radio">
+        <label>
+            <input type="radio" name="answer" value="{{ alternative.number }}">
+            {% if success is defined %}
+                <i class="fa {% if alternative.correct %}fa-check{% else %}fa-times{% endif %} fa-fw"></i>
+            {% endif %}
+            {{ alternative }}
+        </label>
+        </div>
+    {% if alternative.number|string() == request.form.answer %}</div>{% endif %}
+    {% endfor %}
+    <button type="submit">Svar</button>
 </form>
 {% endif %}
 <div class="navigation">
-	<a href="{{ url_for('show_question', course_code=question.course.code, exam_name=exam_name, id=prev) }}" id="prev" class="btn btn-default">Forrige</a>
-	<a href="{{ url_for('show_question', course_code=question.course.code, exam_name=exam_name, id=random) }}" id="random" class="btn btn-default">Tilfeldig</a>
-	<a href="{{ url_for('show_question', course_code=question.course.code, exam_name=exam_name, id=next) }}" id="next" class="btn btn-{% if success is defined %}success{% else %}default{% endif %}">Neste</a>
+    <a href="{{ url_for('show_question', course_code=question.course.code, exam_name=exam_name, id=prev) }}" id="prev" class="btn btn-default">Forrige</a>
+    <a href="{{ url_for('show_question', course_code=question.course.code, exam_name=exam_name, id=random) }}" id="random" class="btn btn-default">Tilfeldig</a>
+    <a href="{{ url_for('show_question', course_code=question.course.code, exam_name=exam_name, id=next) }}" id="next" class="btn btn-{% if success is defined %}success{% else %}default{% endif %}">Neste</a>
 </div>
 </div>
 <footer>

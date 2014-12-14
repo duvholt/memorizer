@@ -3,54 +3,54 @@
     "code": "TMM4230",
     "exam": "V11",
     "questions": [
-    	{
+        {
             "question": "[C# and .NET] Which of the following best describes the Common Language Specification (CLS)?",
             "answers": [
-				"A set of features guaranteed to be in most .NET languages to allow interoperability. ",
-				"The specification of a new, common programming language for .NET, like C# and Visual Basic. ",
-				"The set of features common to the C# and Java programming languages ",
-				"A short version of the C# language specification, including only the most common and popular features. "
+                "A set of features guaranteed to be in most .NET languages to allow interoperability. ",
+                "The specification of a new, common programming language for .NET, like C# and Visual Basic. ",
+                "The set of features common to the C# and Java programming languages ",
+                "A short version of the C# language specification, including only the most common and popular features. "
             ],
             "correct": 0
         },
         {
             "question": "[C# and .NET] Which of the following are true about structures in C#",
             "answers": [
-				"Structs are passed by reference and do not allow inheritance.",
-				"Structs are passed by reference, and allow inheritance.",
-				"Structs are passed by value, and do not allow inheritance.",
-				"Structs are passed by value and allow inheritance. "
+                "Structs are passed by reference and do not allow inheritance.",
+                "Structs are passed by reference, and allow inheritance.",
+                "Structs are passed by value, and do not allow inheritance.",
+                "Structs are passed by value and allow inheritance. "
             ],
             "correct": 2
         },
         {
             "question": "[C# and .NET] Which of the following describes the access modifier protected",
             "answers": [
-				"Accessible only within the same class.",
-				"Accessible only within same class and in any derived classes.",
-				"Accessible only within the same class and from derived classes within the same assembly.",
-				"Accessible only within classes in the same assembly.",
-				"Accessible from anywhere."
+                "Accessible only within the same class.",
+                "Accessible only within same class and in any derived classes.",
+                "Accessible only within the same class and from derived classes within the same assembly.",
+                "Accessible only within classes in the same assembly.",
+                "Accessible from anywhere."
             ],
             "correct": 1
         },
         {
             "question": "[C# and .NET] When is the finally block in a C# try-catch loop executed",
             "answers": [
-				"Only if the try block has executed without errors being raised.",
-				"Only if the try block raised an error and a catch block for the error has been executed.",
-				"Only if the try block has raised an error which has not been handled.",
-				"After the try and catch block, no matter if an error was raised or not."
+                "Only if the try block has executed without errors being raised.",
+                "Only if the try block raised an error and a catch block for the error has been executed.",
+                "Only if the try block has raised an error which has not been handled.",
+                "After the try and catch block, no matter if an error was raised or not."
             ],
             "correct": 3
         },
         {
             "question": "[C# and .NET] How do you invoke a destructor in C#?",
             "answers": [
-				"You don't. The .NET runtime automatically calls the destructor of an object when it is garbage collected.",
-				"By using the delete keyword (delete myObj;).",
-				"By setting a variable pointing to the object to null (myObject = null;).",
-				"C# does not have destructors."
+                "You don't. The .NET runtime automatically calls the destructor of an object when it is garbage collected.",
+                "By using the delete keyword (delete myObj;).",
+                "By setting a variable pointing to the object to null (myObject = null;).",
+                "C# does not have destructors."
             ],
             "correct": 0
         },
@@ -58,325 +58,325 @@
             "question": "[C# and .NET] What will the following code print if it is run?",
             "image": "https://i.imgur.com/aeH70wN.png",
             "answers": [
-				"“win”.",
-				"“fail”.",
-				"The answer depends on the architecture of the computer (32 or 64 bit).",
-				"The code does not compile and cannot be run; nothing is printed."
+                "“win”.",
+                "“fail”.",
+                "The answer depends on the architecture of the computer (32 or 64 bit).",
+                "The code does not compile and cannot be run; nothing is printed."
             ],
             "correct": 1
         },
         {
             "question": "[C# and .NET] What is an assembly, and what does it contain? ",
             "answers": [
-				"A Visual Studio project file. It contains the information about the project and how it should be assembled.", 
-				"A file from the Base Class Library (BCL). It contains methods that can be used by others. ",
-				"A collection of source code files in the Assembly language. These are the files that are used by the Common Language Specification. ",
-				"A DLL file that is made from compiling source code. It contains the MSIL code that is run by the Common Language Runtime, metadata about the code and any resources needed. "
+                "A Visual Studio project file. It contains the information about the project and how it should be assembled.", 
+                "A file from the Base Class Library (BCL). It contains methods that can be used by others. ",
+                "A collection of source code files in the Assembly language. These are the files that are used by the Common Language Specification. ",
+                "A DLL file that is made from compiling source code. It contains the MSIL code that is run by the Common Language Runtime, metadata about the code and any resources needed. "
             ],
             "correct": 3
         },
         {
             "question": "[C# and .NET] What is Silverlight?",
             "answers": [
-				"A cross-browser, cross-platform implementation of the .NET Framework for building and delivering rich internet applications.",
-				"A framework for building Windows and Xbox games that can utilize DirectX.",
-				"A plugin for Visual Studio that allows the user to build web sites.",
-				"A toolkit that allows the creation of modern multimedia user interfaces."
+                "A cross-browser, cross-platform implementation of the .NET Framework for building and delivering rich internet applications.",
+                "A framework for building Windows and Xbox games that can utilize DirectX.",
+                "A plugin for Visual Studio that allows the user to build web sites.",
+                "A toolkit that allows the creation of modern multimedia user interfaces."
             ],
             "correct": 0
         },
         {
             "question": "[WCF] A web service is...",
             "answers": [
-				"An application that can communicate with other applications using SIP.",
-				"An application, accessible trough standard internet protocols, designed for machine to machine interaction ",
-				"An application that can run on both Linux servers and Windows desktops.",
-				"A program allowing two or more people to communicate using video and/or audio."
+                "An application that can communicate with other applications using SIP.",
+                "An application, accessible trough standard internet protocols, designed for machine to machine interaction ",
+                "An application that can run on both Linux servers and Windows desktops.",
+                "A program allowing two or more people to communicate using video and/or audio."
             ],
             "correct": 1
         },
         {
             "question": "[WCF] Which of the following best describes what Windows Communication Foundation is? ",
             "answers": [
-				"A programming framework for .NET used to build applications that inter-communicate.[1]",
-				"A set of amongst others, classes, assemblies and tools that enables design, implementation and runtime for communication on the .NET framework.[2]",
-				"An extension to the JIT compiler that enables it to compile web services.[3]",
-				"Microsoft’s primary implementation of the HTTP protocol[4]",
-				"None of these",
-				"1 and 2",
-				"1, 2 and 4",
-				"1, 2, 3 and 4"
+                "A programming framework for .NET used to build applications that inter-communicate.[1]",
+                "A set of amongst others, classes, assemblies and tools that enables design, implementation and runtime for communication on the .NET framework.[2]",
+                "An extension to the JIT compiler that enables it to compile web services.[3]",
+                "Microsoft’s primary implementation of the HTTP protocol[4]",
+                "None of these",
+                "1 and 2",
+                "1, 2 and 4",
+                "1, 2, 3 and 4"
             ],
             "correct": 5
         },
         {
             "question": "[WCF] A WCF service must expose one or more endpoints. An endpoint consists of...",
             "answers": [
-				"Address, Binding and Source Code",
-				"Address, Binding and Contract",
-				"Binding, Network and Interface",
-				"WSDL, UDDI and SOAP"
+                "Address, Binding and Source Code",
+                "Address, Binding and Contract",
+                "Binding, Network and Interface",
+                "WSDL, UDDI and SOAP"
             ],
             "correct": 1
         },
         {
             "question": "[WCF] SOAP is used for...",
             "answers": [
-				"Contract definitions",
-				"Message Exchange",
-				"Service Discovery",
-				"Service Provider Discovery",
-				"Plugin for your shower"
+                "Contract definitions",
+                "Message Exchange",
+                "Service Discovery",
+                "Service Provider Discovery",
+                "Plugin for your shower"
             ],
             "correct": 1
         },
         {
             "question": "[WCF] Choose four (pretend to): When designing service oriented applications, and as a base for WCF, four principles are important. Which?",
             "answers": [
-				"Only the schema, not the classes themselves should be relied upon when interacting with services.",
-				"Services allow us to reuse classes and their behavior across multiple systems.",
-				"Services and clients agree on an interface between them, but are otherwise completely independent.",
-				"Services and their clients are tightly coupled and should be developed together using the same programming languages and operating systems.",
-				"Boundaries between systems are explicit, and the client should actively chose to consume a service.",
-				"The fact that a service is not part of the local system should be hidden in order to avoid confusion and reduce cluttered source code.",
-				" All services should use the same protocols in order to allow every consumer to communicate with it.",
-				"Use policy-based compatibility to automatically determine how a consumer and a service should talk to each other."
+                "Only the schema, not the classes themselves should be relied upon when interacting with services.",
+                "Services allow us to reuse classes and their behavior across multiple systems.",
+                "Services and clients agree on an interface between them, but are otherwise completely independent.",
+                "Services and their clients are tightly coupled and should be developed together using the same programming languages and operating systems.",
+                "Boundaries between systems are explicit, and the client should actively chose to consume a service.",
+                "The fact that a service is not part of the local system should be hidden in order to avoid confusion and reduce cluttered source code.",
+                " All services should use the same protocols in order to allow every consumer to communicate with it.",
+                "Use policy-based compatibility to automatically determine how a consumer and a service should talk to each other."
             ],
             "correct": [0,2,4,7]
         },
         {
             "question": "[Windows Workflow Foundation] In state machine workflows, can states be nested? I.e. can a state contain other states?",
             "answers": [
-				"Yes",
-				"No",
-				"Only if the workflow is not defined to be long-lived",
-				"Only if the workflow is defined using XML"
+                "Yes",
+                "No",
+                "Only if the workflow is not defined to be long-lived",
+                "Only if the workflow is defined using XML"
             ],
             "correct": 0
         },
         {
             "question": "[Windows Workflow Foundation] In state machine workflows, can states be repeated? I.e. can you go from state A to B, then back to A? ",
             "answers": [
-				"Yes",
-				"No",
-				"Only if the workflow is not defined to be long-lived",
-				"Only if the workflow is a console application"
+                "Yes",
+                "No",
+                "Only if the workflow is not defined to be long-lived",
+                "Only if the workflow is a console application"
             ],
             "correct": 0
         },
         {
             "question": "[Windows Workflow Foundation] Which alternative best describes how a workflow is executed?",
             "answers": [
-				"The workflow is compiled as a program that can be run by double clicking on it.",
-				"The workflow is compiled into many smaller programs, one for each activity. All of them are started and they communicate using inter process communication.",
-				"The workflow is run by the WF runtime engine library which can be used in most any application to host a workflow.",
-				"A workflow is run from within Visual Studio only.",
-				"None of these."
+                "The workflow is compiled as a program that can be run by double clicking on it.",
+                "The workflow is compiled into many smaller programs, one for each activity. All of them are started and they communicate using inter process communication.",
+                "The workflow is run by the WF runtime engine library which can be used in most any application to host a workflow.",
+                "A workflow is run from within Visual Studio only.",
+                "None of these."
             ],
             "correct": 2
         },
         {
             "question": "[Windows Workflow Foundation] In addition to be created using the visual designer or a programming language, workflows can also be defined using...",
             "answers": [
-				"The XML based language XAML (eXtensible Application Markup Language).",
-				"Comma Separated Values in a plain text file.",
-				"Windows Presentation Foundation",
-				"None of these"
+                "The XML based language XAML (eXtensible Application Markup Language).",
+                "Comma Separated Values in a plain text file.",
+                "Windows Presentation Foundation",
+                "None of these"
             ],
             "correct": 0
         },
         {
             "question": "[RTC] Real Time Communication is...",
             "answers": [
-				"Asynchronous, same place",
-				"Asynchronous, different place",
-				"Synchronous, same place",
-				"Synchronous, different place"
+                "Asynchronous, same place",
+                "Asynchronous, different place",
+                "Synchronous, same place",
+                "Synchronous, different place"
             ],
             "correct": 3
         },
         {
             "question": "[RTC] SIP is used for...",
             "answers": [
-				"Setup, management and teardown of sessions as well as transferring the actual data.",
-				"Transferring files.",
-				"Transferring live audio and video.",
-				"Setup, management and teardown of sessions.",
-				"None of the above. "
+                "Setup, management and teardown of sessions as well as transferring the actual data.",
+                "Transferring files.",
+                "Transferring live audio and video.",
+                "Setup, management and teardown of sessions.",
+                "None of the above. "
             ],
             "correct": 3
         },
         {
             "question": "[RTC] Which of the following statements are true for RTP?",
             "answers": [
-				"RTP contains information about the real-time session so applications can easily adjust for jitter, improper packet sequencing, and dropped packets.[1]",
-				"Each RTP packet contains one or more media payloads and other relevant information, such as time stamps and sequence numbers.[2]",
-				"RTP replaces UDP in order to avoid latencies caused by packet loss.[3]",
-				"RTP requires the use of UDP as transport protocol.[4]",
-				"1 and 2",
-				"1 and 3",
-				"2 and 3"
+                "RTP contains information about the real-time session so applications can easily adjust for jitter, improper packet sequencing, and dropped packets.[1]",
+                "Each RTP packet contains one or more media payloads and other relevant information, such as time stamps and sequence numbers.[2]",
+                "RTP replaces UDP in order to avoid latencies caused by packet loss.[3]",
+                "RTP requires the use of UDP as transport protocol.[4]",
+                "1 and 2",
+                "1 and 3",
+                "2 and 3"
             ],
             "correct": 4
         },
         {
             "question": "[SemWeb Intro] What is a correct statement about the Semantic Web?",
             "answers": [
-				"The Semantic Web is the formal specification of the semantic layer of the current web",
-				"The Semantic Web is an extension of the current web ",
-				"The Semantic Web is a replacement of the current syntactic web",
-				"The Semantic Web is an application that manages web resources",
-				"The Semantic Web is a tool for building ontologies"
+                "The Semantic Web is the formal specification of the semantic layer of the current web",
+                "The Semantic Web is an extension of the current web ",
+                "The Semantic Web is a replacement of the current syntactic web",
+                "The Semantic Web is an application that manages web resources",
+                "The Semantic Web is a tool for building ontologies"
             ],
             "correct": 1
         },
         {
             "question": "[SemWeb Intro] What is represented at the transport/syntax level of the Semantic Web stack of languages?",
             "answers": [
-				"URIs/Namespaces",
-				"XML/XMLS ",
-				"RDF",
-				"RDFS",
-				"OWL"
+                "URIs/Namespaces",
+                "XML/XMLS ",
+                "RDF",
+                "RDFS",
+                "OWL"
             ],
             "correct": 1
         },
         {
             "question": "[SemWeb Intro] Interoperability is central to the Semantic Web.  What languages support structural interoperability?",
             "answers": [
-				"XML only ",
-				"OWL only ",
-				"RDF only",
-				"XML and RDF",
-				"RDF and OWL "
+                "XML only ",
+                "OWL only ",
+                "RDF only",
+                "XML and RDF",
+                "RDF and OWL "
             ],
             "correct": 4
         },
         {
             "question": "[SemWeb Intro] What is not a full URI reference?",
             "answers": [
-				"http://www.restaurant.org/food#pizza",
-				"http://www.restaurant.org/food",
-				"isbn:1348229#item4",
-				"food-rest#pizza "
+                "http://www.restaurant.org/food#pizza",
+                "http://www.restaurant.org/food",
+                "isbn:1348229#item4",
+                "food-rest#pizza "
             ],
             "correct": 3
         },
         {
             "question": "[SemWeb Intro] What are the four main ontology applicatin scenarios described in Jasper & Uschold: \"A Framework for Understanding and Classifying Ontology Applications\"?",
             "answers": [
-				"Ontology as specification, common access to information, ontology-based search, and neutral authoring ",
-				"Human communication, data access via shared ontology, data access via mapped ontology, and shared services",
-				"Application, task, domain and upper-level models",
-				"Common access to information, shared services, authoring ontologies, and ontology-based search",
-				"Authoring, accessing, sharing, and search"
+                "Ontology as specification, common access to information, ontology-based search, and neutral authoring ",
+                "Human communication, data access via shared ontology, data access via mapped ontology, and shared services",
+                "Application, task, domain and upper-level models",
+                "Common access to information, shared services, authoring ontologies, and ontology-based search",
+                "Authoring, accessing, sharing, and search"
             ],
             "correct": 0
         },
         {
             "question": "[Ontology languages] At which level of the Semantic Web stack do we introduce classes?",
             "answers": [
-				"RDF",
-				"XML",
-				"RDFS ",
-				"OWL"
+                "RDF",
+                "XML",
+                "RDFS ",
+                "OWL"
             ],
             "correct": [0, 2]
         },
         {
             "question": "[Ontology languages] What does RDFS stand for?",
             "answers": [
-				"Resource Description Framework Scheme",
-				"Resource Domain Framework Specification",
-				"Resource Description Foundation Scheme",
-				"Resource Domain Formal Specification"
+                "Resource Description Framework Scheme",
+                "Resource Domain Framework Specification",
+                "Resource Description Foundation Scheme",
+                "Resource Domain Formal Specification"
             ],
             "correct": 0
         },
         {
             "question": "[Ontology languages] What is not possible to define in RDF/RDFS?",
             "answers": [
-				"Only persons can own cars",
-				"A car driver is a subclass of both person and adult",
-				"Peter is a car driver",
-				"Peter does not own cars ",
-				"Peter owns cars"
+                "Only persons can own cars",
+                "A car driver is a subclass of both person and adult",
+                "Peter is a car driver",
+                "Peter does not own cars ",
+                "Peter owns cars"
             ],
             "correct": 3
         },
         {
             "question": "[Ontology languages] Which ontology language is the most expressive?",
             "answers": [
-				"UML class diagrams",
-				"RDFS",
-				"WordNet",
-				"OWL DL ",
-				"OWL Full"
+                "UML class diagrams",
+                "RDFS",
+                "WordNet",
+                "OWL DL ",
+                "OWL Full"
             ],
             "correct": 4
         },
         {
             "question": "[OWL Modelling] X is an individual of class Y, that is not equal to the top-most class Thing.  What is true about X?",
             "answers": [
-				"X is a subclass of Y",
-				"All instances of X are also instances of Y",
-				"X can be an instance of a class Z that is different from and not a superclass of Y ",
-				"X only inherits properties from Y",
-				"X does not need to be an instance of Thing"
+                "X is a subclass of Y",
+                "All instances of X are also instances of Y",
+                "X can be an instance of a class Z that is different from and not a superclass of Y ",
+                "X only inherits properties from Y",
+                "X does not need to be an instance of Thing"
             ],
             "correct": 2
         },
         {
             "question": "[OWL Modelling] X is an individual of class Y, that is not equal to the top-most class Thing.  What is not true about X?",
             "answers": [
-				"X is an instance of Y",
-				"X inherits all properties of Y",
-				"X is an instance of at least one other class than Y.",
-				"X’s subclasses inherits all properties of Y ",
-				" X may be identical to another individual W"
+                "X is an instance of Y",
+                "X inherits all properties of Y",
+                "X is an instance of at least one other class than Y.",
+                "X’s subclasses inherits all properties of Y ",
+                " X may be identical to another individual W"
             ],
             "correct": 3
         },
         {
             "question": "[OWL Modelling] What is not true about classes in OWL DL?",
             "answers": [
-				"Classes may not have any instances",
-				"A class may be the instance of another class",
-				"There is only one class that is not the subclass of any other class",
-				"Classes may be defined as the complement of other classes"
+                "Classes may not have any instances",
+                "A class may be the instance of another class",
+                "There is only one class that is not the subclass of any other class",
+                "Classes may be defined as the complement of other classes"
             ],
             "correct": 1
         },
         {
             "question": "[OWL Modelling] What is a potential relationship between hasBrother and hasSibling?",
             "answers": [
-				"hasBrother is a subclass of hasSibling",
-				"hasBrother is an instance of hasSibling",
-				"hasBrother is a subproperty of hasSibling ",
-				"hasSibling is the range of hasBrother",
-				"hasSibling is the domain of hasBrother"
+                "hasBrother is a subclass of hasSibling",
+                "hasBrother is an instance of hasSibling",
+                "hasBrother is a subproperty of hasSibling ",
+                "hasSibling is the range of hasBrother",
+                "hasSibling is the domain of hasBrother"
             ],
             "correct": 2
         },
         {
             "question": "[OWL Modelling] What is correct about two disjoint classes X and Y?",
             "answers": [
-				"X and Y do not have any common superclasses",
-				"X and Y do not have common properties",
-				"An individual cannot be an intance of both X and Y ",
-				"A class Z can have both X and Y as superclasses",
-				"Disjoint classes have no instances"
+                "X and Y do not have any common superclasses",
+                "X and Y do not have common properties",
+                "An individual cannot be an intance of both X and Y ",
+                "A class Z can have both X and Y as superclasses",
+                "Disjoint classes have no instances"
             ],
             "correct": 2
         },
         {
             "question": "[OWL Modelling] How would you define the object property isFatherOf?",
             "answers": [
-				"Functional and transitive",
-				"Symmetric and functional",
-				"Symmetric and inverse functional",
-				"Transitive and inverse functional ",
-				"Symmetric and transitive"
+                "Functional and transitive",
+                "Symmetric and functional",
+                "Symmetric and inverse functional",
+                "Transitive and inverse functional ",
+                "Symmetric and transitive"
             ],
             "correct": 3
         },
@@ -384,41 +384,41 @@
             "question": "[Abstract OWL Syntax ] What can we infer from these statements?",
             "image": "https://i.imgur.com/UTRyp2F.png",
             "answers": [
-				"All students are intellectuals",
-				"All professors are intellectuals ",
-				"Students do not write papers",
-				"Professors may be students",
-				"John is not a student"
+                "All students are intellectuals",
+                "All professors are intellectuals ",
+                "Students do not write papers",
+                "Professors may be students",
+                "John is not a student"
             ],
             "correct": 1
         },
         {
             "question": "[Ontology Engineering] What is the different between ontology engineering and ontology learning?",
             "answers": [
-				"Ontology engineering is manual ontology building. Ontology learning is automatic ontology building.",
-				"Ontology engineering is the discipline of building ontologies.  Ontology learning is a subdiscipline of ontology engineering",
-				"Ontology learning is the discipline of adapting a ontology engineering methods to concrete modeling tasks",
-				"Ontology learning and ontology engineering are synonomous."
+                "Ontology engineering is manual ontology building. Ontology learning is automatic ontology building.",
+                "Ontology engineering is the discipline of building ontologies.  Ontology learning is a subdiscipline of ontology engineering",
+                "Ontology learning is the discipline of adapting a ontology engineering methods to concrete modeling tasks",
+                "Ontology learning and ontology engineering are synonomous."
             ],
             "correct": 1
         },
         {
             "question": "[Ontology Engineering] What is the purpose of tf.idf scores in ontology learning?",
             "answers": [
-				"Tf.idf scores identify which terms may be candidate concepts in ontologies ",
-				"Tf.idf scores separate terms into classes, individuals and properties",
-				"Tf.idf scores disambiguate related terms",
-				"Tf.idf scores identify hierarhical relationships between concepts"
+                "Tf.idf scores identify which terms may be candidate concepts in ontologies ",
+                "Tf.idf scores separate terms into classes, individuals and properties",
+                "Tf.idf scores disambiguate related terms",
+                "Tf.idf scores identify hierarhical relationships between concepts"
             ],
             "correct": 0
         },
         {
             "question": "[Reasoning] What is an interpretation of an ontology in Description Logic?",
             "answers": [
-				"A population of an ontology with instances of all classes and properties",
-				"A domain of real-world objects",
-				"The common understanding of the stakeholders building the ontology",
-				"A possible world that materializes the ontology "
+                "A population of an ontology with instances of all classes and properties",
+                "A domain of real-world objects",
+                "The common understanding of the stakeholders building the ontology",
+                "A possible world that materializes the ontology "
             ],
             "correct": 3
         }        

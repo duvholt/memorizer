@@ -6,44 +6,44 @@
     {
         "question": "[C# and .NET] What is the purpose of the Common Language Specification?",
         "answers": [
-			"Ensure compliance between different .NET languages.",
-			"Make sure a specific language can be compiled to a common assembly using Visual Studio",
-			"Abstract the language specific implementation details from other users of .NET.",
-			"Compile MSIL code in assemblies to machine code when the code is executed."
+            "Ensure compliance between different .NET languages.",
+            "Make sure a specific language can be compiled to a common assembly using Visual Studio",
+            "Abstract the language specific implementation details from other users of .NET.",
+            "Compile MSIL code in assemblies to machine code when the code is executed."
         ],
         "correct": 0
     },
     {
         "question": "[C# and .NET] What is \"boxing\"?",
         "answers": [
-			"When you have a private variable in a class (a field), that variable is said to be \"boxed\"",
-			"If you call a method with a reference type parameter, that parameter is \"boxed\" before it is sent to the method.",
-			"If you assign a value type to a reference type variable, the value type is said to be \"boxed\" into the reference type.",
-			"Boxing occurs when you use auto-properties in C#."
+            "When you have a private variable in a class (a field), that variable is said to be \"boxed\"",
+            "If you call a method with a reference type parameter, that parameter is \"boxed\" before it is sent to the method.",
+            "If you assign a value type to a reference type variable, the value type is said to be \"boxed\" into the reference type.",
+            "Boxing occurs when you use auto-properties in C#."
         ],
         "correct": 2
     },
     {
         "question": "[C# and .NET] What is an assembly, and what does it contain?",
         "answers": [
-			"A Visual Studio project file. It contains the information about the project and how it should be assembled.",
-			"A file from the Base Class Library (BCL). It contains methods that can be used by others.",
-			"A collection of source code files in the Assembly language. These are the files that are used by the Common Language Specification.",
-			"A DLL file that is made from compiling C# source code. It contains the MSIL code that is run by the Common Language Runtime, metadata about the code and any resources needed"
+            "A Visual Studio project file. It contains the information about the project and how it should be assembled.",
+            "A file from the Base Class Library (BCL). It contains methods that can be used by others.",
+            "A collection of source code files in the Assembly language. These are the files that are used by the Common Language Specification.",
+            "A DLL file that is made from compiling C# source code. It contains the MSIL code that is run by the Common Language Runtime, metadata about the code and any resources needed"
         ],
         "correct": 3
     },
     {
         "question": "[C# and .NET] What services are provided by the CLR (Common Language Runtime), as presented in the syllabus?",
         "answers": [
-			"Managing threads",
-			"C# and VB language JIT compilation",
-			"Documentation ",
-			"Memory management",
-			"Exception handling",
-			"Registry cleanup",
-			"Multicore manager",
-			"Code security"
+            "Managing threads",
+            "C# and VB language JIT compilation",
+            "Documentation ",
+            "Memory management",
+            "Exception handling",
+            "Registry cleanup",
+            "Multicore manager",
+            "Code security"
         ],
         "correct": [0,3,4,7]
     },
@@ -51,95 +51,95 @@
         "question": "[C# and .NET] What will the following code print if it is run?",
         "image": "https://i.imgur.com/WSUbsTD.png",
         "answers": [
-				"\"win\"",
-				"\"fail\"",
-				"The answer depends on the architecture of the computer (32 or 64 bit).",
-				"The code does not compile and cannot be run; nothing is printed."
+                "\"win\"",
+                "\"fail\"",
+                "The answer depends on the architecture of the computer (32 or 64 bit).",
+                "The code does not compile and cannot be run; nothing is printed."
             ],
         "correct": 0
     },
     {
         "question": "[C# and .NET] What is the purpose of a Namespace?",
         "answers": [
-			"To specify what classes should go in what assemblies",
-			"To give a name to your program",
-			"To avoid name collisions",
-			"None of these"
+            "To specify what classes should go in what assemblies",
+            "To give a name to your program",
+            "To avoid name collisions",
+            "None of these"
         ],
         "correct": 2
     },
     {
         "question": "[C# and .NET] What is an event?",
         "answers": [
-			"A special method on Graphical User Interface (GUI) controls",
-			"A way of getting notified of a given happening ",
-			"A branch statement in code. Similar to the switch … case statement",
-			"The only way to know when a class is finished working"
+            "A special method on Graphical User Interface (GUI) controls",
+            "A way of getting notified of a given happening ",
+            "A branch statement in code. Similar to the switch … case statement",
+            "The only way to know when a class is finished working"
         ],
         "correct": 1
     },
     {
         "question": "[C# and .NET] What is the CLR (Common Language Runtime)? ",
         "answers": [
-			"The core of Visual Studio that is common for running all the .NET languages (C#, VB.NET, F#)",
-			"Central component in the Base Class Library (BCL)",
-			"The engine in the .NET Framework for executing applications on any operating system",
-			"None of the above"
+            "The core of Visual Studio that is common for running all the .NET languages (C#, VB.NET, F#)",
+            "Central component in the Base Class Library (BCL)",
+            "The engine in the .NET Framework for executing applications on any operating system",
+            "None of the above"
         ],
         "correct": 2
     },
     {
         "question": "[C# and .NET] What is a Property in a class?",
         "answers": [
-			"A piece of metadata – information about the class that you can specify when writing the class.",
-			"A set of methods that can be used like a class field by clients, but is actually getter and setter methods.",
-			"A property is given in angle brackets \"[]\" above the class name, and gives information about the class.",
-			"A property is a public field in a class. This exposes information to clients of the class."
+            "A piece of metadata – information about the class that you can specify when writing the class.",
+            "A set of methods that can be used like a class field by clients, but is actually getter and setter methods.",
+            "A property is given in angle brackets \"[]\" above the class name, and gives information about the class.",
+            "A property is a public field in a class. This exposes information to clients of the class."
         ],
         "correct": 0
     },
     {
         "question": "[WCF] What is a Web Service?",
         "answers": [
-			"It is a way for companies to expose services to user on the Internet. Facebook is an example of a Web Service.",
-			"It is computer programs for inter-machine communication over a network",
-			"It is a way to get information from a company over the http protocol",
-			"A standard for inter-process communcation in a web server",
-			"It is used to give commands into a web server to alter the behavior of the server"
+            "It is a way for companies to expose services to user on the Internet. Facebook is an example of a Web Service.",
+            "It is computer programs for inter-machine communication over a network",
+            "It is a way to get information from a company over the http protocol",
+            "A standard for inter-process communcation in a web server",
+            "It is used to give commands into a web server to alter the behavior of the server"
         ],
         "correct": 1
     },
     {
         "question": "[WCF] What is the Windows Communcation Foundation?",
         "answers": [
-			"It is a part of the .Net framework that is used for creating Graphical User Interfaces (GUI)",
-			"It is the network part of the .NET framework",
-			"It is a unified plattform for distributed computing using .NET",
-			"It is a class library for Instant Messaging for .NET",
-			"It is the system used by Microsoft to communicate on the Internet"
+            "It is a part of the .Net framework that is used for creating Graphical User Interfaces (GUI)",
+            "It is the network part of the .NET framework",
+            "It is a unified plattform for distributed computing using .NET",
+            "It is a class library for Instant Messaging for .NET",
+            "It is the system used by Microsoft to communicate on the Internet"
         ],
         "correct": 2
     },
     {
         "question": "[WCF] What langage is WSDL (Web Service Description Langauge) based on?",
         "answers": [
-			"SOA",
-			"WCF",
-			"C#",
-			"XML",
-			"SOAP",
-			"None of these"
+            "SOA",
+            "WCF",
+            "C#",
+            "XML",
+            "SOAP",
+            "None of these"
         ],
         "correct": 3
     },
     {
         "question": "[WCF] What option below best describes SOAP (Simple Object Access Protocol)?",
         "answers": [
-			"A protocol for Instant Messaging ",
-			"A wrapper for other messages. It is used to hide the content for others on the network.",
-			"A protocol for sending control messages when objects are exchanged using some other protocol. This is called a out of band protocol.",
-			"A protocol for exchanging information over any medium",
-			"The protocol used for object access in Windows Communication Foundation"
+            "A protocol for Instant Messaging ",
+            "A wrapper for other messages. It is used to hide the content for others on the network.",
+            "A protocol for sending control messages when objects are exchanged using some other protocol. This is called a out of band protocol.",
+            "A protocol for exchanging information over any medium",
+            "The protocol used for object access in Windows Communication Foundation"
         ],
         "correct": 3
     },
@@ -147,227 +147,227 @@
         "question": "[WCF] The text snippet above is taken from a WCF configuration file. What is the name of the .NET interface that defines the custom operations exposed by this web service?",
         "image": "https://i.imgur.com/wrFmrrA.png",
         "answers": [
-			"Service1 [1]",
-			"IMetadataExchange[2]",
-			"IOrdbokService[3]",
-			"wsHttpBinding[4]",
-			"Ordbokservice[5]",
-			"2 and 3",
-			"None of these"
+            "Service1 [1]",
+            "IMetadataExchange[2]",
+            "IOrdbokService[3]",
+            "wsHttpBinding[4]",
+            "Ordbokservice[5]",
+            "2 and 3",
+            "None of these"
         ],
         "correct": 2
     },
     {
         "question": "[Windows Workflow Foundation] In state machine workflows, can states be repeated? I.e. can you go from state A to B, then back to A?",
         "answers": [
-			"Yes",
-			"No",
-			"Only if the workflow is not defined to be long-lived",
-			"Only if the workflow is a console application"
+            "Yes",
+            "No",
+            "Only if the workflow is not defined to be long-lived",
+            "Only if the workflow is a console application"
         ],
         "correct": 0
     },
     {
         "question": "[Windows Workflow Foundation] What is true about Windows Workflow Foundation?",
         "answers": [
-			"Workflows are layed out in a Visual Designer",
-			"The activities you can choose from are limited to the ones that ship with Workflow Foundation",
-			"There are only two types of workflows",
-			"The workflow is not a stand-alone application",
-			"Any workflow can be run by a Runtime Service",
-			"WF is part of .NET 2.0",
-			"The compiled Workflow is executed by the Runtime Engine",
-			"A WF activity is just a normal class"
+            "Workflows are layed out in a Visual Designer",
+            "The activities you can choose from are limited to the ones that ship with Workflow Foundation",
+            "There are only two types of workflows",
+            "The workflow is not a stand-alone application",
+            "Any workflow can be run by a Runtime Service",
+            "WF is part of .NET 2.0",
+            "The compiled Workflow is executed by the Runtime Engine",
+            "A WF activity is just a normal class"
         ],
         "correct": [0, 2, 3, 6, 7]
     },
     {
         "question": "[RTC] Real time communication is:",
         "answers": [
-			"Synchronious, same place",
-			"Asyncronious, same place",
-			"Synchronious, different place",
-			"Asyncronious, different place"
+            "Synchronious, same place",
+            "Asyncronious, same place",
+            "Synchronious, different place",
+            "Asyncronious, different place"
         ],
         "correct": 2
     },
     {
         "question": "[RTC] What functions/services does SIP (Session Initiation Protocol) provide?  (select all that applies)",
         "answers": [
-			"User Interface (displaying call progress to the user)",
-			"Data Transfer (transferring the voice and video data over the network)",
-			"User Capabilities (determines codecs, encryption capabilities etc. of the client devices)",
-			"Voice and video compression (for better utilization of the network)",
-			"Session Management (call transfer, session termination etc.)",
-			"Command line interface (provides command line tools for conversation setup)"
+            "User Interface (displaying call progress to the user)",
+            "Data Transfer (transferring the voice and video data over the network)",
+            "User Capabilities (determines codecs, encryption capabilities etc. of the client devices)",
+            "Voice and video compression (for better utilization of the network)",
+            "Session Management (call transfer, session termination etc.)",
+            "Command line interface (provides command line tools for conversation setup)"
         ],
         "correct": [2, 3]
     },
     {
         "question": "[RTC] What is VoIP?",
         "answers": [
-			"Voice In Person; a system for telepresence",
-			"A system for transmitting volume information about a sound stream, Volume Information Protocol",
-			"Volatile Internet Presence. A protocol for communication over the unstable parts of the Internet",
-			"Voice Over Internet Protocol. A protocol for doing voice communication over the Internet"
+            "Voice In Person; a system for telepresence",
+            "A system for transmitting volume information about a sound stream, Volume Information Protocol",
+            "Volatile Internet Presence. A protocol for communication over the unstable parts of the Internet",
+            "Voice Over Internet Protocol. A protocol for doing voice communication over the Internet"
         ],
         "correct": 3
     },
     {
         "question": "[RTC] What is the responsibility of audio and video codecs?",
         "answers": [
-			"Convert the audio or video data into a form that is transmittable over the network.",
-			"Compress and decompress the audio or video data to make it smaller for storage or network transfer.",
-			"Codecs are only used to compress the audio and video data. Descramblers uncompress it.",
-			"A codec is the SIP (Session Initiation Protocol) endpoint on the machine, taking care of sending and receiving SIP messages.",
-			"None of these."
+            "Convert the audio or video data into a form that is transmittable over the network.",
+            "Compress and decompress the audio or video data to make it smaller for storage or network transfer.",
+            "Codecs are only used to compress the audio and video data. Descramblers uncompress it.",
+            "A codec is the SIP (Session Initiation Protocol) endpoint on the machine, taking care of sending and receiving SIP messages.",
+            "None of these."
         ],
         "correct": 1
     },
     {
         "question": "[SemWeb Intro] What role does XML play in the Semantic Web?",
         "answers": [
-			"Definition of OWL",
-			"Serialization of OWL ontology models ",
-			"Unified format for ontology mapping",
-			"Representation of ontology layout",
-			"Semantic markup language for the Semantic Web"
+            "Definition of OWL",
+            "Serialization of OWL ontology models ",
+            "Unified format for ontology mapping",
+            "Representation of ontology layout",
+            "Semantic markup language for the Semantic Web"
         ],
         "correct": 1
     },
     {
         "question": "[SemWeb Intro] What is an ontology?",
         "answers": [
-			"Description of a language for defining domain models",
-			"Abstract description of commonly accepted phenomena of a domain ",
-			"Set of principles for application interoperability",
-			"Domain experts’ tacit knowledge of the domain"
+            "Description of a language for defining domain models",
+            "Abstract description of commonly accepted phenomena of a domain ",
+            "Set of principles for application interoperability",
+            "Domain experts’ tacit knowledge of the domain"
         ],
         "correct": 1
     },
     {
         "question": "[SemWeb Intro] We often distinguish between top-level ontologies, application ontologies, domain ontologies and task ontologies. Which type of ontology is the most likely to change?",
         "answers": [
-			"Top-level ontologies",
-			"Application ontologies ",
+            "Top-level ontologies",
+            "Application ontologies ",
             "Domain ontologies",
-			"Task ontologies"
+            "Task ontologies"
         ],
         "correct": 1
     },
     {
         "question": "[SemWeb Intro] What does URI stand for?",
         "answers": [
-			"Unique Role Identification",
-			"Uniform Resource Identifiers ",
-			"Unmarked Record Interoperability",
-			"Unified Resource Integration"
+            "Unique Role Identification",
+            "Uniform Resource Identifiers ",
+            "Unmarked Record Interoperability",
+            "Unified Resource Integration"
         ],
         "correct": 1
     },
     {
         "question": "[SemWeb Intro] What is the purpose of namespaces in the Semantic Web?",
         "answers": [
-			"namespaces are shorthand notations for URIrefs",
-			"a namespace identifies a particular resource",
-			"namespaces specify rules for naming resources",
-			"namespaces associated with URIrefs disambiguate duplicate element names."
+            "namespaces are shorthand notations for URIrefs",
+            "a namespace identifies a particular resource",
+            "namespaces specify rules for naming resources",
+            "namespaces associated with URIrefs disambiguate duplicate element names."
         ],
         "correct": 3
     },
     {
         "question": "[Ontology languages] What is a property in RDF?",
         "answers": [
-			"URI reference ",
-			"The type of a resource",
-			"Mapping from RDF resources to OWL classes",
-			"Binary relation between subjects and objects "
+            "URI reference ",
+            "The type of a resource",
+            "Mapping from RDF resources to OWL classes",
+            "Binary relation between subjects and objects "
         ],
         "correct": 3
     },
     {
         "question": "[Ontology languages] What is not supported in RDF or RDFS?",
         "answers": [
-			"Cardinality constraints ",
-			"Classes",
-			"Definition of subclasses",
-			"Definition of range of properties"
+            "Cardinality constraints ",
+            "Classes",
+            "Definition of subclasses",
+            "Definition of range of properties"
         ],
         "correct": 0
     },
     {
         "question": "[Ontology languages] What is the type property used for in RDF?",
         "answers": [
-			"Defining a resource as an instance of a class",
-			"Defining subclass relationships",
-			"Defining a resource as a specialization of another resource",
-			"Defining an alias for a resource",
-			"Defining a label for a resource"
+            "Defining a resource as an instance of a class",
+            "Defining subclass relationships",
+            "Defining a resource as a specialization of another resource",
+            "Defining an alias for a resource",
+            "Defining a label for a resource"
         ],
         "correct": 0
     },
     {
         "question": "[Ontology languages] Which is the most expressive language that retains computational completeness and decidability?",
         "answers": [
-			"XML",
-			"RDF",
-			"RDFS",
-			"OWL DL ",
-			"OWL Full"
+            "XML",
+            "RDF",
+            "RDFS",
+            "OWL DL ",
+            "OWL Full"
         ],
         "correct": 3
     },
     {
         "question": "[OWL Modelling] What is topmost class in OWL",
         "answers": [
-			"Thing ",
-			"Object",
-			"Resource",
-			"Element",
-			"There is no fixed topmost class in OWL"
+            "Thing ",
+            "Object",
+            "Resource",
+            "Element",
+            "There is no fixed topmost class in OWL"
         ],
         "correct": 0
     },
     {
         "question": "[OWL Modelling] What are the most important modeling primitives in OWL",
         "answers": [
-			"Resources, relations and attributes",
-			"Classes, properties and individuals ",
-			"Classes and resources",
-			"Objects, types and properties",
-			" Subjects, objects and properties"
+            "Resources, relations and attributes",
+            "Classes, properties and individuals ",
+            "Classes and resources",
+            "Objects, types and properties",
+            " Subjects, objects and properties"
         ],
         "correct": 1
     },
     {
         "question": "[OWL Modelling] What is not true about classes in OWL?",
         "answers": [
-			"All classes may have instances",
-			"Instances of superclasses are always instances of the class ",
-			"Instances of subclasses are always instances of the class",
-			"OWL classes are subclasses of RDF classes"
+            "All classes may have instances",
+            "Instances of superclasses are always instances of the class ",
+            "Instances of subclasses are always instances of the class",
+            "OWL classes are subclasses of RDF classes"
         ],
         "correct": 1
     },
     {
         "question": "[OWL Modelling] What is the formal interpretation of a class in OWL DL?",
         "answers": [
-			"set of OWL statements describing the class",
-			"set of instances of the class",
-			"set of resources in RDF ",
-			"set of objects in the interpretation domain ",
-			"set of object pairs in the interpretation domain"
+            "set of OWL statements describing the class",
+            "set of instances of the class",
+            "set of resources in RDF ",
+            "set of objects in the interpretation domain ",
+            "set of object pairs in the interpretation domain"
         ],
         "correct": 3
     },
     {
         "question": "[OWL Modelling] What is the formal interpretation of a property in OWL DL?",
         "answers": [
-			"set of objects in the domain",
-			"set of object pairs in the domain ",
-			"set of n-ary object tuples in the domain",
-			"interpretation of domain and range of property",
-			"set of resource tuples in RDF"
+            "set of objects in the domain",
+            "set of object pairs in the domain ",
+            "set of n-ary object tuples in the domain",
+            "interpretation of domain and range of property",
+            "set of resource tuples in RDF"
         ],
         "correct": 1
     },
@@ -375,41 +375,41 @@
         "question": "[Abstract OWL] What can we not infer from these statements",
         "image": "https://i.imgur.com/13Hqtmb.png",
         "answers": [
-			"Students are humans",
-			"All students are smart persons ",
-			"SecretOfSemanticWeb is a book",
-			"Humans do not write more than one book",
-			"All students write a thesis"
+            "Students are humans",
+            "All students are smart persons ",
+            "SecretOfSemanticWeb is a book",
+            "Humans do not write more than one book",
+            "All students write a thesis"
         ],
         "correct": 1
     },
     {
         "question": "[Ontology Engineering] Term t is the most frequent term in document D, but its tf.idf score for document D is equal to 0.  How can that be?",
         "answers": [
-			"Term t does not appear in any other document of the collection",
-			"Term t appears in all other documents of the collection ",
-			"There are no terms in D that are frequent enough to have a tf.idf score above 0.",
-			"There are other documents that have higher frequencies of t than D."
+            "Term t does not appear in any other document of the collection",
+            "Term t appears in all other documents of the collection ",
+            "There are no terms in D that are frequent enough to have a tf.idf score above 0.",
+            "There are other documents that have higher frequencies of t than D."
         ],
         "correct": 1
     },
     {
         "question": "[Ontology Applications] How is the ontology used to rank documents in the Squirrel search application?",
         "answers": [
-			"The ontology boosts documents on topics the user is interested in ",
-			"The ontology is used as a controlled search vocabulary",
-			"The ontology is used to construct semantic indices instead of traditional ones",
-			"The ontology boosts documents that address the most ontology concepts"
+            "The ontology boosts documents on topics the user is interested in ",
+            "The ontology is used as a controlled search vocabulary",
+            "The ontology is used to construct semantic indices instead of traditional ones",
+            "The ontology boosts documents that address the most ontology concepts"
         ],
         "correct": 0
     },
     {
         "question": "[Ontology Applications] What parts of the ontologies are mostly used for information retrieval?",
         "answers": [
-			"Properties and property hierarchies",
-			"Classes and their data properties",
-			"Object properties and data properties",
-			"Classes and class hierarchies"
+            "Properties and property hierarchies",
+            "Classes and their data properties",
+            "Object properties and data properties",
+            "Classes and class hierarchies"
         ],
         "correct": 3
     }
