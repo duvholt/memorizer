@@ -20,7 +20,7 @@ document.addEventListener('keydown', function(e) {
 	
 	// Previous question
 	if (e.keyCode == 37 || e.keyCode == 65) {
-		var prev = document.getElementById('prev_question');
+		var prev = document.getElementById('prev');
 		if (prev !== null) {
 			window.location = prev.href;
 		}
@@ -28,7 +28,7 @@ document.addEventListener('keydown', function(e) {
 	
 	// Next question
 	if (e.keyCode == 39 || e.keyCode == 68) {
-		var next = document.getElementById('next_question');
+		var next = document.getElementById('next');
 		if (next !== null) {
 			window.location = next.href;
 		}
@@ -36,7 +36,7 @@ document.addEventListener('keydown', function(e) {
 	
 	// Random question
 	if (e.keyCode == 38 || e.keyCode == 87) {
-		var random = document.getElementById('random_question');
+		var random = document.getElementById('random');
 		if (random !== null) {
 			window.location = random.href;
 		}

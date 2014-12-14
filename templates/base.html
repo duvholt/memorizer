@@ -11,13 +11,7 @@
 <nav class="sidebar">
     <div class="logo"><a href="/">Memorizer</a></div>
     <ul>
-        <li><a href="/"><i class="fa fa-book fa-fw"></i>&nbsp; Emner</a></li>
-        <ul>
-            <li><a href="/"><i class="fa fa-book fa-fw"></i>&nbsp; TIØ4258</a></li>
-            <ul>
-                <li><a href="/"><i class="fa fa-book fa-fw"></i>&nbsp; H09</a></li>
-            </ul>
-        </ul>
+        {% block menu %}{% endblock %}
     </ul>
     <ul>
         <li><a href="/info"><i class="fa fa-info-circle fa-fw"></i>&nbsp; Info</a></li>
@@ -26,7 +20,13 @@
     </ul>
 </nav>
 <div class="container">
-  {% block content %}{% endblock %}
+{% for alert in alerts %}
+    <div class="alert alert-{{ alert.level }}">
+        <button type="button" class="close">&times;</button>
+        {{ alert.msg }}
+    </div>
+{% endfor %}
+{% block content %}{% endblock %}
 </div>
 <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 {% if config.GOOGLE_ANALYTICS %}

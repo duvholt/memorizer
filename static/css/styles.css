@@ -3,12 +3,47 @@ body {
     background-color: #D8D8D8;
     font-weight: 300;
     font-size: 16px;
-    font-family: "Helvetica";
+    font-family: Helvetica;
 }
 
 a {
     text-decoration: none;
     color: #000;
+}
+
+h1, h2, h3, h4 {
+    font-family: Roboto, Helvetica;
+    color: #353535;
+}
+
+nav {
+    z-index: 1001;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 160px;
+    border: 1px solid transparent;
+    border-width: 0 1px 0 0;
+    border-color: #d8d8d8;
+    background-color: #373737;
+    background-image: url(/static/img/footer_lodyas.png);
+    font-family: Roboto, Helvetica;
+}
+
+nav .logo {
+    padding: 10px 10px 0 5px;
+}
+
+nav .logo a {
+    font-size: 30px;
+    color: #A6A6A6;
+    font-weight: bold;
+}
+
+nav li {
+    font-size: 15px;
 }
 
 nav ul {
@@ -18,6 +53,10 @@ nav ul {
 
 nav ul ul {
     padding-left: 20px;
+}
+
+nav li.active a {
+    background-color: #5E5E5E;
 }
 
 nav li > a {
@@ -32,7 +71,7 @@ nav li > a {
 }
 
 nav li > a:hover {
-    background-color: #616161;
+    background-color: #7C7C7C;
 }
 
 nav ul ul li a {
@@ -59,76 +98,6 @@ nav a:last-child {
 /* Last element of indentation */
 nav ul ul li:last-child > a {
     border-bottom-width: 0;
-}
-
-nav.navbar {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    min-height: 40px;
-    border: 1px solid transparent;
-    border-width: 0 0 1px;
-    border-color: #d8d8d8;
-    background-color: #f2f2f2;
-}
-
-nav.navbar .logo {
-    font-size: 30px;
-    float: left;
-    padding: 15px 10px 5px 10px;
-}
-
-
-nav.navbar ul {
-    float: left;
-}
-
-nav.navbar li {
-    display: inline-block;
-    font-size: 17px;
-}
-
-nav.navbar li > a {
-    display: block;
-    position: relative;
-    padding: 7px;
-    background-color: #FFF;
-    border-radius: 5px;
-    color: #D2D2D2;
-    text-decoration: none;
-    border: 1px solid #E4E4E4;
-}
-
-nav.sidebar {
-    z-index: 1001;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    height: 100%;
-    width: 160px;
-    border: 1px solid transparent;
-    border-width: 0 1px 0 0;
-    border-color: #d8d8d8;
-    background-color: #373737;
-    background-image: url(/static/img/footer_lodyas.png);
-    font-family: Roboto, Helvetica;
-}
-
-nav.sidebar .logo {
-    padding: 10px 10px 0 5px;
-}
-
-nav.sidebar .logo a {
-    font-size: 30px;
-    color: #A6A6A6;
-    font-weight: bold;
-}
-
-nav.sidebar li {
-    font-size: 15px;
 }
 
 .courses {
@@ -183,6 +152,96 @@ nav.sidebar li {
     transition: height 0.2s ease-in-out;
 }
 
+.error label {
+    color: #772B2A;
+    font-weight: bold;
+}
+
+.success label {
+    color: #2D662E;
+    font-weight: bold;
+}
+
+form label {
+    display: inline;
+    cursor: pointer;
+}
+
+form label:hover {
+    color: #3D3D3D;
+}
+
+.question .image {
+    display: inline-block;
+}
+
+.question .image img {
+    border: 1px solid #CACACA;
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+.question .radio {
+    padding-left: 20px;
+    margin: 10px;
+}
+
+.question .radio label {
+    padding: 5px;
+}
+
+.question input[type=radio] {
+    display: block;
+    float: left;
+    margin-left: -20px;
+}
+
+button[type=submit] {
+    padding: 7px 15px;
+    margin: 0;
+    background: #5E5E5E;
+    color: #E4E4E4;
+    font-weight: bold;
+    border: 1px solid #494949;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+button[type=submit]:hover {
+    background: #777777;
+}
+
+.navigation {
+    padding-top: 10px;
+}
+
+.navigation a {
+    float: left;
+    padding: 8px 12px 7px 12px;
+    margin: 0;
+    background: #C3C3C3;
+    color: #5E5E5E;
+    font-weight: bold;
+    border: 1px solid #8C8C8C;
+    border-width: 1px 1px 1px 0;
+}
+
+.navigation a:hover {
+    background: #B0B0B0;
+}
+
+.navigation a:first-of-type {
+    border-left-width: 1px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.navigation a:last-of-type {
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;   
+}
 
 .stats {
     font-size: 16px;
@@ -191,8 +250,4 @@ nav.sidebar li {
 
 .stats .btn-xs {
     padding: 2px 5px;
-}
-
-.popover {
-    max-width: 350px;
 }
