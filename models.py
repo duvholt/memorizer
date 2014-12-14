@@ -9,7 +9,7 @@ class Course(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     code = db.Column(db.String(80), unique=True)
     name = db.Column(db.String(120))
-    exams = db.relationship('Exam', backref='course')
+    exams = db.relationship('Exam', backref='course', order_by='Exam.name')
     questions = association_proxy('exams', 'questions')
 
     def __init__(self, code, name):

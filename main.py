@@ -17,8 +17,7 @@ db.init_app(app)
 @app.route('/')
 def main():
     context = {
-        'courses': sort_courses(models.Course.query.options(db.joinedload('exams')).all()),
-        'breadcrumbs': [{'name': 'Emner'}]
+        'courses': models.Course.query.order_by(models.Course.code).all()
     }
     return render_template('courses.html', **context)
 
@@ -75,11 +74,6 @@ def show_question(course_code, exam_name, id):
         num_questions = models.Question.query.filter_by(exam=exam).count()
         question = models.Question.query.filter_by(exam=exam).order_by(models.Question.id).offset(id - 1).limit(1).first_or_404()
         reset_url = url_for('reset_stats_exam', course_code=course.code, exam_name=exam.name)
-        breadcrumbs = [
-            {'name': 'Emner', 'url': url_for('main')},
-            {'name': course, 'url': url_for('course', course_code=course_code)},
-            {'name': exam}
-        ]
     else:
         if 'courses' not in session:
             session['courses'] = {}
@@ -92,12 +86,9 @@ def show_question(course_code, exam_name, id):
         num_questions = models.Question.query.filter_by(course=course).count()
         question = models.Question.query.filter_by(course=course).offset(id - 1).limit(1).first_or_404()
         reset_url = url_for('reset_stats_course', course_code=course.code)
-        breadcrumbs = [
-            {'name': 'Emner', 'url': url_for('main')},
-            {'name': str(course) + ' - ' + str(question.exam)}
-        ]
     if num_questions == 0:
         abort(404)
+    course.exams.sort(key=sort_exam, reverse=True)
     context = {
         'id': id,
         'alerts': [],
@@ -108,7 +99,6 @@ def show_question(course_code, exam_name, id):
         'course': course,
         'exam_name': exam_name,
         'reset_url': reset_url,
-        'breadcrumbs': breadcrumbs
     }
     context['question'] = question
     # Stupid hack (question.alternatives doesn't sort properly) TODO: Fix
