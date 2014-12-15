@@ -19,6 +19,10 @@ class Course(db.Model):
     def __repr__(self):
         return self.code + ' ' + self.name
 
+    @property
+    def string(self):
+        return self.code
+
 
 class Exam(db.Model):
     __tablename__ = 'exam'
@@ -33,6 +37,10 @@ class Exam(db.Model):
 
     def __repr__(self):
         return self.name
+
+    @property
+    def string(self):
+        return self.course.code + '_' + self.name
 
 
 class Question(db.Model):

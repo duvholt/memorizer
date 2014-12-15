@@ -1,18 +1,22 @@
 {% extends "base.html" %}
-{% block title %}#{{ id }} - {{ course.code }} {{ question.exam.name }}{% endblock %}
+{% block title %}#{{ id }} - {{ question.course.code }} {{ question.exam.name }}{% endblock %}
+
+{% macro navlink(id, name, text) %}
+    <a href="{{ url_for('show_question', course=question.course.code, exam=exam_name, id=id) }}" id="{{ name }}">{{ text }}</a>
+{% endmacro %}
 
 {% block menu %}
 <li><a href="/"><i class="fa fa-list fa-fw"></i>&nbsp; Emner</a></li>
 <ul>
     <li {% if exam_name == 'all' %}class="active"{% endif %}>
-        <a href="{{ url_for('course', course_code=question.course.code) }}">
-            <i class="fa fa-book fa-fw"></i>&nbsp; {{ course.code }}
+        <a href="{{ url_for('course', course=question.course.code) }}">
+            <i class="fa fa-book fa-fw"></i>&nbsp; {{ question.course.code }}
         </a>
     </li>
     <ul>
-    {% for exam in course.exams %}
+    {% for exam in question.course.exams %}
         <li {% if exam_name == exam.name %}class="active"{% endif %}>
-            <a href="{{ url_for('exam', course_code=question.course.code, exam_name=exam) }}">
+            <a href="{{ url_for('exam', course=question.course.code, exam=exam) }}">
                 <i class="fa fa-file-text fa-fw"></i>&nbsp; {{ exam }}
             </a>
         </li>
@@ -57,9 +61,9 @@
 </form>
 {% endif %}
 <div class="navigation">
-    <a href="{{ url_for('show_question', course_code=question.course.code, exam_name=exam_name, id=prev) }}" id="prev" class="btn btn-default">Forrige</a>
-    <a href="{{ url_for('show_question', course_code=question.course.code, exam_name=exam_name, id=random) }}" id="random" class="btn btn-default">Tilfeldig</a>
-    <a href="{{ url_for('show_question', course_code=question.course.code, exam_name=exam_name, id=next) }}" id="next" class="btn btn-{% if success is defined %}success{% else %}default{% endif %}">Neste</a>
+{{ navlink(prev, 'prev', 'Forrige') }}
+{{ navlink(random, 'random', 'Tilfeldig') }}
+{{ navlink(next, 'next', 'Neste') }}
 </div>
 </div>
 <footer>

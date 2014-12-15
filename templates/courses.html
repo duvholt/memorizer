@@ -4,7 +4,7 @@
 <ul>
 {% for course in courses %}
     <li>
-        <a href="{{ url_for('course', course_code=course.code) }}">
+        <a href="{{ url_for('course', course=course.code) }}">
             <i class="fa fa-book fa-fw"></i>&nbsp; {{ course.code }}
         </a>
     </li>
@@ -16,7 +16,7 @@
 <ul class="courses">
 {% for course in courses %}
     <li>
-        <a href="{{ url_for('course', course_code=course.code) }}">
+        <a href="{{ url_for('course', course=course.code) }}">
             {{ course.code }}
             <span>{{ course.name }}</span>
         </a>

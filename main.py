@@ -2,7 +2,6 @@
 from flask import abort, Flask, redirect, render_template, request, session, url_for
 from models import db
 from werkzeug.contrib.fixers import ProxyFix
-import json
 import models
 import os
 import random
@@ -22,70 +21,63 @@ def main():
     return render_template('courses.html', **context)
 
 
-@app.route('/reset/<string:course_code>/')
-def reset_stats_course(course_code):
+@app.route('/reset/<string:course>/')
+def reset_stats_course(course):
     """Reset stats for a course"""
     if 'courses' in session:
-        course = models.Course.query.filter_by(code=course_code).first()
-        if course and str(course_code) in session['courses']:
-            del session['courses'][str(course_code)]
-    return redirect(url_for('course', course_code=course_code))
+        course = models.Course.query.filter_by(code=course).first()
+        if course and course.string in session['courses']:
+            del session['courses'][course.string]
+    return redirect(url_for('course', course=course.code))
 
 
-@app.route('/reset/<string:course_code>/<string:exam_name>/')
-def reset_stats_exam(course_code, exam_name):
+@app.route('/reset/<string:course>/<string:exam>/')
+def reset_stats_exam(course, exam):
     """Reset stats for a course"""
     if 'exams' in session:
-        if exam and course_code + '_' + exam_name in session['exams']:
-            del session['exams'][course_code + '_' + exam_name]
-    return redirect(url_for('exam', course_code=course_code, exam_name=exam_name))
+        if exam and course + '_' + exam in session['exams']:
+            del session['exams'][course + '_' + exam]
+    return redirect(url_for('exam', course=course, exam=exam))
 
 
-@app.route('/<string:course_code>/')
-def course(course_code):
+@app.route('/<string:course>/')
+def course(course):
     """Redirects to a random question for a chosen course"""
-    course = models.Course.query.filter_by(code=course_code).first_or_404()
-    return redirect(url_for('show_question', course_code=course_code, exam_name='all', id=random_id(course=course)))
+    course_m = models.Course.query.filter_by(code=course).first_or_404()
+    return redirect(url_for('show_question', course=course, exam='all', id=random_id(course=course_m)))
 
 
-@app.route('/<string:course_code>/<string:exam_name>/')
-def exam(course_code, exam_name):
-    """Redirects to a random question for a chosen exam"""
-    course = models.Course.query.filter_by(code=course_code).first_or_404()
-    exam = models.Exam.query.filter_by(course=course, name=exam_name).first_or_404()
-    return redirect(url_for('show_question', course_code=course_code, exam_name=exam.name, id=1))
+@app.route('/<string:course>/<string:exam>/')
+def exam(course, exam):
+    """Redirects to the first question for a chosen exam"""
+    course_m = models.Course.query.filter_by(code=course).first_or_404()
+    exam_m = models.Exam.query.filter_by(course=course_m, name=exam).first_or_404()
+    return redirect(url_for('show_question', course=course, exam=exam_m.name, id=1))
 
 
-@app.route('/<string:course_code>/<string:exam_name>/<int:id>', methods=['GET', 'POST'])
-def show_question(course_code, exam_name, id):
+@app.route('/<string:course>/<string:exam>/<int:id>', methods=['GET', 'POST'])
+def show_question(course, exam, id):
     if id == 0:
-        return redirect(url_for('show_question', course_code=course_code, exam_name=exam_name, id=1))
+        return redirect(url_for('show_question', course=course, exam=exam, id=1))
     # Setting default value for session variables
-    course = models.Course.query.filter_by(code=course_code).first_or_404()
+    course = models.Course.query.filter_by(code=course).first_or_404()
+    exam_name = exam
+    exam = None
     if exam_name != 'all':
         exam = models.Exam.query.filter_by(course=course, name=exam_name).first_or_404()
-        if 'exams' not in session:
-            session['exams'] = {}
-        if course_code + '_' + exam_name not in session['exams'].keys():
-            session['exams'][course_code + '_' + exam_name] = {'points': 0, 'total': 0, 'combo': 0, 'answered': []}
         # Shortened variable
-        c_session = session['exams'][course_code + '_' + exam_name]
+        c_session = session_data(session, 'exams', exam)
         # Only question from a specific exam
         num_questions = models.Question.query.filter_by(exam=exam).count()
         question = models.Question.query.filter_by(exam=exam).order_by(models.Question.id).offset(id - 1).limit(1).first_or_404()
-        reset_url = url_for('reset_stats_exam', course_code=course.code, exam_name=exam.name)
+        reset_url = url_for('reset_stats_exam', course=course, exam=exam)
     else:
-        if 'courses' not in session:
-            session['courses'] = {}
-        if course_code not in session['courses'].keys():
-            session['courses'][course_code] = {'points': 0, 'total': 0, 'combo': 0, 'answered': []}
         # Shortened variable
-        c_session = session['courses'][course_code]
+        c_session = session_data(session, 'courses', course)
         # All questions
-        exam = None
         num_questions = models.Question.query.filter_by(course=course).count()
         question = models.Question.query.filter_by(course=course).offset(id - 1).limit(1).first_or_404()
-        reset_url = url_for('reset_stats_course', course_code=course.code)
+        reset_url = url_for('reset_stats_course', course=course)
     if num_questions == 0:
         abort(404)
     course.exams.sort(key=sort_exam, reverse=True)
@@ -96,11 +88,10 @@ def show_question(course_code, exam_name, id):
         'prev': id - 1 if id > 1 else num_questions,
         'next': id + 1 if id < num_questions else 1,
         'num_questions': num_questions,
-        'course': course,
+        'question': question,
         'exam_name': exam_name,
-        'reset_url': reset_url,
+        'reset_url': reset_url
     }
-    context['question'] = question
     # Stupid hack (question.alternatives doesn't sort properly) TODO: Fix
     context['alternatives'] = models.Alternative.query.filter_by(question_id=question.id).order_by('number').all()
     # POST request when answering
@@ -116,12 +107,15 @@ def show_question(course_code, exam_name, id):
                 c_session['points'] += int(context['success'])
                 c_session['total'] += 1
                 c_session['answered'].append(id)
-                if not context['success']:
-                    c_session['combo'] = 0
-                else:
+                if context['success']:
                     c_session['combo'] += 1
+                else:
+                    c_session['combo'] = 0
             elif context['success']:
-                context['alerts'].append({'msg': 'Du har allerede svart på dette spørsmålet så du får ikke noe poeng. :-)', 'level': 'info'})
+                context['alerts'].append({
+                    'msg': 'Du har allerede svart på dette spørsmålet så du får ikke noe poeng. :-)',
+                    'level': 'info'
+                })
         else:
             context['alerts'].append({'msg': 'Blankt svar', 'level': 'danger'})
         # Preserving order on submit
@@ -137,29 +131,30 @@ def show_question(course_code, exam_name, id):
 
 
 def random_id(id=None, course=None, exam=None):
-    """Returns a random id from questions that have not been answered. Returns a complete random number if none available"""
-    rand = id
+    """
+        Returns a random id from questions that have not been answered.
+        Returns a random number if none available
+    """
     if exam:
         num_questions = models.Question.query.filter_by(exam=exam).count()
-        answered = session.get('exams', {}).get(str(exam.id), {}).get('answered', [])
+        answered = session.get('exams', {}).get(exam.string, {}).get('answered', [])
     elif course:
         num_questions = models.Question.query.filter_by(course=course).count()
-        answered = session.get('courses', {}).get(str(course.id), {}).get('answered', [])
-    # All questions have been answered
-    if num_questions == len(answered) or (id not in answered and num_questions == len(answered) + 1):
-        return random.randint(1, num_questions)
-    while rand in answered or rand in [id, None]:
-        rand = random.randint(1, num_questions)
-        print(rand)
-    return rand
+        answered = session.get('courses', {}).get(course.string, {}).get('answered', [])
+    questions = set(range(1, num_questions + 1)) - set(answered) - {id}
+    if questions:
+        return random.choice(list(questions))
+    else:
+        # All questions have been answered
+        return random.randint(1, num_questions + 1)
 
 
-def sort_courses(courses):
-    sorted_courses = []
-    for course in courses:
-        course.exams.sort(key=sort_exam)
-        sorted_courses.append(course)
-    return sorted_courses
+def session_data(session, index, model):
+    if index not in session:
+        session[index] = {}
+    if model.string not in session[index].keys():
+        session[index][model.string] = {'points': 0, 'total': 0, 'combo': 0, 'answered': []}
+    return session[index][model.string]
 
 
 def sort_exam(exam):
