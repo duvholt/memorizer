@@ -70,14 +70,14 @@ def show_question(course, exam, id):
         # Only question from a specific exam
         num_questions = models.Question.query.filter_by(exam=exam).count()
         question = models.Question.query.filter_by(exam=exam).order_by(models.Question.id).offset(id - 1).limit(1).first_or_404()
-        reset_url = url_for('reset_stats_exam', course=course, exam=exam)
+        reset_url = url_for('reset_stats_exam', course=course.code, exam=exam.name)
     else:
         # Shortened variable
         c_session = session_data(session, 'courses', course)
         # All questions
         num_questions = models.Question.query.filter_by(course=course).count()
         question = models.Question.query.filter_by(course=course).offset(id - 1).limit(1).first_or_404()
-        reset_url = url_for('reset_stats_course', course=course)
+        reset_url = url_for('reset_stats_course', course=course.code)
     if num_questions == 0:
         abort(404)
     course.exams.sort(key=sort_exam, reverse=True)
