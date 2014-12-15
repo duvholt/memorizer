@@ -28,13 +28,6 @@
 {% block content %}
 <div class="question">
 <h3>Spørsmål #{{ id }}</h3>
-<div class="stats">
-    <span class="combo">Combo: {{ score.combo }}</span>
-    <span class="points">Poeng: {{ score.points }} ({{ percentage(score.points, score.total) }}%)</span>
-
-    <span class="progress">Spørsmål: {{ score.total }}/{{ num_questions }}</span>
-    <a href="{{ reset_url }}" class="btn btn-default btn-xs">Nullstill</a>
-</div>
 {% if question is defined %}
 {% if question.image %}
 <div class="image">
@@ -66,6 +59,11 @@
 {{ navlink(next, 'next', 'Neste') }}
 </div>
 </div>
-<footer>
-</footer>
+<div class="stats">
+    <div class="grade">{{ grade(score.points, score.total ) }}</div>
+    <div class="points">Poeng: {{ score.points }}/{{ score.total }} ({{ percentage(score.points, score.total) }}%)</div>
+    <div class="combo">Combo: {{ score.combo }}</div>
+    <div class="progress">Spørsmål: {{ score.total }}/{{ num_questions }}</div>
+    <div><a href="{{ reset_url }}" class="reset">Nullstill</a></div>
+</div>
 {% endblock %}

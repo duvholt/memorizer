@@ -21,8 +21,7 @@
 </nav>
 <div class="container">
 {% for alert in alerts %}
-    <div class="alert alert-{{ alert.level }}">
-        <button type="button" class="close">&times;</button>
+    <div class="alert {{ alert.level }}">
         {{ alert.msg }}
     </div>
 {% endfor %}

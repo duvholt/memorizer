@@ -184,6 +184,14 @@ form label:hover {
     color: #3D3D3D;
 }
 
+.question {
+    max-width: 800px;
+    display: inline-block;
+    float: left;
+    margin: 0 20px 20px 0;
+    clear: both;
+}
+
 .question .image {
     display: inline-block;
 }
@@ -213,7 +221,7 @@ form label:hover {
 button[type=submit] {
     padding: 7px 15px;
     margin: 0;
-    background: #5E5E5E;
+    background: #333333;
     color: #E4E4E4;
     font-weight: bold;
     border: 1px solid #494949;
@@ -223,7 +231,7 @@ button[type=submit] {
 }
 
 button[type=submit]:hover {
-    background: #777777;
+    background: #555555;
 }
 
 .navigation {
@@ -257,10 +265,46 @@ button[type=submit]:hover {
 }
 
 .stats {
-    font-size: 16px;
-    padding-bottom: 5px;
+    float: left;
+    padding: 20px;
+    background: #BDBCBC;
+    border: 1px solid #B3B3B3;
+    margin: 25px 0 0 0;
+    color: #2A2A2A;
+    font-family: Roboto;
 }
 
-.stats .btn-xs {
-    padding: 2px 5px;
+.stats .grade {
+    font-family: Helvetica;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #474747;
+}
+
+.stats .reset {
+    margin-top: 10px;
+    color: #474747;
+}
+
+.alert {
+    display: inline-block;
+    background: #BDBCBC;
+    color: #2A2A2A;
+    border: 1px solid #B3B3B3;
+    border-radius: 3px;
+    padding: 10px;
+    float: left;
+}
+
+.alert.info {}
+
+.alert.error {
+    color: #772B2A;
+    background: #CAB9B9;
+}
+
+.alert.success {
+    color: #2D662E;
+    background: #B1C0B2;
 }

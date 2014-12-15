@@ -173,7 +173,25 @@ def utility_processor():
         if total > 0:
             return round((num * 100) / total, 2)
         return 0
-    return dict(percentage=percentage)
+
+    def grade(num, total):
+        p = percentage(num, total)
+        if total == 0:
+            return '-'
+        if p < 41:
+            return 'F'
+        elif p < 53:
+            return 'E'
+        elif p < 65:
+            return 'D'
+        elif p < 77:
+            return 'C'
+        elif p < 89:
+            return 'B'
+        else:
+            return 'A'
+
+    return dict(percentage=percentage, grade=grade)
 
 
 @app.context_processor
