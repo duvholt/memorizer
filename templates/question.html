@@ -65,6 +65,6 @@
     <div class="points">Poeng: {{ score.points }}/{{ score.total }} ({{ percentage(score.points, score.total) }}%)</div>
     <div class="combo">Combo: {{ score.combo }}</div>
     <div class="progress">Spørsmål: {{ score.total }}/{{ num_questions }}</div>
-    <div><a href="{{ reset_url }}" class="reset">Nullstill</a></div>
+    <div class="reset"><a href="{{ reset_url }}">Nullstill</a></div>
 </div>
 {% endblock %}

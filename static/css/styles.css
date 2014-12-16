@@ -284,6 +284,9 @@ button[type=submit]:hover {
 
 .stats .reset {
     margin-top: 10px;
+}
+
+.stats .reset a {
     color: #474747;
 }
 
