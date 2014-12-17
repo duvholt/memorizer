@@ -11,10 +11,21 @@
 <nav class="sidebar">
     <div class="logo"><i class="fa fa-times"></i><a href="/">Memorizer</a></div>
     <ul>
-        {% block menu %}{% endblock %}
+    {% block menu %}
+        <li class="active"><a href="/"><i class="fa fa-list fa-fw"></i>&nbsp; Emner</a></li>
+        <ul>
+        {% for course in courses %}
+            <li>
+                <a href="{{ url_for('course', course=course.code) }}">
+                    <i class="fa fa-book fa-fw"></i>&nbsp; {{ course.code }}
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+    {% endblock %}
     </ul>
     <ul>
-        <li><a href="/info"><i class="fa fa-info-circle fa-fw"></i>&nbsp; Info</a></li>
+        <li><a href="/tips"><i class="fa fa-info-circle fa-fw"></i>&nbsp; Tips</a></li>
         <li><a href="https://github.com/cXhristian/memorizer"><i class="fa fa-github fa-fw"></i>&nbsp; Kildekode</a></li>
         <li><a href="mailto:memorizer@cxhristian.com"><i class="fa fa-envelope fa-fw"></i>&nbsp; Kontakt</a></li>
     </ul>

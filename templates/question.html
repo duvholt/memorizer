@@ -37,8 +37,8 @@
 {% endif %}
 <h4>{{ question.text }}</h4>
 <form method="post">
-    <input type="hidden" name="order" value="{{ alternatives|join(',', attribute='number') }}">
-    {% for alternative in alternatives %}
+    <input type="hidden" name="order" value="{{ question.alternatives|join(',', attribute='number') }}">
+    {% for alternative in question.alternatives %}
     {% if (alternative.number)|string() == request.form.answer %}<div class="{% if success %}success{% else %}error{% endif %}">{% endif %}
         <div class="radio">
         <label>
@@ -63,7 +63,7 @@
 <div class="stats">
     <div class="grade">{{ grade(score.points, score.total ) }}</div>
     <div class="points">Poeng: {{ score.points }}/{{ score.total }} ({{ percentage(score.points, score.total) }}%)</div>
-    <div class="combo">Combo: {{ score.combo }}{% for _ in range(score.points // 10) %}<i class="fa fa-trophy"></i>{% endfor %}</div>
+    <div class="combo">Combo: {{ score.combo }}{% for _ in range(score.combo // 10) %}<i class="fa fa-trophy"></i>{% endfor %}</div>
     <div class="progress">Spørsmål: {{ score.total }}/{{ num_questions }}</div>
     <div class="reset"><a href="{{ reset_url }}">Nullstill</a></div>
 </div>

@@ -6,10 +6,11 @@ db = SQLAlchemy()
 
 class Course(db.Model):
     __tablename__ = 'course'
+    __mapper_args__ = {'order_by': 'code'}
     id = db.Column(db.Integer, primary_key=True)
     code = db.Column(db.String(80), unique=True)
     name = db.Column(db.String(120))
-    exams = db.relationship('Exam', backref='course', order_by='Exam.name')
+    exams = db.relationship('Exam', backref='course')
     questions = association_proxy('exams', 'questions')
 
     def __init__(self, code, name):
@@ -26,6 +27,7 @@ class Course(db.Model):
 
 class Exam(db.Model):
     __tablename__ = 'exam'
+    __mapper_args__ = {'order_by': 'name'}
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String)
     course_id = db.Column(db.Integer, db.ForeignKey('course.id'))
@@ -45,9 +47,8 @@ class Exam(db.Model):
 
 class Question(db.Model):
     __tablename__ = 'question'
-
+    __mapper_args__ = {'order_by': 'id'}
     id = db.Column(db.Integer, primary_key=True)
-    # number = db.Column(db.Integer)
     text = db.Column(db.String)
     image = db.Column(db.String)
     alternatives = db.relationship('Alternative', backref='question', order_by='Alternative.number')
@@ -55,7 +56,6 @@ class Question(db.Model):
     course = association_proxy('exam', 'course')
 
     def __init__(self, text, exam_id, image=""):
-        # self.number = number
         self.text = text
         self.exam_id = exam_id
         self.image = image
@@ -66,6 +66,7 @@ class Question(db.Model):
 
 class Alternative(db.Model):
     __tablename__ = 'alternative'
+    __mapper_args__ = {'order_by': 'number'}
 
     id = db.Column(db.Integer, primary_key=True)
     number = db.Column(db.Integer)

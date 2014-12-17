@@ -16,9 +16,14 @@ db.init_app(app)
 @app.route('/')
 def main():
     context = {
-        'courses': models.Course.query.order_by(models.Course.code).all()
+        'courses': models.Course.query.all()
     }
     return render_template('courses.html', **context)
+
+
+@app.route('/tips/')
+def tips():
+    return render_template('tips.html')
 
 
 @app.route('/reset/<string:course>/')
@@ -69,7 +74,7 @@ def show_question(course, exam, id):
         c_session = session_data(session, 'exams', exam)
         # Only question from a specific exam
         num_questions = models.Question.query.filter_by(exam=exam).count()
-        question = models.Question.query.filter_by(exam=exam).order_by(models.Question.id).offset(id - 1).limit(1).first_or_404()
+        question = models.Question.query.filter_by(exam=exam).offset(id - 1).limit(1).first_or_404()
         reset_url = url_for('reset_stats_exam', course=course.code, exam=exam.name)
     else:
         # Shortened variable
@@ -92,13 +97,11 @@ def show_question(course, exam, id):
         'exam_name': exam_name,
         'reset_url': reset_url
     }
-    # Stupid hack (question.alternatives doesn't sort properly) TODO: Fix
-    context['alternatives'] = models.Alternative.query.filter_by(question_id=question.id).order_by('number').all()
     # POST request when answering
     if request.method == 'POST':
         answer = request.form.get('answer')
         if answer:
-            for alternative in context['alternatives']:
+            for alternative in question.alternatives:
                 if str(alternative.number) == answer:
                     context['success'] = alternative.correct
                     break
@@ -122,10 +125,10 @@ def show_question(course, exam, id):
         ordering = request.form.get('order')
         if ordering:
             # Resorting answers from specific values. Answer is a tuple with id and texts
-            context['alternatives'] = [context['alternatives'][int(x)] for x in ordering.split(',')]
+            question.alternatives = [question.alternatives[int(x)] for x in ordering.split(',')]
     else:
         # Random order on questions
-        random.shuffle(context['alternatives'])
+        random.shuffle(question.alternatives)
     context['score'] = c_session
     return render_template('question.html', **context)
 
