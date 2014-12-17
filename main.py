@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from flask import abort, Flask, redirect, render_template, request, session, url_for
+from flask.ext.assets import Environment, Bundle
 from logging.handlers import SMTPHandler
 from models import db
 from werkzeug.contrib.fixers import ProxyFix
@@ -13,6 +14,12 @@ app = Flask(__name__)
 app.config.from_pyfile('config.py')
 app.wsgi_app = ProxyFix(app.wsgi_app)
 db.init_app(app)
+
+assets = Environment(app)
+js = Bundle('js/app.js', filters='jsmin', output='js/min.%(version)s.js')
+css = Bundle('css/font-awesome.min.css', 'css/styles.css', filters='cssmin', output='css/min.%(version)s.css')
+assets.register('js', js)
+assets.register('css', css)
 
 ADMINS = ['memorizer@cxhristian.com']
 if not app.debug:
@@ -205,21 +212,6 @@ def utility_processor():
             return 'A'
 
     return dict(percentage=percentage, grade=grade)
-
-
-@app.context_processor
-def override_url_for():
-    return dict(url_for=dated_url_for)
-
-
-def dated_url_for(endpoint, **values):
-    if endpoint == 'static':
-        filename = values.get('filename', None)
-        if filename:
-            file_path = os.path.join(app.root_path,
-                                     endpoint, filename)
-            values['q'] = int(os.stat(file_path).st_mtime)
-    return url_for(endpoint, **values)
 
 
 if __name__ == '__main__':

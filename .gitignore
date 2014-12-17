@@ -39,3 +39,7 @@ localconfig.py
 debug.py
 *.db
 *.db-journal
+
+min.*.js
+min.*.css
+.webassets-cache
