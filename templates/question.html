@@ -32,7 +32,7 @@
 {% if question is defined %}
 {% if question.image %}
 <div class="image">
-    <img src="{{ url_for('static', filename='img/' + question.course.code + '/' + question.image) }}{{ question.image }}">
+    <img src="{{ url_for('static', filename='img/' + question.course.code + '/' + question.image) }}">
 </div>
 {% endif %}
 <h4>{{ question.text }}</h4>
