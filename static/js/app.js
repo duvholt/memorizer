@@ -37,7 +37,7 @@
         }
 
         // Random question
-        if (e.keyCode == 38 || e.keyCode == 87) {
+        if (e.keyCode == 82) {
             var random = document.getElementById('random');
             if (random !== null) {
                 window.location = random.href;
