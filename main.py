@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 from flask import abort, Flask, redirect, render_template, request, session, url_for
+from logging.handlers import SMTPHandler
 from models import db
 from werkzeug.contrib.fixers import ProxyFix
+import logging
 import models
 import os
 import random
@@ -11,6 +13,14 @@ app = Flask(__name__)
 app.config.from_pyfile('config.py')
 app.wsgi_app = ProxyFix(app.wsgi_app)
 db.init_app(app)
+
+ADMINS = ['memorizer@cxhristian.com']
+if not app.debug:
+    mail_handler = SMTPHandler('127.0.0.1',
+                               'server-error@cxhristian.com',
+                               ADMINS, '[Flask] Memorizer ERROR')
+    mail_handler.setLevel(logging.ERROR)
+    app.logger.addHandler(mail_handler)
 
 
 @app.route('/')
