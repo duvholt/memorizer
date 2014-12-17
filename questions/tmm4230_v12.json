@@ -47,7 +47,7 @@
         },
         {
             "question": "[Web Services, WCF and SOA] What is wrong with the following web method if you are going to write a C# Web Service?",
-            "image": "https://i.imgur.com/7qJQa7C.png",
+            "image": "code_4.png",
             "answers": [
                 "All Web methods need a return of type String [1]",
                 "All Web methods need String inputs [2]",

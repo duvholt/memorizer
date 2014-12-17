@@ -86,7 +86,7 @@
         },
         {
             "question": "[.NET /C#] What will the following code print (if inserted into the main method of a program)?",
-            "image": "https://i.imgur.com/TuPE7hL.png",
+            "image": "code.png",
             "answers": [
                 "'False' ",
                 "'True' ",

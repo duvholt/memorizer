@@ -56,7 +56,7 @@
         },
         {
             "question": "[C# and .NET] What will the following code print if it is run?",
-            "image": "https://i.imgur.com/aeH70wN.png",
+            "image": "code_3.png",
             "answers": [
                 "“win”.",
                 "“fail”.",
@@ -382,7 +382,7 @@
         },
         {
             "question": "[Abstract OWL Syntax ] What can we infer from these statements?",
-            "image": "https://i.imgur.com/UTRyp2F.png",
+            "image": "owl_2.png",
             "answers": [
                 "All students are intellectuals",
                 "All professors are intellectuals ",

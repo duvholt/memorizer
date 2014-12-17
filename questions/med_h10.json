@@ -102,7 +102,7 @@
                 "Abduksjon / Abduction "
             ],
             "correct": 0,
-            "image": "http://i.imgur.com/DOOqgMj.png"
+            "image": "bevegelse_arm.png"
         },
         {
             "question": "Det finnes to typer endoplasmatisk reticulum: Kornet og glatt. Hva er kornene? / Det finnest to typer endoplasmatisk reticulum: Korna og glatt. Kva er korna? / There is two types of endoplasmatic reticulum. Smooth and rough. What are the grains that makes the rough endoplasmatic reticulum rough?",
@@ -203,7 +203,7 @@
                 "Alle de tre over / All of the above "
             ],
             "correct": 3,
-            "image": "http://i.imgur.com/aQ94ONZ.png"
+            "image": "bodybuilder.png"
         },
         {
             "question": "Hva er presbyopi? / Kva er presbyopi? / What is presbyopia?",
@@ -234,7 +234,7 @@
                 "D"
             ],
             "correct": 3,
-            "image": "http://i.imgur.com/bkM3t0S.png"
+            "image": "reservevolumet.png"
         },
         {
             "question": "Ca 180 l filtrate passerer ut i glomeruli hvert døgn. Dette inneholder småmolekylære stoffer som salter og glukose som reabsorberes i proksimale tubuli ved aktiv transport. Vann reabsorberes langs det meste av nefronet. Hvilken mekanisme er hovedansvarlig for reabsorbsjon av vann? / Ca 180 l filtrate passerer ut i glomeruli kvart døgn. Dette innehelder småmolekylære stoff som saltar og glukose, som reabsorberest i proksimale tubuli ved aktiv transport. Vann reabsorberest langs det meste av nefronet. Kva for mekanisme er hovudansvarlig for reabsorbsjon av vann? / About 180 l filtrate passes out into the glomeruli each day. This contains small molecules like salts and glucose, which are reabsorbed by active transport. Water is reabsorbed along most of the nephron. Which mechanism is mainly responsible for reabsorbtion of water?",
@@ -545,7 +545,7 @@
                 "Det skjer ikke noe elektrisk i hjertet, men den mekaniske pumpingen stopper plutselig opp / Det skjer ikkje noe elektrisk i hjertet, men den mekaniske pumpinga stopper plutselig opp / Nothing happens electrically, but the mechanic pumping stops abruptly"
             ],
             "correct": 1,
-            "image": "http://i.imgur.com/GtcTpW5.png"
+            "image": "hjerterytme.png"
         },
         {
             "question": "Kondisjonstrening øker det maksimale oksygenopptaket under arbeid. Hva er det først og fremst som trenes hos friske? / Kondisjonstrening aukar det maksimale oksygenopptaket under arbeid. Kva er det først og fremst som blir trent hos friske? / Endurance training increases tha maximal oxygen uptake during exercise. What is primarily the factor that is trained in healthy individuals?",

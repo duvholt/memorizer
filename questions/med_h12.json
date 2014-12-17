@@ -111,7 +111,7 @@
                 "Ventriklene begynner plutselig å slå ukoordinert / Ventriklane begynner plutselig å slå ukoordinert / The ventricles suddenly starts to beat in an uncoordinated manner",
                 "Det skjer ikke noe elektrisk i hjertet, men den mekaniske pumpingen stopper plutselig opp / Det skjer ikkje noe elektrisk i hjertet, men den mekaniske pumpinga stopper plutselig opp / Nothing happens electrically, but the mechanic pumping stops abruptly"
             ],
-            "image": "http://i.imgur.com/DUdOmOO.png",
+            "image": "pulse.png",
             "correct": 1
         },
         {
@@ -153,7 +153,7 @@
                 " D"
             ],
             "correct": 1,
-            "image": "http://i.imgur.com/Asa1puP.png"
+            "image": "reservevolumet.png"
         },
         {
             "question": "Et barn er skadet av stålfragmenter fra en klasebombe. Hvilken av disse billedmodalitetene må definitivt ikke brukes, av sikkerhetshensyn? / Et barn er skadd av stålfragment frå ein klasebombe. Kva for ein av disse bildemodalitetane må definitivt ikkje brukast, av sikkerheitsomsyn? / A child has been wounded by steel fragments from a cluster bomb. Which of these imaging methods should definitely not be used to locate the fragments in the body for safety reasons?",
@@ -183,7 +183,7 @@
                 "Grå stær – Katarakt / Cataract",
                 "Grønn stær – Glaukom / Glaucoma"
             ],
-            "image": "http://i.imgur.com/6lElw2Z.png",
+            "image": "brytningsfeil.png",
             "correct": 0
         },
         {
@@ -324,7 +324,7 @@
                 "M-mode",
                 "Doppler mode"
             ],
-            "image": "http://i.imgur.com/BGalbUv.png",
+            "image": "ultralyd_hjerte_2.png",
             "correct": 2
         },
         {
@@ -375,7 +375,7 @@
                 "Isometrisk / isometric",
                 "Antagonistisk / antagonistic"
             ],
-            "image": "http://i.imgur.com/5xEP85r.png",
+            "image": "muskelaksjonen.png",
             "correct": 0
         },
         {

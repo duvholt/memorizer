@@ -49,7 +49,7 @@
     },
     {
         "question": "[C# and .NET] What will the following code print if it is run?",
-        "image": "https://i.imgur.com/WSUbsTD.png",
+        "image": "code_2.png",
         "answers": [
                 "\"win\"",
                 "\"fail\"",
@@ -145,7 +145,7 @@
     },
     {
         "question": "[WCF] The text snippet above is taken from a WCF configuration file. What is the name of the .NET interface that defines the custom operations exposed by this web service?",
-        "image": "https://i.imgur.com/wrFmrrA.png",
+        "image": "wcf.png",
         "answers": [
             "Service1 [1]",
             "IMetadataExchange[2]",
@@ -373,7 +373,7 @@
     },
     {
         "question": "[Abstract OWL] What can we not infer from these statements",
-        "image": "https://i.imgur.com/13Hqtmb.png",
+        "image": "owl.png",
         "answers": [
             "Students are humans",
             "All students are smart persons ",

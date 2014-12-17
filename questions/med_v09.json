@@ -442,7 +442,7 @@
                 "Ekstensjon / Extension"
             ],
             "correct": 2,
-            "image": "http://i.imgur.com/UZRuzMX.png"
+            "image": "bevegelse_2.png"
         },
         {
             "question": "Blodtrykket måles gjerne ved at en mansjett rundt overarmen blåses opp slik at mansjetten klemmer sammen pulsårene i armen, og så reduseres trykket gradvis. Hvilket av nedenstående utsagn er riktig i relasjon til denne prosedyren? / Blodtrykket blir det gjerne målt ved at ein mansjett rundt overarmen blåses opp slik at mansjetten klemmer saman pulsårene i armen, og så blir trykket gradvis redusert. Kva for eit av utsegna under er riktig i relasjon til denne prosedyren? / The blood pressure is usually measured by inflating a cuff around the upper arm, and then reducing the pressure gradually. Which of the statements below are correct in relation to this procedure?",
@@ -473,7 +473,7 @@
                 "Doppler mode"
             ],
             "correct": 3,
-            "image": "http://i.imgur.com/4DC3yo9.png"
+            "image": "hastighetskurver.png"
         },
         {
             "question": "Muskulaturen hjertets venstre ventrikkel får det meste av sin blodforsyning i: / The musculature of the left ventricle of the heart receives most of its blood supply during:",

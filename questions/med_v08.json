@@ -35,7 +35,7 @@
                 "D"
             ],
             "correct": 3,
-            "image": "http://i.imgur.com/yvBts7c.png"
+            "image": "reservevolumet.png"
         },
         {
             "question": "Leveren har to blodforsyninger; -vena porta og leverarterien. Hva er hovedfunksjonen til leverarterien? / Levra har to blodforsyningar; -vena porta og leverarteria. Kva er hovudfunksjonen til leverarteria? / The liver receives blood from two sources; - portal vein and hepatic artery. What is the main function of the hepatic artery?",
@@ -398,7 +398,7 @@
                 "Grønn stær – Glaukom / Glaucoma"
             ],
             "correct": 0,
-            "image": "http://i.imgur.com/zvGAvnh.png"
+            "image": "brytningsfeil.png"
         },
         {
             "question": "Hva er et hjerteinfarkt? / Kva er eit hjerteinfarkt? / What is a heart infarction?",
