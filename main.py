@@ -46,8 +46,8 @@ def tips():
 @app.route('/reset/<string:course>/')
 def reset_stats_course(course):
     """Reset stats for a course"""
+    course = models.Course.query.filter_by(code=course).first_or_404()
     if 'courses' in session:
-        course = models.Course.query.filter_by(code=course).first()
         if course and course.string in session['courses']:
             del session['courses'][course.string]
     return redirect(url_for('course', course=course.code))
