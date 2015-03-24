@@ -4,6 +4,7 @@ from flask.ext.assets import Environment, Bundle
 from logging.handlers import SMTPHandler
 from models import db
 from werkzeug.contrib.fixers import ProxyFix
+from views import admin
 import logging
 import models
 import os
@@ -148,6 +149,9 @@ def show_question(course, exam, id):
         random.shuffle(question.alternatives)
     context['score'] = c_session
     return render_template('question.html', **context)
+
+# Admin routes
+app.add_url_rule('/admin/courses', 'admin_courses', admin.courses)
 
 
 def random_id(id=None, course=None, exam=None):
