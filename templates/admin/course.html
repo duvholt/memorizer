@@ -1,0 +1,17 @@
+{% extends "admin/admin.html" %}
+
+{% block content %}
+<h1>{{ course }}</h1>
+<form method="POST" action="">
+    {{ form.csrf_token }}
+    {{ form.code.label }} {{ form.code(size=20) }}
+    {{ form.name.label }} {{ form.name(size=20) }}
+    <input type="submit" value="Lagre">
+</form>
+<h2>Eksamener</h2>
+<ul>
+{% for exam in course.exams %}
+    <li><a href="{{ url_for('admin_exam', course_code=course.code, exam_name=exam.name) }}">{{ exam }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}

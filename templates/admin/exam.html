@@ -1,0 +1,16 @@
+{% extends "admin/admin.html" %}
+
+{% block content %}
+<h1>{{ course }} - {{ exam }}</h1>
+<form method="POST">
+    {{ form.csrf_token }}
+    {{ form.name.label }} {{ form.name(size=20) }}
+    <input type="submit" value="Lagre">
+</form>
+<h2>Spørsmål</h2>
+<ul>
+{% for question in exam.questions %}
+    <li><a href="">{{ question }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}
