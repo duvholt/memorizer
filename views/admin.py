@@ -1,13 +1,11 @@
 from flask import render_template
-from forms import CourseForm, ExamForm
+from forms import CourseForm, ExamForm, QuestionForm
 import models
 
 
 def index():
     pass
 
-
-# Courses
 
 def courses():
     context = dict(courses=models.Course.query.all())
@@ -29,11 +27,11 @@ def exam(course_code, exam_name):
     return render_template('admin/exam.html', **context)
 
 
-# Questions
-
-def questions():
-    pass
-
-
-def question(question_id):
-    pass
+def question(question_id=None):
+    if question_id is not None:
+        question = question = models.Question.query.filter_by(id=question_id).first_or_404()
+    else:
+        question = None
+    form = QuestionForm(obj=question)
+    context = dict(question=question, form=form)
+    return render_template('admin/question.html', **context)

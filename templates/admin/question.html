@@ -1,0 +1,9 @@
+{% extends "admin/admin.html" %}
+
+{% block content %}
+<form method="POST">
+    {{ form.text.label }} {{ form.text(size=20) }}
+    {{ form.image.label }} {{ form.image(size=20) }}
+    <input type="submit" value="Lagre">
+</form>
+{% endblock %}

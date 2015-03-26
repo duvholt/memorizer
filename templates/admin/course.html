@@ -2,7 +2,7 @@
 
 {% block content %}
 <h1>{{ course }}</h1>
-<form method="POST" action="">
+<form method="POST">
     {{ form.csrf_token }}
     {{ form.code.label }} {{ form.code(size=20) }}
     {{ form.name.label }} {{ form.name(size=20) }}

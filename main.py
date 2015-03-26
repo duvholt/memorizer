@@ -154,6 +154,7 @@ def show_question(course, exam, id):
 app.add_url_rule('/admin/courses', 'admin_courses', admin.courses)
 app.add_url_rule('/admin/course/<string:course_code>', 'admin_course', admin.course)
 app.add_url_rule('/admin/course/<string:course_code>/<string:exam_name>/', 'admin_exam', admin.exam)
+app.add_url_rule('/admin/question/<int:question_id>/', 'admin_question', admin.question)
 
 
 def random_id(id=None, course=None, exam=None):

@@ -10,7 +10,7 @@
 <h2>Spørsmål</h2>
 <ul>
 {% for question in exam.questions %}
-    <li><a href="">{{ question }}</a></li>
+    <li><a href="{{ url_for('admin_question', question_id=question.id) }}">{{ question }}</a></li>
 {% endfor %}
 </ul>
 {% endblock %}
