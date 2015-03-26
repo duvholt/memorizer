@@ -13,8 +13,10 @@ def courses():
     return render_template('admin/courses.html', **context)
 
 
-def course(course_id):
-    pass
+def course(course_code):
+    course = models.Course.query.filter_by(code=course_code).first_or_404()
+    context = dict(course=course)
+    return render_template('admin/course.html', **context)
 
 
 # Exams

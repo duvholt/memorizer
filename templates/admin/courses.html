@@ -1,5 +1,9 @@
 {% extends "admin/admin.html" %}
 
 {% block content %}
-lol
+<ul>
+{% for course in courses %}
+    <li><a href="{{ url_for('admin_course', course_code=course.code) }}">{{ course }}</a>
+{% endfor %}
+</ul>
 {% endblock %}

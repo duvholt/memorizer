@@ -152,6 +152,7 @@ def show_question(course, exam, id):
 
 # Admin routes
 app.add_url_rule('/admin/courses', 'admin_courses', admin.courses)
+app.add_url_rule('/admin/course<string:course_code>', 'admin_course', admin.course)
 
 
 def random_id(id=None, course=None, exam=None):
