@@ -1,8 +1,7 @@
-from flask import Blueprint, render_template, request
-from flask.ext.wtf import Form
-from wtforms.ext.sqlalchemy.orm import model_form
+from flask import Blueprint, flash, redirect,render_template
 import models
 from forms import CourseForm, ExamForm, QuestionForm
+from models import db
 
 admin = Blueprint('admin', __name__, template_folder='templates/admin')
 
@@ -21,6 +20,12 @@ def courses():
 def course(course_code):
     course = models.Course.query.filter_by(code=course_code).first_or_404()
     form = CourseForm(obj=course)
+    if form.validate_on_submit():
+        form.populate_obj(course)
+        db.session.commit()
+        flash('Emne ble lagret')
+    else:
+        flash('Emne ble ikke lagret')  # Why?
     context = dict(course=course, form=form)
     return render_template('admin/course.html', **context)
 
@@ -30,18 +35,25 @@ def exam(course_code, exam_name):
     course = models.Course.query.filter_by(code=course_code).first_or_404()
     exam = models.Exam.query.filter_by(course=course, name=exam_name).first_or_404()
     form = ExamForm(obj=exam)
+    if form.validate_on_submit():
+        form.populate_obj(exam)
+        db.session.commit()
+        flash('Eksamen ble lagret')
+    else:
+        flash('Eksamen ble ikke lagret')  # Why?
     context = dict(exam=exam, course=course, form=form)
     return render_template('admin/exam.html', **context)
 
 
 @admin.route('/question/<int:question_id>/', methods=['GET', 'POST'])
-def question(question_id=None):
-    if question_id is not None:
-        question = question = models.Question.query.filter_by(id=question_id).first_or_404()
-    else:
-        question = None
+def question(question_id):
+    question = question = models.Question.query.filter_by(id=question_id).first_or_404()
     form = QuestionForm(obj=question)
     if form.validate_on_submit():
-        print('yolo')
+        form.populate_obj(question)
+        db.session.commit()
+        flash('Spørsmål ble lagret')
+    else:
+        flash('Spørsmål ble ikke lagret')  # Why?
     context = dict(question=question, form=form)
     return render_template('admin/question.html', **context)
