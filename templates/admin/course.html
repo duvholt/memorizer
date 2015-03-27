@@ -11,7 +11,7 @@
 <h2>Eksamener</h2>
 <ul>
 {% for exam in course.exams %}
-    <li><a href="{{ url_for('admin_exam', course_code=course.code, exam_name=exam.name) }}">{{ exam }}</a></li>
+    <li><a href="{{ url_for('admin.exam', course_code=course.code, exam_name=exam.name) }}">{{ exam }}</a></li>
 {% endfor %}
 </ul>
 {% endblock %}

@@ -2,21 +2,21 @@
 {% block title %}#{{ id }} - {{ question.course.code }} {{ question.exam.name }}{% endblock %}
 
 {% macro navlink(id, name, text) %}
-    <a href="{{ url_for('show_question', course=question.course.code, exam=exam_name, id=id) }}" id="{{ name }}">{{ text }}</a>
+    <a href="{{ url_for('quiz.show_question', course=question.course.code, exam=exam_name, id=id) }}" id="{{ name }}">{{ text }}</a>
 {% endmacro %}
 
 {% block menu %}
 <li><a href="/"><i class="fa fa-list fa-fw"></i>&nbsp; Emner</a></li>
 <ul>
     <li {% if exam_name == 'all' %}class="active"{% endif %}>
-        <a href="{{ url_for('course', course=question.course.code) }}">
+        <a href="{{ url_for('quiz.course', course=question.course.code) }}">
             <i class="fa fa-book fa-fw"></i>&nbsp; {{ question.course.code }}
         </a>
     </li>
     <ul>
     {% for exam in question.course.exams %}
         <li {% if exam_name == exam.name %}class="active"{% endif %}>
-            <a href="{{ url_for('exam', course=question.course.code, exam=exam) }}">
+            <a href="{{ url_for('quiz.exam', course=question.course.code, exam=exam) }}">
                 <i class="fa fa-file-text fa-fw"></i>&nbsp; {{ exam }}
             </a>
         </li>

@@ -18,7 +18,7 @@
         <ul>
         {% for course in courses %}
             <li>
-                <a href="{{ url_for('course', course=course.code) }}">
+                <a href="{{ url_for('quiz.course', course=course.code) }}">
                     <i class="fa fa-book fa-fw"></i>&nbsp; {{ course.code }}
                 </a>
             </li>

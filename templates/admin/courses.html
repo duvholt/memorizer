@@ -3,7 +3,7 @@
 {% block content %}
 <ul>
 {% for course in courses %}
-    <li><a href="{{ url_for('admin_course', course_code=course.code) }}">{{ course }}</a>
+    <li><a href="{{ url_for('admin.course', course_code=course.code) }}">{{ course }}</a>
 {% endfor %}
 </ul>
 {% endblock %}
