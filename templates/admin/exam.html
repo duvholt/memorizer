@@ -4,7 +4,7 @@
 <h1>{{ course }} - {{ exam }}</h1>
 <form method="POST">
     {{ form.csrf_token }}
-    {{ form.name.label }} {{ form.name(size=20) }}
+    {{ form.name.label }} {{ form.name }}
     <input type="submit" value="Lagre">
 </form>
 <h2>Spørsmål</h2>

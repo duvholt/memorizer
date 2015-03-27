@@ -27,8 +27,8 @@ if not app.debug:
     mail_handler.setLevel(logging.ERROR)
     app.logger.addHandler(mail_handler)
 
-app.register_blueprint(admin, url_prefix='/admin')
 app.register_blueprint(quiz)
+app.register_blueprint(admin, url_prefix='/admin')
 
 
 @app.context_processor
