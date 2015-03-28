@@ -1,0 +1,14 @@
+{% extends "quiz/quiz.html" %}
+{% block content %}
+<h1>Emner</h1>
+<ul class="courses">
+{% for course in courses %}
+    <li>
+        <a href="{{ url_for('quiz.course', course=course.code) }}">
+            {{ course.code }}
+            <span>{{ course.name }}</span>
+        </a>
+    </li>
+{% endfor %}
+</ul>
+{% endblock %}

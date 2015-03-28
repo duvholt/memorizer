@@ -13,18 +13,7 @@
 <nav class="sidebar">
     <div class="logo"><i class="fa fa-times"></i><a href="/">Memorizer</a></div>
     <ul>
-    {% block menu %}
-        <li class="active"><a href="/"><i class="fa fa-list fa-fw"></i>&nbsp; Emner</a></li>
-        <ul>
-        {% for course in courses %}
-            <li>
-                <a href="{{ url_for('quiz.course', course=course.code) }}">
-                    <i class="fa fa-book fa-fw"></i>&nbsp; {{ course.code }}
-                </a>
-            </li>
-        {% endfor %}
-        </ul>
-    {% endblock %}
+    {% block menu %}{% endblock %}
     </ul>
     <ul>
         <li><a href="/tips"><i class="fa fa-info-circle fa-fw"></i>&nbsp; Tips</a></li>

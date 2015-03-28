@@ -3,7 +3,7 @@ import models
 import random
 import re
 
-quiz = Blueprint('quiz', __name__, template_folder='templates')
+quiz = Blueprint('quiz', __name__)
 
 
 @quiz.route('/')
@@ -11,12 +11,12 @@ def main():
     context = {
         'courses': models.Course.query.all()
     }
-    return render_template('courses.html', **context)
+    return render_template('quiz/courses.html', **context)
 
 
 @quiz.route('/tips/')
 def tips():
-    return render_template('tips.html')
+    return render_template('quiz/tips.html')
 
 
 @quiz.route('/reset/<string:course>/')
@@ -123,7 +123,7 @@ def show_question(course, exam, id):
         # Random order on questions
         random.shuffle(question.alternatives)
     context['score'] = c_session
-    return render_template('question.html', **context)
+    return render_template('quiz/question.html', **context)
 
 
 def random_id(id=None, course=None, exam=None):

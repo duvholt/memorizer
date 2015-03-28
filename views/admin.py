@@ -3,7 +3,7 @@ import models
 from forms import CourseForm, ExamForm, QuestionForm
 from models import db
 
-admin = Blueprint('admin', __name__, template_folder='templates/admin')
+admin = Blueprint('admin', __name__)
 
 
 def index():
