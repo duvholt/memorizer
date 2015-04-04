@@ -5,6 +5,7 @@ from logging.handlers import SMTPHandler
 from models import db
 from werkzeug.contrib.fixers import ProxyFix
 from views.admin import admin
+from views.api import api
 from views.quiz import quiz
 import logging
 
@@ -29,6 +30,7 @@ if not app.debug:
 
 app.register_blueprint(quiz)
 app.register_blueprint(admin, url_prefix='/admin')
+app.register_blueprint(api, url_prefix='/api')
 
 
 @app.context_processor

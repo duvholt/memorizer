@@ -20,6 +20,13 @@ class Course(db.Model):
     def __repr__(self):
         return self.code + ' ' + self.name
 
+    def serialize(self):
+        return {
+            'id': self.id,
+            'code': self.code,
+            'name': self.name
+        }
+
     @property
     def string(self):
         return self.code
@@ -39,6 +46,13 @@ class Exam(db.Model):
 
     def __repr__(self):
         return self.name
+
+    def serialize(self):
+        return {
+            'id': self.id,
+            'name': self.name,
+            'course_id': self.course_id
+        }
 
     @property
     def string(self):
@@ -63,6 +77,15 @@ class Question(db.Model):
     def __repr__(self):
         return self.text
 
+    def serialize(self):
+        return {
+            'id': self.id,
+            'text': self.text,
+            'image': self.image,
+            'exam_id': self.exam_id,
+            'alternatives': [alt.serialize() for alt in self.alternatives]
+        }
+
 
 class Alternative(db.Model):
     __tablename__ = 'alternative'
@@ -82,3 +105,12 @@ class Alternative(db.Model):
 
     def __repr__(self):
         return self.text
+
+    def serialize(self):
+        return {
+            'id': self.id,
+            'number': self.number,
+            'text': self.text,
+            'correct': self.correct,
+            'question_id': self.question_id
+        }

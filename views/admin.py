@@ -1,7 +1,8 @@
-from flask import Blueprint, flash, redirect,render_template
-import models
+from flask import Blueprint, flash, g, redirect, request, render_template
+from functools import wraps
 from forms import CourseForm, ExamForm, QuestionForm
 from models import db
+import models
 
 admin = Blueprint('admin', __name__)
 
@@ -57,3 +58,12 @@ def question(question_id):
         flash('Spørsmål ble ikke lagret')  # Why?
     context = dict(question=question, form=form)
     return render_template('admin/question.html', **context)
+
+
+# Decorators
+
+def admin_required(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        # TO DO: Implement admin logic
+        return f(*args, **kwargs)
