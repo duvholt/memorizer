@@ -14,6 +14,8 @@ def index():
 @admin.route('/courses')
 def courses():
     context = dict(courses=models.Course.query.all())
+    form = CourseForm()
+    context['form'] = form
     return render_template('admin/courses.html', **context)
 
 

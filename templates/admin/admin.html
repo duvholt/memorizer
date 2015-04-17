@@ -4,3 +4,10 @@
 <li><a href="/tips"><i class="fa fa-list fa-fw"></i>&nbsp; Emner</a></li>
 <li><a href="/tips"><i class="fa fa-list fa-fw"></i>&nbsp; Eksamener</a></li>
 {% endblock %}
+
+{% block js %}
+{{ super() }}
+    {% assets "admin_js" %}
+    <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+{% endblock %}

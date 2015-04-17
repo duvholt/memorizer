@@ -1,6 +1,17 @@
 {% extends "admin/admin.html" %}
 
 {% block content %}
+<h1>Fag-administrering</h1>
+
+<h2>Legg til nytt fag</h2>
+<form method="POST" id="new-form" data-url="/api/courses/">
+    {{ form.hidden_tag() }}
+    {{ form.code.label }} {{ form.code }}
+    {{ form.name.label }} {{ form.name }}
+    <input type="submit" value="Lagre">
+</form>
+
+<h2>Eksisterende fag</h2>
 <ul>
 {% for course in courses %}
     <li><a href="{{ url_for('admin.course', course_code=course.code) }}">{{ course }}</a>

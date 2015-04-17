@@ -12,3 +12,10 @@
 {% endfor %}
 </ul>
 {% endblock %}
+
+{% block js %}
+{{ super() }}
+    {% assets "app_js" %}
+    <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+{% endblock %}
