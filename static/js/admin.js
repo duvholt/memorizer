@@ -25,7 +25,9 @@
                     // Form was successfully submitted
                     that.forEachInput(function(input) {
                         that.emptyField(input.parentNode);
+                        input.value = '';
                     });
+                    Alert('Fullført', 'success');
                 }
                 else {
                     // Show valiations status
@@ -64,7 +66,7 @@
         var inputs = this.inputs();
         for(var i in inputs) {
             var input = inputs[i];
-            if(input.name !== undefined) {
+            if(input.name !== undefined && input.name !== '') {
                 callback(input);
             }
         }

@@ -22,20 +22,19 @@
     </ul>
 </nav>
 <div class="container">
-{% for alert in alerts %}
-    <div class="alert {{ alert.level }}">
-        {{ alert.msg }}
-    </div>
-{% endfor %}
-{% with messages = get_flashed_messages() %}
-  {% if messages %}
-    <ul class=flashes>
-    {% for message in messages %}
-      <li>{{ message }}</li>
+    <ul class="alerts">
+    {% with messages = get_flashed_messages() %}
+        {% for message in messages %}
+          <li class="alert">{{ message }}</li>
+        {% endfor %}
+    {% endwith %}
+
+    {% for alert in alerts %}
+        <li class="alert {{ alert.level }}">
+            {{ alert.msg }}
+        </li>
     {% endfor %}
     </ul>
-  {% endif %}
-{% endwith %}
 {% block content %}{% endblock %}
 </div>
 {% block js %}

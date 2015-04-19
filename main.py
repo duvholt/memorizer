@@ -15,7 +15,7 @@ app.wsgi_app = ProxyFix(app.wsgi_app)
 db.init_app(app)
 
 assets = Environment(app)
-js = Bundle('js/ajax.js', filters='jsmin', output='js/min.%(version)s.js')
+js = Bundle('js/ajax.js', 'js/alert.js', filters='jsmin', output='js/min.%(version)s.js')
 admin_js = Bundle('js/admin.js', filters='jsmin', output='js/admin.min.%(version)s.js')
 app_js = Bundle('js/app.js', filters='jsmin', output='js/app.min.%(version)s.js')
 css = Bundle('css/font-awesome.min.css', 'css/styles.css', filters='cssmin', output='css/min.%(version)s.css')
