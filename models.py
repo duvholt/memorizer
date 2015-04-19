@@ -8,12 +8,12 @@ class Course(db.Model):
     __tablename__ = 'course'
     __mapper_args__ = {'order_by': 'code'}
     id = db.Column(db.Integer, primary_key=True)
-    code = db.Column(db.String(80), unique=True)
-    name = db.Column(db.String(120))
+    code = db.Column(db.String(80), unique=True, nullable=False)
+    name = db.Column(db.String(120), nullable=False)
     exams = db.relationship('Exam', backref='course')
     questions = association_proxy('exams', 'questions')
 
-    def __init__(self, code, name):
+    def __init__(self, code=None, name=None):
         self.code = code
         self.name = name
 

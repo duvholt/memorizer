@@ -3,6 +3,7 @@ from flask.views import MethodView
 from views.admin import admin_required
 import json
 import models
+import forms
 
 api = Blueprint('api', __name__)
 
@@ -22,7 +23,7 @@ class JsonView(MethodView):
 
 class APIView(JsonView):
     model = None
-    fields = []
+    form = None
 
     def get(self, object_id=None):
         # Get a single object
@@ -40,39 +41,33 @@ class APIView(JsonView):
             return [object.serialize() for object in objects]
 
     def post(self):
-        errors = []
-        for field in self.fields:
-            if field not in request.form.keys():
-                errors.append(error('Missing field ' + field))
-        # If all fields are present
-        if not errors:
-            errors = self.validate()
-        if errors:
-            return {'errors': errors}
-        else:
+        response = {}
+        form = self.form(request.form)
+        response['success'] = form.validate()
+        if form.validate():
             # Inserting
-            object = self.model(**self.post_dict(request.form))
+            object = self.model()
+            form.populate_obj(object)
             models.db.session.add(object)
             models.db.session.commit()
-        return {'success': True}
+        else:
+            response['errors'] = form.errors
+        return response
 
     def put(self, object_id):
-        errors = []
+        response = {'success': False}
         object = self.model.query.get(object_id)
         if not object:
-            return {'errors': [error('Item not found')]}
-        for field in self.fields:
-            if field not in request.form.keys():
-                errors.append(error('Missing field ' + field))
-        if not errors:
-            errors = self.validate()
-        if errors:
-            return {'errors': errors}
-        for field in self.fields:
-            setattr(object, field, request.form[field])
+            response['errors'] = [error('Item not found')]
+            return response
+        form = self.form(request.form)
+        if form.validate():
+            form.populate_obj(object)
+            models.db.session.add(object)
             models.db.session.commit()
-        return {'success': True}
-
+        else:
+            response['errors'] = form.errors
+        return response
 
     def delete(self, object_id):
         object = self.model.query.get(object_id)
@@ -85,24 +80,15 @@ class APIView(JsonView):
         """Return a list of errors"""
         return []
 
-    def post_dict(self, post_data):
+    def _post_dict(self, post_data):
         """Dictionary of fields with form data"""
         return {field: post_data[field] for field in self.fields}
 
 
 class CourseAPI(APIView):
     model = models.Course
-    fields = ['name', 'code']
-
-    def validate(self):
-        errors = []
-        for field in self.fields:
-            if len(request.form[field]) == 0:
-                errors.append(error('"' + field + '" length has to be bigger than zero'))
-        result = self.model.query.filter_by(code=request.form['code']).first()
-        if result:
-            errors.append(error('Course code is already taken'))
-        return errors
+    form = forms.CourseForm
+    fields = ['code', 'name']
 
 
 class ExamAPI(APIView):
