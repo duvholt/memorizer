@@ -1,9 +1,27 @@
 import models
 from flask.ext.wtf import Form
-from wtforms.ext.sqlalchemy.orm import model_form
+from wtforms_alchemy import model_form_factory
 
-db_session = models.db.session
+db = models.db
+BaseModelForm = model_form_factory(Form)
 
-CourseForm = model_form(models.Course, db_session=db_session, base_class=Form)
-ExamForm = model_form(models.Exam, db_session=db_session, base_class=Form)
-QuestionForm = model_form(models.Question, db_session=db_session, base_class=Form)
+
+class ModelForm(BaseModelForm):
+    @classmethod
+    def get_session(self):
+        return db.session
+
+
+class CourseForm(ModelForm):
+    class Meta:
+        model = models.Course
+
+
+class ExamForm(ModelForm):
+    class Meta:
+        model = models.Exam
+
+
+class QuestionForm(ModelForm):
+    class Meta:
+        model = models.Question
