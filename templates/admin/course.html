@@ -1,11 +1,12 @@
+{% from "admin/_formhelpers.html" import render_field %}
 {% extends "admin/admin.html" %}
 
 {% block content %}
 <h1>{{ course }}</h1>
 <form method="POST">
     {{ form.hidden_tag() }}
-    {{ form.code.label }} {{ form.code }}
-    {{ form.name.label }} {{ form.name }}
+    {{ render_field(form.code) }}
+    {{ render_field(form.name) }}
     <input type="submit" value="Lagre">
 </form>
 <h2>Eksamener</h2>

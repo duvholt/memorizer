@@ -1,9 +1,11 @@
+{% from "admin/_formhelpers.html" import render_field %}
 {% extends "admin/admin.html" %}
 
 {% block content %}
 <form method="POST">
-    {{ form.text.label }} {{ form.text(size=20) }}
-    {{ form.image.label }} {{ form.image(size=20) }}
+    {{ form.hidden_tag() }}
+    {{ render_field(form.text) }}
+    {{ render_field(form.image) }}
     <input type="submit" value="Lagre">
 </form>
 {% endblock %}

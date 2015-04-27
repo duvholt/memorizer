@@ -1,10 +1,11 @@
+{% from "admin/_formhelpers.html" import render_field %}
 {% extends "admin/admin.html" %}
 
 {% block content %}
 <h1>{{ course }} - {{ exam }}</h1>
 <form method="POST">
-    {{ form.csrf_token }}
-    {{ form.name.label }} {{ form.name }}
+    {{ form.hidden_tag() }}
+    {{ render_field(form.name) }}
     <input type="submit" value="Lagre">
 </form>
 <h2>Spørsmål</h2>
