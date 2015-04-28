@@ -8,8 +8,8 @@ class Course(db.Model):
     __tablename__ = 'course'
     __mapper_args__ = {'order_by': 'code'}
     id = db.Column(db.Integer, primary_key=True)
-    code = db.Column(db.String(80), unique=True, nullable=False)
-    name = db.Column(db.String(120), nullable=False)
+    code = db.Column(db.String(80), unique=True, nullable=False, info={'label': 'Emnekode'})
+    name = db.Column(db.String(120), nullable=False, info={'label': 'Navn'})
     exams = db.relationship('Exam', backref='course')
     questions = association_proxy('exams', 'questions')
 
@@ -36,7 +36,7 @@ class Exam(db.Model):
     __tablename__ = 'exam'
     __mapper_args__ = {'order_by': 'name'}
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String)
+    name = db.Column(db.String, info={'label': 'Navn'})
     course_id = db.Column(db.Integer, db.ForeignKey('course.id'))
     questions = db.relationship('Question', backref='exam')
 
@@ -63,8 +63,8 @@ class Question(db.Model):
     __tablename__ = 'question'
     __mapper_args__ = {'order_by': 'id'}
     id = db.Column(db.Integer, primary_key=True)
-    text = db.Column(db.String)
-    image = db.Column(db.String)
+    text = db.Column(db.String, info={'label': 'Oppgavetekst'})
+    image = db.Column(db.String, info={'label': 'Bilde'})
     alternatives = db.relationship('Alternative', backref='question', order_by='Alternative.number')
     exam_id = db.Column(db.Integer, db.ForeignKey('exam.id'))
     course = association_proxy('exam', 'course')
@@ -92,9 +92,9 @@ class Alternative(db.Model):
     __mapper_args__ = {'order_by': 'number'}
 
     id = db.Column(db.Integer, primary_key=True)
-    number = db.Column(db.Integer)
-    text = db.Column(db.String)
-    correct = db.Column(db.Boolean)
+    number = db.Column(db.Integer, info={'label': 'Alternativnummer'})
+    text = db.Column(db.String, info={'label': 'Tekst'})
+    correct = db.Column(db.Boolean, info={'label': 'Korrekt'})
     question_id = db.Column(db.Integer, db.ForeignKey('question.id'))
 
     def __init__(self, text=None, number=None, correct=None, question_id=None):
