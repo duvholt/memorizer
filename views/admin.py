@@ -1,6 +1,6 @@
 from flask import Blueprint, flash, g, redirect, request, render_template
 from functools import wraps
-from forms import CourseForm, ExamForm, QuestionForm
+from forms import CourseForm, ExamForm, QuestionForm, AlternativeForm
 from models import db
 import models
 
@@ -44,7 +44,9 @@ def exam(course_code, exam_name):
 def question(question_id):
     question = question = models.Question.query.filter_by(id=question_id).first_or_404()
     form = QuestionForm(obj=question)
-    context = dict(question=question, form=form)
+    alt = models.Alternative(question_id=question.id)
+    alt_form = AlternativeForm(obj=alt)
+    context = dict(question=question, form=form, alt_form=alt_form)
     return render_template('admin/question.html', **context)
 
 

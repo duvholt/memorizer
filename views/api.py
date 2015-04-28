@@ -95,6 +95,7 @@ class QuestionAPI(APIView):
 
 class AlternativeAPI(APIView):
     model = models.Alternative
+    form = forms.AlternativeForm
 
 
 def register_api(view, endpoint, url, pk='object_id', pk_type='int'):

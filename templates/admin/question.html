@@ -1,11 +1,19 @@
-{% from "admin/_formhelpers.html" import render_field %}
+{% from "admin/_formhelpers.html" import render_form %}
 {% extends "admin/admin.html" %}
 
 {% block content %}
-<form method="POST">
-    {{ form.hidden_tag() }}
-    {{ render_field(form.text) }}
-    {{ render_field(form.image) }}
-    <input type="submit" value="Lagre">
-</form>
+<h1>{{ question.course }} - {{ question.exam }} - {{ question }}</h1>
+
+{{ render_form(form, '/api/questions/' + question.id|string, new=False) }}
+
+<h2>Legg til nytt alternativ</h2>
+
+{{ render_form(alt_form, '/api/alternatives/') }}
+
+<h2>Alternativer</h2>
+<ul>
+{% for alt in question.alternatives %}
+    <li>{{ alt }}</li>
+{% endfor %}
+</ul>
 {% endblock %}
