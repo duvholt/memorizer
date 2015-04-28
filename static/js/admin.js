@@ -26,6 +26,10 @@
                 if(data.success) {
                     // Form was successfully submitted
                     that.forEachInput(function(input) {
+                        if(input.type == 'hidden') {
+                            // Ignore hidden fields
+                            return;
+                        }
                         that.emptyField(input.parentNode);
                         if(that.create) {
                             // Empty fields for creation of new objects
