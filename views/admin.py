@@ -23,7 +23,8 @@ def courses():
 def course(course_code):
     course = models.Course.query.filter_by(code=course_code).first_or_404()
     form = CourseForm(obj=course)
-    exam_form = ExamForm()
+    exam = models.Exam(course_id=course.id)
+    exam_form = ExamForm(obj=exam)
     context = dict(course=course, form=form, exam_form=exam_form)
     return render_template('admin/course.html', **context)
 
@@ -33,13 +34,9 @@ def exam(course_code, exam_name):
     course = models.Course.query.filter_by(code=course_code).first_or_404()
     exam = models.Exam.query.filter_by(course=course, name=exam_name).first_or_404()
     form = ExamForm(obj=exam)
-    if form.validate_on_submit():
-        form.populate_obj(exam)
-        db.session.commit()
-        flash('Eksamen ble lagret')
-    else:
-        flash('Eksamen ble ikke lagret')  # Why?
-    context = dict(exam=exam, course=course, form=form)
+    question = models.Question(exam_id=exam.id)
+    question_form = QuestionForm(obj=question)
+    context = dict(exam=exam, course=course, form=form, question_form=question_form)
     return render_template('admin/exam.html', **context)
 
 
@@ -47,12 +44,6 @@ def exam(course_code, exam_name):
 def question(question_id):
     question = question = models.Question.query.filter_by(id=question_id).first_or_404()
     form = QuestionForm(obj=question)
-    if form.validate_on_submit():
-        form.populate_obj(question)
-        db.session.commit()
-        flash('Spørsmål ble lagret')
-    else:
-        flash('Spørsmål ble ikke lagret')  # Why?
     context = dict(question=question, form=form)
     return render_template('admin/question.html', **context)
 

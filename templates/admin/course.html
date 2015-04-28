@@ -6,6 +6,10 @@
 
 {{ render_form(form, '/api/courses/' + course.id|string, new=False) }}
 
+<h2>Legg til ny eksamen</h2>
+
+{{ render_form(exam_form, '/api/exams/') }}
+
 <h2>Eksamener</h2>
 <ul>
 {% for exam in course.exams %}

@@ -40,7 +40,7 @@ class Exam(db.Model):
     course_id = db.Column(db.Integer, db.ForeignKey('course.id'))
     questions = db.relationship('Question', backref='exam')
 
-    def __init__(self, name, course_id):
+    def __init__(self, name=None, course_id=None):
         self.name = name
         self.course_id = course_id
 
@@ -69,7 +69,7 @@ class Question(db.Model):
     exam_id = db.Column(db.Integer, db.ForeignKey('exam.id'))
     course = association_proxy('exam', 'course')
 
-    def __init__(self, text, exam_id, image=""):
+    def __init__(self, text=None, exam_id=None, image=""):
         self.text = text
         self.exam_id = exam_id
         self.image = image
@@ -97,7 +97,7 @@ class Alternative(db.Model):
     correct = db.Column(db.Boolean)
     question_id = db.Column(db.Integer, db.ForeignKey('question.id'))
 
-    def __init__(self, text, number, correct, question_id):
+    def __init__(self, text=None, number=None, correct=None, question_id=None):
         self.text = text
         self.number = number
         self.correct = correct

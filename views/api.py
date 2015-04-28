@@ -77,27 +77,20 @@ class APIView(JsonView):
             models.db.session.commit()
         return {'success': bool(object)}
 
-    def validate(self):
-        """Return a list of errors"""
-        return []
-
-    def _post_dict(self, post_data):
-        """Dictionary of fields with form data"""
-        return {field: post_data[field] for field in self.fields}
-
 
 class CourseAPI(APIView):
     model = models.Course
     form = forms.CourseForm
-    fields = ['code', 'name']
 
 
 class ExamAPI(APIView):
     model = models.Exam
+    form = forms.ExamForm
 
 
 class QuestionAPI(APIView):
     model = models.Question
+    form = forms.QuestionForm
 
 
 class AlternativeAPI(APIView):
