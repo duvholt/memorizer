@@ -39,7 +39,7 @@ var Ajax = function(options, callback) {
     request.open(settings.method, settings.url);
 
     // Add content type if post request
-    if(settings.method === 'POST') {
+    if(['POST', 'PUT'].indexOf(settings.method) !== -1) {
         request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     }
     // Send data

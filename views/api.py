@@ -60,9 +60,10 @@ class APIView(JsonView):
         if not object:
             response['errors'] = [error('Item not found')]
             return response
-        form = self.form(request.form)
-        if form.validate():
-            form.populate_obj(object)
+        form = self.form(request.form, obj=object)
+        form.populate_obj(object)
+        response['success'] = form.validate()
+        if response['success']:
             models.db.session.add(object)
             models.db.session.commit()
         else:

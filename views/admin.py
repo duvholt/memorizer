@@ -23,13 +23,8 @@ def courses():
 def course(course_code):
     course = models.Course.query.filter_by(code=course_code).first_or_404()
     form = CourseForm(obj=course)
-    if form.validate_on_submit():
-        form.populate_obj(course)
-        db.session.commit()
-        flash('Emne ble lagret')
-    else:
-        flash('Emne ble ikke lagret')  # Why?
-    context = dict(course=course, form=form)
+    exam_form = ExamForm()
+    context = dict(course=course, form=form, exam_form=exam_form)
     return render_template('admin/course.html', **context)
 
 

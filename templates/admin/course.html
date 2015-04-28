@@ -1,14 +1,11 @@
-{% from "admin/_formhelpers.html" import render_field %}
+{% from "admin/_formhelpers.html" import render_form %}
 {% extends "admin/admin.html" %}
 
 {% block content %}
 <h1>{{ course }}</h1>
-<form method="POST">
-    {{ form.hidden_tag() }}
-    {{ render_field(form.code) }}
-    {{ render_field(form.name) }}
-    <input type="submit" value="Lagre">
-</form>
+
+{{ render_form(form, '/api/courses/' + course.id|string, new=False) }}
+
 <h2>Eksamener</h2>
 <ul>
 {% for exam in course.exams %}

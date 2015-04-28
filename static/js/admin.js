@@ -3,6 +3,8 @@
         var that = this;
         this.element = form;
         this.url = form.dataset.url;
+        this.create = form.dataset['new'] !== undefined;
+        this.method =  this.create ? 'POST' : 'PUT';
         
         // Form submit
         this.element.addEventListener('submit', function(e) {
@@ -19,13 +21,16 @@
             data[input.name] = input.value;
         });
         // Send post request
-        Ajax({url: this.url, data: data, method: 'POST'}, {
+        Ajax({url: this.url, data: data, method: this.method}, {
             success: function(data) {
                 if(data.success) {
                     // Form was successfully submitted
                     that.forEachInput(function(input) {
                         that.emptyField(input.parentNode);
-                        input.value = '';
+                        if(that.create) {
+                            // Empty fields for creation of new objects
+                            input.value = '';
+                        }
                     });
                     Alert('Fullført', 'success');
                 }
@@ -55,6 +60,9 @@
                         }
                     });
                 }
+            },
+            error: function() {
+                Alert('Noe gikk forferdelig galt', 'error');
             }
         });
     };
@@ -87,6 +95,9 @@
         }
         return true;
     };
-    var formElement = document.getElementById('new-form');
-    var form = new Form(formElement);
+    // Initialize admin forms
+    var forms = document.getElementsByClassName('form-admin');
+    for (var i = 0; forms[i]; i++) {
+        var form = new Form(forms[i]);
+    }
 })();

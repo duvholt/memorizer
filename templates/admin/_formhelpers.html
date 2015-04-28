@@ -1,6 +1,8 @@
 {% macro render_field(field) %}
 <div class="field">
+    {% if field.type != 'HiddenField' and field.type != 'CSRFTokenField' %}
     <label>{{ field.label }}</label>
+    {% endif %}
     {{ field(**kwargs)|safe }}
     <ul class="errors">
     {% if field.errors %}
@@ -10,4 +12,15 @@
     {% endif %}
     </ul>
 </div>
+{% endmacro %}
+
+{% macro render_form(form, url, new=True) %}
+<form method="POST" class="form-admin" data-url="{{ url }}" {% if new %}data-new{% endif %}>
+    {{ form.hidden_tag() }}
+    {{ form.id }}
+    {% for field in form %}
+        {{ render_field(field) }}
+    {% endfor %}
+    <input type="submit" value="Lagre">
+</form>
 {% endmacro %}
