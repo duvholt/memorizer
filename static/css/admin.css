@@ -1,0 +1,19 @@
+.form-admin .field {
+}
+
+.form-admin .field label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-admin .field input {
+    min-width: 100px;
+    width: 60%;
+    display: block;
+    height: 25px;
+    font-size: 13px;
+    color: #333;
+    border: 1px solid gray;
+    border-radius: 2px;
+    padding: 2px 5px;
+}

@@ -1,8 +1,6 @@
 {% macro render_field(field) %}
 <div class="field">
-    {% if field.type != 'HiddenField' and field.type != 'CSRFTokenField' %}
     <label>{{ field.label }}</label>
-    {% endif %}
     {{ field(**kwargs)|safe }}
     <ul class="errors">
     {% if field.errors %}
@@ -19,7 +17,9 @@
     {{ form.hidden_tag() }}
     {{ form.id }}
     {% for field in form %}
-        {{ render_field(field) }}
+        {% if field.type != 'HiddenField' and field.type != 'CSRFTokenField' %}
+            {{ render_field(field) }}
+        {% endif %}
     {% endfor %}
     <input type="submit" value="Lagre">
 </form>
