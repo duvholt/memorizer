@@ -36,7 +36,9 @@
                             input.value = '';
                         }
                     }.bind(this));
-                    this.list.update();
+                    if(this.list !== undefined) {
+                        this.list.update();
+                    }
                     Alert('Fullført', 'success');
                 }
                 else {
@@ -140,8 +142,11 @@
     // Initialize admin forms
     var forms = document.getElementsByClassName('form-admin');
     var object = document.getElementsByClassName('admin-list')[0];
-    var list = new List(object);
-    list.update();
+    if(object !== undefined) {
+        console.log(object);
+        var list = new List(object);
+        list.update();
+    }
     for (var i = 0; forms[i]; i++) {
         var form = new Form(forms[i], list);
     }
