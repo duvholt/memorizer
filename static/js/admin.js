@@ -18,6 +18,10 @@
         var data = {};
         // Loop through all input fields and get name, value pairs
         this.forEachInput(function(input) {
+            if(input.type === 'checkbox' && !input.checked) {
+                // Do not send data for checkboxes that aren't checked. Silly HTML standard.
+                return;
+            }
             data[input.name] = input.value;
         });
         // Send post request
