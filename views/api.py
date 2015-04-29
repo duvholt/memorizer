@@ -1,4 +1,4 @@
-from flask import abort, Blueprint, Response, request
+from flask import abort, Blueprint, Response, request, session
 from flask.views import MethodView
 from views.admin import admin_required
 import json
@@ -42,6 +42,9 @@ class APIView(JsonView):
 
     def post(self):
         response = {}
+        if session.get('admin') is not True:
+            response['errors'] = [error('Not logged in')]
+            return response
         form = self.form(request.form)
         response['success'] = form.validate()
         if form.validate():
@@ -56,6 +59,9 @@ class APIView(JsonView):
 
     def put(self, object_id):
         response = {'success': False}
+        if session.get('admin') is not True:
+            response['errors'] = [error('Not logged in')]
+            return response
         object = self.model.query.get(object_id)
         if not object:
             response['errors'] = [error('Item not found')]
@@ -71,6 +77,10 @@ class APIView(JsonView):
         return response
 
     def delete(self, object_id):
+        response = {}
+        if session.get('admin') is not True:
+            response['errors'] = [error('Not logged in')]
+            return response
         object = self.model.query.get(object_id)
         if object:
             models.db.session.delete(object)

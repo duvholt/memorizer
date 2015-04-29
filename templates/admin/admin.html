@@ -5,6 +5,19 @@
 <li><a href="/tips"><i class="fa fa-list fa-fw"></i>&nbsp; Eksamener</a></li>
 {% endblock %}
 
+{% block content %}
+{% if admin %}
+Du er logget inn.
+{% else %}
+<form method="POST">
+    <div class="field">
+        <label>Passord</label>
+        <input name="password" type="text">
+    </div>
+</form>
+{% endif %}
+{% endblock %}
+
 {% block js %}
 {{ super() }}
     {% assets "admin_js" %}

@@ -1,4 +1,4 @@
-from flask import Blueprint, flash, g, redirect, request, render_template
+from flask import Blueprint, current_app, flash, g, redirect, request, render_template, session, url_for
 from functools import wraps
 from forms import CourseForm, ExamForm, QuestionForm, AlternativeForm
 from models import db
@@ -7,11 +7,27 @@ import models
 admin = Blueprint('admin', __name__)
 
 
+# Decorators
+def admin_required(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if session.get('admin') is not True:
+            return redirect(url_for('admin.index'))
+        return f(*args, **kwargs)
+    return decorated_function
+
+
+@admin.route('/', methods=['GET', 'POST'])
 def index():
-    pass
+    if request.method == 'POST':
+        if(request.form.get('password') == current_app.config['ADMIN_PASSWORD']):
+            session['admin'] = True
+    context = dict(admin=session.get('admin'))
+    return render_template('admin/admin.html', **context)
 
 
 @admin.route('/courses')
+@admin_required
 def courses():
     context = dict(courses=models.Course.query.all())
     form = CourseForm()
@@ -20,6 +36,7 @@ def courses():
 
 
 @admin.route('/course/<string:course_id>', methods=['GET', 'POST'])
+@admin_required
 def course(course_id):
     course = models.Course.query.filter_by(id=course_id).first_or_404()
     form = CourseForm(obj=course)
@@ -30,6 +47,7 @@ def course(course_id):
 
 
 @admin.route('/course/<string:course_id>/<string:exam_id>/', methods=['GET', 'POST'])
+@admin_required
 def exam(course_id, exam_id):
     course = models.Course.query.filter_by(id=course_id).first_or_404()
     exam = models.Exam.query.filter_by(course=course, id=exam_id).first_or_404()
@@ -41,6 +59,7 @@ def exam(course_id, exam_id):
 
 
 @admin.route('/question/<int:question_id>/', methods=['GET', 'POST'])
+@admin_required
 def question(question_id):
     question = question = models.Question.query.filter_by(id=question_id).first_or_404()
     form = QuestionForm(obj=question)
@@ -51,17 +70,10 @@ def question(question_id):
 
 
 @admin.route('/question/<int:question_id>/<int:alternative_id>')
+@admin_required
 def alternative(question_id, alternative_id):
     question = models.Question.query.filter_by(id=question_id).first_or_404()
     alternative = models.Alternative.query.filter_by(id=alternative_id).first_or_404()
     form = AlternativeForm(obj=alternative)
     context = dict(form=form, question=question, alternative=alternative)
     return render_template('admin/alternative.html', **context)
-
-# Decorators
-
-def admin_required(f):
-    @wraps(f)
-    def decorated_function(*args, **kwargs):
-        # TO DO: Implement admin logic
-        return f(*args, **kwargs)
