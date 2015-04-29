@@ -1,0 +1,9 @@
+{% from "admin/_formhelpers.html" import render_form %}
+{% extends "admin/admin.html" %}
+
+{% block content %}
+<h1>{{ question.course }} - {{ question.exam }} - {{ question }}</h1>
+
+{{ render_form(form, '/api/alternatives/' + alternative.id|string, new=False) }}
+
+{% endblock %}
