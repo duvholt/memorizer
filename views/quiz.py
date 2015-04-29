@@ -95,7 +95,7 @@ def show_question(course, exam, id):
         answer = request.form.get('answer')
         if answer:
             for alternative in question.alternatives:
-                if str(alternative.number) == answer:
+                if str(alternative.id) == answer:
                     context['success'] = alternative.correct
                     break
             # Checking if question has already been answered
@@ -118,7 +118,9 @@ def show_question(course, exam, id):
         ordering = request.form.get('order')
         if ordering:
             # Resorting answers from specific values. Answer is a tuple with id and texts
-            question.alternatives = [question.alternatives[int(x)] for x in ordering.split(',')]
+            # Creating dictionary with id as key
+            dict_alt = {alt.id: alt for alt in question.alternatives}
+            question.alternatives = [dict_alt[int(x)] for x in ordering.split(',')]
     else:
         # Random order on questions
         random.shuffle(question.alternatives)

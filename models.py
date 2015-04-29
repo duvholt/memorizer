@@ -67,7 +67,7 @@ class Question(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     text = db.Column(db.String, info={'label': 'Oppgavetekst'})
     image = db.Column(db.String, info={'label': 'Bilde'})
-    alternatives = db.relationship('Alternative', backref='question', order_by='Alternative.number')
+    alternatives = db.relationship('Alternative', backref='question', order_by='Alternative.id')
     exam_id = db.Column(db.Integer, db.ForeignKey('exam.id'))
     course = association_proxy('exam', 'course')
 
@@ -95,7 +95,6 @@ class Alternative(db.Model):
     __mapper_args__ = {'order_by': 'number'}
 
     id = db.Column(db.Integer, primary_key=True)
-    number = db.Column(db.Integer, info={'label': 'Alternativnummer'})
     text = db.Column(db.String, info={'label': 'Tekst'})
     correct = db.Column(db.Boolean, info={'label': 'Korrekt'})
     question_id = db.Column(db.Integer, db.ForeignKey('question.id'))
@@ -112,7 +111,6 @@ class Alternative(db.Model):
     def serialize(self):
         return {
             'id': self.id,
-            'number': self.number,
             'text': self.text,
             'correct': self.correct,
             'question_id': self.question_id,
