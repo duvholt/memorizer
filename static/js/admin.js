@@ -1,6 +1,5 @@
 (function() {
     var Form = function(form) {
-        var that = this;
         this.element = form;
         this.url = form.dataset.url;
         this.create = form.dataset['new'] !== undefined;
@@ -8,12 +7,11 @@
         
         // Form submit
         this.element.addEventListener('submit', function(e) {
-            that.save(e);
-        }, false);
+            this.save(e);
+        }.bind(this), false);
     };
 
     Form.prototype.save = function(e) {
-        var that = this;
         e.preventDefault();
         var data = {};
         // Loop through all input fields and get name, value pairs
@@ -25,13 +23,13 @@
             success: function(data) {
                 if(data.success) {
                     // Form was successfully submitted
-                    that.forEachInput(function(input) {
+                    this.forEachInput(function(input) {
                         if(input.type == 'hidden') {
                             // Ignore hidden fields
                             return;
                         }
-                        that.emptyField(input.parentNode);
-                        if(that.create) {
+                        this.emptyField(input.parentNode);
+                        if(this.create) {
                             // Empty fields for creation of new objects
                             input.value = '';
                         }
@@ -41,9 +39,9 @@
                 else {
                     // Show valiations status
                     var errors = data.errors;
-                    that.forEachInput(function(input) {
+                    this.forEachInput(function(input) {
                         var field = input.parentNode;
-                        var exists = that.emptyField(field);
+                        var exists = this.emptyField(field);
                         if(!exists) {
                             return;
                         }
@@ -64,7 +62,7 @@
                         }
                     });
                 }
-            },
+            }.bind(this),
             error: function() {
                 Alert('Noe gikk forferdelig galt', 'error');
             }
