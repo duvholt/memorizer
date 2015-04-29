@@ -17,3 +17,9 @@
     border-radius: 2px;
     padding: 2px 5px;
 }
+
+.form-admin .field input[type="checkbox"] {
+    height: 15px;
+    width: 15px;
+    min-width: inherit;
+}
