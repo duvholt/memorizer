@@ -9,9 +9,6 @@
 {{ render_form(form, '/api/courses/') }}
 
 <h2>Eksisterende fag</h2>
-<ul>
-{% for course in courses %}
-    <li><a href="{{ url_for('admin.course', course_code=course.code) }}">{{ course }}</a>
-{% endfor %}
+<ul class="admin-list" data-api="/api/courses/" data-url="/admin/course/">
 </ul>
 {% endblock %}

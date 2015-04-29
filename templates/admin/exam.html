@@ -11,7 +11,7 @@
 {{ render_form(question_form, '/api/questions/') }}
 
 <h2>Spørsmål</h2>
-<ul>
+<ul class="admin-list">
 {% for question in exam.questions %}
     <li><a href="{{ url_for('admin.question', question_id=question.id) }}">{{ question }}</a></li>
 {% endfor %}

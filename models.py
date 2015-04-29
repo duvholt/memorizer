@@ -24,7 +24,8 @@ class Course(db.Model):
         return {
             'id': self.id,
             'code': self.code,
-            'name': self.name
+            'name': self.name,
+            'str': str(self)
         }
 
     @property
@@ -51,7 +52,8 @@ class Exam(db.Model):
         return {
             'id': self.id,
             'name': self.name,
-            'course_id': self.course_id
+            'course_id': self.course_id,
+            'str': str(self)
         }
 
     @property
@@ -83,7 +85,8 @@ class Question(db.Model):
             'text': self.text,
             'image': self.image,
             'exam_id': self.exam_id,
-            'alternatives': [alt.serialize() for alt in self.alternatives]
+            'alternatives': [alt.serialize() for alt in self.alternatives],
+            'str': str(self)
         }
 
 
@@ -112,5 +115,6 @@ class Alternative(db.Model):
             'number': self.number,
             'text': self.text,
             'correct': self.correct,
-            'question_id': self.question_id
+            'question_id': self.question_id,
+            'str': str(self)
         }

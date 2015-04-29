@@ -1,9 +1,11 @@
 (function() {
-    var Form = function(form) {
+    var Form = function(form, list) {
         this.element = form;
         this.url = form.dataset.url;
         this.create = form.dataset['new'] !== undefined;
         this.method =  this.create ? 'POST' : 'PUT';
+
+        this.list = list;
         
         // Form submit
         this.element.addEventListener('submit', function(e) {
@@ -33,7 +35,8 @@
                             // Empty fields for creation of new objects
                             input.value = '';
                         }
-                    });
+                    }.bind(this));
+                    this.list.update();
                     Alert('Fullført', 'success');
                 }
                 else {
@@ -60,7 +63,7 @@
                             // Validation passed for field
                             field.classList.add('success');
                         }
-                    });
+                    }.bind(this));
                 }
             }.bind(this),
             error: function() {
@@ -97,9 +100,49 @@
         }
         return true;
     };
+
+    var List = function(adminList) {
+        this.element = adminList;
+        this.api = adminList.dataset.api;
+        this.url = adminList.dataset.url;
+    };
+
+    List.prototype.empty = function() {
+        while(this.element.lastChild) {
+            this.element.removeChild(this.element.lastChild);
+        }
+    };
+    List.prototype.li = function(content, url) {
+        console.log(content);
+        var li = document.createElement('li');
+        var a = document.createElement('a');
+        a.textContent = content;
+        a.href = url;
+        li.appendChild(a);
+        return li;
+    };
+    List.prototype.update = function() {
+        this.empty();
+        Ajax({url: this.api}, {
+            success: function(data) {
+                console.log(data);
+                for (var i = 0; i < data.length; i++) {
+                    var url = this.url + data[i].id;
+                    this.element.appendChild(this.li(data[i].str, url));
+                }
+            }.bind(this),
+            error: function(data) {
+                console.error('Failed to fetch admin list data');
+            }
+        });
+    };
+
     // Initialize admin forms
     var forms = document.getElementsByClassName('form-admin');
+    var object = document.getElementsByClassName('admin-list')[0];
+    var list = new List(object);
+    list.update();
     for (var i = 0; forms[i]; i++) {
-        var form = new Form(forms[i]);
+        var form = new Form(forms[i], list);
     }
 })();

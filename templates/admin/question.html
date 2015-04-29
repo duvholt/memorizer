@@ -11,7 +11,7 @@
 {{ render_form(alt_form, '/api/alternatives/') }}
 
 <h2>Alternativer</h2>
-<ul>
+<ul class="admin-list">
 {% for alt in question.alternatives %}
     <li>{{ alt }}</li>
 {% endfor %}
