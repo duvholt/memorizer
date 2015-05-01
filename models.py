@@ -1,5 +1,6 @@
 from flask.ext.sqlalchemy import SQLAlchemy
 from sqlalchemy.ext.associationproxy import association_proxy
+from sqlalchemy_utils.types.choice import ChoiceType
 
 db = SQLAlchemy()
 
@@ -62,14 +63,25 @@ class Exam(db.Model):
 
 
 class Question(db.Model):
+    MULTIPLE = 1
+    BOOLEAN = 2
+    TYPES = [
+        (MULTIPLE, 'Flervalg'),
+        (BOOLEAN, 'Ja/Nei')
+    ]
     __tablename__ = 'question'
     __mapper_args__ = {'order_by': 'id'}
     id = db.Column(db.Integer, primary_key=True)
     text = db.Column(db.String, info={'label': 'Oppgavetekst'})
     image = db.Column(db.String, info={'label': 'Bilde'})
-    alternatives = db.relationship('Alternative', backref='question', order_by='Alternative.id')
     exam_id = db.Column(db.Integer, db.ForeignKey('exam.id'))
     course = association_proxy('exam', 'course')
+
+    type = db.Column(ChoiceType(TYPES), info={'label': 'Spørsmålstype'})
+    # Boolean question
+    correct = db.Column(db.Boolean, info={'label': 'Korrekt'})
+    # Alternative question
+    alternatives = db.relationship('Alternative', backref='question', order_by='Alternative.id')
 
     def __init__(self, text=None, exam_id=None, image=""):
         self.text = text

@@ -1,7 +1,7 @@
 import models
 from flask.ext.wtf import Form
 from wtforms_alchemy import model_form_factory
-from wtforms.fields import HiddenField
+from wtforms import fields
 
 db = models.db
 BaseModelForm = model_form_factory(Form)
@@ -23,7 +23,7 @@ class ExamForm(ModelForm):
         model = models.Exam
 
     # Foreign key
-    course_id = HiddenField()
+    course_id = fields.HiddenField()
 
 
 class QuestionForm(ModelForm):
@@ -31,7 +31,7 @@ class QuestionForm(ModelForm):
         model = models.Question
 
     # Foreign key
-    exam_id = HiddenField()
+    exam_id = fields.HiddenField()
 
 
 class AlternativeForm(ModelForm):
@@ -39,4 +39,4 @@ class AlternativeForm(ModelForm):
         model = models.Alternative
 
     # Foreign key
-    question_id = HiddenField()
+    question_id = fields.HiddenField()

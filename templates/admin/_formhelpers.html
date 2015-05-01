@@ -15,7 +15,6 @@
 {% macro render_form(form, url, new=True) %}
 <form method="POST" class="form-admin" data-url="{{ url }}" {% if new %}data-new{% endif %}>
     {{ form.hidden_tag() }}
-    {{ form.id }}
     {% for field in form %}
         {% if field.type != 'HiddenField' and field.type != 'CSRFTokenField' %}
             {{ render_field(field) }}
