@@ -127,16 +127,15 @@ class Question(db.Model):
 
 class Alternative(db.Model):
     __tablename__ = 'alternative'
-    __mapper_args__ = {'order_by': 'number'}
+    __mapper_args__ = {'order_by': 'id'}
 
     id = db.Column(db.Integer, primary_key=True)
     text = db.Column(db.String, info={'label': 'Tekst'})
     correct = db.Column(db.Boolean, info={'label': 'Korrekt'})
     question_id = db.Column(db.Integer, db.ForeignKey('question.id'))
 
-    def __init__(self, text=None, number=None, correct=None, question_id=None):
+    def __init__(self, text=None, correct=None, question_id=None):
         self.text = text
-        self.number = number
         self.correct = correct
         self.question_id = question_id
 

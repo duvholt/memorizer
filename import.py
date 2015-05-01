@@ -44,7 +44,7 @@ def import_questions():
                 else:
                     correct = False
                 # Setting image if it exists
-                alternative = models.Alternative(answer, number, correct, question_object.id)
+                alternative = models.Alternative(answer, correct, question_object.id)
                 db.session.add(alternative)
             db.session.commit()
     print("Importing completed")
