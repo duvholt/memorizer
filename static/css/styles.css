@@ -185,7 +185,7 @@ form label:hover {
 }
 
 .question {
-    max-width: 800px;
+    width: 800px;
     display: inline-block;
     float: left;
     margin: 0 20px 20px 0;
