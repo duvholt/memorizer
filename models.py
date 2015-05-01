@@ -114,7 +114,7 @@ class Question(db.Model):
             return self.alternatives
         else:
             # oh gee
-            return [FakeAlternative(1, 'Riktig', True), FakeAlternative(2, 'Galt', False)]
+            return [FakeAlternative(1, 'Riktig', self.correct is True), FakeAlternative(2, 'Galt', self.correct is False)]
 
     def serialize(self):
         return {
