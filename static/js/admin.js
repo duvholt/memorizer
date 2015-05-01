@@ -78,7 +78,7 @@
         });
     };
     Form.prototype.inputs = function() {
-        return this.element.querySelectorAll('input');
+        return this.element.querySelectorAll('input, select');
     };
     // Helper method to loop input elements with a callback function
     Form.prototype.forEachInput = function(callback) {

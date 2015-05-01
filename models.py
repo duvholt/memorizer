@@ -62,9 +62,19 @@ class Exam(db.Model):
         return self.course.code + '_' + self.name
 
 
+class FakeAlternative(object):
+    def __init__(self, id, text, correct):
+        self.id = id
+        self.text = text
+        self.correct = correct
+
+    def __str__(self):
+        return self.text
+
+
 class Question(db.Model):
-    MULTIPLE = 1
-    BOOLEAN = 2
+    MULTIPLE = '1'
+    BOOLEAN = '2'
     TYPES = [
         (MULTIPLE, 'Flervalg'),
         (BOOLEAN, 'Ja/Nei')
@@ -90,6 +100,19 @@ class Question(db.Model):
 
     def __repr__(self):
         return self.text
+
+    @property
+    def is_multiple(self):
+        return self.type == self.MULTIPLE
+
+    @property
+    def choices(self):
+        """Dynamic choices"""
+        if self.is_multiple:
+            return self.alternatives
+        else:
+            # oh gee
+            return [FakeAlternative(1, 'Riktig', True), FakeAlternative(2, 'Galt', False)]
 
     def serialize(self):
         return {

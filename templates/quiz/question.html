@@ -37,8 +37,10 @@
 {% endif %}
 <h4>{{ question.text }}</h4>
 <form method="post">
-    <input type="hidden" name="order" value="{{ question.alternatives|join(',', attribute='id') }}">
-    {% for alternative in question.alternatives %}
+    {% if question.is_multiple %}
+    <input type="hidden" name="order" value="{{ question.choices|join(',', attribute='id') }}">
+    {% endif %}
+    {% for alternative in question.choices %}
     {% if (alternative.id)|string() == request.form.answer %}<div class="{% if success %}success{% else %}error{% endif %}">{% endif %}
         <div class="radio">
         <label>
