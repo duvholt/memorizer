@@ -33,9 +33,17 @@ def import_questions():
         questions = course_json['questions']
         for question in questions:
             image = question['image'] if 'image' in question else ""
-            question_object = models.Question(question['question'], exam.id, image)
+            if 'answers' in question:
+                question_type = models.Question.MULTIPLE
+                answer = None
+            else:
+                question_type = models.Question.BOOLEAN
+                answer = question['answer']
+            question_object = models.Question(question_type, question['question'], exam.id, image, answer)
             db.session.add(question_object)
             db.session.commit()
+            if question_type != models.Question.MULTIPLE:
+                continue
             for number, answer in enumerate(question['answers']):
                 if type(question['correct']) is int and question['correct'] == number:
                     correct = True

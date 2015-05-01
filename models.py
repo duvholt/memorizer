@@ -93,10 +93,12 @@ class Question(db.Model):
     # Alternative question
     alternatives = db.relationship('Alternative', backref='question', order_by='Alternative.id')
 
-    def __init__(self, text=None, exam_id=None, image=""):
+    def __init__(self, type=None, text=None, exam_id=None, image="", correct=None):
+        self.type = type
         self.text = text
         self.exam_id = exam_id
         self.image = image
+        self.correct = correct
 
     def __repr__(self):
         return self.text
