@@ -164,9 +164,9 @@
         return deleteFunction;
     };
     List.prototype.update = function() {
-        this.empty();
         Ajax({url: this.api + this.filter}, {
             success: function(data) {
+                this.empty();
                 for (var i = 0; i < data.length; i++) {
                     this.element.appendChild(this.li(data[i].str, data[i].id));
                 }
