@@ -317,3 +317,21 @@ button[type=submit]:hover {
     color: #2D662E;
     background: #B1C0B2;
 }
+
+/* heh */
+blaze {
+    color: darkred;
+    animation: blink 1s steps(4, start) infinite;
+    -webkit-animation: blink 1s steps(4, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+@-webkit-keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
