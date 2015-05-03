@@ -11,5 +11,5 @@
 {{ render_form(exam_form, '/api/exams/') }}
 
 <h2>Eksamener</h2>
-<ul class="admin-list" data-api="/api/exams/?course_id={{ course.id }}" data-url="/admin/course/{{ course.id }}/"></ul>
+<ul class="admin-list" data-api="/api/exams/" data-filter="?course_id={{ course.id }}" data-url="/admin/course/{{ course.id }}/"></ul>
 {% endblock %}

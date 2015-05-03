@@ -11,5 +11,5 @@
 {{ render_form(question_form, '/api/questions/') }}
 
 <h2>Spørsmål</h2>
-<ul class="admin-list" data-api="/api/questions/?exam_id={{ exam.id }}" data-url="/admin/question/"></ul>
+<ul class="admin-list" data-api="/api/questions/" data-filter="?exam_id={{ exam.id }}" data-url="/admin/question/"></ul>
 {% endblock %}

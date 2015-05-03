@@ -118,6 +118,7 @@
         this.element = adminList;
         this.api = adminList.dataset.api;
         this.url = adminList.dataset.url;
+        this.filter = adminList.dataset.filter ? adminList.dataset.filter : "";
     };
 
     List.prototype.empty = function() {
@@ -125,23 +126,49 @@
             this.element.removeChild(this.element.lastChild);
         }
     };
-    List.prototype.li = function(content, url) {
-        console.log(content);
+    List.prototype.li = function(content, id) {
         var li = document.createElement('li');
+        // Delete button
+        var del = document.createElement('a');
+        del.href = '#';
+        del.className = 'delete';
+        del.innerHTML = '<i class="fa fa-times fa-fw"></i> Slett';
+        del.id = id;
+        del.onclick = this.deleteObject();
+
+        // Link to edit element
         var a = document.createElement('a');
         a.textContent = content;
-        a.href = url;
+        a.href = this.url + id;
+
         li.appendChild(a);
+        li.appendChild(del);
         return li;
+    };
+    List.prototype.deleteObject = function(e) {
+        var that = this;
+        var deleteFunction = function(e) {
+            // `this` refers to the object that was clicked
+            e.preventDefault();
+            Ajax({url: that.api + this.id, method: 'DELETE'}, {
+                success: function(data) {
+                    Alert('Slettet', 'success');
+                    that.update();
+                },
+                error: function(data) {
+                    Alert('Sletting feilet', 'error');
+                }
+            });
+        };
+        return deleteFunction;
     };
     List.prototype.update = function() {
         this.empty();
-        Ajax({url: this.api}, {
+        Ajax({url: this.api + this.filter}, {
             success: function(data) {
                 console.log(data);
                 for (var i = 0; i < data.length; i++) {
-                    var url = this.url + data[i].id;
-                    this.element.appendChild(this.li(data[i].str, url));
+                    this.element.appendChild(this.li(data[i].str, data[i].id));
                 }
             }.bind(this),
             error: function(data) {
