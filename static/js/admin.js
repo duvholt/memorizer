@@ -37,7 +37,14 @@
                         this.emptyField(input.parentNode);
                         if(this.create) {
                             // Empty fields for creation of new objects
-                            input.value = '';
+                            if(input.type === 'checkbox') {
+                                // Only uncheck the checkbox.
+                                // If value is empty then the checkbox will be treated as unchecked even if checked.
+                                input.checked = false;
+                            }
+                            else {
+                                input.value = '';
+                            }
                         }
                     }.bind(this));
                     if(this.list !== undefined) {
