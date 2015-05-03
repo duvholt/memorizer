@@ -42,7 +42,7 @@
                                 // If value is empty then the checkbox will be treated as unchecked even if checked.
                                 input.checked = false;
                             }
-                            else {
+                            else if(input.tagName !== 'SELECT') {
                                 input.value = '';
                             }
                         }
