@@ -166,7 +166,6 @@
         this.empty();
         Ajax({url: this.api + this.filter}, {
             success: function(data) {
-                console.log(data);
                 for (var i = 0; i < data.length; i++) {
                     this.element.appendChild(this.li(data[i].str, data[i].id));
                 }
@@ -181,7 +180,6 @@
     var forms = document.getElementsByClassName('form-admin');
     var object = document.getElementsByClassName('admin-list')[0];
     if(object !== undefined) {
-        console.log(object);
         var list = new List(object);
         list.update();
     }
