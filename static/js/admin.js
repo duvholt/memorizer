@@ -140,6 +140,7 @@
         var a = document.createElement('a');
         a.textContent = content;
         a.href = this.url + id;
+        a.className = 'link';
 
         li.appendChild(a);
         li.appendChild(del);

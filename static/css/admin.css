@@ -31,3 +31,44 @@
     width: 15px;
     min-width: inherit;
 }
+
+.admin-list {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-list li {
+    background-color: rgb(176, 176, 176);
+    margin: 0;
+    border: 1px solid gray;
+    border-top: none;
+}
+
+/* Add top border on first element */
+.admin-list li:nth-child(1) {
+    border-top: 1px solid gray;
+
+}
+
+.admin-list li:nth-child(even) {
+    background-color: rgb(224, 224, 224);
+}
+
+.admin-list a {
+    display: inline-block;
+    padding: 10px;
+}
+
+.admin-list a:hover {
+    text-decoration: underline;
+
+}
+
+.admin-list a.link {
+    width: 80%;
+    height: 100%;
+}
+
+.admin-list a.delete {
+    float: right;
+}
