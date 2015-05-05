@@ -90,11 +90,6 @@ def show_question(course, exam, id):
         'exam_name': exam_name,
         'reset_url': reset_url
     }
-    if course.code == 'TTM4100':
-        context['alerts'].append({
-            'msg': 'Eksamene V08 til V13 er ikke korrekte. Kun V07 og V14 har riktige svar for øyeblikket.',
-            'level': 'info'
-        })
     # POST request when answering
     if request.method == 'POST':
         answer = request.form.get('answer')
