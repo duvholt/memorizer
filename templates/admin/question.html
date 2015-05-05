@@ -3,12 +3,13 @@
 
 {% block content %}
 <h1>{{ question.course }} - {{ question.exam }}</h1>
-<h2>{{ question }}</h2>
 
 {% if next_question %}
 <div class="navigation">
     <a href="{{ url_for('admin.question', question_id=next_question.id) }}">Neste spørsmål</a>
 </div>
+
+<h2>{{ question }}</h2>
 {% endif %}
 
 {{ render_form(form, '/api/questions/' + question.id|string, new=False) }}
