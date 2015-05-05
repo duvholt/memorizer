@@ -62,10 +62,11 @@ def exam(course_id, exam_id):
 @admin_required
 def question(question_id):
     question = question = models.Question.query.filter_by(id=question_id).first_or_404()
+    next_question = models.Question.query.filter_by(exam=question.exam).filter(models.Question.id > question_id).first()
     form = QuestionForm(obj=question)
     alt = models.Alternative(question_id=question.id)
     alt_form = AlternativeForm(obj=alt)
-    context = dict(question=question, form=form, alt_form=alt_form)
+    context = dict(question=question, form=form, alt_form=alt_form, next_question=next_question)
     return render_template('admin/question.html', **context)
 
 

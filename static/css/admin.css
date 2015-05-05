@@ -1,3 +1,7 @@
+.form-admin {
+    padding-top: 15px;
+}
+
 .form-admin .field * {
     box-sizing: border-box;
 }
