@@ -33,8 +33,7 @@
 }
 
 .admin-list {
-    list-style: none;
-    padding: 0;
+    list-style: decimal;
 }
 
 .admin-list li {
