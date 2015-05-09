@@ -98,6 +98,7 @@ def show_question(course, exam, id):
     if request.method == 'POST':
         answer = request.form.get('answer')
         if answer:
+            context['answered'] = True
             for alternative in question.choices:
                 if str(alternative.id) == answer:
                     context['success'] = alternative.correct

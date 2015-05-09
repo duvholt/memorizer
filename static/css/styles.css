@@ -230,6 +230,10 @@ form label:hover {
     margin-left: -20px;
 }
 
+.reason {
+    margin: 10px 0 0 0;
+}
+
 button[type=submit] {
     padding: 7px 15px;
     margin: 0;

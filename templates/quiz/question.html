@@ -55,6 +55,12 @@
     {% endfor %}
     <button type="submit">Svar</button>
 </form>
+{% if answered and question.reason %}
+<div class="alert reason">
+    <b>Forlaring</b>:
+    {{ question.reason }}
+</div>
+{% endif %}
 {% endif %}
 <div class="navigation">
 {{ navlink(prev, 'prev', 'Forrige') }}

@@ -86,6 +86,7 @@ class Question(db.Model):
     image = db.Column(db.String, info={'label': 'Bilde'})
     exam_id = db.Column(db.Integer, db.ForeignKey('exam.id'))
     course = association_proxy('exam', 'course')
+    reason = db.Column(db.String, info={'label': 'Forklaring'})
 
     type = db.Column(ChoiceType(TYPES), info={'label': 'Spørsmålstype'})
     # Boolean question
