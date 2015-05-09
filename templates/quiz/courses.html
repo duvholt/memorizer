@@ -5,8 +5,9 @@
 {% for course in courses %}
     <li>
         <a href="{{ url_for('quiz.course', course=course.code) }}">
-            {{ course.code }}
-            <span>{{ course.name }}</span>
+            <div class="code">{{ course.code }}</div>
+            <span class="count">{{ course.num_questions }} <small>spørsmål</small></span>
+            <span class="name">{{ course.name }}</span>
         </a>
     </li>
 {% endfor %}

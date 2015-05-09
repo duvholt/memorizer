@@ -1,4 +1,5 @@
 from flask import abort, Blueprint, redirect, render_template, request, session, url_for
+from sqlalchemy import func
 import models
 import random
 import re
@@ -8,8 +9,11 @@ quiz = Blueprint('quiz', __name__)
 
 @quiz.route('/')
 def main():
+    courses = models.Course.query.all()
+    for course in courses:
+        course.num_questions = models.Question.query.filter_by(course=course).count()
     context = {
-        'courses': models.Course.query.all()
+        'courses': courses
     }
     return render_template('quiz/courses.html', **context)
 

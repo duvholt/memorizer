@@ -137,7 +137,19 @@ nav ul ul li:last-child > a {
     height: auto;
 }
 
-.courses li a {
+.courses .count {
+    font-size: 20px;
+
+    color: #8e8e8e;
+    clear: both;
+}
+
+.courses .count small {
+    font-size: 15px;
+
+}
+
+.courses a {
     padding: 20px 0 70px 0;
     display: block;
     text-decoration: none;
@@ -146,11 +158,11 @@ nav ul ul li:last-child > a {
     font-weight: bold;
 }
 
-.courses li a:hover span {
+.courses a:hover .name {
     height: 55%;
 }
 
-.courses li span {
+.courses .name {
     overflow: hidden;
     position: absolute;
     width: 100%;
