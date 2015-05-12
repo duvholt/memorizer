@@ -204,6 +204,14 @@ form label:hover {
     clear: both;
 }
 
+/* Fixed 800px width is only used on larger displays to position the stats box correctly */
+@media (max-width: 975px) {
+    .question {
+        width: auto;
+        max-width: 800px;
+    }
+}
+
 .question .image {
     display: inline-block;
 }
