@@ -1,0 +1,207 @@
+{
+    "name": "Programvareutvikling",
+    "code": "TDT4140",
+    "exam": "H14",
+    "questions": [
+        {
+            "question": "Hva er ‘Software Engineering’?",
+            "answers": [
+                "Er et sett av regler om hvordan man skal utvikle programvare.",
+                "Har vært en egen disiplin siden tidlig 50-tallet og er nå en moden ingeniørdisipli på linje med andre etablerte innenfor ingeniørfeltet.",
+                "Startet som en respons på den såkalte ‘Software Crisis’ sent på 60-tallet.",
+                "Er en egen ingeniørdisiplin som omfatter alle aspekter av programvareproduksjon"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "En programvareutvikler som tilslutter seg «Software Engineering Code of Ethics and Professional Practices» må:",
+            "answers": [
+                "Alltid å praktisere i henhold til IEEE standarder",
+                "Hjelpe kollegaer i profesjonell utvikling",
+                "Være medlem av IEEE Computer Society",
+                "Unngå alle problemstillinger knyttet til finans og lønnsomhet"
+            ],
+            "correct": 1
+        },
+   		{
+            "question": "En programvareingeniør er ansatt i selskapet som designer og fremstiller avstemmingsmaskiner for bruk i kommune- og stortingsvalg. Hun er ansatt for å utvikle arkivsystemet for å sikre avstemmingsinformasjon og avstemningsresultater. Hvilken av de følgende handlinger vil mest sannsynlig være et brudd på «Software Engineering Code of Ethics and Professional Practice»?",
+            "answers": [
+                "Hun unnlot å levere korrekt og tilstrekkelig dokumentasjon av sitt arbeid i prosjektet.",
+                "Hun har ikke tidligere arbeidet i et prosjekt for utvikling av avstemmingsmaskiner.",
+                "Hun er registrert som stemmegiver i kommunen der maskinen vil bli benyttet.",
+                "Hun oppdaget et signifikant antall feil i eget design av arkivsystemet."
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hvilke av de følgende elementer skal IKKE være inkludert i en prosjektplan for utvikling av programvare?",
+            "answers": [
+                "Teknikkene og case-verktøy som skal bli benyttet",
+                "Livssyklusmodellen som skal bli benyttet",
+                "Organisasjonsstruktur på utviklingsorganisasjonen, prosjektoppgaver, ledelsesmål og prioriteter",
+                "Ingen av alternativene"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "En livssyklus for programvare kan bli forklart som å bestå av en serie av faser. Den klassiske modellen blir kalt fossefallsmodellen. Hvilken fase kan defineres som 'hvor konsepter blir undersøkt og forfinet, og fremkaller derfor kundekrav?'",
+            "answers": [
+                "Krav",
+                "Spesifikasjon",
+                "Design",
+                "Implementering"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hva er det korrekte utsagnet i forhold til evolusjonær utvikling/«Evolutionary development»?",
+            "answers": [
+                "Evolusjonær utvikling kommer normalt i to forskjellige former: Undersøkende/exploratory utvikling og bruk-og-kast prototyping",
+                "Veldig store prosjekter er naturlige kandidater til evolusjonær utvikling",
+                "Undersøkende/exploratory utvikling blir benyttet i situasjoner der de fleste kravene på forhånd.",
+                "Et av de sterkeste punktene for evolusjonær utvikling er at det forenkler prosjektstyring gjennom den store mengden dokumentasjon som blir generert"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "I vedlikeholdsfasen må produktet testes mot tidligere test caser. Dette er også kjent som __________testing.",
+            "answers": [
+                "Enhets",
+                "Integrasjons",
+                "Regresjons",
+                "Akseptanse"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Et eksempel på en risiko involvert i programvareutvikling:",
+            "answers": [
+                "Produsenten av kritiske komponenter (f.eks. maskinvare som er assosiert med et sanntidssystem) kan gå konkurs.",
+                "Teknologiendringer kan medføre at produktet blir foreldet",
+                "Konkurrenter kan markedsføre et tilsvarende produkt til en lavere pris",
+                "Alle er riktig"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Graden av interaksjon mellom to moduler er kjent som",
+            "answers": [
+                "Kohesjon/Cohesion",
+                "Arv/Inheritance",
+                "Kobling/Coupling",
+                "Instansiering/Instantiation."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Interne kostnader i et prosjekt inkluderer",
+            "answers": [
+                "Lønn til utviklere",
+                "Lønn til ledere og støttepersonell",
+                "Overheadkostnader f.eks. til hjelpesystemer, husleie og toppledelse",
+                "Materialer (som f.eks. manualer og bøker) og tjenester som f.eks. reiser"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Resultat fra algoritmisk kostnadsestimering i forskjellige organisasjoner kan være forskjellige for den samme type applikasjonsutvikling fordi",
+            "answers": [
+                "Forskjellige organisasjoner betrakter kompleksitetsfaktorer forskjellig og kan benytte forskjellige programmeringsspråk",
+                "Dyktigheten til utviklere kan variere",
+                "Teknikker for måling av produktivitet kan variere",
+                "Alle er riktige."
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Hvilke av elementene under fanger best naturen til et kvalitetsparadigme?",
+            "answers": [
+                "Kvalitetskarakteristikker, prosessperspektiv, eliminering av defekter",
+                "Målinger, kvalitetskontroll, validering",
+                "Gjennomførbarhet, krav, økonomi, brukerbehov",
+                "Analyse, test, design"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Når man velger en livssyklusmodell for programvareutvikling, så vil man ta i betraktning:",
+            "answers": [
+                "Ekspertisen til utviklingsgruppen, problemkarakteristikker, brukerforventninger",
+                "Programmeringsspråk, tidsramme for utvikling, konkurransesituasjon",
+                "Systemkontekst, brukerpopulasjon, plattformer",
+                "Organisatorisk struktur, brukeroppgaver, ytelseskriteria"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Hvilke av de følgende er IKKE betraktet som en primær drivkraft for å forbedre programvareprosessen?",
+            "answers": [
+                "Økt effektivitet",
+                "Bedre produktkvalitet",
+                "Forbedring av personaltilfredshet",
+                "Tettere ledelseskontroll"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Når man skal planlegge et programvareprosjekt vil man:",
+            "answers": [
+                "Tilpasse tidsplanen for å kunne håndtere eventuelle feil",
+                "Finne måter å produsere resultater med tilstrekkelig kvalitet ved hjelp av begrensede ressurser.",
+                "Overestimere budsjettet (PI-faktor)",
+                "Alle svarene er riktig"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Hvor mange tester må lages for å teste fire betingelser i en IF-setning?",
+            "answers": [
+                "4",
+                "8",
+                "12",
+                "16"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "For å være et effektivt verktøy i prosessforbedring, så må underlagsmetrikkene være...",
+            "answers": [
+                "Basert på rimelige estimater fra mislykkede prosjekter",
+                "Målt konsistent på tvers av prosjekter",
+                "Basert bare på vellykkede prosjekter",
+                "Basert på mislykkede prosjekter"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "En programvareutvikler måler kvaliteten av et programvaresystem. Hun er bekymret for påliteligheten («reliability») og validiteten («validity») av målingene sine. Hvilken av følgende uttalelser er sann?",
+            "answers": [
+                "Pålitelighet refererer til i hvilken grad målingene representerer den egentlige kvaliteten til systemet og validitet refererer til konsistensen av hennes kvalitetsmålinger.",
+                "Pålitelighet refererer til konsistensen av hennes kvalitetsmålinger og validitet til i hvilken grad målingene representerer den egentlige kvaliteten til systemet.",
+                "Pålitelighet refererer til nøyaktigheten på hennes kvalitetsmålinger og validitet referer til i hvilken grad målingene følger en kvalitetsstandard.",
+                "Pålitelighet refererer til samtidigheten av hennes kvalitetsmålinger og validitet refererer til i hvilken grad målingene er konsistent med etablerte normer."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "DIFI har definert sju arkitekturprinsipp. Seks av disse er tjenesteorientering, interoperabilitet, sikkerhet, åpenhet, tilgjengelighet og skalerbarhet. Hva er det sjuende?",
+            "answers": [
+                "Fleksibilitet",
+                "Funksjonsstabilitet",
+                "Testbarhet",
+                "Ytelse"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Interoperabilitet er et viktig arkitekturprinsipp. Hvilke typer interoperabilitet er definert av DIFI?",
+            "answers": [
+                "Obligatorisk bruk av web-protokollene SOAP, REST og JSON",
+                "Organisatorisk, semantisk og teknisk interoperabilitet",
+                "Etablering av felles IKT-løsninger i offentlig sektor",
+                "Definerte standarder for kommunikasjon og integrasjon"
+            ],
+            "correct": 1
+        }
+    ]
+}
