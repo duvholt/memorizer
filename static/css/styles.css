@@ -105,6 +105,11 @@ nav li > a:hover {
     box-shadow: inset 0 -2px 0 #1A6396;
 }
 
+nav li > a:focus {
+    background: #D2D0D0;
+    outline: none;
+}
+
 nav ul ul li a {
     border-left-width: 1px;
 }
@@ -276,8 +281,12 @@ button[type=submit] {
     font-size: 17px;
 }
 
-button[type=submit]:hover {
+button[type=submit]:hover, button[type=submit]:focus, button[type=submit]:active {
     background: #2A536E;
+}
+
+.navigation a:active, button[type=submit]:active {
+    box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.30);
 }
 
 .navigation {
