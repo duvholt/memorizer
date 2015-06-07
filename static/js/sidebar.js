@@ -8,7 +8,6 @@ var Sidebar = function() {
     this.icon.addEventListener('click', function(e) {
         this.toggle(e);
     }.bind(this), false);
-
 };
 
 Sidebar.prototype.isClosed = function() {
@@ -23,6 +22,26 @@ Sidebar.prototype.close = function() {
 Sidebar.prototype.open = function() {
     this.nav.className = this.nav.className.replace(this.closedClass, '');
     this.icon.className = this.icon.className.replace(this.closedIcon, this.openIcon);
+
+    // Checking for clicks outside of menu
+    var opened = false;
+    var click = function(e) {
+        // TODO: This is kinda messy, consider rewriting
+        if(this.icon == e.target) {
+            if(opened) {
+                document.removeEventListener('click', click);
+            }
+            else {
+                opened = true;
+            }
+        }
+        else if(this.nav != e.target) {
+            document.removeEventListener('click', click);
+            this.close();
+        }
+    }.bind(this);
+
+    document.addEventListener('click', click);
 };
 
 Sidebar.prototype.toggle = function(e) {
