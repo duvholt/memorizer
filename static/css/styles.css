@@ -327,6 +327,10 @@ button[type=submit]:hover {
     color: #474747;
 }
 
+.stats .reset a:hover {
+    text-decoration: underline;
+}
+
 .alerts {
     list-style: none;
     margin: 0;

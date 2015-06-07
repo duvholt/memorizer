@@ -79,6 +79,7 @@
     </div>
     <div class="combo">Combo: {{ score.combo }}{% for _ in range(score.combo // 10) %}<i class="fa fa-trophy"></i>{% endfor %}</div>
     <div class="progress">Spørsmål: {{ score.total }}/{{ num_questions }}</div>
-    <div class="reset"><a href="{{ reset_url }}">Nullstill</a></div>
+    <div class="reset"><a href="{{ reset_url }}"><i class="fa fa-undo"></i> Nullstill poeng</a></div>
 </div>
 {% endblock %}
+ 
