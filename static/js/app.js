@@ -44,19 +44,4 @@
             }
         }
     });
-    var navSidebar = document.querySelector('nav.sidebar');
-    var navTop = document.querySelector('nav.top');
-    var icon = navTop.querySelector('.logo i');
-    var toggleSidebar = function() {
-        var closed = navSidebar.className.indexOf('closed') > -1;
-        if(!closed) {
-            navSidebar.className += ' closed';
-            icon.className = icon.className.replace('fa-times', 'fa-navicon');
-        }
-        else {
-            navSidebar.className = navSidebar.className.replace(' closed', '');
-            icon.className = icon.className.replace('fa-navicon', 'fa-times');
-        }
-    }
-    icon.addEventListener('click', toggleSidebar);
 })();
