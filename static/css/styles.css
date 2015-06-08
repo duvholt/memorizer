@@ -167,6 +167,7 @@ nav ul ul li:last-child > a {
     padding: 0 0 0 0;
     clear: both;
     max-width: 900px;
+    width: 100%;
     display: inline-flex;
     flex-wrap: wrap;
 }
