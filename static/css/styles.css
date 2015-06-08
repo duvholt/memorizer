@@ -424,3 +424,19 @@ blaze {
         visibility: hidden;
     }
 }
+
+
+/* Courses filter */
+#search_courses {
+    min-width: 100px;
+    width: 60%;
+    display: block;
+    height: 30px;
+    font-size: 13px;
+    color: #333;
+    border: 1px solid gray;
+    border-radius: 2px;
+    padding: 2px 5px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}

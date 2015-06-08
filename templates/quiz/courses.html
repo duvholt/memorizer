@@ -1,9 +1,10 @@
 {% extends "quiz/quiz.html" %}
 {% block content %}
 <h1>Emner</h1>
+<input type="text" id="search_courses" placeholder="Søk...">
 <ul class="courses">
 {% for course in courses %}
-    <li>
+    <li data-text="{{ course.code }} {{ course.name }}">
         <a href="{{ url_for('quiz.course', course=course.code) }}">
             <div class="code">{{ course.code }}</div>
             <div class="count">{{ course.num_questions }} <small>spørsmål</small></div>
@@ -12,4 +13,11 @@
     </li>
 {% endfor %}
 </ul>
+{% endblock %}
+
+{% block js %}
+{{ super () }}
+<script>
+    new CoursesFilter(document.getElementById('search_courses'), document.querySelectorAll('ul.courses li'));
+</script>
 {% endblock %}
