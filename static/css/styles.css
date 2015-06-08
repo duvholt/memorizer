@@ -25,6 +25,7 @@ h1, h2, h3, h4 {
     max-width: 1010px;
 }
 
+
 nav {
     z-index: 1001;
     position: fixed;
@@ -108,8 +109,8 @@ nav ul ul {
 }
 
 nav li.active a {
-    box-shadow: inset 0 -2px 0 #0C2C44;
-    background-color: rgb(224, 224, 224);
+    box-shadow: inset 0 -2px 0 #6497BD;
+    background-color: #FFF;
     font-weight: bold;
 }
 
