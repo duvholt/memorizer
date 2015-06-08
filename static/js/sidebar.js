@@ -1,11 +1,12 @@
 var Sidebar = function() {
     this.nav = document.querySelector('nav.sidebar');
-    this.icon = document.querySelector('nav.top .logo i');
+    this.menu = document.querySelector('nav.top .menu');
+    this.icon = this.menu.querySelector('i');
     this.closedIcon = 'fa-navicon';
     this.openIcon = 'fa-times';
     this.closedClass = ' closed';
 
-    this.icon.addEventListener('click', function(e) {
+    this.menu.addEventListener('click', function(e) {
         this.toggle(e);
     }.bind(this), false);
 };
@@ -27,7 +28,7 @@ Sidebar.prototype.open = function() {
     var opened = false;
     var click = function(e) {
         // TODO: This is kinda messy, consider rewriting
-        if(this.icon == e.target) {
+        if(this.menu == e.target || this.menu == e.target.parentNode) {
             if(opened) {
                 document.removeEventListener('click', click);
             }

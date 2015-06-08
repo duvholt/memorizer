@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-    margin: 58px 20px 20px 20px;
+    margin: 60px 0 20px 0;
     background-color: #EFEFEF;
     font-weight: 300;
     font-size: 16px;
@@ -17,6 +17,12 @@ a {
 h1, h2, h3, h4 {
     font-family: Roboto, Helvetica;
     color: #353535;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1010px;
 }
 
 nav {
@@ -34,6 +40,40 @@ nav {
 nav.top {
     top: 0;
     height: 50px;
+    font-size: 25px;
+    color: #A6A6A6;
+}
+
+nav.top .menu {
+    display: inline-table;
+    font-size: 16px;
+    color: #DFDFDF;
+    padding: 8px 10px 0 0;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.menu span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+nav.top .menu i {
+    font-size: 30px;
+    margin-left: -5px;
+}
+
+nav.top a.logo {
+    font-family: "Alegreya SC";
+    font-weight: bold;
+    color: #DFDFDF;
+    font-size: 36px;
+    padding-left: 10px;
+}
+
+nav.top .menu:hover, nav.top a:hover {
+    color: #BDBDBD;
 }
 
 nav.sidebar {
@@ -51,23 +91,6 @@ nav.closed {
     visibility: hidden;
     transition: visibility 0.1s 2s, left 0.3s;
     transition-timing-function: ease-in-out;
-}
-
-nav.top .logo {
-    padding: 10px 10px 0 5px;
-}
-
-nav .logo i {
-    font-size: 30px;
-    padding: 0 6px 0 6px;
-    color: #DFDFDF;
-    cursor: pointer;
-}
-
-nav .logo a {
-    font-size: 25px;
-    color: #A6A6A6;
-    font-weight: bold;
 }
 
 nav li {
@@ -142,7 +165,7 @@ nav ul ul li:last-child > a {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     clear: both;
-    max-width: 800px;
+    max-width: 900px;
     display: inline-flex;
     flex-wrap: wrap;
 }
@@ -227,7 +250,7 @@ form label:hover {
     width: 800px;
     display: inline-block;
     float: left;
-    margin: 0 20px 20px 0;
+    margin: 0 10px 20px 0;
     clear: both;
 }
 
@@ -327,7 +350,7 @@ button[type=submit]:hover, button[type=submit]:focus, button[type=submit]:active
 
 .stats {
     float: left;
-    padding: 20px;
+    padding: 15px;
     background: #FFFFFF;
     border: 1px solid #B3B3B3;
     margin: 25px 0 0 0;
