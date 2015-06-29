@@ -36,16 +36,17 @@ class APIView(JsonView):
             # Filtering with query string parameters
             query = self.model.query
             for key in request.args.keys():
-                if hasattr(self.model, key):
+                model_columns = self.model.__table__.columns.keys()
+                if key in model_columns:
                     value = request.args.getlist(key)
                     # SQL IN
-                    if type(value) is list:
+                    if len(value) > 1:
                         # Not super pretty, but it works™
                         attr = getattr(self.model, key)
                         query = query.filter(attr.in_(value))
                     # SQL AND
                     else:
-                        filters[key] = value
+                        filters[key] = value[0]
             objects = query.filter_by(**filters)
             return [object.serialize() for object in objects]
 
