@@ -34,10 +34,19 @@ class APIView(JsonView):
         else:
             filters = {}
             # Filtering with query string parameters
-            for key, value in request.args.items():
+            query = self.model.query
+            for key in request.args.keys():
                 if hasattr(self.model, key):
-                    filters[key] = value
-            objects = self.model.query.filter_by(**filters)
+                    value = request.args.getlist(key)
+                    # SQL IN
+                    if type(value) is list:
+                        # Not super pretty, but it works™
+                        attr = getattr(self.model, key)
+                        query = query.filter(attr.in_(value))
+                    # SQL AND
+                    else:
+                        filters[key] = value
+            objects = query.filter_by(**filters)
             return [object.serialize() for object in objects]
 
     def post(self):
