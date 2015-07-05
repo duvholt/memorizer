@@ -28,7 +28,7 @@
 {% block content %}
 <div class="question">
 <h2>{{ question.course.name }} - {{ question.exam }}</h2>
-<h3>Spørsmål #{{ id }}</h3>
+<h3>Spørsmål #<span id="question-number">{{ id }}</span></h3>
 {% if question is defined %}
 {% if question.image %}
 <div class="image">
@@ -82,4 +82,10 @@
     <div class="reset"><a href="{{ reset_url }}"><i class="fa fa-undo"></i> Nullstill poeng</a></div>
 </div>
 {% endblock %}
- 
+
+{% block js %}
+{{ super () }}
+<script>
+    var q = new Questions();
+</script>
+{% endblock %}
