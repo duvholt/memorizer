@@ -13,39 +13,51 @@
     // Settings
     var s = {
         idMatch: /^[\w-]+$/,
-        print: /\{\$\s*(.*?)\s*\$\}/g,
-        printSafe: /\{\_\s*(.*?)\s*\_\}/g
+        print: /\{\$\s*(.*?)\s*\}/g,
+        printSafe: /\{\_\s*(.*?)\s*\}/g
         
     };
-    // Some day...
     var cache = {};
 
-    // Render template code into HTML
-    var render = function(str, context) {
-        if(s.idMatch.test(str)) {
-            return render(document.getElementById(str));
+
+    this.scoop = function(str, context) {
+        // Caching
+        if(!cache[str]) {
+            cache[str] = scoop.compile(str);
         }
-        str = str.
+        fn = cache[str];
+        return fn(context);
+    };
+
+    // Compile template code into HTML
+    scoop.compile = function(str) {
+        if(s.idMatch.test(str)) {
+            return scoop.compile(document.getElementById(str));
+        }
+        function_code = 'return \'';
+        function_code += str.
         replace(
             s.print, function(match, value) {
-                return encode(lookup(context, value));
+                return '\' + scoop.encode(scoop.lookup(context, \'' + value + '\')) + \'';
             }
         ).replace(
             s.printSafe, function(match, value) {
-                return lookup(context, value);
+                return '\' + scoop.lookup(context, \'' + value + '\') + \'';
             }
         );
-        return str;
+        function_code += '\';';
+        return new Function('context', function_code);
     };
 
+
     // HTML encoding http://stackoverflow.com/a/15348311
-    var encode = function(text) {
+    scoop.encode = function(text) {
         return document.createElement('i').appendChild( 
         document.createTextNode(text)).parentNode.innerHTML;
     };
 
     // Tries to find key like person.name in an object
-    var lookup = function(data, key) {
+    scoop.lookup = function(data, key) {
         var props = key.split('.');
         while(props.length) {
             var prop = props.pop();
@@ -58,10 +70,5 @@
             }
         }
         return data;
-    };
-
-    this.scoop = function(str, context) {
-        // TODO: Add caching
-        return render(str, context);
     };
 })();
