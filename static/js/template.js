@@ -4,9 +4,9 @@
 
     Scoop, because what the world needs right now is yet another JavaScript templating engine
 
-    {$ t.var } - print with escaping
-    {_ t.var } - print without escaping
-    {+ for var in t.vars }[..]{+} - foreach loop
+    {$ var } - print with escaping
+    {_ var } - print without escaping
+    {+ var in vars }[..]{+} - foreach loop
 */
 
 (function() {
@@ -15,7 +15,7 @@
         idMatch: /^[\w-]+$/,
         print: /\{\$\s*(.*?)\s*\}/g,
         printSafe: /\{\_\s*(.*?)\s*\}/g,
-        forloop: /\{\+\s*for (.+?) in (.+?)\s*\}/g,
+        forloop: /\{\+\s*(.+?) in (.+?)\s*\}/g,
         endforloop: /\{\+\}/g
         
     };
@@ -34,8 +34,10 @@
     // Compile template code into HTML
     scoop.compile = function(str) {
         if(s.idMatch.test(str)) {
-            return scoop.compile(document.getElementById(str));
+            console.log(document.getElementById(str).innerHTML);
+            return scoop.compile(document.getElementById(str).innerHTML);
         }
+        str = str.replace(/\n/g, '\\\n');
         function_code = 'var $code; with($context) { $code = \'';
         function_code += str.
         replace(
@@ -48,8 +50,7 @@
             }
         ).replace(
             s.forloop, function(match, element, iterator) {
-                return '\'; for(var i = 0; i < ' + iterator + '.length; i++) { ' +
-                    'var ' + element + ' = ' + iterator + '[i]; $code += \'';
+                return '\'; for(var i = 0; i < ' + iterator + '.length; i++) { var ' + element + ' = ' + iterator + '[i]; $code += \'';
             }
         ).replace(
             s.endforloop, function(match) {
@@ -57,6 +58,7 @@
             }
         );
         function_code += '\';} return $code;';
+        console.log(function_code);
         return new Function('$context', function_code);
     };
 
