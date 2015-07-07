@@ -4,9 +4,9 @@
 
     Scoop, because what the world needs right now is yet another JavaScript templating engine
 
-    {$ var } - print with escaping
-    {_ var } - print without escaping
-    {+ for var in vars } - foreach loop
+    {$ t.var } - print with escaping
+    {_ t.var } - print without escaping
+    {+ for var in t.vars }[..]{+} - foreach loop
 */
 
 (function() {
@@ -14,7 +14,9 @@
     var s = {
         idMatch: /^[\w-]+$/,
         print: /\{\$\s*(.*?)\s*\}/g,
-        printSafe: /\{\_\s*(.*?)\s*\}/g
+        printSafe: /\{\_\s*(.*?)\s*\}/g,
+        forloop: /\{\+\s*for (.+?) in (.+?)\s*\}/g,
+        endforloop: /\{\+\}/g
         
     };
     var cache = {};
@@ -34,19 +36,28 @@
         if(s.idMatch.test(str)) {
             return scoop.compile(document.getElementById(str));
         }
-        function_code = 'return \'';
+        function_code = 'var code = \'';
         function_code += str.
         replace(
             s.print, function(match, value) {
-                return '\' + scoop.encode(scoop.lookup(context, \'' + value + '\')) + \'';
+                return '\'; code += scoop.encode(' + value + '); code += \'';
             }
         ).replace(
             s.printSafe, function(match, value) {
-                return '\' + scoop.lookup(context, \'' + value + '\') + \'';
+                return '\'; code += ' + value + '; code += \'';
+            }
+        ).replace(
+            s.forloop, function(match, element, iterator) {
+                return '\'; for(var i = 0; i < ' + iterator + '.length; i++) { ' +
+                    'var ' + element + ' = ' + iterator + '[i]; code += \'';
+            }
+        ).replace(
+            s.endforloop, function(match) {
+                return '\'; } code += \'';
             }
         );
-        function_code += '\';';
-        return new Function('context', function_code);
+        function_code += '\'; return code;';
+        return new Function('t', function_code);
     };
 
 
@@ -54,21 +65,5 @@
     scoop.encode = function(text) {
         return document.createElement('i').appendChild( 
         document.createTextNode(text)).parentNode.innerHTML;
-    };
-
-    // Tries to find key like person.name in an object
-    scoop.lookup = function(data, key) {
-        var props = key.split('.');
-        while(props.length) {
-            var prop = props.pop();
-            if(data.hasOwnProperty(prop)) {
-                data = data[prop];
-            }
-            else {
-                // Key not found
-                return "";
-            }
-        }
-        return data;
     };
 })();
