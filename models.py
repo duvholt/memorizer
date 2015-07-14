@@ -1,3 +1,4 @@
+from flask import url_for
 from flask.ext.sqlalchemy import SQLAlchemy
 from sqlalchemy.ext.associationproxy import association_proxy
 from sqlalchemy_utils.types.choice import ChoiceType
@@ -118,10 +119,14 @@ class Question(db.Model):
             return [FakeAlternative(1, 'Riktig', self.correct is True), FakeAlternative(2, 'Galt', self.correct is False)]
 
     def serialize(self):
+        image = None
+        if self.image:
+            # this is not efficient
+            image = url_for('static', filename='img/' + self.course.code + '/' + self.image)
         return {
             'id': self.id,
             'text': self.text,
-            'image': self.image,
+            'image': image,
             'exam_id': self.exam_id,
             'alternatives': [alt.serialize() for alt in self.alternatives],
             'str': str(self)
