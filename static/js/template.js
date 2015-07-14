@@ -7,6 +7,7 @@
     {$ var } - print with escaping
     {_ var } - print without escaping
     {+ var in vars }[..]{+} - foreach loop
+    {? if expression }[..]{? else if expression}[..]{? else }[..]{?} - if etc.
 */
 
 (function() {
@@ -16,8 +17,11 @@
         print: /\{\$\s*(.*?)\s*\}/g,
         printSafe: /\{\_\s*(.*?)\s*\}/g,
         forloop: /\{\+\s*(.+?) in (.+?)\s*\}/g,
-        endforloop: /\{\+\}/g
-        
+        endforloop: /\{\+\}/g,
+        iff: /\{\?\s*if (.+?)\s*\}/g,
+        elseif: /\{\?\s*else if (.+?)\s*\}/g,
+        elsee: /\{\?\s*else\s*\}/g,
+        endif: /\{\?\}/g
     };
     var cache = {};
 
@@ -54,6 +58,22 @@
             }
         ).replace(
             s.endforloop, function(match) {
+                return '\'; } $code += \'';
+            }
+        ).replace(
+            s.iff, function(match, conditional) {
+                return '\'; if(' + conditional + ') { $code += \'';
+            }
+        ).replace(
+            s.elseif, function(match, conditional) {
+                return '\'; } else if(' + conditional + ') { $code += \'';
+            }
+        ).replace(
+            s.elsee, function(match) {
+                return '\'; } else { $code += \'';
+            }
+        ).replace(
+            s.endif, function(match) {
                 return '\'; } $code += \'';
             }
         );
