@@ -27,8 +27,9 @@ var Questions = function() {
 };
 
 Questions.prototype.parseUrl = function() {
-    var match = window.location.href.match(/\/(\w+)\/(\w+)\/(\d+)/);
-    return {course: match[1], exam: match[2], question: match[3]};
+    // % is because of urlencoding characters like Ø into %C3%98
+    var match = window.location.href.match(/\/([\w%]+)\/([\w%]+)\/(\d+)/);
+    return {course: decodeURIComponent(match[1]), exam: decodeURIComponent(match[2]), question: decodeURIComponent(match[3])};
 };
 
 Questions.prototype.loadQuestions = function() {
@@ -109,14 +110,8 @@ Questions.prototype.currentQuestion = function() {
 
 Questions.prototype.updateQuestion = function() {
     var question = this.currentQuestion();
-
-    // Text
-    this.questionElement.querySelector('h4').innerText = question.text;
-
-    // Number
-    document.getElementById('question-number').innerText = this.current;
-
-    // Alternatives
+    var container = document.querySelector('.question-container');
+    container.innerHTML = scoop('question_template', {question: question, id: this.current});
 };
 
 Questions.prototype.updateStats = function() {

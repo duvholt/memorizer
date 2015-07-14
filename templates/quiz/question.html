@@ -28,39 +28,41 @@
 {% block content %}
 <div class="question">
 <h2>{{ question.course.name }} - {{ question.exam }}</h2>
-<h3>Spørsmål #<span id="question-number">{{ id }}</span></h3>
 {% if question is defined %}
-{% if question.image %}
-<div class="image">
-    <img src="{{ url_for('static', filename='img/' + question.course.code + '/' + question.image) }}">
-</div>
-{% endif %}
-<h4>{{ question.text }}</h4>
-<form method="post">
-    {% if question.is_multiple %}
-    <input type="hidden" name="order" value="{{ question.choices|join(',', attribute='id') }}">
+<div class="question-container">
+    <h3>Spørsmål #{{ id }}</h3>
+    {% if question.image %}
+    <div class="image">
+        <img src="{{ url_for('static', filename='img/' + question.course.code + '/' + question.image) }}">
+    </div>
     {% endif %}
-    {% for alternative in question.choices %}
-    {% if (alternative.id)|string() == request.form.answer %}<div class="{% if success %}success{% else %}error{% endif %}">{% endif %}
-        <div class="radio">
-        <label>
-            <input type="radio" name="answer" value="{{ alternative.id }}">
-            {% if success is defined %}
-                <i class="fa {% if alternative.correct %}fa-check{% else %}fa-times{% endif %} fa-fw"></i>
-            {% endif %}
-            {{ alternative }}
-        </label>
-        </div>
-    {% if alternative.id|string() == request.form.answer %}</div>{% endif %}
-    {% endfor %}
-    <button type="submit">Svar</button>
-</form>
-{% if answered and question.reason %}
-<div class="alert reason">
-    <b>Forklaring</b>:
-    {{ question.reason }}
+    <h4>{{ question.text }}</h4>
+    <form method="post">
+        {% if question.is_multiple %}
+        <input type="hidden" name="order" value="{{ question.choices|join(',', attribute='id') }}">
+        {% endif %}
+        {% for alternative in question.choices %}
+        {% if (alternative.id)|string() == request.form.answer %}<div class="{% if success %}success{% else %}error{% endif %}">{% endif %}
+            <div class="radio">
+            <label>
+                <input type="radio" name="answer" value="{{ alternative.id }}">
+                {% if success is defined %}
+                    <i class="fa {% if alternative.correct %}fa-check{% else %}fa-times{% endif %} fa-fw"></i>
+                {% endif %}
+                {{ alternative }}
+            </label>
+            </div>
+        {% if alternative.id|string() == request.form.answer %}</div>{% endif %}
+        {% endfor %}
+        <button type="submit">Svar</button>
+    </form>
+    {% if answered and question.reason %}
+    <div class="alert reason">
+        <b>Forklaring</b>:
+        {{ question.reason }}
+    </div>
+    {% endif %}
 </div>
-{% endif %}
 {% endif %}
 <div class="navigation">
 {{ navlink(prev, 'prev', 'Forrige') }}
@@ -81,6 +83,26 @@
     <div class="progress">Spørsmål: {{ score.total }}/{{ num_questions }}</div>
     <div class="reset"><a href="{{ reset_url }}"><i class="fa fa-undo"></i> Nullstill poeng</a></div>
 </div>
+<script type="scoop" id="question_template">
+<h3>Spørsmål #{$ id }</h3>
+{? if question.image }
+<div class="image">
+    <img src="{_ question.image }">
+</div>
+{?}
+<h4>{$ question.text }</h4>
+<form method="post">
+    {+ alternative in question.alternatives }
+    <div class="radio">
+        <label>
+            <input type="radio" name="answer" value="{$ alternative.id }">
+            {$ alternative.text }
+        </label>
+    </div>
+    {+}
+    <button type="submit">Svar</button>
+</form>
+</script>
 {% endblock %}
 
 {% block js %}
