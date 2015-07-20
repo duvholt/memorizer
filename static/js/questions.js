@@ -22,18 +22,26 @@ var Questions = function() {
     this.prevButton.addEventListener('click', this.previous.bind(this));
     this.randomButton.addEventListener('click', this.random.bind(this));
 
+    // History popstate
+    window.onpopstate = this.popstate.bind(this);
+
     // Keyboard shortcuts
     document.addEventListener('keydown', this.shortcuts.bind(this));
 };
 
-Questions.prototype.parseUrl = function() {
+Questions.prototype.parseURL = function() {
     // % is because of urlencoding characters like Ø into %C3%98
     var match = window.location.href.match(/\/([\w%]+)\/([\w%]+)\/(\d+)/);
     return {course: decodeURIComponent(match[1]), exam: decodeURIComponent(match[2]), question: decodeURIComponent(match[3])};
 };
 
+Questions.prototype.generateURL = function() {
+    var urlInfo = this.parseURL();
+    return '/' + encodeURIComponent(urlInfo.course) + '/' + encodeURIComponent(urlInfo.exam) + '/' + this.current;
+};
+
 Questions.prototype.loadQuestions = function() {
-    this.urlInfo = this.parseUrl();
+    this.urlInfo = this.parseURL();
     if(this.urlInfo !== null) {
         this.current = Number(this.urlInfo.question);
         this.courseApi.getByCode(this.urlInfo.course, this.course.bind(this));
@@ -85,7 +93,8 @@ Questions.prototype.next = function(e) {
     if(this.current > this.questions.length) {
         this.current = 1;
     }
-    this.updateQuestion();
+    this.updateURL(true);
+    this.update();
 };
 
 Questions.prototype.previous = function(e) {
@@ -97,7 +106,8 @@ Questions.prototype.previous = function(e) {
     if(this.current < 1) {
         this.current = this.questions.length;
     }
-    this.updateQuestion();
+    this.updateURL(true);
+    this.update();
 };
 
 Questions.prototype.random = function() {
@@ -108,18 +118,38 @@ Questions.prototype.currentQuestion = function() {
     return this.questions[this.current - 1];
 };
 
+Questions.prototype.update = function() {
+    this.updateQuestion();
+    this.updateStats();
+};
+
 Questions.prototype.updateQuestion = function() {
     var question = this.currentQuestion();
     var container = document.querySelector('.question-container');
     container.innerHTML = scoop('question_template', {question: question, id: this.current});
+
+    // Update title
+    document.title = '#' + this.current + ' - ' + this.urlInfo.course; // missing exam info
 };
 
 Questions.prototype.updateStats = function() {
 
 };
 
-Questions.prototype.updateURL = function() {
-    // Update url
+Questions.prototype.updateURL = function(push) {
+    push = push === true;
+    var stateObj = {current: this.current};
+    if(push) {
+        history.pushState(stateObj, "", this.generateURL());
+    }
+    else {
+        history.replaceState(stateObj, "", this.generateURL());
+    }
+};
+
+Questions.prototype.popstate = function(e) {
+    this.current = e.state.current;
+    this.update();
 };
 
 Questions.prototype.shortcuts = function(e) {
