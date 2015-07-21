@@ -38,7 +38,6 @@
     // Compile template code into HTML
     scoop.compile = function(str) {
         if(s.idMatch.test(str)) {
-            console.log(document.getElementById(str).innerHTML);
             return scoop.compile(document.getElementById(str).innerHTML);
         }
         str = str.replace(/\n/g, '\\\n');
@@ -78,7 +77,6 @@
             }
         );
         function_code += '\';} return $code;';
-        console.log(function_code);
         return new Function('$context', function_code);
     };
 
