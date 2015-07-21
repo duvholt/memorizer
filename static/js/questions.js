@@ -70,15 +70,32 @@ Questions.prototype.answer = function(e) {
     var radio = document.querySelector('input[name="answer"]:checked');
     if(radio !== null) {
         var question = this.currentQuestion();
-        // Finding correct alternatives
-        console.log(question);
+        var alternatives = {};
+        // Creating a dictionary of id:correct
         for (var i = 0; i < question.alternatives.length; i++) {
             var alt = question.alternatives[i];
-            if(alt.id === Number(radio.value)) {
-                // Found it
-                console.log(alt.correct);
-                break;
+            alternatives[alt.id] = alt;
+        }
+        // A bit too messy for my taste. Consider rewriting
+        var radios = document.querySelectorAll('input[name="answer"]');
+        for(i = 0; i < radios.length; i++) {
+            // Current alternative
+            alt = alternatives[Number(radios[i].value)];
+            var iconElement = document.createElement('i');
+            // Setting font-awesome classname
+            iconElement.className = 'fa fa-fw ' + (alt.correct ? 'fa-check' : 'fa-times');
+            var label = radios[i].parentElement;
+            // Selected alternative
+            if(radio === radios[i]) {
+                var radioDiv = label.parentElement;
+                radioDiv.classList.add(alt.correct ? 'success' : 'error');
+                radios[i].checked = false;
             }
+            // Insert after. Why is this not a standard library method?
+            label.insertBefore(iconElement, radios[i].nextSibling);
+
+            // Disable radios
+            radios[i].disabled = true;
         }
     }
 };
@@ -156,7 +173,7 @@ Questions.prototype.shortcuts = function(e) {
     // Alternatives
     try {
         var alternative = e.keyCode - 49;
-        document.querySelectorAll('[name="answer"]')[alternative].checked = true;
+        document.querySelectorAll('[name="answer"]:not(:disabled)')[alternative].checked = true;
     } catch (error) {
         // Not a valid alternative
     }
