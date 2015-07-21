@@ -42,17 +42,15 @@
         <input type="hidden" name="order" value="{{ question.choices|join(',', attribute='id') }}">
         {% endif %}
         {% for alternative in question.choices %}
-        {% if (alternative.id)|string() == request.form.answer %}<div class="{% if success %}success{% else %}error{% endif %}">{% endif %}
-            <div class="radio">
+        <div class="radio {% if (alternative.id)|string() == request.form.answer %}{{ 'success' if success else 'error' }}{% endif %}">
             <label>
                 <input type="radio" name="answer" value="{{ alternative.id }}">
                 {% if success is defined %}
-                    <i class="fa {% if alternative.correct %}fa-check{% else %}fa-times{% endif %} fa-fw"></i>
+                    <i class="fa {{ 'fa-check' if alternative.correct else 'fa-times' }} fa-fw"></i>
                 {% endif %}
                 {{ alternative }}
             </label>
-            </div>
-        {% if alternative.id|string() == request.form.answer %}</div>{% endif %}
+        </div>
         {% endfor %}
         <button type="submit">Svar</button>
     </form>
