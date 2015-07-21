@@ -22,6 +22,8 @@ var Questions = function() {
     this.prevButton.addEventListener('click', this.previous.bind(this));
     this.randomButton.addEventListener('click', this.random.bind(this));
 
+    this.bindRadios();
+
     // History popstate
     window.onpopstate = this.popstate.bind(this);
 
@@ -94,6 +96,9 @@ Questions.prototype.answer = function(e) {
             // Insert after. Why is this not a standard library method?
             label.insertBefore(iconElement, radios[i].nextSibling);
 
+            // Go to next when clicking label
+            label.addEventListener('click', this.next.bind(this));
+
             // Disable radios
             radios[i].disabled = true;
         }
@@ -135,6 +140,24 @@ Questions.prototype.currentQuestion = function() {
     return this.questions[this.current - 1];
 };
 
+Questions.prototype.bindRadios = function() {
+    var radios = document.querySelectorAll('.radio label input');
+    var currentValue = -1;
+    for (var i = radios.length - 1; i >= 0; i--) {
+        radios[i].addEventListener('click', function(e) {
+            // Radio button was clicked twice
+            if(e.target.value === currentValue) {
+                // Stop bubbling of the event
+                e.stopPropagation();
+                this.answer();
+            }
+            else {
+                currentValue = e.target.value;
+            }
+        }.bind(this));
+    }
+};
+
 Questions.prototype.update = function() {
     this.updateQuestion();
     this.updateStats();
@@ -144,6 +167,8 @@ Questions.prototype.updateQuestion = function() {
     var question = this.currentQuestion();
     var container = document.querySelector('.question-container');
     container.innerHTML = scoop('question_template', {question: question, id: this.current});
+
+    this.bindRadios();
 
     // Update title
     document.title = '#' + this.current + ' - ' + this.urlInfo.course; // missing exam info
