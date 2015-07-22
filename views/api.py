@@ -130,3 +130,23 @@ register_api(CourseAPI, 'course_api', '/courses/')
 register_api(ExamAPI, 'exam_api', '/exams/')
 register_api(QuestionAPI, 'question_api', '/questions/')
 register_api(AlternativeAPI, 'alterative_api', '/alternatives/')
+
+
+# Helper apis
+
+class CourseQuestions(JsonView):
+    def get(self, course):
+        course_m = models.Course.query.filter_by(code=course).first_or_404()
+        questions = models.Question.query.filter_by(course=course_m).all()
+        return [question_m.serialize() for question_m in questions]
+
+
+class ExamQuestions(JsonView):
+    def get(self, course, exam):
+        print('k')
+        course_m = models.Course.query.filter_by(code=course).first_or_404()
+        exam_m = models.Exam.query.filter_by(course=course_m, name=exam).first_or_404()
+        return [question_m.serialize() for question_m in exam_m.questions]
+
+api.add_url_rule('/questions/<string:course>/all/', view_func=CourseQuestions.as_view('course_questions'))
+api.add_url_rule('/questions/<string:course>/<string:exam>/', view_func=ExamQuestions.as_view('exam_questions'))

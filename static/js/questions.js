@@ -46,20 +46,11 @@ Questions.prototype.loadQuestions = function() {
     this.urlInfo = this.parseURL();
     if(this.urlInfo !== null) {
         this.current = Number(this.urlInfo.question);
-        this.courseApi.getByCode(this.urlInfo.course, this.course.bind(this));
-    }
-};
-
-Questions.prototype.course = function(course) {
-    this.courseData = course[0];
-    if(this.urlInfo.exam == 'all') {
-        // Get all exams
-        this.examApi.examIds(this.courseData.id, function(exams) {
-            this.questionApi.questions(exams, function(questions) {
-                this.questions = questions;
-                this.currentQuestion();
-                this.ready = true;
-            }.bind(this));
+        var api = new API('/api/questions/' + this.urlInfo.course + '/' + this.urlInfo.exam + '/');
+        api.get({}, function(questions) {
+            this.questions = questions;
+            this.currentQuestion();
+            this.ready = true;
         }.bind(this));
     }
 };

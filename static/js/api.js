@@ -1,5 +1,5 @@
-var API = function() {
-    this.url = null;
+var API = function(url) {
+    this.url = url || null;
 };
 
 API.prototype.get = function(filters, callback) {
