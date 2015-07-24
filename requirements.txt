@@ -1,9 +1,15 @@
 Flask==0.10.1
+
+# SQL and Forms
 Flask-SQLAlchemy==1.0
 Flask-WTF==0.11
 WTForms-Alchemy==0.13.0
 SQLAlchemy-Utils==0.29.9 # 0.30 broke WTForms-Alchemy
 
+# Assets
 Flask-Assets==0.10
 cssmin==0.2.0
 jsmin==2.0.11
+
+# Cache
+Flask-Cache==0.13.1

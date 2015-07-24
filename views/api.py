@@ -1,6 +1,8 @@
 from flask import abort, Blueprint, Response, request, session
 from flask.views import MethodView
 from views.admin import admin_required
+from cache import cache
+from config import CACHE_TIME
 import json
 import models
 import forms
@@ -12,6 +14,12 @@ def error(message):
     return {'message': message}
 
 
+class CacheView(object):
+    def __repr__(self):
+        """Hack to make memoization work with self"""
+        return '%s' % (self.__class__.__name__)
+
+
 class JsonView(MethodView):
     def dispatch_request(self, *args, **kwargs):
         """Returns a json document with mimetype set"""
@@ -21,10 +29,11 @@ class JsonView(MethodView):
         )
 
 
-class APIView(JsonView):
+class APIView(JsonView, CacheView):
     model = None
     form = None
 
+    @cache.memoize(CACHE_TIME)
     def get(self, object_id=None):
         # Get a single object
         if object_id:
@@ -134,19 +143,21 @@ register_api(AlternativeAPI, 'alterative_api', '/alternatives/')
 
 # Helper apis
 
-class CourseQuestions(JsonView):
+class CourseQuestions(JsonView, CacheView):
+    @cache.memoize(CACHE_TIME)
     def get(self, course):
         course_m = models.Course.query.filter_by(code=course).first_or_404()
         questions = models.Question.query.filter_by(course=course_m).all()
         return [question_m.serialize() for question_m in questions]
 
 
-class ExamQuestions(JsonView):
+class ExamQuestions(JsonView, CacheView):
+    @cache.memoize(CACHE_TIME)
     def get(self, course, exam):
-        print('k')
         course_m = models.Course.query.filter_by(code=course).first_or_404()
         exam_m = models.Exam.query.filter_by(course=course_m, name=exam).first_or_404()
         return [question_m.serialize() for question_m in exam_m.questions]
+
 
 api.add_url_rule('/questions/<string:course>/all/', view_func=CourseQuestions.as_view('course_questions'))
 api.add_url_rule('/questions/<string:course>/<string:exam>/', view_func=ExamQuestions.as_view('exam_questions'))

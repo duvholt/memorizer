@@ -7,12 +7,14 @@ from werkzeug.contrib.fixers import ProxyFix
 from views.admin import admin
 from views.api import api
 from views.quiz import quiz
+from cache import cache
 import logging
 
 app = Flask(__name__)
 app.config.from_pyfile('config.py')
 app.wsgi_app = ProxyFix(app.wsgi_app)
 db.init_app(app)
+cache.init_app(app)
 
 assets = Environment(app)
 js = Bundle('js/ajax.js', 'js/alert.js', 'js/api.js', 'js/sidebar.js', 'js/filter.js', filters='jsmin', output='js/min.%(version)s.js')
