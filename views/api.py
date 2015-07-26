@@ -28,6 +28,7 @@ class JsonView(MethodView):
             mimetype='application/json'
         )
 
+# REST API
 
 class APIView(JsonView, CacheView):
     model = None
@@ -161,3 +162,32 @@ class ExamQuestions(JsonView, CacheView):
 
 api.add_url_rule('/questions/<string:course>/all/', view_func=CourseQuestions.as_view('course_questions'))
 api.add_url_rule('/questions/<string:course>/<string:exam>/', view_func=ExamQuestions.as_view('exam_questions'))
+
+
+class Stats(JsonView):
+    def get(self):
+        pass
+api.add_url_rule('/stats', view_func=Stats.as_view('stats'))
+
+
+class Answer(JsonView):
+    def post(self):
+        try:
+            question_id = int(request.post.get('question'))
+        except ValueError:
+            return error('Missing question')
+        question = models.Question.query.get_or_404(question_id)
+        if(question.is_multiple):
+            try:
+                alternative_id = int(request.post.get('alternative'))
+            except ValueError:
+                return error('Missing alternative')
+            alternative = models.Alternative.query.filter_by(question=question, id=alternative_id).first_or_404()
+            correct = alternative.correct
+        else:
+            # Yes/No
+            correct = question.correct
+        return {'success': True}
+
+
+api.add_url_rule('/answer', view_func=Answer.as_view('answer', methods=['POST']))
