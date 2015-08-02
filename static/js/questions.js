@@ -48,6 +48,13 @@ Questions.prototype.loadQuestions = function() {
         this.current = Number(this.urlInfo.question);
         var api = new API('/api/questions/' + this.urlInfo.course + '/' + this.urlInfo.exam + '/');
         api.get({}, function(questions) {
+            // Shuffling alternatives
+            for (var i = 0; i < questions.length; i++) {
+                var question = questions[i];
+                if(question.alternatives !== undefined) {
+                    this.shuffle(question.alternatives);
+                }
+            }
             this.questions = questions;
             this.currentQuestion();
             this.ready = true;
@@ -218,3 +225,13 @@ Questions.prototype.shortcuts = function(e) {
         this.random();
     }
 };
+
+Questions.prototype.shuffle = function(list) {
+    // Fisher-Yates shuffle
+    for(var i = list.length  - 1; i > 0; i--) {
+        var j = Math.round(Math.random() * i);
+        var tmp = list[i];
+        list[i] = list[j];
+        list[j] = tmp;
+    }
+}
