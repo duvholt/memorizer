@@ -2,8 +2,8 @@ var API = function(url) {
     this.url = url || null;
 };
 
-API.prototype.get = function(filters, callback) {
-    Ajax({url: this.url, data: filters}, {
+API.prototype.send = function(filters, callback, method) {
+    Ajax({url: this.url, data: filters, method: method || 'GET'}, {
         success: function(data) {
             callback(data);
         },
@@ -21,7 +21,7 @@ var CourseAPI = function() {
 CourseAPI.prototype = Object.create(API.prototype);
 
 CourseAPI.prototype.getByCode = function(code, callback) {
-    this.get({code: code}, callback);
+    this.send({code: code}, callback);
 };
 
 var ExamAPI = function() {
@@ -32,7 +32,7 @@ var ExamAPI = function() {
 ExamAPI.prototype = Object.create(API.prototype);
 
 ExamAPI.prototype.examIds = function(course_id, callback) {
-    this.get({course_id: course_id}, function(exams) {
+    this.send({course_id: course_id}, function(exams) {
         var ids = [];
         for(var i = 0; i < exams.length; i++) {
             ids.push(exams[i].id);
@@ -49,5 +49,23 @@ var QuestionAPI = function() {
 QuestionAPI.prototype = Object.create(API.prototype);
 
 QuestionAPI.prototype.questions = function(exams, callback) {
-    this.get({exam_id: exams}, callback);
+    this.send({exam_id: exams}, callback);
+};
+
+var AnswerAPI = function() {
+    API.call(this);
+    this.url = '/api/answer';
+};
+
+AnswerAPI.prototype = Object.create(API.prototype);
+
+AnswerAPI.prototype.submit = function(question_id, answer, callback) {
+    var params = {};
+    if(typeof answer === 'boolean') {
+        params = {question: question_id, answer: answer};
+    }
+    else if(typeof answer === 'number') {
+        params = {question: question_id, alternative: answer};
+    }
+    this.send(params, callback, 'POST');
 };

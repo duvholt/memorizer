@@ -3,6 +3,7 @@ from flask.views import MethodView
 from views.admin import admin_required
 from cache import cache
 from config import CACHE_TIME
+from utils import save_answer
 import json
 import models
 import forms
@@ -173,21 +174,23 @@ api.add_url_rule('/stats', view_func=Stats.as_view('stats'))
 class Answer(JsonView):
     def post(self):
         try:
-            question_id = int(request.post.get('question'))
+            question_id = int(request.form.get('question'))
         except ValueError:
             return error('Missing question')
         question = models.Question.query.get_or_404(question_id)
         if(question.is_multiple):
             try:
-                alternative_id = int(request.post.get('alternative'))
+                alternative_id = int(request.form.get('alternative'))
             except ValueError:
                 return error('Missing alternative')
             alternative = models.Alternative.query.filter_by(question=question, id=alternative_id).first_or_404()
             correct = alternative.correct
         else:
             # Yes/No
-            correct = question.correct
+            answer = request.form.get('correct', False) == 'true'
+            correct = question.correct == answer
+        save_answer(question.course, question.id, correct)
         return {'success': True}
 
 
-api.add_url_rule('/answer', view_func=Answer.as_view('answer', methods=['POST']))
+api.add_url_rule('/answer', view_func=Answer.as_view('answer'), methods=['POST'])

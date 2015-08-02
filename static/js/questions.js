@@ -3,6 +3,7 @@ var Questions = function() {
     this.courseApi = new CourseAPI();
     this.examApi = new ExamAPI();
     this.questionApi = new QuestionAPI();
+    this.answerApi = new AnswerAPI();
 
     // Current question information
     this.questions = [];
@@ -47,7 +48,7 @@ Questions.prototype.loadQuestions = function() {
     if(this.urlInfo !== null) {
         this.current = Number(this.urlInfo.question);
         var api = new API('/api/questions/' + this.urlInfo.course + '/' + this.urlInfo.exam + '/');
-        api.get({}, function(questions) {
+        api.send({}, function(questions) {
             // Shuffling alternatives
             for (var i = 0; i < questions.length; i++) {
                 var question = questions[i];
@@ -100,6 +101,11 @@ Questions.prototype.answer = function(e) {
             // Disable radios
             radios[i].disabled = true;
         }
+        // Send ajax request
+        console.log(this.currentQuestion().id, Number(radio.value));
+        this.answerApi.submit(this.currentQuestion().id, Number(radio.value), function() {
+            console.log("lol");
+        });
     }
 };
 
