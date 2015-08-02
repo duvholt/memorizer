@@ -1,7 +1,7 @@
 {% extends "quiz/quiz.html" %}
 {% block content %}
 <h1>Emner</h1>
-<input type="text" id="search_courses" placeholder="Søk...">
+<input type="text" id="search_courses" placeholder="Søk..." autofocus>
 <ul class="courses">
 {% for course in courses %}
     <li data-text="{{ course.code }} {{ course.name }}">

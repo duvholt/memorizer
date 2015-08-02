@@ -192,8 +192,20 @@ nav ul ul li:last-child > a {
     font-weight: bold;
 }
 
+.courses li.selected {
+    border-color: #A9A9A9;
+}
+
+.courses li.selected .name, .courses li.selected .count {
+    color: #343434;
+}
+
+.courses li.selected .code {
+    background: #0A2435;
+}
+
 .courses li:hover {
-    border-color: #A4A4A5;
+    border-color: #808081;
 }
 
 .courses li:hover .name, .courses li:hover .count {
