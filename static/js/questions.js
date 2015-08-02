@@ -124,7 +124,11 @@ Questions.prototype.previous = function(e) {
 };
 
 Questions.prototype.random = function() {
-    // Not implemented
+    // TODO: Remove already answered questions
+    var rand = Math.round(Math.random() * this.questions.length);
+    this.current = rand;
+    this.updateURL(true);
+    this.update();
 };
 
 Questions.prototype.currentQuestion = function() {
