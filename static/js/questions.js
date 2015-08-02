@@ -132,7 +132,7 @@ Questions.prototype.previous = function(e) {
 
 Questions.prototype.random = function() {
     // TODO: Remove already answered questions
-    var rand = Math.round(Math.random() * this.questions.length);
+    var rand = Math.round(Math.random() * (this.questions.length - 1));
     this.current = rand;
     this.updateURL(true);
     this.update();
