@@ -8,6 +8,7 @@ from views.admin import admin
 from views.api import api
 from views.quiz import quiz
 from cache import cache
+from utils import grade, percentage
 import logging
 
 app = Flask(__name__)
@@ -41,28 +42,6 @@ app.register_blueprint(api, url_prefix='/api')
 
 @app.context_processor
 def utility_processor():
-    def percentage(num, total):
-        if total > 0:
-            return round((num * 100) / total, 2)
-        return 0
-
-    def grade(num, total):
-        p = percentage(num, total)
-        if total == 0:
-            return '-'
-        if p < 41:
-            return 'F'
-        elif p < 53:
-            return 'E'
-        elif p < 65:
-            return 'D'
-        elif p < 77:
-            return 'C'
-        elif p < 89:
-            return 'B'
-        else:
-            return 'A'
-
     return dict(percentage=percentage, grade=grade)
 
 

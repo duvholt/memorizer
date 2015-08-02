@@ -69,3 +69,17 @@ AnswerAPI.prototype.submit = function(question_id, answer, callback) {
     }
     this.send(params, callback, 'POST');
 };
+
+var StatsAPI = function(course) {
+    API.call(this);
+    this.url = '/api/stats';
+    if(course !== undefined) {
+        this.url += '/' + course;
+    }
+};
+
+StatsAPI.prototype = Object.create(API.prototype);
+
+StatsAPI.prototype.get = function(callback) {
+    this.send(null, callback);
+};

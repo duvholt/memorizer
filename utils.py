@@ -4,17 +4,20 @@ import random
 import re
 
 
-def session_data(index, model):
+def stats(index, model):
     if index not in session:
         session[index] = {}
     if model.string not in session[index].keys():
         session[index][model.string] = {'points': 0, 'total': 0, 'combo': 0, 'answered': []}
-    return session[index][model.string]
+    stats_data = session[index][model.string]
+    stats_data['grade'] = grade(stats_data['points'], stats_data['total'])
+    stats_data['percentage'] = percentage(stats_data['points'], stats_data['total'])
+    return stats_data
 
 
 def save_answer(course, question_id, correct):
     """Sets session data and returns if question has already been answered"""
-    c_session = session_data('courses', course)
+    c_session = stats('courses', course)
     if question_id not in c_session['answered']:
         c_session['points'] += int(correct)
         c_session['answered'].append(question_id)
@@ -54,3 +57,27 @@ def sort_exam(exam):
     elif re.match(r'^H\d{2}$', key):
         key = key[1:3] + '2'
     return key
+
+
+def percentage(num, total):
+        if total > 0:
+            return round((num * 100) / total, 2)
+        return 0
+
+
+def grade(num, total):
+    p = percentage(num, total)
+    if total == 0:
+        return '-'
+    if p < 41:
+        return 'F'
+    elif p < 53:
+        return 'E'
+    elif p < 65:
+        return 'D'
+    elif p < 77:
+        return 'C'
+    elif p < 89:
+        return 'B'
+    else:
+        return 'A'

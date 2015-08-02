@@ -4,6 +4,7 @@ var Questions = function() {
     this.examApi = new ExamAPI();
     this.questionApi = new QuestionAPI();
     this.answerApi = new AnswerAPI();
+    this.statsApi = null;
 
     // Current question information
     this.questions = [];
@@ -60,6 +61,7 @@ Questions.prototype.loadQuestions = function() {
             this.currentQuestion();
             this.ready = true;
         }.bind(this));
+        this.statsApi = new StatsAPI(this.urlInfo.course);
     }
 };
 
@@ -104,8 +106,8 @@ Questions.prototype.answer = function(e) {
         // Send ajax request
         console.log(this.currentQuestion().id, Number(radio.value));
         this.answerApi.submit(this.currentQuestion().id, Number(radio.value), function() {
-            console.log("lol");
-        });
+            this.updateStats();
+        }.bind(this));
     }
 };
 
@@ -120,7 +122,7 @@ Questions.prototype.next = function(e) {
         this.current = 1;
     }
     this.updateURL(true);
-    this.update();
+    this.updateQuestion();
 };
 
 Questions.prototype.previous = function(e) {
@@ -133,7 +135,7 @@ Questions.prototype.previous = function(e) {
         this.current = this.questions.length;
     }
     this.updateURL(true);
-    this.update();
+    this.updateQuestion();
 };
 
 Questions.prototype.random = function() {
@@ -141,7 +143,7 @@ Questions.prototype.random = function() {
     var rand = Math.round(Math.random() * (this.questions.length - 1));
     this.current = rand;
     this.updateURL(true);
-    this.update();
+    this.updateQuestion();
 };
 
 Questions.prototype.currentQuestion = function() {
@@ -166,11 +168,6 @@ Questions.prototype.bindRadios = function() {
     }
 };
 
-Questions.prototype.update = function() {
-    this.updateQuestion();
-    this.updateStats();
-};
-
 Questions.prototype.updateQuestion = function() {
     var question = this.currentQuestion();
     var container = document.querySelector('.question-container');
@@ -183,7 +180,10 @@ Questions.prototype.updateQuestion = function() {
 };
 
 Questions.prototype.updateStats = function() {
-
+    this.statsApi.get(function(data) {
+        var stats = document.querySelector('.stats');
+        stats.innerHTML = scoop('stats_template', {stats: data});
+    }.bind(this));
 };
 
 Questions.prototype.updateURL = function(push) {
@@ -199,7 +199,7 @@ Questions.prototype.updateURL = function(push) {
 
 Questions.prototype.popstate = function(e) {
     this.current = e.state.current;
-    this.update();
+    this.updateQuestion();
 };
 
 Questions.prototype.shortcuts = function(e) {

@@ -101,6 +101,19 @@
     <button type="submit">Svar</button>
 </form>
 </script>
+<script type="scoop" id="stats_template">
+<div class="grade">{$ stats.grade }</div>
+<div class="points">
+    Poeng: {$ stats.points }/{$ stats.total }
+    {? if stats.points == 4 && stats.total == 20 }
+    <blaze>blaze it</blaze>
+    {?}
+    ({$ stats.percentage }%)
+</div>
+<div class="combo">Combo: {$ stats.combo }{+ _ in new Array(Math.round(stats.combo / 10)) }<i class="fa fa-trophy"></i>{+}</div>
+<div class="progress">Spørsmål: {$ stats.total }/{$ stats.max }</div>
+<div class="reset"><a href="{{ reset_url }}"><i class="fa fa-undo"></i> Nullstill poeng</a></div>
+</script>
 {% endblock %}
 
 {% block js %}

@@ -1,5 +1,5 @@
 from flask import abort, Blueprint, redirect, render_template, request, session, url_for
-from utils import save_answer, session_data, random_id, sort_exam
+from utils import save_answer, stats, random_id, sort_exam
 import models
 import random
 import re
@@ -38,7 +38,7 @@ def reset_stats_exam(course, exam):
     """Reset stats for a course"""
     course = models.Course.query.filter_by(code=course).first_or_404()
     exam = models.Exam.query.filter_by(course=course, name=exam).first_or_404()
-    c_session = session_data('courses', course)
+    c_session = stats('courses', course)
     questions = {question.id for question in exam.questions}
     c_session['answered'] = set(c_session['answered']) - questions
     c_session['total'] = len(c_session['answered'])
@@ -121,5 +121,5 @@ def show_question(course, exam, id):
     else:
         # Random order on questions
         random.shuffle(question.alternatives)
-    context['score'] = session_data('courses', course)
+    context['score'] = stats('courses', course)
     return render_template('quiz/question.html', **context)

@@ -3,7 +3,7 @@ from flask.views import MethodView
 from views.admin import admin_required
 from cache import cache
 from config import CACHE_TIME
-from utils import save_answer
+from utils import save_answer, stats
 import json
 import models
 import forms
@@ -166,9 +166,12 @@ api.add_url_rule('/questions/<string:course>/<string:exam>/', view_func=ExamQues
 
 
 class Stats(JsonView):
-    def get(self):
-        pass
-api.add_url_rule('/stats', view_func=Stats.as_view('stats'))
+    def get(self, course):
+        course = models.Course.query.filter_by(code=course).first_or_404()
+        stats_data = stats('courses', course)
+        stats_data['max'] = models.Question.query.filter_by(course=course).count()
+        return stats_data
+api.add_url_rule('/stats/<string:course>/', view_func=Stats.as_view('stats'))
 
 
 class Answer(JsonView):
