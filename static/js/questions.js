@@ -104,7 +104,6 @@ Questions.prototype.answer = function(e) {
             radios[i].disabled = true;
         }
         // Send ajax request
-        console.log(this.currentQuestion().id, Number(radio.value));
         this.answerApi.submit(this.currentQuestion().id, Number(radio.value), function() {
             this.updateStats();
         }.bind(this));
