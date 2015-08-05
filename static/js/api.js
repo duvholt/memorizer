@@ -70,11 +70,14 @@ AnswerAPI.prototype.submit = function(question_id, answer, callback) {
     this.send(params, callback, 'POST');
 };
 
-var StatsAPI = function(course) {
+var StatsAPI = function(course, exam) {
     API.call(this);
     this.url = '/api/stats';
     if(course !== undefined) {
         this.url += '/' + course;
+    }
+    if(exam !== undefined) {
+        this.url += '/' + exam;
     }
 };
 

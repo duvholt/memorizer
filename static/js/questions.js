@@ -61,7 +61,12 @@ Questions.prototype.loadQuestions = function() {
             this.currentQuestion();
             this.ready = true;
         }.bind(this));
-        this.statsApi = new StatsAPI(this.urlInfo.course);
+        if(this.urlInfo.exam !== 'all') {
+            this.statsApi = new StatsAPI(this.urlInfo.course, this.urlInfo.exam);
+        }
+        else {
+            this.statsApi = new StatsAPI(this.urlInfo.course);
+        }
     }
 };
 

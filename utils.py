@@ -17,7 +17,6 @@ def user_setup():
 
 def user():
     user_setup()
-    print(session['user'])
     return models.User.query.get(session['user'])
 
 
