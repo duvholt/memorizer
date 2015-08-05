@@ -41,7 +41,7 @@ def reset_stats_exam(course, exam):
     stats_query = models.Stats.exam(utils.user(), course.code, exam.name).with_entities(models.Stats.id).subquery()
     models.Stats.query.filter(models.Stats.id.in_(stats_query)).update({models.Stats.reset: True}, synchronize_session=False)
     models.db.session.commit()
-    return redirect(url_for('quiz.exam', course=course, exam=exam))
+    return redirect(url_for('quiz.exam', course=course.code, exam=exam.name))
 
 
 @quiz.route('/<string:course>/')
