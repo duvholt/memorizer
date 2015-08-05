@@ -1,8 +1,7 @@
 from flask import abort, Blueprint, redirect, render_template, request, session, url_for
-from utils import save_answer, stats, random_id, sort_exam
+import utils
 import models
 import random
-import re
 
 quiz = Blueprint('quiz', __name__)
 
@@ -27,9 +26,7 @@ def tips():
 def reset_stats_course(course):
     """Reset stats for a course"""
     course = models.Course.query.filter_by(code=course).first_or_404()
-    if 'courses' in session:
-        if course and course.string in session['courses']:
-            del session['courses'][course.string]
+    # TODO: Fix
     return redirect(url_for('quiz.course', course=course.code))
 
 
@@ -38,10 +35,7 @@ def reset_stats_exam(course, exam):
     """Reset stats for a course"""
     course = models.Course.query.filter_by(code=course).first_or_404()
     exam = models.Exam.query.filter_by(course=course, name=exam).first_or_404()
-    c_session = stats('courses', course)
-    questions = {question.id for question in exam.questions}
-    c_session['answered'] = set(c_session['answered']) - questions
-    c_session['total'] = len(c_session['answered'])
+    # TODO: Fix
     return redirect(url_for('quiz.exam', course=course, exam=exam))
 
 
@@ -49,7 +43,7 @@ def reset_stats_exam(course, exam):
 def course(course):
     """Redirects to a random question for a chosen course"""
     course_m = models.Course.query.filter_by(code=course).first_or_404()
-    return redirect(url_for('quiz.show_question', course=course, exam='all', id=random_id(course=course_m)))
+    return redirect(url_for('quiz.show_question', course=course, exam='all', id=utils.random_id(course=course_m)))
 
 
 @quiz.route('/<string:course>/<string:exam>/')
@@ -81,11 +75,11 @@ def show_question(course, exam, id):
         reset_url = url_for('quiz.reset_stats_course', course=course.code)
     if num_questions == 0:
         abort(404)
-    course.exams.sort(key=sort_exam, reverse=True)
+    course.exams.sort(key=utils.sort_exam, reverse=True)
     context = {
         'id': id,
         'alerts': [],
-        'random': random_id(id=id, course=course, exam=exam),
+        'random': utils.random_id(id=id, course=course, exam=exam),
         'prev': id - 1 if id > 1 else num_questions,
         'next': id + 1 if id < num_questions else 1,
         'num_questions': num_questions,
@@ -102,9 +96,13 @@ def show_question(course, exam, id):
                 if str(alternative.id) == answer:
                     context['success'] = alternative.correct
                     break
-            answered = save_answer(course, question.id, context['success'])
+            user = utils.user()
             # Checking if question has already been answered
-            if answered and context['success']:
+            if models.Stats.query.filter_by(user=user, question=question).count() == 0:
+                stat = models.Stats(user, question, context['success'])
+                models.db.session.add(stat)
+                models.db.session.commit()
+            elif context['success']:
                 context['alerts'].append({
                     'msg': 'Du har allerede svart på dette spørsmålet så du får ikke noe poeng. :-)',
                     'level': 'info'
@@ -121,5 +119,8 @@ def show_question(course, exam, id):
     else:
         # Random order on questions
         random.shuffle(question.alternatives)
-    context['score'] = stats('courses', course)
+    # generate_stats doesn't support 'all' and expects None
+    if exam_name == 'all':
+        exam_name = None
+    context['stats'] = utils.generate_stats(course.code, exam_name)
     return render_template('quiz/question.html', **context)

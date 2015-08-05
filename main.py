@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from flask import Flask
+from flask import Flask, session
 from flask.ext.assets import Environment, Bundle
 from logging.handlers import SMTPHandler
 from models import db

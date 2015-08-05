@@ -4,30 +4,51 @@ import random
 import re
 
 
-def stats(index, model):
-    if index not in session:
-        session[index] = {}
-    if model.string not in session[index].keys():
-        session[index][model.string] = {'points': 0, 'total': 0, 'combo': 0, 'answered': []}
-    stats_data = session[index][model.string]
+def user_setup():
+    """Set up user info for first time visitors"""
+    if 'user' not in session:
+        user = models.User()
+        models.db.session.add(user)
+        models.db.session.commit()
+        session['user'] = user.id
+    # Set session to permament
+    session.permament = True
+
+
+def user():
+    user_setup()
+    print(session['user'])
+    return models.User.query.get(session['user'])
+
+
+def generate_stats(course_code, exam_name=None):
+    stats_data = {}
+    if not exam_name:
+        stats_data['max'] = models.Question.query.\
+            join(models.Exam).join(models.Course).\
+            filter_by(code=course_code).count()
+        stats = models.Stats.course(user(), course_code)
+    else:
+        stats_data['max'] = models.Question.query.\
+            join(models.Exam).join(models.Course).\
+            filter_by(code=course_code).\
+            filter(models.Exam.name == exam_name).count()
+        stats = models.Stats.exam(user(), course_code, exam_name)
+    stats_data['total'] = stats.count()
+    stats_data['points'] = stats.filter(models.Stats.correct == True).count()
+    # TODO: Clean up this
+    stats_data['answered'] = list({stat.question.id for stat in stats.all()})
     stats_data['grade'] = grade(stats_data['points'], stats_data['total'])
     stats_data['percentage'] = percentage(stats_data['points'], stats_data['total'])
-    return stats_data
 
-
-def save_answer(course, question_id, correct):
-    """Sets session data and returns if question has already been answered"""
-    c_session = stats('courses', course)
-    if question_id not in c_session['answered']:
-        c_session['points'] += int(correct)
-        c_session['answered'].append(question_id)
-        c_session['total'] = len(c_session['answered'])
-        if correct:
-            c_session['combo'] += 1
+    combo = 0
+    for stat in reversed(stats.all()):
+        if stat.correct:
+            combo += 1
         else:
-            c_session['combo'] = 0
-        return False
-    return True
+            break
+    stats_data['combo'] = combo
+    return stats_data
 
 
 def random_id(id=None, course=None, exam=None):

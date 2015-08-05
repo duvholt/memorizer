@@ -3,10 +3,10 @@ from flask.views import MethodView
 from views.admin import admin_required
 from cache import cache
 from config import CACHE_TIME
-from utils import save_answer, stats
+import forms
 import json
 import models
-import forms
+import utils
 
 api = Blueprint('api', __name__)
 
@@ -28,6 +28,7 @@ class JsonView(MethodView):
             json.dumps(super(JsonView, self).dispatch_request(*args, **kwargs)),
             mimetype='application/json'
         )
+
 
 # REST API
 
@@ -166,12 +167,10 @@ api.add_url_rule('/questions/<string:course>/<string:exam>/', view_func=ExamQues
 
 
 class Stats(JsonView):
-    def get(self, course):
-        course = models.Course.query.filter_by(code=course).first_or_404()
-        stats_data = stats('courses', course)
-        stats_data['max'] = models.Question.query.filter_by(course=course).count()
-        return stats_data
-api.add_url_rule('/stats/<string:course>/', view_func=Stats.as_view('stats'))
+    def get(self, course_code, exam_name=None):
+        return utils.generate_stats(course_code, exam_name)
+api.add_url_rule('/stats/<string:course_code>/<string:exam_name>/', view_func=Stats.as_view('stats_exam'))
+api.add_url_rule('/stats/<string:course_code>/', view_func=Stats.as_view('stats_course'))
 
 
 class Answer(JsonView):
@@ -192,8 +191,13 @@ class Answer(JsonView):
             # Yes/No
             answer = request.form.get('correct', False) == 'true'
             correct = question.correct == answer
-        save_answer(question.course, question.id, correct)
-        return {'success': True}
+        user = utils.user()
+        new = models.Stats.query.filter_by(user=user, question=question).count() == 0
+        if new:
+            stat = models.Stats(user, question, correct)
+            models.db.session.add(stat)
+            models.db.session.commit()
+        return {'success': new}
 
 
 api.add_url_rule('/answer', view_func=Answer.as_view('answer'), methods=['POST'])
