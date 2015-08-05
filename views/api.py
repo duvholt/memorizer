@@ -192,12 +192,12 @@ class Answer(JsonView):
             answer = request.form.get('correct', False) == 'true'
             correct = question.correct == answer
         user = utils.user()
-        new = models.Stats.query.filter_by(user=user, question=question).count() == 0
-        if new:
+        answered = models.Stats.answered(user, question)
+        if not answered:
             stat = models.Stats(user, question, correct)
             models.db.session.add(stat)
             models.db.session.commit()
-        return {'success': new}
+        return {'success': not answered}
 
 
 api.add_url_rule('/answer', view_func=Answer.as_view('answer'), methods=['POST'])

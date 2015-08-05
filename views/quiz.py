@@ -25,8 +25,11 @@ def tips():
 @quiz.route('/reset/<string:course>/')
 def reset_stats_course(course):
     """Reset stats for a course"""
+    # Check if course exists
     course = models.Course.query.filter_by(code=course).first_or_404()
-    # TODO: Fix
+    stats_query = models.Stats.course(utils.user(), course.code).with_entities(models.Stats.id).subquery()
+    models.Stats.query.filter(models.Stats.id.in_(stats_query)).update({models.Stats.reset: True}, synchronize_session=False)
+    models.db.session.commit()
     return redirect(url_for('quiz.course', course=course.code))
 
 
@@ -35,7 +38,9 @@ def reset_stats_exam(course, exam):
     """Reset stats for a course"""
     course = models.Course.query.filter_by(code=course).first_or_404()
     exam = models.Exam.query.filter_by(course=course, name=exam).first_or_404()
-    # TODO: Fix
+    stats_query = models.Stats.exam(utils.user(), course.code, exam.name).with_entities(models.Stats.id).subquery()
+    models.Stats.query.filter(models.Stats.id.in_(stats_query)).update({models.Stats.reset: True}, synchronize_session=False)
+    models.db.session.commit()
     return redirect(url_for('quiz.exam', course=course, exam=exam))
 
 
@@ -98,7 +103,7 @@ def show_question(course, exam, id):
                     break
             user = utils.user()
             # Checking if question has already been answered
-            if models.Stats.query.filter_by(user=user, question=question).count() == 0:
+            if not models.Stats.answered(user, question):
                 stat = models.Stats(user, question, context['success'])
                 models.db.session.add(stat)
                 models.db.session.commit()

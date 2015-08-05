@@ -196,3 +196,7 @@ class Stats(db.Model):
         return cls.query.filter_by(reset=False, user_id=user.id).join(Question).join(Exam).join(Course).\
             filter(Course.code == course_code).\
             filter(Exam.name == exam_name)
+
+    @classmethod
+    def answered(cls, user, question):
+        return cls.query.filter_by(user=user, question=question, reset=False).count() > 0
