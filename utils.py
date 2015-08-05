@@ -12,7 +12,7 @@ def user_setup():
         models.db.session.commit()
         session['user'] = user.id
     # Set session to permament
-    session.permament = True
+    session.permanent = True
 
 
 def user():
