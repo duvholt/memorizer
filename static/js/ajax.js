@@ -32,25 +32,43 @@ var Ajax = function(options, callback) {
         }
     };
 
-    // Initiate ajax request
-    var request = new XMLHttpRequest();
-    request.onreadystatechange = response;
-    // HTTP method and URL from settings
-    request.open(settings.method, settings.url);
-
-    // Add content type if post request
-    if(['POST', 'PUT'].indexOf(settings.method) !== -1) {
-        request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    }
     // Send data
     var params = [];
     // Converting object to key=value&key2=value2 string
     if(settings.data !== undefined) {
         for(var key in settings.data) {
             if(settings.data.hasOwnProperty(key)) {
-                params.push(encodeURIComponent(key) + '=' + encodeURIComponent(settings.data[key]));
+                if(settings.data[key].constructor === Array) {
+                    // Add the key several times if array
+                    for (var i = 0; i < settings.data[key].length; i++) {
+                        params.push(encodeURIComponent(key) + '=' + encodeURIComponent(settings.data[key][i]));
+                    };
+                }
+                else {
+                    params.push(encodeURIComponent(key) + '=' + encodeURIComponent(settings.data[key]));
+                }
             }
         }
     }
-    request.send(params.join('&'));
+
+    var url = settings.url;
+    // Adding querystring if GET
+    if(settings.method === 'GET') {
+        url += '?' + params.join('&');
+    }
+
+    // Initiate ajax request
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = response;
+    // HTTP method and URL from settings
+    request.open(settings.method, url);
+
+    var postData = null;
+    // Add content type if post request
+    if(['POST', 'PUT'].indexOf(settings.method) !== -1) {
+        request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        postData = params.join('&');
+    }
+
+    request.send(postData);
 };

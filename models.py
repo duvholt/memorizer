@@ -1,3 +1,4 @@
+from flask import url_for
 from flask.ext.sqlalchemy import SQLAlchemy
 from sqlalchemy.ext.associationproxy import association_proxy
 from sqlalchemy_utils.types.choice import ChoiceType
@@ -118,10 +119,14 @@ class Question(db.Model):
             return [FakeAlternative(1, 'Riktig', self.correct is True), FakeAlternative(2, 'Galt', self.correct is False)]
 
     def serialize(self):
+        image = None
+        if self.image:
+            # this is not efficient
+            image = url_for('static', filename='img/' + self.course.code + '/' + self.image)
         return {
             'id': self.id,
             'text': self.text,
-            'image': self.image,
+            'image': image,
             'exam_id': self.exam_id,
             'alternatives': [alt.serialize() for alt in self.alternatives],
             'str': str(self)
@@ -153,3 +158,45 @@ class Alternative(db.Model):
             'question_id': self.question_id,
             'str': str(self)
         }
+
+
+class User(db.Model):
+    __tablename__ = 'user'
+    __mapper_args__ = {'order_by': 'id'}
+
+    id = db.Column(db.Integer, primary_key=True)
+
+
+class Stats(db.Model):
+    __tablename__ = 'stats'
+    __mapper_args__ = {'order_by': 'id'}
+
+    id = db.Column(db.Integer, primary_key=True)
+    question_id = db.Column(db.Integer, db.ForeignKey('question.id'))
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    correct = db.Column(db.Boolean)
+    reset = db.Column(db.Boolean)
+
+    question = db.relationship('Question', backref='stats')
+    user = db.relationship('User', backref='stats')
+
+    def __init__(self, user, question, correct):
+        self.user_id = user.id
+        self.question_id = question.id
+        self.correct = correct
+        self.reset = False
+
+    @classmethod
+    def course(cls, user, course_code):
+        return cls.query.filter_by(reset=False, user_id=user.id).join(Question).join(Exam).join(Course).\
+            filter_by(code=course_code)
+
+    @classmethod
+    def exam(cls, user, course_code, exam_name):
+        return cls.query.filter_by(reset=False, user_id=user.id).join(Question).join(Exam).join(Course).\
+            filter(Course.code == course_code).\
+            filter(Exam.name == exam_name)
+
+    @classmethod
+    def answered(cls, user, question):
+        return cls.query.filter_by(user=user, question=question, reset=False).count() > 0
