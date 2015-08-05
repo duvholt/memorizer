@@ -8,16 +8,16 @@ var Questions = function() {
 
     // Current question information
     this.questions = [];
-    this.ready = false;
     this.loadQuestions();
+};
 
+// Ran when questions have been loaded
+Questions.prototype.loaded = function() {
     // DOM elements
-    this.questionElement = document.querySelector('.question');
     this.form = document.querySelector('form');
     this.nextButton = document.getElementById('next');
     this.prevButton = document.getElementById('prev');
     this.randomButton = document.getElementById('random');
-
     // Bind user events
     this.form.addEventListener('submit', this.answer.bind(this));
     this.nextButton.addEventListener('click', this.next.bind(this));
@@ -58,8 +58,7 @@ Questions.prototype.loadQuestions = function() {
                 }
             }
             this.questions = questions;
-            this.currentQuestion();
-            this.ready = true;
+            this.loaded();
         }.bind(this));
         if(this.urlInfo.exam !== 'all') {
             this.statsApi = new StatsAPI(this.urlInfo.course, this.urlInfo.exam);
