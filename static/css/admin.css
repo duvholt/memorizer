@@ -8,6 +8,7 @@
 
 .form-admin button, .form-admin input[type="submit"] {
     padding: 6px;
+    margin: 10px 0 0 0;
     font-size: 13px;
     cursor: pointer;
 }
@@ -15,6 +16,7 @@
 .form-admin .field label {
     display: block;
     font-weight: bold;
+    margin: 5px 0;
 }
 
 .form-admin .field input, .form-admin .field select {
@@ -34,6 +36,15 @@
     height: 15px;
     width: 15px;
     min-width: inherit;
+}
+
+.form-admin .errors {
+    margin: 0;
+    color: #772B2A;
+}
+
+.form-admin .errors li {
+    margin: 5px 0;
 }
 
 .admin-list {
@@ -74,4 +85,13 @@
 
 .admin-list a.delete {
     float: right;
+}
+
+/* Register link on admin login */
+.admin-register {
+      font-size: 18px;
+      color: #203949;
+      font-weight: bold;
+      margin: 10px 0;
+      float: left;
 }

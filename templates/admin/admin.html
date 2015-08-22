@@ -8,15 +8,23 @@
 {% endblock %}
 
 {% block content %}
+<h1>Administrasjonspanel</h1>
 {% if admin %}
-Du er logget inn.
 {% else %}
-<form method="POST">
+<h2>Logg inn</h2>
+<form method="POST" class="form-admin">
+    <div class="field">
+        <label>Brukernavn</label>
+        <input name="username" type="text">
+    </div>
     <div class="field">
         <label>Passord</label>
         <input name="password" type="password">
     </div>
+    <input type="submit" value="Logg inn">
 </form>
+
+<a class="admin-register" href="/register">Eller registrer deg</a>
 {% endif %}
 {% endblock %}
 
