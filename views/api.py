@@ -17,8 +17,8 @@ def error(message):
 
 class CacheView(object):
     def __repr__(self):
-        """Hack to make memoization work with self"""
-        return '%s' % (self.__class__.__name__)
+        """Hack to make memoization work with self and different get parameters"""
+        return '%s (%s)' % (self.__class__.__name__, request.args)
 
 
 class JsonView(MethodView):
