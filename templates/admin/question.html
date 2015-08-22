@@ -14,7 +14,7 @@
 
 {{ render_form(form, '/api/questions/' + question.id|string, new=False) }}
 
-{% if question.is_multiple %}
+{% if question.multiple %}
 <h2>Legg til nytt alternativ</h2>
 
 {{ render_form(alt_form, '/api/alternatives/') }}

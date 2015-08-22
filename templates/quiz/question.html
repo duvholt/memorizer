@@ -38,9 +38,8 @@
     {% endif %}
     <h4>{{ question.text }}</h4>
     <form method="post">
-        {% if question.is_multiple %}
+        {% if question.multiple %}
         <input type="hidden" name="order" value="{{ question.choices|join(',', attribute='id') }}">
-        {% endif %}
         {% for alternative in question.choices %}
         <div class="radio {% if (alternative.id)|string() == request.form.answer %}{{ 'success' if success else 'error' }}{% endif %}">
             <label>
@@ -52,6 +51,19 @@
             </label>
         </div>
         {% endfor %}
+        {% else %}
+        {% for bool_val, val, label in [(True, "true", "Ja"), (False, "false", "Nei")] %}
+        <div class="radio {% if val == request.form.answer %}{{ 'success' if success else 'error' }}{% endif %}">
+            <label>
+                <input type="radio" name="answer" value="{{ val }}">
+                {% if success is defined %}
+                    <i class="fa {{ 'fa-check' if  question.correct == bool_val else 'fa-times' }} fa-fw"></i>
+                {% endif %}
+                {{ label }}
+            </label>
+        </div>
+        {% endfor %}
+        {% endif %}
         <button type="submit">Svar</button>
     </form>
     {% if answered and question.reason %}
@@ -90,6 +102,7 @@
 {?}
 <h4>{$ question.text }</h4>
 <form method="post">
+    {? if question.multiple}
     {+ alternative in question.alternatives }
     <div class="radio">
         <label>

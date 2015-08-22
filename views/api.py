@@ -180,7 +180,7 @@ class Answer(JsonView):
         except ValueError:
             return error('Missing question')
         question = models.Question.query.get_or_404(question_id)
-        if(question.is_multiple):
+        if question.multiple:
             try:
                 alternative_id = int(request.form.get('alternative'))
             except ValueError:

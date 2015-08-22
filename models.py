@@ -63,16 +63,6 @@ class Exam(db.Model):
         return self.course.code + '_' + self.name
 
 
-class FakeAlternative(object):
-    def __init__(self, id, text, correct):
-        self.id = id
-        self.text = text
-        self.correct = correct
-
-    def __str__(self):
-        return self.text
-
-
 class Question(db.Model):
     MULTIPLE = '1'
     BOOLEAN = '2'
@@ -106,31 +96,29 @@ class Question(db.Model):
         return self.text
 
     @property
-    def is_multiple(self):
+    def multiple(self):
         return self.type == self.MULTIPLE
 
     @property
     def choices(self):
-        """Dynamic choices"""
-        if self.is_multiple:
+        if self.multiple:
             return self.alternatives
-        else:
-            # oh gee
-            return [FakeAlternative(1, 'Riktig', self.correct is True), FakeAlternative(2, 'Galt', self.correct is False)]
 
     def serialize(self):
-        image = None
-        if self.image:
-            # this is not efficient
-            image = url_for('static', filename='img/' + self.course.code + '/' + self.image)
-        return {
+        response = {
             'id': self.id,
             'text': self.text,
-            'image': image,
             'exam_id': self.exam_id,
-            'alternatives': [alt.serialize() for alt in self.alternatives],
-            'str': str(self)
+            'type': self.type.code
         }
+        if self.multiple:
+            response['alternatives'] = [alt.serialize() for alt in self.alternatives]
+        else:
+            response['correct'] = self.correct
+        if self.image:
+            # this is not efficient
+            response['image'] = url_for('static', filename='img/' + self.course.code + '/' + self.image)
+        return response
 
 
 class Alternative(db.Model):

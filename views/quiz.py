@@ -97,10 +97,14 @@ def show_question(course, exam, id):
         answer = request.form.get('answer')
         if answer:
             context['answered'] = True
-            for alternative in question.choices:
-                if str(alternative.id) == answer:
-                    context['success'] = alternative.correct
-                    break
+            if question.multiple:
+                for alternative in question.choices:
+                    if str(alternative.id) == answer:
+                        context['success'] = alternative.correct
+                        break
+            else:
+                bool_answer = answer.lower() == 'true'
+                context['success'] = question.correct == bool_answer
             user = utils.user()
             # Checking if question has already been answered
             if not models.Stats.answered(user, question):
