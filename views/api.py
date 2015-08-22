@@ -182,11 +182,12 @@ class Answer(JsonView):
         question = models.Question.query.get_or_404(question_id)
         if question.multiple:
             try:
-                alternative_id = int(request.form.get('alternative'))
+                answer_alt = set(map(int, request.form.getlist('alternative')))
             except ValueError:
                 return error('Missing alternative')
-            alternative = models.Alternative.query.filter_by(question=question, id=alternative_id).first_or_404()
-            correct = alternative.correct
+            correct_alt = {alt.id for alt in models.Alternative.query.filter_by(question=question, correct=True)}
+            # Checking if all alternatives are correct
+            correct = correct_alt == answer_alt
         else:
             # Yes/No
             answer = request.form.get('correct', False) == 'true'

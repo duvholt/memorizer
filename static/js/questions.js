@@ -74,8 +74,8 @@ Questions.prototype.answer = function(e) {
     if(e !== undefined) {
         e.preventDefault();
     }
-    var radio = document.querySelector('input[name="answer"]:checked');
-    if(radio !== null) {
+    var selectedRadios = document.querySelectorAll('input[name="answer"]:checked');
+    if(selectedRadios !== null) {
         var question = this.currentQuestion();
         if(question.multiple) {
             var alternatives = {};
@@ -102,10 +102,14 @@ Questions.prototype.answer = function(e) {
             iconElement.className = 'fa fa-fw ' + (correct ? 'fa-check' : 'fa-times');
             var label = radios[i].parentElement;
             // Selected alternative
-            if(radio === radios[i]) {
-                var radioDiv = label.parentElement;
-                radioDiv.classList.add(correct ? 'success' : 'error');
-                radios[i].checked = false;
+            for (var j = 0; j < selectedRadios.length; j++) {
+                var selectedRadio = selectedRadios[j];
+                if(selectedRadio === radios[i]) {
+                    var radioDiv = label.parentElement;
+                    radioDiv.classList.add(correct ? 'success' : 'error');
+                    radios[i].checked = false;
+                    break;
+                }
             }
             // Insert after. Why is this not a standard library method?
             label.insertBefore(iconElement, radios[i].nextSibling);
@@ -116,8 +120,12 @@ Questions.prototype.answer = function(e) {
             // Disable radios
             radios[i].disabled = true;
         }
+        values = [];
+        for (i = 0; i < selectedRadios.length; i++) {
+            values.push(Number(selectedRadios[i].value));
+        }
         // Send ajax request
-        this.answerApi.submit(this.currentQuestion().id, Number(radio.value), function() {
+        this.answerApi.submit(this.currentQuestion().id, values, function() {
             this.updateStats();
         }.bind(this));
     }
@@ -223,7 +231,8 @@ Questions.prototype.shortcuts = function(e) {
     // Alternatives
     try {
         var alternative = e.keyCode - 49;
-        document.querySelectorAll('[name="answer"]:not(:disabled)')[alternative].checked = true;
+        var input = document.querySelectorAll('[name="answer"]:not(:disabled)')[alternative];
+        input.checked = !input.checked;
     } catch (error) {
         // Not a valid alternative
     }

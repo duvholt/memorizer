@@ -64,7 +64,8 @@ AnswerAPI.prototype.submit = function(question_id, answer, callback) {
     if(typeof answer === 'boolean') {
         params = {question: question_id, answer: answer};
     }
-    else if(typeof answer === 'number') {
+    // Alternatives (can be several)
+    else if(['number', 'object'].indexOf(typeof answer) !== -1) {
         params = {question: question_id, alternative: answer};
     }
     this.send(params, callback, 'POST');

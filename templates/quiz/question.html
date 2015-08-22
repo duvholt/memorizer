@@ -41,9 +41,9 @@
         {% if question.multiple %}
         <input type="hidden" name="order" value="{{ question.choices|join(',', attribute='id') }}">
         {% for alternative in question.choices %}
-        <div class="radio {% if (alternative.id)|string() == request.form.answer %}{{ 'success' if success else 'error' }}{% endif %}">
+        <div class="radio {% if (alternative.id)|string() in request.form.getlist('answer') %}{{ 'success' if alternative.correct else 'error' }}{% endif %}">
             <label>
-                <input type="radio" name="answer" value="{{ alternative.id }}">
+                <input type="checkbox" name="answer" value="{{ alternative.id }}">
                 {% if success is defined %}
                     <i class="fa {{ 'fa-check' if alternative.correct else 'fa-times' }} fa-fw"></i>
                 {% endif %}
@@ -106,7 +106,7 @@
     {+ alternative in question.alternatives }
     <div class="radio">
         <label>
-            <input type="radio" name="answer" value="{$ alternative.id }">
+            <input type="checkbox" name="answer" value="{$ alternative.id }">
             {$ alternative.text }
         </label>
     </div>

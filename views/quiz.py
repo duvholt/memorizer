@@ -98,10 +98,12 @@ def show_question(course, exam, id):
         if answer:
             context['answered'] = True
             if question.multiple:
-                for alternative in question.choices:
-                    if str(alternative.id) == answer:
-                        context['success'] = alternative.correct
-                        break
+                try:
+                    answer_alt = set(map(int, request.form.getlist('answer')))
+                except ValueError:
+                    pass
+                correct_alt = {alt.id for alt in models.Alternative.query.filter_by(question=question, correct=True)}
+                context['success'] = correct_alt == answer_alt
             else:
                 bool_answer = answer.lower() == 'true'
                 context['success'] = question.correct == bool_answer
