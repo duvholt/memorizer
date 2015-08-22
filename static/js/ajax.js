@@ -38,7 +38,7 @@ var Ajax = function(options, callback) {
     if(settings.data !== undefined) {
         for(var key in settings.data) {
             if(settings.data.hasOwnProperty(key)) {
-                if(settings.data[key].constructor === Array) {
+                if(settings.data[key] && settings.data[key].constructor === Array) {
                     // Add the key several times if array
                     for (var i = 0; i < settings.data[key].length; i++) {
                         params.push(encodeURIComponent(key) + '=' + encodeURIComponent(settings.data[key][i]));
@@ -53,7 +53,7 @@ var Ajax = function(options, callback) {
 
     var url = settings.url;
     // Adding querystring if GET
-    if(settings.method === 'GET') {
+    if(settings.method === 'GET' && params.length > 0) {
         url += '?' + params.join('&');
     }
 
