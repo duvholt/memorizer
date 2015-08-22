@@ -102,7 +102,7 @@
 {?}
 <h4>{$ question.text }</h4>
 <form method="post">
-    {? if question.multiple}
+    {? if question.multiple }
     {+ alternative in question.alternatives }
     <div class="radio">
         <label>
@@ -111,6 +111,16 @@
         </label>
     </div>
     {+}
+    {? else }
+        {+ boolAlt in boolAlts }
+        <div class="radio">
+            <label>
+                <input type="radio" name="answer" value="{_ boolAlt.value }">
+                {$ boolAlt.label }
+            </label>
+        </div>
+        {+}
+    {?}
     <button type="submit">Svar</button>
 </form>
 </script>

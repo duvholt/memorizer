@@ -109,7 +109,9 @@ class Question(db.Model):
             'id': self.id,
             'text': self.text,
             'exam_id': self.exam_id,
-            'type': self.type.code
+            'multiple': self.multiple,
+            'type': self.type.code,
+            'str': str(self)
         }
         if self.multiple:
             response['alternatives'] = [alt.serialize() for alt in self.alternatives]

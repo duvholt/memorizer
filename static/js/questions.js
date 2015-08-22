@@ -77,25 +77,34 @@ Questions.prototype.answer = function(e) {
     var radio = document.querySelector('input[name="answer"]:checked');
     if(radio !== null) {
         var question = this.currentQuestion();
-        var alternatives = {};
-        // Creating a dictionary of id:correct
-        for (var i = 0; i < question.alternatives.length; i++) {
-            var alt = question.alternatives[i];
-            alternatives[alt.id] = alt;
+        if(question.multiple) {
+            var alternatives = {};
+            // Creating a dictionary of id:correct
+            for (var i = 0; i < question.alternatives.length; i++) {
+                var alt = question.alternatives[i];
+                alternatives[alt.id] = alt;
+            }
         }
         // A bit too messy for my taste. Consider rewriting
         var radios = document.querySelectorAll('input[name="answer"]');
         for(i = 0; i < radios.length; i++) {
-            // Current alternative
-            alt = alternatives[Number(radios[i].value)];
+            var value = radios[i].value;
+            var correct, success;
+            if(question.multiple) {
+                // Current alternative
+                correct = alternatives[Number(value)].correct;
+            }
+            else {
+                correct = question.correct == (value == "true");
+            }
             var iconElement = document.createElement('i');
             // Setting font-awesome classname
-            iconElement.className = 'fa fa-fw ' + (alt.correct ? 'fa-check' : 'fa-times');
+            iconElement.className = 'fa fa-fw ' + (correct ? 'fa-check' : 'fa-times');
             var label = radios[i].parentElement;
             // Selected alternative
             if(radio === radios[i]) {
                 var radioDiv = label.parentElement;
-                radioDiv.classList.add(alt.correct ? 'success' : 'error');
+                radioDiv.classList.add(correct ? 'success' : 'error');
                 radios[i].checked = false;
             }
             // Insert after. Why is this not a standard library method?
@@ -174,7 +183,8 @@ Questions.prototype.bindRadios = function() {
 Questions.prototype.updateQuestion = function() {
     var question = this.currentQuestion();
     var container = document.querySelector('.question-container');
-    container.innerHTML = scoop('question_template', {question: question, id: this.current});
+    var boolAlternatives = [{value: "true", label: "Ja"}, {value: "false", label: "Nei"}];
+    container.innerHTML = scoop('question_template', {question: question, id: this.current, boolAlts: boolAlternatives});
 
     this.bindRadios();
 
