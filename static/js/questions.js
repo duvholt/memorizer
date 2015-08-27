@@ -75,7 +75,7 @@ Questions.prototype.answer = function(e) {
         e.preventDefault();
     }
     var selectedRadios = document.querySelectorAll('input[name="answer"]:checked');
-    if(selectedRadios !== null) {
+    if(selectedRadios.length > 0) {
         var question = this.currentQuestion();
         if(question.multiple) {
             var alternatives = {};
