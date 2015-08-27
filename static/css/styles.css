@@ -295,11 +295,7 @@ form label:hover {
     margin: 1.0rem;
 }
 
-.question .radio label {
-    padding: 0.5rem;
-}
-
-.question input[type=radio] {
+.question input[type=radio], .question input[type=checkbox] {
     display: block;
     float: left;
     margin-left: -2.0rem;
