@@ -1,5 +1,5 @@
 .form-admin {
-    padding-top: 15px;
+    padding-top: 1.5rem;
 }
 
 .form-admin .field * {
@@ -7,34 +7,34 @@
 }
 
 .form-admin button, .form-admin input[type="submit"] {
-    padding: 6px;
-    margin: 10px 0 0 0;
-    font-size: 13px;
+    padding: 0.6rem;
+    margin: 1.0rem 0 0 0;
+    font-size: 1.3rem;
     cursor: pointer;
 }
 
 .form-admin .field label {
     display: block;
     font-weight: bold;
-    margin: 5px 0;
+    margin: 0.5rem 0;
 }
 
 .form-admin .field input, .form-admin .field select {
-    min-width: 100px;
+    min-width: 10.0rem;
     width: 60%;
     display: block;
-    height: 30px;
-    font-size: 13px;
+    height: 3.0rem;
+    font-size: 1.3rem;
     color: #333;
-    border: 1px solid gray;
-    border-radius: 2px;
-    padding: 2px 5px;
+    border: 0.1rem solid gray;
+    border-radius: 0.2rem;
+    padding: 0.2rem 0.5rem;
     background-color: #fff;
 }
 
 .form-admin .field input[type="checkbox"] {
-    height: 15px;
-    width: 15px;
+    height: 1.5rem;
+    width: 1.5rem;
     min-width: inherit;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .form-admin .errors li {
-    margin: 5px 0;
+    margin: 0.5rem 0;
 }
 
 .admin-list {
@@ -54,13 +54,13 @@
 .admin-list li {
     background-color: rgb(176, 176, 176);
     margin: 0;
-    border: 1px solid gray;
+    border: 0.1rem solid gray;
     border-top: none;
 }
 
 /* Add top border on first element */
 .admin-list li:nth-child(1) {
-    border-top: 1px solid gray;
+    border-top: 0.1rem solid gray;
 
 }
 
@@ -70,7 +70,7 @@
 
 .admin-list a {
     display: inline-block;
-    padding: 10px;
+    padding: 1.0rem;
 }
 
 .admin-list a:hover {
@@ -89,9 +89,9 @@
 
 /* Register link on admin login */
 .admin-register {
-      font-size: 18px;
+      font-size: 1.8rem;
       color: #203949;
       font-weight: bold;
-      margin: 10px 0;
+      margin: 1.0rem 0;
       float: left;
 }
