@@ -26,10 +26,10 @@
 {% endblock %}
 
 {% block content %}
-<div class="question">
+<div class="question-container">
 <h2>{{ question.course.name }} - {{ question.exam }}</h2>
 {% if question is defined %}
-<div class="question-container">
+<div class="question">
     <h3>Spørsmål #{{ id }}</h3>
     {% if question.image %}
     <div class="image">
@@ -80,18 +80,20 @@
 {{ navlink(next, 'next', 'Neste') }}
 </div>
 </div>
-<div class="stats">
-    <div class="grade">{{ grade(stats.points, stats.total ) }}</div>
-    <div class="points">
-        Poeng: {{ stats.points }}/{{ stats.total }}
-        {% if stats.points == 4 and stats.total == 20 %}
-        <blaze>blaze it</blaze>
-        {% endif %}
-        ({{ percentage(stats.points, stats.total) }}%)
+<div class="stats-container">
+    <div class="stats">
+        <div class="grade">{{ grade(stats.points, stats.total ) }}</div>
+        <div class="points">
+            Poeng: {{ stats.points }}/{{ stats.total }}
+            {% if stats.points == 4 and stats.total == 20 %}
+            <blaze>blaze it</blaze>
+            {% endif %}
+            ({{ percentage(stats.points, stats.total) }}%)
+        </div>
+        <div class="combo">Combo: {{ stats.combo }}{% for _ in range(stats.combo // 10) %}<i class="fa fa-trophy"></i>{% endfor %}</div>
+        <div class="progress">Spørsmål: {{ stats.total }}/{{ stats.max }}</div>
+        <div class="reset"><a href="{{ reset_url }}"><i class="fa fa-undo"></i> Nullstill poeng</a></div>
     </div>
-    <div class="combo">Combo: {{ stats.combo }}{% for _ in range(stats.combo // 10) %}<i class="fa fa-trophy"></i>{% endfor %}</div>
-    <div class="progress">Spørsmål: {{ stats.total }}/{{ stats.max }}</div>
-    <div class="reset"><a href="{{ reset_url }}"><i class="fa fa-undo"></i> Nullstill poeng</a></div>
 </div>
 <script type="scoop" id="question_template">
 <h3>Spørsmål #{$ id }</h3>

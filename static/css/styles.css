@@ -274,21 +274,10 @@ form label:hover {
     color: #3D3D3D;
 }
 
-.question {
-    width: 800px;
-    display: inline-block;
-    float: left;
-    margin: 0 1.0rem 2.0rem 0;
-    clear: both;
+.question-container {
+    padding: 0 1.0rem 2.0rem 0;
 }
 
-/* Fixed 800px width is only used on larger displays to position the stats box correctly */
-@media (max-width: 975px) {
-    .question {
-        width: auto;
-        max-width: 800px;
-    }
-}
 
 .question .image {
     display: inline-block;
@@ -377,7 +366,7 @@ button[type=submit]:hover, button[type=submit]:focus, button[type=submit]:active
 }
 
 .stats {
-    float: left;
+    max-width: 200px;
     padding: 1.5rem;
     background: #FFFFFF;
     border: 0.1rem solid #B3B3B3;
@@ -466,4 +455,25 @@ blaze {
     padding: 0.2rem 0.5rem;
     background-color: #fff;
     margin-bottom: 1.0rem;
+}
+
+
+/* Responsive layout, mobile first */
+.question-container, .stats-container {
+    float: left;
+    width: 100%;
+}
+
+@media (min-width: 800px) {
+    .question-container {
+        width: 70%;
+    }
+
+    .stats-container {
+        width: 30%;
+    }
+
+    .stats {
+        float: right;
+    }
 }

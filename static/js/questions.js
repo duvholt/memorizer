@@ -190,7 +190,7 @@ Questions.prototype.bindRadios = function() {
 
 Questions.prototype.updateQuestion = function() {
     var question = this.currentQuestion();
-    var container = document.querySelector('.question-container');
+    var container = document.querySelector('.question');
     var boolAlternatives = [{value: "true", label: "Ja"}, {value: "false", label: "Nei"}];
     container.innerHTML = scoop('question_template', {question: question, id: this.current, boolAlts: boolAlternatives});
 
