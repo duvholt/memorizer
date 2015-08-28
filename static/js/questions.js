@@ -14,17 +14,15 @@ var Questions = function() {
 // Ran when questions have been loaded
 Questions.prototype.loaded = function() {
     // DOM elements
-    this.form = document.querySelector('form');
     this.nextButton = document.getElementById('next');
     this.prevButton = document.getElementById('prev');
     this.randomButton = document.getElementById('random');
     // Bind user events
-    this.form.addEventListener('submit', this.answer.bind(this));
     this.nextButton.addEventListener('click', this.next.bind(this));
     this.prevButton.addEventListener('click', this.previous.bind(this));
     this.randomButton.addEventListener('click', this.random.bind(this));
 
-    this.bindRadios();
+    this.bindElements();
 
     // History popstate
     window.onpopstate = this.popstate.bind(this);
@@ -158,7 +156,11 @@ Questions.prototype.previous = function(e) {
     this.updateQuestion();
 };
 
-Questions.prototype.random = function() {
+Questions.prototype.random = function(e) {
+    // If called by event let's stop it
+    if(e !== undefined) {
+        e.preventDefault();
+    }
     // TODO: Remove already answered questions
     var rand = Math.round(Math.random() * (this.questions.length - 1));
     this.current = rand;
@@ -170,7 +172,12 @@ Questions.prototype.currentQuestion = function() {
     return this.questions[this.current - 1];
 };
 
-Questions.prototype.bindRadios = function() {
+Questions.prototype.bindElements = function() {
+    // Form submit
+    this.form = document.querySelector('.question form');
+    this.form.addEventListener('submit', this.answer.bind(this));
+
+    // Radio buttons
     var radios = document.querySelectorAll('.radio label input');
     var currentValue = -1;
     for (var i = radios.length - 1; i >= 0; i--) {
@@ -194,7 +201,7 @@ Questions.prototype.updateQuestion = function() {
     var boolAlternatives = [{value: "true", label: "Ja"}, {value: "false", label: "Nei"}];
     container.innerHTML = scoop('question_template', {question: question, id: this.current, boolAlts: boolAlternatives});
 
-    this.bindRadios();
+    this.bindElements();
 
     // Update title
     document.title = '#' + this.current + ' - ' + this.urlInfo.course; // missing exam info
