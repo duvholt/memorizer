@@ -255,7 +255,7 @@ Questions.prototype.shortcuts = function(e) {
     }
 
     // Next question
-    if (e.keyCode == 39 || e.keyCode == 68) {
+    if (e.keyCode == 39 || e.keyCode == 68) {
         this.next();
     }
 
@@ -273,4 +273,4 @@ Questions.prototype.shuffle = function(list) {
         list[i] = list[j];
         list[j] = tmp;
     }
-}
+};
