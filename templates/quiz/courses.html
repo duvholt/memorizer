@@ -18,6 +18,6 @@
 {% block js %}
 {{ super () }}
 <script>
-    new CoursesFilter(document.getElementById('search_courses'), document.querySelectorAll('ul.courses li'));
+    new CoursesFilter(document.getElementById('search_courses'), document.querySelector('ul.courses'));
 </script>
 {% endblock %}

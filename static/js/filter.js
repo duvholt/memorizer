@@ -1,6 +1,9 @@
-var CoursesFilter = function(input, courses) {
+var CoursesFilter = function(input, container, filter) {
+    // Default child element filter
+    filter = filter || 'li';
     this.searchInput = input;
-    this.coursesList = courses;
+    this.container = container;
+    this.coursesList = container.querySelectorAll(filter);
     // Index of selected element
     this.selected = null;
     this.filterList = [];
@@ -90,24 +93,53 @@ CoursesFilter.prototype.shortcuts = function(e) {
         return;
     }
     if(this.selected !== null) {
-        // Previous
-        if(e.keyCode == 37) {
-            if(this.selected > 0) {
-                this.selected--;
-                this.select();
-            }
-        }
-        // Next
-        if(e.keyCode == 39) {
-            if(this.selected < this.max()) {
-                this.selected++;
-                this.select();
-            }
-        }
-        // Select
-        if(e.keyCode == 13 || e.keyCode == 32) {
-            var element = this.filterList[this.selected].element;
-            window.location.href = element.getElementsByTagName('a')[0].href;
+        var computedStyle = window.getComputedStyle(this.filterList[0].element);
+        // width + border + margin
+        var elementWidth = this.filterList[0].element.clientWidth + parseInt(computedStyle.borderRightWidth, 10) + parseInt(computedStyle.borderLeftWidth, 10) + 
+        parseInt(computedStyle.marginRight, 10) + parseInt(computedStyle.marginLeft, 10);
+        var maxCols = Math.floor(this.container.clientWidth / elementWidth);
+        var maxRows = Math.ceil(this.filterList.length / maxCols);
+        // Current column
+        var col = this.selected % maxCols;
+        // Current row
+        var row = Math.floor(this.selected / maxCols);
+        switch(e.keyCode) {
+            // Right
+            case 37:
+                if(col > 0) {
+                    this.selected--;
+                    this.select();
+                }
+                break;
+            // Left
+            case 39:
+                if(col < (maxCols - 1) && this.selected < this.max()) {
+                    this.selected++;
+                    this.select();
+                }
+                break;
+            // Up
+            case 38:
+                if(row > 0) {
+                    this.selected -= maxCols;
+                    this.select();
+                }
+                break;
+            // Down
+            case 40:
+                if(row < (maxRows - 1) && (this.selected + maxCols - 1) < this.max()) {
+                    this.selected += maxCols;
+                    this.select();
+                }
+                break;
+            // Select
+            case 13:
+            case 32:
+                var element = this.filterList[this.selected].element;
+                window.location.href = element.getElementsByTagName('a')[0].href;
+                break;
+            default:
+                break;
         }
     }
 };
