@@ -4,13 +4,10 @@ var CoursesFilter = function(input, container, filter) {
     this.searchInput = input;
     this.container = container;
     this.coursesList = container.querySelectorAll(filter);
-    // Index of selected element
-    this.selected = null;
-    this.filterList = [];
 
     // Process course list for data
     this.courses = [];
-    for(var i = this.coursesList.length - 1; i >= 0; i--) {
+    for(var i = 0; i < this.coursesList.length; i++) {
         var course = this.coursesList[i];
         this.courses.push({
             'element': course,
@@ -22,6 +19,9 @@ var CoursesFilter = function(input, container, filter) {
     this.searchInput.addEventListener('input', this.search.bind(this));
     // Keyboard shortcuts
     document.addEventListener('keydown', this.shortcuts.bind(this));
+
+    // Faking a search to set up selected
+    this.search();
 };
 
 CoursesFilter.prototype.max = function() {
@@ -36,19 +36,20 @@ CoursesFilter.prototype.search = function(e) {
     if(this.searchInput.value === '') {
         // Input empty, show all elements
         this.show();
+        this.filterList = this.courses;
     }
     else {
         // Show only elements matching
         this.hide();
         this.filterList = this.filter(this.searchInput.value);
-        if(this.filterList.length > 0) {
-            // When searching always set selected element to the first
-            this.selected = 0;
-            this.select();
-            for (var i = 0; i < this.filterList.length; i++) {
-                this.filterList[i].element.style.display = '';
-                this.filterList[i].element.parentNode.appendChild(this.filterList[i].element);
-            }
+    }
+    if(this.filterList.length > 0) {
+        // When searching always set selected element to the first
+        this.selected = 0;
+        this.select();
+        for (var i = 0; i < this.filterList.length; i++) {
+            this.filterList[i].element.style.display = '';
+            this.filterList[i].element.parentNode.appendChild(this.filterList[i].element);
         }
     }
 };
@@ -79,8 +80,8 @@ CoursesFilter.prototype.filter = function(word) {
 
 CoursesFilter.prototype.select = function() {
     // Mark selected element as selected
-    for (var i = this.filterList.length - 1; i >= 0; i--) {
-        var element = this.filterList[i].element;
+    for (var i = this.courses.length - 1; i >= 0; i--) {
+        var element = this.courses[i].element;
         element.classList.remove('selected');
     }
     element = this.filterList[this.selected].element;
@@ -110,6 +111,7 @@ CoursesFilter.prototype.shortcuts = function(e) {
                     this.selected--;
                     this.select();
                 }
+                e.preventDefault();
                 break;
             // Left
             case 39:
@@ -117,6 +119,7 @@ CoursesFilter.prototype.shortcuts = function(e) {
                     this.selected++;
                     this.select();
                 }
+                e.preventDefault();
                 break;
             // Up
             case 38:
@@ -124,6 +127,7 @@ CoursesFilter.prototype.shortcuts = function(e) {
                     this.selected -= maxCols;
                     this.select();
                 }
+                e.preventDefault();
                 break;
             // Down
             case 40:
@@ -131,6 +135,7 @@ CoursesFilter.prototype.shortcuts = function(e) {
                     this.selected += maxCols;
                     this.select();
                 }
+                e.preventDefault();
                 break;
             // Select
             case 13:
