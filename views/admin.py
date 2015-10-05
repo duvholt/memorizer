@@ -1,6 +1,6 @@
 from flask import Blueprint, current_app, flash, g, redirect, request, render_template, session, url_for
 from functools import wraps
-from forms import CourseForm, ExamForm, QuestionForm, AlternativeForm
+from forms import CourseForm, ExamForm, QuestionForm, AlternativeForm, LoginForm
 from models import db
 import models
 
@@ -22,7 +22,7 @@ def index():
     if request.method == 'POST':
         if(request.form.get('password') == current_app.config['ADMIN_PASSWORD']):
             session['admin'] = True
-    context = dict(admin=session.get('admin'))
+    context = dict(admin=session.get('admin'), form=LoginForm())
     return render_template('admin/admin.html', **context)
 
 

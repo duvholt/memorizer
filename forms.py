@@ -50,3 +50,8 @@ class RegisterForm(Form):
         validators.EqualTo('confirm', message='Passordene må være like')
     ])
     confirm  = fields.PasswordField('Gjenta passord')
+
+
+class LoginForm(Form):
+    username = fields.StringField('Brukernavn', [validators.Required()])
+    password = fields.PasswordField('Passord', [validators.Required()])

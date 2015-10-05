@@ -1,3 +1,4 @@
+{% from "admin/_formhelpers.html" import render_form %}
 {% extends "base.html" %}
 
 {% block menu %}
@@ -11,18 +12,10 @@
 <h1>Administrasjonspanel</h1>
 {% if admin %}
 {% else %}
+
 <h2>Logg inn</h2>
-<form method="POST" class="form">
-    <div class="field">
-        <label>Brukernavn</label>
-        <input name="username" type="text">
-    </div>
-    <div class="field">
-        <label>Passord</label>
-        <input name="password" type="password">
-    </div>
-    <input type="submit" value="Logg inn">
-</form>
+
+{{ render_form(form, submit_text='Logg inn') }}
 
 <a class="admin-register" href="/register">Eller registrer deg</a>
 {% endif %}
