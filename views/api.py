@@ -75,6 +75,8 @@ class APIView(JsonView, CacheView):
             form.populate_obj(object)
             models.db.session.add(object)
             models.db.session.commit()
+            # Deleting cache
+            cache.clear()
         else:
             response['errors'] = form.errors
         return response
@@ -94,6 +96,8 @@ class APIView(JsonView, CacheView):
         if response['success']:
             models.db.session.add(object)
             models.db.session.commit()
+            # Deleting cache
+            cache.clear()
         else:
             response['errors'] = form.errors
         return response
@@ -107,6 +111,8 @@ class APIView(JsonView, CacheView):
         if object:
             models.db.session.delete(object)
             models.db.session.commit()
+            # Deleting cache
+            cache.clear()
         return {'success': bool(object)}
 
 
