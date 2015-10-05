@@ -1,4 +1,5 @@
 from flask import abort, Blueprint, redirect, render_template, request, session, url_for
+import forms
 import utils
 import models
 import random
@@ -15,6 +16,12 @@ def main():
         'courses': courses
     }
     return render_template('quiz/courses.html', **context)
+
+
+@quiz.route('/register/')
+def register():
+    context = dict(form=forms.RegisterForm())
+    return render_template('quiz/register.html', **context)
 
 
 @quiz.route('/tips/')

@@ -12,14 +12,14 @@
 </div>
 {% endmacro %}
 
-{% macro render_form(form, url, new=True) %}
-<form method="POST" class="form-admin" data-url="{{ url }}" {% if new %}data-new{% endif %}>
+{% macro render_form(form, url=None, new=True, submit_text="Lagre") %}
+<form method="POST" class="form{% if url %} form-admin{% endif %}" {% if url %}data-url="{{ url }}" {% if new %}data-new{% endif %}{% endif %}>
     {{ form.hidden_tag() }}
     {% for field in form %}
         {% if field.type != 'HiddenField' and field.type != 'CSRFTokenField' %}
             {{ render_field(field) }}
         {% endif %}
     {% endfor %}
-    <input type="submit" value="Lagre">
+    <input type="submit" value="{{ submit_text }}">
 </form>
 {% endmacro %}

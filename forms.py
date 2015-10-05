@@ -1,7 +1,7 @@
 import models
 from flask.ext.wtf import Form
 from wtforms_alchemy import model_form_factory
-from wtforms import fields
+from wtforms import fields, validators
 
 db = models.db
 BaseModelForm = model_form_factory(Form)
@@ -40,3 +40,13 @@ class AlternativeForm(ModelForm):
 
     # Foreign key
     question_id = fields.HiddenField()
+
+
+class RegisterForm(Form):
+    name = fields.StringField('Navn')
+    username = fields.StringField('Brukernavn')
+    password = fields.PasswordField('Passord', [
+        validators.Required(),
+        validators.EqualTo('confirm', message='Passordene må være like')
+    ])
+    confirm  = fields.PasswordField('Gjenta passord')

@@ -1,0 +1,48 @@
+.form {
+    padding-top: 1.5rem;
+}
+
+.form .field * {
+    box-sizing: border-box;
+}
+
+.form button, .form input[type="submit"] {
+    padding: 0.6rem;
+    margin: 1.0rem 0 0 0;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.form .field label {
+    display: block;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.form .field input, .form .field select {
+    min-width: 10.0rem;
+    width: 60%;
+    display: block;
+    height: 3.0rem;
+    font-size: 1.3rem;
+    color: #333;
+    border: 0.1rem solid gray;
+    border-radius: 0.2rem;
+    padding: 0.2rem 0.5rem;
+    background-color: #fff;
+}
+
+.form .field input[type="checkbox"] {
+    height: 1.5rem;
+    width: 1.5rem;
+    min-width: inherit;
+}
+
+.form .errors {
+    margin: 0;
+    color: #772B2A;
+}
+
+.form .errors li {
+    margin: 0.5rem 0;
+}
