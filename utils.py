@@ -6,11 +6,15 @@ import re
 
 def user_setup():
     """Set up user info for first time visitors"""
-    if 'user' not in session:
-        user = models.User()
-        models.db.session.add(user)
-        models.db.session.commit()
-        session['user'] = user.id
+    if 'user' in session:
+        # Checking if user id actually exists
+        user = models.User.query.get(session['user'])
+        if user:
+            return
+    user = models.User()
+    models.db.session.add(user)
+    models.db.session.commit()
+    session['user'] = user.id
     # Set session to permament
     session.permanent = True
 

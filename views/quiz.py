@@ -18,10 +18,41 @@ def main():
     return render_template('quiz/courses.html', **context)
 
 
-@quiz.route('/register/')
+@quiz.route('/register/', methods=['GET', 'POST'])
 def register():
-    context = dict(form=forms.RegisterForm())
+    user = utils.user()
+    if request.method == 'POST':
+        form = forms.RegisterForm(request.form)
+        if form.validate():
+            if not user.registered:
+                user.name = form.name.data
+                user.username = form.username.data
+                user.password = form.password.data
+                user.registered = True
+                models.db.session.add(user)
+                models.db.session.commit()
+    else:
+        form = forms.RegisterForm()
+    context = dict(form=form)
     return render_template('quiz/register.html', **context)
+
+@quiz.route('/login/', methods=['GET', 'POST'])
+def login():
+    user = utils.user()
+    if user.registered:
+        return redirect(url_for('quiz.main'))
+    if request.method == 'POST':
+        form = forms.LoginForm(request.form)
+        if form.validate():
+            # Login
+            user = models.User.query.filter_by(username=form.username.data).first()
+            if user and user.password == form.password.data:
+                session['user'] = user.id
+                return redirect(url_for('quiz.main'))
+    else:
+        form = forms.LoginForm()
+    context = dict(form=form)
+    return render_template('quiz/login.html', **context)
 
 
 @quiz.route('/tips/')

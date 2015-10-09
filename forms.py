@@ -43,8 +43,8 @@ class AlternativeForm(ModelForm):
 
 
 class RegisterForm(Form):
-    name = fields.StringField('Navn')
-    username = fields.StringField('Brukernavn')
+    name = fields.StringField('Navn', [validators.Required()])
+    username = fields.StringField('Brukernavn', [validators.Required()])
     password = fields.PasswordField('Passord', [
         validators.Required(),
         validators.EqualTo('confirm', message='Passordene må være like')

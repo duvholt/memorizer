@@ -2,8 +2,11 @@ from flask import url_for
 from flask.ext.sqlalchemy import SQLAlchemy
 from sqlalchemy.ext.associationproxy import association_proxy
 from sqlalchemy_utils.types.choice import ChoiceType
+from sqlalchemy_utils.types.password import PasswordType
+from sqlalchemy_utils import force_auto_coercion
 
 db = SQLAlchemy()
+force_auto_coercion()
 
 
 class Course(db.Model):
@@ -155,6 +158,13 @@ class User(db.Model):
     __mapper_args__ = {'order_by': 'id'}
 
     id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String, info={'label': 'Navn'})
+    username = db.Column(db.String, unique=True, info={'label': 'Brukernavn'})
+    password = db.Column(PasswordType(schemes=['pbkdf2_sha512']), info={'label': 'Passord'})
+    registered = db.Column(db.Boolean)
+
+    def __init__(self):
+        self.registered = False
 
 
 class Stats(db.Model):

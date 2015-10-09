@@ -1,0 +1,10 @@
+{% from "admin/_formhelpers.html" import render_form %}
+{% extends "admin/admin.html" %}
+
+{% block content %}
+<h1>Logg inn</h1>
+
+{{ render_form(form) }}
+
+<a class="admin-register" href="/register">Eller registrer deg</a>
+{% endblock %}
