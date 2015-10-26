@@ -1,4 +1,4 @@
-from flask import abort, Blueprint, redirect, render_template, request, session, url_for
+from flask import abort, Blueprint, flash, redirect, render_template, request, session, url_for
 import forms
 import utils
 import models
@@ -121,7 +121,6 @@ def show_question(course, exam, id):
     course.exams.sort(key=utils.sort_exam, reverse=True)
     context = {
         'id': id,
-        'alerts': [],
         'random': utils.random_id(id=id, course=course, exam=exam),
         'prev': id - 1 if id > 1 else num_questions,
         'next': id + 1 if id < num_questions else 1,
@@ -152,12 +151,9 @@ def show_question(course, exam, id):
                 models.db.session.add(stat)
                 models.db.session.commit()
             elif context['success']:
-                context['alerts'].append({
-                    'msg': 'Du har allerede svart på dette spørsmålet så du får ikke noe poeng. :-)',
-                    'level': 'info'
-                })
+                flash('Du har allerede svart på dette spørsmålet så du får ikke noe poeng. :-)', 'info')
         else:
-            context['alerts'].append({'msg': 'Blankt svar', 'level': 'danger'})
+            flash('Blankt svar', 'error')
         # Preserving order on submit
         ordering = request.form.get('order')
         if ordering:

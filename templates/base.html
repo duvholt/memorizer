@@ -45,17 +45,11 @@
 </nav>
 <div class="container">
     <ul class="alerts">
-    {% with messages = get_flashed_messages() %}
-        {% for message in messages %}
-          <li class="alert">{{ message }}</li>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% for level, message in messages %}
+          <li class="alert {{ level }}">{{ message }}</li>
         {% endfor %}
     {% endwith %}
-
-    {% for alert in alerts %}
-        <li class="alert {{ alert.level }}">
-            {{ alert.msg }}
-        </li>
-    {% endfor %}
     </ul>
 {% block content %}{% endblock %}
 </div>
