@@ -59,6 +59,11 @@ def login():
     context = dict(form=form)
     return render_template('quiz/login.html', **context)
 
+@quiz.route('/logout/')
+def logout():
+    if 'user' in session:
+        del session['user']
+    return redirect(url_for('quiz.main'))
 
 @quiz.route('/tips/')
 def tips():
