@@ -21,16 +21,20 @@ def main():
 @quiz.route('/register/', methods=['GET', 'POST'])
 def register():
     user = utils.user()
+    if user.registered:
+        flash('Du er allerede logget inn', 'error')
+        return redirect(url_for('quiz.main'))
     if request.method == 'POST':
         form = forms.RegisterForm(request.form)
         if form.validate():
-            if not user.registered:
-                user.name = form.name.data
-                user.username = form.username.data
-                user.password = form.password.data
-                user.registered = True
-                models.db.session.add(user)
-                models.db.session.commit()
+            user.name = form.name.data
+            user.username = form.username.data
+            user.password = form.password.data
+            user.registered = True
+            models.db.session.add(user)
+            models.db.session.commit()
+            flash('Registrering fullført', 'success')
+            return redirect(url_for('quiz.main'))
     else:
         form = forms.RegisterForm()
     context = dict(form=form)
@@ -40,6 +44,7 @@ def register():
 def login():
     user = utils.user()
     if user.registered:
+        flash('Du er allerede logget inn', 'error')
         return redirect(url_for('quiz.main'))
     if request.method == 'POST':
         form = forms.LoginForm(request.form)
