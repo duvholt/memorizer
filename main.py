@@ -46,4 +46,7 @@ def utility_processor():
 
 
 if __name__ == '__main__':
+    if app.debug:
+        from flask_debugtoolbar import DebugToolbarExtension
+        toolbar = DebugToolbarExtension(app)
     app.run()
