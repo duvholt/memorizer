@@ -146,7 +146,7 @@ nav.sidebar li.active a {
     font-weight: bold;
 }
 
-nav.sidebar li > a {
+nav.sidebar li > a, nav.sidebar li > span {
     display: block;
     position: relative;
     padding: 0.7rem;
@@ -164,6 +164,10 @@ nav.sidebar li > a:hover {
 nav.sidebar li > a:focus {
     background: #D2D0D0;
     outline: none;
+}
+
+nav.sidebar li > span {
+    color: #737373;
 }
 
 nav.sidebar ul ul li a {

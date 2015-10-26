@@ -48,6 +48,7 @@
 <nav class="sidebar closed">
     <ul>
         {% if user.registered %}
+        <li><span><i class="fa fa-user fa-fw"></i>&nbsp; {{ user.username }}</span></li>
         <li><a href="{{ url_for('quiz.logout') }}"><i class="fa fa-sign-out fa-fw"></i>&nbsp; Logg ut</a></li>
         {% else %}
         <li><a href="{{ url_for('quiz.register') }}"><i class="fa fa-user-plus fa-fw"></i>&nbsp; Registrering</a></li>
