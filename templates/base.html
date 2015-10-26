@@ -35,14 +35,19 @@
                 <a href="/">Memorizer</a>
             </li>
         </ul>
-        {% if user.registered %}
         <ul class="right">
             <li class="user">
+            {% if user.registered %}
                 <i class="fa fa-fw fa-user"></i>
                 {{ user.username }}
+            {% else %}
+                <a href="{{ url_for('quiz.login') }}">
+                    <i class="fa fa-sign-in fa-fw"></i>
+                    Logg inn
+                </a>
+            {% endif %}
             </li>
         </ul>
-        {% endif %}
     </div>
 </nav>
 <nav class="sidebar closed">

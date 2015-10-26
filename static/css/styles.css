@@ -107,6 +107,10 @@ nav.top .user {
     font-size: 1.6rem;
 }
 
+nav.top .user a {
+    color: #DFDFDF;
+}
+
 nav.top .menu:hover, nav.top a:hover {
     color: #BDBDBD;
 }
