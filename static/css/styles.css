@@ -72,6 +72,7 @@ nav.top .menu {
     color: #DFDFDF;
     padding-top: 1.0rem;
     padding-bottom: 1.0rem;
+    padding-left: 0;
     cursor: pointer;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent;
@@ -89,6 +90,8 @@ nav.top .menu i {
 
 nav.top .logo {
     font-size: 3.6rem;
+    /* Hack to vertical center text */
+    margin-top: -0.2rem;
 }
 
 nav.top .logo a {
