@@ -26,14 +26,34 @@
 <body>
 <nav class="top">
     <div class="container">
-        <span class="menu">
-            <i class="fa fa-fw fa-navicon"></i>
-            <span>Meny</span>
-        </span>
-        <a class="logo" href="/">Memorizer</a>
+        <ul>
+            <li class="menu">
+                <i class="fa fa-fw fa-navicon"></i>
+                <span>Meny</span>
+            </li>
+            <li class="logo">
+                <a href="/">Memorizer</a>
+            </li>
+        </ul>
+        {% if user.registered %}
+        <ul class="right">
+            <li class="user">
+                <i class="fa fa-fw fa-user"></i>
+                {{ user.username }}
+            </li>
+        </ul>
+        {% endif %}
     </div>
 </nav>
 <nav class="sidebar closed">
+    <ul>
+        {% if user.registered %}
+        <li><a href="{{ url_for('quiz.logout') }}"><i class="fa fa-sign-out fa-fw"></i>&nbsp; Logg ut</a></li>
+        {% else %}
+        <li><a href="{{ url_for('quiz.register') }}"><i class="fa fa-user-plus fa-fw"></i>&nbsp; Registrering</a></li>
+        <li><a href="{{ url_for('quiz.login') }}"><i class="fa fa-sign-in fa-fw"></i>&nbsp; Logg inn</a></li>
+        {% endif %}
+    </ul>
     <ul>
     {% block menu %}{% endblock %}
     </ul>
