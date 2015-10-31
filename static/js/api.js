@@ -75,10 +75,10 @@ var StatsAPI = function(course, exam) {
     API.call(this);
     this.url = '/api/stats';
     if(course !== undefined) {
-        this.url += '/' + course;
+        this.url += '/' + course + '/';
     }
     if(exam !== undefined) {
-        this.url += '/' + exam;
+        this.url += exam + '/';
     }
 };
 
