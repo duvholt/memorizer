@@ -162,9 +162,11 @@ class User(db.Model):
     username = db.Column(db.String, unique=True, info={'label': 'Brukernavn'})
     password = db.Column(PasswordType(schemes=['pbkdf2_sha512']), info={'label': 'Passord'})
     registered = db.Column(db.Boolean)
+    admin = db.Column(db.Boolean)
 
     def __init__(self):
         self.registered = False
+        self.admin = False
 
 
 class Stats(db.Model):

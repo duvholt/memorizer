@@ -3,15 +3,27 @@ from functools import wraps
 from forms import CourseForm, ExamForm, QuestionForm, AlternativeForm, LoginForm
 from models import db
 import models
+import utils
 
 admin = Blueprint('admin', __name__)
 
 
 # Decorators
-def admin_required(f):
+def login_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
-        if session.get('admin') is not True:
+        user = utils.user()
+        if not user.registered:
+            return redirect(url_for('quiz.login'))
+        return   f(*args, **kwargs)
+    return decorated_function
+
+def admin_required(f):
+    @wraps(f)
+    @login_required
+    def decorated_function(*args, **kwargs):
+        user = utils.user()
+        if not user.admin:
             return redirect(url_for('admin.index'))
         return f(*args, **kwargs)
     return decorated_function
