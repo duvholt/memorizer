@@ -1,4 +1,4 @@
-from flask import abort, Blueprint, Response, request, session
+from flask import Blueprint, Response, request, session
 from flask.views import MethodView
 from cache import cache
 from config import CACHE_TIME
@@ -6,7 +6,7 @@ import forms
 import json
 import models
 import utils
-from user import admin_required, get_user
+from user import get_user
 
 api = Blueprint('api', __name__)
 

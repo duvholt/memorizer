@@ -41,6 +41,7 @@ def register():
     context = dict(form=form)
     return render_template('quiz/register.html', **context)
 
+
 @quiz.route('/login/', methods=['GET', 'POST'])
 def login():
     user = get_user()
@@ -60,11 +61,13 @@ def login():
     context = dict(form=form)
     return render_template('quiz/login.html', **context)
 
+
 @quiz.route('/logout/')
 def logout():
     if 'user' in session:
         del session['user']
     return redirect(url_for('quiz.main'))
+
 
 @quiz.route('/tips/')
 def tips():
@@ -77,7 +80,8 @@ def reset_stats_course(course):
     # Check if course exists
     course = models.Course.query.filter_by(code=course).first_or_404()
     stats_query = models.Stats.course(get_user(), course.code).with_entities(models.Stats.id).subquery()
-    models.Stats.query.filter(models.Stats.id.in_(stats_query)).update({models.Stats.reset: True}, synchronize_session=False)
+    models.Stats.query.filter(models.Stats.id.in_(stats_query)).\
+        update({models.Stats.reset: True}, synchronize_session=False)
     models.db.session.commit()
     return redirect(url_for('quiz.course', course=course.code))
 
@@ -88,7 +92,8 @@ def reset_stats_exam(course, exam):
     course = models.Course.query.filter_by(code=course).first_or_404()
     exam = models.Exam.query.filter_by(course=course, name=exam).first_or_404()
     stats_query = models.Stats.exam(get_user(), course.code, exam.name).with_entities(models.Stats.id).subquery()
-    models.Stats.query.filter(models.Stats.id.in_(stats_query)).update({models.Stats.reset: True}, synchronize_session=False)
+    models.Stats.query.filter(models.Stats.id.in_(stats_query)).\
+        update({models.Stats.reset: True}, synchronize_session=False)
     models.db.session.commit()
     return redirect(url_for('quiz.exam', course=course.code, exam=exam.name))
 

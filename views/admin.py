@@ -1,8 +1,7 @@
-from flask import Blueprint, current_app, flash, g, redirect, request, render_template, session, url_for
-from forms import CourseForm, ExamForm, QuestionForm, AlternativeForm, LoginForm
-from models import db
+from flask import Blueprint, render_template
+from forms import CourseForm, ExamForm, QuestionForm, AlternativeForm
 import models
-from user import admin_required, login_required
+from user import login_required
 
 
 admin = Blueprint('admin', __name__)

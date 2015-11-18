@@ -49,7 +49,7 @@ class RegisterForm(Form):
         validators.Required(),
         validators.EqualTo('confirm', message='Passordene må være like')
     ])
-    confirm  = fields.PasswordField('Gjenta passord')
+    confirm = fields.PasswordField('Gjenta passord')
 
 
 class LoginForm(Form):

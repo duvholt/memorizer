@@ -19,7 +19,7 @@ def generate_stats(course_code, exam_name=None):
             filter(models.Exam.name == exam_name).count()
         stats = models.Stats.exam(get_user(), course_code, exam_name)
     stats_data['total'] = stats.count()
-    stats_data['points'] = stats.filter(models.Stats.correct == True).count()
+    stats_data['points'] = stats.filter(models.Stats.correct.is_(True)).count()
     # TODO: Clean up this
     stats_data['answered'] = list({stat.question.id for stat in stats.all()})
     stats_data['grade'] = grade(stats_data['points'], stats_data['total'])
