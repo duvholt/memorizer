@@ -2,26 +2,7 @@ from flask import session
 import models
 import random
 import re
-
-
-def user_setup():
-    """Set up user info for first time visitors"""
-    if 'user' in session:
-        # Checking if user id actually exists
-        user = models.User.query.get(session['user'])
-        if user:
-            return
-    user = models.User()
-    models.db.session.add(user)
-    models.db.session.commit()
-    session['user'] = user.id
-    # Set session to permament
-    session.permanent = True
-
-
-def user():
-    user_setup()
-    return models.User.query.get(session['user'])
+from user import get_user
 
 
 def generate_stats(course_code, exam_name=None):
@@ -30,13 +11,13 @@ def generate_stats(course_code, exam_name=None):
         stats_data['max'] = models.Question.query.\
             join(models.Exam).join(models.Course).\
             filter_by(code=course_code).count()
-        stats = models.Stats.course(user(), course_code)
+        stats = models.Stats.course(get_user(), course_code)
     else:
         stats_data['max'] = models.Question.query.\
             join(models.Exam).join(models.Course).\
             filter_by(code=course_code).\
             filter(models.Exam.name == exam_name).count()
-        stats = models.Stats.exam(user(), course_code, exam_name)
+        stats = models.Stats.exam(get_user(), course_code, exam_name)
     stats_data['total'] = stats.count()
     stats_data['points'] = stats.filter(models.Stats.correct == True).count()
     # TODO: Clean up this

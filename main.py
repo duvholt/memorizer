@@ -8,7 +8,8 @@ from views.admin import admin
 from views.api import api
 from views.quiz import quiz
 from cache import cache
-from utils import grade, percentage, user
+from utils import grade, percentage
+from user import get_user
 import logging
 
 app = Flask(__name__)
@@ -42,7 +43,7 @@ app.register_blueprint(api, url_prefix='/api')
 
 @app.context_processor
 def utility_processor():
-    return dict(percentage=percentage, grade=grade, user=user())
+    return dict(percentage=percentage, grade=grade, user=get_user())
 
 
 if __name__ == '__main__':

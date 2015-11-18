@@ -1,32 +1,11 @@
 from flask import Blueprint, current_app, flash, g, redirect, request, render_template, session, url_for
-from functools import wraps
 from forms import CourseForm, ExamForm, QuestionForm, AlternativeForm, LoginForm
 from models import db
 import models
-import utils
+from user import admin_required, login_required
+
 
 admin = Blueprint('admin', __name__)
-
-
-# Decorators
-def login_required(f):
-    @wraps(f)
-    def decorated_function(*args, **kwargs):
-        user = utils.user()
-        if not user.registered:
-            return redirect(url_for('quiz.login'))
-        return   f(*args, **kwargs)
-    return decorated_function
-
-def admin_required(f):
-    @wraps(f)
-    @login_required
-    def decorated_function(*args, **kwargs):
-        user = utils.user()
-        if not user.admin:
-            return redirect(url_for('admin.index'))
-        return f(*args, **kwargs)
-    return decorated_function
 
 
 @admin.route('/', methods=['GET', 'POST'])
@@ -39,7 +18,7 @@ def index():
 
 
 @admin.route('/courses')
-@admin_required
+@login_required
 def courses():
     context = dict(courses=models.Course.query.all())
     form = CourseForm()

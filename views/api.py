@@ -1,12 +1,12 @@
 from flask import abort, Blueprint, Response, request, session
 from flask.views import MethodView
-from views.admin import admin_required
 from cache import cache
 from config import CACHE_TIME
 import forms
 import json
 import models
 import utils
+from user import admin_required, get_user
 
 api = Blueprint('api', __name__)
 
@@ -198,7 +198,7 @@ class Answer(JsonView):
             # Yes/No
             answer = request.form.get('correct', False) == 'true'
             correct = question.correct == answer
-        user = utils.user()
+        user = get_user()
         answered = models.Stats.answered(user, question)
         if not answered:
             stat = models.Stats(user, question, correct)

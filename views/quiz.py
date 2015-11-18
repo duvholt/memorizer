@@ -1,8 +1,9 @@
 from flask import abort, Blueprint, flash, redirect, render_template, request, session, url_for
 import forms
-import utils
 import models
 import random
+from user import get_user
+import utils
 
 quiz = Blueprint('quiz', __name__)
 
@@ -20,7 +21,7 @@ def main():
 
 @quiz.route('/register/', methods=['GET', 'POST'])
 def register():
-    user = utils.user()
+    user = get_user()
     if user.registered:
         flash('Du er allerede logget inn', 'error')
         return redirect(url_for('quiz.main'))
@@ -42,7 +43,7 @@ def register():
 
 @quiz.route('/login/', methods=['GET', 'POST'])
 def login():
-    user = utils.user()
+    user = get_user()
     if user.registered:
         flash('Du er allerede logget inn', 'error')
         return redirect(url_for('quiz.main'))
@@ -75,7 +76,7 @@ def reset_stats_course(course):
     """Reset stats for a course"""
     # Check if course exists
     course = models.Course.query.filter_by(code=course).first_or_404()
-    stats_query = models.Stats.course(utils.user(), course.code).with_entities(models.Stats.id).subquery()
+    stats_query = models.Stats.course(get_user(), course.code).with_entities(models.Stats.id).subquery()
     models.Stats.query.filter(models.Stats.id.in_(stats_query)).update({models.Stats.reset: True}, synchronize_session=False)
     models.db.session.commit()
     return redirect(url_for('quiz.course', course=course.code))
@@ -86,7 +87,7 @@ def reset_stats_exam(course, exam):
     """Reset stats for a course"""
     course = models.Course.query.filter_by(code=course).first_or_404()
     exam = models.Exam.query.filter_by(course=course, name=exam).first_or_404()
-    stats_query = models.Stats.exam(utils.user(), course.code, exam.name).with_entities(models.Stats.id).subquery()
+    stats_query = models.Stats.exam(get_user(), course.code, exam.name).with_entities(models.Stats.id).subquery()
     models.Stats.query.filter(models.Stats.id.in_(stats_query)).update({models.Stats.reset: True}, synchronize_session=False)
     models.db.session.commit()
     return redirect(url_for('quiz.exam', course=course.code, exam=exam.name))
@@ -154,7 +155,7 @@ def show_question(course, exam, id):
             else:
                 bool_answer = answer.lower() == 'true'
                 context['success'] = question.correct == bool_answer
-            user = utils.user()
+            user = get_user()
             # Checking if question has already been answered
             if not models.Stats.answered(user, question):
                 stat = models.Stats(user, question, context['success'])
