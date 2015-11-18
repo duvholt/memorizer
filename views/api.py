@@ -83,7 +83,8 @@ class APIView(JsonView, CacheView):
 
     def put(self, object_id):
         response = {'success': False}
-        if session.get('admin') is not True:
+        user = get_user()
+        if not user.registered:
             response['errors'] = [error('Not logged in')]
             return response
         object = self.model.query.get(object_id)

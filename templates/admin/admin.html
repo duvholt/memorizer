@@ -10,16 +10,7 @@
 
 {% block content %}
 <h1>Administrasjonspanel</h1>
-{% if admin %}
 <a href="courses">Fagliste</a>
-{% else %}
-
-<h2>Logg inn</h2>
-
-{{ render_form(form, submit_text='Logg inn') }}
-
-<a class="admin-register" href="/login">Logg inn først</a>
-{% endif %}
 {% endblock %}
 
 {% block js %}

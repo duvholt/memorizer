@@ -9,12 +9,9 @@ admin = Blueprint('admin', __name__)
 
 
 @admin.route('/', methods=['GET', 'POST'])
+@login_required
 def index():
-    if request.method == 'POST':
-        if(request.form.get('password') == current_app.config['ADMIN_PASSWORD']):
-            session['admin'] = True
-    context = dict(admin=session.get('admin'), form=LoginForm())
-    return render_template('admin/admin.html', **context)
+    return render_template('admin/admin.html')
 
 
 @admin.route('/courses')
@@ -27,7 +24,7 @@ def courses():
 
 
 @admin.route('/course/<string:course_id>', methods=['GET', 'POST'])
-@admin_required
+@login_required
 def course(course_id):
     course = models.Course.query.filter_by(id=course_id).first_or_404()
     form = CourseForm(obj=course)
@@ -38,7 +35,7 @@ def course(course_id):
 
 
 @admin.route('/course/<string:course_id>/<string:exam_id>/', methods=['GET', 'POST'])
-@admin_required
+@login_required
 def exam(course_id, exam_id):
     course = models.Course.query.filter_by(id=course_id).first_or_404()
     exam = models.Exam.query.filter_by(course=course, id=exam_id).first_or_404()
@@ -50,7 +47,7 @@ def exam(course_id, exam_id):
 
 
 @admin.route('/question/<int:question_id>/', methods=['GET', 'POST'])
-@admin_required
+@login_required
 def question(question_id):
     question = question = models.Question.query.filter_by(id=question_id).first_or_404()
     next_question = models.Question.query.filter_by(exam=question.exam).filter(models.Question.id > question_id).first()
@@ -62,7 +59,7 @@ def question(question_id):
 
 
 @admin.route('/question/<int:question_id>/<int:alternative_id>')
-@admin_required
+@login_required
 def alternative(question_id, alternative_id):
     question = models.Question.query.filter_by(id=question_id).first_or_404()
     alternative = models.Alternative.query.filter_by(id=alternative_id).first_or_404()
