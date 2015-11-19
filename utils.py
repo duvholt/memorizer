@@ -69,7 +69,7 @@ def sort_exam(exam):
 
 def percentage(num, total):
         if total > 0:
-            return round((num * 100) / total, 2)
+            return round((num * 100) / total)
         return 0
 
 
