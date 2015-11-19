@@ -87,3 +87,20 @@ StatsAPI.prototype = Object.create(API.prototype);
 StatsAPI.prototype.get = function(callback) {
     this.send(null, callback);
 };
+
+var RandomQuestionAPI = function(course, exam) {
+    API.call(this);
+    this.url = '/api/random';
+    if(course !== undefined) {
+        this.url += '/' + course + '/';
+    }
+    if(exam !== undefined) {
+        this.url += exam + '/';
+    }
+};
+
+RandomQuestionAPI.prototype = Object.create(API.prototype);
+
+RandomQuestionAPI.prototype.get = function(callback) {
+    this.send(null, callback);
+};

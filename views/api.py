@@ -211,3 +211,16 @@ class Answer(JsonView):
 
 
 api.add_url_rule('/answer', view_func=Answer.as_view('answer'), methods=['POST'])
+
+
+class RandomQuestion(JsonView):
+    def get(self, course_code, exam_name=None):
+        return {'index': utils.random_id(course=course_code, exam=exam_name)}
+api.add_url_rule(
+    '/random/<string:course_code>/<string:exam_name>/',
+    view_func=RandomQuestion.as_view('random_question_exam')
+)
+api.add_url_rule(
+    '/random/<string:course_code>/',
+    view_func=RandomQuestion.as_view('random_question_course')
+)

@@ -4,6 +4,7 @@ var Questions = function() {
     this.examApi = new ExamAPI();
     this.questionApi = new QuestionAPI();
     this.answerApi = new AnswerAPI();
+    this.randomQuestionApi = null;
     this.statsApi = null;
 
     // Current question information
@@ -60,9 +61,11 @@ Questions.prototype.loadQuestions = function() {
         }.bind(this));
         if(this.urlInfo.exam !== 'all') {
             this.statsApi = new StatsAPI(this.urlInfo.course, this.urlInfo.exam);
+            this.randomQuestionApi = new RandomQuestionAPI(this.urlInfo.course, this.urlInfo.exam);
         }
         else {
             this.statsApi = new StatsAPI(this.urlInfo.course);
+            this.randomQuestionApi = new RandomQuestionAPI(this.urlInfo.course);
         }
     }
 };
@@ -161,11 +164,11 @@ Questions.prototype.random = function(e) {
     if(e !== undefined) {
         e.preventDefault();
     }
-    // TODO: Remove already answered questions
-    var rand = Math.round(Math.random() * (this.questions.length - 1));
-    this.current = rand;
-    this.updateURL(true);
-    this.updateQuestion();
+    this.randomQuestionApi.get(function(data) {
+        this.current = data.index;
+        this.updateURL(true);
+        this.updateQuestion();
+    }.bind(this));
 };
 
 Questions.prototype.currentQuestion = function() {

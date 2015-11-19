@@ -101,8 +101,8 @@ def reset_stats_exam(course, exam):
 @quiz.route('/<string:course>/')
 def course(course):
     """Redirects to a random question for a chosen course"""
-    course_m = models.Course.query.filter_by(code=course).first_or_404()
-    return redirect(url_for('quiz.show_question', course=course, exam='all', id=utils.random_id(course=course_m)))
+    models.Course.query.filter_by(code=course).first_or_404()
+    return redirect(url_for('quiz.show_question', course=course, exam='all', id=utils.random_id(course=course)))
 
 
 @quiz.route('/<string:course>/<string:exam>/')
@@ -137,7 +137,7 @@ def show_question(course, exam, id):
     course.exams.sort(key=utils.sort_exam, reverse=True)
     context = {
         'id': id,
-        'random': utils.random_id(id=id, course=course, exam=exam),
+        'random': utils.random_id(id=id, course=course.code, exam=exam_name),
         'prev': id - 1 if id > 1 else num_questions,
         'next': id + 1 if id < num_questions else 1,
         'num_questions': num_questions,

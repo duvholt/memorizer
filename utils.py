@@ -38,15 +38,15 @@ def random_id(id=None, course=None, exam=None):
         Returns a random number if none available
     """
     query = models.db.session.query(models.Question.id).distinct().\
-        join(models.Exam).join(models.Course).join(models.Stats)
+        join(models.Exam).join(models.Course)
     if exam:
-        query = query.filter(models.Exam.name == exam.name)
+        query = query.filter(models.Exam.name == exam)
     elif course:
-        query = query.filter(models.Course.code == course.code)
+        query = query.filter(models.Course.code == course)
     # All questions
     questions = query.all()
     # Already answered questions
-    answered = set(query.filter(models.Stats.reset.is_(False), models.Stats.user_id == get_user().id).all())
+    answered = set(query.join(models.Stats).filter(models.Stats.reset.is_(False), models.Stats.user_id == get_user().id).all())
     # List of indexes for unanswered questions
     indexes = [i for i, question in enumerate(questions) if question not in answered]
     if indexes:
