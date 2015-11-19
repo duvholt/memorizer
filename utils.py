@@ -1,4 +1,3 @@
-from flask import session
 import models
 import random
 import re
@@ -20,8 +19,6 @@ def generate_stats(course_code, exam_name=None):
         stats = models.Stats.exam(get_user(), course_code, exam_name)
     stats_data['total'] = stats.count()
     stats_data['points'] = stats.filter(models.Stats.correct.is_(True)).count()
-    # TODO: Clean up this
-    stats_data['answered'] = list({stat.question.id for stat in stats.all()})
     stats_data['grade'] = grade(stats_data['points'], stats_data['total'])
     stats_data['percentage'] = percentage(stats_data['points'], stats_data['total'])
 
@@ -40,18 +37,24 @@ def random_id(id=None, course=None, exam=None):
         Returns a random id from questions that have not been answered.
         Returns a random number if none available
     """
+    query = models.db.session.query(models.Question.id).distinct().\
+        join(models.Exam).join(models.Course).join(models.Stats)
     if exam:
-        num_questions = models.Question.query.filter_by(exam=exam).count()
-        answered = session.get('exams', {}).get(exam.string, {}).get('answered', [])
+        query = query.filter(models.Exam.name == exam.name)
     elif course:
-        num_questions = models.Question.query.filter_by(course=course).count()
-        answered = session.get('courses', {}).get(course.string, {}).get('answered', [])
-    questions = set(range(1, num_questions + 1)) - set(answered) - {id}
-    if questions:
-        return random.choice(list(questions))
+        query = query.filter(models.Course.code == course.code)
+    # All questions
+    questions = query.all()
+    # Already answered questions
+    answered = set(query.filter(models.Stats.reset.is_(False), models.Stats.user_id == get_user().id).all())
+    # List of indexes for unanswered questions
+    indexes = [i for i, question in enumerate(questions) if question not in answered]
+    if indexes:
+        # Select random index
+        return random.choice(indexes) + 1
     else:
         # All questions have been answered
-        return random.randint(1, num_questions + 1)
+        return random.randint(1, len(questions) + 1)
 
 
 def sort_exam(exam):
