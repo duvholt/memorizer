@@ -64,7 +64,8 @@ class APIView(JsonView, CacheView):
 
     def post(self):
         response = {}
-        if session.get('admin') is not True:
+        user = get_user()
+        if not user.registered:
             response['errors'] = [error('Not logged in')]
             return response
         form = self.form(request.form)
@@ -105,7 +106,8 @@ class APIView(JsonView, CacheView):
 
     def delete(self, object_id):
         response = {}
-        if session.get('admin') is not True:
+        user = get_user()
+        if not user.registered:
             response['errors'] = [error('Not logged in')]
             return response
         object = self.model.query.get(object_id)
