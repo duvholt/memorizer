@@ -4,7 +4,7 @@ Memorizer
 Memorizer is a webapp written in Python 3 using Flask and SQLAlchemy meant to be used for answering multiple choice questions.
 It was created specifically for answering older multiple choice exams. 
 
-Currently running on http://quiz.cxhristian.com/
+Currently running on https://memorizer.io/
 
 Features
 --------
@@ -15,15 +15,10 @@ Features
 - Correct answer combo
 - Random question which will select an unanswered question if possible
 - Keyboard support
-  - Left/right arrows for previous/next question
+  - Left/right arrows (or a/d) for previous/next question
   - 1, 2, 3, 4 to select answer
-  - Space to answer
-- Currently supports the following courses:
-  - TDT4110 (IT Grunnkurs)
-  - TIØ4258 (Teknologiledelse)
-  - MFEL1010 (Innføring i medisin for ikke-medisinere)
-  - HLS0001 (Psykosomatikk og helsepsykologi)
-- Works pretty decent on mobile thanks to Bootstrap 3
+  - Space (or q) to answer
+  - r to load a random question
 
 
 Installation
@@ -33,27 +28,20 @@ Installation
 
 
 ```bash
-$ pip install -r requirements.txt # Install Flask and SQlAlchemy
-$ ./import.py # Import questions to database
+$ pip install -r requirements.txt # Install requirements
+$ ./setup.py # Create database tables
+$ ./import questions/*.json # Import all questions (Warning: super slow if using SQLite)
 $ ./main.py # Run webserver
 ```
 
 - Create localconfig.py for a local config:
 
 Example: 
+
 ```python
 DEBUG = True
 GOOGLE_ANALYTICS = 'UA-XXXXXXXX-Y'
 SQLALCHEMY_DATABASE_URI = 'postgresql://username@localhost/memorizer'
 ```
 
-
-
-Contributors
-------------
-
-- Michael McMillan
-  - Keyboard support
-  - HLS0001 exams
-- Marius Enerly
-  - MFEL1010 exams
+Big thanks to all the [contributors](https://github.com/cXhristian/memorizer/graphs/contributors)!
