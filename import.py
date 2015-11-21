@@ -6,9 +6,8 @@ import json
 
 
 def import_questions(filename):
-    with open(filename, encoding='utf-8') as f:
-        course_json = json.load(f)
-    print('Importing questions from', course_json['name'], course_json['code'])
+    course_json = json.load(filename)
+    print('Importing questions from', course_json['name'], course_json['code'], 'exam', course_json['exam'])
     # Get or create course
     course = models.Course.query.filter_by(code=course_json['code'], name=course_json['name']).first()
     if not course:
@@ -23,7 +22,7 @@ def import_questions(filename):
         db.session.commit()
     questions = course_json['questions']
     for question in questions:
-        image = question['image'] if 'image' in question else ""
+        image = question.get('image', '')
         if 'answers' in question:
             question_type = models.Question.MULTIPLE
             answer = None
@@ -46,16 +45,14 @@ def import_questions(filename):
             alternative = models.Alternative(answer, correct, question_object.id)
             db.session.add(alternative)
         db.session.commit()
-    print("Importing completed")
 
 parser = argparse.ArgumentParser(description='Import questions in JSON format')
-parser.add_argument('filename', help='filename')
+parser.add_argument('filenames', nargs='+', type=argparse.FileType('r'), help='JSON question files')
 args = parser.parse_args()
 
 if __name__ == '__main__':
-    if args.filename:
-        print("Importing questions...")
-        with app.app_context():
-            import_questions(args.filename)
-    else:
-        print('Filename not provided')
+    print("Importing questions...")
+    with app.app_context():
+        for filename in args.filenames:
+            import_questions(filename)
+        print("Importing completed")
