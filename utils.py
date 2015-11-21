@@ -1,3 +1,4 @@
+from flask import _request_ctx_stack
 import models
 import random
 import re
@@ -89,3 +90,10 @@ def grade(num, total):
         return 'B'
     else:
         return 'A'
+
+
+def fetch_current_user_id():
+    # Return None if we are outside of request context.
+    if _request_ctx_stack.top is None:
+        return
+    return get_user().id

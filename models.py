@@ -1,15 +1,21 @@
 from flask import url_for
 from flask.ext.sqlalchemy import SQLAlchemy
+from sqlalchemy import orm
+from sqlalchemy_continuum import make_versioned
+from sqlalchemy_continuum.plugins import FlaskPlugin
 from sqlalchemy.ext.associationproxy import association_proxy
 from sqlalchemy_utils.types.choice import ChoiceType
 from sqlalchemy_utils.types.password import PasswordType
 from sqlalchemy_utils import force_auto_coercion
+from utils import fetch_current_user_id
 
 db = SQLAlchemy()
 force_auto_coercion()
+make_versioned(plugins=[FlaskPlugin(current_user_id_factory=fetch_current_user_id)])
 
 
 class Course(db.Model):
+    __versioned__ = {}
     __tablename__ = 'course'
     __mapper_args__ = {'order_by': 'code'}
     id = db.Column(db.Integer, primary_key=True)
@@ -39,6 +45,7 @@ class Course(db.Model):
 
 
 class Exam(db.Model):
+    __versioned__ = {}
     __tablename__ = 'exam'
     __mapper_args__ = {'order_by': 'name'}
     id = db.Column(db.Integer, primary_key=True)
@@ -67,6 +74,7 @@ class Exam(db.Model):
 
 
 class Question(db.Model):
+    __versioned__ = {}
     MULTIPLE = '1'
     BOOLEAN = '2'
     TYPES = [
@@ -127,6 +135,7 @@ class Question(db.Model):
 
 
 class Alternative(db.Model):
+    __versioned__ = {}
     __tablename__ = 'alternative'
     __mapper_args__ = {'order_by': 'id'}
 
@@ -154,6 +163,7 @@ class Alternative(db.Model):
 
 
 class User(db.Model):
+    __versioned__ = {}
     __tablename__ = 'user'
     __mapper_args__ = {'order_by': 'id'}
 
@@ -202,3 +212,5 @@ class Stats(db.Model):
     @classmethod
     def answered(cls, user, question):
         return cls.query.filter_by(user=user, question=question, reset=False).count() > 0
+
+orm.configure_mappers()
