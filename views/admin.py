@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template
-from forms import CourseForm, ExamForm, QuestionForm, AlternativeForm
-import models
-from user import login_required
+from memorizer.forms import CourseForm, ExamForm, QuestionForm, AlternativeForm
+from memorizer import models
+from memorizer.user import login_required
 
 
 admin = Blueprint('admin', __name__)

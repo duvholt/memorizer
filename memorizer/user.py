@@ -1,6 +1,6 @@
 from flask import _request_ctx_stack, redirect, session, url_for
 from functools import wraps
-import models
+from memorizer import models
 
 
 def user_setup():
@@ -20,7 +20,7 @@ def user_setup():
 
 def get_user():
     ctx = _request_ctx_stack.top
-    if not hasattr(_request_ctx_stack.top, 'user'):
+    if not hasattr(ctx, 'user'):
         user_setup()
         ctx.user = models.User.query.get(session['user'])
     return ctx.user

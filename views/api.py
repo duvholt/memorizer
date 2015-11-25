@@ -1,12 +1,10 @@
-from flask import Blueprint, Response, request, session
+from flask import Blueprint, Response, request
 from flask.views import MethodView
-from cache import cache
-from config import CACHE_TIME
-import forms
+from memorizer.cache import cache
+from memorizer.config import CACHE_TIME
+from memorizer import forms, models, utils
 import json
-import models
-import utils
-from user import get_user
+from memorizer.user import get_user
 
 api = Blueprint('api', __name__)
 

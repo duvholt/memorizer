@@ -7,7 +7,7 @@ from sqlalchemy.ext.associationproxy import association_proxy
 from sqlalchemy_utils.types.choice import ChoiceType
 from sqlalchemy_utils.types.password import PasswordType
 from sqlalchemy_utils import force_auto_coercion
-from utils import fetch_current_user_id
+from .utils import fetch_current_user_id
 
 db = SQLAlchemy()
 force_auto_coercion()
@@ -163,7 +163,6 @@ class Alternative(db.Model):
 
 
 class User(db.Model):
-    __versioned__ = {}
     __tablename__ = 'user'
     __mapper_args__ = {'order_by': 'id'}
 

@@ -1,9 +1,7 @@
 from flask import abort, Blueprint, flash, redirect, render_template, request, session, url_for
-import forms
-import models
+from memorizer import forms, models, utils
+from memorizer.user import get_user
 import random
-from user import get_user
-import utils
 
 quiz = Blueprint('quiz', __name__)
 

@@ -1,8 +1,8 @@
 from flask import _request_ctx_stack
-import models
+from memorizer import models
+from memorizer.user import get_user
 import random
 import re
-from user import get_user
 
 
 def generate_stats(course_code, exam_name=None):

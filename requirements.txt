@@ -6,6 +6,8 @@ Flask-WTF==0.12
 WTForms-Alchemy==0.13.3
 SQLAlchemy-Continuum==1.2.1
 SQLAlchemy-Utils==0.31.3
+# Migrations
+Flask-Migrate==1.6.0 
 
 # Assets
 Flask-Assets==0.11
