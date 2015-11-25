@@ -6,5 +6,5 @@
 
 {{ render_form(form) }}
 
-<a class="admin-register" href="/register">Eller registrer deg</a>
+<a class="admin-register" href="{{ url_for('quiz.register') }}">Eller registrer deg</a>
 {% endblock %}

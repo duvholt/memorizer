@@ -325,7 +325,7 @@ form label:hover {
     height: auto;
 }
 
-.question .radio {
+.question .radio, .question .checkbox {
     padding-left: 2.0rem;
     margin: 1.0rem;
 }

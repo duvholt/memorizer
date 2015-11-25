@@ -6,7 +6,7 @@
 {% endmacro %}
 
 {% block menu %}
-<li><a href="/"><i class="fa fa-list fa-fw"></i>&nbsp; Emner</a></li>
+<li><a href="{{ url_for('quiz.main') }}"><i class="fa fa-list fa-fw"></i>&nbsp; Emner</a></li>
 <ul>
     <li {% if exam_name == 'all' %}class="active"{% endif %}>
         <a href="{{ url_for('quiz.course', course=question.course.code) }}">
@@ -41,7 +41,7 @@
         {% if question.multiple %}
         <input type="hidden" name="order" value="{{ question.choices|join(',', attribute='id') }}">
         {% for alternative in question.choices %}
-        <div class="radio {% if (alternative.id)|string() in request.form.getlist('answer') %}{{ 'success' if alternative.correct else 'error' }}{% endif %}">
+        <div class="checkbox {% if (alternative.id)|string() in request.form.getlist('answer') %}{{ 'success' if alternative.correct else 'error' }}{% endif %}">
             <label>
                 <input type="checkbox" name="answer" value="{{ alternative.id }}">
                 {% if success is defined %}
@@ -106,7 +106,7 @@
 <form method="post">
     {? if question.multiple }
     {+ alternative in question.alternatives }
-    <div class="radio">
+    <div class="checkbox">
         <label>
             <input type="checkbox" name="answer" value="{$ alternative.id }">
             {$ alternative.text }

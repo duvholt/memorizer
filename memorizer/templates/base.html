@@ -32,7 +32,7 @@
                 <span>Meny</span>
             </li>
             <li class="logo">
-                <a href="/">Memorizer</a>
+                <a href="{{ url_for('quiz.main') }}">Memorizer</a>
             </li>
         </ul>
         <ul class="right">
@@ -64,7 +64,7 @@
     {% block menu %}{% endblock %}
     </ul>
     <ul>
-        <li><a href="/tips"><i class="fa fa-info-circle fa-fw"></i>&nbsp; Tips</a></li>
+        <li><a href="{{ url_for('quiz.tips') }}"><i class="fa fa-info-circle fa-fw"></i>&nbsp; Tips</a></li>
         <li><a href="https://github.com/cXhristian/memorizer"><i class="fa fa-github fa-fw"></i>&nbsp; Kildekode</a></li>
         <li><a href="mailto:memorizer@cxhristian.com"><i class="fa fa-envelope fa-fw"></i>&nbsp; Kontakt</a></li>
     </ul>

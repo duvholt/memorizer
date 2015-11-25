@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block menu %}
-<li class="active"><a href="/"><i class="fa fa-list fa-fw"></i>&nbsp; Emner</a></li>
+<li class="active"><a href="{{ url_for('quiz.main') }}"><i class="fa fa-list fa-fw"></i>&nbsp; Emner</a></li>
 <ul>
 {% for course in courses %}
     <li>
