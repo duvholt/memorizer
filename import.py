@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-from main import app, db
+from memorizer.application import app, db
+from memorizer import models
 import argparse
-import models
 import json
 
 
