@@ -29,9 +29,9 @@ Installation
 
 ```bash
 $ pip install -r requirements.txt # Install requirements
-$ ./setup.py # Create database tables
+$ ./main.py db upgrade # Create/upgrade database tables
 $ ./import questions/*.json # Import all questions (Warning: super slow if using SQLite)
-$ ./main.py # Run webserver
+$ ./main.py runserver # Run webserver
 ```
 
 - Create localconfig.py for a local config:
