@@ -115,6 +115,15 @@ class Question(db.Model):
         if self.multiple:
             return self.alternatives
 
+    @property
+    def index(self):
+        return Question.find_index(self)
+
+    @classmethod
+    def find_index(cls, question):
+        indexes = [q.id for q in cls.query.filter_by(exam_id=question.exam_id).all()]
+        return indexes.index(question.id) + 1
+
     def serialize(self):
         response = {
             'id': self.id,

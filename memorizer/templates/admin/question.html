@@ -6,16 +6,20 @@
     <li><a href="{{ url_for('admin.courses') }}">Fag</a>
     <li><a href="{{ url_for('admin.course', course_id=question.course.id) }}">{{ question.course.code }}</a>
     <li><a href="{{ url_for('admin.exam', course_id=question.course.id, exam_id=question.exam.id) }}">{{ question.exam }}</a>
-    <li>Spørsmål #{{ question.id }}
+    <li>Spørsmål #{{ question.index }}
 </ul>
 
 <h1 class="admin-header">{{ question.course }} - {{ question.exam }}</h1>
 
-{% if next_question %}
 <div class="navigation">
+    {% if prev_question %}
+    <a href="{{ url_for('admin.question', question_id=prev_question.id) }}">Forrige spørsmål</a>
+    {% endif %}
+    <a href="{{ url_for('quiz.show_question', course=question.course.code, exam=question.exam.name, id=question.index) }}">Gå til spørsmål</a>
+    {% if next_question %}
     <a href="{{ url_for('admin.question', question_id=next_question.id) }}">Neste spørsmål</a>
+    {% endif %}
 </div>
-{% endif %}
 
 <div id="question-form">
 {{ render_form(form, '/api/questions/' + question.id|string, new=False) }}

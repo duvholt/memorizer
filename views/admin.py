@@ -49,11 +49,16 @@ def exam(course_id, exam_id):
 @login_required
 def question(question_id):
     question = question = models.Question.query.filter_by(id=question_id).first_or_404()
-    next_question = models.Question.query.filter_by(exam=question.exam).filter(models.Question.id > question_id).first()
+    query = models.Question.query.filter_by(exam=question.exam)
+    prev_question = query.filter(models.Question.id < question_id).order_by('-id').first()
+    next_question = query.filter(models.Question.id > question_id).first()
     form = QuestionForm(obj=question)
     alt = models.Alternative(question_id=question.id)
     alt_form = AlternativeForm(obj=alt)
-    context = dict(question=question, form=form, alt_form=alt_form, next_question=next_question)
+    context = dict(
+        question=question, form=form, alt_form=alt_form,
+        next_question=next_question, prev_question=prev_question
+    )
     return render_template('admin/question.html', **context)
 
 
