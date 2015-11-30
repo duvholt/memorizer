@@ -6,7 +6,6 @@ var Collapse = (function() {
     var toggle = function(e) {
         e.preventDefault();
         var element = e.currentTarget;
-        console.log(element.dataset.target);
         var container = document.querySelector(element.dataset.target);
         if(isCollapsed(container)) {
             open(container);
