@@ -2,7 +2,14 @@
 {% extends "admin/admin.html" %}
 
 {% block content %}
-<h1>{{ question.course }} - {{ question.exam }}</h1>
+<ul class="admin-bread">
+    <li><a href="{{ url_for('admin.courses') }}">Fag</a>
+    <li><a href="{{ url_for('admin.course', course_id=question.course.id) }}">{{ question.course.code }}</a>
+    <li><a href="{{ url_for('admin.exam', course_id=question.course.id, exam_id=question.exam.id) }}">{{ question.exam }}</a>
+    <li>Spørsmål #{{ question.id }}
+</ul>
+
+<h1 class="admin-header">{{ question.course }} - {{ question.exam }}</h1>
 
 {% if next_question %}
 <div class="navigation">

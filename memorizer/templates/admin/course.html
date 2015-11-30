@@ -2,6 +2,11 @@
 {% extends "admin/admin.html" %}
 
 {% block content %}
+<ul class="admin-bread">
+    <li><a href="{{ url_for('admin.courses') }}">Fag</a>
+    <li>{{ course.code }}
+</ul>
+
 <h1 class="admin-header">{{ course }}</h1>
 
 <a href="#" class="admin-button collapse" data-target="#edit-course"><i class="fa fa-fw fa-edit"></i> Rediger</a>

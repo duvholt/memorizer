@@ -48,7 +48,8 @@
 }
 
 .admin-header {
-    margin-bottom: 1.0rem;
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
 }
 
 .admin-button {
@@ -58,4 +59,34 @@
 
 .admin-button:hover {
     text-decoration: underline;
+}
+
+
+/* Breadcrumbs */
+
+ul.admin-bread {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-bread li {
+    display: inline-block;
+    margin: 2px;
+    font-size: 1.8rem;
+    color: #292929;
+}
+
+.admin-bread a {
+    color: #203949;
+    font-weight: bold;
+}
+
+.admin-bread li:not(:last-child):after {
+    content: "/";
+    margin-left: 2px;
+    color: #737373;
+}
+
+.admin-bread a:hover {
+    color: #2D4B5F;
 }
