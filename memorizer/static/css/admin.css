@@ -8,6 +8,13 @@
     margin: 0;
     padding-left: 1.0rem;
     position: relative;
+    border: 0.1rem solid #E6E6E6;
+    border-top: none;
+}
+
+/* Add top border on first element */
+.admin-list li:nth-child(1) {
+    border-top: 0.1rem solid #E6E6E6;
 }
 
 .admin-list li:nth-child(odd) {
