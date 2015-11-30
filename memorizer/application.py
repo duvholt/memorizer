@@ -28,7 +28,7 @@ js = Bundle(
     'js/ajax.js', 'js/collapse.js', 'js/alert.js', 'js/api.js', 'js/sidebar.js',
     'js/filter.js', filters='jsmin', output='js/min.%(version)s.js'
 )
-admin_js = Bundle('js/admin.js', filters='jsmin', output='js/admin.min.%(version)s.js')
+admin_js = Bundle('js/admin.js', 'js/question_form.js', filters='jsmin', output='js/admin.min.%(version)s.js')
 app_js = Bundle('js/template.js', 'js/questions.js', filters='jsmin', output='js/app.min.%(version)s.js')
 css = Bundle(
     'css/font-awesome.min.css', 'css/styles.css', 'css/admin.css',

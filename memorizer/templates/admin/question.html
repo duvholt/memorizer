@@ -8,11 +8,11 @@
 <div class="navigation">
     <a href="{{ url_for('admin.question', question_id=next_question.id) }}">Neste spørsmål</a>
 </div>
-
-<h2>{{ question }}</h2>
 {% endif %}
 
+<div id="question-form">
 {{ render_form(form, '/api/questions/' + question.id|string, new=False) }}
+</div>
 
 {% if question.multiple %}
 <h2>Legg til nytt alternativ</h2>
@@ -22,4 +22,11 @@
 <h2>Alternativer</h2>
 <ul class="admin-list" data-api="/api/alternatives/" data-filter="?question_id={{ question.id }}" data-url="/admin/question/{{ question.id }}/"></ul>
 {% endif %}
+{% endblock %}
+
+{% block js %}
+{{ super() }}
+<script>
+QuestionForm(document.querySelector("#question-form form"));
+</script>
 {% endblock %}

@@ -18,3 +18,11 @@
 <h2>Spørsmål</h2>
 <ul class="admin-list" data-api="/api/questions/" data-filter="?exam_id={{ exam.id }}" data-url="/admin/question/"></ul>
 {% endblock %}
+
+
+{% block js %}
+{{ super() }}
+<script>
+QuestionForm(document.querySelector("#add-question form"));
+</script>
+{% endblock %}
