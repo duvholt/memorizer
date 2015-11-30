@@ -2,12 +2,13 @@
 {% extends "admin/admin.html" %}
 
 {% block content %}
-<h1>Fag-administrering</h1>
+<h1 class="admin-header">Fag-administrering</h1>
 
-<h2>Legg til nytt fag</h2>
-
+<a href="#" class="collapse admin-button" data-target="#add-course"><i class="fa fa-fw fa-plus"></i> Legg til nytt fag</a>
+<div id="add-course" class="collapse-target collapsed">
 {{ render_form(form, '/api/courses/') }}
+</div>
 
-<h2>Eksisterende fag</h2>
+<h2>Fag</h2>
 <ul class="admin-list" data-api="/api/courses/" data-url="/admin/course/"></ul>
 {% endblock %}
