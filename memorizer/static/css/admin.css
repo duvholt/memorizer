@@ -1,22 +1,17 @@
 .admin-list {
     list-style: decimal;
+    list-style-position: inside;
+    padding: 0;
 }
 
 .admin-list li {
-    background-color: rgb(176, 176, 176);
     margin: 0;
-    border: 0.1rem solid gray;
-    border-top: none;
+    padding-left: 1.0rem;
+    position: relative;
 }
 
-/* Add top border on first element */
-.admin-list li:nth-child(1) {
-    border-top: 0.1rem solid gray;
-
-}
-
-.admin-list li:nth-child(even) {
-    background-color: rgb(224, 224, 224);
+.admin-list li:nth-child(odd) {
+    background-color: #FFFFFF;
 }
 
 .admin-list a {
@@ -35,7 +30,8 @@
 }
 
 .admin-list a.delete {
-    float: right;
+    position: absolute;
+    right: 0;
 }
 
 /* Register link on admin login */
