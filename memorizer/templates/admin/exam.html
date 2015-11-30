@@ -4,11 +4,16 @@
 {% block content %}
 <h1>{{ course }} - {{ exam }}</h1>
 
+
+<a href="#" class="admin-button collapse" data-target="#edit-exam"><i class="fa fa-fw fa-edit"></i> Rediger</a>
+<div id="edit-exam" class="collapse-target collapsed">
 {{ render_form(form, '/api/exams/' + exam.id|string, new=False) }}
+</div>
 
-<h2>Legg til nytt spørsmål</h2>
-
+<a href="#" class="admin-button collapse" data-target="#add-question"><i class="fa fa-fw fa-plus"></i> Legg til nytt spørsmål</a>
+<div id="add-question" class="collapse-target collapsed">
 {{ render_form(question_form, '/api/questions/') }}
+</div>
 
 <h2>Spørsmål</h2>
 <ul class="admin-list" data-api="/api/questions/" data-filter="?exam_id={{ exam.id }}" data-url="/admin/question/"></ul>

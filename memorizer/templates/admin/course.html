@@ -9,8 +9,8 @@
 {{ render_form(form, '/api/courses/' + course.id|string, new=False) }}
 </div>
 
-<a href="#" class="collapse admin-button" data-target="#add-course"><i class="fa fa-fw fa-plus"></i> Legg til ny eksamen</a>
-<div id="add-course" class="collapse-target collapsed">
+<a href="#" class="collapse admin-button" data-target="#add-exam"><i class="fa fa-fw fa-plus"></i> Legg til ny eksamen</a>
+<div id="add-exam" class="collapse-target collapsed">
 {{ render_form(exam_form, '/api/exams/') }}
 </div>
 
