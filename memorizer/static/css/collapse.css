@@ -1,0 +1,7 @@
+.collapse-target {
+    overflow-y: hidden;
+}
+
+.collapse-target.collapsed {
+    height: 0;
+}

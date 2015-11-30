@@ -25,14 +25,14 @@ manager.add_command('db', MigrateCommand)
 
 assets = Environment(app)
 js = Bundle(
-    'js/ajax.js', 'js/alert.js', 'js/api.js', 'js/sidebar.js',
+    'js/ajax.js', 'js/collapse.js', 'js/alert.js', 'js/api.js', 'js/sidebar.js',
     'js/filter.js', filters='jsmin', output='js/min.%(version)s.js'
 )
 admin_js = Bundle('js/admin.js', filters='jsmin', output='js/admin.min.%(version)s.js')
 app_js = Bundle('js/template.js', 'js/questions.js', filters='jsmin', output='js/app.min.%(version)s.js')
 css = Bundle(
     'css/font-awesome.min.css', 'css/styles.css', 'css/admin.css',
-    'css/form.css', filters='cssmin', output='css/min.%(version)s.css'
+    'css/form.css', 'css/collapse.css', filters='cssmin', output='css/min.%(version)s.css'
 )
 assets.register('js', js)
 assets.register('admin_js', admin_js)

@@ -46,3 +46,16 @@
       margin: 1.0rem 0;
       float: left;
 }
+
+.admin-header {
+    margin-bottom: 1.0rem;
+}
+
+.admin-button {
+    color: #464646;
+    font-size: 1.8rem;
+}
+
+.admin-button:hover {
+    text-decoration: underline;
+}
