@@ -33,7 +33,7 @@ def course(course_id):
     return render_template('admin/course.html', **context)
 
 
-@admin.route('/course/<string:course_id>/<string:exam_id>/', methods=['GET', 'POST'])
+@admin.route('/course/<string:course_id>/<string:exam_id>', methods=['GET', 'POST'])
 @login_required
 def exam(course_id, exam_id):
     course = models.Course.query.filter_by(id=course_id).first_or_404()
@@ -45,7 +45,7 @@ def exam(course_id, exam_id):
     return render_template('admin/exam.html', **context)
 
 
-@admin.route('/question/<int:question_id>/', methods=['GET', 'POST'])
+@admin.route('/question/<int:question_id>', methods=['GET', 'POST'])
 @login_required
 def question(question_id):
     question = question = models.Question.query.filter_by(id=question_id).first_or_404()
