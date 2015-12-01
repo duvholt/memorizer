@@ -8,9 +8,7 @@
         this.list = list;
         
         // Form submit
-        this.element.addEventListener('submit', function(e) {
-            this.save(e);
-        }.bind(this), false);
+        this.element.addEventListener('submit', this.save.bind(this), false);
     };
 
     Form.prototype.save = function(e) {

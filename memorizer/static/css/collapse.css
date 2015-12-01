@@ -1,7 +1,12 @@
 .collapse-target {
-    overflow-y: hidden;
+    display: block;
 }
 
 .collapse-target.collapsed {
-    height: 0;
+    display: none;
+}
+
+.collapse-target.collapsing {
+    transition: height ease 0.4s;
+    overflow-y: hidden;
 }

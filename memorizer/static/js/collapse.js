@@ -16,11 +16,28 @@ var Collapse = (function() {
     };
 
     var open = function(element) {
+        element.style.height = 0;
         element.classList.remove('collapsed');
+
+        element.classList.add('collapsing');
+        element.style.height = element.scrollHeight + 'px';
+        setTimeout(function() {
+            element.classList.remove('collapsing');
+            element.style.height = '';
+        }, 400);
     };
 
     var close = function(element) {
-        element.classList.add('collapsed');
+        element.style.height = element.scrollHeight + 'px';
+        // Forcing updating of height, I think?
+        element.offsetHeight;
+
+        element.classList.add('collapsing');
+        element.style.height = '0px';
+        setTimeout(function() {
+            element.classList.remove('collapsing');
+            element.classList.add('collapsed');
+        }, 400);
     };
 
     return {

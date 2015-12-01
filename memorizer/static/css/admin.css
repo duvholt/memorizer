@@ -58,6 +58,7 @@
 .admin-button {
     color: #464646;
     font-size: 1.8rem;
+    display: block;
 }
 
 .admin-button:hover {
