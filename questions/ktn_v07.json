@@ -324,10 +324,6 @@
             "answer": true
         },
         {
-            "question": "In the Go-back-N error control, if an error protocol data unit (PDU) is found, the receiver discards all the PDUs with sequence numbers higher than the error PDU, until it is resent and received correctly.",
-            "answer": null
-        },
-        {
             "question": "In the Selective-Repeat error control, if an error PDU is found, the receiver is allowed to accept and buffer the PDUs following it.",
             "answer": true
         },
@@ -372,10 +368,6 @@
             "answer": true
         },
         {
-            "question": "New domains can be made without any specific permission.",
-            "answer": null
-        },
-        {
             "question": "An e-mail system is made up of user agent and mailbox subsystems.",
             "answer": false
         },
@@ -390,10 +382,6 @@
         {
             "question": "TELNET is a transport layer protocol.",
             "answer": false
-        },
-        {
-            "question": "POP3 (Post Office Protocol Version 3) removes messages from the mail server.",
-            "answer": null
         },
         {
             "question": "A browser plug-in runs as an internal part of the browser software.",
@@ -412,20 +400,12 @@
             "answer": true
         },
         {
-            "question": "Webmail does not use either POP3 or IMAP (Internet Message Access Protocol).",
-            "answer": null
-        },
-        {
             "question": "A domain name can be absolute or relative.",
             "answer": true
         },
         {
             "question": "Error Resilience is the capability to continue decoding even when the received media stream contains errors.",
             "answer": true
-        },
-        {
-            "question": "A VoIP session can only be initiated by an IP “telephone”.",
-            "answer": null
         },
         {
             "question": "TCP is always a preferred transport layer for live streaming media because it ensures that the content is transported to the client without error.",
