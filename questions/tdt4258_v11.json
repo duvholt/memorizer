@@ -1,0 +1,89 @@
+
+{
+    "name": "Maskinær Programmering",
+    "code": "TDT4258",
+    "exam": "V11",
+    "questions": [
+        {
+            "question": "Which of the below statements is correct given the high-level system architecture in Figure 1?",
+            "answers": [
+            	"The figure shows a typical accumulator architecture",
+				"The figure shows a typical Von Neumann architecture",
+				"The figure shows a typical Harvard architecture",
+				"The figure shows a typical Bauhaus architecture"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "In which stage of a design process is a block diagram a good level of abstraction?",
+            "answers": [
+            	"Requirements",
+				"Specification",
+				"Architecture",
+				"System Integration"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "If a microcontroller has memory mapped I/O, it means that",
+            "answers": [
+	            "Each I/O controller has a set of registers and each register is mapped on a specific address in the processor’s address space",
+				"Device specific instructions are used to read and to write to I/O devices",
+                "Each I/O device is represented as a file in the /dev folder",
+                "CPU saves the state of its parts and jumps to an interrupt routine whenever a signal from an I/O device is received"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "A device driver is:",
+            "answers": [
+                "A software layer between the application and the actual device that provides a well defined programming interface and hides the technical details of how the device works",
+                "An application that runs in the user space and uses specific built-in kernel system calls to control the I/O devices",
+                "A special file in the /dev folder that is represented by a major andm inor number, uniquely identifying a specific I/O device",
+                "A device that is used to combine several interrupt sources onto one CPU pin"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Which of the following statements about memory management is not correct?",
+            "answers": [
+                "The virtual to physical address translation is commonly carried out by the Memory Management Unit (MMU)",
+                "Paged memory management uses fixed size memory blocks",
+                "A Translation Lookaside Buffer (TLB) can be used with both paged and segmented memory management",
+                "Segmented memory management suffer from internal fragmentation"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Which of the following statements about I/O is not correct?",
+            "answers": [
+                "Polling and Busy-Wait I/O are different names for the same technique",
+                "When an interrupt is handled, it is necessary to save all CPU state",
+                "Interrupt priorities are orthogonal to interrupt vectors",
+                "A vectorized interrupt is implemented by storing a pointer to a handler function in an interrupt vector table"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Which of the statements below are not correct given the information in Figure 2?",
+            "answers": [
+                "A has a higher priority than B",
+                "B has a higher priority than C",
+                "C has a lower priority than A",
+                "C has a lower priority than B"
+            ],
+            "image": "http://i.imgur.com/rapHBa2.png",
+            "correct": 0
+        },
+        {
+            "question": "Which statement regarding multitasking is not correct?",
+            "answers": [
+                "Cooperative multitasking depends on the process actively yielding the CPU",
+                "Cooperative multitasking cannot support process priorities",
+                "Preemptive multitasking cannot be implemented without interrupts",
+                "Preemptive multitasking is more robust to programming errors than cooperative multitasking"
+            ],
+            "correct": 1
+        }
+    ]
+}
