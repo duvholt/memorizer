@@ -2,7 +2,7 @@
 {
     "name": "Maskinær Programmering",
     "code": "TDT4258",
-    "exam": "V15",
+    "exam": "S15K",
     "questions": [
         {
             "question": "Which of the following statements are correct wrt development boards(kits?) for prototyping hardware?",
