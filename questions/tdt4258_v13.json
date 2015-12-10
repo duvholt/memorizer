@@ -1,0 +1,78 @@
+{
+	"name": "Maskinnær programmering",
+	"code": "TDT4258",
+	"exam": "V13",
+	"questions": [{
+		"question": "Hva er riktig om prosessorsamlebånd?",
+		"answers": [
+			"Throughput (antall instruksjoner utført per tidsenhet) økes",
+			"Latency (tid det tar å utføre en enkelt instruksjon) minskes",
+			"Samlebånd forutsetter cache",
+			". Samlebånd forutsetter virtuelt minne"
+		],
+		"correct": 0
+	}, {
+		"question": "Hva brukes en interruptkontroller til?",
+		"answers": [
+			"Kontrollere at CPU håndterer interrupt innen deadline",
+			"Minke responstiden til interrupthandleren",
+			"Samle interruptlinjer fra flere I/O-enheter slik at mange enheter får mulighet til å gi CPU et interrupt",
+			"Implementere synkroniseringsmekanismer for interrupthandlere"
+		],
+		"correct": 2
+	}, {
+		"question": "Hvilken av følgende årsaker kan ikke føre til at en CPU får interrupt?",
+		"answers": [
+			"En bruker trykker på en knapp",
+			"En ALU-operasjon fører til overflyt",
+			"En I/O-enhet trenger mer data fra prosessoren",
+			"En DMA-enhet er ferdig med å overføre data"
+		],
+		"correct": 1
+	}, {
+		"question": "Hva er hensikten med symboltabellen i en objektfil?",
+		"answers": [
+			"Nødvendig for at kode i én objektfil skal kunne referere til andre objektfiler",
+			"Gjøre det mulig å ha private variabler",
+			"Gjøre disassemblering mer oversiktlig",
+			"Dokumentasjonsgenerering"
+		],
+		"correct": 0
+	}, {
+		"question": "Hva er den vanligste måten å få til preemptiv multitasking på?",
+		"answers": [
+			"Hver prosess gir eksplisitt fra seg kontrollen ved OS-kallet yield()",
+			"En egen HW enhet tar seg av prosesschedulering",
+			"Timerinterrupt som kjører prosesscheduler jevnlig",
+			"En egen systemservice i user space tar seg av schedulering"
+		],
+		"correct": 2
+	}, {
+		"question": "Hva er ikke riktig å si om drivere i Linux?",
+		"answers": [
+			"En bug i driveren kan ødelegge for hele systemet",
+			"En driver lages ofte som en kjernemodul",
+			"Grensesnittet til en driver er ofte gjennom device-filer",
+			"En driver har tilgang til alle vanlige C-bibliotek"
+		],
+		"correct": 3
+	}, {
+		"question": "Hva er ikke riktig om prosesser og tråder?",
+		"answers": [
+			"En prosess kan kommunisere med andre prosesser",
+			"En prosess har ofte sitt eget virtuelle adresserom",
+			"En tråd deler adresserom med andre tråder i samme prosess",
+			"En tråd deler som oftest adresserom med alle tråder i alle prosesser"
+		],
+		"correct": 3
+	}, {
+		"question": "Hva er ikke en vanlig OS-teknikk for å redusere energiforbruk til en datamaskin?",
+		"answers": [
+			"Justere spenning og klokkefrekvens avhengig av arbeidsbelastning",
+			"Endre sidetabeller for mer effektiv bruk av TLB",
+			"Skru av og på individuelle I/O-enheter dynamisk ut i fra bruksmønster",
+			"Sette CPU i sleep-mode når OS har vært idle en stund"
+		],
+		"correct": 1
+	}]
+}
