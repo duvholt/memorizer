@@ -1,0 +1,260 @@
+
+{
+    "name": "Maskinær Programmering",
+    "code": "TDT4258",
+    "exam": "V15",
+    "questions": [
+        {
+            "question": "a) Which of the following does not apply to embedded systems/microcontrollers?",
+            "answers": [
+            	"They usually have a tight power budget.",
+				"They are often used in applications with real time requirements.",
+				"They are most useful and commonly used to run applications with very large memory footprints.",
+				"They may work in extreme environments such as satellites."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "b) What is false regarding immediate values in assembly code, and ARM Thumb II in particular?",
+            "answers": [
+            	"Their size may vary depending on the instruction type.",
+				"Shorter instructions (e.g., 16 vs 32 bits) typically mean shorter fields to store immediate values.",
+				"All instructions in an ISA necessarily contain one or more immediate value.",
+				"Multiple instructions may be required to load a register from immediate values."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "c) Regarding the conditional instruction ite:",
+            "answers": [
+            	"It enables the conditional execution of other instructions without using branches.",
+	            "It is an optimized branch instruction that only inserts one delay slot instead of two.",
+	            "It cannot be implemented in a pipelined processor.",
+	            "It is especially useful for long branches and should be avoided for short branches."
+            ],
+            "correct": 0
+        },
+        {
+            "question": "d) When calling the following function using the Procedure Call Standard for the ARM Architecture or the ARM Procedure Call Standard, what of the following statements is false:",
+            "answers": [
+            	"Registers r0-r3 are used to pass parameters into the procedure.",
+                "Register r0 is used to hold a return value.",
+                "Register r11 stores the link register",
+                "Register r13 stores the stack pointer"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "e) What of the following is a common way to pass parameters when calling a subrutine:",
+            "answers": [
+            	"By storing them in the registers and the heap.",
+                "By storing them in the registers and pushing them in the stack.",
+                "By storing their values in the .data segment.",
+                "By storing their values in the .bss segment."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "f) A stack frame or activation register stores:",
+            "answers": [
+            	"Local variables.",
+                "Global variables.",
+                "Dynamically allocated variables.",
+                "Executable code."
+            ],
+            "correct": 0
+        },
+        {
+            "question": "g) The application binary interface or ABI is a standard that:",
+            "answers": [
+            	"Aims at making architectures with different ISAs able to execute the same binaries.",
+                "Makes binaries work across different operating systems by just using different dynamic libraries.",
+                "Enables programming language portability, e.g., C code can run in a Java-like VM such as Dalvik.",
+                "Determines how subrouines, data structs, etc. are handled so that different binaries can work together."
+            ],
+            "correct": 3
+        },
+        {
+            "question": "h) A disadvantage of using a frame pointer is:",
+            "answers": [
+            	"The stack cannot be examined by a debugger.",
+                "It requires support from the caches, and it is expensive.",
+                "It makes a register unavailable for general use.",
+                "It makes stack frames larger."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "i) GPIO pins provide a flexible interface between a microncontroller and the outside world. However, one inconvenience of using GPIO for this is:",
+            "answers": [
+            	"They can only work as output pins.",
+                "They can only work as input pins to implement the so called bit banging.",
+                "They typically require using the CPU to run protocols implemented in SW.",
+                "It is not possible to provide interrupts when a pin changes state, requiring the CPU to poll the pin state directly."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "j) Regarding I/O device access:",
+            "answers": [
+            	"Only disk devices can use memory mapping.",
+                "The most common access method is encoding data and commands through IRQ lines.",
+                "When using a separate I/O address space it is impossible to use IRQs.",
+                "I/O instructions and memory mapping can be both present in the same processor."
+            ],
+            "correct": 3
+        },
+        {
+            "question": "k) Which of the following statements about processor modes is true:",
+            "answers": [
+            	"Both user mode and supervisor mode enable access to all resources in the machine.",
+                "The same ADD instruction is typically slower in supervisor mode than in user mode because privileged accesses require runtime checks for safe execution.",
+                "Supervisor modes are typically used to run the operating system kernel to prevent it from eavesdropping on user programs.",
+                "User modes have restricted access so that we can provide protection between user programs."
+            ],
+            "correct": 3
+        },
+        {
+            "question": "l) Banked registers:",
+            "answers": [
+            	"Provide faster switches between processor modes.",
+                "Enable faster execution of arithmetic instructions.",
+                "Simplify the internal circuitry of the CPU.",
+                "Require that values are pushed in the stack to save all multiple copies of the registers when entering another processor mode."
+            ],
+            "correct": 0
+        },
+        {
+            "question": "m) Which of the following is false regarding set-associative and fully-associative caches, assuming they can store the same number of blocks:",
+            "answers": [
+            	"Fully-associative caches always require more (or the same) number of tag comparisons per access.",
+                "A direct mapped cache has more different indexes than a set-associative cache.",
+                "A direct mapped cache needs a replacement policy such as LRU or random.",
+                "Fully associative caches do not suffer conflict misses."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "n) In a modern system with virtual memory, which of the following is a false statement:",
+            "answers": [
+            	"The Memory Management Unit (MMU) translates virtual addresses issued by the processor to physical addresses accessible in memory.",
+                "Memory is divided into fixed size blocks, called pages.",
+                "Translating a memory address in a modern system always requires one or several accesses to main memory to read the page table.",
+                "The page offset is the same in the virtual and in the physical addresses."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "o) Assume the following assembly code containing 5 instructions (i1 to i5) is executed in a 3-stage pipeline (fetch, decode, execute) able to start one instruction per cycle. What of the statements below is false about the code and its execution in this pipeline:",
+            "answers": [
+            	"There is a RAW hazard between i2 and i5.",
+                "There is a RAW hazard between i1 and i2.",
+                "There is a data dependence between i2 and i5.",
+                "There is a name dependence between i4 and i5."
+            ],
+            "image": "http://i.imgur.com/q26jIMc.png",
+            "correct": 0
+        },
+        {
+            "question": "p) One of the reasons why the I2C bus is widely used in industry is:",
+            "answers": [
+            	"Slaves never introduce wait states by design, making it a fast and simple alternative to more complex protocols.",
+                "It uses a simple protocol and only requires two wires.",
+                "It uses a fast round-robin arbitration mechanism in which collisions are not possible.",
+                "It is faster than other buses such as AXI."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "q) The main differences between static RAM (SRAM) and dynamic RAM (DRAM) are:",
+            "answers": [
+            	"SRAM is made of transistors only while DRAM is made of capacitors only.",
+                "DRAM requires more transistors per bit than SRAM, enabling higher storage densities.",
+                "DRAM requires periodic refreshes because the transistors lose their charge due to leakage currents.",
+                "SRAM requires more transistors per bit than DRAM."
+            ],
+            "correct": 3
+        },
+        {
+            "question": "r) The main reason to use procedure inlining is:",
+            "answers": [
+            	"To reduce the size of the final code.",
+                "To save the overhead of procedure calls.",
+                "To increase compilation speed.",
+                "To increase the cache hit rate."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "s) Consider array accesses only (A, B) and ignore any other accesses. The elements of A and B have a size of 4 bytes. Given a 16KB direct mapped cache with 64 byte blocks, initially empty, which of the following statements is true:",
+            "answers": [
+            	"Only cold cache misses will take place.",
+                "Loop tiling using blocks of 16x16 elements plus an array padding of 1KB between A and B does not avoid all conflict and capacity misses.",
+                "All conflict and capacity misses can be avoided by just inserting the right padding space between A and B.",
+                "Loop fission can be used to avoid all conflict misses."
+            ],
+            "image": "http://i.imgur.com/zcg79lx.png",
+            "correct": 3 
+        },
+        {
+            "question": "t) When choosing between an oscilloscope and a logic analyzer, what of the following applies:",
+            "answers": [
+            	"An oscilloscope is more suited to analyze large sequences of logic values due to its analog nature.",
+                "A logic analyzer can provide a more accurate analog signal shape.",
+                "A logic analyzer displays 0 and 1 values, making the memory footprint of each stored sample lower.",
+                "A logic analyzer is more suited to detect signal quality faults."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "u) Regarding the power/performance trade-offs of adjusting the voltage and frequency of a CPU with DVFS, which of the following statements is true:",
+            "answers": [
+            	"Increasing frequency increases power consumption, always resulting in more energy spent to execute the same program faster.",
+                "Decreasing voltage decreases dynamic power consumption quadratically, but it also reduces the maximum frequency achievable, which makes more energy always necessary to execute the same program more slowly.",
+                "Dynamic power consumption depends on both frequency and voltage, but static power consumption depends on frequency only.",
+                "Static power consumption can make frequency reductions increase the overall energy consumed to execute a program."
+            ],
+            "correct": 3
+        },
+        {
+            "question": "v) Energy harvesting can be used to power microncontrollers, with the following consideration:",
+            "answers": [
+            	"The only possible way to prevent a brown-out is to harvest enough energy from the environment to keep the microncontroller always on.",
+                "Vibrations have prevented piezoelectric materials from being used to power microncontrollers, as they would break them.",
+                "An energy bank may be required to store the harvested energy, and even when such energy bank is used, we must have mechanisms to avoid brown-outs.",
+                "Brown-outs can never happen when supplying energy to the microncontroller by means of solar cells."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "w) Microncontrollers may contain one or several caches to improve performance, but regarding energy efficiency:",
+            "answers": [
+            	"Caches always increase the energy consumed because of the static power they add.",
+                "Cache accesses are more expensive than accessing DRAM memory, so high cache hit rates should be avoided.",
+                "Turning caches off when the observed cache hit rate is very low can save energy.",
+                "Going to a deep sleep mode that power gates the caches keeps the cache contents and saves energy."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "x) In the context of process scheduling, what of the following situations is possible in a preemptive priority based scheduling and has the elements necessary to be described as priority inversion:",
+            "answers": [
+            	"A process gets exclusive access to a shared resource, resulting in the starvation of two other processes.",
+                "A high priority process cannot run in the CPU because a low priority process is running in the CPU.",
+                "A high priority process waits for a low priority process to release a shared resource while a medium priority process runs in the CPU.",
+                "A medium priority process gets hold of the CPU because a high priority process yields it, starving a low priority process."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "y) Assume we are using rate monolitic scheduling. Three processes, A,B and C contend for the CPU. Their periods (and deadlines) are 3s, 4s and 6s, respectively. They run for exactly 1, 2 and 1 seconds each time they execute, respectively:",
+            "answers": [
+            	"All deadlines are met because the utilization of the CPU of the 3 processes is 100% (1/3 + 2/4 + 1/6 = 1).",
+                "Process A fails to meet its second deadline (t = 6s).",
+                "Only process C will ever miss deadlines, assuming no context switch overhead.",
+                "Earliest deadline first scheduling would meet all deadlines, even assuming realistic context switch overheads."
+            ],
+            "correct": 2
+        }
+    ]
+}
