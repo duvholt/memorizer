@@ -152,7 +152,7 @@
                 "There is a data dependence between i2 and i5.",
                 "There is a name dependence between i4 and i5."
             ],
-            "image": "http://i.imgur.com/q26jIMc.png",
+            "image": "asm.png",
             "correct": 0
         },
         {
@@ -193,7 +193,7 @@
                 "All conflict and capacity misses can be avoided by just inserting the right padding space between A and B.",
                 "Loop fission can be used to avoid all conflict misses."
             ],
-            "image": "http://i.imgur.com/zcg79lx.png",
+            "image": "c.png",
             "correct": 3 
         },
         {
