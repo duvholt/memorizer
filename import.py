@@ -38,7 +38,7 @@ def import_exam(exam_json):
     # Will raise exception if error found
     validate_exam(exam_json)
     # Get or create course
-    course = models.Course.query.filter_by(code=exam_json['code'], name=exam_json['name']).first()
+    course = models.Course.query.filter_by(code=exam_json['code']).first()
     if not course:
         course = models.Course(exam_json['code'], exam_json['name'])
         db.session.add(course)
@@ -113,7 +113,6 @@ def validate_question(question):
             answers = [question['correct']]
         elif type(question['correct']) is list:
             answers = question['correct']
-        print(len(answers))
         if len(answers) == 0:
             raise ValidationError('Det må være minst et riktig svar')
         for answer in question['answers']:
