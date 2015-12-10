@@ -3,7 +3,7 @@ from flask.ext.assets import Environment, Bundle
 from flask.ext.script import Manager
 from flask.ext.migrate import Migrate, MigrateCommand
 from logging.handlers import SMTPHandler
-from memorizer.models import db
+from memorizer.database import db
 from werkzeug.contrib.fixers import ProxyFix
 from views.admin import admin
 from views.api import api
@@ -11,6 +11,7 @@ from views.quiz import quiz
 from memorizer.cache import cache
 from memorizer.utils import grade, percentage
 from memorizer.user import get_user
+from memorizer.importer import ImportCommand
 import logging
 
 app = Flask(__name__)
@@ -22,6 +23,8 @@ cache.init_app(app)
 migrate = Migrate(app, db)
 manager = Manager(app)
 manager.add_command('db', MigrateCommand)
+
+manager.add_command('import', ImportCommand)
 
 assets = Environment(app)
 js = Bundle(

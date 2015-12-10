@@ -22,8 +22,9 @@ def get_user():
     ctx = _request_ctx_stack.top
     if not hasattr(ctx, 'user'):
         user_setup()
-        ctx.user = models.User.query.get(session['user'])
-    return ctx.user
+        if session['user'] is not None:
+            ctx.user = models.User.query.get(session['user'])
+    return getattr(ctx, 'user', None)
 
 
 # Decorators
