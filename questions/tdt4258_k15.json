@@ -1,0 +1,258 @@
+
+{
+    "name": "Maskinær Programmering",
+    "code": "TDT4258",
+    "exam": "K15",
+    "questions": [
+        {
+            "question": "Which of the following statements are correct wrt development boards(kits?) for prototyping hardware?",
+            "answers": [
+            	"The board should not be representative for the final version of the hardware that will be used.",
+				"The board may reduce 'observability' and 'controllability'",
+				"The board always provides accurate 'timing characteristics' for the final system",
+				"Dev boards arent useful for making prototypes"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "A processor core performs instructions in the following sequence:",
+            "answers": [
+            	"Read next instr from mem, decode instr, execute instr, write result",
+				"read next instr from mem, execute instr, encode results.",
+				"Read next instr from mem, execute instr, decode results, write results back to mem.",
+				"Perform next instr, decode data from mem, combine data with instr in executing unit, save results in registers"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Which of the following holds true for an assembly language?",
+            "answers": [
+	            "Instructions in asm are easier to remember for humans than the equivalent binary codes",
+				"Instructions require more storage space when translated from asm to binary compared to when written directly in machine code",
+				"All asm dialects use 32 bit instructions",
+				"asm dialects for RISC architectures have more instruction types than CISC processors"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Which of the following statements about the datapath of the Cortex M3 (the processor chip on your dev board) is true",
+            "answers": [
+            	"It contains 7 pipeline stages",
+				"It features a von neumann architecture, meaning data and program memory is accessed via the same bus using time multiplexing",
+				"The instructions does not need to be decoded becaues of the simplicity of the pipeline",
+				"Instructions and data use different buses"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Of the following statement about RISC and CISC, which one is correct?",
+            "answers": [
+	            "RISC can have different size instructions to simplify design",
+				"CISC instructions can operate on data in main memory with a single instruction",
+				"RISC usually features more instructions types due to their simplicity",
+				"CISC can usually make due with a shorter pipeline since complex instructions can do more work per stage."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "The chief purpose of an I/O controller is:",
+            "answers": [
+            	"To interface with an IO unit such that the IO unit can send commands(instructions) to the CPU",
+				"To read the registers of the CPU in order to configure the IO unit correctly based on register values",
+				"To interface the CPU with an IO unit such that the CPU can communicate with said IO unit",
+				"Creating an abstraction layer allowing the CPU to use the same protocol to communicate with any IO unit"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Which of the following statements regarding GPIO pins is true?",
+            "answers": [
+            	"They are always active when high (sic)",
+				"They can be used either as input or output",
+				"They can only be used with high frequencies",
+				"Communicating over GPIO never needs to involve the CPU"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "An advantage of interrupts vs polling is that:",
+            "answers": [
+            	"The CPU always responds quicker when using interrupts",
+				"Interrupts can inprove CPU utilization",
+				"Interrupt mapping is system independant",
+				"Interrupts must save context"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "regarding the interrupt controllers the following is true",
+            "answers": [
+            	"It differs from other controllers by requiring a unique access mechanism",
+				"It can configure which interrupts are sent to the processor by assigning different priorities to interrupts.",
+				"Its main task is turning off other controllers based on the current exception status",
+				"It can only be read, and the CPU may never configure it."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "The purpose of interrupt handlers are:",
+            "answers": [
+            	"To block te CPU until an interrupt arrives",
+				"To clean up once kernel supervisor code is executed and an interrupt is handled",
+				"To aid in debugging since interrupts are fairly easy to debug",
+				"To run once an interrupt arrives to perform tasks associated with said interrupt."
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Which of the following serves as main reason for using caches in modern processors?",
+            "answers": [
+            	"They use less energy than the DRAM main memory",
+				"They are larger than main memory and can store all relevant application data",
+				"They create the illusion of a large memory pool with low latency",
+				"CPUs may only communicate with SRAM memory, making caches nescessary to interface with DRAM"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Which of the following does not qualify as a cache miss?",
+            "answers": [
+            	"'Cold': the miss occuring when memory is accessed for the first time",
+				"'Conflict': the miss occuring because only a limited amounts of blocks are associated to the same set",
+				"'Locality': miss occuring because of repeated access to the same memory location",
+				"'Capacity': miss occuring when the working set of an application is larger than the cache"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Two processors A and B implements the same ISA. Processor A has a pipeline with 7 stages, while B has 20 stages. Which of the following statements are true?",
+            "answers": [
+            	"'Throughput' (defined as instructions per second) is higher for A than for B, independent of parameters relating to clock speed and memory hierarchies.",
+				"The delay of each step in As pipeline is lower than Bs, independent of parameters relating to clock speed and memory hierarchies.",
+				"The pipeline of B can have more instructions worked on in parallel if all other factors are the similar",
+				"A can have a higher clock frequency if all other factors are similar."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "When a processor implements delayed branch to handle control hazards:",
+            "answers": [
+            	"NOPs may be nescessary to fill delay slots",
+				"The pipeline structure is not exposed to the programmer (or the compiler)",
+				"A 'Hazard unit' in the hardware is still nescessary to stop the pipeline when a branch is not taken",
+				"All branches are assumed not taken. The CPU has special functionality to clean up and roll back the execution path after a mispredict"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "'Wait states' in a buss is:",
+            "answers": [
+            	"Transitions in the bus protocol occuring after failed handshakes",
+				"Only nescessary in async buses",
+				"Cycles of bus activity that a slow CPU is unable to handle leading to missed data",
+				"Buss-cycles with no activity"
+            ],
+            "correct": 3
+        },
+        {
+            "question": "When implementing a bus it is important that:",
+            "answers": [
+            	"The same wire drives '1' and '0' at the same time to indicate transaction start",
+				"That timing constraints are overheld (maintained).",
+				"All wires are defined as active high",
+				"That a wire is used as a clock signal for async buses"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Which of the following is not true regarding bus masters?",
+            "answers": [
+            	"A CPU connected to a bus is always the bus master",
+				"An arbitration mechanism is always nescessary to handle several bus masters",
+				"'Bus master' can initialize data traffic on the bus",
+				"'Bus slaves' can initialize data traffic if no bus master is currently using the bus."
+            ],
+            "correct": 3
+        },
+        {
+            "question": "A system featuring DMA can be programmed such that no CPU activity is nescessary during the data transfer to and from an IO unit. This is used to improved energy effectivity by:",
+            "answers": [
+            	"Turning off memory while DMA transfer is ongoing",
+				"Turning off CPU while DMA transfer is ongoing",
+				"Turning off IO unit while DMA transfer is ongoing",
+				"Turning IO unit on and off to handle situations that may arise during transmission."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "The main purpose of a watchdog timer is:",
+            "answers": [
+            	"Turn off power during a denial of service attack",
+				"Reset the system if it hangs up",
+				"Offer quicker interrupts",
+				"Allowing all user programs to reset system with a special timer"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Which of the following is not part of an object file?",
+            "answers": [
+            	"'BSS'-segment",
+				"'Text'-segment",
+				"'Macro expansion'-table",
+				"Symbol table"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "'Breakpoints' are implemented by replacing an instruction where we want a break point with something else. Which of the following may not be used to replace the original instruction?",
+            "answers": [
+            	"a 'breakpoint'-instruction",
+				"an 'unconditional branch'-instruction",
+				"an undefined instruction",
+				"a 'supervisor call'-instruction from the ARM ISA"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Which statement about JIT compilers compared to interpreters are true?",
+            "answers": [
+            	"The interpreter may optimize the code since it har a compiling stage",
+				"Both the interpreter and the JIT compiler may increase portability by allowing the same code to be run on different hardware platforms",
+				"The interpreter can store interpreted instructions after a run and therefore run the program faster on next invocation",
+				"The JIT compiler has a large memory demand, but does not need as much 'warm up time' as the interpreter"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Which of the following is not true wrt static power consumption?",
+            "answers": [
+            	"Static consumption happens because transistors are not perfect power breakers",
+				"Static consumption is proportional with voltage",
+				"Static consumption is reduced along with transistor size",
+				"Clock gating does not reduce static consumption"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Which of the following statements wrt the start up process of a unix like system is false?",
+            "answers": [
+            	"The start up process starts with running the boot loader, then kernel initialization, and then user space initialization",
+				"The boot loader is responsible for loading the OS and is stored at a location known to the hardware",
+				"The kernel may need to be decompressed, especially in embedded systems where storage may be limited",
+				"All 'services' run in user space and can be started in random sequence "
+            ],
+            "correct": 3
+        },
+        {
+            "question": "Which of the following stages is not performed when linux loads an application?",
+            "answers": [
+            	"Copying of program data to memory",
+				"Linking of static libraries",
+				"Handling of program arguments",
+				"Checking of permissions"
+            ],
+            "correct": 1
+        }
+    ]
+}
