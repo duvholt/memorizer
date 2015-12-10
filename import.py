@@ -10,7 +10,7 @@ def import_questions(filename):
         course_json = json.load(f)
     print('Importing questions from', course_json['name'], course_json['code'])
     # Get or create course
-    course = models.Course.query.filter_by(code=course_json['code'], name=course_json['name']).first()
+    course = models.Course.query.filter_by(code=course_json['code']).first()
     if not course:
         course = models.Course(course_json['code'], course_json['name'])
         db.session.add(course)
