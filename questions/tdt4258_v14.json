@@ -1,0 +1,78 @@
+{
+	"name": "Maskinnær programmering",
+	"code": "TDT4258",
+	"exam": "V14",
+	"questions": [{
+		"question": "Hvilken av følgende er ikke en fordel ved bruk av DMA til dataoverføringer, sammenlignet med å overføre data med CPU?",
+		"answers": [
+			"CPU får bedre tid til å gjøre andre oppgaver",
+			"Strømforbruk kan gå ned",
+			"Det er lettere å programmere",
+			"Det er mulig å sette CPU i sovetilstand selv om dataoverføringen er i gang"
+		],
+		"correct": 2
+	}, {
+		"question": "Hvilken av følgende påstander om I/O er ikke sann?",
+		"answers": [
+			"Interrupts tillater at CPU gjør andre oppgaver mens den venter på I/O",
+			"Interrupts har høyere energiforbruk enn polling fordi prosessoren ikke kan sove mens den venter på et interrupt",
+			"Minneavbildet (memory mapped) I/O gjør at I/O-enheter og minne deler samme adresserom",
+			"Det er vanlig å bruke en interruptkontroller til å samle interruptlinjer fra flere forskjellige I / O - enheter "
+		],
+		"correct": 1
+	}, {
+		"question": "Hva lagres i CPU - ens exceptionvektortabell?",
+		"answers": [
+			"Adresser (eller hoppinstruksjoner) til de forskjellige exceptionhandlerene",
+			"Prioriteringsinformasjon om de forskjellige exceptiontypene",
+			"Statusinformasjon om en prosess som har blitt avbrutt av en exception",
+			". Data om hvilken I/O-enhet som var årsaken til en exception"
+		],
+		"correct": 0
+	}, {
+		"question": "Hva er ikke riktig om exceptions?",
+		"answers": [
+			"En exceptionhandler kjører i priviligert modus",
+			"En exceptionhandler kan ikke bruke stakken",
+			"Et interrupt er en vanlig form for exception",
+			"I en datamaskin med operativsystem så er exceptionhandlerene en del av operativsystemet"
+		],
+		"correct": 1
+	}, {
+		"question": "Hva er hensikten med et prosessorsamlebånd?",
+		"answers": [
+			"Redusere latency",
+			"Øke throughput",
+			"Forbedre programmerbarhet",
+			"Muliggjøre exceptionhåndtering"
+		],
+		"correct": 1
+	}, {
+		"question": "Hvilket er ikke en cache miss type?",
+		"answers": [
+			"Avbrudd (Interrupt miss)",
+			"Tvungen (Compulsory miss)",
+			"Kapasitet (Capacity miss)",
+			"Konflikt (Conflict miss)"
+		],
+		"correct": 0
+	}, {
+		"question": "Hva er ikke riktig om hurtigbuffer (cache)?",
+		"answers": [
+			"L1 hurtigbuffer er ofte separert i data- og instruksjonshurtigbuffer",
+			"Det finnes ofte flere nivåer med hurtigbuffer",
+			"Hurtigbuffer består av SRAM mens hovedlageret ofte består av DRAM",
+			"Hurtigbuffer er bare positivt for hastighet, energiforbruket vil alltid øke ved bruk av hurtigbuffer"
+		],
+		"correct": 3
+	}, {
+		"question": "Hva er ikke en god grunn til å bruke virtuelt minne med paging?",
+		"answers": [
+			"Det muliggjør private adresserom for hver prosess",
+			"Det muliggjør allokering av sammenhengende virtuelle minneblokker selv om fysisk minne er fragmentert ",
+			"Det muligjør allokering av mer minne enn det som er tilgjengelig av fysisk minne",
+			"Det løser problemet med synkronisering av prosesser"
+		],
+		"correct": 3
+	}]
+}
