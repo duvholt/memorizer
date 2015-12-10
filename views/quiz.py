@@ -165,6 +165,8 @@ def sort_exam(exam):
     key = str(exam)
     if re.match(r'^V\d{2}$', key):
         key = key[1:3] + '1'
-    elif re.match(r'^H\d{2}$', key):
+    elif re.match(r'^K\d{2}$', key):
         key = key[1:3] + '2'
+    elif re.match(r'^H\d{2}$', key):
+        key = key[1:3] + '3'
     return key
