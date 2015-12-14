@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-from flask import _request_ctx_stack, current_app
 from flask.ext.script import Command, Option
 from memorizer.database import db
 from memorizer import models
@@ -145,7 +143,6 @@ class ImportCommand(Command):
     )
 
     def run(self, filenames):
-        print(current_app.extensions['sqlalchemy'].db, 'lol')
         print("Importing questions...")
         for filename in filenames:
             exam_json = json.load(filename)

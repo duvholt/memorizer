@@ -1,4 +1,4 @@
-from flask import _request_ctx_stack, redirect, session, url_for
+from flask import _request_ctx_stack, redirect, session, url_for, request
 from functools import wraps
 from memorizer import models
 
@@ -19,6 +19,8 @@ def user_setup():
 
 
 def get_user():
+    if not request.remote_addr:
+        return None
     ctx = _request_ctx_stack.top
     if not hasattr(ctx, 'user'):
         user_setup()
