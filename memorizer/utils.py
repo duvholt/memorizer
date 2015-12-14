@@ -96,4 +96,4 @@ def fetch_current_user_id():
     # Return None if we are outside of request context.
     if _request_ctx_stack.top is None:
         return
-    return get_user().id
+    return getattr(get_user(), 'id', None)

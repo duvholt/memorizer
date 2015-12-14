@@ -1,7 +1,8 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, flash, render_template, request
 from memorizer.forms import CourseForm, ExamForm, QuestionForm, AlternativeForm
-from memorizer import models
+from memorizer import importer, models
 from memorizer.user import login_required
+import json
 
 
 admin = Blueprint('admin', __name__)
@@ -36,6 +37,21 @@ def course(course_id):
 @admin.route('/course/<string:course_id>/<string:exam_id>', methods=['GET', 'POST'])
 @login_required
 def exam(course_id, exam_id):
+    # JSON question post
+    if request.method == 'POST':
+        questions_json = request.form.get('json')
+        if questions_json:
+            try:
+                questions = json.loads(questions_json)
+                importer.import_exam(questions)
+                flash('Spørsmål ble importert', 'success')
+            except json.decoder.JSONDecodeError:
+                flash('Ugyldig JSON', 'error')
+            except importer.ValidationError as e:
+                flash(e, 'error')
+        else:
+            flash('Tom JSON', 'error')
+
     course = models.Course.query.filter_by(id=course_id).first_or_404()
     exam = models.Exam.query.filter_by(course=course, id=exam_id).first_or_404()
     form = ExamForm(obj=exam)

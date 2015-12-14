@@ -21,6 +21,13 @@
 {{ render_form(question_form, '/api/questions/') }}
 </div>
 
+<a href="#" class="admin-button collapse" data-target="#import"><i class="fa fa-fw fa-list"></i> Importer JSON</a>
+<div id="import" class="collapse-target collapsed">
+<form method="POST">
+<textarea name="json" required cols="100" rows="30">
+</textarea>
+</form>
+</div>
 <h2>Spørsmål</h2>
 <ul class="admin-list" data-api="/api/questions/" data-filter="?exam_id={{ exam.id }}" data-url="/admin/question/"></ul>
 {% endblock %}

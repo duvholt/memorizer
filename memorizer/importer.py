@@ -1,5 +1,5 @@
-#!/usr/bin/env python3
-from memorizer.application import app, db
+from flask.ext.script import Command, Option
+from memorizer.database import db
 from memorizer import models
 import argparse
 import json
@@ -135,14 +135,16 @@ def validate_question(question):
         raise ValidationError('Svar mangler')
 
 
-parser = argparse.ArgumentParser(description='Import questions in JSON format')
-parser.add_argument('filenames', nargs='+', type=argparse.FileType('r'), help='JSON question files')
-args = parser.parse_args()
+class ImportCommand(Command):
+    'Import questions in JSON format'
 
-if __name__ == '__main__':
-    print("Importing questions...")
-    with app.app_context():
-        for filename in args.filenames:
+    option_list = (
+        Option('filenames', nargs='+', type=argparse.FileType('r'), help='JSON question files'),
+    )
+
+    def run(self, filenames):
+        print("Importing questions...")
+        for filename in filenames:
             exam_json = json.load(filename)
             print('Importing questions from', exam_json['name'], exam_json['code'], 'exam', exam_json['exam'])
             import_exam(exam_json)
