@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 from flask import _request_ctx_stack, current_app
 from flask.ext.script import Command, Option
-from memorizer.application import db
-# from memorizer.models import db
+from memorizer.database import db
 from memorizer import models
 import argparse
 import json
