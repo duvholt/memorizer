@@ -39,8 +39,6 @@
 .admin-list a.delete {
     position: absolute;
     right: 0;
-    width: 20%;
-    text-align: right;
 }
 
 /* Register link on admin login */
@@ -59,7 +57,7 @@
 
 .admin-button {
     color: #464646;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     display: block;
 }
 
