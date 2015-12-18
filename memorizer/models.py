@@ -63,8 +63,7 @@ class Exam(db.Model):
         return {
             'id': self.id,
             'name': self.name,
-            'course_id': self.course_id,
-            'str': str(self)
+            'course_id': self.course_id
         }
 
     @property
@@ -129,11 +128,14 @@ class Question(db.Model):
             'text': self.text,
             'exam_id': self.exam_id,
             'multiple': self.multiple,
-            'type': self.type.code,
-            'str': str(self)
+            'type': self.type.code
         }
         if self.multiple:
-            response['alternatives'] = [alt.serialize() for alt in self.alternatives]
+            response['alternatives'] = []
+            for alt in self.alternatives:
+                alt_dict = alt.serialize()
+                del alt_dict['question_id']
+                response['alternatives'].append(alt_dict)
         else:
             response['correct'] = self.correct
         if self.image:
@@ -165,8 +167,7 @@ class Alternative(db.Model):
             'id': self.id,
             'text': self.text,
             'correct': self.correct,
-            'question_id': self.question_id,
-            'str': str(self)
+            'question_id': self.question_id
         }
 
 

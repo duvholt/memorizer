@@ -117,6 +117,7 @@
         this.api = adminList.dataset.api;
         this.url = adminList.dataset.url;
         this.filter = adminList.dataset.filter ? adminList.dataset.filter : "";
+        this.str = adminList.dataset.str ? adminList.dataset.str : "str";
     };
 
     List.prototype.empty = function() {
@@ -166,7 +167,7 @@
             success: function(data) {
                 this.empty();
                 for (var i = 0; i < data.length; i++) {
-                    this.element.appendChild(this.li(data[i].str, data[i].id));
+                    this.element.appendChild(this.li(data[i][this.str], data[i].id));
                 }
             }.bind(this),
             error: function(data) {
