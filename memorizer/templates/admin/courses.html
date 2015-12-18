@@ -9,6 +9,15 @@
 {{ render_form(form, '/api/courses/') }}
 </div>
 
+<a href="#" class="admin-button collapse" data-target="#import"><i class="fa fa-fw fa-list"></i> Importer JSON</a>
+<div id="import" class="collapse-target collapsed">
+<form method="POST" class="form">
+<textarea name="json" required cols="100" rows="30">
+</textarea>
+<input type="submit" value="Lagre">
+</form>
+</div>
+
 <h2>Fag</h2>
 <ul class="admin-list" data-api="/api/courses/" data-url="/admin/course/"></ul>
 {% endblock %}

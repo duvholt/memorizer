@@ -8,22 +8,37 @@ import json
 admin = Blueprint('admin', __name__)
 
 
-@admin.route('/', methods=['GET', 'POST'])
+@admin.route('/')
 @login_required
 def index():
     return render_template('admin/admin.html')
 
 
-@admin.route('/courses')
+@admin.route('/courses', methods=['GET', 'POST'])
 @login_required
 def courses():
+    # JSON question post
+    if request.method == 'POST':
+        exam_json = request.form.get('json')
+        if exam_json:
+            try:
+                questions = json.loads(exam_json)
+                importer.import_exam(questions)
+                flash('Alle spørsmålene ble importert', 'success')
+            except json.decoder.JSONDecodeError:
+                flash('Ugyldig JSON', 'error')
+            except importer.ValidationError as e:
+                flash(e, 'error')
+        else:
+            flash('Tom JSON', 'error')
+
     context = dict(courses=models.Course.query.all())
     form = CourseForm()
     context['form'] = form
     return render_template('admin/courses.html', **context)
 
 
-@admin.route('/course/<string:course_id>', methods=['GET', 'POST'])
+@admin.route('/course/<string:course_id>')
 @login_required
 def course(course_id):
     course = models.Course.query.filter_by(id=course_id).first_or_404()
@@ -34,24 +49,9 @@ def course(course_id):
     return render_template('admin/course.html', **context)
 
 
-@admin.route('/course/<string:course_id>/<string:exam_id>', methods=['GET', 'POST'])
+@admin.route('/course/<string:course_id>/<string:exam_id>')
 @login_required
 def exam(course_id, exam_id):
-    # JSON question post
-    if request.method == 'POST':
-        questions_json = request.form.get('json')
-        if questions_json:
-            try:
-                questions = json.loads(questions_json)
-                importer.import_exam(questions)
-                flash('Spørsmål ble importert', 'success')
-            except json.decoder.JSONDecodeError:
-                flash('Ugyldig JSON', 'error')
-            except importer.ValidationError as e:
-                flash(e, 'error')
-        else:
-            flash('Tom JSON', 'error')
-
     course = models.Course.query.filter_by(id=course_id).first_or_404()
     exam = models.Exam.query.filter_by(course=course, id=exam_id).first_or_404()
     form = ExamForm(obj=exam)
@@ -61,7 +61,7 @@ def exam(course_id, exam_id):
     return render_template('admin/exam.html', **context)
 
 
-@admin.route('/question/<int:question_id>', methods=['GET', 'POST'])
+@admin.route('/question/<int:question_id>')
 @login_required
 def question(question_id):
     question = question = models.Question.query.filter_by(id=question_id).first_or_404()
