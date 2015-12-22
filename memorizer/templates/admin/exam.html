@@ -14,12 +14,12 @@
 {{ version_history(exam.versions) }}
 
 <a href="#" class="admin-button collapse" data-target="#edit-exam"><i class="fa fa-fw fa-edit"></i> Rediger</a>
-<div id="edit-exam" class="collapse-target collapsed">
+<div id="edit-exam" class="collapsed">
 {{ render_form(form, '/api/exams/' + exam.id|string, new=False) }}
 </div>
 
 <a href="#" class="admin-button collapse" data-target="#add-question"><i class="fa fa-fw fa-plus"></i> Legg til nytt spørsmål</a>
-<div id="add-question" class="collapse-target collapsed">
+<div id="add-question" class="collapsed">
 {{ render_form(question_form, '/api/questions/') }}
 </div>
 

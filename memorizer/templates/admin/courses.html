@@ -5,12 +5,12 @@
 <h1 class="admin-header">Fag-administrering</h1>
 
 <a href="#" class="collapse admin-button" data-target="#add-course"><i class="fa fa-fw fa-plus"></i> Legg til nytt fag</a>
-<div id="add-course" class="collapse-target collapsed">
+<div id="add-course" class="collapsed">
 {{ render_form(form, '/api/courses/') }}
 </div>
 
 <a href="#" class="admin-button collapse" data-target="#import"><i class="fa fa-fw fa-list"></i> Importer JSON</a>
-<div id="import" class="collapse-target collapsed">
+<div id="import" class="collapsed">
 <form method="POST" class="form">
 <textarea name="json" required cols="100" rows="30">
 </textarea>

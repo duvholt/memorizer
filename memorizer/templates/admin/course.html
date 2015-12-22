@@ -13,12 +13,12 @@
 {{ version_history(course.versions) }}
 
 <a href="#" class="admin-button collapse" data-target="#edit-course"><i class="fa fa-fw fa-edit"></i> Rediger</a>
-<div id="edit-course" class="collapse-target collapsed">
+<div id="edit-course" class="collapsed">
 {{ render_form(form, '/api/courses/' + course.id|string, new=False) }}
 </div>
 
 <a href="#" class="collapse admin-button" data-target="#add-exam"><i class="fa fa-fw fa-plus"></i> Legg til ny eksamen</a>
-<div id="add-exam" class="collapse-target collapsed">
+<div id="add-exam" class="collapsed">
 {{ render_form(exam_form, '/api/exams/') }}
 </div>
 

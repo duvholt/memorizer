@@ -1,12 +1,8 @@
-.collapse-target {
-    display: block;
-}
-
-.collapse-target.collapsed {
+.collapsed {
     display: none;
 }
 
-.collapse-target.collapsing {
+.collapsing {
     transition: height ease 0.4s;
     overflow-y: hidden;
 }
