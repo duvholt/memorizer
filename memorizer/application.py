@@ -8,7 +8,7 @@ from views.admin import admin
 from views.api import api
 from views.quiz import quiz
 from memorizer.cache import cache
-from memorizer.utils import grade, percentage
+from memorizer.utils import datetimeformat, grade, percentage
 from memorizer.user import get_user
 from memorizer.importer import ImportCommand
 import logging
@@ -38,6 +38,8 @@ def create_app(config_filename='config.py'):
     @app.context_processor
     def utility_processor():
         return dict(percentage=percentage, grade=grade, user=get_user())
+
+    app.jinja_env.filters['datetimeformat'] = datetimeformat
     return app
 
 

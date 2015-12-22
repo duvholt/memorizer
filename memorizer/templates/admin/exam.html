@@ -1,4 +1,5 @@
 {% from "admin/_formhelpers.html" import render_form %}
+{% from "admin/_history.html" import version_history %}
 {% extends "admin/admin.html" %}
 
 {% block content %}
@@ -10,6 +11,7 @@
 
 <h1 class="admin-header">{{ course }} - {{ exam }}</h1>
 
+{{ version_history(exam.versions) }}
 
 <a href="#" class="admin-button collapse" data-target="#edit-exam"><i class="fa fa-fw fa-edit"></i> Rediger</a>
 <div id="edit-exam" class="collapse-target collapsed">

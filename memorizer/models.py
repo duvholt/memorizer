@@ -186,6 +186,9 @@ class User(db.Model):
         self.registered = False
         self.admin = False
 
+    def __repr__(self):
+        return self.username
+
 
 class Stats(db.Model):
     __tablename__ = 'stats'

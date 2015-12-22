@@ -97,3 +97,7 @@ def fetch_current_user_id():
     if _request_ctx_stack.top is None:
         return
     return getattr(get_user(), 'id', None)
+
+
+def datetimeformat(value, format='%Y-%m-%d %H:%M'):
+    return value.strftime(format)
