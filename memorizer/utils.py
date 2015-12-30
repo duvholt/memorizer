@@ -40,7 +40,7 @@ def random_id(id=None, course=None, exam=None):
     """
     query = models.db.session.query(models.Question.id).distinct().\
         join(models.Exam).join(models.Course)
-    if exam:
+    if exam and exam != 'all':
         query = query.filter(models.Exam.name == exam)
     elif course:
         query = query.filter(models.Course.code == course)
