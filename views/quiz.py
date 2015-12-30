@@ -95,7 +95,9 @@ def reset_stats_exam(course, exam):
 def course(course):
     """Redirects to a random question for a chosen course"""
     models.Course.query.filter_by(code=course).first_or_404()
-    return redirect(url_for('quiz.show_question', course=course, exam='all', id=utils.random_id(course=course)))
+    return redirect(url_for(
+        'quiz.question_course', course_code=course, id=utils.random_id(course=course))
+    )
 
 
 @quiz.route('/<string:course>/<string:exam>/')
@@ -103,40 +105,54 @@ def exam(course, exam):
     """Redirects to the first question for a chosen exam"""
     course_m = models.Course.query.filter_by(code=course).first_or_404()
     exam_m = models.Exam.query.filter_by(course=course_m, name=exam).first_or_404()
-    return redirect(url_for('quiz.show_question', course=course, exam=exam_m.name, id=1))
+    return redirect(url_for('quiz.question_exam', course_code=course, exam_name=exam_m.name, id=1))
 
 
-@quiz.route('/<string:course>/<string:exam>/<int:id>', methods=['GET', 'POST'])
-def show_question(course, exam, id):
-    if id == 0:
-        return redirect(url_for('quiz.show_question', course=course, exam=exam, id=1))
-    # Setting default value for session variables
-    course = models.Course.query.filter_by(code=course).first_or_404()
-    exam_name = exam
-    exam = None
-    if exam_name != 'all':
-        exam = models.Exam.query.filter_by(course=course, name=exam_name).first_or_404()
-        # Only question from a specific exam
-        question_count = exam.question_count
-        question = models.Question.query.filter_by(exam=exam).offset(id - 1).limit(1).first_or_404()
-        reset_url = url_for('quiz.reset_stats_exam', course=course.code, exam=exam.name)
-    else:
-        # All questions
-        question_count = course.question_count
-        question = models.Question.query.filter_by(course=course).offset(id - 1).limit(1).first_or_404()
-        reset_url = url_for('quiz.reset_stats_course', course=course.code)
-    if question_count == 0:
-        abort(404)
+@quiz.route('/<string:course_code>/all/<int:id>', methods=['GET', 'POST'])
+def question_course(course_code, id):
+    course = models.Course.query.filter_by(code=course_code).first_or_404()
     course.exams.sort(key=utils.sort_exam, reverse=True)
+
+    reset_url = url_for('quiz.reset_stats_course', course=course.code)
+    random_question = utils.random_id(id=id, course=course.code)
+
     context = {
-        'id': id,
-        'random': utils.random_id(id=id, course=course.code, exam=exam_name),
-        'prev': id - 1 if id > 1 else question_count,
-        'next': id + 1 if id < question_count else 1,
-        'question': question,
-        'exam_name': exam_name,
-        'reset_url': reset_url
+        'exam_name': 'all',
+        'reset_url': reset_url,
+        'random': random_question
     }
+    return question(course, id, context)
+
+
+@quiz.route('/<string:course_code>/<string:exam_name>/<int:id>', methods=['GET', 'POST'])
+def question_exam(course_code, exam_name, id):
+    course = models.Course.query.filter_by(code=course_code).first_or_404()
+    course.exams.sort(key=utils.sort_exam, reverse=True)
+    exam = models.Exam.query.filter_by(course=course, name=exam_name).first_or_404()
+
+    random_question = utils.random_id(id=id, course=course.code)
+    reset_url = url_for('quiz.reset_stats_exam', course=course.code, exam=exam.name)
+
+    context = {
+        'exam_name': exam_name,
+        'reset_url': reset_url,
+        'random': random_question
+    }
+    return question(exam, id, context)
+
+
+def question(model, id, context):
+    question = model.question(id).first_or_404()
+    if model.question_count == 0:
+        abort(404)
+
+    context.update({
+        'id': id,
+        'prev': id - 1 if id > 1 else model.question_count,
+        'next': id + 1 if id < model.question_count else 1,
+        'question': question,
+    })
+
     # POST request when answering
     if request.method == 'POST':
         answer = request.form.get('answer')
@@ -172,8 +188,5 @@ def show_question(course, exam, id):
     else:
         # Random order on questions
         random.shuffle(question.alternatives)
-    # generate_stats doesn't support 'all' and expects None
-    if exam_name == 'all':
-        exam_name = None
-    context['stats'] = utils.generate_stats(course.code, exam_name)
+    context['stats'] = model.stats()
     return render_template('quiz/question.html', **context)

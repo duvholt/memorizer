@@ -2,7 +2,7 @@
 {% block title %}#{{ id }} - {{ question.course.code }} {{ question.exam.name }}{% endblock %}
 
 {% macro navlink(id, name, text) %}
-    <a href="{{ url_for('quiz.show_question', course=question.course.code, exam=exam_name, id=id) }}" id="{{ name }}">{{ text }}</a>
+    <a href="{{ url_for('quiz.question_exam', course_code=question.course.code, exam_name=exam_name, id=id) }}" id="{{ name }}">{{ text }}</a>
 {% endmacro %}
 
 {% block menu %}

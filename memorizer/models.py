@@ -7,7 +7,7 @@ from sqlalchemy_utils.types.choice import ChoiceType
 from sqlalchemy_utils.types.password import PasswordType
 from sqlalchemy_utils import force_auto_coercion
 from werkzeug.utils import cached_property
-from .utils import fetch_current_user_id
+from .utils import fetch_current_user_id, generate_stats
 from .database import db
 
 force_auto_coercion()
@@ -31,6 +31,12 @@ class Course(db.Model):
     @cached_property
     def question_count(self):
         return Question.query.filter_by(course=self).count()
+
+    def question(self, id):
+        return Question.query.filter_by(course=self).offset(id - 1).limit(1)
+
+    def stats(self):
+        return generate_stats(course_code=self.code)
 
     def __repr__(self):
         return self.code + ' ' + self.name
@@ -64,6 +70,12 @@ class Exam(db.Model):
     @cached_property
     def question_count(self):
         return Question.query.filter_by(exam=self).count()
+
+    def question(self, id):
+        return Question.query.filter_by(exam=self).offset(id - 1).limit(1)
+
+    def stats(self):
+        return generate_stats(course_code=self.course.code, exam_name=self.name)
 
     def __repr__(self):
         return self.name
