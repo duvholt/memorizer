@@ -7,7 +7,7 @@
     <li data-text="{{ course.code }} {{ course.name }}">
         <a href="{{ url_for('quiz.course', course=course.code) }}">
             <div class="code">{{ course.code }}</div>
-            <div class="count">{{ course.num_questions }} <small>spørsmål</small></div>
+            <div class="count">{{ course.question_count }} <small>spørsmål</small></div>
             <div class="name">{{ course.name }}</div>
         </a>
     </li>

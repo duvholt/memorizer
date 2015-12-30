@@ -6,6 +6,7 @@ from sqlalchemy.ext.associationproxy import association_proxy
 from sqlalchemy_utils.types.choice import ChoiceType
 from sqlalchemy_utils.types.password import PasswordType
 from sqlalchemy_utils import force_auto_coercion
+from werkzeug.utils import cached_property
 from .utils import fetch_current_user_id
 from .database import db
 
@@ -26,6 +27,10 @@ class Course(db.Model):
     def __init__(self, code=None, name=None):
         self.code = code
         self.name = name
+
+    @cached_property
+    def question_count(self):
+        return Question.query.filter_by(course=self).count()
 
     def __repr__(self):
         return self.code + ' ' + self.name
@@ -55,6 +60,10 @@ class Exam(db.Model):
     def __init__(self, name=None, course_id=None):
         self.name = name
         self.course_id = course_id
+
+    @cached_property
+    def question_count(self):
+        return Question.query.filter_by(exam=self).count()
 
     def __repr__(self):
         return self.name

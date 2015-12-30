@@ -8,12 +8,7 @@ quiz = Blueprint('quiz', __name__)
 
 @quiz.route('/')
 def main():
-    courses = models.Course.query.all()
-    for course in courses:
-        course.num_questions = models.Question.query.filter_by(course=course).count()
-    context = {
-        'courses': courses
-    }
+    context = {'courses': models.Course.query.all()}
     return render_template('quiz/courses.html', **context)
 
 
@@ -122,23 +117,22 @@ def show_question(course, exam, id):
     if exam_name != 'all':
         exam = models.Exam.query.filter_by(course=course, name=exam_name).first_or_404()
         # Only question from a specific exam
-        num_questions = models.Question.query.filter_by(exam=exam).count()
+        question_count = exam.question_count
         question = models.Question.query.filter_by(exam=exam).offset(id - 1).limit(1).first_or_404()
         reset_url = url_for('quiz.reset_stats_exam', course=course.code, exam=exam.name)
     else:
         # All questions
-        num_questions = models.Question.query.filter_by(course=course).count()
+        question_count = course.question_count
         question = models.Question.query.filter_by(course=course).offset(id - 1).limit(1).first_or_404()
         reset_url = url_for('quiz.reset_stats_course', course=course.code)
-    if num_questions == 0:
+    if question_count == 0:
         abort(404)
     course.exams.sort(key=utils.sort_exam, reverse=True)
     context = {
         'id': id,
         'random': utils.random_id(id=id, course=course.code, exam=exam_name),
-        'prev': id - 1 if id > 1 else num_questions,
-        'next': id + 1 if id < num_questions else 1,
-        'num_questions': num_questions,
+        'prev': id - 1 if id > 1 else question_count,
+        'next': id + 1 if id < question_count else 1,
         'question': question,
         'exam_name': exam_name,
         'reset_url': reset_url
