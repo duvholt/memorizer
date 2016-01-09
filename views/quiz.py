@@ -2,6 +2,7 @@ from flask import abort, Blueprint, flash, redirect, render_template, request, s
 from memorizer import forms, models, utils
 from memorizer.user import get_user
 from memorizer.views import TemplateMethodView
+import random
 
 quiz = Blueprint('quiz', __name__)
 
@@ -140,12 +141,38 @@ class Question(TemplateMethodView):
     def sort_exams(self):
         self.model.exams.sort(key=utils.sort_exam, reverse=True)
 
+    def scramble_alternatives(self):
+        dict_alt = {alt.id: alt for alt in self.question.alternatives}
+        indexes = list(dict_alt.keys())
+        random.shuffle(indexes)
+        self.question.alternatives = [dict_alt[index] for index in indexes]
+
     def get(self, number, *args, **kwargs):
         if self.model.question_count == 0:
             abort(404)
         self.number = number
         self.question = self.model.question(number).first_or_404()
         self.sort_exams()
+        self.scramble_alternatives()
+
+    def alternatives_correct(self):
+        try:
+            answers = set(map(int, request.form.getlist('answer')))
+        except ValueError:
+            return False
+        correct_alternatives = models.Alternative.query.filter_by(question=self.question, correct=True)
+        correct_answers = {alt.id for alt in correct_alternatives}
+        return correct_answers == answers
+
+    def save_answer(self, user, success):
+        stat = models.Stats(user, self.question, success)
+        models.db.session.add(stat)
+        models.db.session.commit()
+
+    def reorder_alternatives(self, ordering):
+        dict_alt = {alt.id: alt for alt in self.question.alternatives}
+        indexes = map(int, ordering.split(','))
+        self.question.alternatives = [dict_alt[index] for index in indexes]
 
     def post(self, *args, **kwargs):
         self.get(*args, **kwargs)
@@ -153,21 +180,14 @@ class Question(TemplateMethodView):
         if answer:
             self.answered = True
             if self.question.multiple:
-                try:
-                    answer_alt = set(map(int, request.form.getlist('answer')))
-                except ValueError:
-                    pass
-                correct_alt = {alt.id for alt in models.Alternative.query.filter_by(question=self.question, correct=True)}
-                self.success = correct_alt == answer_alt
+                self.success = self.alternatives_correct()
             else:
                 bool_answer = answer.lower() == 'true'
                 self.success = self.question.correct == bool_answer
             user = get_user()
             # Checking if question has already been answered
             if not models.Stats.answered(user, self.question):
-                stat = models.Stats(user, self.question, self.success)
-                models.db.session.add(stat)
-                models.db.session.commit()
+                self.save_answer(user, self.success)
             elif self.success:
                 flash('Du har allerede svart på dette spørsmålet så du får ikke noe poeng. :-)', 'info')
         else:
@@ -175,10 +195,7 @@ class Question(TemplateMethodView):
         # Preserving order on submit
         ordering = request.form.get('order')
         if ordering:
-            # Resorting answers from specific values. Answer is a tuple with id and texts
-            # Creating dictionary with id as key
-            dict_alt = {alt.id: alt for alt in self.question.alternatives}
-            self.question.alternatives = [dict_alt[int(x)] for x in ordering.split(',')]
+            self.reorder_alternatives(ordering)
 
 
 class CourseQuestion(Question):
