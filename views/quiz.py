@@ -109,7 +109,7 @@ def exam(course, exam):
     return redirect(url_for('quiz.question_exam', course_code=course, exam_name=exam_m.name, id=1))
 
 
-class Question(TemplateMethodView):
+class QuestionMixin:
     template = 'quiz/question.html'
     methods = ['GET', 'POST']
 
@@ -198,7 +198,7 @@ class Question(TemplateMethodView):
         models.db.session.commit()
 
 
-class CourseQuestion(Question):
+class CourseQuestion(QuestionMixin, TemplateMethodView):
     def get(self, course_code, id, *args, **kwargs):
         self.model = models.Course.query.filter_by(code=course_code).first_or_404()
         return super().get(id, course_code, *args, **kwargs)
@@ -221,7 +221,7 @@ quiz.add_url_rule(
 )
 
 
-class ExamQuestion(Question):
+class ExamQuestion(QuestionMixin, TemplateMethodView):
     def get(self, course_code, exam_name, id, *args, **kwargs):
         course = models.Course.query.filter_by(code=course_code).first_or_404()
         self.model = models.Exam.query.filter_by(course=course, name=exam_name).first_or_404()
