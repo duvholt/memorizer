@@ -170,7 +170,7 @@ class QuestionMixin:
             self.reorder_alternatives(ordering)
 
     def sort_exams(self):
-        self.model.exams.sort(key=utils.sort_exam, reverse=True)
+        self.question.course.exams.sort(key=utils.sort_exam, reverse=True)
 
     def scramble_alternatives(self):
         dict_alt = {alt.id: alt for alt in self.question.alternatives}
@@ -230,7 +230,7 @@ class ExamQuestion(QuestionMixin, TemplateMethodView):
     def context(self, *args, **kwargs):
         context = super().context(*args, **kwargs)
         random_question = utils.random_id(id=id, course=self.model.course.code)
-        reset_url = url_for('quiz.reset_stats_exam', course=self.model.code, exam=self.model.name)
+        reset_url = url_for('quiz.reset_stats_exam', course=self.model.course.code, exam=self.model.name)
 
         context.update({
             'exam_name': self.model.name,
