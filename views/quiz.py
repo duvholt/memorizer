@@ -113,18 +113,6 @@ class Question(TemplateMethodView):
     template = 'quiz/question.html'
     methods = ['GET', 'POST']
 
-    def next(self):
-        if self.number > 1:
-            return self.number - 1
-        else:
-            return self.model.question_count
-
-    def previous(self):
-        if self.number < self.model.question_count:
-            return self.number + 1
-        else:
-            return 1
-
     def context(self, *args, **kwargs):
         context = super().context(*args, **kwargs)
         context.update({
@@ -138,14 +126,17 @@ class Question(TemplateMethodView):
         })
         return context
 
-    def sort_exams(self):
-        self.model.exams.sort(key=utils.sort_exam, reverse=True)
+    def next(self):
+        if self.number > 1:
+            return self.number - 1
+        else:
+            return self.model.question_count
 
-    def scramble_alternatives(self):
-        dict_alt = {alt.id: alt for alt in self.question.alternatives}
-        indexes = list(dict_alt.keys())
-        random.shuffle(indexes)
-        self.question.alternatives = [dict_alt[index] for index in indexes]
+    def previous(self):
+        if self.number < self.model.question_count:
+            return self.number + 1
+        else:
+            return 1
 
     def get(self, number, *args, **kwargs):
         if self.model.question_count == 0:
@@ -154,25 +145,6 @@ class Question(TemplateMethodView):
         self.question = self.model.question(number).first_or_404()
         self.sort_exams()
         self.scramble_alternatives()
-
-    def alternatives_correct(self):
-        try:
-            answers = set(map(int, request.form.getlist('answer')))
-        except ValueError:
-            return False
-        correct_alternatives = models.Alternative.query.filter_by(question=self.question, correct=True)
-        correct_answers = {alt.id for alt in correct_alternatives}
-        return correct_answers == answers
-
-    def save_answer(self, user, success):
-        stat = models.Stats(user, self.question, success)
-        models.db.session.add(stat)
-        models.db.session.commit()
-
-    def reorder_alternatives(self, ordering):
-        dict_alt = {alt.id: alt for alt in self.question.alternatives}
-        indexes = map(int, ordering.split(','))
-        self.question.alternatives = [dict_alt[index] for index in indexes]
 
     def post(self, *args, **kwargs):
         self.get(*args, **kwargs)
@@ -196,6 +168,34 @@ class Question(TemplateMethodView):
         ordering = request.form.get('order')
         if ordering:
             self.reorder_alternatives(ordering)
+
+    def sort_exams(self):
+        self.model.exams.sort(key=utils.sort_exam, reverse=True)
+
+    def scramble_alternatives(self):
+        dict_alt = {alt.id: alt for alt in self.question.alternatives}
+        indexes = list(dict_alt.keys())
+        random.shuffle(indexes)
+        self.question.alternatives = [dict_alt[index] for index in indexes]
+
+    def reorder_alternatives(self, ordering):
+        dict_alt = {alt.id: alt for alt in self.question.alternatives}
+        indexes = map(int, ordering.split(','))
+        self.question.alternatives = [dict_alt[index] for index in indexes]
+
+    def alternatives_correct(self):
+        try:
+            answers = set(map(int, request.form.getlist('answer')))
+        except ValueError:
+            return False
+        correct_alternatives = models.Alternative.query.filter_by(question=self.question, correct=True)
+        correct_answers = {alt.id for alt in correct_alternatives}
+        return correct_answers == answers
+
+    def save_answer(self, user, success):
+        stat = models.Stats(user, self.question, success)
+        models.db.session.add(stat)
+        models.db.session.commit()
 
 
 class CourseQuestion(Question):
