@@ -1,7 +1,7 @@
 from flask import abort, Blueprint, flash, redirect, render_template, request, session, url_for
 from memorizer import forms, models, utils
 from memorizer.user import get_user
-import random
+from memorizer.views import TemplateMethodView
 
 quiz = Blueprint('quiz', __name__)
 
@@ -108,73 +108,67 @@ def exam(course, exam):
     return redirect(url_for('quiz.question_exam', course_code=course, exam_name=exam_m.name, id=1))
 
 
-@quiz.route('/<string:course_code>/all/<int:id>', methods=['GET', 'POST'])
-def question_course(course_code, id):
-    course = models.Course.query.filter_by(code=course_code).first_or_404()
-    course.exams.sort(key=utils.sort_exam, reverse=True)
+class Question(TemplateMethodView):
+    template = 'quiz/question.html'
+    methods = ['GET', 'POST']
 
-    reset_url = url_for('quiz.reset_stats_course', course=course.code)
-    random_question = utils.random_id(id=id, course=course.code)
+    def next(self):
+        if self.number > 1:
+            return self.number - 1
+        else:
+            return self.model.question_count
 
-    context = {
-        'exam_name': 'all',
-        'reset_url': reset_url,
-        'random': random_question
-    }
-    return question(course, id, context)
+    def previous(self):
+        if self.number < self.model.question_count:
+            return self.number + 1
+        else:
+            return 1
 
+    def context(self, *args, **kwargs):
+        context = super().context(*args, **kwargs)
+        context.update({
+            'id': self.number,
+            'prev': self.next(),
+            'next': self.previous(),
+            'question': self.question,
+            'answered': getattr(self, 'answered', None),
+            'success': getattr(self, 'success', None),
+            'stats': self.model.stats()
+        })
+        return context
 
-@quiz.route('/<string:course_code>/<string:exam_name>/<int:id>', methods=['GET', 'POST'])
-def question_exam(course_code, exam_name, id):
-    course = models.Course.query.filter_by(code=course_code).first_or_404()
-    course.exams.sort(key=utils.sort_exam, reverse=True)
-    exam = models.Exam.query.filter_by(course=course, name=exam_name).first_or_404()
+    def sort_exams(self):
+        self.model.exams.sort(key=utils.sort_exam, reverse=True)
 
-    random_question = utils.random_id(id=id, course=course.code)
-    reset_url = url_for('quiz.reset_stats_exam', course=course.code, exam=exam.name)
+    def get(self, number, *args, **kwargs):
+        if self.model.question_count == 0:
+            abort(404)
+        self.number = number
+        self.question = self.model.question(number).first_or_404()
+        self.sort_exams()
 
-    context = {
-        'exam_name': exam_name,
-        'reset_url': reset_url,
-        'random': random_question
-    }
-    return question(exam, id, context)
-
-
-def question(model, id, context):
-    question = model.question(id).first_or_404()
-    if model.question_count == 0:
-        abort(404)
-
-    context.update({
-        'id': id,
-        'prev': id - 1 if id > 1 else model.question_count,
-        'next': id + 1 if id < model.question_count else 1,
-        'question': question,
-    })
-
-    # POST request when answering
-    if request.method == 'POST':
+    def post(self, *args, **kwargs):
+        self.get(*args, **kwargs)
         answer = request.form.get('answer')
         if answer:
-            context['answered'] = True
-            if question.multiple:
+            self.answered = True
+            if self.question.multiple:
                 try:
                     answer_alt = set(map(int, request.form.getlist('answer')))
                 except ValueError:
                     pass
-                correct_alt = {alt.id for alt in models.Alternative.query.filter_by(question=question, correct=True)}
-                context['success'] = correct_alt == answer_alt
+                correct_alt = {alt.id for alt in models.Alternative.query.filter_by(question=self.question, correct=True)}
+                self.success = correct_alt == answer_alt
             else:
                 bool_answer = answer.lower() == 'true'
-                context['success'] = question.correct == bool_answer
+                self.success = self.question.correct == bool_answer
             user = get_user()
             # Checking if question has already been answered
-            if not models.Stats.answered(user, question):
-                stat = models.Stats(user, question, context['success'])
+            if not models.Stats.answered(user, self.question):
+                stat = models.Stats(user, self.question, self.success)
                 models.db.session.add(stat)
                 models.db.session.commit()
-            elif context['success']:
+            elif self.success:
                 flash('Du har allerede svart på dette spørsmålet så du får ikke noe poeng. :-)', 'info')
         else:
             flash('Blankt svar', 'error')
@@ -183,10 +177,52 @@ def question(model, id, context):
         if ordering:
             # Resorting answers from specific values. Answer is a tuple with id and texts
             # Creating dictionary with id as key
-            dict_alt = {alt.id: alt for alt in question.alternatives}
-            question.alternatives = [dict_alt[int(x)] for x in ordering.split(',')]
-    else:
-        # Random order on questions
-        random.shuffle(question.alternatives)
-    context['stats'] = model.stats()
-    return render_template('quiz/question.html', **context)
+            dict_alt = {alt.id: alt for alt in self.question.alternatives}
+            self.question.alternatives = [dict_alt[int(x)] for x in ordering.split(',')]
+
+
+class CourseQuestion(Question):
+    def get(self, course_code, id, *args, **kwargs):
+        self.model = models.Course.query.filter_by(code=course_code).first_or_404()
+        return super().get(id, course_code, *args, **kwargs)
+
+    def context(self, *args, **kwargs):
+        context = super().context(*args, **kwargs)
+        reset_url = url_for('quiz.reset_stats_course', course=self.model.code)
+        random_question = utils.random_id(id=id, course=self.model.code)
+
+        context.update({
+            'exam_name': 'all',
+            'reset_url': reset_url,
+            'random': random_question
+        })
+        return context
+
+quiz.add_url_rule(
+    '/<string:course_code>/all/<int:id>',
+    view_func=CourseQuestion.as_view('question_course')
+)
+
+
+class ExamQuestion(Question):
+    def get(self, course_code, exam_name, id, *args, **kwargs):
+        course = models.Course.query.filter_by(code=course_code).first_or_404()
+        self.model = models.Exam.query.filter_by(course=course, name=exam_name).first_or_404()
+        return super().get(id, course_code, exam_name, *args, **kwargs)
+
+    def context(self, *args, **kwargs):
+        context = super().context(*args, **kwargs)
+        random_question = utils.random_id(id=id, course=self.model.course.code)
+        reset_url = url_for('quiz.reset_stats_exam', course=self.model.code, exam=self.model.name)
+
+        context.update({
+            'exam_name': self.model.name,
+            'reset_url': reset_url,
+            'random': random_question
+        })
+        return context
+
+quiz.add_url_rule(
+    '/<string:course_code>/<string:exam_name>/<int:id>',
+    view_func=ExamQuestion.as_view('question_exam')
+)
