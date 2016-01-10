@@ -79,6 +79,7 @@
 {{ navlink(random, 'random', 'Tilfeldig') }}
 {{ navlink(next, 'next', 'Neste') }}
 </div>
+<p><a href="{{ url_for('admin.question', question_id=question.id) }}">Funnet en feil? Rediger spørsmålet</a></p>
 </div>
 <div class="stats-container">
     <div class="stats">
