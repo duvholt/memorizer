@@ -30,7 +30,7 @@ Installation
 ```bash
 $ pip install -r requirements.txt # Install requirements
 $ ./main.py db upgrade # Create/upgrade database tables
-$ ./import questions/*.json # Import all questions (Warning: super slow if using SQLite)
+$ ./main.py import questions/*.json # Import all questions (Warning: super slow if using SQLite)
 $ ./main.py runserver # Run webserver
 ```
 
