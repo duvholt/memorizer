@@ -1,6 +1,6 @@
 {% macro version_history(versions) %}
-<a href="#" class="admin-button collapse" data-target="#show-transactions"><i class="fa fa-fw fa-history"></i> Vis historikk</a>
-<ul id="show-transactions" class="collapsed">
+<a href="#" class="admin-button collapse" data-target="#transactions"><i class="fa fa-fw fa-history"></i> Vis historikk</a>
+<ul id="transactions" class="collapsed">
     {% for version in versions|reverse %}
     <li>
         <a href="#" class="collapse" data-target="#version-{{ version.transaction_id }}">
@@ -9,15 +9,24 @@
             {% if version.transaction.user %} av {{ version.transaction.user }}{% endif %}
         </a>
         <div id="version-{{ version.transaction_id }}" class="collapsed">
-        {% for field, (before, after) in version.changeset.items() %}
-            <strong>{{ field }}</strong>
-            <dl>
-                <dt>Før</dt>
-                <dd>{{ before }}</dd>
-                <dt>Etter</dt>
-                <dd>{{ after }}</dd>
-            </dl>
-        {% endfor %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Felt</th>
+                    <th>Før</th>
+                    <th>Etter</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for field, (before, after) in version.changeset.items() %}
+                <tr>
+                    <td>{{ field }}</td>
+                    <td>{{ before|default("", true) }}</td>
+                    <td>{{ after }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
         </div>
     </li>
     {% endfor %}

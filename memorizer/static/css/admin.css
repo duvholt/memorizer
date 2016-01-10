@@ -94,3 +94,12 @@ ul.admin-bread {
 .admin-bread a:hover {
     color: #2D4B5F;
 }
+
+/* Transactions */
+#transactions table {
+    border-spacing: 0;
+}
+#transactions td, #transactions th {
+    padding: 5px;
+    border-bottom: 1px solid #B1B1B1;
+}
