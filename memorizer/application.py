@@ -7,15 +7,15 @@ from werkzeug.contrib.fixers import ProxyFix
 from views.admin import admin
 from views.api import api
 from views.quiz import quiz
-from memorizer.cache import cache
-from memorizer.utils import datetimeformat, grade, percentage
-from memorizer.user import get_user
-from memorizer.importer import ImportCommand
+from .cache import cache
+from .utils import datetimeformat, grade, percentage
+from .user import get_user
+from .importer import ImportCommand
 import logging
 
 
 def create_app(config_filename='config.py'):
-    from memorizer.database import db
+    from .database import db
     app = Flask(__name__)
     app.config.from_pyfile(config_filename)
     app.wsgi_app = ProxyFix(app.wsgi_app)
