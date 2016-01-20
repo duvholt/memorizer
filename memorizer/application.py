@@ -64,10 +64,10 @@ assets.register('admin_js', admin_js)
 assets.register('app_js', app_js)
 assets.register('css', css)
 
-ADMINS = ['memorizer@cxhristian.com']
+ADMINS = ['christian@duvholt.net']
 mail_handler = SMTPHandler(
     '127.0.0.1',
-    'server-error@cxhristian.com',
+    'server-error@memorizer.io',
     ADMINS, '[Flask] Memorizer ERROR'
 )
 mail_handler.setLevel(logging.ERROR)
