@@ -9,13 +9,14 @@ def user_setup():
         # Checking if user id actually exists
         user = models.User.query.get(session['user'])
         if user:
-            return
+            return user
     user = models.User()
     models.db.session.add(user)
     models.db.session.commit()
     session['user'] = user.id
     # Set session to permament
     session.permanent = True
+    return user
 
 
 def get_user():
@@ -23,9 +24,7 @@ def get_user():
         return None
     ctx = _request_ctx_stack.top
     if not hasattr(ctx, 'user'):
-        user_setup()
-        if session['user'] is not None:
-            ctx.user = models.User.query.get(session['user'])
+        ctx.user = user_setup()
     return getattr(ctx, 'user', None)
 
 
