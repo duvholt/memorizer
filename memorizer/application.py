@@ -30,8 +30,11 @@ def create_app(config_filename='config.py'):
     app.register_blueprint(api, url_prefix='/api')
 
     if app.debug:
-        from flask_debugtoolbar import DebugToolbarExtension
-        DebugToolbarExtension(app)
+        try:
+            from flask_debugtoolbar import DebugToolbarExtension
+            DebugToolbarExtension(app)
+        except ImportError:
+            pass
     else:
         app.logger.addHandler(mail_handler)
 
