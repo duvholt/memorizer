@@ -4,9 +4,9 @@ from flask.ext.script import Manager
 from flask.ext.migrate import Migrate, MigrateCommand
 from logging.handlers import SMTPHandler
 from werkzeug.contrib.fixers import ProxyFix
-from views.admin import admin
-from views.api import api
-from views.quiz import quiz
+from .views.admin import admin
+from .views.api import api
+from .views.quiz import quiz
 from .cache import cache
 from .utils import datetimeformat, grade, percentage
 from .user import get_user
