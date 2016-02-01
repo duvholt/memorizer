@@ -19,3 +19,6 @@ Flask-Cache==0.13.1
 
 # Password
 passlib==1.6.5
+
+# Testing
+Flask-Testing==0.4.2
