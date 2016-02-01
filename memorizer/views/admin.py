@@ -1,9 +1,10 @@
-from flask import Blueprint, flash, render_template, request
-from memorizer.forms import CourseForm, ExamForm, QuestionForm, AlternativeForm
-from memorizer import importer, models
-from memorizer.user import login_required
 import json
 
+from flask import Blueprint, flash, render_template, request
+
+from memorizer import importer, models
+from memorizer.forms import AlternativeForm, CourseForm, ExamForm, QuestionForm
+from memorizer.user import login_required
 
 admin = Blueprint('admin', __name__)
 

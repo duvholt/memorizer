@@ -1,8 +1,10 @@
-from flask import abort, Blueprint, flash, redirect, render_template, request, session, url_for
+import random
+
+from flask import Blueprint, abort, flash, redirect, render_template, request, session, url_for
+
 from memorizer import forms, models, utils
 from memorizer.user import get_user
 from memorizer.views import TemplateMethodView
-import random
 
 quiz = Blueprint('quiz', __name__)
 

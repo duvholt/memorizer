@@ -1,8 +1,10 @@
-from flask.ext.script import Command, Option
-from memorizer.database import db
-from memorizer import models
 import argparse
 import json
+
+from flask.ext.script import Command, Option
+
+from memorizer import models
+from memorizer.database import db
 
 
 class ValidationError(Exception):

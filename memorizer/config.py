@@ -1,6 +1,6 @@
-from os.path import abspath, dirname, join
-from os import pardir
 from datetime import timedelta
+from os import pardir
+from os.path import abspath, dirname, join
 
 PROJECT_PATH = abspath(join(dirname(__file__), pardir))
 

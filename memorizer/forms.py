@@ -1,7 +1,8 @@
-from memorizer import models
 from flask.ext.wtf import Form
-from wtforms_alchemy import model_form_factory
 from wtforms import fields, validators
+from wtforms_alchemy import model_form_factory
+
+from memorizer import models
 
 db = models.db
 BaseModelForm = model_form_factory(Form)

@@ -1,5 +1,7 @@
-from flask import _request_ctx_stack, redirect, session, url_for, request
 from functools import wraps
+
+from flask import _request_ctx_stack, redirect, request, session, url_for
+
 from memorizer import models
 
 

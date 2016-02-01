@@ -1,17 +1,19 @@
-from flask import Flask
-from flask.ext.assets import Environment, Bundle
-from flask.ext.script import Manager
-from flask.ext.migrate import Migrate, MigrateCommand
+import logging
 from logging.handlers import SMTPHandler
+
+from flask import Flask
+from flask.ext.assets import Bundle, Environment
+from flask.ext.migrate import Migrate, MigrateCommand
+from flask.ext.script import Manager
 from werkzeug.contrib.fixers import ProxyFix
+
+from .cache import cache
+from .importer import ImportCommand
+from .user import get_user
+from .utils import datetimeformat, grade, percentage
 from .views.admin import admin
 from .views.api import api
 from .views.quiz import quiz
-from .cache import cache
-from .utils import datetimeformat, grade, percentage
-from .user import get_user
-from .importer import ImportCommand
-import logging
 
 
 def create_app(config_filename='config.py'):
