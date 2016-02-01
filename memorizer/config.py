@@ -16,6 +16,6 @@ CACHE_TIME = 60 * 60 * 2  # 2 hours, pretty arbitrary
 CACHE_TYPE = 'simple'
 
 try:
-    from memorizer.localconfig import *
+    from memorizer.localconfig import *  # NOQA
 except ImportError:
     pass

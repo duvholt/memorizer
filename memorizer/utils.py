@@ -47,7 +47,11 @@ def random_id(id=None, course=None, exam=None):
     # All questions
     questions = query.all()
     # Already answered questions
-    answered = set(query.join(models.Stats).filter(models.Stats.reset.is_(False), models.Stats.user_id == get_user().id).all())
+    answered = set(
+        query.join(models.Stats)
+        .filter(models.Stats.reset.is_(False), models.Stats.user_id == get_user().id)
+        .all()
+    )
     # List of indexes for unanswered questions
     indexes = [i for i, question in enumerate(questions) if question not in answered]
     if indexes:
