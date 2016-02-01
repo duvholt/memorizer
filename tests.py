@@ -1,27 +1,39 @@
 import unittest
 from flask.ext.testing import TestCase
+from flask import Flask
 from memorizer.application import create_app
 from memorizer.database import db
 from memorizer import models
 
 
 class MemorizerTestCase(TestCase):
-    SQLALCHEMY_DATABASE_URI = "sqlite://"
     TESTING = True
 
     def create_app(self):
         return create_app()
 
+
+class DatabaseTestCase(MemorizerTestCase):
+    SQLALCHEMY_DATABASE_URI = "sqlite://"
+
     def setUp(self):
+        super().setUp()
         db.create_all()
 
     def tearDown(self):
+        super().tearDown()
         db.session.remove()
         db.drop_all()
 
 
-class SomeTest(MemorizerTestCase):
-    def test_something(self):
+class ApplicationTest(MemorizerTestCase):
+    def test_create_app(self):
+        app = create_app()
+        self.assertIsInstance(app, Flask)
+
+
+class TestUserModel(DatabaseTestCase):
+    def test_add(self):
 
         user = models.User()
         db.session.add(user)
@@ -30,10 +42,14 @@ class SomeTest(MemorizerTestCase):
         # this works
         assert user in db.session
 
-        response = self.client.get("/")
+        self.client.get("/")
 
         # this raises an AssertionError
         assert user in db.session
+
+
+class CacheTest(MemorizerTestCase):
+    pass
 
 
 if __name__ == '__main__':
