@@ -1,17 +1,7 @@
-#!/usr/bin/env python3
-import unittest
-from flask.ext.testing import TestCase
-from flask import Flask
-from memorizer.application import create_app
 from memorizer.database import db
 from memorizer import models
 
-
-class MemorizerTestCase(TestCase):
-    TESTING = True
-
-    def create_app(self):
-        return create_app()
+from tests import MemorizerTestCase
 
 
 class DatabaseTestCase(MemorizerTestCase):
@@ -25,12 +15,6 @@ class DatabaseTestCase(MemorizerTestCase):
         super().tearDown()
         db.session.remove()
         db.drop_all()
-
-
-class ApplicationTest(MemorizerTestCase):
-    def test_create_app(self):
-        app = create_app()
-        self.assertIsInstance(app, Flask)
 
 
 class ModelTestCase:
@@ -139,11 +123,3 @@ class TestStatsModel(ModelTestCase, DatabaseTestCase):
 
     def edit(self, stats):
         stats.correct = True
-
-
-class CacheTest(MemorizerTestCase):
-    pass
-
-
-if __name__ == '__main__':
-    unittest.main()
