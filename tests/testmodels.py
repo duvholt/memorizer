@@ -1,20 +1,7 @@
 from memorizer.database import db
 from memorizer import models
 
-from tests import MemorizerTestCase
-
-
-class DatabaseTestCase(MemorizerTestCase):
-    SQLALCHEMY_DATABASE_URI = "sqlite://"
-
-    def setUp(self):
-        super().setUp()
-        db.create_all()
-
-    def tearDown(self):
-        super().tearDown()
-        db.session.remove()
-        db.drop_all()
+from tests import DatabaseTestCase
 
 
 class ModelTestCase:
