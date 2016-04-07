@@ -16,6 +16,8 @@ class QuizTest(DatabaseTestCase):
         response = self.client.get('/')
         self.assert200(response)
 
+
+class QuizRegisterTest(DatabaseTestCase):
     @patch('memorizer.views.quiz.get_user', return_value=mock_user())
     def test_register_get(self, mock_get_user):
         response = self.client.get('/register/')
