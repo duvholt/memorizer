@@ -121,6 +121,8 @@ def _validate_multiple_answers(question):
         answers = [question['correct']]
     elif type(question['correct']) is list:
         answers = question['correct']
+    else:
+        raise ValidationError('Riktig svar må være integer eller en liste med integere')
     if len(answers) == 0:
         raise ValidationError('Det må være minst et riktig svar')
     for answer in question['answers']:
@@ -141,8 +143,6 @@ def validate_question(question):
         _validate_multiple_answers(question)
     elif 'answer' in question:
         # Boolean answer
-        if 'answer' not in question:
-            raise ValidationError('Svar mangler på Ja/Nei spørsmål')
         if type(question['answer']) is not bool:
             raise ValidationError('Svar må være "true" eller "false"')
     else:
