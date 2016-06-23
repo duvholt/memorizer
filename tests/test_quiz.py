@@ -4,18 +4,8 @@ import random
 
 from memorizer.database import db
 from memorizer.models import Course, Exam, Question, Stats, User
+from memorizer.utils import generate_stats
 from tests import DatabaseTestCase, MemorizerTestCase
-
-
-def mock_user(registered=False, save=False):
-        user = User()
-        user.registered = registered
-        user.name = "Name"
-        user.username = "name"
-        if save:
-            db.session.add(user)
-            db.session.commit()
-        return user
 
 
 def add_exam(course, name="T16"):
@@ -39,23 +29,23 @@ class QuizTest(DatabaseTestCase):
 
 
 class QuizRegisterTest(DatabaseTestCase):
-    @patch('memorizer.views.quiz.get_user', return_value=mock_user())
-    def test_register_get(self, mock_get_user):
+    def test_register_get(self):
+        self.mock_user()
         response = self.client.get('/register/')
         self.assert_200(response)
 
-    @patch('memorizer.views.quiz.get_user', return_value=mock_user(registered=True))
-    def test_register_registered(self, mock_get_user):
+    def test_register_registered(self):
+        self.mock_user(registered=True)
         response = self.client.get('/register/')
         self.assert_redirects(response, url_for('quiz.main'))
 
-    @patch('memorizer.views.quiz.get_user', return_value=mock_user())
-    def test_register_successful(self, mock_get_user):
+    def test_register_successful(self):
+        self.mock_user()
         response = self.client.post('/register/', data=self.register_user_data())
         self.assert_redirects(response, url_for('quiz.main'))
 
-    @patch('memorizer.views.quiz.get_user', return_value=mock_user())
-    def test_register_fail(self, mock_get_user):
+    def test_register_fail(self):
+        self.mock_user()
         response = self.client.post('/register/', data=self.register_user_data(username=""))
         self.assert_200(response)
 
@@ -69,18 +59,18 @@ class QuizRegisterTest(DatabaseTestCase):
 
 
 class QuizLoginTest(DatabaseTestCase):
-    @patch('memorizer.views.quiz.get_user', return_value=mock_user())
-    def test_login_get(self, mock_get_user):
+    def test_login_get(self):
+        self.mock_user()
         response = self.client.get('/login/')
         self.assert_200(response)
 
-    @patch('memorizer.views.quiz.get_user', return_value=mock_user(registered=True))
-    def test_login_already_logged_in(self, mock_get_user):
+    def test_login_already_logged_in(self):
+        self.mock_user(registered=True)
         response = self.client.get('/login/')
         self.assert_redirects(response, url_for('quiz.main'))
 
-    @patch('memorizer.views.quiz.get_user', return_value=mock_user())
-    def test_login_successful(self, mock_get_user):
+    def test_login_successful(self):
+        self.mock_user()
         username = 'Test1'
         password = 'password2'
         user = User()
@@ -93,8 +83,8 @@ class QuizLoginTest(DatabaseTestCase):
         response = self.client.post('/login/', data=self.login_user_data(username, password))
         self.assert_redirects(response, url_for('quiz.main'))
 
-    @patch('memorizer.views.quiz.get_user', return_value=mock_user())
-    def test_login_fail(self, mock_get_user):
+    def test_login_fail(self):
+        self.mock_user()
         username = 'username1'
         password = 'pass1'
         user = User()
@@ -137,7 +127,7 @@ class RenderViewTest(MemorizerTestCase):
 class ResetStatsTest(DatabaseTestCase):
     def setUp(self):
         super().setUp()
-        self.user = User()
+        self.user = self.mock_user(save=True)
         db.session.add(self.user)
         db.session.commit()
         # Add 5 courses with 3 exams each with stats
@@ -166,9 +156,8 @@ class ResetStatsTest(DatabaseTestCase):
         stats_count = Stats.query.filter(Stats.id.in_(stats_query)).count()
         self.assertTrue(stats_count > 0)
 
-        with patch('memorizer.views.quiz.get_user', return_value=self.user):
-            response = self.client.get('/reset/{course}/{exam}/'.format(course=course.code, exam=exam.name))
-            self.assert_redirects(response, url_for('quiz.exam', course=course.code, exam=exam.name))
+        response = self.client.get('/reset/{course}/{exam}/'.format(course=course.code, exam=exam.name))
+        self.assert_redirects(response, url_for('quiz.exam', course=course.code, exam=exam.name))
 
         stats_count_all_after = Stats.query.filter_by(reset=False).count()
         stats_count_after = Stats.query.filter(Stats.id.in_(stats_query)).count()
@@ -183,9 +172,8 @@ class ResetStatsTest(DatabaseTestCase):
         stats_count = Stats.query.filter(Stats.id.in_(stats_query)).count()
         self.assertTrue(stats_count > 0)
 
-        with patch('memorizer.views.quiz.get_user', return_value=self.user):
-            response = self.client.get('/reset/{course}/'.format(course=course.code))
-            self.assert_redirects(response, url_for('quiz.course', course=course.code))
+        response = self.client.get('/reset/{course}/'.format(course=course.code))
+        self.assert_redirects(response, url_for('quiz.course', course=course.code))
 
         stats_count_all_after = Stats.query.filter_by(reset=False).count()
         stats_count_after = Stats.query.filter(Stats.id.in_(stats_query)).count()
@@ -223,6 +211,7 @@ class RedirectTest(DatabaseTestCase):
 class QuestionTest(DatabaseTestCase):
     def setUp(self):
         super().setUp()
+        self.mock_user(save=True)
         course = add_course()
         exam = add_exam(course)
         # self.multiple = Question(exam_id=exam.id, type=Question.MULTIPLE, text="Test Question")
@@ -232,23 +221,21 @@ class QuestionTest(DatabaseTestCase):
 
     def test_view(self):
         question = self.boolean
-        user = mock_user(save=True)
-        with patch('memorizer.utils.get_user', return_value=user):
-            response = self.client.get(url_for('quiz.question_course', course_code=question.course.code, id=1))
+        response = self.client.get(url_for('quiz.question_course', course_code=question.course.code, id=1))
         self.assert200(response)
 
     def test_answer(self):
         question = self.boolean
+        stats_data = generate_stats(question.course.code, question.exam.name)
         url = url_for('quiz.question_course', course_code=question.course.code, id=1)
+
         response = self.post_answer(url)
+        stats_data_after = generate_stats(question.course.code, question.exam.name)
+
+        self.assertEqual(stats_data['total'] + 1, stats_data_after['total'])
         self.assert200(response)
 
-    @patch('memorizer.utils.get_user')
-    @patch('memorizer.views.quiz.get_user')
-    def post_answer(self, url, user_mock, user_mock2):
-        user = mock_user(save=True)
-        user_mock.return_value = user
-        user_mock2.return_value = user
+    def post_answer(self, url):
         answer = 'true'
         response = self.client.post(url, data={'answer': answer})
         return response
