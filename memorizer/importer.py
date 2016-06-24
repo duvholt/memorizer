@@ -1,8 +1,10 @@
-#!/usr/bin/env python3
-from memorizer.application import app, db
-from memorizer import models
 import argparse
 import json
+
+from flask.ext.script import Command, Option
+
+from memorizer import models
+from memorizer.database import db
 
 
 class ValidationError(Exception):
@@ -94,6 +96,41 @@ def validate_questions(exam_json):
             raise ValidationError('{}: {}'.format(e, question.get('question')))
 
 
+def _validate_alternative(answer):
+    if type(answer) is not str:
+        raise ValidationError('Alle alternativer med være tekst')
+    if len(answer) == 0:
+        raise ValidationError('Alternativ kan ikke være tomt')
+
+
+def _validate_correct_answers(answer, length):
+    if type(answer) is not int:
+        raise ValidationError('Riktige svar må være integer eller liste med integere')
+    if not (0 <= answer < length):
+        raise ValidationError('Et av de riktige svarene stemmer ikke overens med noen alternativer')
+
+
+def _validate_multiple_answers(question):
+    if type(question['answers']) is not list:
+        raise ValidationError('Alternativer må være en liste')
+    if len(question['answers']) < 2:
+        raise ValidationError('Det må være minst to alternativer')
+    if 'correct' not in question:
+        raise ValidationError('Spørsmål mangler riktig(e) svar')
+    if type(question['correct']) is int:
+        answers = [question['correct']]
+    elif type(question['correct']) is list:
+        answers = question['correct']
+    else:
+        raise ValidationError('Riktig svar må være integer eller en liste med integere')
+    if len(answers) == 0:
+        raise ValidationError('Det må være minst et riktig svar')
+    for answer in question['answers']:
+        _validate_alternative(answer)
+    for answer in answers:
+        _validate_correct_answers(answer, len(question['answers']))
+
+
 def validate_question(question):
     if 'question' not in question:
             raise ValidationError('Spørsmålstekst mangler')
@@ -103,46 +140,25 @@ def validate_question(question):
         raise ValidationError('Spørsmål kan ikke være tomt')
     if 'answers' in question:
         # Multiple answers
-        if type(question['answers']) is not list:
-            raise ValidationError('Alternativer må være en liste')
-        if len(question['answers']) < 2:
-            raise ValidationError('Det må være minst to alternativer')
-        if 'correct' not in question:
-            raise ValidationError('Spørsmål mangler riktig(e) svar')
-        if type(question['correct']) is int:
-            answers = [question['correct']]
-        elif type(question['correct']) is list:
-            answers = question['correct']
-        if len(answers) == 0:
-            raise ValidationError('Det må være minst et riktig svar')
-        for answer in question['answers']:
-            if type(answer) is not str:
-                raise ValidationError('Alle alternativer med være tekst')
-            if len(answer) == 0:
-                raise ValidationError('Alternativ kan ikke være tomt')
-        for answer in answers:
-            if type(answer) is not int:
-                raise ValidationError('Riktige svar må være integer eller liste med integere')
-            if not (0 <= answer < len(question['answers'])):
-                raise ValidationError('Et av de riktige svarene stemmer ikke overens med noen alternativer')
+        _validate_multiple_answers(question)
     elif 'answer' in question:
         # Boolean answer
-        if 'answer' not in question:
-            raise ValidationError('Svar mangler på Ja/Nei spørsmål')
         if type(question['answer']) is not bool:
             raise ValidationError('Svar må være "true" eller "false"')
     else:
         raise ValidationError('Svar mangler')
 
 
-parser = argparse.ArgumentParser(description='Import questions in JSON format')
-parser.add_argument('filenames', nargs='+', type=argparse.FileType('r'), help='JSON question files')
-args = parser.parse_args()
+class ImportCommand(Command):
+    'Import questions in JSON format'
 
-if __name__ == '__main__':
-    print("Importing questions...")
-    with app.app_context():
-        for filename in args.filenames:
+    option_list = (
+        Option('filenames', nargs='+', type=argparse.FileType('r'), help='JSON question files'),
+    )
+
+    def run(self, filenames):
+        print("Importing questions...")
+        for filename in filenames:
             exam_json = json.load(filename)
             print('Importing questions from', exam_json['name'], exam_json['code'], 'exam', exam_json['exam'])
             import_exam(exam_json)

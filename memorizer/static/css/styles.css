@@ -11,7 +11,7 @@ body {
     background-color: #EFEFEF;
     font-size: 1.6rem;
     font-weight: 300;
-    font-family: Helvetica, Sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -20,7 +20,7 @@ a {
 }
 
 h1, h2, h3, h4 {
-    font-family: Roboto, Helvetica;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
     color: #353535;
 }
 
@@ -40,7 +40,7 @@ nav {
     border-width: 0 0.1rem 0 0;
     border-color: #202020;
     background-color: #203949;
-    font-family: Roboto, Helvetica;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 
 nav ul {
@@ -95,7 +95,7 @@ nav.top .logo {
 }
 
 nav.top .logo a {
-    font-family: "Alegreya SC";
+    font-family: "Alegreya SC", Cambria, serif;
     font-weight: bold;
     color: #DFDFDF;
 }
@@ -403,11 +403,11 @@ button[type=submit]:hover, button[type=submit]:focus, button[type=submit]:active
     border: 0.1rem solid #B3B3B3;
     margin: 2.5rem 0 0 0;
     color: #2A2A2A;
-    font-family: Roboto;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 
 .stats .grade {
-    font-family: Helvetica;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 3.0rem;
     text-align: center;
     font-weight: bold;

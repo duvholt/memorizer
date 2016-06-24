@@ -18,31 +18,24 @@ Sidebar.prototype.isClosed = function() {
 Sidebar.prototype.close = function() {
     this.icon.className = this.icon.className.replace(this.openIcon, this.closedIcon);
     this.nav.className += this.closedClass;
+
+    document.removeEventListener('click', this.clickEvent);
 };
 
 Sidebar.prototype.open = function() {
     this.nav.className = this.nav.className.replace(this.closedClass, '');
     this.icon.className = this.icon.className.replace(this.closedIcon, this.openIcon);
 
-    // Checking for clicks outside of menu
-    var opened = false;
-    var click = function(e) {
-        // TODO: This is kinda messy, consider rewriting
-        if(this.menu == e.target || this.menu == e.target.parentNode) {
-            if(opened) {
-                document.removeEventListener('click', click);
-            }
-            else {
-                opened = true;
-            }
+    this.clickEvent = function(e) {
+        if(this.menu == e.target) {
+            e.stopPropagation();
         }
-        else if(this.nav != e.target) {
-            document.removeEventListener('click', click);
+        else if(document.documentElement == e.target) {
             this.close();
         }
     }.bind(this);
 
-    document.addEventListener('click', click);
+    document.addEventListener('click', this.clickEvent);
 };
 
 Sidebar.prototype.toggle = function(e) {

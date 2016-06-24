@@ -1,9 +1,11 @@
+import json
+
 from flask import Blueprint, Response, request
 from flask.views import MethodView
+
+from memorizer import forms, models, utils
 from memorizer.cache import cache
 from memorizer.config import CACHE_TIME
-from memorizer import forms, models, utils
-import json
 from memorizer.user import get_user
 
 api = Blueprint('api', __name__)

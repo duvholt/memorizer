@@ -1,29 +1,59 @@
-from flask import Flask
-from flask.ext.assets import Environment, Bundle
-from flask.ext.script import Manager
-from flask.ext.migrate import Migrate, MigrateCommand
-from logging.handlers import SMTPHandler
-from memorizer.models import db
-from werkzeug.contrib.fixers import ProxyFix
-from views.admin import admin
-from views.api import api
-from views.quiz import quiz
-from memorizer.cache import cache
-from memorizer.utils import grade, percentage
-from memorizer.user import get_user
 import logging
+from logging.handlers import SMTPHandler
 
-app = Flask(__name__)
-app.config.from_pyfile('config.py')
-app.wsgi_app = ProxyFix(app.wsgi_app)
-db.init_app(app)
-cache.init_app(app)
+from flask import Flask
+from flask.ext.assets import Bundle, Environment
+from flask.ext.migrate import Migrate, MigrateCommand
+from flask.ext.script import Manager
+from werkzeug.contrib.fixers import ProxyFix
 
-migrate = Migrate(app, db)
-manager = Manager(app)
+from .cache import cache
+from .importer import ImportCommand
+from .user import get_user
+from .utils import datetimeformat, grade, percentage
+from .views.admin import admin
+from .views.api import api
+from .views.quiz import quiz
+
+
+def create_app(config_filename='config.py'):
+    from .database import db
+    app = Flask(__name__)
+    app.config.from_pyfile(config_filename)
+    app.wsgi_app = ProxyFix(app.wsgi_app)
+    db.init_app(app)
+    cache.init_app(app)
+    migrate.init_app(app, db)
+    manager(app)
+    assets.init_app(app)
+
+    app.register_blueprint(quiz)
+    app.register_blueprint(admin, url_prefix='/admin')
+    app.register_blueprint(api, url_prefix='/api')
+
+    if app.debug:
+        try:
+            from flask_debugtoolbar import DebugToolbarExtension
+            DebugToolbarExtension(app)
+        except ImportError:
+            pass
+    else:
+        app.logger.addHandler(mail_handler)
+
+    @app.context_processor
+    def utility_processor():
+        return dict(percentage=percentage, grade=grade, user=get_user())
+
+    app.jinja_env.filters['datetimeformat'] = datetimeformat
+    return app
+
+
+migrate = Migrate()
+manager = Manager(create_app)
 manager.add_command('db', MigrateCommand)
+manager.add_command('import', ImportCommand)
 
-assets = Environment(app)
+assets = Environment()
 js = Bundle(
     'js/ajax.js', 'js/collapse.js', 'js/alert.js', 'js/api.js', 'js/sidebar.js',
     'js/filter.js', filters='jsmin', output='js/min.%(version)s.js'
@@ -39,19 +69,10 @@ assets.register('admin_js', admin_js)
 assets.register('app_js', app_js)
 assets.register('css', css)
 
-ADMINS = ['memorizer@cxhristian.com']
-if not app.debug:
-    mail_handler = SMTPHandler('127.0.0.1',
-                               'server-error@cxhristian.com',
-                               ADMINS, '[Flask] Memorizer ERROR')
-    mail_handler.setLevel(logging.ERROR)
-    app.logger.addHandler(mail_handler)
-
-app.register_blueprint(quiz)
-app.register_blueprint(admin, url_prefix='/admin')
-app.register_blueprint(api, url_prefix='/api')
-
-
-@app.context_processor
-def utility_processor():
-    return dict(percentage=percentage, grade=grade, user=get_user())
+ADMINS = ['christian@duvholt.net']
+mail_handler = SMTPHandler(
+    '127.0.0.1',
+    'server-error@memorizer.io',
+    ADMINS, '[Flask] Memorizer ERROR'
+)
+mail_handler.setLevel(logging.ERROR)

@@ -2,7 +2,7 @@
 {% block title %}#{{ id }} - {{ question.course.code }} {{ question.exam.name }}{% endblock %}
 
 {% macro navlink(id, name, text) %}
-    <a href="{{ url_for('quiz.show_question', course=question.course.code, exam=exam_name, id=id) }}" id="{{ name }}">{{ text }}</a>
+    <a href="{{ url_for('quiz.question_exam', course_code=question.course.code, exam_name=exam_name, id=id) }}" id="{{ name }}">{{ text }}</a>
 {% endmacro %}
 
 {% block menu %}
@@ -44,7 +44,7 @@
         <div class="checkbox {% if (alternative.id)|string() in request.form.getlist('answer') %}{{ 'success' if alternative.correct else 'error' }}{% endif %}">
             <label>
                 <input type="checkbox" name="answer" value="{{ alternative.id }}">
-                {% if success is defined %}
+                {% if success is not none %}
                     <i class="fa {{ 'fa-check' if alternative.correct else 'fa-times' }} fa-fw"></i>
                 {% endif %}
                 {{ alternative }}
@@ -56,7 +56,7 @@
         <div class="radio {% if val == request.form.answer %}{{ 'success' if success else 'error' }}{% endif %}">
             <label>
                 <input type="radio" name="answer" value="{{ val }}">
-                {% if success is defined %}
+                {% if success is not none %}
                     <i class="fa {{ 'fa-check' if  question.correct == bool_val else 'fa-times' }} fa-fw"></i>
                 {% endif %}
                 {{ label }}
@@ -79,6 +79,7 @@
 {{ navlink(random, 'random', 'Tilfeldig') }}
 {{ navlink(next, 'next', 'Neste') }}
 </div>
+<p><a href="{{ url_for('admin.question', question_id=question.id) }}">Funnet en feil? Rediger spørsmålet</a></p>
 </div>
 <div class="stats-container">
     <div class="stats">

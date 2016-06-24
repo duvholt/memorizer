@@ -3,19 +3,23 @@ Flask==0.10.1
 # SQL and Forms
 Flask-SQLAlchemy==2.1
 Flask-WTF==0.12
-WTForms-Alchemy==0.13.3
-SQLAlchemy-Continuum==1.2.1
-SQLAlchemy-Utils==0.31.3
+WTForms-Alchemy==0.15.0
+SQLAlchemy-Continuum==1.2.4
+SQLAlchemy-Utils==0.31.6
+
 # Migrations
-Flask-Migrate==1.6.0 
+Flask-Migrate==1.7.0
 
 # Assets
 Flask-Assets==0.11
 cssmin==0.2.0
-jsmin==2.1.6
+jsmin==2.2.0
 
 # Cache
 Flask-Cache==0.13.1
 
 # Password
 passlib==1.6.5
+
+# Testing
+Flask-Testing==0.4.2

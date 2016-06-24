@@ -1,5 +1,7 @@
-from flask import _request_ctx_stack, redirect, session, url_for
 from functools import wraps
+
+from flask import g, redirect, request, session, url_for
+
 from memorizer import models
 
 
@@ -9,21 +11,26 @@ def user_setup():
         # Checking if user id actually exists
         user = models.User.query.get(session['user'])
         if user:
-            return
+            return user
     user = models.User()
     models.db.session.add(user)
     models.db.session.commit()
     session['user'] = user.id
     # Set session to permament
     session.permanent = True
+    return user
 
 
 def get_user():
-    ctx = _request_ctx_stack.top
-    if not hasattr(ctx, 'user'):
-        user_setup()
-        ctx.user = models.User.query.get(session['user'])
-    return ctx.user
+    user = getattr(g, 'user', None)
+    if not user and not request.remote_addr:
+        # TODO: None is returned here for SQLAlchemy-Continuum
+        # when running cli commands
+        return None
+    if user is None:
+        user = user_setup()
+        g.user = user
+    return user
 
 
 # Decorators

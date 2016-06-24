@@ -1,4 +1,5 @@
 {% from "admin/_formhelpers.html" import render_form %}
+{% from "admin/_history.html" import version_history %}
 {% extends "admin/admin.html" %}
 
 {% block content %}
@@ -15,11 +16,13 @@
     {% if prev_question %}
     <a href="{{ url_for('admin.question', question_id=prev_question.id) }}">Forrige spørsmål</a>
     {% endif %}
-    <a href="{{ url_for('quiz.show_question', course=question.course.code, exam=question.exam.name, id=question.index) }}">Gå til spørsmål</a>
+    <a href="{{ url_for('quiz.question_exam', course_code=question.course.code, exam_name=question.exam.name, id=question.index) }}">Gå til spørsmål</a>
     {% if next_question %}
     <a href="{{ url_for('admin.question', question_id=next_question.id) }}">Neste spørsmål</a>
     {% endif %}
 </div>
+
+{{ version_history(question.versions) }}
 
 <div id="question-form">
 {{ render_form(form, '/api/questions/' + question.id|string, new=False) }}
@@ -31,7 +34,7 @@
 {{ render_form(alt_form, '/api/alternatives/') }}
 
 <h2>Alternativer</h2>
-<ul class="admin-list" data-api="/api/alternatives/" data-filter="?question_id={{ question.id }}" data-url="/admin/question/{{ question.id }}/"></ul>
+<ul class="admin-list" data-api="/api/alternatives/" data-filter="?question_id={{ question.id }}" data-url="/admin/question/{{ question.id }}/" data-str="text"></ul>
 {% endif %}
 {% endblock %}
 

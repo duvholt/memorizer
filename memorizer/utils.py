@@ -1,8 +1,10 @@
-from flask import _request_ctx_stack
-from memorizer import models
-from memorizer.user import get_user
 import random
 import re
+
+from flask import _request_ctx_stack
+
+from memorizer import models
+from memorizer.user import get_user
 
 
 def generate_stats(course_code, exam_name=None):
@@ -47,7 +49,11 @@ def random_id(id=None, course=None, exam=None):
     # All questions
     questions = query.all()
     # Already answered questions
-    answered = set(query.join(models.Stats).filter(models.Stats.reset.is_(False), models.Stats.user_id == get_user().id).all())
+    answered = set(
+        query.join(models.Stats)
+        .filter(models.Stats.reset.is_(False), models.Stats.user_id == get_user().id)
+        .all()
+    )
     # List of indexes for unanswered questions
     indexes = [i for i, question in enumerate(questions) if question not in answered]
     if indexes:
@@ -96,4 +102,8 @@ def fetch_current_user_id():
     # Return None if we are outside of request context.
     if _request_ctx_stack.top is None:
         return
-    return get_user().id
+    return getattr(get_user(), 'id', None)
+
+
+def datetimeformat(value, format='%Y-%m-%d %H:%M'):
+    return value.strftime(format)

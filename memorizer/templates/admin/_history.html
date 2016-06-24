@@ -1,0 +1,34 @@
+{% macro version_history(versions) %}
+<a href="#" class="admin-button collapse" data-target="#transactions"><i class="fa fa-fw fa-history"></i> Vis historikk</a>
+<ul id="transactions" class="collapsed">
+    {% for version in versions|reverse %}
+    <li>
+        <a href="#" class="collapse" data-target="#version-{{ version.transaction_id }}">
+            {{ version.transaction.issued_at|datetimeformat }}
+            #{{ loop.revindex }}
+            {% if version.transaction.user %} av {{ version.transaction.user }}{% endif %}
+        </a>
+        <div id="version-{{ version.transaction_id }}" class="collapsed">
+        <table>
+            <thead>
+                <tr>
+                    <th>Felt</th>
+                    <th>Før</th>
+                    <th>Etter</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for field, (before, after) in version.changeset.items() %}
+                <tr>
+                    <td>{{ field }}</td>
+                    <td>{{ before|default("", true) }}</td>
+                    <td>{{ after }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+{% endmacro %}

@@ -1,24 +1,19 @@
-from memorizer import models
 from flask.ext.wtf import Form
-from wtforms_alchemy import model_form_factory
 from wtforms import fields, validators
+from wtforms_alchemy import model_form_factory
+
+from memorizer import models
 
 db = models.db
 BaseModelForm = model_form_factory(Form)
 
 
-class ModelForm(BaseModelForm):
-    @classmethod
-    def get_session(self):
-        return db.session
-
-
-class CourseForm(ModelForm):
+class CourseForm(BaseModelForm):
     class Meta:
         model = models.Course
 
 
-class ExamForm(ModelForm):
+class ExamForm(BaseModelForm):
     class Meta:
         model = models.Exam
 
@@ -26,7 +21,7 @@ class ExamForm(ModelForm):
     course_id = fields.HiddenField()
 
 
-class QuestionForm(ModelForm):
+class QuestionForm(BaseModelForm):
     class Meta:
         model = models.Question
 
@@ -34,7 +29,7 @@ class QuestionForm(ModelForm):
     exam_id = fields.HiddenField()
 
 
-class AlternativeForm(ModelForm):
+class AlternativeForm(BaseModelForm):
     class Meta:
         model = models.Alternative
 

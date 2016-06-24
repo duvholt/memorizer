@@ -1,15 +1,16 @@
 from flask import url_for
-from flask.ext.sqlalchemy import SQLAlchemy
 from sqlalchemy import orm
+from sqlalchemy.ext.associationproxy import association_proxy
 from sqlalchemy_continuum import make_versioned
 from sqlalchemy_continuum.plugins import FlaskPlugin
-from sqlalchemy.ext.associationproxy import association_proxy
+from sqlalchemy_utils import force_auto_coercion
 from sqlalchemy_utils.types.choice import ChoiceType
 from sqlalchemy_utils.types.password import PasswordType
-from sqlalchemy_utils import force_auto_coercion
-from .utils import fetch_current_user_id
+from werkzeug.utils import cached_property
 
-db = SQLAlchemy()
+from .database import db
+from .utils import fetch_current_user_id, generate_stats
+
 force_auto_coercion()
 make_versioned(plugins=[FlaskPlugin(current_user_id_factory=fetch_current_user_id)])
 
@@ -27,6 +28,16 @@ class Course(db.Model):
     def __init__(self, code=None, name=None):
         self.code = code
         self.name = name
+
+    @cached_property
+    def question_count(self):
+        return Question.query.filter_by(course=self).count()
+
+    def question(self, id):
+        return Question.query.filter_by(course=self).offset(id - 1).limit(1)
+
+    def stats(self):
+        return generate_stats(course_code=self.code)
 
     def __repr__(self):
         return self.code + ' ' + self.name
@@ -57,6 +68,16 @@ class Exam(db.Model):
         self.name = name
         self.course_id = course_id
 
+    @cached_property
+    def question_count(self):
+        return Question.query.filter_by(exam=self).count()
+
+    def question(self, id):
+        return Question.query.filter_by(exam=self).offset(id - 1).limit(1)
+
+    def stats(self):
+        return generate_stats(course_code=self.course.code, exam_name=self.name)
+
     def __repr__(self):
         return self.name
 
@@ -64,8 +85,7 @@ class Exam(db.Model):
         return {
             'id': self.id,
             'name': self.name,
-            'course_id': self.course_id,
-            'str': str(self)
+            'course_id': self.course_id
         }
 
     @property
@@ -130,11 +150,14 @@ class Question(db.Model):
             'text': self.text,
             'exam_id': self.exam_id,
             'multiple': self.multiple,
-            'type': self.type.code,
-            'str': str(self)
+            'type': self.type.code
         }
         if self.multiple:
-            response['alternatives'] = [alt.serialize() for alt in self.alternatives]
+            response['alternatives'] = []
+            for alt in self.alternatives:
+                alt_dict = alt.serialize()
+                del alt_dict['question_id']
+                response['alternatives'].append(alt_dict)
         else:
             response['correct'] = self.correct
         if self.image:
@@ -166,8 +189,7 @@ class Alternative(db.Model):
             'id': self.id,
             'text': self.text,
             'correct': self.correct,
-            'question_id': self.question_id,
-            'str': str(self)
+            'question_id': self.question_id
         }
 
 
@@ -185,6 +207,9 @@ class User(db.Model):
     def __init__(self):
         self.registered = False
         self.admin = False
+
+    def __repr__(self):
+        return self.username
 
 
 class Stats(db.Model):
