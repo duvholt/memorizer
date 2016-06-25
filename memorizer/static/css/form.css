@@ -11,6 +11,14 @@
     margin: 1.0rem 0 0 0;
     font-size: 1.3rem;
     cursor: pointer;
+    border-radius: 0.3rem;
+    background: #FFF;
+    border: .1rem solid #CDC6C6
+}
+
+.form button:hover, .form input[type="submit"]:hover {
+    background: #EAEAEA;
+    border-color: #989898;
 }
 
 .form .field label {
