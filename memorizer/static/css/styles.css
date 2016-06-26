@@ -228,6 +228,7 @@ nav.sidebar ul ul li:last-child > a {
     color: #D8D8D8;
     font-size: 2.3rem;
     font-weight: bold;
+    height: 100%;
 }
 
 .courses li.selected {
