@@ -1,7 +1,7 @@
 import argparse
 import json
 
-from flask.ext.script import Command, Option
+from flask_script import Command, Option
 
 from memorizer import models
 from memorizer.database import db
