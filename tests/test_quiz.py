@@ -39,22 +39,46 @@ class QuizRegisterTest(DatabaseTestCase):
         response = self.client.get('/register/')
         self.assert_redirects(response, url_for('quiz.main'))
 
-    def test_register_successful(self):
-        self.mock_user()
+    def test_register_registered_post(self):
+        self.mock_user(registered=True)
         response = self.client.post('/register/', data=self.register_user_data())
         self.assert_redirects(response, url_for('quiz.main'))
 
-    def test_register_fail(self):
-        self.mock_user()
+    def test_register_successful(self):
+        user = self.mock_user()
+
+        response = self.client.post('/register/', data=self.register_user_data())
+        db_user = User.query.get(user.id)
+
+        self.assertIsNotNone(user.id)
+        self.assertTrue(user.registered)
+        self.assertTrue(db_user.registered)
+        self.assert_redirects(response, url_for('quiz.main'))
+
+    def test_register_empty_username(self):
+        user = self.mock_user()
+
         response = self.client.post('/register/', data=self.register_user_data(username=""))
+
+        self.assertIsNone(user.id)
         self.assert_200(response)
 
-    def register_user_data(self, name='Test User', username='Test', password='password1'):
+    def test_register_unmatching_passwords(self):
+        user = self.mock_user()
+
+        self.client.post(
+            '/register/',
+            data=self.register_user_data(password="password1", confirm="password2")
+        )
+
+        self.assertIsNone(user.id)
+
+    def register_user_data(self, name='Test User', username='Test', password='password1', confirm=None):
         return {
             'name': name,
             'username': username,
             'password': password,
-            'confirm': password
+            'confirm': confirm if confirm is not None else password
         }
 
 
