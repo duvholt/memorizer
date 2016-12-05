@@ -4,7 +4,7 @@
 {% block content %}
 <h1>Logg inn</h1>
 
-{{ render_form(form) }}
+{{ render_form(form, submit_text="Logg inn") }}
 
 <a class="admin-register" href="{{ url_for('quiz.register') }}">Eller registrer deg</a>
 {% endblock %}

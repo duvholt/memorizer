@@ -234,7 +234,7 @@ Questions.prototype.popstate = function(e) {
 };
 
 Questions.prototype.shortcuts = function(e) {
-    if(e.altKey || e.ctrlKey || e.shiftKey) {
+    if(e.altKey || e.ctrlKey || e.shiftKey || e.metaKey) {
         // Ignore any events with modifiers to prevent overlapping with browser shortcuts
         return;
     }

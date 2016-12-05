@@ -89,14 +89,15 @@ CoursesFilter.prototype.select = function() {
 };
 
 CoursesFilter.prototype.shortcuts = function(e) {
-    if(e.altKey || e.ctrlKey || e.shiftKey) {
+    if(e.altKey || e.ctrlKey || e.shiftKey || e.metaKey) {
         // Ignore any events with modifiers to prevent overlapping with browser shortcuts
         return;
     }
     if(this.selected !== null) {
         var computedStyle = window.getComputedStyle(this.filterList[0].element);
         // width + border + margin
-        var elementWidth = this.filterList[0].element.clientWidth + parseInt(computedStyle.borderRightWidth, 10) + parseInt(computedStyle.borderLeftWidth, 10) + 
+        var elementWidth = this.filterList[0].element.clientWidth +
+        parseInt(computedStyle.borderRightWidth, 10) + parseInt(computedStyle.borderLeftWidth, 10) +
         parseInt(computedStyle.marginRight, 10) + parseInt(computedStyle.marginLeft, 10);
         var maxCols = Math.floor(this.container.clientWidth / elementWidth);
         var maxRows = Math.ceil(this.filterList.length / maxCols);

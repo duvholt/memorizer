@@ -27,10 +27,16 @@ Sidebar.prototype.open = function() {
     this.icon.className = this.icon.className.replace(this.closedIcon, this.openIcon);
 
     this.clickEvent = function(e) {
-        if(this.menu == e.target) {
-            e.stopPropagation();
+        var clickedOutsideSidebar = true;
+        // Traversing event path
+        for(var i = 0; i < e.path.length; i++) {
+            var target = e.path[i];
+            if(target == this.menu || target == this.nav) {
+              clickedOutsideSidebar = false;
+              break;
+            }
         }
-        else if(document.documentElement == e.target) {
+        if(clickedOutsideSidebar) {
             this.close();
         }
     }.bind(this);

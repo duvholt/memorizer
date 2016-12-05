@@ -217,9 +217,7 @@ nav.sidebar ul ul li:last-child > a {
     padding: 0;
     margin: 0 0.5rem 0.5rem 0;
     text-align: center;
-    width: 25%;
-    min-width: 12.5rem;
-    max-width: 20.0rem;
+    width: 100%;
     border: 0.3rem solid #CFCFCF;
 }
 
@@ -230,6 +228,7 @@ nav.sidebar ul ul li:last-child > a {
     color: #D8D8D8;
     font-size: 2.3rem;
     font-weight: bold;
+    height: 100%;
 }
 
 .courses li.selected {
@@ -495,20 +494,6 @@ blaze {
     width: 100%;
 }
 
-@media (min-width: 800px) {
-    .question-container {
-        width: 70%;
-    }
-
-    .stats-container {
-        width: 30%;
-    }
-
-    .stats {
-        float: right;
-    }
-}
-
 
 @media (max-width: 550px) {
     nav.top .user {
@@ -522,4 +507,35 @@ blaze {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
     }
+}
+
+
+@media (min-width: 330px) {
+  .courses li {
+    width: 48%;
+  }
+}
+
+@media (min-width: 550px) {
+  .courses li {
+    width: 32%;
+  }
+}
+
+@media (min-width: 800px) {
+  .courses li {
+    width: 24%;
+  }
+
+  .question-container {
+      width: 70%;
+  }
+
+  .stats-container {
+      width: 30%;
+  }
+
+  .stats {
+      float: right;
+  }
 }

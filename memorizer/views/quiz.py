@@ -15,27 +15,42 @@ def main():
     return render_template('quiz/courses.html', **context)
 
 
-@quiz.route('/register/', methods=['GET', 'POST'])
-def register():
-    user = get_user()
-    if user.registered:
-        flash('Du er allerede logget inn', 'error')
-        return redirect(url_for('quiz.main'))
-    if request.method == 'POST':
+class Register(TemplateMethodView):
+    template = 'quiz/register.html'
+    methods = ['GET', 'POST']
+
+    def context(self, *args, **kwargs):
+        context = super().context(*args, **kwargs)
+        context['form'] = self.form
+        return context
+
+    def get(self):
+        user = get_user()
+        if user.registered:
+            flash('Du er allerede logget inn', 'error')
+            return redirect(url_for('quiz.main'))
+        self.form = forms.RegisterForm()
+
+    def post(self):
+        response = self.get()
+        if response:
+            return response
         form = forms.RegisterForm(request.form)
         if form.validate():
-            user.name = form.name.data
-            user.username = form.username.data
-            user.password = form.password.data
-            user.registered = True
-            models.db.session.add(user)
-            models.db.session.commit()
+            self.save_user(form)
             flash('Registrering fullført', 'success')
             return redirect(url_for('quiz.main'))
-    else:
-        form = forms.RegisterForm()
-    context = dict(form=form)
-    return render_template('quiz/register.html', **context)
+        self.form = form
+
+    def save_user(self, form):
+        user = get_user()
+        user.name = form.name.data
+        user.username = form.username.data
+        user.password = form.password.data
+        user.registered = True
+        models.db.session.add(user)
+        models.db.session.commit()
+quiz.add_url_rule('/register/', view_func=Register.as_view('register'))
 
 
 @quiz.route('/login/', methods=['GET', 'POST'])

@@ -4,9 +4,7 @@ from flask.views import MethodView
 
 class ContextMixin:
     def context(self, **kwargs):
-        context = {}
-        context.update(kwargs)
-        return context
+        return kwargs
 
 
 class TemplateMixin:
@@ -23,5 +21,7 @@ class TemplateView(TemplateMixin, ContextMixin):
 
 class TemplateMethodView(TemplateMixin, ContextMixin, MethodView):
     def dispatch_request(self, *args, **kwargs):
-        super().dispatch_request(*args, **kwargs)
+        response = super().dispatch_request(*args, **kwargs)
+        if response:
+            return response
         return render_template(self.get_template(), **self.context(**kwargs))

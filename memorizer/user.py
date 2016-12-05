@@ -1,6 +1,6 @@
 from functools import wraps
 
-from flask import _request_ctx_stack, redirect, request, session, url_for
+from flask import g, redirect, request, session, url_for
 
 from memorizer import models
 
@@ -22,12 +22,15 @@ def user_setup():
 
 
 def get_user():
-    if not request.remote_addr:
+    user = getattr(g, 'user', None)
+    if not user and not request.remote_addr:
+        # TODO: None is returned here for SQLAlchemy-Continuum
+        # when running cli commands
         return None
-    ctx = _request_ctx_stack.top
-    if not hasattr(ctx, 'user'):
-        ctx.user = user_setup()
-    return getattr(ctx, 'user', None)
+    if user is None:
+        user = user_setup()
+        g.user = user
+    return user
 
 
 # Decorators

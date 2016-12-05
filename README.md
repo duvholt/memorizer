@@ -1,10 +1,18 @@
 Memorizer
 =========
 
+[![Build status](https://ci.frigg.io/duvholt/memorizer.svg)](https://ci.frigg.io/duvholt/memorizer/last/)
+[![Coverage status](https://ci.frigg.io/duvholt/memorizer/master/coverage.svg)](https://ci.frigg.io/duvholt/memorizer/last/)
+
 Memorizer is a webapp written in Python 3 using Flask and SQLAlchemy meant to be used for answering multiple choice questions.
 It was created specifically for answering older multiple choice exams. 
 
 Currently running on https://memorizer.io/
+
+**Warning for users who want to adopt this project**:
+
+This project has been used as playground for me (duvholt) to experiment with different implemenations.
+The whole project is built upon the reinvent-the-wheel principle. I have deliberately avoided to build the app on big frameworks (well expect for SQLAlchemy - because who would want to deal with that mess). A good example of this is the homebrewed templating framework used to dynamically update the site. 
 
 Features
 --------
@@ -34,7 +42,10 @@ $ ./main.py import questions/*.json # Import all questions (Warning: super slow 
 $ ./main.py runserver # Run webserver
 ```
 
-- Create localconfig.py for a local config:
+
+###Local config
+
+To overwrite configuration in memorizer/config.py create an new file called memorizer/localconfig.py.
 
 Example: 
 
