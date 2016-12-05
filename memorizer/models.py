@@ -1,18 +1,11 @@
 from flask import url_for
 from sqlalchemy import orm
 from sqlalchemy.ext.associationproxy import association_proxy
-from sqlalchemy_continuum import make_versioned
-from sqlalchemy_continuum.plugins import FlaskPlugin
-from sqlalchemy_utils import force_auto_coercion
 from sqlalchemy_utils.types.choice import ChoiceType
 from sqlalchemy_utils.types.password import PasswordType
 from werkzeug.utils import cached_property
 
 from memorizer.database import db
-from memorizer.utils import fetch_current_user_id, generate_stats
-
-force_auto_coercion()
-make_versioned(plugins=[FlaskPlugin(current_user_id_factory=fetch_current_user_id)])
 
 
 class Course(db.Model):
@@ -37,6 +30,7 @@ class Course(db.Model):
         return Question.query.filter_by(course=self).offset(id - 1).limit(1)
 
     def stats(self):
+        from memorizer.utils import generate_stats
         return generate_stats(course_code=self.code)
 
     def __repr__(self):
@@ -76,6 +70,7 @@ class Exam(db.Model):
         return Question.query.filter_by(exam=self).offset(id - 1).limit(1)
 
     def stats(self):
+        from memorizer.utils import generate_stats
         return generate_stats(course_code=self.course.code, exam_name=self.name)
 
     def __repr__(self):
