@@ -8,8 +8,8 @@ from sqlalchemy_utils.types.choice import ChoiceType
 from sqlalchemy_utils.types.password import PasswordType
 from werkzeug.utils import cached_property
 
-from .database import db
-from .utils import fetch_current_user_id, generate_stats
+from memorizer.database import db
+from memorizer.utils import fetch_current_user_id, generate_stats
 
 force_auto_coercion()
 make_versioned(plugins=[FlaskPlugin(current_user_id_factory=fetch_current_user_id)])

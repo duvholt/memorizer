@@ -7,13 +7,13 @@ from flask_migrate import Migrate, MigrateCommand
 from flask_script import Manager
 from werkzeug.contrib.fixers import ProxyFix
 
-from .cache import cache
-from .importer import ImportCommand
-from .user import get_user
-from .utils import datetimeformat, grade, percentage
-from .views.admin import admin
-from .views.api import api
-from .views.quiz import quiz
+from memorizer.cache import cache
+from memorizer.importer import ImportCommand
+from memorizer.user import get_user
+from memorizer.utils import datetimeformat, grade, percentage
+from memorizer.views.admin import admin
+from memorizer.views.api import api
+from memorizer.views.quiz import quiz
 
 
 def create_app(config_filename='config.py'):
