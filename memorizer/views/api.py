@@ -107,8 +107,8 @@ class APIView(JsonView, CacheView):
     def delete(self, object_id):
         response = {}
         user = get_user()
-        if not user.registered:
-            response['errors'] = [error('Not logged in')]
+        if not user.admin:
+            response['errors'] = [error('Admin access required')]
             return response
         object = self.model.query.get(object_id)
         if object:

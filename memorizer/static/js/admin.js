@@ -127,13 +127,6 @@
     };
     List.prototype.li = function(content, id) {
         var li = document.createElement('li');
-        // Delete button
-        var del = document.createElement('a');
-        del.href = '#';
-        del.className = 'delete';
-        del.innerHTML = '<i class="fa fa-times fa-fw"></i> Slett';
-        del.id = id;
-        del.onclick = this.deleteObject();
 
         // Link to edit element
         var a = document.createElement('a');
@@ -142,7 +135,17 @@
         a.className = 'link';
 
         li.appendChild(a);
-        li.appendChild(del);
+
+        // Delete button
+        if(window.isAdmin) {
+            var del = document.createElement('a');
+            del.href = '#';
+            del.className = 'delete';
+            del.innerHTML = '<i class="fa fa-times fa-fw"></i> Slett';
+            del.id = id;
+            del.onclick = this.deleteObject();
+            li.appendChild(del);
+        }
         return li;
     };
     List.prototype.deleteObject = function(e) {
@@ -152,8 +155,13 @@
             e.preventDefault();
             Ajax({url: that.api + this.id, method: 'DELETE'}, {
                 success: function(data) {
-                    Alert('Slettet', 'success');
-                    that.update();
+                    if(data.errors.length > 0) {
+                        Alert('Sletting feilet', 'error');
+                    }
+                    else {
+                        Alert('Slettet', 'success');
+                        that.update();
+                    }
                 },
                 error: function(data) {
                     Alert('Sletting feilet', 'error');

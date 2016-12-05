@@ -16,6 +16,9 @@
 
 {% block js %}
 {{ super() }}
+    <script>
+    window.isAdmin = {{ 'true' if user.admin else 'false' }};
+    </script>
     {% assets "admin_js" %}
     <script type="text/javascript" src="{{ ASSET_URL }}"></script>
     {% endassets %}
