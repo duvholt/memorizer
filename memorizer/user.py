@@ -2,11 +2,11 @@ from functools import wraps
 
 from flask import g, redirect, request, session, url_for
 
-from memorizer import models
-
 
 def user_setup():
     """Set up user info for first time visitors"""
+    from memorizer import models
+
     if 'user' in session:
         # Checking if user id actually exists
         user = models.User.query.get(session['user'])
