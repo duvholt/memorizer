@@ -1,4 +1,4 @@
-from flask.ext.testing import TestCase
+from flask_testing import TestCase
 
 from memorizer.application import create_app
 from memorizer.database import db

@@ -1,4 +1,4 @@
-from flask.ext.cache import Cache
+from flask_cache import Cache
 
 from memorizer.config import CACHE_TYPE
 

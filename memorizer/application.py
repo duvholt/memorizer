@@ -2,9 +2,9 @@ import logging
 from logging.handlers import SMTPHandler
 
 from flask import Flask
-from flask.ext.assets import Bundle, Environment
-from flask.ext.migrate import Migrate, MigrateCommand
-from flask.ext.script import Manager
+from flask_assets import Bundle, Environment
+from flask_migrate import Migrate, MigrateCommand
+from flask_script import Manager
 from werkzeug.contrib.fixers import ProxyFix
 
 from .cache import cache
