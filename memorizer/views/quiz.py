@@ -50,6 +50,8 @@ class Register(TemplateMethodView):
         user.registered = True
         models.db.session.add(user)
         models.db.session.commit()
+
+
 quiz.add_url_rule('/register/', view_func=Register.as_view('register'))
 
 
@@ -232,6 +234,7 @@ class CourseQuestion(QuestionMixin, TemplateMethodView):
         })
         return context
 
+
 quiz.add_url_rule(
     '/<string:course_code>/all/<int:id>',
     view_func=CourseQuestion.as_view('question_course')
@@ -255,6 +258,7 @@ class ExamQuestion(QuestionMixin, TemplateMethodView):
             'random': random_question
         })
         return context
+
 
 quiz.add_url_rule(
     '/<string:course_code>/<string:exam_name>/<int:id>',

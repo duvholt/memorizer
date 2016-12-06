@@ -147,6 +147,7 @@ def register_api(view, endpoint, url, pk='object_id', pk_type='int'):
     api.add_url_rule('%s<%s:%s>' % (url, pk_type, pk), view_func=view_func,
                      methods=['GET', 'PUT', 'DELETE'])
 
+
 register_api(CourseAPI, 'course_api', '/courses/')
 register_api(ExamAPI, 'exam_api', '/exams/')
 register_api(QuestionAPI, 'question_api', '/questions/')
@@ -178,6 +179,8 @@ api.add_url_rule('/questions/<string:course>/<string:exam>/', view_func=ExamQues
 class Stats(JsonView):
     def get(self, course_code, exam_name=None):
         return utils.generate_stats(course_code, exam_name)
+
+
 api.add_url_rule('/stats/<string:course_code>/<string:exam_name>/', view_func=Stats.as_view('stats_exam'))
 api.add_url_rule('/stats/<string:course_code>/', view_func=Stats.as_view('stats_course'))
 
@@ -216,6 +219,8 @@ api.add_url_rule('/answer', view_func=Answer.as_view('answer'), methods=['POST']
 class RandomQuestion(JsonView):
     def get(self, course_code, exam_name=None):
         return {'index': utils.random_id(course=course_code, exam=exam_name)}
+
+
 api.add_url_rule(
     '/random/<string:course_code>/<string:exam_name>/',
     view_func=RandomQuestion.as_view('random_question_exam')

@@ -241,4 +241,5 @@ class Stats(db.Model):
     def answered(cls, user, question):
         return cls.query.filter_by(user=user, question=question, reset=False).count() > 0
 
+
 orm.configure_mappers()
