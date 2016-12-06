@@ -136,7 +136,7 @@
     {?}
     ({$ stats.percentage }%)
 </div>
-<div class="combo">Combo: {$ stats.combo }{+ _ in new Array(Math.round(stats.combo / 10)) }<i class="fa fa-trophy"></i>{+}</div>
+<div class="combo">Combo: {$ stats.combo }{+ _ in new Array(Math.floor(stats.combo / 10)) }<i class="fa fa-trophy"></i>{+}</div>
 <div class="progress">Spørsmål: {$ stats.total }/{$ stats.max }</div>
 <div class="reset"><a href="{{ reset_url }}"><i class="fa fa-undo"></i> Nullstill poeng</a></div>
 </script>
