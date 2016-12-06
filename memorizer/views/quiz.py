@@ -112,6 +112,7 @@ def reset_stats_exam(course, exam):
 
 
 @quiz.route('/<string:course>/')
+@quiz.route('/<string:course>/all/0')
 def course(course):
     """Redirects to a random question for a chosen course"""
     models.Course.query.filter_by(code=course).first_or_404()
@@ -121,6 +122,7 @@ def course(course):
 
 
 @quiz.route('/<string:course>/<string:exam>/')
+@quiz.route('/<string:course>/<string:exam>/0')
 def exam(course, exam):
     """Redirects to the first question for a chosen exam"""
     course_m = models.Course.query.filter_by(code=course).first_or_404()
