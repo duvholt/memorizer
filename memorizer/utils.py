@@ -18,13 +18,14 @@ def generate_stats(course_code, exam_name=None):
             filter_by(code=course_code).\
             filter(models.Exam.name == exam_name).count()
         stats = models.Stats.exam(get_user(), course_code, exam_name)
-    stats_data['total'] = stats.count()
-    stats_data['points'] = stats.filter(models.Stats.correct.is_(True)).count()
+    stats_all = stats.all()
+    stats_data['total'] = len(stats_all)
+    stats_data['points'] = len(list(filter(lambda stat: stat.correct, stats_all)))
     stats_data['grade'] = grade(stats_data['points'], stats_data['total'])
     stats_data['percentage'] = percentage(stats_data['points'], stats_data['total'])
 
     combo = 0
-    for stat in reversed(stats.all()):
+    for stat in reversed(stats_all):
         if stat.correct:
             combo += 1
         else:
