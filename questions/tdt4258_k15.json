@@ -92,7 +92,7 @@
 				"Its main task is turning off other controllers based on the current exception status",
 				"It can only be read, and the CPU may never configure it."
             ],
-            "correct": 1
+            "correct": 0
         },
         {
             "question": "The purpose of interrupt handlers are:",
