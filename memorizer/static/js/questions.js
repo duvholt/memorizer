@@ -121,9 +121,15 @@ Questions.prototype.answer = function(e) {
             // Disable radios
             radios[i].disabled = true;
         }
-        values = [];
-        for (i = 0; i < selectedRadios.length; i++) {
-            values.push(Number(selectedRadios[i].value));
+        var values;
+        if(question.multiple) {
+            values = [];
+            for (i = 0; i < selectedRadios.length; i++) {
+                values.push(Number(selectedRadios[i].value));
+            }
+        }
+        else {
+            values = selectedRadios[0].value === 'true';
         }
         // Send ajax request
         this.answerApi.submit(this.currentQuestion().id, values, function() {

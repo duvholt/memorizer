@@ -62,7 +62,7 @@ AnswerAPI.prototype = Object.create(API.prototype);
 AnswerAPI.prototype.submit = function(question_id, answer, callback) {
     var params = {};
     if(typeof answer === 'boolean') {
-        params = {question: question_id, answer: answer};
+        params = {question: question_id, correct: answer};
     }
     // Alternatives (can be several)
     else if(['number', 'object'].indexOf(typeof answer) !== -1) {
