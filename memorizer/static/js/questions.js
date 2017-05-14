@@ -228,8 +228,10 @@ Questions.prototype.updateQuestion = function() {
         this.updateExam();
     }
     var container = document.querySelector('.question');
+    var errorLink = document.getElementById('question-error');
     var boolAlternatives = [{value: "true", label: "Ja"}, {value: "false", label: "Nei"}];
     container.innerHTML = scoop('question_template', {question: question, id: this.current, boolAlts: boolAlternatives});
+    errorLink.href = '/admin/question/' + question.id;
 
     this.bindElements();
 
