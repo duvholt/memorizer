@@ -9,7 +9,6 @@ from memorizer.user import get_user
 
 @cache.memoize(CACHE_TIME)
 def max_questions_exam(course_code, exam_name):
-    print('Max exam', course_code, exam_name)
     return models.Question.query.\
         join(models.Exam).join(models.Course).\
         filter_by(code=course_code).\
@@ -18,7 +17,6 @@ def max_questions_exam(course_code, exam_name):
 
 @cache.memoize(CACHE_TIME)
 def max_questions_course(course_code):
-    print('Max course', course_code)
     return models.Question.query.\
         join(models.Exam).join(models.Course).\
         filter_by(code=course_code).count()

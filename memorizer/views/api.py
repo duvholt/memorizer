@@ -185,6 +185,12 @@ api.add_url_rule('/stats/<string:course_code>/<string:exam_name>/', view_func=St
 api.add_url_rule('/stats/<string:course_code>/', view_func=Stats.as_view('stats_course'))
 
 
+@cache.memoize(CACHE_TIME)
+def correct_alternatives(question):
+    alts = models.Alternative.query.filter_by(question=question, correct=True)
+    return {alt.id for alt in alts}
+
+
 class Answer(JsonView):
     def post(self):
         try:
@@ -197,7 +203,7 @@ class Answer(JsonView):
                 answer_alt = set(map(int, request.form.getlist('alternative')))
             except ValueError:
                 return error('Missing alternative')
-            correct_alt = {alt.id for alt in models.Alternative.query.filter_by(question=question, correct=True)}
+            correct_alt = correct_alternatives(question)
             # Checking if all alternatives are correct
             correct = correct_alt == answer_alt
         else:
