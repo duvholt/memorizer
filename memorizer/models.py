@@ -156,8 +156,11 @@ class Question(db.Model):
         else:
             response['correct'] = self.correct
         if self.image:
-            # this is not efficient
-            response['image'] = url_for('static', filename='img/' + self.course.code + '/' + self.image)
+            if self.image.startswith('http://'):
+                response['image'] = self.image
+            else:
+                # this is not efficient
+                response['image'] = url_for('static', filename='img/' + self.course.code + '/' + self.image)
         return response
 
 

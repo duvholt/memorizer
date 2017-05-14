@@ -33,7 +33,11 @@
     <h3>Spørsmål #{{ id }}</h3>
     {% if question.image %}
     <div class="image">
+        {% if question.image.startswith('http://') %}
+        <img src="{{ question.image }}">
+        {% else %}
         <img src="{{ url_for('static', filename='img/' + question.course.code + '/' + question.image) }}">
+        {% endif %}
     </div>
     {% endif %}
     <h4>{{ question.text }}</h4>
