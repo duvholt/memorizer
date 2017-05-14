@@ -46,19 +46,30 @@ def generate_stats(course_code, exam_name=None):
     return stats_data
 
 
+def create_random_query(course, exam):
+    query = models.db.session.query(models.Question.id).\
+        join(models.Exam).join(models.Course)
+    if course:
+        query = query.filter(models.Course.code == course)
+    if exam:
+        query = query.filter(models.Exam.name == exam)
+    return query
+
+
+@cache.memoize(CACHE_TIME)
+def all_questions(course, exam):
+    query = create_random_query(course, exam)
+    return query.all()
+
+
 def random_id(id=None, course=None, exam=None):
     """
         Returns a random id from questions that have not been answered.
         Returns a random number if none available
     """
-    query = models.db.session.query(models.Question.id).distinct().\
-        join(models.Exam).join(models.Course)
-    if exam:
-        query = query.filter(models.Exam.name == exam)
-    elif course:
-        query = query.filter(models.Course.code == course)
     # All questions
-    questions = query.all()
+    questions = all_questions(course, exam)
+    query = create_random_query(course, exam)
     # Already answered questions
     answered = set(
         query.join(models.Stats)
