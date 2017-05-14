@@ -14,6 +14,8 @@ SQLALCHEMY_TRACK_MODIFICATIONS = False
 # Cache
 CACHE_TIME = 60 * 60 * 2  # 2 hours, pretty arbitrary
 CACHE_TYPE = 'simple'
+# If redis is used
+CACHE_REDIS_URL = 'redis://localhost:6379'
 
 try:
     from memorizer.localconfig import *  # NOQA
