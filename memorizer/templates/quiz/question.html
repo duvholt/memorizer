@@ -27,7 +27,7 @@
 
 {% block content %}
 <div class="question-container">
-<h2>{{ question.course.name }} - {{ question.exam }}</h2>
+<h2>{{ question.course.name }} - <span class="question-exam">{{ question.exam }}</span></h2>
 {% if question is defined %}
 <div class="question">
     <h3>Spørsmål #{{ id }}</h3>

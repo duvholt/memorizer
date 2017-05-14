@@ -9,6 +9,7 @@ var Questions = function() {
 
     // Current question information
     this.questions = [];
+    this.exams = {};
     this.loadQuestions();
 };
 
@@ -69,6 +70,14 @@ Questions.prototype.loadQuestions = function() {
         }
     }
 };
+
+Questions.prototype.loadExam = function(examId) {
+    // Load name for exam
+    this.examApi.send({id: examId}, function(exams) {
+        this.exams[examId] = exams[0].name;
+        this.updateExam();
+    }.bind(this));
+}
 
 Questions.prototype.answer = function(e) {
     // If called by event let's stop it
@@ -204,8 +213,20 @@ Questions.prototype.bindElements = function() {
     }
 };
 
+Questions.prototype.updateExam = function() {
+    var question = this.currentQuestion();
+    var exam = document.querySelector('.question-exam');
+    exam.innerHTML = this.exams[question.exam_id];
+};
+
 Questions.prototype.updateQuestion = function() {
     var question = this.currentQuestion();
+    if(this.exams[question.exam_id] === undefined) {
+        this.loadExam(question.exam_id);
+    }
+    else {
+        this.updateExam();
+    }
     var container = document.querySelector('.question');
     var boolAlternatives = [{value: "true", label: "Ja"}, {value: "false", label: "Nei"}];
     container.innerHTML = scoop('question_template', {question: question, id: this.current, boolAlts: boolAlternatives});
