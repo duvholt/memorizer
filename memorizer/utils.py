@@ -2,21 +2,35 @@ import random
 import re
 
 from memorizer import models
+from memorizer.cache import cache
+from memorizer.config import CACHE_TIME
 from memorizer.user import get_user
+
+
+@cache.memoize(CACHE_TIME)
+def max_questions_exam(course_code, exam_name):
+    print('Max exam', course_code, exam_name)
+    return models.Question.query.\
+        join(models.Exam).join(models.Course).\
+        filter_by(code=course_code).\
+        filter(models.Exam.name == exam_name).count()
+
+
+@cache.memoize(CACHE_TIME)
+def max_questions_course(course_code):
+    print('Max course', course_code)
+    return models.Question.query.\
+        join(models.Exam).join(models.Course).\
+        filter_by(code=course_code).count()
 
 
 def generate_stats(course_code, exam_name=None):
     stats_data = {}
     if not exam_name:
-        stats_data['max'] = models.Question.query.\
-            join(models.Exam).join(models.Course).\
-            filter_by(code=course_code).count()
+        stats_data['max'] = max_questions_course(course_code)
         stats = models.Stats.course(get_user(), course_code)
     else:
-        stats_data['max'] = models.Question.query.\
-            join(models.Exam).join(models.Course).\
-            filter_by(code=course_code).\
-            filter(models.Exam.name == exam_name).count()
+        stats_data['max'] = max_questions_exam(course_code, exam_name)
         stats = models.Stats.exam(get_user(), course_code, exam_name)
     stats_all = stats.all()
     stats_data['total'] = len(stats_all)
