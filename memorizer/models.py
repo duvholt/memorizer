@@ -231,7 +231,7 @@ class Stats(db.Model):
 
     @classmethod
     def course(cls, user, course_code):
-        course_m = Course.query.filter_by(code=course_code).first()
+        course_m = Course.query.filter_by(code=course_code).one_or_none()
         questions = Question.query.filter_by(course=course_m)
         return cls.query.filter(
             Stats.reset.is_(False),
@@ -241,8 +241,8 @@ class Stats(db.Model):
 
     @classmethod
     def exam(cls, user, course_code, exam_name):
-        course_m = Course.query.filter_by(code=course_code).first()
-        exam_m = Exam.query.filter_by(course=course_m, name=exam_name).first()
+        course_m = Course.query.filter_by(code=course_code).one_or_none()
+        exam_m = Exam.query.filter_by(course=course_m, name=exam_name).one_or_none()
         questions = Question.query.filter_by(exam=exam_m)
         return cls.query.filter(
             Stats.reset.is_(False),

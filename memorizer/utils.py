@@ -46,20 +46,12 @@ def generate_stats(course_code, exam_name=None):
     return stats_data
 
 
-def create_random_query(course, exam):
-    query = models.db.session.query(models.Question.id).\
-        join(models.Exam).join(models.Course)
-    if course:
-        query = query.filter(models.Course.code == course)
-    if exam:
-        query = query.filter(models.Exam.name == exam)
-    return query
-
-
 @cache.memoize(CACHE_TIME)
-def all_questions(course, exam):
-    query = create_random_query(course, exam)
-    return query.all()
+def all_questions(course_code, exam_name):
+    course_m = models.Course.query.filter_by(code=course_code).one_or_none()
+    exam_m = models.Exam.query.filter_by(course=course_m, name=exam_name).one_or_none()
+    questions = models.Question.query.filter_by(exam=exam_m)
+    return questions.with_entities(models.Question.id).all()
 
 
 def random_id(id=None, course=None, exam=None):
