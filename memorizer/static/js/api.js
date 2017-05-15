@@ -101,6 +101,6 @@ var RandomQuestionAPI = function(course, exam) {
 
 RandomQuestionAPI.prototype = Object.create(API.prototype);
 
-RandomQuestionAPI.prototype.get = function(callback) {
-    this.send(null, callback);
+RandomQuestionAPI.prototype.get = function(id, callback) {
+    this.send({ id: id }, callback);
 };

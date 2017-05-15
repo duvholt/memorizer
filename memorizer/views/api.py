@@ -224,7 +224,12 @@ api.add_url_rule('/answer', view_func=Answer.as_view('answer'), methods=['POST']
 
 class RandomQuestion(JsonView):
     def get(self, course_code, exam_name=None):
-        return {'index': utils.random_id(course=course_code, exam=exam_name)}
+        current = request.args.get('id', -1)
+        try:
+            current = int(current)
+        except:
+            current = -1
+        return {'index': utils.random_id(id=current, course=course_code, exam=exam_name)}
 
 
 api.add_url_rule(

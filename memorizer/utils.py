@@ -68,10 +68,11 @@ def random_id(id=None, course=None, exam=None):
         query = models.Stats.course(get_user(), course)
     answered = set(query.with_entities(models.Stats.question_id).all())
     # List of indexes for unanswered questions
-    indexes = [i for i, question in enumerate(questions) if question not in answered]
+    indexes = [i + 1 for i, question in enumerate(questions) if (i + 1) != id and question not in answered]
+    # Ignore current question
     if indexes:
         # Select random index
-        return random.choice(indexes) + 1
+        return random.choice(indexes)
     else:
         # All questions have been answered
         return random.randint(1, len(questions) + 1)

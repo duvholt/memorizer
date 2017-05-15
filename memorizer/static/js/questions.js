@@ -182,7 +182,7 @@ Questions.prototype.random = function(e) {
     if(e !== undefined) {
         e.preventDefault();
     }
-    this.randomQuestionApi.get(function(data) {
+    this.randomQuestionApi.get(this.current, function(data) {
         this.current = data.index;
         this.updateURL(true);
         this.updateQuestion();
