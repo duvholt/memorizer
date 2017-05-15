@@ -231,14 +231,24 @@ class Stats(db.Model):
 
     @classmethod
     def course(cls, user, course_code):
-        return cls.query.filter_by(reset=False, user_id=user.id).join(Question).join(Exam).join(Course).\
-            filter_by(code=course_code)
+        course_m = Course.query.filter_by(code=course_code).first()
+        questions = Question.query.filter_by(course=course_m)
+        return cls.query.filter(
+            Stats.reset.is_(False),
+            Stats.user_id == user.id,
+            Stats.question_id.in_(questions.with_entities(Question.id))
+        )
 
     @classmethod
     def exam(cls, user, course_code, exam_name):
-        return cls.query.filter_by(reset=False, user_id=user.id).join(Question).join(Exam).join(Course).\
-            filter(Course.code == course_code).\
-            filter(Exam.name == exam_name)
+        course_m = Course.query.filter_by(code=course_code).first()
+        exam_m = Exam.query.filter_by(course=course_m, name=exam_name).first()
+        questions = Question.query.filter_by(exam=exam_m)
+        return cls.query.filter(
+            Stats.reset.is_(False),
+            Stats.user_id == user.id,
+            Stats.question_id.in_(questions.with_entities(Question.id))
+        )
 
     @classmethod
     def answered(cls, user, question):
