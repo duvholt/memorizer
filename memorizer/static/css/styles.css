@@ -395,6 +395,10 @@ button[type=submit]:hover, button[type=submit]:focus, button[type=submit]:active
     border-top-right-radius: 0.3rem;
 }
 
+.stats-container {
+    padding-bottom: 5.0rem;
+}
+
 .stats {
     max-width: 200px;
     padding: 1.5rem;
