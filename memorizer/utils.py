@@ -69,13 +69,12 @@ def random_id(id=None, course=None, exam=None):
     """
     # All questions
     questions = all_questions(course, exam)
-    query = create_random_query(course, exam)
     # Already answered questions
-    answered = set(
-        query.join(models.Stats)
-        .filter(models.Stats.reset.is_(False), models.Stats.user_id == get_user().id)
-        .all()
-    )
+    if exam:
+        query = models.Stats.exam(get_user(), course, exam)
+    else:
+        query = models.Stats.course(get_user(), course)
+    answered = set(query.with_entities(models.Stats.question_id).all())
     # List of indexes for unanswered questions
     indexes = [i for i, question in enumerate(questions) if question not in answered]
     if indexes:
