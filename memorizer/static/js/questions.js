@@ -141,8 +141,11 @@ Questions.prototype.answer = function(e) {
             values = selectedRadios[0].value === 'true';
         }
         // Send ajax request
-        this.answerApi.submit(this.currentQuestion().id, values, function() {
+        this.answerApi.submit(this.currentQuestion().id, values, function(data) {
             this.updateStats();
+            if(data.success === false) {
+                Alert('Du har allerede svart på dette spørsmålet så du får ikke noe poeng. :-)', 'info');
+            }
         }.bind(this));
     }
 };
