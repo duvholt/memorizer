@@ -185,7 +185,6 @@ api.add_url_rule('/stats/<string:course_code>/<string:exam_name>/', view_func=St
 api.add_url_rule('/stats/<string:course_code>/', view_func=Stats.as_view('stats_course'))
 
 
-@cache.memoize(CACHE_TIME)
 def correct_alternatives(question):
     alts = models.Alternative.query.filter_by(question=question, correct=True)
     return {alt.id for alt in alts}
