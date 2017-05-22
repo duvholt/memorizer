@@ -215,7 +215,7 @@ class Answer(JsonView):
             stat = models.Stats(user, question, correct)
             models.db.session.add(stat)
             models.db.session.commit()
-        return {'success': not answered}
+        return {'success': not answered, 'correct': correct}
 
 
 api.add_url_rule('/answer', view_func=Answer.as_view('answer'), methods=['POST'])
