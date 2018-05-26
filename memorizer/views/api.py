@@ -226,7 +226,7 @@ class RandomQuestion(JsonView):
         current = request.args.get('id', -1)
         try:
             current = int(current)
-        except:
+        except ValueError:
             current = -1
         return {'index': utils.random_id(id=current, course=course_code, exam=exam_name)}
 
