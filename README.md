@@ -32,11 +32,11 @@ Features
 Installation
 ------------
 
-- Create a virtualenv for Python 3 (virtualenv is highly recommended).
+- Requires pipenv to be installed
 
 
 ```bash
-$ pip install -r requirements.txt # Install requirements
+$ pipenv install # Install requirements
 $ ./main.py db upgrade # Create/upgrade database tables
 $ ./main.py import questions/*.json # Import all questions (Warning: super slow if using SQLite)
 $ ./main.py runserver # Run webserver
