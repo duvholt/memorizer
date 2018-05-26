@@ -1,8 +1,8 @@
 Memorizer
 =========
 
-[![Build status](https://ci.frigg.io/duvholt/memorizer.svg)](https://ci.frigg.io/duvholt/memorizer/last/)
-[![Coverage status](https://ci.frigg.io/duvholt/memorizer/master/coverage.svg)](https://ci.frigg.io/duvholt/memorizer/last/)
+[![Build Status](https://travis-ci.org/duvholt/memorizer.svg?branch=master)](https://travis-ci.org/duvholt/memorizer)
+[![codecov](https://codecov.io/gh/duvholt/memorizer/branch/master/graph/badge.svg)](https://codecov.io/gh/duvholt/memorizer)
 
 Memorizer is a webapp written in Python 3 using Flask and SQLAlchemy meant to be used for answering multiple choice questions.
 It was created specifically for answering older multiple choice exams. 
