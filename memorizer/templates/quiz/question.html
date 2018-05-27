@@ -47,7 +47,7 @@
         {% for alternative in question.choices %}
         <div class="checkbox {% if (alternative.id)|string() in request.form.getlist('answer') %}{{ 'success' if alternative.correct else 'error' }}{% endif %}">
             <label>
-                <input type="checkbox" name="answer" value="{{ alternative.id }}">
+                <input type="{% if question.exam.multiple_correct %}checkbox{% else %}radio{% endif %}" name="answer" value="{{ alternative.id }}">
                 {% if success is not none %}
                     <i class="fa {{ 'fa-check' if alternative.correct else 'fa-times' }} fa-fw"></i>
                 {% endif %}
@@ -113,7 +113,7 @@
     {+ alternative in question.alternatives }
     <div class="checkbox">
         <label>
-            <input type="checkbox" name="answer" value="{$ alternative.id }">
+            <input type="{? if exam.multiple_correct }checkbox{? else }radio{?}" name="answer" value="{$ alternative.id }">
             {$ alternative.text }
         </label>
     </div>

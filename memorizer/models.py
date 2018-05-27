@@ -1,6 +1,7 @@
 from flask import url_for
 from sqlalchemy import orm
 from sqlalchemy.ext.associationproxy import association_proxy
+from sqlalchemy.sql import expression
 from sqlalchemy_utils.types.choice import ChoiceType
 from sqlalchemy_utils.types.password import PasswordType
 from werkzeug.utils import cached_property
@@ -57,6 +58,8 @@ class Exam(db.Model):
     name = db.Column(db.String, info={'label': 'Navn'})
     course_id = db.Column(db.Integer, db.ForeignKey('course.id'))
     questions = db.relationship('Question', backref='exam')
+    multiple_correct = db.Column(db.Boolean, server_default=expression.false(), nullable=False, info={
+                                 'label': 'Flere korrekte svar per spørsmål'})
 
     def __init__(self, name=None, course_id=None):
         self.name = name
@@ -80,7 +83,8 @@ class Exam(db.Model):
         return {
             'id': self.id,
             'name': self.name,
-            'course_id': self.course_id
+            'course_id': self.course_id,
+            'multiple_correct': self.multiple_correct,
         }
 
     @property

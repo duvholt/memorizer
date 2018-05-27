@@ -74,8 +74,9 @@ Questions.prototype.loadQuestions = function() {
 Questions.prototype.loadExam = function(examId) {
     // Load name for exam
     this.examApi.send({id: examId}, function(exams) {
-        this.exams[examId] = exams[0].name;
-        this.updateExam();
+        this.exams[examId] = exams[0];
+        // Re-run updateQuestion when exam info has loaded
+        this.updateQuestion();
     }.bind(this));
 }
 
@@ -219,21 +220,26 @@ Questions.prototype.bindElements = function() {
 Questions.prototype.updateExam = function() {
     var question = this.currentQuestion();
     var exam = document.querySelector('.question-exam');
-    exam.innerHTML = this.exams[question.exam_id];
+    exam.innerHTML = this.exams[question.exam_id].name;
 };
 
 Questions.prototype.updateQuestion = function() {
     var question = this.currentQuestion();
     if(this.exams[question.exam_id] === undefined) {
         this.loadExam(question.exam_id);
+        // Wait until exam info has loaded
+        return;
     }
-    else {
-        this.updateExam();
-    }
+    this.updateExam();
     var container = document.querySelector('.question');
     var errorLink = document.getElementById('question-error');
     var boolAlternatives = [{value: "true", label: "Ja"}, {value: "false", label: "Nei"}];
-    container.innerHTML = scoop('question_template', {question: question, id: this.current, boolAlts: boolAlternatives});
+    container.innerHTML = scoop('question_template', {
+        question: question,
+        id: this.current,
+        boolAlts: boolAlternatives,
+        exam: this.exams[question.exam_id],
+    });
     errorLink.href = '/admin/question/' + question.id;
 
     this.bindElements();
