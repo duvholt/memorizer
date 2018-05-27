@@ -142,7 +142,7 @@ class QuizLogoutTest(MemorizerTestCase):
         self.assert_redirects(response, url_for('quiz.main'))
 
 
-class RenderViewTest(MemorizerTestCase):
+class RenderViewTest(DatabaseTestCase):
     def test_tips(self):
         response = self.client.get('/tips/')
         self.assert200(response)

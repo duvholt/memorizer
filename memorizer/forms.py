@@ -1,11 +1,11 @@
-from flask_wtf import Form
+from flask_wtf import FlaskForm
 from wtforms import fields, validators
 from wtforms_alchemy import model_form_factory
 
 from memorizer import models
 
 db = models.db
-BaseModelForm = model_form_factory(Form)
+BaseModelForm = model_form_factory(FlaskForm)
 
 
 class CourseForm(BaseModelForm):
@@ -37,7 +37,7 @@ class AlternativeForm(BaseModelForm):
     question_id = fields.HiddenField()
 
 
-class RegisterForm(Form):
+class RegisterForm(FlaskForm):
     name = fields.StringField('Navn', [validators.Required()])
     username = fields.StringField('Brukernavn', [validators.Required()])
     password = fields.PasswordField('Passord', [
@@ -47,6 +47,6 @@ class RegisterForm(Form):
     confirm = fields.PasswordField('Gjenta passord')
 
 
-class LoginForm(Form):
+class LoginForm(FlaskForm):
     username = fields.StringField('Brukernavn', [validators.Required()])
     password = fields.PasswordField('Passord', [validators.Required()])

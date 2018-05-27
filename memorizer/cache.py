@@ -1,4 +1,4 @@
-from flask_cache import Cache
+from flask_caching import Cache
 
 from memorizer.config import CACHE_REDIS_URL, CACHE_TYPE
 
