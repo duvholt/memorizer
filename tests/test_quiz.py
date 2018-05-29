@@ -6,20 +6,7 @@ from memorizer.database import db
 from memorizer.models import Course, Exam, Question, Stats, User
 from memorizer.utils import generate_stats
 from tests import DatabaseTestCase, MemorizerTestCase
-
-
-def add_exam(course, name="T16"):
-    exam = Exam(name, course.id)
-    db.session.add(exam)
-    db.session.commit()
-    return exam
-
-
-def add_course(code="TEST", name="Test Course"):
-    course = Course(code, name)
-    db.session.add(course)
-    db.session.commit()
-    return course
+from tests.models_mock import add_course, add_exam, add_question_multiple
 
 
 class QuizTest(DatabaseTestCase):
@@ -236,8 +223,8 @@ class QuestionTest(DatabaseTestCase):
     def setUp(self):
         super().setUp()
         self.mock_user(save=True)
-        course = add_course()
-        exam = add_exam(course)
+        self.course = add_course()
+        exam = add_exam(self.course)
         # self.multiple = Question(exam_id=exam.id, type=Question.MULTIPLE, text="Test Question")
         self.boolean = Question(exam_id=exam.id, type=Question.BOOLEAN, text="Test Question", correct=True)
         db.session.add(self.boolean)
@@ -251,15 +238,46 @@ class QuestionTest(DatabaseTestCase):
     def test_answer(self):
         question = self.boolean
         stats_data = generate_stats(question.course.code, question.exam.name)
-        url = url_for('quiz.question_course', course_code=question.course.code, id=1)
+        url = url_for('quiz.question_course', course_code=question.course.code, id=question.id)
 
         response = self.post_answer(url)
         stats_data_after = generate_stats(question.course.code, question.exam.name)
 
-        self.assertEqual(stats_data['total'] + 1, stats_data_after['total'])
+        self.assertEqual(stats_data['combo'] + 1, stats_data_after['combo'])
         self.assert200(response)
 
-    def post_answer(self, url):
-        answer = 'true'
+    def test_answer_multiple_correct_one_answer(self):
+        exam = add_exam(self.course, name="TEST2", multiple_correct=False)
+        question = add_question_multiple(exam, text="Test Question", alternatives=[
+            ('Alt 1', True),
+            ('Alt 2', True),
+            ('Alt 3', False),
+        ])
+        stats_data = generate_stats(question.course.code, question.exam.name)
+        url = url_for('quiz.question_course', course_code=question.course.code, id=question.id)
+
+        response = self.post_answer(url, [question.alternatives[1].id])
+
+        stats_data_after = generate_stats(question.course.code, question.exam.name)
+        self.assertEqual(stats_data['combo'] + 1, stats_data_after['combo'])
+        self.assert200(response)
+
+    def test_answer_multiple_correct_multiple_answer(self):
+        exam = add_exam(self.course, name="TEST2", multiple_correct=True)
+        question = add_question_multiple(exam, text="Test Question", alternatives=[
+            ('Alt 1', True),
+            ('Alt 2', True),
+            ('Alt 3', False),
+        ])
+        stats_data = generate_stats(question.course.code, question.exam.name)
+        url = url_for('quiz.question_course', course_code=question.course.code, id=question.id)
+
+        response = self.post_answer(url, [question.alternatives[0].id, question.alternatives[1].id])
+
+        stats_data_after = generate_stats(question.course.code, question.exam.name)
+        self.assertEqual(stats_data['combo'] + 1, stats_data_after['combo'])
+        self.assert200(response)
+
+    def post_answer(self, url, answer='true'):
         response = self.client.post(url, data={'answer': answer})
         return response
