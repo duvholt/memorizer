@@ -15,11 +15,13 @@
     </li>
     <ul>
     {% for exam in question.course.exams %}
+        {% if not exam.hidden %}
         <li {% if exam_name == exam.name %}class="active"{% endif %}>
             <a href="{{ url_for('quiz.exam', course=question.course.code, exam=exam) }}">
                 <i class="fa fa-file-text fa-fw"></i>&nbsp; {{ exam }}
             </a>
         </li>
+        {% endif %}
     {% endfor %}
     </ul>
 </ul>

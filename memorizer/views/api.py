@@ -60,7 +60,8 @@ class APIView(JsonView, CacheView):
                     else:
                         filters[key] = value[0]
             objects = query.filter_by(**filters)
-            return [object.serialize() for object in objects]
+            serialized_objects = [object.serialize() for object in objects]
+            return [obj for obj in serialized_objects if obj is not None]
 
     def post(self):
         response = {}
@@ -161,7 +162,8 @@ class CourseQuestions(JsonView, CacheView):
     def get(self, course):
         course_m = models.Course.query.filter_by(code=course).first_or_404()
         questions = models.Question.query.filter_by(course=course_m).all()
-        return [question_m.serialize() for question_m in questions]
+        serialized_objects = [question_m.serialize() for question_m in questions]
+        return [obj for obj in serialized_objects if obj is not None]
 
 
 class ExamQuestions(JsonView, CacheView):
@@ -169,7 +171,8 @@ class ExamQuestions(JsonView, CacheView):
     def get(self, course, exam):
         course_m = models.Course.query.filter_by(code=course).first_or_404()
         exam_m = models.Exam.query.filter_by(course=course_m, name=exam).first_or_404()
-        return [question_m.serialize() for question_m in exam_m.questions]
+        serialized_objects = [question_m.serialize() for question_m in exam_m.questions]
+        return [obj for obj in serialized_objects if obj is not None]
 
 
 api.add_url_rule('/questions/<string:course>/all/', view_func=CourseQuestions.as_view('course_questions'))
