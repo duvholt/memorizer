@@ -211,7 +211,10 @@ class QuestionMixin:
             return False
         correct_alternatives = models.Alternative.query.filter_by(question=self.question, correct=True)
         correct_answers = {alt.id for alt in correct_alternatives}
-        return correct_answers == answers
+        if self.question.exam.multiple_correct:
+            return correct_answers == answers
+        else:
+            return answers <= correct_answers
 
     def save_answer(self, user, success):
         stat = models.Stats(user, self.question, success)

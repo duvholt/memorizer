@@ -61,9 +61,10 @@ class Exam(db.Model):
     multiple_correct = db.Column(db.Boolean, server_default=expression.false(), nullable=False, info={
                                  'label': 'Flere korrekte svar per spørsmål'})
 
-    def __init__(self, name=None, course_id=None):
+    def __init__(self, name=None, course_id=None, multiple_correct=False):
         self.name = name
         self.course_id = course_id
+        self.multiple_correct = multiple_correct
 
     @cached_property
     def question_count(self):

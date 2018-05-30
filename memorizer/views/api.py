@@ -204,7 +204,10 @@ class Answer(JsonView):
                 return error('Missing alternative')
             correct_alt = correct_alternatives(question)
             # Checking if all alternatives are correct
-            correct = correct_alt == answer_alt
+            if question.exam.multiple_correct:
+                correct = correct_alt == answer_alt
+            else:
+                correct = correct_alt >= answer_alt
         else:
             # Yes/No
             answer = request.form.get('correct', False) == 'true'
