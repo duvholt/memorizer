@@ -246,7 +246,7 @@ quiz.add_url_rule(
 class ExamQuestion(QuestionMixin, TemplateMethodView):
     def get(self, course_code, exam_name, id, *args, **kwargs):
         course = models.Course.query.filter_by(code=course_code).first_or_404()
-        self.model = models.Exam.query.filter_by(course=course, name=exam_name).first_or_404()
+        self.model = models.Exam.query.filter_by(course=course, name=exam_name, hidden=False).first_or_404()
         return super().get(id, course_code, exam_name, *args, **kwargs)
 
     def context(self, *args, **kwargs):

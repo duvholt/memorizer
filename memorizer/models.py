@@ -1,12 +1,12 @@
 from flask import url_for
-from sqlalchemy import orm
+from sqlalchemy import literal, orm
 from sqlalchemy.ext.associationproxy import association_proxy
-from sqlalchemy.sql import expression
 from sqlalchemy_utils.types.choice import ChoiceType
 from sqlalchemy_utils.types.password import PasswordType
 from werkzeug.utils import cached_property
 
 from memorizer.database import db
+from memorizer.user import get_user
 
 
 class Course(db.Model):
@@ -25,10 +25,16 @@ class Course(db.Model):
 
     @cached_property
     def question_count(self):
-        return Question.query.filter_by(course=self).count()
+        return Question.query\
+            .filter_by(course=self).join(Question.exam)\
+            .filter(Exam.hidden.is_(False)).count()
 
     def question(self, id):
-        return Question.query.filter_by(course=self).offset(id - 1).limit(1)
+        return Question.query\
+            .filter_by(course=self)\
+            .join(Question.exam)\
+            .filter(Exam.hidden.is_(False))\
+            .offset(id - 1).limit(1)
 
     def stats(self):
         from memorizer.utils import generate_stats
@@ -58,8 +64,10 @@ class Exam(db.Model):
     name = db.Column(db.String, info={'label': 'Navn'})
     course_id = db.Column(db.Integer, db.ForeignKey('course.id'))
     questions = db.relationship('Question', backref='exam')
-    multiple_correct = db.Column(db.Boolean, server_default=expression.false(), nullable=False, info={
+    multiple_correct = db.Column(db.Boolean, server_default=literal(False), nullable=False, default=False, info={
                                  'label': 'Flere korrekte svar per spørsmål'})
+    hidden = db.Column(db.Boolean, server_default=literal(False), nullable=False, default=False, info={
+                                 'label': 'Skjul', 'admin': True})
 
     def __init__(self, name=None, course_id=None):
         self.name = name
@@ -70,6 +78,8 @@ class Exam(db.Model):
         return Question.query.filter_by(exam=self).count()
 
     def question(self, id):
+        if self.hidden:
+            return None
         return Question.query.filter_by(exam=self).offset(id - 1).limit(1)
 
     def stats(self):
@@ -80,6 +90,11 @@ class Exam(db.Model):
         return self.name
 
     def serialize(self):
+        # Hack to hide hidden exams
+        if self.hidden:
+            user = get_user()
+            if not user.admin:
+                return None
         return {
             'id': self.id,
             'name': self.name,
@@ -144,6 +159,10 @@ class Question(db.Model):
         return indexes.index(question.id) + 1
 
     def serialize(self):
+        if self.exam.hidden:
+            user = get_user()
+            if not user.admin:
+                return None
         response = {
             'id': self.id,
             'text': self.text,

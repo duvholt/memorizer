@@ -17,9 +17,11 @@ def max_questions_exam(course_code, exam_name):
 
 @cache.memoize(CACHE_TIME)
 def max_questions_course(course_code):
-    return models.Question.query.\
-        join(models.Exam).join(models.Course).\
-        filter_by(code=course_code).count()
+    course = models.Course.query.filter_by(code=course_code).first()
+    if course:
+        return course.question_count
+    else:
+        return 0
 
 
 def generate_stats(course_code, exam_name=None):
@@ -53,7 +55,10 @@ def all_questions(course_code, exam_name):
         exam_m = models.Exam.query.filter_by(course=course_m, name=exam_name).one_or_none()
         questions = models.Question.query.filter_by(exam=exam_m)
     else:
-        questions = models.Question.query.filter_by(course=course_m)
+        questions = models.Question.query\
+            .filter_by(course=course_m)\
+            .join(models.Exam)\
+            .filter(models.Exam.hidden.is_(False))
     return questions.with_entities(models.Question.id).order_by('id').all()
 
 
