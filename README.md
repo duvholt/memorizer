@@ -36,14 +36,15 @@ Installation
 
 
 ```bash
-$ pipenv install # Install requirements
-$ ./main.py db upgrade # Create/upgrade database tables
-$ ./main.py import questions/*.json # Import all questions (Warning: super slow if using SQLite)
-$ ./main.py runserver # Run webserver
+pipenv install # Install requirements
+pipenv shell
+./main.py db upgrade # Create/upgrade database tables
+./main.py import questions/*.json # Import all questions (Warning: super slow if using SQLite)
+./main.py runserver # Run webserver
 ```
 
 
-###Local config
+### Local config
 
 To overwrite configuration in memorizer/config.py create an new file called memorizer/localconfig.py.
 
@@ -54,5 +55,16 @@ DEBUG = True
 GOOGLE_ANALYTICS = 'UA-XXXXXXXX-Y'
 SQLALCHEMY_DATABASE_URI = 'postgresql://username@localhost/memorizer'
 ```
+
+### Administrator
+
+Deleting courses, exams and questions are only available to administrators.
+To make a user an administrator run the following command:
+
+```bash
+pipenv run ./main.py admin <username_here>
+```
+
+------
 
 Big thanks to all the [contributors](https://github.com/cXhristian/memorizer/graphs/contributors)!
