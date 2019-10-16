@@ -9,6 +9,7 @@ from werkzeug.contrib.fixers import ProxyFix
 
 from memorizer.cache import cache
 from memorizer.importer import ImportCommand
+from memorizer.make_admin import AdminCommand
 from memorizer.user import get_user
 from memorizer.utils import datetimeformat, grade, percentage
 from memorizer.views.admin import admin
@@ -52,6 +53,7 @@ migrate = Migrate()
 manager = Manager(create_app)
 manager.add_command('db', MigrateCommand)
 manager.add_command('import', ImportCommand)
+manager.add_command('admin', AdminCommand)
 
 assets = Environment()
 js = Bundle(
