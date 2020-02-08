@@ -18,6 +18,8 @@ Flask-Assets = "*"
 Flask-Testing = "*"
 flask-caching = "*"
 flask-script = "*"
+gunicorn = "*"
+werkzeug = "==0.16.1"
 
 [dev-packages]
 
