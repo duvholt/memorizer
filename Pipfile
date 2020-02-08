@@ -20,6 +20,9 @@ flask-caching = "*"
 flask-script = "*"
 gunicorn = "*"
 werkzeug = "==0.16.1"
+python-decouple = "*"
+psycopg2-binary = "*"
+redis = "*"
 
 [dev-packages]
 

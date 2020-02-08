@@ -1,0 +1,29 @@
+version: "3.7"
+services:
+
+  redis:
+    image: redis:alpine
+    networks:
+      - backend
+
+  db:
+    image: postgres
+    networks:
+      - backend
+    environment:
+      POSTGRES_USER: memorizer
+      POSTGRES_PASSWORD: memorizer
+      POSTGRES_DB: memorizer
+    
+  memorizer:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      MEMORIZER_DB: postgresql://memorizer:memorizer@db/memorizer
+      MEMORIZER_CACHE_TYPE: redis
+      MEMORIZER_REDIS_URL: redis://redis:6379
+    networks:
+      - backend
+networks:
+  backend:

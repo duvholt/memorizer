@@ -47,3 +47,4 @@ debug.py
 
 .cache
 htmlcov
+.vscode
