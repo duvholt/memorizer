@@ -1,0 +1,25 @@
+*.py[cod]
+
+# C extensions
+*.so
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+coverage.xml
+
+localconfig.py
+debug.py
+*.db
+*.db-journal
+
+*min.*.js
+*min.*.css
+.webassets-cache
+
+.cache
+htmlcov
+
+questions/
+tests/
